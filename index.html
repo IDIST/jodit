@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>Jodit Pro</title>
+		<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300i,400,400i,700,700i" rel="stylesheet"/>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+		<link rel="stylesheet" href="./build/jodit.css" />
+		<script src="build/jodit.min.js"></script>
+	</head>
+	<body>
+		<div class="example-box">
+			<h1>
+				Superclub Editor Demo
+			</h1>
+			<textarea name="editor" id="editor"></textarea>
+		</div>
+		<style>
+			html,
+			body {
+				height: 100%;
+				padding: 0;
+				margin: 0;
+			}
+
+			body {
+				font-family: 'Source Sans Pro', 'Helvetica Neue', Helvetica,
+					Arial, sans-serif;
+				font-size: 16px;
+				-webkit-font-smoothing: antialiased;
+				font-weight: 300;
+				line-height: 1.5;
+				text-rendering: optimizelegibility;
+			}
+
+			.example-box {
+				display: flex;
+				min-height: 100%;
+				flex-direction: column;
+				align-items: center;
+				justify-content: center;
+			}
+
+			@media (max-width: 500px) {
+				.example-box {
+					align-items: stretch;
+					padding: 16px;
+				}
+			}
+		</style>
+		<script src="./build/jodit.js"></script>
+		<script src="./build/plugins/keyboard/keyboard.js"></script>
+		<script src="./build/plugins/paste-code/paste-code.js"></script>
+		<script src="./build/plugins/google-maps/google-maps.js"></script>
+		<script src="./build/plugins/export-docs/export-docs.js"></script>
+		<script src="./build/plugins/paste-from-word/paste-from-word.js"></script>
+		<script src="./config.js"></script>
+		<script>
+			const editor = new Jodit('#editor', {
+				// theme: 'dark',
+				// extraPlugins: ['tune-block'],
+				buttons: [
+					'emoji',
+					'image',
+					'video',
+					'file',
+					'\n',
+					'undo',
+					'redo',
+					'|',
+					'paragraph',
+					'brush',
+					'bold',
+					'italic',
+					'|',
+					'left',
+					'center',
+					'right',
+					'|',
+					'ul',
+					'ol',
+					'|',
+					'table',
+				],
+				width: 762,
+				minHeight: '21px',
+				iframe: true,
+				// iframeStyle: '',
+				showPlaceholder: false,
+
+
+				// PRO HTML Paste Processing Plugin from MSWord
+				// https://xdsoft.net/jodit/pro/docs/plugin/paste-from-word
+				iframeCSSLinks: [
+					'src/plugins/paste-from-word/assets/content.css',
+					'src/plugins/paste-from-word/assets/document-mode.css'
+				],
+				defaultFontSizePoints: 'pt',
+				pasteFromWord: {
+					enable: false
+				},
+
+				//
+				language: 'ko', // 'en'
+
+				googleMaps: {
+					API_KEY: 'AIzaSyDjnR03hxN8fo0QJ85Jkkvk2DALTh3eynY'
+				},
+
+				// toolbar: false,
+				// buttons: [],
+				// "textIcons": true,
+
+				// disablePlugins: ['pasteFromWordPro'],
+
+				keyboard: {
+					// 	showLayoutSwitcher: false,
+					extraKeyButtons: [
+						{
+							key: 'λ',
+							hotkey: 'ctrl+1'
+						},
+						'β' // Will have hotkey alt+2
+					]
+				},
+				uploader: {
+					url: 'https://xdsoft.net/jodit/finder/?action=fileUpload'
+				},
+				filebrowser: {
+					ajax: {
+						url: 'https://xdsoft.net/jodit/finder/'
+					},
+					height: 580
+				},
+				autofocus: true,
+				events: {
+					afterConstructor: () => {
+						// editor.filebrowser.setMod('modal', true).open();
+					},
+					// getIcon: function (name, control, clearName) {
+					// 	var code = name;
+					//
+					// 	// not all font awesome icons is matched to Jodit icons
+					// 	switch (clearName) {
+					// 		case 'redo':
+					// 			code = 'rotate-right';
+					// 			break;
+					// 	}
+					//
+					// 	return ('<i style="font-size:14px" class="fa fa-' + code + ' fa-xs"></i>');
+					// }
+				}
+			});
+
+			editor.waitForReady().then(() => {
+				const names = [
+					'@mary',
+					'@jain',
+					'@entany',
+					'@isaak',
+					'@ivan',
+					'@fedya',
+					'@yakov',
+					'@jhon',
+					'@lena',
+					'@elvin'
+				];
+
+				editor.e.fire('registerAutocompleteSource', (query) => {
+					return names
+						.filter((value) => value.indexOf(query) === 0)
+						.map((value) => ({
+							title: value,
+							value
+						}));
+				});
+			});
+
+		</script>
+
+		<div style='margin: 100px auto; max-width: 1024px;padding-bottom: 100px'>
+			<div id='browser'></div>
+		</div>
+		<script>
+			Jodit.plugins.wait('finder').then(() => {
+				const finder = new Jodit.modules.FileBrowserPro({
+					buttons: Jodit.atom([
+						'filebrowser.settings',
+						'fullsize',
+					]),
+					license: '',
+					ajax: {
+						url: 'https://xdsoft.net/jodit/finder/'
+					},
+					height: 580
+				});
+				finder.setMod('static', true).open();
+				document.getElementById('browser').appendChild(finder.container);
+			});
+		</script>
+	</body>
+</html>
