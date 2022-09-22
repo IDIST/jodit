@@ -82,7 +82,7 @@ export class UIBrowserItem extends UIElement {
 	override update(): void {
 		const image = this.getElm('image');
 		assert(image != null, 'image element does not exists');
-		css(image, 'backgroundImage', `url(${this.item.imageURL})`);
+		css(image, 'backgroundImage', `url(${encodeURI(this.item.imageURL)})`);
 
 		const { type, file, time, size } = this.item;
 		this.setMod('is-file', this.item.isImage === false)

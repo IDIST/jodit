@@ -77,6 +77,7 @@ export class LoadingManager extends ViewComponent<IFileBrowserPro> {
 		try {
 			this.offset = 0;
 			this.stopLoadingParts = false;
+			this.__callQueueCount = 0;
 			this.j.state.elements = await this.loadPartItems();
 
 			this.stopLoadingParts =
@@ -98,14 +99,22 @@ export class LoadingManager extends ViewComponent<IFileBrowserPro> {
 	private countInOneChunk: number = 20;
 	private stopLoadingParts: boolean = false;
 
-	@debounce((ctx) => ({
-		timeout: ctx.defaultTimeout,
-		promisify: true
-	}))
-	async loadItemsChunk(): Promise<void> {
-		if (this.stopLoadingParts) {
+	private __isLoadingPart = false;
+	private __callQueueCount = 0;
+
+	private async __loadItemsChunk(): Promise<void> {
+		if (this.__isLoadingPart) {
+			this.__callQueueCount += 1;
 			return;
 		}
+
+		if (this.stopLoadingParts) {
+			this.__callQueueCount = 0;
+			return;
+		}
+
+		this.__isLoadingPart = true;
+		this.j.panel.items.setMod('chunk-loading', true);
 
 		try {
 			this.offset += this.countInOneChunk;
@@ -119,6 +128,22 @@ export class LoadingManager extends ViewComponent<IFileBrowserPro> {
 		} catch (e: any) {
 			this.j.status(e);
 		}
+
+		this.j.panel.items.setMod('chunk-loading', false);
+		this.__isLoadingPart = false;
+
+		if (this.__callQueueCount > 0) {
+			this.__callQueueCount -= 1;
+			return this.__loadItemsChunk();
+		}
+	}
+
+	@debounce((ctx) => ({
+		timeout: ctx.defaultTimeout,
+		promisify: true
+	}))
+	loadItemsChunk(): Promise<void> {
+		return this.__loadItemsChunk();
 	}
 
 	private loadPartItems(): Promise<IFileBrowserItem[]> {

@@ -50,7 +50,7 @@ export class UIVirtualScroll
 		this.addItemsSelector();
 	}
 
-	build(items: IFileBrowserItemElement[]): void {
+	private reconcile(items: IFileBrowserItemElement[]): number {
 		const clearIndex = this.elements.findIndex((elm, index) => {
 			return (
 				!items[index] ||
@@ -65,6 +65,12 @@ export class UIVirtualScroll
 			}
 			this.elements.length = clearIndex;
 		}
+
+		return clearIndex;
+	}
+
+	build(items: IFileBrowserItemElement[]): void {
+		const clearIndex = this.reconcile(items);
 
 		items
 			.slice(clearIndex > -1 ? clearIndex : this.elements.length)
@@ -92,7 +98,7 @@ export class UIVirtualScroll
 				(this.container.scrollTop + this.container.offsetHeight) <
 				this.j.o.pixelOffsetLoadNewChunk
 		) {
-			this.j.loadingManager.loadItemsChunk();
+			void this.j.loadingManager.loadItemsChunk();
 		}
 	}
 

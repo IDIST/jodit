@@ -2,21 +2,24 @@
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+		<meta
+			name="viewport"
+			content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+		/>
 		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
 		<title>Jodit Pro</title>
-		<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300i,400,400i,700,700i" rel="stylesheet"/>
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
 		<link rel="stylesheet" href="./build/jodit.css" />
-<!--		<script src="build/jodit.min.js"></script>-->
-		<script src="build/jodit.js"></script>
+		<link
+			href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300i,400,400i,700,700i"
+			rel="stylesheet"
+		/>
 	</head>
 	<body>
 		<div class="example-box">
 			<h1>
-				Superclub Editor Demo
+				Jodit PRO <a href="https://xdsoft.net/jodit/pro/">Buy it</a>
 			</h1>
-			<textarea name="editor" id="editor"></textarea>
+			<textarea name="editor" id="editor" cols="50" rows="10"></textarea>
 		</div>
 		<style>
 			html,
@@ -34,6 +37,15 @@
 				font-weight: 300;
 				line-height: 1.5;
 				text-rendering: optimizelegibility;
+			}
+
+			p,
+			h1 {
+				margin-top: 0;
+			}
+
+			h1 a {
+				color: #5a5a5a;
 			}
 
 			.example-box {
@@ -63,53 +75,113 @@
 				// theme: 'dark',
 				// extraPlugins: ['tune-block'],
 				buttons: [
-					'emoji',
-					'image',
-					'video',
-					'file',
-					'\n',
-					'undo',
-					'redo',
+					'source',
 					'|',
-					'paragraph',
+					{
+						group: 'font-style',
+						buttons: []
+					},
+					{
+						group: 'list',
+						buttons: []
+					},
+					{
+						group: 'font',
+						buttons: []
+					},
+					'|',
 					'brush',
-					'bold',
-					'italic',
+					'image',
+					'align',
 					'|',
-					'left',
-					'center',
-					'right',
-					'|',
-					'ul',
-					'ol',
-					'|',
-					'table',
+					'pageBreak',
+					'exportDocs'
 				],
+				// removeButtons: ['changeCase', 'classSpan', 'lineHeight'],
 				width: 762,
 				minHeight: '21px',
 				iframe: true,
 				// iframeStyle: '',
 				showPlaceholder: false,
-
-
-				// PRO HTML Paste Processing Plugin from MSWord
-				// https://xdsoft.net/jodit/pro/docs/plugin/paste-from-word
 				iframeCSSLinks: [
 					'src/plugins/paste-from-word/assets/content.css',
 					'src/plugins/paste-from-word/assets/document-mode.css'
 				],
 				defaultFontSizePoints: 'pt',
 				pasteFromWord: {
-					enable: false
+					enable: true
 				},
 
-				//
-				language: 'ko', // 'en'
+				language: 'en',
+
+				exportDocs: {
+					// ajax: {
+					// url: 'http://localhost:8081/'
+					// }
+				},
 
 				googleMaps: {
 					API_KEY: 'AIzaSyDjnR03hxN8fo0QJ85Jkkvk2DALTh3eynY'
 				},
 
+				pasteCodeHLJS: {
+					insertTemplate: (jodit, language, value) =>
+						`<pre><code class="hljs language-${language}">${Jodit.modules.Helpers.htmlspecialchars(
+							value
+						)}</code></pre>`,
+
+					highlightLib: {
+						js: [
+							'//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/highlight.min.js'
+						],
+
+						isLangLoaded(lang) {
+							if (lang === 'html') {
+								return true;
+							}
+							return Boolean(hljs.listLanguages()[lang]);
+						},
+
+						langUrl: (lang) =>
+							`//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/languages/${lang}.min.js`,
+
+						css: [
+							'//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/styles/default.min.css'
+							// 'https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/styles/github.min.css'
+						],
+
+						highlight: (code, language) => {
+							return hljs.highlight(code, { language: language })
+								.value;
+						}
+					}
+				},
+
+				highlightSignature: {
+					schema: {
+						'[^\\s]+@[a-z\\.-]+': (jodit) =>
+							jodit.createInside.element('strong'),
+						'\\$\\{([^}]+)\\}': (jodit, matched) => {
+							let color = 'yellow'; // all another macros will be `yellow`
+
+							switch (matched[1]) {
+								case 'formSubmittedDate':
+									color = 'red';
+									break;
+
+								case 'formSessionURL':
+									color = '#0f0';
+									break;
+							}
+
+							return jodit.createInside.element('span', {
+								style: {
+									backgroundColor: color
+								}
+							});
+						}
+					}
+				},
 				// toolbar: false,
 				// buttons: [],
 				// "textIcons": true,
@@ -139,19 +211,7 @@
 				events: {
 					afterConstructor: () => {
 						// editor.filebrowser.setMod('modal', true).open();
-					},
-					// getIcon: function (name, control, clearName) {
-					// 	var code = name;
-					//
-					// 	// not all font awesome icons is matched to Jodit icons
-					// 	switch (clearName) {
-					// 		case 'redo':
-					// 			code = 'rotate-right';
-					// 			break;
-					// 	}
-					//
-					// 	return ('<i style="font-size:14px" class="fa fa-' + code + ' fa-xs"></i>');
-					// }
+					}
 				}
 			});
 
@@ -178,7 +238,6 @@
 						}));
 				});
 			});
-
 		</script>
 
 		<div style='margin: 100px auto; max-width: 1024px;padding-bottom: 100px'>
@@ -191,8 +250,9 @@
 						'filebrowser.settings',
 						'fullsize',
 					]),
+					license: '',
 					ajax: {
-						url: 'https://xdsoft.net/jodit/finder/'
+						url: 'http://localhost:8081/'
 					},
 					height: 580
 				});

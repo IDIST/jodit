@@ -4,8 +4,6 @@
  * Copyright (c) 2013-2022 Valeriy Chupurnov. All rights reserved. https://xdsoft.net/jodit/pro/
  */
 
-/* eslint-disable tsdoc/syntax */
-
 /**
  * Validate license
  * @param {string} code

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="763ace10-f988-4d1a-872b-e7ddbbb79e1b" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.eslintrc.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CHANGELOG.md" beforeDir="false" afterPath="$PROJECT_DIR$/CHANGELOG.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jodit.css" beforeDir="false" afterPath="$PROJECT_DIR$/build/jodit.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jodit.es5.css" beforeDir="false" afterPath="$PROJECT_DIR$/build/jodit.es5.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jodit.es5.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/jodit.es5.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jodit.fat.css" beforeDir="false" afterPath="$PROJECT_DIR$/build/jodit.fat.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jodit.fat.es5.css" beforeDir="false" afterPath="$PROJECT_DIR$/build/jodit.fat.es5.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jodit.fat.es5.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/jodit.fat.es5.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jodit.fat.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/jodit.fat.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jodit.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/jodit.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/plugins/autocomplete/autocomplete.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/plugins/autocomplete/autocomplete.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/plugins/backup/backup.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/plugins/backup/backup.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/plugins/button-generator/button-generator.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/plugins/button-generator/button-generator.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/plugins/change-case/change-case.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/plugins/change-case/change-case.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/plugins/color-picker/color-picker.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/plugins/color-picker/color-picker.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/plugins/emoji/emoji.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/plugins/emoji/emoji.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/plugins/export-docs/export-docs.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/plugins/export-docs/export-docs.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/plugins/finder/finder.css" beforeDir="false" afterPath="$PROJECT_DIR$/build/plugins/finder/finder.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/plugins/finder/finder.es5.css" beforeDir="false" afterPath="$PROJECT_DIR$/build/plugins/finder/finder.es5.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/plugins/finder/finder.es5.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/plugins/finder/finder.es5.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/plugins/finder/finder.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/plugins/finder/finder.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/plugins/google-maps/google-maps.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/plugins/google-maps/google-maps.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/plugins/google-search/google-search.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/plugins/google-search/google-search.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/plugins/highlight-signature/highlight-signature.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/plugins/highlight-signature/highlight-signature.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/plugins/iframe-editor/iframe-editor.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/plugins/iframe-editor/iframe-editor.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/plugins/keyboard/keyboard.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/plugins/keyboard/keyboard.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/plugins/page-break/page-break.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/plugins/page-break/page-break.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/plugins/paste-code/paste-code.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/plugins/paste-code/paste-code.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/plugins/paste-from-word/paste-from-word.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/plugins/paste-from-word/paste-from-word.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/plugins/show-blocks/show-blocks.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/plugins/show-blocks/show-blocks.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/plugins/tune-block/tune-block.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/plugins/tune-block/tune-block.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/react/build/LICENSE.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/react/build/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/react/build/index.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/react/build/jodit-react.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/react/build/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/react/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/react/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/plugins/finder/helpers/loading-manager.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/plugins/finder/helpers/loading-manager.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/plugins/finder/ui/item/item.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/plugins/finder/ui/item/item.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/plugins/finder/ui/virtual-scroll/virtual-scroll.less" beforeDir="false" afterPath="$PROJECT_DIR$/src/plugins/finder/ui/virtual-scroll/virtual-scroll.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/plugins/finder/ui/virtual-scroll/virtual-scroll.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/plugins/finder/ui/virtual-scroll/virtual-scroll.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/plugins/license/helpers/helpers.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/plugins/license/helpers/helpers.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/plugins/paste-from-word/doc-examples/~$mple Document.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2EygyLHxsmktUQvoixpCIkBGaRO" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/plugins" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="prettierjs.PrettierConfiguration.Package" value="$PROJECT_DIR$/node_modules/prettier" />
+    <property name="ts.external.directory.path" value="$PROJECT_DIR$/node_modules/typescript/lib" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/plugins" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="763ace10-f988-4d1a-872b-e7ddbbb79e1b" name="Changes" comment="" />
+      <created>1663573492970</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1663573492970</updated>
+      <workItem from="1663573495142" duration="8893000" />
+      <workItem from="1663662665999" duration="13317000" />
+      <workItem from="1663818023837" duration="13576000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
