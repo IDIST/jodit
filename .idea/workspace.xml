@@ -2,53 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="763ace10-f988-4d1a-872b-e7ddbbb79e1b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.eslintrc.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CHANGELOG.md" beforeDir="false" afterPath="$PROJECT_DIR$/CHANGELOG.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/jodit.css" beforeDir="false" afterPath="$PROJECT_DIR$/build/jodit.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/jodit.es5.css" beforeDir="false" afterPath="$PROJECT_DIR$/build/jodit.es5.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/jodit.es5.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/jodit.es5.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/jodit.fat.css" beforeDir="false" afterPath="$PROJECT_DIR$/build/jodit.fat.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/jodit.fat.es5.css" beforeDir="false" afterPath="$PROJECT_DIR$/build/jodit.fat.es5.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/jodit.fat.es5.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/jodit.fat.es5.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/jodit.fat.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/jodit.fat.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/jodit.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/jodit.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/plugins/autocomplete/autocomplete.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/plugins/autocomplete/autocomplete.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/plugins/backup/backup.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/plugins/backup/backup.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/plugins/button-generator/button-generator.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/plugins/button-generator/button-generator.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/plugins/change-case/change-case.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/plugins/change-case/change-case.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/plugins/color-picker/color-picker.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/plugins/color-picker/color-picker.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/plugins/emoji/emoji.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/plugins/emoji/emoji.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/plugins/export-docs/export-docs.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/plugins/export-docs/export-docs.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/plugins/finder/finder.css" beforeDir="false" afterPath="$PROJECT_DIR$/build/plugins/finder/finder.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/plugins/finder/finder.es5.css" beforeDir="false" afterPath="$PROJECT_DIR$/build/plugins/finder/finder.es5.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/plugins/finder/finder.es5.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/plugins/finder/finder.es5.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/plugins/finder/finder.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/plugins/finder/finder.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/plugins/google-maps/google-maps.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/plugins/google-maps/google-maps.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/plugins/google-search/google-search.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/plugins/google-search/google-search.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/plugins/highlight-signature/highlight-signature.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/plugins/highlight-signature/highlight-signature.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/plugins/iframe-editor/iframe-editor.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/plugins/iframe-editor/iframe-editor.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/plugins/keyboard/keyboard.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/plugins/keyboard/keyboard.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/plugins/page-break/page-break.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/plugins/page-break/page-break.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/plugins/paste-code/paste-code.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/plugins/paste-code/paste-code.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/plugins/paste-from-word/paste-from-word.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/plugins/paste-from-word/paste-from-word.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/plugins/show-blocks/show-blocks.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/plugins/show-blocks/show-blocks.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/plugins/tune-block/tune-block.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/plugins/tune-block/tune-block.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/react/build/LICENSE.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/react/build/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/react/build/index.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/react/build/jodit-react.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/react/build/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/react/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/react/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/plugins/finder/helpers/loading-manager.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/plugins/finder/helpers/loading-manager.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/plugins/finder/ui/item/item.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/plugins/finder/ui/item/item.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/plugins/finder/ui/virtual-scroll/virtual-scroll.less" beforeDir="false" afterPath="$PROJECT_DIR$/src/plugins/finder/ui/virtual-scroll/virtual-scroll.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/plugins/finder/ui/virtual-scroll/virtual-scroll.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/plugins/finder/ui/virtual-scroll/virtual-scroll.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/plugins/license/helpers/helpers.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/plugins/license/helpers/helpers.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/plugins/paste-from-word/doc-examples/~$mple Document.docx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -102,7 +57,7 @@
       <updated>1663573492970</updated>
       <workItem from="1663573495142" duration="8893000" />
       <workItem from="1663662665999" duration="13317000" />
-      <workItem from="1663818023837" duration="13576000" />
+      <workItem from="1663818023837" duration="15766000" />
     </task>
     <servers />
   </component>
