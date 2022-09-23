@@ -7,7 +7,7 @@
 import './index.less';
 
 import { Jodit } from 'jodit/index';
-import { appendScriptAsync, css } from 'jodit/core/helpers/utils';
+import { appendScriptAsync } from 'jodit/core/helpers/utils';
 
 import './config';
 
@@ -28,21 +28,21 @@ export class JoditPro extends Jodit {
 				return;
 			}
 
-			const message =
-				'Trial version. Buy <a href="https://xdsoft.net/jodit/pro/">Jodit Pro</a>';
+			// const message =
+			// 	'Trial version. Buy <a href="https://xdsoft.net/jodit/pro/">Jodit Pro</a>';
+			//
+			// const pro = this.c.div('', message);
+			//
+			// console.error(message);
+			//
+			// css(pro, {
+			// 	position: 'absolute',
+			// 	color: 'red',
+			// 	right: 10,
+			// 	bottom: 10
+			// });
 
-			const pro = this.c.div('', message);
-
-			console.error(message);
-
-			css(pro, {
-				position: 'absolute',
-				color: 'red',
-				right: 10,
-				bottom: 10
-			});
-
-			this.addDisclaimer(pro);
+			// this.addDisclaimer(pro);
 		}
 
 		super.afterInitHook();

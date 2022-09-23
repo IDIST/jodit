@@ -4,8 +4,37 @@
  * Copyright (c) 2013-2022 Valeriy Chupurnov. All rights reserved. https://xdsoft.net/jodit/pro/
  */
 
-Jodit.defaultOptions.license = '5573M-20L62-BTOKJ-S7P5Z';
-Jodit.defaultOptions.language = 'en';
+Jodit.defaultOptions.license = 'CC3FM-00670-AS5MN-T56AZ';
+Jodit.defaultOptions.language = 'ko';
+Jodit.defaultOptions.width = '100%';
+// Jodit.defaultOptions.height = '100%';
+Jodit.defaultOptions.iframe = false;
+Jodit.defaultOptions.iframeStyle = 'html{background: white;}'
+
+Jodit.defaultOptions.buttons = [
+	'emoji',
+	'image',
+	'video',
+	'file',
+	'\n',
+	'undo',
+	'redo',
+	'|',
+	'paragraph',
+	'brush',
+	'bold',
+	'italic',
+	'|',
+	'left',
+	'center',
+	'right',
+	'|',
+	'ul',
+	'ol',
+	'|',
+	'table'
+];
+
 
 Jodit.defaultOptions.extraPlugins = [
 	'autocomplete',

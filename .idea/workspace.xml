@@ -3,7 +3,69 @@
   <component name="ChangeListManager">
     <list default="true" id="763ace10-f988-4d1a-872b-e7ddbbb79e1b" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jodit.es5.css" beforeDir="false" afterPath="$PROJECT_DIR$/build/jodit.es5.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jodit.es5.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/jodit.es5.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jodit.fat.css" beforeDir="false" afterPath="$PROJECT_DIR$/build/jodit.fat.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jodit.fat.es5.css" beforeDir="false" afterPath="$PROJECT_DIR$/build/jodit.fat.es5.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jodit.fat.es5.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/jodit.fat.es5.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jodit.fat.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/jodit.fat.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jodit.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/jodit.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/plugins/emoji/emoji.css" beforeDir="false" afterPath="$PROJECT_DIR$/build/plugins/emoji/emoji.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/plugins/emoji/emoji.es5.css" beforeDir="false" afterPath="$PROJECT_DIR$/build/plugins/emoji/emoji.es5.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/plugins/emoji/emoji.es5.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/plugins/emoji/emoji.es5.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/plugins/emoji/emoji.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/plugins/emoji/emoji.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config.js" beforeDir="false" afterPath="$PROJECT_DIR$/config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.cache/webpack/jodites2018productiontrue/0.pack" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.cache/webpack/jodites2018productiontrue/0.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.cache/webpack/jodites2018productiontrue/index.pack" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.cache/webpack/jodites2018productiontrue/index.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.cache/webpack/jodites5productiontrue/0.pack" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.cache/webpack/jodites5productiontrue/0.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.cache/webpack/jodites5productiontrue/index.pack" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.cache/webpack/jodites5productiontrue/index.pack" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/publish/build/jodit.es5.css" beforeDir="false" afterPath="$PROJECT_DIR$/publish/build/jodit.es5.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/publish/build/jodit.es5.js" beforeDir="false" afterPath="$PROJECT_DIR$/publish/build/jodit.es5.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/publish/build/jodit.fat.es5.js" beforeDir="false" afterPath="$PROJECT_DIR$/publish/build/jodit.fat.es5.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/publish/build/jodit.fat.js" beforeDir="false" afterPath="$PROJECT_DIR$/publish/build/jodit.fat.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/publish/build/jodit.js" beforeDir="false" afterPath="$PROJECT_DIR$/publish/build/jodit.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/publish/build/plugins/autocomplete/autocomplete.es5.js" beforeDir="false" afterPath="$PROJECT_DIR$/publish/build/plugins/autocomplete/autocomplete.es5.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/publish/build/plugins/autocomplete/autocomplete.js" beforeDir="false" afterPath="$PROJECT_DIR$/publish/build/plugins/autocomplete/autocomplete.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/publish/build/plugins/backup/backup.es5.js" beforeDir="false" afterPath="$PROJECT_DIR$/publish/build/plugins/backup/backup.es5.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/publish/build/plugins/backup/backup.js" beforeDir="false" afterPath="$PROJECT_DIR$/publish/build/plugins/backup/backup.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/publish/build/plugins/button-generator/button-generator.es5.js" beforeDir="false" afterPath="$PROJECT_DIR$/publish/build/plugins/button-generator/button-generator.es5.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/publish/build/plugins/button-generator/button-generator.js" beforeDir="false" afterPath="$PROJECT_DIR$/publish/build/plugins/button-generator/button-generator.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/publish/build/plugins/change-case/change-case.es5.js" beforeDir="false" afterPath="$PROJECT_DIR$/publish/build/plugins/change-case/change-case.es5.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/publish/build/plugins/change-case/change-case.js" beforeDir="false" afterPath="$PROJECT_DIR$/publish/build/plugins/change-case/change-case.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/publish/build/plugins/color-picker/color-picker.es5.js" beforeDir="false" afterPath="$PROJECT_DIR$/publish/build/plugins/color-picker/color-picker.es5.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/publish/build/plugins/color-picker/color-picker.js" beforeDir="false" afterPath="$PROJECT_DIR$/publish/build/plugins/color-picker/color-picker.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/publish/build/plugins/emoji/emoji.es5.js" beforeDir="false" afterPath="$PROJECT_DIR$/publish/build/plugins/emoji/emoji.es5.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/publish/build/plugins/emoji/emoji.js" beforeDir="false" afterPath="$PROJECT_DIR$/publish/build/plugins/emoji/emoji.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/publish/build/plugins/export-docs/export-docs.es5.js" beforeDir="false" afterPath="$PROJECT_DIR$/publish/build/plugins/export-docs/export-docs.es5.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/publish/build/plugins/export-docs/export-docs.js" beforeDir="false" afterPath="$PROJECT_DIR$/publish/build/plugins/export-docs/export-docs.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/publish/build/plugins/finder/finder.es5.js" beforeDir="false" afterPath="$PROJECT_DIR$/publish/build/plugins/finder/finder.es5.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/publish/build/plugins/finder/finder.js" beforeDir="false" afterPath="$PROJECT_DIR$/publish/build/plugins/finder/finder.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/publish/build/plugins/google-maps/google-maps.es5.js" beforeDir="false" afterPath="$PROJECT_DIR$/publish/build/plugins/google-maps/google-maps.es5.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/publish/build/plugins/google-maps/google-maps.js" beforeDir="false" afterPath="$PROJECT_DIR$/publish/build/plugins/google-maps/google-maps.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/publish/build/plugins/google-search/google-search.es5.js" beforeDir="false" afterPath="$PROJECT_DIR$/publish/build/plugins/google-search/google-search.es5.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/publish/build/plugins/google-search/google-search.js" beforeDir="false" afterPath="$PROJECT_DIR$/publish/build/plugins/google-search/google-search.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/publish/build/plugins/highlight-signature/highlight-signature.es5.js" beforeDir="false" afterPath="$PROJECT_DIR$/publish/build/plugins/highlight-signature/highlight-signature.es5.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/publish/build/plugins/highlight-signature/highlight-signature.js" beforeDir="false" afterPath="$PROJECT_DIR$/publish/build/plugins/highlight-signature/highlight-signature.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/publish/build/plugins/iframe-editor/iframe-editor.es5.js" beforeDir="false" afterPath="$PROJECT_DIR$/publish/build/plugins/iframe-editor/iframe-editor.es5.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/publish/build/plugins/iframe-editor/iframe-editor.js" beforeDir="false" afterPath="$PROJECT_DIR$/publish/build/plugins/iframe-editor/iframe-editor.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/publish/build/plugins/keyboard/keyboard.es5.js" beforeDir="false" afterPath="$PROJECT_DIR$/publish/build/plugins/keyboard/keyboard.es5.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/publish/build/plugins/keyboard/keyboard.js" beforeDir="false" afterPath="$PROJECT_DIR$/publish/build/plugins/keyboard/keyboard.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/publish/build/plugins/page-break/page-break.es5.js" beforeDir="false" afterPath="$PROJECT_DIR$/publish/build/plugins/page-break/page-break.es5.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/publish/build/plugins/page-break/page-break.js" beforeDir="false" afterPath="$PROJECT_DIR$/publish/build/plugins/page-break/page-break.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/publish/build/plugins/paste-code/paste-code.es5.js" beforeDir="false" afterPath="$PROJECT_DIR$/publish/build/plugins/paste-code/paste-code.es5.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/publish/build/plugins/paste-code/paste-code.js" beforeDir="false" afterPath="$PROJECT_DIR$/publish/build/plugins/paste-code/paste-code.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/publish/build/plugins/paste-from-word/paste-from-word.es5.js" beforeDir="false" afterPath="$PROJECT_DIR$/publish/build/plugins/paste-from-word/paste-from-word.es5.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/publish/build/plugins/paste-from-word/paste-from-word.js" beforeDir="false" afterPath="$PROJECT_DIR$/publish/build/plugins/paste-from-word/paste-from-word.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/publish/build/plugins/show-blocks/show-blocks.es5.js" beforeDir="false" afterPath="$PROJECT_DIR$/publish/build/plugins/show-blocks/show-blocks.es5.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/publish/build/plugins/show-blocks/show-blocks.js" beforeDir="false" afterPath="$PROJECT_DIR$/publish/build/plugins/show-blocks/show-blocks.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/publish/build/plugins/tune-block/tune-block.es5.js" beforeDir="false" afterPath="$PROJECT_DIR$/publish/build/plugins/tune-block/tune-block.es5.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/publish/build/plugins/tune-block/tune-block.js" beforeDir="false" afterPath="$PROJECT_DIR$/publish/build/plugins/tune-block/tune-block.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/publish/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/publish/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/react/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/react/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/JoditPro.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/JoditPro.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/config.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,7 +98,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/plugins" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/build" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="prettierjs.PrettierConfiguration.Package" value="$PROJECT_DIR$/node_modules/prettier" />
     <property name="ts.external.directory.path" value="$PROJECT_DIR$/node_modules/typescript/lib" />
@@ -44,6 +106,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/build" />
       <recent name="$PROJECT_DIR$/src/plugins" />
     </key>
   </component>
@@ -57,7 +120,7 @@
       <updated>1663573492970</updated>
       <workItem from="1663573495142" duration="8893000" />
       <workItem from="1663662665999" duration="13317000" />
-      <workItem from="1663818023837" duration="15766000" />
+      <workItem from="1663818023837" duration="26795000" />
     </task>
     <servers />
   </component>

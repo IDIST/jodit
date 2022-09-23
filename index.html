@@ -17,27 +17,30 @@
 	<body>
 		<div class="example-box">
 			<h1>
-				Jodit PRO <a href="https://xdsoft.net/jodit/pro/">Buy it</a>
+				SUPER CLUB Editor
 			</h1>
 			<textarea name="editor" id="editor" cols="50" rows="10"></textarea>
 		</div>
 		<style>
 			html,
 			body {
-				height: 100%;
+				width: 100vw;
+				height: 100vh;
 				padding: 0;
 				margin: 0;
+				display: flex;
+				align-items: center;
 			}
 
-			body {
-				font-family: 'Source Sans Pro', 'Helvetica Neue', Helvetica,
-					Arial, sans-serif;
-				font-size: 16px;
-				-webkit-font-smoothing: antialiased;
-				font-weight: 300;
-				line-height: 1.5;
-				text-rendering: optimizelegibility;
-			}
+			/*body {*/
+			/ *	font-family: 'Source Sans Pro', 'Helvetica Neue', Helvetica,*/
+			/*		Arial, sans-serif;*/
+			/*	font-size: 16px;*/
+			/*	-webkit-font-smoothing: antialiased;*/
+			/*	font-weight: 300;*/
+			/*	line-height: 1.5;*/
+			/*	text-rendering: optimizelegibility;*/
+			/*}*/
 
 			p,
 			h1 {
@@ -50,18 +53,19 @@
 
 			.example-box {
 				display: flex;
-				min-height: 100%;
+				width: 90%;
+				height: 90%;
 				flex-direction: column;
 				align-items: center;
 				justify-content: center;
 			}
 
-			@media (max-width: 500px) {
-				.example-box {
-					align-items: stretch;
-					padding: 16px;
-				}
-			}
+			/*@media (max-width: 500px) {*/
+			/*	.example-box {*/
+			/*		align-items: stretch;*/
+			/*		padding: 16px;*/
+			/*	}*/
+			/*}*/
 		</style>
 		<script src="./build/jodit.js"></script>
 		<script src="./build/plugins/keyboard/keyboard.js"></script>
@@ -72,34 +76,6 @@
 		<script src="./config.js"></script>
 		<script>
 			const editor = new Jodit('#editor', {
-				// theme: 'dark',
-				// extraPlugins: ['tune-block'],
-				buttons: [
-					'source',
-					'|',
-					{
-						group: 'font-style',
-						buttons: []
-					},
-					{
-						group: 'list',
-						buttons: []
-					},
-					{
-						group: 'font',
-						buttons: []
-					},
-					'|',
-					'brush',
-					'image',
-					'align',
-					'|',
-					'pageBreak',
-					'exportDocs'
-				],
-				// removeButtons: ['changeCase', 'classSpan', 'lineHeight'],
-				width: 762,
-				minHeight: '21px',
 				iframe: true,
 				// iframeStyle: '',
 				showPlaceholder: false,
@@ -251,9 +227,9 @@
 						'fullsize',
 					]),
 					license: '',
-					ajax: {
-						url: 'http://localhost:8081/'
-					},
+					// ajax: {
+					// 	url: 'http://localhost:8081/'
+					// },
 					height: 580
 				});
 				finder.setMod('static', true).open();
