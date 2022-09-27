@@ -5,7 +5,7 @@
  */
 
 import type { ICaseFn } from '../interface';
-import { trim } from 'jodit/src/core/helpers/string/trim';
+import {trim} from "../../../core/helpers";
 
 export const clearClassName: ICaseFn = (elm) => {
 	// Normalize or remove class
