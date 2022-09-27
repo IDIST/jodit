@@ -47,7 +47,7 @@ export class UIFormButtonGenerator extends UIElement {
 			(input): void => {
 				if (Dom.isTag(input, 'select')) {
 					const uiInput = new UISelect(this.j, {
-						options: toArray(input.options).map((opt) => ({
+						options: toArray(input.options).map(opt => ({
 							text: opt.innerText,
 							value: opt.value
 						})),
@@ -133,7 +133,7 @@ export class UIFormButtonGenerator extends UIElement {
 	private onUpdates: Function[] = [];
 
 	override update(): void {
-		this.onUpdates.forEach((cb) => cb());
+		this.onUpdates.forEach(cb => cb());
 
 		const boxShadow = this.getElm('box-shadow');
 		assert(boxShadow != null, 'box-shadow does not exists');

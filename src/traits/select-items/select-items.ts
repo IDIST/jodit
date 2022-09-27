@@ -1,7 +1,7 @@
 /*!
- * Jodit Editor PRO (https://xdsoft.net/jodit/)
- * See LICENSE.md in the project root for license information.
- * Copyright (c) 2013-2022 Valeriy Chupurnov. All rights reserved. https://xdsoft.net/jodit/pro/
+ * Jodit Editor (https://xdsoft.net/jodit/)
+ * Released under MIT see LICENSE.txt in the project root for license information.
+ * Copyright (c) 2013-2022 Valeriy Chupurnov. All rights reserved. https://xdsoft.net
  */
 
 import './select-items.less';
@@ -12,9 +12,9 @@ import type {
 	IDictionary,
 	IPointBound,
 	IUIElement
-} from 'jodit/types';
-import { Dom } from 'jodit/core/dom';
-import { css } from 'jodit/core/helpers';
+} from '../../types';
+import { Dom } from '../../core/dom';
+import { css } from '../../core/helpers';
 
 export abstract class UISelectItems {
 	static remove(element: UISelectItems & IUIElement): void {

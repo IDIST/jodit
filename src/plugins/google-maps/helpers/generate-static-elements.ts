@@ -1,7 +1,7 @@
 /*!
- * Jodit Editor PRO (https://xdsoft.net/jodit/)
- * See LICENSE.md in the project root for license information.
- * Copyright (c) 2013-2022 Valeriy Chupurnov. All rights reserved. https://xdsoft.net/jodit/pro/
+ * Jodit Editor (https://xdsoft.net/jodit/)
+ * Released under MIT see LICENSE.txt in the project root for license information.
+ * Copyright (c) 2013-2022 Valeriy Chupurnov. All rights reserved. https://xdsoft.net
  */
 
 import type { UIMap } from '../ui';
@@ -10,7 +10,7 @@ import { stripTags } from 'jodit/core/helpers';
 
 export function generateStaticElements(uiMap: UIMap): string {
 	return uiMap.state.elements
-		.map((elm) => {
+		.map(elm => {
 			switch (elm.type) {
 				case 'polygon':
 					return `&path=fillcolor:${specialColor(

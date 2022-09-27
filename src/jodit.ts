@@ -68,7 +68,7 @@ import {
 
 import { Storage } from './core/storage/';
 
-import { lang } from './core/constants';
+import { lang } from 'jodit/core/constants';
 import { instances, pluginSystem, modules, eventEmitter } from './core/global';
 import { autobind, cache, throttle, watch, derive } from './core/decorators';
 import { Dlgs } from 'jodit/core/traits';

@@ -38,12 +38,12 @@ Config.prototype.controls.ul = {
 	tags: ['ul'],
 	tooltip: 'Insert Unordered List',
 
-	list: {
-		default: 'Default',
-		circle: 'Circle',
-		disc: 'Dot',
-		square: 'Quadrate'
-	},
+	// list: {
+	// 	default: 'Default',
+	// 	circle: 'Circle',
+	// 	disc: 'Dot',
+	// 	square: 'Quadrate'
+	// },
 	exec: memoExec
 } as IControlType;
 
@@ -52,13 +52,13 @@ Config.prototype.controls.ol = {
 	tags: ['ol'],
 	tooltip: 'Insert Ordered List',
 
-	list: {
-		default: 'Default',
-		'lower-alpha': 'Lower Alpha',
-		'lower-greek': 'Lower Greek',
-		'lower-roman': 'Lower Roman',
-		'upper-alpha': 'Upper Alpha',
-		'upper-roman': 'Upper Roman'
-	},
+	// list: {
+	// 	default: 'Default',
+	// 	'lower-alpha': 'Lower Alpha',
+	// 	'lower-greek': 'Lower Greek',
+	// 	'lower-roman': 'Lower Roman',
+	// 	'upper-alpha': 'Upper Alpha',
+	// 	'upper-roman': 'Upper Roman'
+	// },
 	exec: memoExec
 } as IControlType;

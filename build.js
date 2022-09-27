@@ -1,7 +1,7 @@
 /*!
- * Jodit Editor PRO (https://xdsoft.net/jodit/)
- * See LICENSE.md in the project root for license information.
- * Copyright (c) 2013-2022 Valeriy Chupurnov. All rights reserved. https://xdsoft.net/jodit/pro/
+ * Jodit Editor (https://xdsoft.net/jodit/)
+ * Released under MIT see LICENSE.txt in the project root for license information.
+ * Copyright (c) 2013-2022 Valeriy Chupurnov. All rights reserved. https://xdsoft.net
  */
 
 const fs = require('fs-extra');
@@ -11,7 +11,7 @@ const make = require('./make.js');
 const { webpack } = require('webpack');
 const yargs = require('yargs/yargs');
 const { hideBin } = require('yargs/helpers');
-const { variables } = require('jodit/build-system/variables');
+const { variables } = require('./build-system/variables');
 
 const rootPath = process.cwd(),
 	config = require(path.resolve(rootPath, './webpack.config.js'));
@@ -45,12 +45,12 @@ const { excludePlugins } = variables(argv, rootPath);
 
 			${make.paths
 				.filter(
-					(entry) =>
+					entry =>
 						!excludePlugins.includes(
 							entry.replace('./src/plugins/', '')
 						)
 				)
-				.map((entry) => {
+				.map(entry => {
 					const fullPath = path.resolve(process.cwd(), entry);
 					const name = path.basename(fullPath);
 					const rootPath = path.resolve(process.cwd(), './src');

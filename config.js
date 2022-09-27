@@ -1,72 +1,42 @@
 /*!
- * Jodit Editor PRO (https://xdsoft.net/jodit/)
- * See LICENSE.md in the project root for license information.
- * Copyright (c) 2013-2022 Valeriy Chupurnov. All rights reserved. https://xdsoft.net/jodit/pro/
+ * Jodit Editor (https://xdsoft.net/jodit/)
+ * Released under MIT see LICENSE.txt in the project root for license information.
+ * Copyright (c) 2013-2022 Valeriy Chupurnov. All rights reserved. https://xdsoft.net
  */
 
 Jodit.defaultOptions.license = 'CC3FM-00670-AS5MN-T56AZ';
-
-
-// beautifyHTML
-// beautifyHTML: true, // Beautify HTML then it possible
-// beautifyHTMLCDNUrlsJS: string[] // CDN URLs for HTML Beautifier
 
 // buttons
 // The list of buttons that appear in the editor's toolbar on large places (≥ options.sizeLG). Note - this is not the width of the device, the width of the editor
 const buttons = [
 	// Media
-	'emoji', 'image', 'video', 'file', '\n',
+	'emoji',
+	'image',
+	'gif',
+	'video',
+	'file',
+	'\n',
 	// Do
-	'undo', 'redo', '|',
+	'undo',
+	'redo',
+	'|',
 	// Font
-	'paragraph', 'brush', 'bold', 'italic', '|',
+	'paragraph',
+	'brush',
+	'bold',
+	'italic',
+	'|',
 	// Align
-	'left', 'center', 'right', '|',
+	'left',
+	'center',
+	'right',
+	'|',
 	// List
-	'ul', 'ol', '|',
+	'ul',
+	'ol',
+	'|',
 	// Table
 	'table'
-	// {
-	// 	name: 'empty',
-	// 	icon: 'source',
-	// 	exec: function (editor) {
-	// 		const dialog = new Jodit.modules.Dialog({}),
-	// 		text = editor.c.element('textarea');
-	//
-	// 		dialog.setHeader('Source code');
-	// 		dialog.setContent(text);
-	// 		dialog.setSize(400, 300);
-	//
-	// 		Jodit.modules.Helpers.css(elm, {
-	// 			width: '100%',
-	// 			height: '100%'
-	// 		})
-	//
-	// 		dialog.open();
-	// 	}
-	// },
-	// {
-	// 	name: 'listsss',
-	// 	iconURL: 'stuf/dummy.png',
-	// 	list: {
-	// 		h1: 'insert Header 1',
-	// 		h2: 'insert Header 2',
-	// 		clear: 'Empty editor',
-	// 	},
-	// 	exec: ({originalEvent, control, btn}) => {
-	// 		var key = control.args[0],
-	// 			value = control.args[1];
-	// 		if (key === 'clear') {
-	// 			this.val('');
-	// 			return;
-	// 		}
-	// 		this.s.insertNode(this.c.element(key, ''));
-	// 		this.e.fire('errorMessage', 'Was inserted ' + value);
-	// 	},
-	// 	template: function (key, value) {
-	// 		return '<div>' + value + '</div>';
-	// 	}
-	// }
 ];
 Jodit.defaultOptions.buttons = buttons;
 Jodit.defaultOptions.buttonsMD = buttons; // The list of buttons that appear in the editor's toolbar on medium places (≥ options.sizeMD).
@@ -75,7 +45,8 @@ Jodit.defaultOptions.buttonsXS = buttons; // The list of buttons that appear in 
 // Jodit.defaultOptions.extraButtons = {} // These buttons list will be added to option.buttons
 
 // Plugins
-Jodit.defaultOptions.extraPlugins = [ // Init and download extra plugins. It will try load %SCRIPT_PATH%/plugins/emoji/emoji.js and after load will try init it
+// Init and download extra plugins. It will try load %SCRIPT_PATH%/plugins/emoji/emoji.js and after load will try init it
+Jodit.defaultOptions.extraPlugins = [
 	'autocomplete',
 	'backup',
 	'change-case',
@@ -96,27 +67,9 @@ Jodit.defaultOptions.extraPlugins = [ // Init and download extra plugins. It wil
 	'paste-from-word-pro'
 ];
 
-// ExtraIcons
-Jodit.defaultOptions.extraIcons = { // By default, you can only install an icon from the Jodit suite. You can add your icon to the set using the Jodit.modules.Icon.set (name, svg Code) method. But for a declarative declaration, you can use this option.
-	leftIcon:
-		'<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">\n' +
-		'    <path data-name="패스 7787" d="M0 0h24v24H0z" style="fill:none"/>\n' +
-		'    <path data-name="패스 7788" d="M3 4h12.706v1.412H3zm0 10.588h9.882V16H3zm0-3.529h12.706v1.412H3zm0-3.53h9.882v1.412H3z" transform="translate(3 2)" style="fill:#242a3c"/>\n' +
-		'</svg>'
-};
-
-
-// commandToHotkeys
-// commandToHotkeys: IDictionary<string | string[], string>
-
-// controls
-// controls: Controls, // Behavior for buttons
-
-// countHTMLChars
-// countHTMLChars: boolean
-
 // createAttributes
-Jodit.defaultOptions.createAttributes = { // Default attributes for created inside editor elements
+// Default attributes for created inside editor elements
+Jodit.defaultOptions.createAttributes = {
 	// div: {
 	// 	class: 'test'
 	// },
@@ -124,7 +77,7 @@ Jodit.defaultOptions.createAttributes = { // Default attributes for created insi
 	// 	ul.classList.add('ui-test');
 	// },
 	table: {
-		style: 'border-collapse:collapse; width: 100%; border: 1px solid #bdbdbd; margin:auto; display:inline-block;'
+		style: 'border-collapse:collapse; width: 100%; border: 1px solid #bdbdbd;'
 	},
 	tbody: {
 		style: 'display: table; width: 100%; height: 100%;'
@@ -135,14 +88,13 @@ Jodit.defaultOptions.createAttributes = { // Default attributes for created insi
 	td: {
 		style: 'border: 1px solid #bdbdbd;'
 	}
-}
+};
 
 // defaultAjaxOptions
 // A set of key/value pairs that configure the Ajax request. All settings are optional
 // defaultAjaxOptions: AjaxOptions
 
 // Font
-Jodit.defaultOptions.defaultFontSizePoints = "px";
 Jodit.defaultOptions.defaultLineHeight = 1.5; // Default line spacing for the entire editor
 
 // defaultTimeout
@@ -158,10 +110,11 @@ Jodit.defaultOptions.defaultLineHeight = 1.5; // Default line spacing for the en
 // draggableTags: string | string[], // Draggable elements
 
 // iframe
-Jodit.defaultOptions.iframe = false;
-Jodit.defaultOptions.iframeStyle = 'html{margin: 40px;}' +
-	'body{padding:10px;background:transparent;color:#000;position:relative;z-index:2;user-select:auto;margin:0px;overflow:hidden; text-align: center;}' +
-	'body:after{content:"";clear:both;display:block}';
+Jodit.defaultOptions.iframe = true;
+// Jodit.defaultOptions.iframeStyle =
+// 	'html{margin: 40px;}' +
+// 	'body{padding:10px;background:transparent;color:#000;position:relative;z-index:2;user-select:auto;margin:0px;overflow:hidden; text-align: center;}' +
+// 	'body:after{content:"";clear:both;display:block}';
 // Jodit.defaultOptions.iframeCSSLinks = ['styles/default.css'];
 // Jodit.defaultOptions.editHTMLDocumentMode = true; // Allow editing the entire HTML document(html, head)
 
@@ -171,28 +124,33 @@ Jodit.defaultOptions.editorCssClass = 'superclub'; // Class name that can be app
 // File
 Jodit.defaultOptions.enableDragAndDropFileToEditor = true; // Enable drag and drop file editor
 
-// Enter
-// Jodit.defaultOptions.enter = "br"; // Element that will be created when you press Enter
-Jodit.defaultOptions.enterBlock = "br"; // Use when you need insert new block element use enter option if not set
-
-// History
-Jodit.defaultOptions.history = { enable: true }
-
 // Language
-Jodit.defaultOptions.language = navigator.language && navigator.language.substr(0, 2); // Language by default. if auto language set by document.documentElement.lang || (navigator.language && navigator.language.substr(0, 2)) || (navigator.browserLanguage && navigator.browserLanguage.substr(0, 2)) || 'en'
+Jodit.defaultOptions.language =
+	navigator.language && navigator.language.substr(0, 2); // Language by default. if auto language set by document.documentElement.lang || (navigator.language && navigator.language.substr(0, 2)) || (navigator.browserLanguage && navigator.browserLanguage.substr(0, 2)) || 'en'
 Jodit.defaultOptions.i18n = {
-	ko: { 'Insert Emoji': 'Начните что-либо вводить' }
-}
+	ko: {
+		gif: 'GIF',
+		'Insert Emoji': '이모지 추가',
+		'Search emoji': '이모지 검색',
+		'Smileys & Emotion': 'Smileys & Emotion',
+		'People & Body': 'People & Body',
+		'Animals & Nature': 'Animals & Nature',
+		'Food & Drink': 'Food & Drink',
+		'Travel & Places': 'Travel & Places',
+		Activities: 'Activities',
+		Objects: 'Objects',
+		Flags: 'Flags',
+		'Click to tune': '조정하려면 클릭'
+	}
+};
 
 // Style
-Jodit.defaultOptions.width = '100%';
-Jodit.defaultOptions.height = '100%';
-Jodit.defaultOptions.zIndex = 1
+Jodit.defaultOptions.zIndex = 1;
 Jodit.defaultOptions.inline = false; // Inline editing mode
 Jodit.defaultOptions.fullsize = false; // Open WYSIWYG in full screen
 Jodit.defaultOptions.hidePoweredByJodit = true; // Hide the link to the Jodit site at the bottom of the editor
 // Jodit.defaultOptions.indentMargin = 10; // The number of pixels to use for indenting the current line.
-Jodit.defaultOptions.theme = 'default'
+Jodit.defaultOptions.theme = 'default';
 Jodit.defaultOptions.toolbar = true; // Boolean, whether the toolbar should be shown. Alternatively, a valid css-selector-string to use an element as toolbar container.
 
 // Function
@@ -201,16 +159,21 @@ Jodit.defaultOptions.addNewLineDeltaShow = false; // Absolute delta between curs
 Jodit.defaultOptions.addNewLineTagsTriggers = [
 	'span',
 	'p',
-	'h1', 'h2', 'h3', 'h4', 'h5', 'h6',
+	'h1',
+	'h2',
+	'h3',
+	'h4',
+	'h5',
+	'h6',
 	'table',
 	'iframe',
 	'img',
 	'hr',
 	'pre',
 	'jodit'
-]
+];
 Jodit.defaultOptions.processPasteFromWord = false; // Handle pasting of HTML - similar to a fragment copied from MSWord
-Jodit.defaultOptions.processPasteHTML = false // Handle pasted text - similar to HTML
+Jodit.defaultOptions.processPasteHTML = false; // Handle pasted text - similar to HTML
 Jodit.defaultOptions.askBeforePasteFromWord = false; // Show the paste dialog if the html is similar to what MSWord gives when copying.
 Jodit.defaultOptions.askBeforePasteHTML = false; // Ask before paste HTML in WYSIWYG mode
 // defaultActionOnPaste: InsertMode = INSERT_AS_HTML // Default insert method
@@ -222,15 +185,15 @@ Jodit.defaultOptions.cleanHTML = {
 
 // Autofocus
 Jodit.defaultOptions.autofocus = true;
-Jodit.defaultOptions.cursorAfterAutofocus = "end";
+Jodit.defaultOptions.cursorAfterAutofocus = 'end';
 
 // Font
-Jodit.defaultOptions.style = false // The font of editor
+Jodit.defaultOptions.style = false; // The font of editor
 
 // Color
 Jodit.defaultOptions.colorPickerDefaultTab = 'color'; // The default tab color picker
 Jodit.defaultOptions.colors = ['#ff0000', '#00ff00', '#0000ff']; // The colors in HEX representation to select a color for the background and for the text in colorpicker
-Jodit.defaultOptions.showBrowserColorPicker = false // shows a INPUT[type=color] to open the browser color picker, on the right bottom of widget color picker
+Jodit.defaultOptions.showBrowserColorPicker = false; // shows a INPUT[type=color] to open the browser color picker, on the right bottom of widget color picker
 
 // Media
 // mediaBlocks
@@ -252,13 +215,7 @@ Jodit.defaultOptions.uploader = {
 Jodit.defaultOptions.filebrowser = {
 	ajax: { url: 'https://xdsoft.net/jodit/finder/' },
 	height: 580
-}
-// Jodit.defaultOptions.events = {
-// 	afterConstructor: () => {
-// 		editor.filebrowser.setMod('modal', true).open();
-// 	}
-// }
-
+};
 
 // Image
 Jodit.defaultOptions.imageDefaultWidth = 500; // Image size defaults to a larger image
@@ -280,7 +237,7 @@ Jodit.defaultOptions.image = {
 	showPreview: true, // Show preview image
 	useImageEditor: false // Show crop/resize btn
 };
-Jodit.defaultOptions.imageProcessor = { replaceDataURIToBlobIdInView: false }
+Jodit.defaultOptions.imageProcessor = { replaceDataURIToBlobIdInView: false };
 // Jodit.defaultOptions.imageeditor: ImageEditorOptions
 
 // Limit
@@ -334,13 +291,8 @@ Jodit.defaultOptions.useInputsPlaceholder = true; // Use a placeholder from orig
 // popup
 // popup: IDictionary<(string | IControlType<IViewBased<IViewOptions> | IJodit | IFileBrowser<IFileBrowserOptions>, IToolbarButton>)[] | ((editor: IJodit, target: undefined | HTMLElement, close: (() => void)) => string | HTMLElement | (string | IControlType<IViewBased<IViewOptions> | IJodit | IFileBrowser<IFileBrowserOptions>, IToolbarButton>)[]), string>
 
-// preset
-// preset: string = 'custom'
-// presets
-// presets: IDictionary<any, string> = ...
-
 // Readonly
-Jodit.defaultOptions.readonly = false // Change the read-only state of the editor
+Jodit.defaultOptions.readonly = false; // Change the read-only state of the editor
 
 // removeButtons
 // removeButtons: string[] = []
@@ -355,14 +307,18 @@ Jodit.defaultOptions.readonly = false // Change the read-only state of the edito
 Jodit.defaultOptions.resizer = {
 	useAspectRatio: ['img'], // save only for images (default value)
 	min_width: 100,
-	min_height: 100,
+	min_height: 100
 };
 Jodit.defaultOptions.allowResizeX = false;
 Jodit.defaultOptions.allowResizeY = false;
-Jodit.defaultOptions.allowResizeTags = ['img', 'iframe', 'table', 'jodit'];
+Jodit.defaultOptions.allowResizeTags = [
+	'img',
+	'iframe',
+	// 'table',
+	'jodit'
+];
 
 // Safe
-Jodit.defaultOptions.safeMode = false // Editor loads completely without plugins. Useful when debugging your own plugin.
 // Jodit.defaultOptions.safePluginsList = ['about'];
 // Jodit.defaultOptions.extraPlugins = ['yourPluginDev'];
 
@@ -484,21 +440,20 @@ Jodit.defaultOptions.select = {
 Jodit.defaultOptions.table = {
 	selectionCellStyle: true,
 	useExtraClassesOptions: true
-}
-Jodit.defaultOptions.tableAllowCellResize = true
+};
+Jodit.defaultOptions.tableAllowCellResize = true;
 Jodit.defaultOptions.tableAllowCellSelection = true;
 
 // Toolbar
-Jodit.defaultOptions.toolbarAdaptive = false // After resize it will change buttons set for different sizes
-Jodit.defaultOptions.toolbarButtonSize = 'large' // Size of icons in the toolbar (can be "small", "middle", "large")
-Jodit.defaultOptions.toolbarDisableStickyForMobile = false
-Jodit.defaultOptions.toolbarInline = false
+Jodit.defaultOptions.toolbarAdaptive = false; // After resize it will change buttons set for different sizes
+Jodit.defaultOptions.toolbarButtonSize = 'large'; // Size of icons in the toolbar (can be "small", "middle", "large")
+Jodit.defaultOptions.toolbarDisableStickyForMobile = false;
+Jodit.defaultOptions.toolbarInline = false;
 // toolbarInlineDisableFor: string | string[]
 // toolbarInlineDisabledButtons: string[]
 // toolbarInlineForSelection: boolean
-Jodit.defaultOptions.toolbarSticky = false
+Jodit.defaultOptions.toolbarSticky = false;
 // toolbarStickyOffset: 100 // For example, in Joomla, the top menu bar closes Jodit toolbar when scrolling. Therefore, it is necessary to move the toolbar Jodit by this amount more
-
 
 // triggerChangeEvent
 // triggerChangeEvent: boolean = true
@@ -529,10 +484,9 @@ Jodit.defaultOptions.toolbarSticky = false
 // Type declaration
 // exclude: (keyof HTMLElementTagNameMap)[]
 
-
 // showWordsCounter
-Jodit.defaultOptions.showWordsCounter = false
-Jodit.defaultOptions.showXPathInStatusbar = false
-Jodit.defaultOptions.sizeLG = 900 // The width of the editor, accepted as the biggest. Used to the responsive version of the editor
-Jodit.defaultOptions.sizeMD = 700 // The width of the editor, accepted as the medium. Used to the responsive version of the editor
-Jodit.defaultOptions.sizeSM = 400 // The width of the editor, accepted as the small. Used to the responsive version of the editor
+Jodit.defaultOptions.showWordsCounter = false;
+Jodit.defaultOptions.showXPathInStatusbar = false;
+Jodit.defaultOptions.sizeLG = 900; // The width of the editor, accepted as the biggest. Used to the responsive version of the editor
+Jodit.defaultOptions.sizeMD = 700; // The width of the editor, accepted as the medium. Used to the responsive version of the editor
+Jodit.defaultOptions.sizeSM = 400; // The width of the editor, accepted as the small. Used to the responsive version of the editor

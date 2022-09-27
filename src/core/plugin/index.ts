@@ -10,3 +10,8 @@
 
 export * from './plugin-system';
 export * from './plugin';
+
+export { license } from './license/license';
+
+// Disable CopyRight
+export function poweredByJodit(): void {}

@@ -1,7 +1,7 @@
 /*!
- * Jodit Editor PRO (https://xdsoft.net/jodit/)
- * See LICENSE.md in the project root for license information.
- * Copyright (c) 2013-2022 Valeriy Chupurnov. All rights reserved. https://xdsoft.net/jodit/pro/
+ * Jodit Editor (https://xdsoft.net/jodit/)
+ * Released under MIT see LICENSE.txt in the project root for license information.
+ * Copyright (c) 2013-2022 Valeriy Chupurnov. All rights reserved. https://xdsoft.net
  */
 
 /**
@@ -62,7 +62,8 @@ export class Config implements IViewOptions {
 	 * })
 	 * ```
 	 */
-	width: number | string = 'auto';
+	width: number | string = '100%';
+	// width: number | string = 'auto';
 
 	/**
 	 * Editor's height
@@ -86,7 +87,8 @@ export class Config implements IViewOptions {
 	 * })
 	 * ```
 	 */
-	height: number | string = 'auto';
+	height: number | string = '100%';
+	// height: number | string = 'auto';
 
 	/**
 	 * List of plugins that will be initialized in safe mode.
@@ -585,7 +587,26 @@ export class Config implements IViewOptions {
 	 * ```
 	 * It will try load %SCRIPT_PATH%/plugins/emoji/emoji.js and after load will try init it
 	 */
-	extraPlugins: Array<string | IExtraPlugin> = [];
+	extraPlugins: Array<string | IExtraPlugin> = [
+		'autocomplete',
+		'backup',
+		'change-case',
+		'color-picker',
+		'emoji',
+		'finder',
+		'google-search',
+		'paste-code',
+		'keyboard',
+		'show-blocks',
+		'button-generator',
+		'tune-block',
+		'highlight-signature',
+		'google-maps',
+		'page-break',
+		'export-docs',
+		'iframe-editor',
+		'paste-from-word-pro'
+	];
 
 	/**
 	 * Base path for download extra plugins
@@ -675,7 +696,17 @@ export class Config implements IViewOptions {
 	 */
 	createAttributes: IDictionary<Attributes | NodeFunction> = {
 		table: {
-			style: 'border-collapse:collapse;width: 100%;'
+			style:
+				'border-collapse:collapse; width: 100%; border: 1px solid #bdbdbd;'
+		},
+		tbody: {
+			style: 'display: table; width: 100%; height: 100%;'
+		},
+		th: {
+			style: 'border: 1px solid #bdbdbd;'
+		},
+		td: {
+			style: 'border: 1px solid #bdbdbd;'
 		}
 	};
 
@@ -941,22 +972,26 @@ export class Config implements IViewOptions {
 	}
 }
 
-Config.prototype.controls.font.list = {
-	'andale mono,monospace': 'Andale Mono',
-	'arial,helvetica,sans-serif': 'Arial',
-	'arial black,sans-serif': 'Arial Black',
-	'book antiqua,palatino,serif': 'Book Antiqua',
-	'comic sans ms,sans-serif': 'Comic Sans MS',
-	'courier new,courier,monospace': 'Courier New',
-	'georgia,palatino,serif': 'Georgia',
-	'helvetica,arial,sans-serif': 'Helvetica',
-	'impact,sans-serif': 'Impact',
-	'symbol,sans-serif': 'Symbol',
-	'tahoma,arial,helvetica,sans-serif': 'Tahoma',
-	'terminal,monaco,monospace': 'Terminal',
-	'times new roman,times,serif': 'Times New Roman',
-	'trebuchet ms,geneva,sans-serif': 'Trebuchet MS',
-	'verdana,geneva,sans-serif': 'Verdana',
-	webdings: 'Webdings',
-	'wingdings,zapf dingbats': 'Wingdings'
+Config.prototype.controls = {
+	font: {
+		list: {
+			'andale mono,monospace': 'Andale Mono',
+			'arial,helvetica,sans-serif': 'Arial',
+			'arial black,sans-serif': 'Arial Black',
+			'book antiqua,palatino,serif': 'Book Antiqua',
+			'comic sans ms,sans-serif': 'Comic Sans MS',
+			'courier new,courier,monospace': 'Courier New',
+			'georgia,palatino,serif': 'Georgia',
+			'helvetica,arial,sans-serif': 'Helvetica',
+			'impact,sans-serif': 'Impact',
+			'symbol,sans-serif': 'Symbol',
+			'tahoma,arial,helvetica,sans-serif': 'Tahoma',
+			'terminal,monaco,monospace': 'Terminal',
+			'times new roman,times,serif': 'Times New Roman',
+			'trebuchet ms,geneva,sans-serif': 'Trebuchet MS',
+			'verdana,geneva,sans-serif': 'Verdana',
+			webdings: 'Webdings',
+			'wingdings,zapf dingbats': 'Wingdings'
+		}
+	}
 };

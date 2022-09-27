@@ -1,14 +1,14 @@
 /*!
- * Jodit Editor PRO (https://xdsoft.net/jodit/)
- * See LICENSE.md in the project root for license information.
- * Copyright (c) 2013-2022 Valeriy Chupurnov. All rights reserved. https://xdsoft.net/jodit/pro/
+ * Jodit Editor (https://xdsoft.net/jodit/)
+ * Released under MIT see LICENSE.txt in the project root for license information.
+ * Copyright (c) 2013-2022 Valeriy Chupurnov. All rights reserved. https://xdsoft.net
  */
 
 import './resize.less';
 
-import type { CallbackFunction, IPointBound, IUIElement } from 'jodit/types';
-import { css } from 'jodit/core/helpers';
-import { Dom } from 'jodit/core/dom';
+import type { CallbackFunction, IPointBound, IUIElement } from '../../types';
+import { css } from '../../core/helpers';
+import { Dom } from '../../core/dom';
 
 type IDirection = 'right' | 'left' | 'top' | 'bottom';
 

@@ -1,0 +1,20 @@
+/*!
+ * jodit - Jodit is awesome and usefully wysiwyg editor with filebrowser
+ * Author: Chupurnov <chupurnov@gmail.com> (https://xdsoft.net/)
+ * Version: v3.20.4
+ * Url: https://xdsoft.net/jodit/
+ * License(s): MIT
+ */
+	
+.jodit-autocomplete-item {
+  display: flex;
+  min-width: 6em;
+  align-items: center;
+  padding: var(--jd-padding-default) var(--jd-padding-default);
+  cursor: default;
+}
+.jodit-autocomplete-item_active_true {
+  background-color: var(--jd-color-background-active);
+  color: var(--jd-color-white);
+}
+

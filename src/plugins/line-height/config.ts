@@ -28,7 +28,7 @@ declare module 'jodit/config' {
 	}
 }
 
-Config.prototype.defaultLineHeight = null;
+Config.prototype.defaultLineHeight = 1.5;
 
 Icon.set('line-height', require('./line-height.svg'));
 

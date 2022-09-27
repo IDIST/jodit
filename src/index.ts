@@ -1,26 +1,40 @@
 /*!
- * Jodit Editor PRO (https://xdsoft.net/jodit/)
- * See LICENSE.md in the project root for license information.
- * Copyright (c) 2013-2022 Valeriy Chupurnov. All rights reserved. https://xdsoft.net/jodit/pro/
+ * Jodit Editor (https://xdsoft.net/jodit/)
+ * Released under MIT see LICENSE.txt in the project root for license information.
+ * Copyright (c) 2013-2022 Valeriy Chupurnov. All rights reserved. https://xdsoft.net
+ */
+
+/**
+ * [[include:README.md]]
+ * @packageDocumentation
+ * @module jodit
  */
 
 import './styles/index.less';
 
-import { JoditPro } from './JoditPro';
-import * as Modules from './modules/';
-import * as plugins from './plugins';
-import {Jodit as DefaultJodit} from "./jodit";
-import * as Icons from "./styles/icons";
-import * as decorators from "./core/decorators";
-import Languages from "./langs";
-
-
 declare function require(moduleName: string): any;
-const esFilter = (key: string): boolean => key !== '__esModule';
 
-Object.keys(plugins).forEach((pluginName) =>
-	JoditPro.plugins.add(pluginName, (plugins as any)[pluginName])
-);
+if (process.env.TARGET_ES !== 'es2018' && typeof window !== 'undefined') {
+	require('./polyfills');
+}
+
+import { Jodit as DefaultJodit } from './jodit';
+
+import Languages from './langs/';
+
+import * as decorators from './core/decorators';
+import * as constants from './core/constants';
+import * as Modules from './modules/';
+import * as Icons from './styles/icons/';
+
+import 'jodit/plugins/index';
+
+// copy constants in Jodit
+Object.keys(constants).forEach((key: string) => {
+	(DefaultJodit as any)[key] = (constants as any)[key];
+});
+
+const esFilter = (key: string): boolean => key !== '__esModule';
 
 // Icons
 Object.keys(Icons)
@@ -57,4 +71,4 @@ Object.keys(Languages)
 		DefaultJodit.lang[key] = (Languages as any)[key];
 	});
 
-export const Jodit = JoditPro;
+export { DefaultJodit as Jodit };
