@@ -110,7 +110,7 @@ Jodit.defaultOptions.defaultLineHeight = 1.5; // Default line spacing for the en
 // draggableTags: string | string[], // Draggable elements
 
 // iframe
-Jodit.defaultOptions.iframe = true;
+Jodit.defaultOptions.iframe = false;
 // Jodit.defaultOptions.iframeStyle =
 // 	'html{margin: 40px;}' +
 // 	'body{padding:10px;background:transparent;color:#000;position:relative;z-index:2;user-select:auto;margin:0px;overflow:hidden; text-align: center;}' +
