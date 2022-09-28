@@ -49,4 +49,8 @@ export class CustomEditor
 	selectAll(): void {}
 
 	replaceUndoManager(): void {}
+
+	readonly isFocused: boolean = false;
+
+	blur(): void {}
 }
