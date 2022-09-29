@@ -188,7 +188,8 @@ export class Config implements IViewOptions {
 	 * });
 	 * ```
 	 */
-	toolbarButtonSize: IUIButtonState['size'] = 'middle';
+	toolbarButtonSize: IUIButtonState['size'] = 'large';
+	toolbarFirstButtonSize: IUIButtonState['size'] = 'full';
 
 	/**
 	 * Allow navigation in the toolbar of the editor by Tab key
@@ -544,12 +545,12 @@ export class Config implements IViewOptions {
 	 * })
 	 * ```
 	 */
-	colorPickerDefaultTab: 'background' | 'color' = 'background';
+	colorPickerDefaultTab: 'background' | 'color' = 'color';
 
 	/**
 	 * Image size defaults to a larger image
 	 */
-	imageDefaultWidth: number = 300;
+	imageDefaultWidth: number = 500;
 
 	/**
 	 * Do not display these buttons that are on the list
@@ -696,8 +697,7 @@ export class Config implements IViewOptions {
 	 */
 	createAttributes: IDictionary<Attributes | NodeFunction> = {
 		table: {
-			style:
-				'border-collapse:collapse; width: 100%; border: 1px solid #bdbdbd;'
+			style: 'border-collapse:collapse; width: 100%; border: 1px solid #bdbdbd;'
 		},
 		tbody: {
 			style: 'display: table; width: 100%; height: 100%;'
@@ -949,7 +949,7 @@ export class Config implements IViewOptions {
 	 */
 	controls!: Controls;
 
-	events: IDictionary<(...args: any[]) => any> = {};
+	// events: IDictionary<(...args: any[]) => any> = {};
 
 	/**
 	 * Buttons in toolbat without SVG - only texts
@@ -959,7 +959,7 @@ export class Config implements IViewOptions {
 	/**
 	 * shows a INPUT[type=color] to open the browser color picker, on the right bottom of widget color picker
 	 */
-	showBrowserColorPicker: boolean = true;
+	showBrowserColorPicker: boolean = false;
 
 	private static __defaultOptions: Config;
 

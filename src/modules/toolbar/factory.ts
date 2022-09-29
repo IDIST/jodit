@@ -27,6 +27,9 @@ import { ToolbarContent } from './button/content';
 
 /**
  * Collection factory
+ *
+ * @param jodit
+ * @param parentElement
  */
 export function makeCollection(
 	jodit: IViewBased,
@@ -47,6 +50,11 @@ export function makeCollection(
 	if (jodit.o.toolbarButtonSize) {
 		collection.buttonSize = jodit.o.toolbarButtonSize;
 	}
+
+	// if (jodit.o.toolbarFirstButtonSize) {
+	// 	console.log(collection.elements);
+	// 		// .buttonSize = jodit.o.toolbarFirstButtonSize;
+	// }
 
 	return collection;
 }

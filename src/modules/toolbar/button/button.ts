@@ -173,8 +173,8 @@ export class ToolbarButton<T extends IViewBased = IViewBased>
 	/** @override */
 	protected override createContainer(): HTMLElement {
 		const cn = this.componentName;
-		const container = this.j.c.span(cn),
-			button = super.createContainer();
+		const container = this.j.c.span(cn);
+		const button = super.createContainer();
 
 		attr(container, 'role', 'listitem');
 

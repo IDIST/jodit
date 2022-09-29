@@ -21,12 +21,12 @@ export const defaultLanguage = (
 		return language;
 	}
 
-	if (document.documentElement && document.documentElement.lang) {
-		return document.documentElement.lang;
-	}
-
 	if (navigator.language) {
 		return navigator.language.substring(0, 2);
+	}
+
+	if (document.documentElement && document.documentElement.lang) {
+		return document.documentElement.lang;
 	}
 
 	return defaultLanguage;

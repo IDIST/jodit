@@ -52,5 +52,5 @@ declare module 'jodit/config' {
 }
 
 Config.prototype.showPlaceholder = true;
-Config.prototype.placeholder = 'Type something';
+Config.prototype.placeholder = '';
 Config.prototype.useInputsPlaceholder = true;

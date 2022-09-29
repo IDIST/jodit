@@ -96,7 +96,6 @@ export class UIButton extends UIElement implements IUIButton {
 	@watch('parentElement')
 	protected updateSize(): void {
 		const pe = this.closest(UIList) as UIList;
-
 		if (pe) {
 			this.state.size = pe.buttonSize;
 			return;
@@ -213,11 +212,9 @@ export class UIButton extends UIElement implements IUIButton {
 
 	constructor(jodit: IViewBased, state?: IUIButtonStatePartial) {
 		super(jodit);
-
 		this.updateSize();
 		this.onChangeSize();
 		this.onChangeStatus();
-
 		if (state) {
 			this.hookStatus(STATUSES.ready, () => {
 				this.setState(state);
@@ -295,6 +292,5 @@ export function Button(
 	} else {
 		button.setState(stateOrText);
 	}
-
 	return button;
 }

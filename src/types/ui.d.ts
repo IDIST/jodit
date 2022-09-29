@@ -31,6 +31,9 @@ export interface IUIElement
 	container: HTMLElement;
 	name: string;
 
+	text?: HTMLElement;
+	mode?: 'vertical'|'horizontal';
+
 	/**
 	 * Apply callback for all parents
 	 */
@@ -59,7 +62,7 @@ export type ButtonVariant =
 	| 'danger';
 
 export interface IUIButtonState {
-	size: 'tiny' | 'xsmall' | 'small' | 'middle' | 'large';
+	size: 'tiny' | 'xsmall' | 'small' | 'middle' | 'large' | 'full';
 	name: string;
 	value: string | number | boolean;
 
@@ -95,6 +98,7 @@ export interface IUIButton extends IViewComponent, IUIElement, IFocusable {
 }
 
 export interface IUIGroup extends IUIElement {
+	buttonSize: "tiny" | "xsmall" | "small" | "middle" | "large" | "full";
 	elements: IUIElement[];
 	allChildren: IUIElement[];
 	append(elm: IUIElement | IUIElement[], distElement?: string): this;

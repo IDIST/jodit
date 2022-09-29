@@ -63,8 +63,8 @@ declare module 'jodit/config' {
 	}
 }
 
-Config.prototype.askBeforePasteFromWord = true;
-Config.prototype.processPasteFromWord = true;
+Config.prototype.askBeforePasteFromWord = false;
+Config.prototype.processPasteFromWord = false;
 Config.prototype.defaultActionOnPasteFromWord = null;
 
 Config.prototype.pasteFromWordActionList = [

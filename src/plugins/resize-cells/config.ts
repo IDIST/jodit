@@ -16,4 +16,5 @@ declare module 'jodit/config' {
 	}
 }
 
+// TODO: 마지막 셀은 움직이면 안됨
 Config.prototype.tableAllowCellResize = true;

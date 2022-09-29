@@ -36,6 +36,7 @@ interface IToolbarOptions {
 	toolbar?: boolean | string | HTMLElement;
 	readonly theme?: string;
 	readonly toolbarButtonSize?: IUIButtonState['size'];
+	readonly toolbarFirstButtonSize?: IUIButtonState['size'];
 	readonly textIcons?: boolean | ((key: string) => boolean);
 
 	readonly extraButtons?: Buttons;

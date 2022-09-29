@@ -36,7 +36,6 @@ export class Icon {
 		if (!isProd && !icon) {
 			console.log(`Icon "${name}" not found`);
 		}
-
 		return icon;
 	}
 
