@@ -6,77 +6,9 @@
 
 Jodit.defaultOptions.license = 'CC3FM-00670-AS5MN-T56AZ';
 
-// buttons
-// The list of buttons that appear in the editor's toolbar on large places (≥ options.sizeLG). Note - this is not the width of the device, the width of the editor
-const buttons = [
-	// Media
-	'emoji',
-	'image',
-	'gif',
-	'video',
-	'file',
-	'\n',
-	// Do
-	'undo',
-	'redo',
-	'|',
-	// Font
-	'paragraph',
-	'brush',
-	'bold',
-	'italic',
-	'|',
-	'\n',
-	// Align
-	'left',
-	'center',
-	'right',
-	'|',
-	// List
-	'ul',
-	'ol',
-	'|',
-	// Table
-	'table'
-];
-Jodit.defaultOptions.buttons = buttons;
-Jodit.defaultOptions.buttonsMD = buttons; // The list of buttons that appear in the editor's toolbar on medium places (≥ options.sizeMD).
-Jodit.defaultOptions.buttonsSM = buttons; // The list of buttons that appear in the editor's toolbar on small places (≥ options.sizeSM).
-Jodit.defaultOptions.buttonsXS = buttons; // The list of buttons that appear in the editor's toolbar on small places (≥ options.sizeSM).
-// Jodit.defaultOptions.extraButtons = {} // These buttons list will be added to option.buttons
-
-// Plugins
-// Init and download extra plugins. It will try load %SCRIPT_PATH%/plugins/emoji/emoji.js and after load will try init it
-Jodit.defaultOptions.extraPlugins = [
-	'autocomplete',
-	'backup',
-	'change-case',
-	'color-picker',
-	'emoji',
-	'finder',
-	'google-search',
-	'paste-code',
-	'keyboard',
-	'show-blocks',
-	'button-generator',
-	'tune-block',
-	'highlight-signature',
-	'google-maps',
-	'page-break',
-	'export-docs',
-	'iframe-editor',
-	'paste-from-word-pro'
-];
-
 // createAttributes
 // Default attributes for created inside editor elements
 Jodit.defaultOptions.createAttributes = {
-	// div: {
-	// 	class: 'test'
-	// },
-	// ul: function (ul) {
-	// 	ul.classList.add('ui-test');
-	// },
 	table: {
 		style: 'border-collapse:collapse; width: 100%; border: 1px solid #bdbdbd;'
 	},
@@ -99,33 +31,6 @@ Jodit.defaultOptions.iframe = false;
 
 // editorCssClass
 Jodit.defaultOptions.editorCssClass = 'superclub'; // Class name that can be appended to the editor
-
-// Language
-Jodit.defaultOptions.i18n = {
-	ko: {
-		gif: 'GIF',
-		'Insert Emoji': '이모지 추가',
-		'Search emoji': '이모지 검색',
-		'Smileys & Emotion': 'Smileys & Emotion',
-		'People & Body': 'People & Body',
-		'Animals & Nature': 'Animals & Nature',
-		'Food & Drink': 'Food & Drink',
-		'Travel & Places': 'Travel & Places',
-		Activities: 'Activities',
-		Objects: 'Objects',
-		Flags: 'Flags',
-		'Click to tune': '조정하려면 클릭'
-	}
-};
-
-// Style
-Jodit.defaultOptions.zIndex = 1;
-Jodit.defaultOptions.inline = false; // Inline editing mode
-Jodit.defaultOptions.fullsize = false; // Open WYSIWYG in full screen
-Jodit.defaultOptions.hidePoweredByJodit = true; // Hide the link to the Jodit site at the bottom of the editor
-// Jodit.defaultOptions.indentMargin = 10; // The number of pixels to use for indenting the current line.
-Jodit.defaultOptions.theme = 'default';
-Jodit.defaultOptions.toolbar = true; // Boolean, whether the toolbar should be shown. Alternatively, a valid css-selector-string to use an element as toolbar container.
 
 // Function
 Jodit.defaultOptions.addNewLineOnDBLClick = true; // On dbl click on empty space of editor it add new P element

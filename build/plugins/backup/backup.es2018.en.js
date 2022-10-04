@@ -76,8 +76,8 @@ config/* Config.prototype.controls.backup */.D.prototype.controls.backup = {
 icon/* Icon.set */.J.set('restore', __webpack_require__(44625));
 (0,global/* extendLang */.xl)(__webpack_require__(62800));
 
-// EXTERNAL MODULE: ./src/core/plugin/index.ts + 1 modules
-var core_plugin = __webpack_require__(91729);
+// EXTERNAL MODULE: ./src/core/plugin/index.ts
+var core_plugin = __webpack_require__(35570);
 ;// CONCATENATED MODULE: ./src/plugins/backup/modules/store.ts
 /*!
  * Jodit Editor PRO (https://xdsoft.net/jodit/)
@@ -338,7 +338,7 @@ var src = __webpack_require__(33594);
 
 
 
-class backup extends core_plugin/* Plugin */.Sy {
+class backup extends core_plugin/* Plugin */.S {
     constructor() {
         var _a;
         super(...arguments);

@@ -193,8 +193,8 @@ config/* Config.prototype.controls.showBlocks */.D.prototype.controls.showBlocks
     command: 'toggleShowBlocks'
 };
 
-// EXTERNAL MODULE: ./src/core/plugin/index.ts + 1 modules
-var core_plugin = __webpack_require__(91729);
+// EXTERNAL MODULE: ./src/core/plugin/index.ts
+var core_plugin = __webpack_require__(35570);
 // EXTERNAL MODULE: ./src/modules/index.ts + 15 modules
 var modules = __webpack_require__(81165);
 // EXTERNAL MODULE: ./src/core/ui/index.ts + 2 modules
@@ -222,7 +222,7 @@ var src = __webpack_require__(33594);
 function svgToUrl(svg) {
     return `data:image/svg+xml;utf8,${escape(svg)}`;
 }
-class showBlocks extends core_plugin/* Plugin */.Sy {
+class showBlocks extends core_plugin/* Plugin */.S {
     constructor(jodit) {
         super(jodit);
         this.requires = ['license'];

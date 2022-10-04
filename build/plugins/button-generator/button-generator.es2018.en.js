@@ -463,8 +463,8 @@ __webpack_require__.d(__webpack_exports__, {
 
 // EXTERNAL MODULE: ./node_modules/tslib/tslib.es6.js
 var tslib_es6 = __webpack_require__(20255);
-// EXTERNAL MODULE: ./src/core/plugin/index.ts + 1 modules
-var core_plugin = __webpack_require__(91729);
+// EXTERNAL MODULE: ./src/core/plugin/index.ts
+var core_plugin = __webpack_require__(35570);
 // EXTERNAL MODULE: ./src/index.ts + 157 modules
 var src = __webpack_require__(33594);
 // EXTERNAL MODULE: ./src/core/decorators/index.ts + 7 modules
@@ -1090,7 +1090,7 @@ var ui_button = __webpack_require__(17460);
 
 
 
-class buttonGenerator extends core_plugin/* Plugin */.Sy {
+class buttonGenerator extends core_plugin/* Plugin */.S {
     constructor() {
         super(...arguments);
         this.hasStyle = !src.Jodit.fatMode;

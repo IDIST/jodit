@@ -97,7 +97,7 @@ var ExportDocs = (function (_super) {
     ExportDocs.prototype.afterInit = function (jodit) {
         var _this = this;
         jodit.registerCommand('exportToPDF', function () { return tslib_1.__awaiter(_this, void 0, void 0, function () {
-            var css, ajax, resp, buffer, link, filename, e_1;
+            var css, ajax, resp, buffer_1, link, filename, e_1;
             var _a;
             return tslib_1.__generator(this, function (_b) {
                 switch (_b.label) {
@@ -117,9 +117,9 @@ var ExportDocs = (function (_super) {
                         resp = _b.sent();
                         return [4, resp.blob()];
                     case 3:
-                        buffer = _b.sent();
+                        buffer_1 = _b.sent();
                         link = this.j.create.a(), filename = 'document.pdf';
-                        link.href = URL.createObjectURL(buffer);
+                        link.href = URL.createObjectURL(buffer_1);
                         link.download = filename;
                         link.click();
                         dom_1.Dom.safeRemove(link);

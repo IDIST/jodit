@@ -39,8 +39,8 @@ __webpack_require__.d(__webpack_exports__, {
 
 // EXTERNAL MODULE: ./node_modules/tslib/tslib.es6.js
 var tslib_es6 = __webpack_require__(20255);
-// EXTERNAL MODULE: ./src/core/plugin/index.ts + 1 modules
-var core_plugin = __webpack_require__(91729);
+// EXTERNAL MODULE: ./src/core/plugin/index.ts
+var core_plugin = __webpack_require__(35570);
 // EXTERNAL MODULE: ./src/modules/index.ts + 15 modules
 var modules = __webpack_require__(81165);
 // EXTERNAL MODULE: ./src/core/ui/index.ts + 2 modules
@@ -189,7 +189,7 @@ if ((0,helpers.isArray)(config/* Config.prototype.popup.iframe */.D.prototype.po
 
 
 
-class IframeEditor extends core_plugin/* Plugin */.Sy {
+class IframeEditor extends core_plugin/* Plugin */.S {
     constructor() {
         super(...arguments);
         this.requires = ['license', 'color-picker'];

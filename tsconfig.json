@@ -3,7 +3,7 @@
 		"declaration": true,
 		"declarationDir": "types",
 		"outDir": "types",
-		"target": "es5",
+		"target": "es6",
 		"moduleResolution": "node",
 
 		"removeComments": true,

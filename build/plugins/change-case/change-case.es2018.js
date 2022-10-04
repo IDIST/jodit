@@ -67,8 +67,8 @@ config/* Config.prototype.controls.changeCase */.D.prototype.controls.changeCase
     command: 'changeCase'
 };
 
-// EXTERNAL MODULE: ./src/core/plugin/index.ts + 1 modules
-var core_plugin = __webpack_require__(91729);
+// EXTERNAL MODULE: ./src/core/plugin/index.ts
+var core_plugin = __webpack_require__(35570);
 // EXTERNAL MODULE: ./src/modules/index.ts + 15 modules
 var modules = __webpack_require__(81165);
 // EXTERNAL MODULE: ./src/index.ts + 157 modules
@@ -84,7 +84,7 @@ var src = __webpack_require__(33594);
 
 
 
-class changeCase extends core_plugin/* Plugin */.Sy {
+class changeCase extends core_plugin/* Plugin */.S {
     constructor() {
         super(...arguments);
         this.requires = ['license'];

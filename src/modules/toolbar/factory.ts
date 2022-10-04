@@ -51,11 +51,6 @@ export function makeCollection(
 		collection.buttonSize = jodit.o.toolbarButtonSize;
 	}
 
-	// if (jodit.o.toolbarFirstButtonSize) {
-	// 	console.log(collection.elements);
-	// 		// .buttonSize = jodit.o.toolbarFirstButtonSize;
-	// }
-
 	return collection;
 }
 

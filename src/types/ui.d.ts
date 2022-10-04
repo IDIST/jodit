@@ -27,12 +27,14 @@ export interface IUIElement
 		IDestructible,
 		IMods,
 		IElms {
+
 	parentElement: Nullable<IUIElement>;
 	container: HTMLElement;
 	name: string;
 
 	text?: HTMLElement;
-	mode?: 'vertical'|'horizontal';
+	elements?: IUIElement[];
+	buttonSize?: "tiny" | "xsmall" | "small" | "middle" | "large" | "full";
 
 	/**
 	 * Apply callback for all parents

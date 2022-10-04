@@ -148,10 +148,6 @@ export class ToolbarEditorCollection extends ToolbarCollection<IJodit> {
 	constructor(jodit: IJodit) {
 		super(jodit);
 		this.prependInvisibleInput(this.container);
-		// if (jodit.o.toolbarFirstButtonSize) {
-		// 	console.log(collection.elements);
-		// 	// .buttonSize = jodit.o.toolbarFirstButtonSize;
-		// }
 	}
 
 	/**

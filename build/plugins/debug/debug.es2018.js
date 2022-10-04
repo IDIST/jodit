@@ -26,7 +26,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "Debug": function() { return /* binding */ Debug; }
 /* harmony export */ });
-/* harmony import */ var jodit_core_plugin__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(91729);
+/* harmony import */ var jodit_core_plugin__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(35570);
 /* harmony import */ var jodit_core_global__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(58299);
 /* harmony import */ var jodit_core_dom_dom__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(43887);
 /* harmony import */ var jodit_core_helpers__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(52607);
@@ -41,7 +41,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-class Debug extends jodit_core_plugin__WEBPACK_IMPORTED_MODULE_0__/* .Plugin */ .Sy {
+class Debug extends jodit_core_plugin__WEBPACK_IMPORTED_MODULE_0__/* .Plugin */ .S {
     afterInit(jodit) {
         const mirror = jodit.create.div();
         const tree = jodit.create.div();

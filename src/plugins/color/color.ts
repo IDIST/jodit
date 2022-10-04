@@ -33,11 +33,11 @@ export function color(editor: IJodit): void {
 		const colorHEX: string | false = normalizeColor(third);
 
 		switch (command) {
-			case 'background':
-				editor.s.applyStyle({
-					backgroundColor: !colorHEX ? '' : (colorHEX as string)
-				});
-				break;
+			// case 'background':
+			// 	editor.s.applyStyle({
+			// 		backgroundColor: !colorHEX ? '' : (colorHEX as string)
+			// 	});
+			// 	break;
 			case 'forecolor':
 				editor.s.applyStyle({
 					color: !colorHEX ? '' : (colorHEX as string)
@@ -49,9 +49,8 @@ export function color(editor: IJodit): void {
 		return false;
 	};
 
-	editor
-		.registerCommand('forecolor', callback)
-		.registerCommand('background', callback);
+	editor.registerCommand('forecolor', callback);
+	// .registerCommand('background', callback);
 }
 
 pluginSystem.add('color', color);

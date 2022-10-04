@@ -98,10 +98,6 @@ export class UIList<T extends IViewBased = IViewBased>
 
 		this.append(line);
 		line.setMod('line', true);
-		let isFirstLine: boolean = true;
-		if (isFirstLine) {
-			line.container.classList.add('jodit-media-toolbar');
-		}
 
 		let group: IUIGroup;
 
@@ -110,7 +106,6 @@ export class UIList<T extends IViewBased = IViewBased>
 
 			switch (control.name) {
 				case '\n':
-					isFirstLine = false;
 					line = this.makeGroup();
 					line.setMod('line', true);
 					group = this.makeGroup();
@@ -141,11 +136,6 @@ export class UIList<T extends IViewBased = IViewBased>
 				default:
 					lastBtnSeparator = false;
 					elm = this.makeButton(control, target);
-
-					if (elm && isFirstLine) {
-						if (elm.text) elm.text.innerText = elm.name;
-						// elm.setMode('align', 'vertical');
-					}
 			}
 
 			if (elm) {

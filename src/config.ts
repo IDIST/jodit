@@ -24,6 +24,39 @@ import type {
 import * as consts from './core/constants';
 import { INSERT_AS_HTML } from './core/constants';
 
+const buttons = [
+	// Media
+	'emoji',
+	'image',
+	'gif',
+	'video',
+	'file',
+	'\n',
+	// Do
+	'undo',
+	'redo',
+	'|',
+	// Font
+	'paragraph',
+	'brush',
+	'bold',
+	'italic',
+	'underline',
+	'strikethrough',
+	'|',
+	// Align
+	'left',
+	'center',
+	'right',
+	'|',
+	// List
+	'ul',
+	'ol',
+	'|',
+	// Table
+	'table'
+];
+
 /**
  * Default Editor's Configuration
  */
@@ -155,7 +188,7 @@ export class Config implements IViewOptions {
 	/**
 	 * z-index For editor
 	 */
-	zIndex: number = 0;
+	zIndex: number = 1;
 
 	/**
 	 * Change the read-only state of the editor
@@ -188,8 +221,8 @@ export class Config implements IViewOptions {
 	 * });
 	 * ```
 	 */
-	toolbarButtonSize: IUIButtonState['size'] = 'large';
-	toolbarFirstButtonSize: IUIButtonState['size'] = 'full';
+	toolbarButtonSize: IUIButtonState['size'] = 'middle';
+	toolbarTopButtonSizeUp: boolean = true;
 
 	/**
 	 * Allow navigation in the toolbar of the editor by Tab key
@@ -296,7 +329,7 @@ export class Config implements IViewOptions {
 	 * </script>
 	 * ```
 	 */
-	language: string = 'auto';
+	language: string = navigator.language && navigator.language.substr(0, 2);
 
 	/**
 	 * if true all Lang.i18n(key) return `{key}`
@@ -330,7 +363,23 @@ export class Config implements IViewOptions {
 	 * console.log(editor.i18n('Type something')) //Начните что-либо вводить
 	 * ```
 	 */
-	i18n: IDictionary<IDictionary<string>> | false = false;
+	i18n: IDictionary<IDictionary<string>> | false = {
+		ko: {
+			'Insert Emoji': '이모지 추가',
+			'Search emoji': '이모지 검색',
+			'Smileys & Emotion': 'Smileys & Emotion',
+			'People & Body': 'People & Body',
+			'Animals & Nature': 'Animals & Nature',
+			'Food & Drink': 'Food & Drink',
+			'Travel & Places': 'Travel & Places',
+			Activities: 'Activities',
+			Objects: 'Objects',
+			Flags: 'Flags',
+			'Click to tune': '조정하려면 클릭',
+			'Heading 5': '제목 5',
+			'Heading 6': '제목 6'
+		}
+	};
 
 	/**
 	 * The tabindex global attribute is an integer indicating if the element can take
@@ -600,7 +649,7 @@ export class Config implements IViewOptions {
 		'keyboard',
 		'show-blocks',
 		'button-generator',
-		'tune-block',
+		// 'tune-block',
 		'highlight-signature',
 		'google-maps',
 		'page-break',
@@ -787,161 +836,37 @@ export class Config implements IViewOptions {
 	 *  });
 	 * ```
 	 */
-	buttons: ButtonsOption = [
-		{
-			group: 'font-style',
-			buttons: []
-		},
-		{
-			group: 'list',
-			buttons: []
-		},
-		{
-			group: 'font',
-			buttons: []
-		},
-		'---',
-		{
-			group: 'script',
-			buttons: []
-		},
-		{
-			group: 'media',
-			buttons: []
-		},
-		'\n',
-		{
-			group: 'state',
-			buttons: []
-		},
-		{
-			group: 'clipboard',
-			buttons: []
-		},
-		{
-			group: 'insert',
-			buttons: []
-		},
-		{
-			group: 'indent',
-			buttons: []
-		},
-		{
-			group: 'color',
-			buttons: []
-		},
-		{
-			group: 'form',
-			buttons: []
-		},
-		'---',
-		{
-			group: 'history',
-			buttons: []
-		},
-		{
-			group: 'search',
-			buttons: []
-		},
-		{
-			group: 'source',
-			buttons: []
-		},
-		{
-			group: 'other',
-			buttons: []
-		},
-		{
-			group: 'info',
-			buttons: []
-		}
-	];
+	buttons: ButtonsOption = buttons;
 
 	/**
 	 * The list of buttons that appear in the editor's toolbar on medium places (≥ options.sizeMD).
 	 */
-	buttonsMD: ButtonsOption = [
-		'bold',
-		'italic',
-		'|',
-		'ul',
-		'ol',
-		'eraser',
-		'|',
-		'font',
-		'fontsize',
-		'---',
-		'image',
-		'table',
-		'|',
-		'link',
-		'\n',
-		'brush',
-		'paragraph',
-		'align',
-		'|',
-		'hr',
-		'copyformat',
-		'fullsize',
-		'---',
-		'undo',
-		'redo',
-		'|',
-		'dots'
-	];
+	buttonsMD: ButtonsOption = buttons;
 
 	/**
 	 * The list of buttons that appear in the editor's toolbar on small places (≥ options.sizeSM).
 	 */
-	buttonsSM: ButtonsOption = [
-		'bold',
-		'italic',
-		'|',
-		'ul',
-		'ol',
-		'eraser',
-		'|',
-		'fontsize',
-		'brush',
-		'paragraph',
-		'---',
-		'image',
-		'table',
-		'\n',
-		'link',
-		'|',
-		'align',
-		'|',
-		'undo',
-		'redo',
-		'|',
-		'copyformat',
-		'fullsize',
-		'---',
-		'dots'
-	];
+	buttonsSM: ButtonsOption = buttons;
 
 	/**
 	 * The list of buttons that appear in the editor's toolbar on extra small places `(< options.sizeSM)`.
 	 */
 	buttonsXS: ButtonsOption = [
-		'bold',
-		'brush',
-		'paragraph',
-		'eraser',
-		'|',
-		'fontsize',
-		'---',
+		// Media
+		'emoji',
 		'image',
+		'gif',
+		'video',
 		'\n',
-		'align',
-		'undo',
-		'redo',
+		// Font
+		'paragraph',
+		'brush',
+		'bold',
+		'italic',
 		'|',
-		'link',
-		'table',
-		'---',
-		'dots'
+		// List
+		'ul',
+		'ol',
 	];
 
 	/**
@@ -955,6 +880,11 @@ export class Config implements IViewOptions {
 	 * Buttons in toolbat without SVG - only texts
 	 */
 	textIcons: boolean = false;
+
+	/**
+	 * Hide the link to the Jodit site at the bottom of the editor
+	 */
+	hidePoweredByJodit:boolean = true;
 
 	/**
 	 * shows a INPUT[type=color] to open the browser color picker, on the right bottom of widget color picker

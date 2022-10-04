@@ -92,6 +92,7 @@ export function i18n(
 		),
 		language = defineLanguage(options?.language, defaultLanguage),
 		tryGet = (store: IDictionary): string | undefined => {
+
 			if (!store) {
 				return;
 			}
@@ -150,7 +151,7 @@ export function i18n(
 	}
 
 	if (!isProd && language !== 'en') {
-		console.warn(`i18n need "${key}" in "${language}"`);
+		// console.warn(`i18n need "${key}" in "${language}"`);
 	}
 
 	return parse(key);

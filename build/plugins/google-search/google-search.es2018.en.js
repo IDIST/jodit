@@ -33,7 +33,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "googleSearch": function() { return /* binding */ googleSearch; }
 /* harmony export */ });
-/* harmony import */ var jodit_core_plugin__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(91729);
+/* harmony import */ var jodit_core_plugin__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(35570);
 /* harmony import */ var jodit_config__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(27537);
 /* harmony import */ var jodit_core_helpers__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(52607);
 /* harmony import */ var jodit_plugins_placeholder_placeholder__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(43257);
@@ -56,7 +56,7 @@ jodit_config__WEBPACK_IMPORTED_MODULE_1__/* .Config.prototype.controls.google */
     },
     command: 'startSearch'
 };
-class googleSearch extends jodit_core_plugin__WEBPACK_IMPORTED_MODULE_0__/* .Plugin */ .Sy {
+class googleSearch extends jodit_core_plugin__WEBPACK_IMPORTED_MODULE_0__/* .Plugin */ .S {
     constructor() {
         super(...arguments);
         this.requires = ['license'];

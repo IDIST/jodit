@@ -221,5 +221,6 @@ module.exports = {
 	'Find Next': '다음 찾기',
 	'Insert className': 'className 입력',
 	'Press Alt for custom resizing':
-		'사용자 지정 크기 조정에 대 한 고도 누르십시오'
+		'사용자 지정 크기 조정에 대 한 고도 누르십시오',
+	gif: 'GIF'
 };

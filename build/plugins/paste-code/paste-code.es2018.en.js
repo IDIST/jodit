@@ -106,8 +106,8 @@ config/* Config.prototype.pasteCode */.D.prototype.pasteCode = {
     }
 };
 
-// EXTERNAL MODULE: ./src/core/plugin/index.ts + 1 modules
-var core_plugin = __webpack_require__(91729);
+// EXTERNAL MODULE: ./src/core/plugin/index.ts
+var core_plugin = __webpack_require__(35570);
 // EXTERNAL MODULE: ./src/core/ui/index.ts + 2 modules
 var ui = __webpack_require__(41685);
 // EXTERNAL MODULE: ./src/core/decorators/index.ts + 7 modules
@@ -131,7 +131,7 @@ var modules = __webpack_require__(81165);
 
 
 
-let pasteCode = class pasteCode extends core_plugin/* Plugin */.Sy {
+let pasteCode = class pasteCode extends core_plugin/* Plugin */.S {
     constructor() {
         super(...arguments);
         this.requires = ['license'];

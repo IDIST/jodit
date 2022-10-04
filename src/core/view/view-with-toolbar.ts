@@ -75,6 +75,23 @@ export abstract class ViewWithToolbar extends View implements IViewWithToolbar {
 			.setRemoveButtons(this.o.removeButtons)
 			.build(buttons.concat(this.o.extraButtons || []))
 			.appendTo(this.toolbarContainer);
+
+		if (!this.o.toolbarTopButtonSizeUp) return;
+
+		// First line
+		if (!this.toolbar.elements?.length) return;
+		const lineFirst = this.toolbar.elements[0];
+		lineFirst.container.classList.add('jodit-media-toolbar');
+
+		// First line's group
+		if (!lineFirst.elements?.length) return;
+		const groupFirst = lineFirst.elements[0];
+		if (!groupFirst?.elements?.length) return;
+
+		// First line's buttons
+		for (const element of groupFirst.elements) {
+			if (element.text) element.text.innerText = element.name;
+		}
 	}
 
 	registeredButtons: Set<IPluginButton> = new Set();
