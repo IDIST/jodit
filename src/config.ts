@@ -284,7 +284,10 @@ export class Config implements IViewOptions {
 	 * });
 	 * ```
 	 */
-	style: false | IDictionary = false;
+	// style: false | IDictionary = false;
+	style: false | IDictionary = {
+		font: '16px Poppins'
+	};
 
 	/**
 	 * After all changes in editors for textarea will call change trigger
@@ -509,29 +512,29 @@ export class Config implements IViewOptions {
 			'#F3F3F3',
 			'#FFFFFF'
 		],
-		palette: [
-			'#980000',
-			'#FF0000',
-			'#FF9900',
-			'#FFFF00',
-			'#00F0F0',
-			'#00FFFF',
-			'#4A86E8',
-			'#0000FF',
-			'#9900FF',
-			'#FF00FF'
-		],
+		// palette: [
+		// 	'#980000',
+		// 	'#FF0000',
+		// 	'#FF9900',
+		// 	'#FFFF00',
+		// 	'#00F0F0',
+		// 	'#00FFFF',
+		// 	'#4A86E8',
+		// 	'#0000FF',
+		// 	'#9900FF',
+		// 	'#FF00FF'
+		// ],
 		full: [
-			'#E6B8AF',
-			'#F4CCCC',
-			'#FCE5CD',
-			'#FFF2CC',
-			'#D9EAD3',
-			'#D0E0E3',
-			'#C9DAF8',
-			'#CFE2F3',
-			'#D9D2E9',
-			'#EAD1DC',
+			// '#E6B8AF',
+			// '#F4CCCC',
+			// '#FCE5CD',
+			// '#FFF2CC',
+			// '#D9EAD3',
+			// '#D0E0E3',
+			// '#C9DAF8',
+			// '#CFE2F3',
+			// '#D9D2E9',
+			// '#EAD1DC',
 			'#DD7E6B',
 			'#EA9999',
 			'#F9CB9C',

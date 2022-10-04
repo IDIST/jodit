@@ -23,6 +23,13 @@
  * Released under MIT see LICENSE.txt in the project root for license information.
  * Copyright (c) 2013-2022 Valeriy Chupurnov. All rights reserved. https://xdsoft.net
  */
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/poppins/v20/pxiEyp8kv8JHgFVrFJA.ttf) format('truetype');
+}
 /*!
  * Jodit Editor (https://xdsoft.net/jodit/)
  * Released under MIT see LICENSE.txt in the project root for license information.
@@ -73,9 +80,8 @@
  * Copyright (c) 2013-2022 Valeriy Chupurnov. All rights reserved. https://xdsoft.net
  */
 .jodit-form {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
-		Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
-  font-size: 14px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 12px;
   color: #4c4c4c;
 }
 .jodit-form.jodit_error {
@@ -133,57 +139,54 @@
           justify-content: center;
 }
 .jodit .jodit-textarea {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
-		Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
-  font-size: 14px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 12px;
   width: 100%;
-  height: 32px;
+  height: 44px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   padding: 0 8px;
-  border: 1px solid #e0e0e0;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  background-color: #fff;
+  background-color: undefined;
   border-radius: 0;
-  line-height: 32px;
+  line-height: 44px;
+  font-size: 14px;
   outline: none;
 }
 .jodit .jodit-select {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
-		Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
-  font-size: 14px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 12px;
   width: 100%;
-  height: 32px;
+  height: 44px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   padding: 0 8px;
-  border: 1px solid #e0e0e0;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  background-color: #fff;
+  background-color: undefined;
   border-radius: 0;
-  line-height: 32px;
+  line-height: 44px;
+  font-size: 14px;
   outline: none;
 }
 .jodit .jodit-input {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
-		Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
-  font-size: 14px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 12px;
   width: 100%;
-  height: 32px;
+  height: 44px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   padding: 0 8px;
-  border: 1px solid #e0e0e0;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  background-color: #fff;
+  background-color: undefined;
   border-radius: 0;
-  line-height: 32px;
+  line-height: 44px;
+  font-size: 14px;
   outline: none;
 }
 .jodit .jodit-textarea[disabled] {
@@ -419,15 +422,14 @@ input:focus + .jodit-switcher__slider {
  */
 .jodit_text_icons .jodit_icon {
   width: auto;
-  font-size: 14px;
+  font-size: 12px;
 }
 .jodit_text_icons .jodit_icon::first-letter {
   text-transform: uppercase;
 }
 .jodit_text_icons .jodit-tabs .jodit-tabs__buttons > a {
   width: auto;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
-		Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 .jodit_text_icons .jodit-tabs .jodit-tabs__buttons > a i {
   width: auto;
@@ -436,15 +438,13 @@ input:focus + .jodit-switcher__slider {
   width: auto;
   padding: 8px;
   color: rgba(0, 0, 0, 0.75);
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
-		Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 .jodit_text_icons.jodit-dialog .jodit-button {
   width: auto;
   padding: 8px;
   color: rgba(0, 0, 0, 0.75);
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
-		Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 .jodit_text_icons.jodit-dialog .jodit-dialog__header a .jodit_icon,
 .jodit_text_icons.jodit-dialog .jodit-button .jodit_icon {
@@ -674,7 +674,7 @@ svg.jodit-icon {
 .jodit-container:not(.jodit_inline) {
   border: 1px solid #e0e0e0;
   background-color: #fff;
-  border-radius: 3px;
+  border-radius: 8px;
 }
 .jodit-container:not(.jodit_inline) .jodit-workplace {
   max-height: 100%;
@@ -1077,11 +1077,10 @@ svg.jodit-icon {
   z-index: 30000005;
 }
 .jodit-context-menu__content {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
-		Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
-  font-size: 14px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 12px;
   overflow: auto;
-  max-height: 300px;
+  max-height: 450px;
   padding: 8px;
   background: #fff;
   overflow-scrolling: touch;
@@ -1100,9 +1099,8 @@ svg.jodit-icon {
   display: flex;
 }
 .jodit-context-menu__actions {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
-		Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
-  font-size: 14px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 12px;
 }
 .jodit-context-menu__actions button {
   width: 100%;
@@ -1138,11 +1136,10 @@ svg.jodit-icon {
           transform: translate3d(0, 0, 0);
 }
 .jodit-popup__content {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
-		Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
-  font-size: 14px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 12px;
   overflow: auto;
-  max-height: 300px;
+  max-height: 450px;
   padding: 8px;
   background: #fff;
   overflow-scrolling: touch;
@@ -1173,9 +1170,8 @@ svg.jodit-icon {
   display: none;
 }
 .jodit-ui-button-icon-text__text:not(:empty) {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
-		Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
-  font-size: 14px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 12px;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -1503,7 +1499,7 @@ svg.jodit-icon {
       -ms-flex-pack: center;
           justify-content: center;
   padding: 0 8px;
-  border-radius: 3px;
+  border-radius: 8px;
   color: rgba(0, 0, 0, 0.75);
 }
 .jodit-ui-button {
@@ -1537,7 +1533,7 @@ svg.jodit-icon {
       -ms-flex-pack: center;
           justify-content: center;
   padding: 0 8px;
-  border-radius: 3px;
+  border-radius: 8px;
   color: rgba(0, 0, 0, 0.75);
   cursor: pointer;
   min-width: 34px;
@@ -1666,9 +1662,8 @@ svg.jodit-icon {
   display: none;
 }
 .jodit-ui-button__text:not(:empty) {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
-		Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
-  font-size: 14px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 12px;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -2002,9 +1997,8 @@ svg.jodit-icon {
   background-clip: padding-box;
   border-radius: 2px;
   color: #fff;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
-		Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
-  font-size: 14px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 12px;
   font-size: 11px;
   line-height: 1.4;
   opacity: 0;
@@ -2033,9 +2027,8 @@ svg.jodit-icon {
  * Copyright (c) 2013-2022 Valeriy Chupurnov. All rights reserved. https://xdsoft.net
  */
 .jodit-dialog {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
-		Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
-  font-size: 14px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 12px;
   position: absolute;
   display: none;
   width: 0;
@@ -2379,7 +2372,7 @@ svg.jodit-icon {
   overflow: hidden;
   border-bottom: 1px solid #e0e0e0;
   background-color: #f9f9f9;
-  border-radius: 3px 3px 0 0;
+  border-radius: 8px 8px 0 0;
 }
 .jodit-toolbar__box .jodit-toolbar-editor-collection {
   background-image: none !important;
@@ -2520,21 +2513,20 @@ svg.jodit-icon {
   margin-bottom: 8px;
 }
 .jodit-ui-input__input {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
-		Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
-  font-size: 14px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 12px;
   width: 100%;
-  height: 32px;
+  height: 44px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   padding: 0 8px;
-  border: 1px solid #e0e0e0;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  background-color: #fff;
+  background-color: undefined;
   border-radius: 0;
-  line-height: 32px;
+  line-height: 44px;
+  font-size: 14px;
   outline: none;
   border: 0;
 }
@@ -2583,8 +2575,11 @@ svg.jodit-icon {
   -webkit-box-pack: stretch;
       -ms-flex-pack: stretch;
           justify-content: stretch;
-  border: 1px solid #e0e0e0;
   background-color: #fff;
+  overflow: hidden;
+  -webkit-perspective: 1px;
+          perspective: 1px;
+  border-radius: 8px;
 }
 @media (max-width: 480px) {
   .jodit-ui-input__wrapper {
@@ -2596,7 +2591,7 @@ svg.jodit-icon {
   background-color: #e0e0e0;
 }
 .jodit-ui-input_focused_true .jodit-ui-input__wrapper {
-  border-color: #1e88e5;
+  border-color: #ff45a1;
 }
 .jodit-ui-input__icon:not(:empty) {
   display: -webkit-box;
@@ -2610,7 +2605,7 @@ svg.jodit-icon {
 .jodit-ui-input__icon:not(:empty) svg {
   width: 16px;
   height: 16px;
-  fill: #e0e0e0;
+  fill: #a5a5a5;
 }
 .jodit-ui-input__icon:not(:empty) + .jodit-ui-input__input {
   padding-left: 0;
@@ -2657,21 +2652,20 @@ svg.jodit-icon {
   margin-bottom: 8px;
 }
 .jodit-ui-select__input {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
-		Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
-  font-size: 14px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 12px;
   width: 100%;
-  height: 32px;
+  height: 44px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   padding: 0 8px;
-  border: 1px solid #e0e0e0;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  background-color: #fff;
+  background-color: undefined;
   border-radius: 0;
-  line-height: 32px;
+  line-height: 44px;
+  font-size: 14px;
   outline: none;
   border: 0;
 }
@@ -2720,8 +2714,11 @@ svg.jodit-icon {
   -webkit-box-pack: stretch;
       -ms-flex-pack: stretch;
           justify-content: stretch;
-  border: 1px solid #e0e0e0;
   background-color: #fff;
+  overflow: hidden;
+  -webkit-perspective: 1px;
+          perspective: 1px;
+  border-radius: 8px;
 }
 @media (max-width: 480px) {
   .jodit-ui-select__wrapper {
@@ -2733,7 +2730,7 @@ svg.jodit-icon {
   background-color: #e0e0e0;
 }
 .jodit-ui-select_focused_true .jodit-ui-select__wrapper {
-  border-color: #1e88e5;
+  border-color: #ff45a1;
 }
 .jodit-ui-select__icon:not(:empty) {
   display: -webkit-box;
@@ -2747,7 +2744,7 @@ svg.jodit-icon {
 .jodit-ui-select__icon:not(:empty) svg {
   width: 16px;
   height: 16px;
-  fill: #e0e0e0;
+  fill: #a5a5a5;
 }
 .jodit-ui-select__icon:not(:empty) + .jodit-ui-select__input {
   padding-left: 0;
@@ -2789,8 +2786,8 @@ svg.jodit-icon {
   margin-bottom: 0;
 }
 .jodit-ui-select_size_tiny .jodit-ui-select__input {
-  height: calc(32px / 1.8);
-  line-height: calc(32px / 1.8);
+  height: calc(44px / 1.8);
+  line-height: calc(44px / 1.8);
 }
 .jodit-ui-select_variant_outline .jodit-ui-select__wrapper {
   border: 0;
@@ -2817,21 +2814,20 @@ svg.jodit-icon {
   width: 100%;
 }
 .jodit-ui-text-area__input {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
-		Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
-  font-size: 14px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 12px;
   width: 100%;
-  height: 32px;
+  height: 44px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   padding: 0 8px;
-  border: 1px solid #e0e0e0;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  background-color: #fff;
+  background-color: undefined;
   border-radius: 0;
-  line-height: 32px;
+  line-height: 44px;
+  font-size: 14px;
   outline: none;
   border: 0;
 }
@@ -2880,8 +2876,11 @@ svg.jodit-icon {
   -webkit-box-pack: stretch;
       -ms-flex-pack: stretch;
           justify-content: stretch;
-  border: 1px solid #e0e0e0;
   background-color: #fff;
+  overflow: hidden;
+  -webkit-perspective: 1px;
+          perspective: 1px;
+  border-radius: 8px;
 }
 @media (max-width: 480px) {
   .jodit-ui-text-area__wrapper {
@@ -2893,7 +2892,7 @@ svg.jodit-icon {
   background-color: #e0e0e0;
 }
 .jodit-ui-text-area_focused_true .jodit-ui-text-area__wrapper {
-  border-color: #1e88e5;
+  border-color: #ff45a1;
 }
 .jodit-ui-text-area__icon:not(:empty) {
   display: -webkit-box;
@@ -2907,7 +2906,7 @@ svg.jodit-icon {
 .jodit-ui-text-area__icon:not(:empty) svg {
   width: 16px;
   height: 16px;
-  fill: #e0e0e0;
+  fill: #a5a5a5;
 }
 .jodit-ui-text-area__icon:not(:empty) + .jodit-ui-text-area__input {
   padding-left: 0;
@@ -3346,7 +3345,7 @@ svg.jodit-icon {
       -ms-flex-pack: center;
           justify-content: center;
   border: 1px solid transparent;
-  border-radius: 3px;
+  border-radius: 8px;
   min-width: 34px;
   height: 34px;
 }
@@ -3362,9 +3361,8 @@ svg.jodit-icon {
   display: none;
 }
 .jodit-toolbar-button__text:not(:empty) {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
-		Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
-  font-size: 14px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 12px;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -3517,7 +3515,7 @@ svg.jodit-icon {
       -ms-flex-pack: center;
           justify-content: center;
   padding: 0 8px;
-  border-radius: 3px;
+  border-radius: 8px;
   color: rgba(0, 0, 0, 0.75);
 }
 .jodit-toolbar-button__button:hover:not([disabled]) {
@@ -3556,7 +3554,7 @@ svg.jodit-icon {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  border-radius: 0 3px 3px 0;
+  border-radius: 0 8px 8px 0;
   opacity: 0.4;
   cursor: pointer;
   width: 14px;
@@ -3614,7 +3612,7 @@ svg.jodit-icon {
   width: 20px;
 }
 .jodit-toolbar-button_with-trigger_true .jodit-toolbar-button__button {
-  border-radius: 3px 0 0 3px;
+  border-radius: 8px 0 0 8px;
 }
 .jodit-toolbar-button_with-trigger_true:hover:not([disabled]) {
   border-color: #e0e0e0;
@@ -3658,7 +3656,7 @@ svg.jodit-icon {
       -ms-flex-pack: center;
           justify-content: center;
   padding: 0 8px;
-  border-radius: 3px;
+  border-radius: 8px;
   color: rgba(0, 0, 0, 0.75);
   cursor: pointer;
   min-width: 34px;
@@ -3789,9 +3787,8 @@ svg.jodit-icon {
   display: none;
 }
 .jodit-toolbar-content__text:not(:empty) {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
-		Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
-  font-size: 14px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 12px;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -3998,8 +3995,7 @@ svg.jodit-icon {
   display: -ms-flexbox;
   display: flex;
   height: 100%;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
-		Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 .jodit-filebrowser_no-files_true {
   padding: 8px;
@@ -4419,7 +4415,7 @@ svg.jodit-icon {
   border-color: #433b5c;
 }
 .jodit-filebrowser-files__item_active_true {
-  border-color: #1e88e5;
+  border-color: #ff45a1;
   background-color: #b5b5b5;
 }
 .jodit-filebrowser-files__item_active_true .jodit-filebrowser-files__item-info {
@@ -4697,7 +4693,7 @@ a + .jodit-filebrowser-tree__source-title {
           justify-content: flex-start;
   padding: 0 calc(8px / 2);
   background-color: #f9f9f9;
-  border-radius: 0 0 3px 3px;
+  border-radius: 0 0 8px 8px;
   color: rgba(0, 0, 0, 0.75);
   font-size: 11px;
   text-transform: uppercase;
@@ -4723,15 +4719,13 @@ a + .jodit-filebrowser-tree__source-title {
   line-height: 1.57142857em;
 }
 .jodit-status-bar .jodit-status-bar__item {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
-		Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
-  font-size: 14px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 12px;
   font-size: 11px;
 }
 .jodit-status-bar .jodit-status-bar__item > span {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
-		Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
-  font-size: 14px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 12px;
   font-size: 11px;
 }
 .jodit-status-bar .jodit-status-bar__item.jodit-status-bar__item-right {
@@ -4921,17 +4915,18 @@ a + .jodit-filebrowser-tree__source-title {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  max-width: calc(24px * 10);
+  max-width: calc(24px * 10 + 8px*5);
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin-bottom: calc(8px / 2);
   white-space: normal;
 }
 .jodit-color-picker__color-item {
   display: block;
+  margin: calc(8px / 4);
   width: 24px;
   height: 24px;
   border: 1px solid transparent;
+  border-radius: 8px;
   text-align: center;
   text-decoration: none;
   vertical-align: middle;
@@ -4940,10 +4935,10 @@ a + .jodit-filebrowser-tree__source-title {
   border-color: #000;
 }
 .jodit-color-picker__color-item_active_true {
-  border: 2px solid #1e88e5;
+  border: 2px solid #ff45a1;
 }
 .jodit-color-picker__color-item:active {
-  border: 2px solid #1e88e5;
+  border: 2px solid #ff45a1;
 }
 .jodit-color-picker__native svg {
   display: inline-block;
@@ -4973,9 +4968,8 @@ a + .jodit-filebrowser-tree__source-title {
  * Copyright (c) 2013-2022 Valeriy Chupurnov. All rights reserved. https://xdsoft.net
  */
 .jodit-tabs {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
-		Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
-  font-size: 14px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 12px;
 }
 .jodit-tabs .jodit-tabs__buttons {
   display: -webkit-box;
@@ -5325,7 +5319,7 @@ html.jodit_fullsize-box_true {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   font-size: 0;
-  outline: 3px solid #98c1f1;
+  outline: 2px solid #7d0edf;
   pointer-events: none;
 }
 .jodit-resizer * {
@@ -5358,11 +5352,11 @@ html.jodit_fullsize-box_true {
   display: inline-block;
   width: 10px;
   height: 10px;
-  background-color: #5ba4f3;
+  background-color: #9013fe;
   pointer-events: all;
 }
 .jodit-resizer > div:hover {
-  background-color: #537ebb;
+  background-color: #ff45a1;
 }
 .jodit-resizer > div:nth-child(1) {
   top: calc(10px / -2);
@@ -5858,7 +5852,7 @@ html.jodit_fullsize-box_true {
   background: #7d0edf;
 }
 .jodit-form__inserter .jodit-form__table-creator-box .jodit-form__options {
-  font-size: 14px;
+  font-size: 12px;
 }
 .jodit-form__inserter .jodit-form__table-creator-box .jodit-form__options label {
   padding-top: 0;

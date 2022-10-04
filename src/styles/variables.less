@@ -3,6 +3,7 @@
  * Released under MIT see LICENSE.txt in the project root for license information.
  * Copyright (c) 2013-2022 Valeriy Chupurnov. All rights reserved. https://xdsoft.net
  */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 // screen
 @screen-xs: 480px;
@@ -40,8 +41,9 @@
 
 	--color-border: var(--color-gray);
 	--color-border-dark: var(--color-dark);
+	--color-border-focus: #ff45a1;
 
-	--color-border-selected: #1e88e5;
+	--color-border-selected: #ff45a1;
 	--color-border-active: #b5b5b5;
 
 	--color-selection: var(--color-dark);
@@ -70,17 +72,19 @@
 	--color-button-background-hover_opacity40: rgba(220, 220, 220, 0.4);
 	--color-button-background-hover_opacity60: rgba(220, 220, 220, 0.6);
 
-	--font-default: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
-		Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
-	--font-size-default: 14px;
+	//--font-default: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
+	--font-default: 'Poppins', sans-serif;
+
+	--font-size-default: 12px;
 	--font-size-small: 11px;
+	--font-size-large: calc(var(--font-size-default) * 3);
 
 	--color-text-icons: rgba(0, 0, 0, 0.75);
 	--color-icon: var(--color-dark);
 
 	--padding-default: 8px;
 
-	--border-radius-default: 3px;
+	--border-radius-default: 8px;
 
 	//z-index
 	--z-index-full-size: 100000;
@@ -114,7 +118,7 @@
 
 	--width-default: 180px;
 	--width-input-min: var(--width-default);
-	--input-height: 32px;
+	--input-height: 44px;
 
 	--button-icon-size: @icon-middle-size;
 	--margin-v: 8px;

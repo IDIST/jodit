@@ -148,7 +148,7 @@ module.exports = "<svg xmlns='http://www.w3.org/2000/svg' viewBox=\"0 0 18 18\">
 /***/ 73894:
 /***/ (function(module) {
 
-module.exports = "<svg xmlns='http://www.w3.org/2000/svg' viewBox=\"0 0 1792 1792\"> <path d=\"M896 1152q0-36-20-69-1-1-15.5-22.5t-25.5-38-25-44-21-50.5q-4-16-21-16t-21 16q-7 23-21 50.5t-25 44-25.5 38-15.5 22.5q-20 33-20 69 0 53 37.5 90.5t90.5 37.5 90.5-37.5 37.5-90.5zm512-128q0 212-150 362t-362 150-362-150-150-362q0-145 81-275 6-9 62.5-90.5t101-151 99.5-178 83-201.5q9-30 34-47t51-17 51.5 17 33.5 47q28 93 83 201.5t99.5 178 101 151 62.5 90.5q81 127 81 275z\"/> </svg>"
+module.exports = "<svg width=\"1792\" height=\"1792\" viewBox=\"0 0 1792 1792\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"> <path d=\"M895.565 1163.83C895.565 1145.57 890.493 1128.07 880.348 1111.33C879.841 1110.82 875.909 1105.11 868.554 1094.21C861.199 1083.3 854.732 1073.66 849.152 1065.29C843.572 1056.92 837.232 1045.76 830.13 1031.82C823.029 1017.87 817.703 1005.06 814.152 993.391C812.123 985.275 806.797 981.217 798.174 981.217C789.551 981.217 784.225 985.275 782.196 993.391C778.645 1005.06 773.319 1017.87 766.217 1031.82C759.116 1045.76 752.775 1056.92 747.196 1065.29C741.616 1073.66 735.149 1083.3 727.793 1094.21C720.438 1105.11 716.507 1110.82 716 1111.33C705.855 1128.07 700.783 1145.57 700.783 1163.83C700.783 1190.71 710.293 1213.66 729.315 1232.68C748.337 1251.71 771.29 1261.22 798.174 1261.22C825.058 1261.22 848.011 1251.71 867.033 1232.68C886.054 1213.66 895.565 1190.71 895.565 1163.83ZM1285.13 1066.43C1285.13 1173.97 1247.09 1265.78 1171 1341.87C1094.91 1417.96 1003.1 1456 895.565 1456C788.029 1456 696.217 1417.96 620.13 1341.87C544.043 1265.78 506 1173.97 506 1066.43C506 992.884 526.543 923.138 567.63 857.196C570.674 852.63 586.525 829.678 615.185 788.337C643.844 746.996 669.46 708.699 692.033 673.446C714.605 638.192 739.841 593.047 767.739 538.011C795.638 482.975 816.688 431.87 830.891 384.696C835.457 369.478 844.08 357.558 856.761 348.935C869.442 340.312 882.377 336 895.565 336C908.754 336 921.815 340.312 934.75 348.935C947.685 357.558 956.181 369.478 960.239 384.696C974.442 431.87 995.493 482.975 1023.39 538.011C1051.29 593.047 1076.53 638.192 1099.1 673.446C1121.67 708.699 1147.29 746.996 1175.95 788.337C1204.61 829.678 1220.46 852.63 1223.5 857.196C1264.59 921.616 1285.13 991.362 1285.13 1066.43Z\"/> </svg>"
 
 /***/ }),
 
@@ -176,7 +176,7 @@ module.exports = "<svg xmlns='http://www.w3.org/2000/svg' viewBox=\"0 0 1792 179
 /***/ 18019:
 /***/ (function(module) {
 
-module.exports = "<svg xmlns='http://www.w3.org/2000/svg' viewBox=\"0 0 1792 1792\"><path d=\"M1534 189v73q0 29-18.5 61t-42.5 32q-50 0-54 1-26 6-32 31-3 11-3 64v1152q0 25-18 43t-43 18h-108q-25 0-43-18t-18-43v-1218h-143v1218q0 25-17.5 43t-43.5 18h-108q-26 0-43.5-18t-17.5-43v-496q-147-12-245-59-126-58-192-179-64-117-64-259 0-166 88-286 88-118 209-159 111-37 417-37h479q25 0 43 18t18 43z\"/></svg>"
+module.exports = "<svg width=\"1792\" height=\"1792\" viewBox=\"0 0 1792 1792\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"> <path d=\"M1353.37 380.479V433.708C1353.37 447.806 1348.88 462.632 1339.89 478.188C1330.89 493.743 1320.56 501.521 1308.9 501.521C1284.59 501.521 1271.47 501.764 1269.52 502.25C1256.88 505.167 1249.1 512.701 1246.19 524.854C1244.73 530.201 1244 545.757 1244 571.521V1411.52C1244 1423.67 1239.62 1434.13 1230.87 1442.88C1222.12 1451.63 1211.67 1456 1199.52 1456H1120.77C1108.62 1456 1098.17 1451.63 1089.42 1442.88C1080.67 1434.13 1076.29 1423.67 1076.29 1411.52V523.396H972.021V1411.52C972.021 1423.67 967.767 1434.13 959.26 1442.88C950.753 1451.63 940.181 1456 927.542 1456H848.792C836.153 1456 825.58 1451.63 817.073 1442.88C808.566 1434.13 804.312 1423.67 804.312 1411.52V1049.85C732.854 1044.02 673.306 1029.68 625.667 1006.83C564.417 978.639 517.75 935.132 485.667 876.313C454.556 819.438 439 756.486 439 687.458C439 606.764 460.389 537.25 503.167 478.917C545.944 421.556 596.743 382.91 655.562 362.979C709.521 344.993 810.875 336 959.625 336H1308.9C1321.05 336 1331.5 340.375 1340.25 349.125C1349 357.875 1353.37 368.326 1353.37 380.479Z\" fill=\"black\"/> </svg>"
 
 /***/ }),
 
@@ -344,7 +344,7 @@ module.exports = "<svg width=\"1792\" height=\"1792\" viewBox=\"0 0 1792 1792\" 
 /***/ 41197:
 /***/ (function(module) {
 
-module.exports = "<svg viewBox=\"0 0 500 500\" xmlns=\"http://www.w3.org/2000/svg\"> <path clip-rule=\"evenodd\" d=\"M306.39,154.09c19.628,4.543,35.244,21.259,39.787,39.523 c1.551,8.54,8.998,14.989,17.904,14.989c9.991,0,18.168-8.175,18.168-18.17c0-13.083-10.991-32.98-25.985-47.881 c-14.719-14.537-32.252-24.802-46.695-24.802c-9.991,0-18.172,8.45-18.172,18.446C291.396,145.094,297.847,152.546,306.39,154.09z M56.629,392.312c-14.09,14.08-14.09,36.979,0,51.059c14.08,14.092,36.981,14.092,50.965,0l104.392-104.303 c24.347,15.181,53.062,23.991,83.953,23.991c87.857,0,158.995-71.142,158.995-158.999c0-87.854-71.138-158.995-158.995-158.995 c-87.856,0-158.995,71.141-158.995,158.995c0,30.802,8.819,59.606,23.992,83.953L56.629,392.312z M182.371,204.06 c0-62.687,50.875-113.568,113.568-113.568s113.569,50.881,113.569,113.568c0,62.694-50.876,113.569-113.569,113.569 S182.371,266.754,182.371,204.06z\" fill-rule=\"evenodd\"/> </svg>"
+module.exports = "<svg width=\"1792\" height=\"1792\" viewBox=\"0 0 1792 1792\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"> <path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M801.605 336.115C889.489 336.118 975.547 361.2 1049.67 408.416C1123.79 455.631 1182.9 523.019 1220.06 602.663C1257.21 682.307 1270.86 770.9 1259.41 858.035C1247.96 945.17 1211.88 1027.23 1155.42 1094.57L1435.63 1359.11C1445.62 1370.14 1450.98 1384.6 1450.61 1399.48C1450.24 1414.36 1444.15 1428.53 1433.62 1439.05C1423.08 1449.57 1408.91 1455.63 1394.03 1455.98C1379.14 1456.34 1364.69 1450.95 1353.67 1440.94L1071.73 1172.37C993.553 1229.15 899.378 1259.66 802.758 1259.52C742.119 1259.52 682.074 1247.57 626.051 1224.37C570.028 1201.16 519.124 1167.15 476.246 1124.27C433.368 1081.39 399.355 1030.49 376.149 974.465C352.944 918.442 341 858.396 341 797.758C341 737.119 352.944 677.074 376.149 621.051C399.355 565.028 433.368 514.124 476.246 471.246C519.124 428.368 570.028 394.355 626.051 371.149C682.074 347.944 742.119 336 802.758 336L801.605 336.115ZM801.605 1144.19C870.1 1144.19 937.057 1123.88 994.009 1085.83C1050.96 1047.77 1095.35 993.684 1121.56 930.403C1147.77 867.122 1154.63 797.489 1141.27 730.31C1127.91 663.13 1094.92 601.422 1046.49 552.989C998.055 504.555 936.347 471.572 869.168 458.209C801.989 444.846 732.356 451.705 669.075 477.917C605.793 504.129 551.706 548.517 513.652 605.469C475.598 662.421 455.287 729.378 455.287 797.873C455.287 889.722 491.774 977.809 556.721 1042.76C621.668 1107.7 709.756 1144.19 801.605 1144.19V1144.19Z\"/> </svg>"
 
 /***/ }),
 
@@ -1054,18 +1054,37 @@ class Config {
             'selectall'
         ];
         this.allowCommandsInReadOnly = ['selectall', 'preview', 'print'];
-        this.toolbarButtonSize = 'large';
-        this.toolbarFirstButtonSize = 'full';
+        this.toolbarButtonSize = 'middle';
+        this.toolbarTopButtonSizeUp = true;
         this.allowTabNavigation = false;
         this.inline = false;
         this.theme = 'default';
         this.saveModeInStorage = false;
         this.editorCssClass = false;
-        this.style = false;
+        this.style = {
+            font: '16px Poppins'
+        };
         this.triggerChangeEvent = true;
         this.direction = '';
-        this.language = 'auto';
+        this.language = navigator.language && navigator.language.substr(0, 2);
         this.debugLanguage = false;
+        this.i18n = {
+            ko: {
+                'Insert Emoji': '이모지 추가',
+                'Search emoji': '이모지 검색',
+                'Smileys & Emotion': 'Smileys & Emotion',
+                'People & Body': 'People & Body',
+                'Animals & Nature': 'Animals & Nature',
+                'Food & Drink': 'Food & Drink',
+                'Travel & Places': 'Travel & Places',
+                Activities: 'Activities',
+                Objects: 'Objects',
+                Flags: 'Flags',
+                'Click to tune': '조정하려면 클릭',
+                'Heading 5': '제목 5',
+                'Heading 6': '제목 6'
+            }
+        };
         this.tabIndex = -1;
         this.toolbar = true;
         this.statusbar = true;
@@ -1092,29 +1111,7 @@ class Config {
                 '#F3F3F3',
                 '#FFFFFF'
             ],
-            palette: [
-                '#980000',
-                '#FF0000',
-                '#FF9900',
-                '#FFFF00',
-                '#00F0F0',
-                '#00FFFF',
-                '#4A86E8',
-                '#0000FF',
-                '#9900FF',
-                '#FF00FF'
-            ],
             full: [
-                '#E6B8AF',
-                '#F4CCCC',
-                '#FCE5CD',
-                '#FFF2CC',
-                '#D9EAD3',
-                '#D0E0E3',
-                '#C9DAF8',
-                '#CFE2F3',
-                '#D9D2E9',
-                '#EAD1DC',
                 '#DD7E6B',
                 '#EA9999',
                 '#F9CB9C',
@@ -5614,8 +5611,6 @@ function i18n(key, params, options) {
             return result;
         }
     }
-    console.log('i18nOvr', i18nOvr);
-    console.log('store', store);
     const result = tryGet(store);
     if (result) {
         return result;
@@ -11425,16 +11420,11 @@ let UIList = class UIList extends group/* UIGroup */.q {
         let line = this.makeGroup();
         this.append(line);
         line.setMod('line', true);
-        let isFirstLine = true;
-        if (isFirstLine) {
-            line.container.classList.add('jodit-media-toolbar');
-        }
         let group;
         const addButton = (control) => {
             let elm = null;
             switch (control.name) {
                 case '\n':
-                    isFirstLine = false;
                     line = this.makeGroup();
                     line.setMod('line', true);
                     group = this.makeGroup();
@@ -11459,10 +11449,6 @@ let UIList = class UIList extends group/* UIGroup */.q {
                 default:
                     lastBtnSeparator = false;
                     elm = this.makeButton(control, target);
-                    if (elm && isFirstLine) {
-                        if (elm.text)
-                            elm.text.innerText = elm.name;
-                    }
             }
             if (elm) {
                 if (!group) {
@@ -12240,6 +12226,7 @@ class ViewWithToolbar extends _view__WEBPACK_IMPORTED_MODULE_0__/* .View */ .G {
         this.buildToolbar();
     }
     buildToolbar() {
+        var _a, _b, _c;
         if (!this.o.toolbar) {
             return;
         }
@@ -12250,6 +12237,21 @@ class ViewWithToolbar extends _view__WEBPACK_IMPORTED_MODULE_0__/* .View */ .G {
             .setRemoveButtons(this.o.removeButtons)
             .build(buttons.concat(this.o.extraButtons || []))
             .appendTo(this.toolbarContainer);
+        if (!this.o.toolbarTopButtonSizeUp)
+            return;
+        if (!((_a = this.toolbar.elements) === null || _a === void 0 ? void 0 : _a.length))
+            return;
+        const lineFirst = this.toolbar.elements[0];
+        lineFirst.container.classList.add('jodit-media-toolbar');
+        if (!((_b = lineFirst.elements) === null || _b === void 0 ? void 0 : _b.length))
+            return;
+        const groupFirst = lineFirst.elements[0];
+        if (!((_c = groupFirst === null || groupFirst === void 0 ? void 0 : groupFirst.elements) === null || _c === void 0 ? void 0 : _c.length))
+            return;
+        for (const element of groupFirst.elements) {
+            if (element.text)
+                element.text.innerText = element.name;
+        }
     }
     getRegisteredButtonGroups() {
         return this.groupToButtons;
@@ -15343,7 +15345,7 @@ config/* Config.prototype.controls.brush */.D.prototype.controls.brush = {
         button.state.activated = false;
     },
     popup: (editor, current, self, close, button) => {
-        let colorHEX = '', bg_color = '', tabs = [], currentElement = null;
+        let colorHEX = '', currentElement = null;
         if (current && current !== editor.editor && dom_dom/* Dom.isNode */.i.isNode(current)) {
             if (dom_dom/* Dom.isElement */.i.isElement(current) &&
                 editor.s.isCollapsed() &&
@@ -15352,29 +15354,14 @@ config/* Config.prototype.controls.brush */.D.prototype.controls.brush = {
             }
             dom_dom/* Dom.up */.i.up(current, (node) => {
                 if (dom_dom/* Dom.isHTMLElement */.i.isHTMLElement(node)) {
-                    const color = (0,helpers.css)(node, 'color', true), background = (0,helpers.css)(node, 'background-color', true);
+                    const color = (0,helpers.css)(node, 'color', true);
                     if (color) {
                         colorHEX = color.toString();
-                        return true;
-                    }
-                    if (background) {
-                        bg_color = background.toString();
                         return true;
                     }
                 }
             }, editor.editor);
         }
-        const backgroundTag = (0,widget/* ColorPickerWidget */.YW)(editor, (value) => {
-            if (!currentElement) {
-                editor.execCommand('background', false, value);
-            }
-            else {
-                currentElement.style.backgroundColor = value;
-            }
-            (0,helpers.dataBind)(button, 'color', value);
-            (0,helpers.dataBind)(button, 'color-mode', 'background');
-            close();
-        }, bg_color);
         const colorTab = (0,widget/* ColorPickerWidget */.YW)(editor, (value) => {
             if (!currentElement) {
                 editor.execCommand('forecolor', false, value);
@@ -15386,20 +15373,7 @@ config/* Config.prototype.controls.brush */.D.prototype.controls.brush = {
             (0,helpers.dataBind)(button, 'color-mode', 'color');
             close();
         }, colorHEX);
-        tabs = [
-            {
-                name: 'Background',
-                content: backgroundTag
-            },
-            {
-                name: 'Text',
-                content: colorTab
-            }
-        ];
-        if (editor.o.colorPickerDefaultTab !== 'background') {
-            tabs = tabs.reverse();
-        }
-        return (0,widget/* TabsWidget */.IL)(editor, tabs, currentElement);
+        return colorTab;
     },
     exec(jodit, current, { button }) {
         const mode = (0,helpers.dataBind)(button, 'color-mode'), color = (0,helpers.dataBind)(button, 'color');
@@ -15443,11 +15417,6 @@ function color(editor) {
     const callback = (command, second, third) => {
         const colorHEX = (0,helpers.normalizeColor)(third);
         switch (command) {
-            case 'background':
-                editor.s.applyStyle({
-                    backgroundColor: !colorHEX ? '' : colorHEX
-                });
-                break;
             case 'forecolor':
                 editor.s.applyStyle({
                     color: !colorHEX ? '' : colorHEX
@@ -15457,9 +15426,7 @@ function color(editor) {
         editor.synchronizeValues();
         return false;
     };
-    editor
-        .registerCommand('forecolor', callback)
-        .registerCommand('background', callback);
+    editor.registerCommand('forecolor', callback);
 }
 global/* pluginSystem.add */.pw.add('color', color);
 
@@ -16560,7 +16527,7 @@ config/* Config.prototype.controls.paragraph */.D.prototype.controls.paragraph =
         h3: 'Heading 3',
         h4: 'Heading 4',
         h5: 'Heading 5',
-        h6: 'Heading 6',
+        h6: 'Heading 6'
     },
     isChildActive: (editor, control) => {
         const current = editor.s.current();

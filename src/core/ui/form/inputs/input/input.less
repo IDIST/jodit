@@ -48,8 +48,11 @@
 		align-items: center;
 		justify-content: stretch;
 
-		border: 1px solid var(--color-border);
-		background-color: var(--color-white);
+		//border: 1px solid var(--color-border);
+		background-color: var(--color-background-default);
+		overflow: hidden;
+		perspective: 1px;
+		border-radius: var(--border-radius-default);
 
 		@media (max-width: @screen-xs) {
 			min-width: 140px;
@@ -62,7 +65,8 @@
 	}
 
 	&_focused_true &__wrapper {
-		border-color: var(--color-border-selected);
+		//border-color: var(--color-border-selected);
+		border-color: var(--color-border-focus);
 	}
 
 	&__icon:not(:empty) {
@@ -72,7 +76,8 @@
 
 		svg {
 			.size(16px);
-			fill: var(--color-border);
+			//fill: var(--color-border);
+			fill: var(--color-placeholder);
 		}
 	}
 

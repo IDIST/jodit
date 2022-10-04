@@ -8,19 +8,18 @@
 	
 .jodit-emoji {
   display: flex;
-  width: 300px;
-  height: 284px;
+  width: calc(var(--jd-font-size-large) * 6 + var(--jd-padding-default) * 12);
+  height: 450px;
   flex-direction: column;
 }
 .jodit-emoji__navigate {
-  height: 87px;
-  padding: var(--jd-padding-default) 0;
-  border-bottom: 1px solid var(--jd-color-border);
+  padding: calc(var(--jd-padding-default)*2) 0;
   background-color: var(--jd-color-white);
 }
 .jodit-emoji__categories {
   display: flex;
   justify-content: space-between;
+  margin-bottom: calc(var(--jd-padding-default) * 2);
 }
 .jodit-emoji__category {
   display: flex;
@@ -69,13 +68,11 @@
   background-position: -63px -21px;
 }
 .jodit-emoji__input {
-  margin-top: var(--jd-padding-default);
-  margin-bottom: 0;
+  margin-bottom: 0px;
 }
 .jodit-emoji__emojis {
   display: flex;
   overflow: auto;
-  height: calc(100% - 87px);
   flex: 1;
   flex-wrap: wrap;
   padding: var(--jd-padding-default) 0;
@@ -83,11 +80,14 @@
 .jodit-emoji__emoji {
   cursor: pointer;
   font-family: 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', serif;
-  font-size: 25px;
+  font-size: var(--jd-font-size-large);
+  line-height: var(--jd-font-size-large);
+  padding: var(--jd-padding-default);
 }
 .jodit-emoji__category-title {
   flex: 100%;
   color: var(--jd-color-label);
-  font-weight: 300;
+  font-weight: 700;
+  line-height: 40px;
 }
 

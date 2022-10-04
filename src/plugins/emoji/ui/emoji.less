@@ -1,21 +1,22 @@
 .jodit-emoji {
 	display: flex;
 
-	width: 300px;
-	height: 284px;
+	width: calc( var(--font-size-large) * 6 + var(--padding-default) * 12 );
+	height: 450px;
 
 	flex-direction: column;
 
 	&__navigate {
-		height: 87px;
-		padding: var(--padding-default) 0;
-		border-bottom: 1px solid var(--color-border);
+		//height: 87px;
+		padding: calc(var(--padding-default)*2) 0;
+		//border-bottom: 1px solid var(--color-border);
 		background-color: var(--color-white);
 	}
 
 	&__categories {
 		display: flex;
 		justify-content: space-between;
+		margin-bottom: calc(var(--padding-default) * 2);
 	}
 
 	&__category {
@@ -76,14 +77,13 @@
 	}
 
 	&__input {
-		margin-top: var(--padding-default);
-		margin-bottom: 0;
+		margin-bottom: 0px;
 	}
 
 	&__emojis {
 		display: flex;
 		overflow: auto;
-		height: calc(100% - 87px);
+		//height: calc(100% - 87px);
 		flex: 1;
 		flex-wrap: wrap;
 		padding: var(--padding-default) 0;
@@ -93,12 +93,15 @@
 		cursor: pointer;
 		font-family: 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol',
 			serif;
-		font-size: 25px;
+		font-size: var(--font-size-large);
+		line-height: var(--font-size-large);
+		padding: var(--padding-default);
 	}
 
 	&__category-title {
 		flex: 100%;
 		color: var(--color-label);
-		font-weight: 300;
+		font-weight: 700;
+		line-height: 40px;
 	}
 }
