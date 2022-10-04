@@ -72,4 +72,5 @@ import 'jodit/plugins/dtd/dtd';
 import 'jodit/plugins/xpath/xpath';
 
 // Custom
+import 'jodit/plugins/emoji/emoji';
 import 'jodit/plugins/gif/gif';
