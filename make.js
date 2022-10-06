@@ -6,7 +6,7 @@
 module.exports = {
 	paths: [
 		'./src/plugins/speech-recognize/',
-		'./src/plugins/debug/',
+		// './src/plugins/debug/',
 		'./src/plugins/finder',
 		'./src/plugins/show-blocks',
 		'./src/plugins/autocomplete',

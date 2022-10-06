@@ -16,4 +16,4 @@ declare module 'jodit/config' {
 	}
 }
 
-Config.prototype.showXPathInStatusbar = true;
+Config.prototype.showXPathInStatusbar = false;
