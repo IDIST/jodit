@@ -120,8 +120,8 @@ export class Config implements IViewOptions {
 	 * })
 	 * ```
 	 */
-	height: number | string = '100%';
-	// height: number | string = 'auto';
+	// height: number | string = '100%';
+	height: number | string = 'auto';
 
 	/**
 	 * List of plugins that will be initialized in safe mode.
@@ -222,7 +222,7 @@ export class Config implements IViewOptions {
 	 * ```
 	 */
 	toolbarButtonSize: IUIButtonState['size'] = 'middle';
-	toolbarTopButtonSizeUp: boolean = true;
+	toolbarTopButtonSizeUp: boolean = false;
 
 	/**
 	 * Allow navigation in the toolbar of the editor by Tab key
@@ -400,7 +400,7 @@ export class Config implements IViewOptions {
 	/**
 	 * Boolean, whether the statusbar should be shown.
 	 */
-	statusbar: boolean = true;
+	statusbar: boolean = false;
 
 	/**
 	 * Show tooltip after mouse enter on the button
@@ -410,7 +410,7 @@ export class Config implements IViewOptions {
 	/**
 	 * Delay before show tooltip
 	 */
-	showTooltipDelay: number = 1000;
+	showTooltipDelay: number = 500;
 
 	/**
 	 * Instead of create custop tooltip - use native title tooltips
@@ -887,12 +887,20 @@ export class Config implements IViewOptions {
 	/**
 	 * Hide the link to the Jodit site at the bottom of the editor
 	 */
-	hidePoweredByJodit:boolean = true;
+	hidePoweredByJodit: boolean = true;
 
 	/**
 	 * shows a INPUT[type=color] to open the browser color picker, on the right bottom of widget color picker
 	 */
 	showBrowserColorPicker: boolean = false;
+
+	/**
+	 * Use a placeholder from original input field, if it was set
+	 */
+	useInputsPlaceholder: boolean = false;
+
+	showXPathInStatusbar: boolean = false;
+	showWordsCounter: boolean = false;
 
 	private static __defaultOptions: Config;
 

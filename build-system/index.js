@@ -44,6 +44,7 @@ module.exports = (env, argv, dir = process.cwd(), onlyTS = false) => {
 			...(!isProd || (!uglify && !ESNext)
 				? { vdom: ['./src/core/vdom/index'] }
 				: {}),
+			...(debug ? {} : { 'jodit.fat': './src/fat.ts' }),
 			jodit: debug
 				? ['webpack-hot-middleware/client.js', './src/index']
 				: ['./src/index'],

@@ -61,24 +61,4 @@ Jodit.defaultOptions.filebrowser = {
 	height: 580
 };
 
-// Image
-Jodit.defaultOptions.image = {
-	// dialogWidth: number,
-	editAlign: true, // Show Alignment selector
-	editAlt: false, // Show edit 'alt' input
-	editBorderRadius: false,
-	editClass: false, // Show edit classNames input
-	editId: false, // Show edit ID input
-	editLink: false, // Show edit image link's options
-	editMargins: false, // Show edit margin inputs
-	editSize: true, // Show edit image size's inputs
-	editSrc: false, // Show edit 'src' input
-	editStyle: false, // Show style edit input
-	editTitle: false, // Show edit 'title' input
-	openOnDblClick: true, // Open editing dialog after double click on image
-	selectImageAfterClose: true, // Select image after close dialog
-	showPreview: true, // Show preview image
-	useImageEditor: false // Show crop/resize btn
-};
-
-Jodit.defaultOptions.placeholder = ''; // Default placeholder
+Jodit.defaultOptions.toolbarTopButtonSizeUp = true;
