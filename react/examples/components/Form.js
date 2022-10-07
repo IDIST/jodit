@@ -1,6 +1,5 @@
-import React, { useCallback, useState } from 'react';
-
-import JoditEditor, { Jodit } from '../../src/';
+import React, { useState } from 'react';
+import JoditEditor from '../../src/';
 import './Form.css';
 
 /**
@@ -9,7 +8,10 @@ import './Form.css';
 const Form = () => {
 	// States
 	const [config] = useState({
+		iframe: false,
 		toolbar: true,
+		toolbarStyle: 'top',
+		editorCssClass: '',
 		minHeight: '500px'
 	});
 	const [textAreaValue] = useState('');

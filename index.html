@@ -2,100 +2,64 @@
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
-		<meta
-			name="viewport"
-			content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
-		/>
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
 		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
-		<title>Editor for SUPER CLUB</title>
+		<title>Editor Example (Javascript)</title>
+		<link rel="stylesheet" href="app.css" />
 		<link rel="stylesheet" href="./build/jodit.css" />
 		<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300i,400,400i,700,700i" rel="stylesheet"/>
 	</head>
+
 	<body>
-	<div class="example-box">
-		<h1>SuperClub Editor</h1>
-		<h4 id="time"></h4>
-		<ul>
-			<li>
-				<a href="https://xdsoft.net/jodit/">Jodit Document</a>
-			</li>
-			<li>
-				<a href="https://gitlab.ccr.co.kr/cgp_ex/frontend/editor">Gitlab Repogitory</a>
-			</li>
-		</ul>
-		<textarea name="editor" id="editor" cols="50" rows="10" placeholder=""></textarea>
-	</div>
-	<style>
-		html,
-		body {
-			width: 100vw;
-			height: 100vh;
-			padding: 0;
-			margin: 0;
-			display: flex;
-			align-items: center;
-			justify-content: center;
-		}
+		<header>
+			<h1>Editor Example (<b>Javascript</b>)</h1>
+			<h4 id="time"></h4>
+		</header>
 
-		h1 {
-			margin: auto;
-		}
+		<section id="code">
+			<pre>
+import './app.css';
 
-		.jodit-toolbar-button__button {
-			height: 100%;
-		}
+import React from 'react';
+import ReactDOM from 'react-dom';
 
-		.example-box { width: 90%; height: 90%; }
-	</style>
-	<script src="./build/jodit.js"></script>
-	<script src="./build/plugins/keyboard/keyboard.js"></script>
-	<script src="./build/plugins/paste-code/paste-code.js"></script>
-	<script src="./build/plugins/google-maps/google-maps.js"></script>
-	<script src="./build/plugins/export-docs/export-docs.js"></script>
-	<script src="./build/plugins/paste-from-word/paste-from-word.js"></script>
-	<script src="./config.js"></script>
-	<script>
-		const editor = new Jodit('#editor', {
-			uploader: {
-				url: 'https://xdsoft.net/jodit/finder/index.php?action=fileUpload'
-			},
-			filebrowser: {
-				ajax: {
-					url: 'https://xdsoft.net/jodit/finder/index.php'
-				}
-			}
-		});
+import JoditEditor from "../src/JoditEditor";
 
-		editor.waitForReady().then(() => {
-			const names = [
-				'@mary',
-				'@jain',
-				'@entany',
-				'@isaak',
-				'@ivan',
-				'@fedya',
-				'@yakov',
-				'@jhon',
-				'@lena',
-				'@elvin'
-			];
+ReactDOM.render(&lt;JoditEditor
+  value={"test"}
+  config={{
+    readonly: false // all options from https://xdsoft.net/jodit/doc/
+  }}
+  onChange={console.log}
+/>, document.getElementById('editor'));
+			</pre>
+		</section>
 
-			editor.e.fire('registerAutocompleteSource', (query) => {
-				return names
-				.filter((value) => value.indexOf(query) === 0)
-				.map((value) => ({
-					title: value,
-					value
-				}));
-			});
-		});
-	</script>
-	<script>
-		var today = new Date();
-		var date = today.getFullYear()+'.'+(today.getMonth()+1)+'.'+today.getDate();
-		var time = today.getHours() + ":" + today.getMinutes();
-		var dateTime = date+' '+time;
-		document.querySelector('#time').innerHTML = dateTime
-	</script>
+		<section class="editor">
+			<textarea id="editor" cols="50" rows="10" placeholder=""></textarea>
+		</section>
+
+		<section class="result">
+			<div id="result"></div>
+		</section>
+
+		<footer>
+			<nav>
+				<ul class="container">
+					<li><a href="https://xdsoft.net/jodit/">Jodit homepage</a></li>
+					<li><a href="https://gitlab.ccr.co.kr/cgp_ex/frontend/editor">Gitlab Repogitory</a></li>
+				</ul>
+			</nav>
+		</footer>
+
+		<script src="./build/jodit.js"></script>
+		<script src="./build/plugins/keyboard/keyboard.js"></script>
+		<script src="./build/plugins/paste-code/paste-code.js"></script>
+		<script src="./build/plugins/google-maps/google-maps.js"></script>
+		<script src="./build/plugins/export-docs/export-docs.js"></script>
+		<script src="./build/plugins/paste-from-word/paste-from-word.js"></script>
+		<script src="./app.js"></script>
+		<script src="./config.js"></script>
+
 	</body>
 </html>

@@ -1,8 +1,3 @@
-/*!
- * Jodit Editor (https://xdsoft.net/jodit/)
- * Released under MIT see LICENSE.txt in the project root for license information.
- * Copyright (c) 2013-2022 Valeriy Chupurnov. All rights reserved. https://xdsoft.net
- */
 
 describe('Symbols plugin', function () {
 	it('Should create symbol button in toolbar and after click open dialog with symbols', function () {

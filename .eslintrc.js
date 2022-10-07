@@ -1,8 +1,3 @@
-/*!
- * Jodit Editor (https://xdsoft.net/jodit/)
- * Released under MIT see LICENSE.txt in the project root for license information.
- * Copyright (c) 2013-2022 Valeriy Chupurnov. All rights reserved. https://xdsoft.net
- */
 
 // eslint-disable-next-line strict
 module.exports = {
@@ -58,7 +53,7 @@ module.exports = {
 		],
 		'jsx-quotes': 'error',
 
-		'header/header': [2, 'src/header.js'],
+		// 'header/header': [2, 'src/header.js'],
 		'no-mixed-spaces-and-tabs': 'off',
 		'no-empty': 'off',
 		'@typescript-eslint/no-empty-interface': 'off',

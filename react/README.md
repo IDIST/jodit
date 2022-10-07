@@ -1,11 +1,3 @@
-# React Jodit PRO WYSIWYG Editor
-
-[![npm](https://img.shields.io/npm/v/jodit-pro-react.svg)](https://www.npmjs.com/package/jodit-pro-react)
-[![npm](https://img.shields.io/npm/dm/jodit-pro-react.svg)](https://www.npmjs.com/package/jodit-pro-react)
-[![npm](https://img.shields.io/npm/l/jodit-pro-react.svg)](https://www.npmjs.com/package/jodit-pro-react)
-
-React wrapper for [Jodit PRO](https://xdsoft.net/jodit/pro/)
-
 ## Installation
 
 ```bash

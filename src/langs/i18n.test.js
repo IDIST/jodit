@@ -1,8 +1,3 @@
-/*!
- * Jodit Editor (https://xdsoft.net/jodit/)
- * Released under MIT see LICENSE.txt in the project root for license information.
- * Copyright (c) 2013-2022 Valeriy Chupurnov. All rights reserved. https://xdsoft.net
- */
 describe('Test i18n functionality', function () {
 	describe('Helper 18n', function () {
 		const i18n = Jodit.modules.Helpers.i18n;

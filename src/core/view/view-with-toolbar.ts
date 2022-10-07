@@ -1,8 +1,3 @@
-/*!
- * Jodit Editor (https://xdsoft.net/jodit/)
- * Released under MIT see LICENSE.txt in the project root for license information.
- * Copyright (c) 2013-2022 Valeriy Chupurnov. All rights reserved. https://xdsoft.net
- */
 
 /**
  * @module view
@@ -76,21 +71,21 @@ export abstract class ViewWithToolbar extends View implements IViewWithToolbar {
 			.build(buttons.concat(this.o.extraButtons || []))
 			.appendTo(this.toolbarContainer);
 
-		if (!this.o.toolbarTopButtonSizeUp) return;
+		if (this.o.toolbarStyle === 'top') {
+			// First line
+			if (!this.toolbar.elements?.length) return;
+			const lineFirst = this.toolbar.elements[0];
+			lineFirst.container.classList.add('jodit-media-toolbar');
 
-		// First line
-		if (!this.toolbar.elements?.length) return;
-		const lineFirst = this.toolbar.elements[0];
-		lineFirst.container.classList.add('jodit-media-toolbar');
+			// First line's group
+			if (!lineFirst.elements?.length) return;
+			const groupFirst = lineFirst.elements[0];
+			if (!groupFirst?.elements?.length) return;
 
-		// First line's group
-		if (!lineFirst.elements?.length) return;
-		const groupFirst = lineFirst.elements[0];
-		if (!groupFirst?.elements?.length) return;
-
-		// First line's buttons
-		for (const element of groupFirst.elements) {
-			if (element.text) element.text.innerText = element.name;
+			// First line's buttons
+			for (const element of groupFirst.elements) {
+				if (element.text) element.text.innerText = element.name;
+			}
 		}
 	}
 
