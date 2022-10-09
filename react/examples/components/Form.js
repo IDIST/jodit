@@ -8,11 +8,11 @@ import './Form.css';
 const Form = () => {
 	// States
 	const [config] = useState({
-		iframe: false,
-		toolbar: true,
 		toolbarStyle: 'top',
-		editorCssClass: '',
-		minHeight: '500px'
+		minHeight: '500px',
+		uploader: {
+			url: 'https://xdsoft.net/jodit/finder/index.php?action=fileUpload'
+		}
 	});
 	const [textAreaValue] = useState('');
 

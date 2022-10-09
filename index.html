@@ -17,21 +17,21 @@
 		</header>
 
 		<section id="code">
+			<iframe
+				src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=monokai&wt=none&l=auto&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%252F%252F%2520Html%250A%253Ctextarea%2520id%253D%2522editor%2522%2520cols%253D%252250%2522%2520rows%253D%252210%2522%2520placeholder%253D%2522%2522%253E%253C%252Ftextarea%253E%250A%250A%252F%252F%2520JS%250Aconst%2520config%2520%253D%2520%257B%2520%252F%252F%2520https%253A%252F%252Fxdsoft.net%252Fjodit%252Fdocs%252Fclasses%252Fconfig.Config.html%250A%2509...%250A%257D%253B%250A%250Aconst%2520editor%2520%253D%2520new%2520Jodit%28%27%2523editor%27%252C%2520config%29%253B"
+				style="width: 100%; height: 354px; border:0; transform: scale(1); overflow:hidden;"
+				sandbox="allow-scripts allow-same-origin">
+			</iframe>
 			<pre>
-import './app.css';
+// Html
+<textarea id="editor" cols="50" rows="10" placeholder=""></textarea>
 
-import React from 'react';
-import ReactDOM from 'react-dom';
+// JS
+const config = {
+	// https://xdsoft.net/jodit/docs/classes/config.Config.html
+};
 
-import JoditEditor from "../src/JoditEditor";
-
-ReactDOM.render(&lt;JoditEditor
-  value={"test"}
-  config={{
-    readonly: false // all options from https://xdsoft.net/jodit/doc/
-  }}
-  onChange={console.log}
-/>, document.getElementById('editor'));
+const editor = new Jodit('#editor', config);
 			</pre>
 		</section>
 
@@ -53,13 +53,37 @@ ReactDOM.render(&lt;JoditEditor
 		</footer>
 
 		<script src="./build/jodit.js"></script>
-		<script src="./build/plugins/keyboard/keyboard.js"></script>
-		<script src="./build/plugins/paste-code/paste-code.js"></script>
-		<script src="./build/plugins/google-maps/google-maps.js"></script>
-		<script src="./build/plugins/export-docs/export-docs.js"></script>
-		<script src="./build/plugins/paste-from-word/paste-from-word.js"></script>
-		<script src="./app.js"></script>
-		<script src="./config.js"></script>
+		<script>
+			const config = { // https://xdsoft.net/jodit/docs/classes/config.Config.html
+				toolbarStyle: 'top',
+				minHeight: '500px',
+			};
 
+			const editor = new Jodit('#editor', config);
+
+			editor.waitForReady().then(() => {
+				const names = [
+					'@mary',
+					'@jain',
+					'@entany',
+					'@isaak',
+					'@ivan',
+					'@fedya',
+					'@yakov',
+					'@jhon',
+					'@lena',
+					'@elvin'
+				];
+
+				editor.e.fire('registerAutocompleteSource', query => {
+					return names
+					.filter(value => value.indexOf(query) === 0)
+					.map(value => ({
+						title: value,
+						value
+					}));
+				});
+			});
+		</script>
 	</body>
 </html>

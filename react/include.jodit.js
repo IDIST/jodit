@@ -1,4 +1,4 @@
-import { Jodit } from '../build/jodit.fat.es5.min.js';
-import '../build/jodit.fat.es5.min.css';
+import { Jodit } from '../build/jodit.fat.min.js';
+import '../build/jodit.fat.min.css';
 
 export { Jodit };

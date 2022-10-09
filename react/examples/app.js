@@ -1,7 +1,11 @@
-import './app.css';
-
+// React
 import React from 'react';
+
+// Components
 import Form from './components/Form';
+
+// Local
+import './app.css';
 
 // For React < 18
 // import ReactDOM from 'react-dom';

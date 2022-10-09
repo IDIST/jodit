@@ -7,7 +7,6 @@ module.exports.fileName = ({ argv, ES, isTest, excludeLangs, uglify }) => {
 	return name =>
 		name +
 		(ES === 'es5' || isTest ? '' : '.' + ES) +
-		(ES === 'es2018' || isTest ? '' : '.' + ES) +
 		(excludeLangs ? '.en' : '') +
 		(uglify ? '.min' : '');
 };

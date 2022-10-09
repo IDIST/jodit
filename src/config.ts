@@ -133,7 +133,7 @@ export class Config implements IViewOptions {
 
 	commandToHotkeys!: IDictionary<string | string[]>;
 
-	license: string = '';
+	license: string = 'CC3FM-00670-AS5MN-T56AZ';
 
 	preset: string = 'custom';
 
@@ -441,7 +441,7 @@ export class Config implements IViewOptions {
 	 * });
 	 * ```
 	 */
-	iframe: boolean = false;
+	iframe: boolean = true;
 
 	/**
 	 * Allow editing the entire HTML document(html, head)
