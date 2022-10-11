@@ -1,4 +1,3 @@
-
 /**
  * @module modules/uploader
  */
@@ -61,7 +60,9 @@ export function send(
 			url: isFunction(uploader.o.url)
 				? uploader.o.url(request)
 				: uploader.o.url,
-			headers: uploader.o.headers,
+			headers: isFunction(uploader.o.headers)
+				? uploader.o.headers(uploader.o.authToken)
+				: uploader.o.headers,
 			queryBuild: uploader.o.queryBuild,
 			contentType: uploader.o.contentType.call(uploader, request),
 			dataType: uploader.o.format || 'json',

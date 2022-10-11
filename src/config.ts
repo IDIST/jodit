@@ -1,4 +1,3 @@
-
 /**
  * @module config
  */
@@ -422,7 +421,6 @@ export class Config implements IViewOptions {
 	// autosave: false, // false or url
 	// autosaveCallback: false, // function
 	// interval: 60, // seconds
-	// TODO
 
 	/**
 	 * Element that will be created when you press Enter
@@ -864,7 +862,7 @@ export class Config implements IViewOptions {
 		'|',
 		// List
 		'ul',
-		'ol',
+		'ol'
 	];
 
 	/**

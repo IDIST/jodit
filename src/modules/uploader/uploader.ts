@@ -210,13 +210,12 @@ export class Uploader extends ViewComponent implements IUploader {
 					event.preventDefault();
 				}
 			})
-			.on(form, 'drop', (event: DragEvent): false | void => {
+			.on(form, 'drop', (event: DragEvent): false | void => { // Trigger when drop image at editor
 				form.classList.remove('jodit_drag_hover');
 
 				if (hasFiles(event.dataTransfer)) {
 					event.preventDefault();
 					event.stopImmediatePropagation();
-
 					sendFiles(
 						self,
 						event.dataTransfer.files,

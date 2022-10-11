@@ -36,13 +36,11 @@ export interface IUploaderOptions<T> {
 		| ((request: FormData | IDictionary<string> | string) => string);
 	insertImageAsBase64URI: boolean;
 	imagesExtensions: string[];
-	headers?:
-		| IDictionary<string>
-		| null
-		| ((this: IAjax<any>) => CanPromise<IDictionary<string> | null>);
+	headers?: null | object;
 	data: null | object;
 	format: string;
 	method: string;
+	authToken: null | string;
 
 	filesVariableName: (i: number) => string;
 

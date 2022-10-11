@@ -36,6 +36,7 @@ export function sendFiles(
 
 	const promises: Array<Promise<any>> = [];
 
+	// Convert image to base64
 	if (o.insertImageAsBase64URI) {
 		let file: File, i: number;
 
@@ -121,7 +122,8 @@ export function sendFiles(
 					fileList[i],
 					newName
 				);
-
+				// console.log('key, iFile, name');
+				// console.log(key, iFile, name);
 				form.append(key, iFile, name);
 			}
 		}

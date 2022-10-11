@@ -1,4 +1,3 @@
-
 /**
  * @module modules/uploader
  */
@@ -31,12 +30,27 @@ declare module 'jodit/config' {
 Config.prototype.enableDragAndDropFileToEditor = true;
 
 Config.prototype.uploader = {
-	url: '',
+	url: (request?: FormData) => {
+		if (request) {
+			console.log('request');
+			// console.log(request);
+			console.log(request.getAll('files[0]'));
+			console.log(request.getAll('files[1]'));
+		}
+		return 'https://server.superclub.idist.ai/api/v1/editor/';
+	},
 
 	insertImageAsBase64URI: false,
 	imagesExtensions: ['jpg', 'png', 'jpeg', 'gif'],
-	headers: null,
+	headers: (authToken: string) => {
+		if (authToken) {
+			return { token: 'Authorization: ' + authToken };
+		} else {
+			return null;
+		}
+	},
 	data: null,
+	authToken: null,
 
 	filesVariableName(i: number): string {
 		return `files[${i}]`;
