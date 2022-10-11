@@ -1,4 +1,3 @@
-
 /**
  * [[include:plugins/video/README.md]]
  * @packageDocumentation

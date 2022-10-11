@@ -2,7 +2,7 @@
 describe('Test uploader module', function () {
 	describe('Drop file', function () {
 		describe('Drop Image like base64', function () {
-			it('Should insert image with SRC in base64', function (done) {
+			it('Should Insert a image with SRC in base64', function (done) {
 				const file = new FileImage(),
 					editor = getJodit({
 						imageProcessor: {
@@ -42,7 +42,7 @@ describe('Test uploader module', function () {
 		});
 
 		describe('Drop Image and upload on server', function () {
-			it('Should upload file and insert image with SRC from server', function (done) {
+			it('Should upload file and Insert a image with SRC from server', function (done) {
 				const file = new FileImage(),
 					editor = getJodit({
 						history: {
@@ -127,7 +127,7 @@ describe('Test uploader module', function () {
 			});
 
 			describe('For iframe mode', function () {
-				it('Should upload file and insert image with SRC from server', function (done) {
+				it('Should upload file and Insert a image with SRC from server', function (done) {
 					const timer = setTimeout(function () {
 						done('Timeout error');
 					}, 4000);

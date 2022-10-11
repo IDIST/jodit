@@ -30,14 +30,46 @@ declare module 'jodit/config' {
 Config.prototype.enableDragAndDropFileToEditor = true;
 
 Config.prototype.uploader = {
-	url: (request?: FormData) => {
-		if (request) {
-			console.log('request');
-			// console.log(request);
-			console.log(request.getAll('files[0]'));
-			console.log(request.getAll('files[1]'));
+	url: (form?: FormData) => {
+		const urlDefault =
+			'https://xdsoft.net/jodit/finder/index.php?action=fileUpload';
+
+		if (!(form && form.get('file'))) return urlDefault;
+		const file = form.get('file');
+
+		if (!file) return urlDefault;
+
+		// @ts-ignore
+		const matchType = file.type.match(/([a-z0-9]+)\//i) as string[];
+		// @ts-ignore
+		const matchExtension = file.type.match(/\/([a-z0-9]+)/i) as string[];
+		const fileType: string =
+			matchType && matchType[1] ? matchType[1].toLowerCase() : '';
+		const fileExtension: string =
+			matchExtension && matchExtension[1]
+				? matchExtension[1].toLowerCase()
+				: '';
+
+		let path = null;
+		switch (fileType) {
+			case 'image':
+				if (fileExtension === 'gif') path = 'gif';
+				else path = 'image';
+				break;
+			case 'video':
+				path = 'video';
+				break;
+			default:
+				path = 'file';
+				break;
 		}
-		return 'https://server.superclub.idist.ai/api/v1/editor/';
+
+		const result = new URL(
+			path,
+			'https://server.superclub.idist.ai/api/v1/media/'
+		).href;
+
+		return result;
 	},
 
 	insertImageAsBase64URI: false,
@@ -52,8 +84,9 @@ Config.prototype.uploader = {
 	data: null,
 	authToken: null,
 
-	filesVariableName(i: number): string {
-		return `files[${i}]`;
+	filesVariableName(fileType: string, fileExtension: string): string {
+		return 'files[0]';
+		// return 'file';
 	},
 
 	withCredentials: false,

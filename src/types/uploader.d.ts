@@ -42,7 +42,7 @@ export interface IUploaderOptions<T> {
 	method: string;
 	authToken: null | string;
 
-	filesVariableName: (i: number) => string;
+	filesVariableName: (fileType:string, fileExtension: string) => string;
 
 	/**
 	 * The method can be used to change the name of the uploaded file

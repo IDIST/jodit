@@ -1,83 +1,42 @@
-
 /**
  * @module plugins/video
  */
 
-import type { IControlType, IJodit, IUIForm } from 'jodit/types';
+import type { IControlType, IJodit } from 'jodit/types';
 import { Config } from 'jodit/config';
-import { TabOption, TabsWidget } from 'jodit/modules/widget';
-import { convertMediaUrlToVideoEmbed } from 'jodit/core/helpers';
-import { UIForm, UIInput, UITextArea, UIBlock } from 'jodit/core/ui/form';
-import { Button } from 'jodit/core/ui/button';
+// import { TabOption, TabsWidget } from 'jodit/modules/widget';
+// import { convertMediaUrlToVideoEmbed } from 'jodit/core/helpers';
+// import { UIForm, UIBlock, UIInput } from 'jodit/core/ui/form';
+// import { Button } from 'jodit/core/ui/button';
 import { Icon } from 'jodit/core/ui/icon';
 
 Icon.set('video', require('./video.svg'));
 
 Config.prototype.controls.video = {
 	popup: (editor: IJodit, current, control, close) => {
-		const formLink: IUIForm = new UIForm(editor, [
-				new UIBlock(editor, [
-					new UIInput(editor, {
-						name: 'url',
-						required: true,
-						label: 'URL',
-						placeholder: 'https://',
-						validators: ['url']
-					})
-				]),
-				new UIBlock(editor, [
-					Button(editor, '', 'Insert', 'primary').onAction(() =>
-						formLink.submit()
-					)
-				])
-			]),
-			formCode: IUIForm = new UIForm(editor, [
-				new UIBlock(editor, [
-					new UITextArea(editor, {
-						name: 'code',
-						required: true,
-						label: 'Embed code'
-					})
-				]),
-				new UIBlock(editor, [
-					Button(editor, '', 'Insert', 'primary').onAction(() =>
-						formCode.submit()
-					)
-				])
-			]),
-			tabs: TabOption[] = [],
-			insertCode = (code: string): void => {
-				editor.s.restore();
-				editor.s.insertHTML(code);
-				close();
-			};
-
-		editor.s.save();
-
-		tabs.push(
-			{
-				icon: 'link',
-				name: 'Link',
-				content: formLink.container
-			},
-			{
-				icon: 'source',
-				name: 'Code',
-				content: formCode.container
-			}
+		const form = editor.c.div();
+		form.appendChild(
+			editor.c.fromHTML(
+				`<div class="jodit-popup jodit-image-popup">
+	<div class="tabs">
+		<button>Upload</button>
+		<button>URL</button>
+	</div>
+	<div class="search">
+		<input placeholder="search" />
+	</div>
+	<div class="upload">
+		<div class="drag-and-drop">
+			Drop video or click
+		</div>
+	</div>
+</div>`
+			)
 		);
 
-		formLink.onSubmit(data => {
-			insertCode(convertMediaUrlToVideoEmbed(data.url));
-		});
-
-		formCode.onSubmit(data => {
-			insertCode(data.code);
-		});
-
-		return TabsWidget(editor, tabs);
+		return form;
 	},
 
-	tags: ['iframe'],
-	tooltip: 'Insert youtube/vimeo video'
+	tags: ['video'],
+	tooltip: 'Insert a video'
 } as IControlType;

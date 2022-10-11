@@ -439,7 +439,7 @@ export class Config implements IViewOptions {
 	 * });
 	 * ```
 	 */
-	iframe: boolean = true;
+	iframe: boolean = false;
 
 	/**
 	 * Allow editing the entire HTML document(html, head)

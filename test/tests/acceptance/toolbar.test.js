@@ -582,7 +582,7 @@ describe('Toolbar', function () {
 			expect(editor.value).equals('<h1>tex a ext</h1>');
 		});
 
-		it('Open video dialog and insert video by url from youtube.', function () {
+		it('Open video dialog and Insert a video by url from youtube.', function () {
 			const editor = getJodit({
 				disablePlugins: 'mobile'
 			});

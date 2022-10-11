@@ -1,7 +1,8 @@
+
 /**
- * [[include:modules/widget/file-selector/README.md]]
+ * [[include:modules/widget/file-uploader/README.md]]
  * @packageDocumentation
- * @module modules/widget/file-selector
+ * @module modules/widget/file-upload
  */
 
 import type { IFileBrowserCallBackData, IJodit } from 'jodit/types';
@@ -21,10 +22,6 @@ interface ImageSelectorCallbacks {
 	 * and then choose any image in the window that opens
 	 */
 	filebrowser?: (data: IFileBrowserCallBackData) => void;
-
-	// Todo
-	searchUnsplash?: (data: any) => void;
-	searchGiphy?: (data: any) => void;
 
 	/**
 	 * Function that will be called when the user selects a file or using drag and drop files to the `Upload` tab
@@ -58,7 +55,7 @@ interface ImageSelectorCallbacks {
  * }, image);
  * ```
  */
-export const FileSelectorWidget = (
+export const FileUploadWidget = (
 	editor: IJodit,
 	callbacks: ImageSelectorCallbacks,
 	elm: HTMLElement | null,

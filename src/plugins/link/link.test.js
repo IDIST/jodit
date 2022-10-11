@@ -86,7 +86,7 @@ describe('Link plugin', function () {
 				});
 
 				describe('Disable video convert', function () {
-					it('Should insert video link as simple link', function () {
+					it('Should Insert a video link as simple link', function () {
 						const editor = getJodit({
 							link: {
 								processVideoLink: false

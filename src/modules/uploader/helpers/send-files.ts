@@ -1,4 +1,3 @@
-
 /**
  * @module modules/uploader
  */
@@ -7,7 +6,7 @@ import type {
 	HandlerError,
 	HandlerSuccess,
 	IUploader,
-	IUploaderData
+	// IUploaderData
 } from 'jodit/types';
 import { error, isFunction, isPlainObject, toArray } from 'jodit/core/helpers';
 import { send } from 'jodit/modules/uploader/helpers/send';
@@ -37,96 +36,97 @@ export function sendFiles(
 	const promises: Array<Promise<any>> = [];
 
 	// Convert image to base64
-	if (o.insertImageAsBase64URI) {
-		let file: File, i: number;
-
-		for (i = 0; i < fileList.length; i += 1) {
-			file = fileList[i];
-
-			if (file && file.type) {
-				const mime = file.type.match(/\/([a-z0-9]+)/i) as string[];
-
-				const extension = mime[1] ? mime[1].toLowerCase() : '';
-
-				if (o.imagesExtensions.includes(extension)) {
-					const reader = new FileReader();
-
-					promises.push(
-						uploader.j.async.promise((resolve, reject) => {
-							reader.onerror = reject;
-							reader.onloadend = (): void => {
-								const resp = {
-									baseurl: '',
-									files: [reader.result],
-									isImages: [true]
-								} as IUploaderData;
-
-								const handler = isFunction(handlerSuccess)
-									? handlerSuccess
-									: o.defaultHandlerSuccess;
-
-								handler.call(uploader, resp);
-
-								resolve(resp);
-							};
-							reader.readAsDataURL(file);
-						})
-					);
-
-					(fileList[i] as any) = null;
-				}
-			}
-		}
-	}
+	// if (o.insertImageAsBase64URI) {
+	// 	let file: File, i: number;
+	//
+	// 	for (i = 0; i < fileList.length; i += 1) {
+	// 		file = fileList[i];
+	//
+	// 		if (file && file.type) {
+	// 			const mime = file.type.match(/\/([a-z0-9]+)/i) as string[];
+	//
+	// 			const extension = mime[1] ? mime[1].toLowerCase() : '';
+	//
+	// 			if (o.imagesExtensions.includes(extension)) {
+	// 				const reader = new FileReader();
+	//
+	// 				promises.push(
+	// 					uploader.j.async.promise((resolve, reject) => {
+	// 						reader.onerror = reject;
+	// 						reader.onloadend = (): void => {
+	// 							const resp = {
+	// 								baseurl: '',
+	// 								files: [reader.result],
+	// 								isImages: [true]
+	// 							} as IUploaderData;
+	//
+	// 							const handler = isFunction(handlerSuccess)
+	// 								? handlerSuccess
+	// 								: o.defaultHandlerSuccess;
+	//
+	// 							handler.call(uploader, resp);
+	//
+	// 							resolve(resp);
+	// 						};
+	// 						reader.readAsDataURL(file);
+	// 					})
+	// 				);
+	//
+	// 				(fileList[i] as any) = null;
+	// 			}
+	// 		}
+	// 	}
+	// }
 
 	fileList = fileList.filter(a => a);
 
-	if (fileList.length) {
+	if (!fileList.length) return Promise.all(promises);
+
+	// Save files
+	for (let i = 0; i < fileList.length; i += 1) {
 		const form = new FormData();
 
 		form.append(o.pathVariableName, uploader.path);
 		form.append('source', uploader.source);
 
-		let file: File;
-		for (let i = 0; i < fileList.length; i += 1) {
-			file = fileList[i];
+		const file: File = fileList[i];
+		if (!file) continue;
 
-			if (file) {
-				const hasRealExtension = /\.[\d\w]+$/.test(file.name);
-				const mime = file.type.match(/\/([a-z0-9]+)/i) as string[];
+		const hasRealExtension = /\.[\d\w]+$/.test(file.name);
+		const match_type = file.type.match(/([a-z0-9]+)\//i) as string[];
+		const match_extension = file.type.match(/\/([a-z0-9]+)/i) as string[];
 
-				const extension: string =
-					mime && mime[1] ? mime[1].toLowerCase() : '';
+		const fileType: string =
+			match_type && match_type[1] ? match_type[1].toLowerCase() : '';
+		const fileExtension: string =
+			match_extension && match_extension[1]
+				? match_extension[1].toLowerCase()
+				: '';
 
-				let newName =
-					fileList[i].name ||
-					Math.random().toString().replace('.', '');
+		const time = String(new Date().getTime());
+		let newName = file.name ? `${time}_${file.name}` : time;
 
-				if (!hasRealExtension && extension) {
-					let extForReg = extension;
+		if (!hasRealExtension && fileExtension) {
+			let extForReg = fileExtension;
 
-					if (['jpeg', 'jpg'].includes(extForReg)) {
-						extForReg = 'jpeg|jpg';
-					}
+			if (['jpeg', 'jpg'].includes(extForReg)) {
+				extForReg = 'jpeg|jpg';
+			}
 
-					const reEnd = new RegExp('.(' + extForReg + ')$', 'i');
+			const reEnd = new RegExp('.(' + extForReg + ')$', 'i');
 
-					if (!reEnd.test(newName)) {
-						newName += '.' + extension;
-					}
-				}
-
-				const [key, iFile, name] = o.processFileName.call(
-					uploader,
-					o.filesVariableName(i),
-					fileList[i],
-					newName
-				);
-				// console.log('key, iFile, name');
-				// console.log(key, iFile, name);
-				form.append(key, iFile, name);
+			if (!reEnd.test(newName)) {
+				newName += '.' + fileExtension;
 			}
 		}
+
+		const [key, iFile, name] = o.processFileName.call(
+			uploader,
+			o.filesVariableName(fileType, fileExtension),
+			fileList[i],
+			newName
+		);
+		form.append(key, iFile, name);
 
 		if (process) {
 			process(form);
@@ -143,13 +143,12 @@ export function sendFiles(
 		promises.push(
 			send(uploader, form)
 				.then(resp => {
+					console.log('resp', resp);
 					if (o.isSuccess.call(uploader, resp)) {
 						const handler = isFunction(handlerSuccess)
 							? handlerSuccess
 							: o.defaultHandlerSuccess;
-
 						handler.call(uploader, o.process.call(uploader, resp));
-
 						return resp;
 					}
 

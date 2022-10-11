@@ -702,7 +702,7 @@ export class Select implements ISelect {
 	}
 
 	/**
-	 * Insert image in editor
+	 * Insert a image in editor
 	 *
 	 * @param url - URL for image, or HTMLImageElement
 	 * @param styles - If specified, it will be applied <code>$(image).css(styles)</code>
