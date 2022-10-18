@@ -2,47 +2,40 @@
  * @module plugins/image
  */
 
-import type {
-	IControlType,
-	// IFileBrowserCallBackData,
-	IJodit
-} from 'jodit/types';
-// import { Dom } from 'jodit/core/dom';
-// import { $$ } from 'jodit/core/helpers';
-// import { FileSelectorWidget } from 'jodit/modules/widget';
+import type { IControlType, IJodit } from 'jodit/types';
+import { Dom } from 'jodit/core/dom';
+import { $$ } from 'jodit/core/helpers';
+import { FileSelectorWidget } from 'jodit/modules/widget';
 import { Config } from 'jodit/config';
-import { Icon } from 'jodit/core/ui/icon';
-// import { UIForm, UIBlock, UIInput } from 'jodit/core/ui/form';
-
-Icon.set('image', require('./image.svg'));
 
 Config.prototype.controls.image = {
 	popup: (editor: IJodit, current, self, close) => {
-		const form = editor.c.div();
-		form.appendChild(
-			editor.c.fromHTML(
-				`<div class="jodit-popup jodit-image-popup">
-	<div class="tabs">
-		<button>Search</button>
-		<button>Upload</button>
-	</div>
-	<div class="search">
-		<input placeholder="search" />
-		<div>
-			Get images from https://unsplash.com/
-		</div>
-	</div>
-	<div class="upload">
-		<div class="drag-and-drop">
-			Drop image or click
-		</div>
-	</div>
-</div>`
-			)
-		);
+		let sourceImage: HTMLImageElement | null = null;
 
-		return form;
+		if (
+			current &&
+			!Dom.isText(current) &&
+			Dom.isHTMLElement(current) &&
+			(Dom.isTag(current, 'img') || $$('img', current).length)
+		) {
+			sourceImage = Dom.isTag(current, 'img')
+				? current
+				: $$('img', current)[0];
+		}
+
+		editor.s.save();
+
+		return FileSelectorWidget(
+			editor,
+			{
+				searchUnsplash: true,
+				upload: true
+			},
+			sourceImage,
+			close
+		);
 	},
 	tags: ['img'],
-	tooltip: 'Insert a image'
+	tooltip: 'Insert Image',
+	icon: require('./ui/image.svg')
 } as IControlType;

@@ -63,7 +63,7 @@ module.exports = "<svg width=\"72\" height=\"86\" viewBox=\"0 0 72 86\" fill=\"n
 /***/ 42662:
 /***/ (function(module) {
 
-module.exports = "<svg viewBox=\"0 0 47 61\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"> <path d=\"M46.7671 7.12793H27.3433V61H19.416V7.12793H0.0336914V0.570312H46.7671V7.12793Z\" fill=\"black\"/> </svg>"
+module.exports = "<svg viewBox=\"0 0 47 61\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"> <path d=\"M46.7671 7.12793H27.3433V61H19.416V7.12793H0.0336914V0.570312H46.7671V7.12793Z\"/> </svg>"
 
 /***/ }),
 

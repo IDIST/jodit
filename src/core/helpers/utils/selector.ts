@@ -1,4 +1,3 @@
-
 /**
  * @module helpers/utils
  */
@@ -204,6 +203,7 @@ export function resolveElement(
 		!resolved ||
 		typeof resolved !== 'object' ||
 		!Dom.isElement(resolved) ||
+		// @ts-ignore
 		!resolved.cloneNode
 	) {
 		throw error(

@@ -32,14 +32,26 @@
 
 .jodit-ui-separator-func() {
 	padding: 0;
-	border-right: 1px solid var(--color-border);
+	//border-right: 1px solid var(--color-border);
 	border-left: 0;
-	margin: 2px;
+	margin: 12px;
 	cursor: default;
 }
 
 .jodit-ui-separator {
 	.jodit-ui-separator-func();
+	position: relative;
+}
+
+.jodit-ui-separator::after{
+	content:'';
+	width: 1px;
+	height: 32px;
+	display: block;
+	background: var(--color-gray);
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
 }
 
 .jodit-ui-break {

@@ -1,4 +1,3 @@
-
 /**
  * @module ui
  */
@@ -29,7 +28,7 @@ export class Icon {
 			Icon.icons[name.toLowerCase()];
 
 		if (!isProd && !icon) {
-			console.log(`Icon "${name}" not found`);
+			// console.log(`Icon "${name}" not found`);
 		}
 		return icon;
 	}

@@ -63,7 +63,7 @@ module.exports = "<svg width=\"72\" height=\"86\" viewBox=\"0 0 72 86\" fill=\"n
 /***/ 42662:
 /***/ (function(module) {
 
-module.exports = "<svg viewBox=\"0 0 47 61\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"> <path d=\"M46.7671 7.12793H27.3433V61H19.416V7.12793H0.0336914V0.570312H46.7671V7.12793Z\" fill=\"black\"/> </svg>"
+module.exports = "<svg viewBox=\"0 0 47 61\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"> <path d=\"M46.7671 7.12793H27.3433V61H19.416V7.12793H0.0336914V0.570312H46.7671V7.12793Z\"/> </svg>"
 
 /***/ }),
 
@@ -605,8 +605,8 @@ __webpack_require__.d(__webpack_exports__, {
 var tslib_es6 = __webpack_require__(20255);
 // EXTERNAL MODULE: ./src/core/plugin/index.ts
 var core_plugin = __webpack_require__(35570);
-// EXTERNAL MODULE: ./src/index.ts + 157 modules
-var src = __webpack_require__(33594);
+// EXTERNAL MODULE: ./src/index.ts + 160 modules
+var src = __webpack_require__(85660);
 // EXTERNAL MODULE: ./src/config.ts
 var config = __webpack_require__(27537);
 ;// CONCATENATED MODULE: ./src/plugins/google-maps/helpers/const.ts

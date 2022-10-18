@@ -1,4 +1,3 @@
-
 module.exports = {
 	newline: '줄 바꿈',
 	delete: '삭제',

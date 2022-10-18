@@ -1,5 +1,4 @@
-
-module.exports = {
+const ko = {
 	'Type something': '무엇이든 입력하세요',
 	'About Jodit': 'Jodit에 대하여',
 	'Jodit Editor': 'Jodit Editor',
@@ -90,7 +89,7 @@ module.exports = {
 	'type name': '이름 입력',
 	'Drop image': '이미지 드래그',
 	'Drop file': '파일 드래그',
-	'or click': '혹은 클릭',
+	'or click': '혹은 클릭하세요',
 	'Alternative text': '대체 텍스트',
 	Browse: '탐색',
 	Upload: '업로드',
@@ -142,7 +141,7 @@ module.exports = {
 	Eye: '사이트 확인',
 	pencil: '연필',
 	Update: '갱신',
-	' URL': 'URL',
+	URL: '링크',
 	Edit: '편집',
 	'Horizontal align': '수평 정렬',
 	Filter: '필터',
@@ -217,6 +216,7 @@ module.exports = {
 	'Find Next': '다음 찾기',
 	'Insert className': 'className 입력',
 	'Press Alt for custom resizing':
-		'사용자 지정 크기 조정에 대 한 고도 누르십시오',
-	gif: 'GIF'
+		'사용자 지정 크기 조정에 대 한 고도 누르십시오'
 };
+
+module.exports = ko;

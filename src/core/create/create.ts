@@ -1,4 +1,3 @@
-
 /**
  * [[include:core/create/README.md]]
  * @packageDocumentation
@@ -29,6 +28,7 @@ import { INVISIBLE_SPACE } from 'jodit/core/constants';
 
 export class Create implements ICreate {
 	private get doc(): Document {
+		// @ts-ignore
 		return isFunction(this.document) ? this.document() : this.document;
 	}
 

@@ -1,4 +1,3 @@
-
 const ts = require('typescript');
 const vm = require('vm');
 

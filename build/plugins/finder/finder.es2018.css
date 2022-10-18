@@ -15,7 +15,7 @@
 }
 :root {
   --jd-color-white: #fff;
-  --jd-color-gray: #e0e0e0;
+  --jd-color-gray: #EEEEEE;
   --jd-color-gray-dark: #a5a5a5;
   --jd-color-dark: #4c4c4c;
   --jd-color-blue: #b5d6fd;
@@ -35,7 +35,7 @@
   --jd-color-selection-area: #bdbdbd;
   --jd-color-separator: var(--jd-color-border);
   --jd-color-placeholder: var(--jd-color-gray-dark);
-  --jd-color-panel: #f9f9f9;
+  --jd-color-panel: #FAFAFA;
   --jd-color-resizer: #c8c8c8;
   --jd-color-background-default: var(--jd-color-white);
   --jd-color-background-gray: var(--jd-color-gray);
@@ -59,6 +59,7 @@
   --jd-color-text-icons: rgba(0, 0, 0, 0.75);
   --jd-color-icon: var(--jd-color-dark);
   --jd-padding-default: 8px;
+  --jd-margin-default: 12px;
   --jd-border-radius-default: 8px;
   --jd-z-index-full-size: 100000;
   --jd-z-index-popup: 10000001;

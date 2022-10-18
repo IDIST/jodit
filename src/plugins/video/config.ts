@@ -1,42 +1,70 @@
+/*!
+ * Jodit Editor (https://xdsoft.net/jodit/)
+ * Released under MIT see LICENSE.txt in the project root for license information.
+ * Copyright (c) 2013-2022 Valeriy Chupurnov. All rights reserved. https://xdsoft.net
+ */
+
 /**
  * @module plugins/video
  */
 
 import type { IControlType, IJodit } from 'jodit/types';
 import { Config } from 'jodit/config';
-// import { TabOption, TabsWidget } from 'jodit/modules/widget';
-// import { convertMediaUrlToVideoEmbed } from 'jodit/core/helpers';
-// import { UIForm, UIBlock, UIInput } from 'jodit/core/ui/form';
-// import { Button } from 'jodit/core/ui/button';
-import { Icon } from 'jodit/core/ui/icon';
-
-Icon.set('video', require('./video.svg'));
+import { FileSelectorWidget } from 'jodit/modules/widget';
+import { $$ } from 'jodit/core/helpers';
+import { Dom } from 'jodit/core/dom';
 
 Config.prototype.controls.video = {
 	popup: (editor: IJodit, current, control, close) => {
-		const form = editor.c.div();
-		form.appendChild(
-			editor.c.fromHTML(
-				`<div class="jodit-popup jodit-image-popup">
-	<div class="tabs">
-		<button>Upload</button>
-		<button>URL</button>
-	</div>
-	<div class="search">
-		<input placeholder="search" />
-	</div>
-	<div class="upload">
-		<div class="drag-and-drop">
-			Drop video or click
-		</div>
-	</div>
-</div>`
-			)
-		);
+		let sourceVideo: HTMLImageElement | null = null;
 
-		return form;
+		if (
+			current &&
+			!Dom.isText(current) &&
+			Dom.isHTMLElement(current) &&
+			(Dom.isTag(current, 'img') || $$('img', current).length)
+		) {
+			sourceVideo = Dom.isTag(current, 'img')
+				? current
+				: $$('img', current)[0];
+		}
+
+		editor.s.save();
+
+		return FileSelectorWidget(
+			editor,
+			{
+				uploadVideo: true,
+				url: async (url: string, text: string) => {
+					editor.s.restore();
+
+					if (/^[a-z\d_-]+(\.[a-z\d_-]+)+/i.test(url)) {
+						url = '//' + url;
+					}
+
+					const video: HTMLImageElement =
+						sourceVideo || editor.createInside.element('img');
+
+					video.setAttribute('src', url);
+					video.setAttribute('alt', text);
+
+					if (!sourceVideo) {
+						await editor.s.insertImage(
+							video,
+							null,
+							editor.o.imageDefaultWidth
+						);
+					}
+
+					close();
+				}
+			},
+			sourceVideo,
+			close
+		);
 	},
 
 	tags: ['video'],
-	tooltip: 'Insert a video'
+	tooltip: 'Insert a video',
+	icon: require('./ui/video.svg')
 } as IControlType;

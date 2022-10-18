@@ -739,7 +739,6 @@ module.exports = {
 /***/ 96929:
 /***/ (function(module) {
 
-
 module.exports = {
 	newline: '줄 바꿈',
 	delete: '삭제',

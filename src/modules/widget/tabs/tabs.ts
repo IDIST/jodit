@@ -1,4 +1,3 @@
-
 /**
  * [[include:modules/widget/tabs/README.md]]
  * @packageDocumentation
@@ -52,7 +51,10 @@ export const TabsWidget = (
 	let firstTab: string = '',
 		tabCount: number = 0;
 
-	box.appendChild(buttons);
+	// 탭이 1개일 경우, 탭 내용만 추가합니다.
+	if (tabs.length !== 1) {
+		box.appendChild(buttons);
+	}
 	box.appendChild(tabBox);
 
 	const setActive = (tab: string): void => {
@@ -109,6 +111,7 @@ export const TabsWidget = (
 			setActive(name);
 
 			if (isFunction(content)) {
+				// @ts-ignore
 				content.call(jodit);
 			}
 

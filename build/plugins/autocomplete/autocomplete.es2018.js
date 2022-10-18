@@ -150,8 +150,8 @@ Autocomplete = (0,tslib_es6/* __decorate */.gn)([
 
 // EXTERNAL MODULE: ./src/core/constants.ts
 var constants = __webpack_require__(10063);
-// EXTERNAL MODULE: ./src/index.ts + 157 modules
-var src = __webpack_require__(33594);
+// EXTERNAL MODULE: ./src/index.ts + 160 modules
+var src = __webpack_require__(85660);
 // EXTERNAL MODULE: ./src/core/dom/index.ts
 var dom = __webpack_require__(94522);
 ;// CONCATENATED MODULE: ./src/plugins/autocomplete/helpers.ts

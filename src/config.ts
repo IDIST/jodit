@@ -362,6 +362,8 @@ export class Config implements IViewOptions {
 	 */
 	i18n: IDictionary<IDictionary<string>> | false = {
 		ko: {
+			gif: 'GIF',
+			Search: '검색',
 			'Insert Emoji': '이모지 추가',
 			'Search emoji': '이모지 검색',
 			'Smileys & Emotion': 'Smileys & Emotion',
@@ -374,7 +376,8 @@ export class Config implements IViewOptions {
 			Flags: 'Flags',
 			'Click to tune': '조정하려면 클릭',
 			'Heading 5': '제목 5',
-			'Heading 6': '제목 6'
+			'Heading 6': '제목 6',
+			'Drop video': '비디오 드래그'
 		}
 	};
 

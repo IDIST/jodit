@@ -1,4 +1,3 @@
-
 /**
  * @module helpers/string
  */
@@ -87,7 +86,6 @@ export function i18n(
 		),
 		language = defineLanguage(options?.language, defaultLanguage),
 		tryGet = (store: IDictionary): string | undefined => {
-
 			if (!store) {
 				return;
 			}

@@ -11,6 +11,7 @@
 		margin-top: 4px;
 		margin-bottom: calc(var(--padding-default) / 2);
 		line-height: 18px;
+		border-bottom: 1px solid #E0E0E0;
 
 		> * {
 			margin-left: calc(var(--padding-default) / 2);
@@ -37,6 +38,18 @@
 
 	&__button {
 		min-width: 80px;
+		min-height: 44px;
+		background: white !important;
+		border-radius: 0;
+
+		&[aria-pressed="true"] {
+			border-bottom: 2px solid #9013FE;
+
+			.jodit-ui-button__text {
+				font-weight: 600;
+				color: #9013FE;
+			}
+		}
 
 		&_columns_3 {
 			width: calc(100% / 3);
@@ -45,9 +58,22 @@
 		&_columns_2 {
 			width: 50%;
 		}
+
+		.jodit-ui-button__icon {
+			display: none;
+		}
+		.jodit-ui-button__text {
+			font-weight: 400;
+			font-size: 14px;
+			line-height: 20px;
+			color: #A7A8AB;
+		}
 	}
 
 	.jodit-tabs__wrapper {
+		min-width: 300px;
+		padding: 18px;
+
 		.jodit-tab {
 			display: none;
 

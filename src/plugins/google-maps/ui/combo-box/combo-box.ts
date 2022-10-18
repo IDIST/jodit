@@ -1,4 +1,3 @@
-
 import './combo-box.less';
 
 import { UIInput } from 'jodit/core/ui';

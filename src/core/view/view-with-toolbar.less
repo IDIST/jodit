@@ -9,8 +9,8 @@
 			overflow: hidden;
 			border-bottom: 1px solid var(--color-border);
 			background-color: var(--color-panel);
-			border-radius: var(--border-radius-default)
-				var(--border-radius-default) 0 0;
+			//border-radius: var(--border-radius-default) var(--border-radius-default) 0 0;
+			border-radius: 0;
 		}
 
 		// Custom
@@ -18,7 +18,7 @@
 			background-image: none !important;
 
 			& > div.jodit-ui-group {
-				padding-left: 40px;
+				padding-left: 30px;
 
 				&:last-child {
 					border-top: 1px solid var(--color-border);
@@ -58,10 +58,12 @@
 			// Media toolbar
 			& > .jodit-ui-group.jodit-media-toolbar{
 				span.jodit-toolbar-button {
-					height: 84px;
+					height: 90px;
+					margin: 0;
 
 					button {
-						padding: 16px 16px;
+						width: 90px;
+						padding: 10px 0px;
 						display: flex;
 						flex-direction: column;
 						align-content: center;

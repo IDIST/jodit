@@ -1,37 +1,40 @@
-import type {
-	IControlType,
-	// IFileBrowserCallBackData,
-	IJodit
-} from 'jodit/types';
-// import { Dom } from 'jodit/core/dom';
-// import { $$ } from 'jodit/core/helpers';
-// import { FileSelectorWidget } from 'jodit/modules/widget';
-import { Config } from 'jodit/config';
-import { Icon } from 'jodit/core/ui/icon';
-// import { UIForm, UIBlock, UIInput } from 'jodit/core/ui/form';
+/**
+ * @module plugins/image
+ */
 
-Icon.set('gif', require('./gif.svg'));
+import type { IControlType, IJodit } from 'jodit/types';
+import { Dom } from 'jodit/core/dom';
+import { $$ } from 'jodit/core/helpers';
+import { FileSelectorWidget } from 'jodit/modules/widget';
+import { Config } from 'jodit/config';
 
 Config.prototype.controls.gif = {
 	popup: (editor: IJodit, current, self, close) => {
-		const form = editor.c.div();
-		form.appendChild(
-			editor.c.fromHTML(
-				`<div class="jodit-popup jodit-gif-popup">
-	<div class="search">
-		<input placeholder="search" />
-	</div>
-	<div class="select">
-		<div class="">
-Get images from https://giphy.com/
-		</div>
-	</div>
-</div>`
-			)
-		);
+		let sourceGif: HTMLImageElement | null = null;
 
-		return form;
+		if (
+			current &&
+			!Dom.isText(current) &&
+			Dom.isHTMLElement(current) &&
+			(Dom.isTag(current, 'img') || $$('img', current).length)
+		) {
+			sourceGif = Dom.isTag(current, 'img')
+				? current
+				: $$('img', current)[0];
+		}
+
+		editor.s.save();
+
+		return FileSelectorWidget(
+			editor,
+			{
+				searchGiphy: true
+			},
+			sourceGif,
+			close
+		);
 	},
 	tags: ['img'],
-	tooltip: 'Insert a gif'
+	tooltip: 'Insert Image',
+	icon: require('./ui/gif.svg')
 } as IControlType;
