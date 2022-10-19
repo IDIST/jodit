@@ -222,12 +222,9 @@ export const FileSelectorWidget = (
 			method: 'get',
 			url: ' https://api.unsplash.com/photos',
 			headers: {
-				'Access-Control-Allow-Origin': '*',
-				'Content-Type': 'application/json',
 				Authorization:
 					'Client-ID GJneOEj8Pwm9YNCh3REGQVUR8nhkz55NIiIT0r24Lvs'
-			},
-			withCredentials: false
+			}
 		})
 			.then(function (response) {
 				const images = response.data;
@@ -251,33 +248,27 @@ export const FileSelectorWidget = (
 	if (callbacks.searchGiphy) {
 		const form: HTMLFormElement = editor.c.fromHTML(
 			'<form class="jodit-form jodit-giphy">' +
-				'<div class="jodit-unsplash-search"><input placeholder="Search image"/></div>' +
-				'<div class="jodit-unsplash-search-result grid"></div>' +
+				'<div class="jodit-giphy-search"><input placeholder="Search gif"/></div>' +
+				'<div class="jodit-giphy-search-result grid"></div>' +
 				'</form>'
 		) as HTMLFormElement;
 		// const searchInput: HTMLSpanElement = form.querySelector(
 		// 	'.jodit-unsplash-search > input'
 		// ) as HTMLDivElement;
 		const resultContainer: HTMLSpanElement = form.querySelector(
-			'.jodit-unsplash-search-result'
+			'.jodit-giphy-search-result'
 		) as HTMLDivElement;
 
 		axios({
 			method: 'get',
-			url: ' https://api.unsplash.com/photos',
-			headers: {
-				'Access-Control-Allow-Origin': '*',
-				'Content-Type': 'application/json',
-				Authorization:
-					'Client-ID GJneOEj8Pwm9YNCh3REGQVUR8nhkz55NIiIT0r24Lvs'
-			},
-			withCredentials: false
+			url: 'https://api.giphy.com/v1/gifs/trending?api_key=4q6HZ1M92uI1ePVGFMUTvssZTzJGSNJ0&limit=10&rating=g'
 		})
 			.then(function (response) {
-				const images = response.data;
+				const images = response.data.data;
 				for (let i = 0; i < images.length; i++) {
+					console.log(images[i]);
 					const item = editor.c.fromHTML(
-						`<div class="jodit-unsplash-search-result-item grid-item hover-border-effect"><img class="" src="${images[i].urls.small}"></div>`
+						`<div class="jodit-giphy-search-result-item grid-item hover-border-effect"><img class="" src="${images[i].images.fixed_height.webp}"/></div>`
 					);
 					resultContainer.appendChild(item);
 				}

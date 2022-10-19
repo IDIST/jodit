@@ -4921,7 +4921,7 @@ a + .jodit-filebrowser-tree__source-title {
 }
 .jodit-popup-container .grid .grid-item {
   width: 100%;
-  height: 80px;
+  overflow: hidden;
 }
 .jodit-popup-container input {
   width: 100%;
@@ -4934,11 +4934,6 @@ a + .jodit-filebrowser-tree__source-title {
 .jodit-unsplash-search-result,
 .jodit-giphy-search-result {
   margin-top: 10px;
-}
-.jodit-unsplash-search-result-item img,
-.jodit-giphy-search-result-item img {
-  width: 100%;
-  height: 100%;
 }
 
 .jodit_fullsize-box_true {
