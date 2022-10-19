@@ -4900,7 +4900,7 @@ a + .jodit-filebrowser-tree__source-title {
   color: #A7A8AB;
 }
 .jodit-tabs .jodit-tabs__wrapper {
-  min-width: 300px;
+  width: 300px;
   padding: 18px;
 }
 .jodit-tabs .jodit-tabs__wrapper .jodit-tab {
@@ -4921,6 +4921,7 @@ a + .jodit-filebrowser-tree__source-title {
 }
 .jodit-popup-container .grid .grid-item {
   width: 100%;
+  height: 80px;
   overflow: hidden;
 }
 .jodit-popup-container input {
@@ -4934,6 +4935,11 @@ a + .jodit-filebrowser-tree__source-title {
 .jodit-unsplash-search-result,
 .jodit-giphy-search-result {
   margin-top: 10px;
+}
+.jodit-unsplash-search-result img,
+.jodit-giphy-search-result img {
+  width: 100%;
+  height: 100%;
 }
 
 .jodit_fullsize-box_true {
