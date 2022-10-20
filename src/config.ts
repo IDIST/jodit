@@ -377,7 +377,9 @@ export class Config implements IViewOptions {
 			'Click to tune': '조정하려면 클릭',
 			'Heading 5': '제목 5',
 			'Heading 6': '제목 6',
-			'Drop video': '비디오 드래그'
+			'Drop video': '비디오 드래그',
+			'Drop gif': 'GIF 드래그',
+			'Drop audio': '오디오 드래그'
 		}
 	};
 
