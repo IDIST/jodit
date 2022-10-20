@@ -1,12 +1,10 @@
-
 /**
  * [[include:modules/uploader/README.md]]
  * @packageDocumentation
  * @module modules/uploader
  */
 
-import './uploader.less';
-
+// Jodits
 import type {
 	HandlerError,
 	HandlerSuccess,
@@ -33,8 +31,10 @@ import {
 	sendFiles
 } from 'jodit/modules/uploader/helpers';
 
+// Config
 import './config';
 
+// Main section
 export class Uploader extends ViewComponent implements IUploader {
 	override readonly jodit!: IViewBased;
 
@@ -210,7 +210,8 @@ export class Uploader extends ViewComponent implements IUploader {
 					event.preventDefault();
 				}
 			})
-			.on(form, 'drop', (event: DragEvent): false | void => { // Trigger when drop image at editor
+			.on(form, 'drop', (event: DragEvent): false | void => {
+				// Trigger when drop image at editor
 				form.classList.remove('jodit_drag_hover');
 
 				if (hasFiles(event.dataTransfer)) {
