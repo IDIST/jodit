@@ -96,11 +96,11 @@
   transition: background 0.2s ease 0s;
 }
 .jodit-form button:hover {
-  background-color: #ecebe9;
+  background-color: #e0e0e0;
   color: #4c4c4c;
 }
 .jodit-form button:active {
-  background: #ecebe9;
+  background: #e0e0e0;
   color: #4c4c4c;
 }
 .jodit-form label {
@@ -365,6 +365,28 @@ input:focus + .jodit-switcher__slider {
 .hover-border-effect:hover::after {
   -webkit-box-shadow: inset 0 0 0 3px #9013fe;
           box-shadow: inset 0 0 0 3px #9013fe;
+}
+.skeleton-loader {
+  width: 100%;
+  display: block;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0)), color-stop(50%, rgba(255, 255, 255, 0.2)), color-stop(70%, rgba(255, 255, 255, 0))), lightgray;
+  background: -o-linear-gradient(left, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0) 70% rgba(255, 255, 255, 0) 70%), lightgray;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0) 70% rgba(255, 255, 255, 0) 70%), lightgray;
+  background-repeat: repeat-y;
+  background-size: 50px 500px;
+  background-position: 0 0;
+  -webkit-animation: shine 1s infinite;
+          animation: shine 1s infinite;
+}
+@-webkit-keyframes shine {
+  to {
+    background-position: 100% 0;
+  }
+}
+@keyframes shine {
+  to {
+    background-position: 100% 0;
+  }
 }
 .jodit-button-group {
   display: -webkit-box;
@@ -631,6 +653,12 @@ svg.jodit-icon {
 .jodit-container * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  -webkit-transition-duration: 500ms;
+       -o-transition-duration: 500ms;
+          transition-duration: 500ms;
+  -webkit-transition-property: color, background-color;
+  -o-transition-property: color, background-color;
+  transition-property: color, background-color;
 }
 .jodit .jodit-workplace,
 .jodit-container .jodit-workplace {
@@ -1050,6 +1078,27 @@ svg.jodit-icon {
   background: #fff;
   overflow-scrolling: touch;
 }
+.jodit-context-menu__content .grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 4px;
+}
+.jodit-context-menu__content .grid .grid-item {
+  width: 100%;
+  height: 80px;
+  overflow: hidden;
+}
+.jodit-context-menu__content input {
+  width: 100%;
+  font-size: 14px;
+  line-height: 20px;
+  padding: 12px 10px 12px 16px;
+  border-radius: 8px;
+  background-color: #f8f8f8;
+}
+.jodit-context-menu__content input:focus {
+  border: solid 1px #121212;
+}
 .jodit-context-menu_max-height_false .jodit-context-menu__content {
   max-height: -webkit-fit-content;
   max-height: -moz-fit-content;
@@ -1099,6 +1148,27 @@ svg.jodit-icon {
   padding: 0;
   background: #fff;
   overflow-scrolling: touch;
+}
+.jodit-popup__content .grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 4px;
+}
+.jodit-popup__content .grid .grid-item {
+  width: 100%;
+  height: 80px;
+  overflow: hidden;
+}
+.jodit-popup__content input {
+  width: 100%;
+  font-size: 14px;
+  line-height: 20px;
+  padding: 12px 10px 12px 16px;
+  border-radius: 8px;
+  background-color: #f8f8f8;
+}
+.jodit-popup__content input:focus {
+  border: solid 1px #121212;
 }
 .jodit-popup_max-height_false .jodit-popup__content {
   max-height: -webkit-fit-content;
@@ -1899,7 +1969,7 @@ svg.jodit-icon {
 .jodit-ui-button-group__label {
   display: block;
   margin-bottom: calc(8px / 4);
-  color: #a5a5a5;
+  color: #A7A8AB;
   font-size: 0.8em;
 }
 .jodit-ui-button-group__options {
@@ -2133,7 +2203,7 @@ svg.jodit-icon {
   transition: background-color 0.2s ease 0s;
 }
 .jodit-dialog__header-button:hover {
-  background-color: #ecebe9;
+  background-color: #e0e0e0;
 }
 .jodit-dialog__header .jodit_toolbar {
   border: 0;
@@ -2429,7 +2499,7 @@ svg.jodit-icon {
 .jodit-ui-label {
   display: block;
   margin-bottom: calc(8px / 4);
-  color: #a5a5a5;
+  color: #A7A8AB;
   font-size: 0.8em;
 }
 .jodit-ui-input {
@@ -2479,13 +2549,13 @@ svg.jodit-icon {
 .jodit-ui-input__error {
   display: block;
   margin-bottom: calc(8px / 4);
-  color: #a5a5a5;
+  color: #A7A8AB;
   font-size: 0.8em;
 }
 .jodit-ui-input__label {
   display: block;
   margin-bottom: calc(8px / 4);
-  color: #a5a5a5;
+  color: #A7A8AB;
   font-size: 0.8em;
 }
 .jodit-ui-input_has-error_true .jodit-ui-input__label {
@@ -2535,7 +2605,7 @@ svg.jodit-icon {
 .jodit-ui-input__icon:not(:empty) svg {
   width: 16px;
   height: 16px;
-  fill: #a5a5a5;
+  fill: #bdbdbd;
 }
 .jodit-ui-input__icon:not(:empty) + .jodit-ui-input__input {
   padding-left: 0;
@@ -2618,13 +2688,13 @@ svg.jodit-icon {
 .jodit-ui-select__error {
   display: block;
   margin-bottom: calc(8px / 4);
-  color: #a5a5a5;
+  color: #A7A8AB;
   font-size: 0.8em;
 }
 .jodit-ui-select__label {
   display: block;
   margin-bottom: calc(8px / 4);
-  color: #a5a5a5;
+  color: #A7A8AB;
   font-size: 0.8em;
 }
 .jodit-ui-select_has-error_true .jodit-ui-select__label {
@@ -2674,7 +2744,7 @@ svg.jodit-icon {
 .jodit-ui-select__icon:not(:empty) svg {
   width: 16px;
   height: 16px;
-  fill: #a5a5a5;
+  fill: #bdbdbd;
 }
 .jodit-ui-select__icon:not(:empty) + .jodit-ui-select__input {
   padding-left: 0;
@@ -2780,13 +2850,13 @@ svg.jodit-icon {
 .jodit-ui-text-area__error {
   display: block;
   margin-bottom: calc(8px / 4);
-  color: #a5a5a5;
+  color: #A7A8AB;
   font-size: 0.8em;
 }
 .jodit-ui-text-area__label {
   display: block;
   margin-bottom: calc(8px / 4);
-  color: #a5a5a5;
+  color: #A7A8AB;
   font-size: 0.8em;
 }
 .jodit-ui-text-area_has-error_true .jodit-ui-text-area__label {
@@ -2836,7 +2906,7 @@ svg.jodit-icon {
 .jodit-ui-text-area__icon:not(:empty) svg {
   width: 16px;
   height: 16px;
-  fill: #a5a5a5;
+  fill: #bdbdbd;
 }
 .jodit-ui-text-area__icon:not(:empty) + .jodit-ui-text-area__input {
   padding-left: 0;
@@ -4537,7 +4607,7 @@ svg.jodit-icon {
   background: #696969;
 }
 .jodit-filebrowser-tree__item:hover {
-  background-color: #ecebe9;
+  background-color: #e0e0e0;
 }
 .jodit-filebrowser-tree__item:hover-title {
   color: #222222;
@@ -4652,63 +4722,6 @@ a + .jodit-filebrowser-tree__source-title {
   opacity: 0.4;
 }
 
-.jodit-drag-and-drop__file-box,
-.jodit_uploadfile_button {
-  position: relative;
-  overflow: hidden;
-  width: 100%;
-  padding: 25px 0;
-  text-align: center;
-  aspect-ratio: 1 / 1;
-  background: #F8F8F8;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 30px;
-  color: #A7A8AB;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -ms-flex-line-pack: center;
-      align-content: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-.jodit-drag-and-drop__file-box div,
-.jodit_uploadfile_button div {
-  height: 32px;
-}
-.jodit-drag-and-drop__file-box:hover {
-  background-color: #ecebe9;
-}
-.jodit_uploadfile_button:hover {
-  background-color: #ecebe9;
-}
-.jodit-drag-and-drop__file-box input,
-.jodit_uploadfile_button input {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  padding: 0;
-  margin: 0;
-  cursor: pointer;
-  font-size: 400px;
-  opacity: 0;
-}
-@media (max-width: 768px) {
-  .jodit-drag-and-drop__file-box {
-    width: auto;
-    min-width: 180px;
-    max-width: 100%;
-  }
-}
-
 .jodit-about {
   padding: 20px;
 }
@@ -4765,7 +4778,7 @@ a + .jodit-filebrowser-tree__source-title {
   cursor: pointer;
 }
 .jodit-add-new-line span:hover {
-  background: #ecebe9;
+  background: #e0e0e0;
 }
 .jodit-add-new-line_after span {
   bottom: 0;
@@ -4913,31 +4926,77 @@ a + .jodit-filebrowser-tree__source-title {
   min-width: 220px;
   min-height: 100px;
 }
-
-.jodit-popup-container .grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 4px;
-}
-.jodit-popup-container .grid .grid-item {
-  width: 100%;
-  height: 80px;
-  overflow: hidden;
-}
-.jodit-popup-container input {
-  width: 100%;
+.jodit-tabs .jodit-tabs__title {
+  font-weight: 600;
   font-size: 14px;
   line-height: 20px;
-  padding: 12px 10px 12px 16px;
-  border-radius: 8px;
+  color: #242A3C;
+  padding: 20px 18px 0px 18px;
+}
+
+.drag-and-drop {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding: 25px 0;
+  text-align: center;
+  aspect-ratio: 1 / 1;
+  background: #F8F8F8;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 30px;
+  color: #A7A8AB;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.drag-and-drop .icon {
+  height: 32px;
+}
+.drag-and-drop .icon svg {
+  fill: #A7A8AB;
+}
+.drag-and-drop:hover {
+  background-color: #e0e0e0;
+}
+.drag-and-drop input {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+  font-size: 400px;
+  opacity: 0;
+}
+@media (max-width: 768px) {
+  .jodit-drag-and-drop__file-box {
+    width: auto;
+    min-width: 180px;
+    max-width: 100%;
+  }
+}
+.jodit_drag_hover {
   background-color: #f8f8f8;
 }
-.jodit-unsplash-search-result,
-.jodit-giphy-search-result {
+
+.jodit-search-image__search-result,
+.jodit-search-gif__search-result {
   margin-top: 10px;
 }
-.jodit-unsplash-search-result img,
-.jodit-giphy-search-result img {
+.jodit-search-image__search-result img,
+.jodit-search-gif__search-result img {
   width: 100%;
   height: 100%;
 }
@@ -5092,7 +5151,7 @@ html.jodit_fullsize-box_true {
   display: block;
   width: 100%;
   padding: 8px;
-  color: #a5a5a5;
+  color: #bdbdbd;
   pointer-events: none;
   -webkit-user-select: none !important;
      -moz-user-select: none !important;
@@ -5227,7 +5286,7 @@ html.jodit_fullsize-box_true {
   height: 24px;
   margin-top: calc(24px / -2);
   margin-left: calc(70px / -2);
-  background-color: #a5a5a5;
+  background-color: #bdbdbd;
   color: #fff;
   font-size: 12px;
   line-height: 24px;
@@ -5363,7 +5422,7 @@ html.jodit_fullsize-box_true {
   margin-top: 2px;
 }
 .jodit-ui-search__buttons button:hover {
-  background-color: #ecebe9;
+  background-color: #e0e0e0;
 }
 .jodit-ui-search__buttons button:focus {
   border: 1px solid rgba(181, 214, 253, 0.995);
@@ -5857,7 +5916,7 @@ html.jodit_fullsize-box_true {
   -webkit-box-flex: 100%;
       -ms-flex: 100%;
           flex: 100%;
-  color: #a5a5a5;
+  color: #A7A8AB;
   font-weight: 700;
   line-height: 40px;
 }

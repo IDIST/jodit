@@ -379,7 +379,9 @@ export class Config implements IViewOptions {
 			'Heading 6': '제목 6',
 			'Drop video': '비디오 드래그',
 			'Drop gif': 'GIF 드래그',
-			'Drop audio': '오디오 드래그'
+			'Drop audio': '오디오 드래그',
+			'Search image': '이미지 검색',
+			'Search gif': 'Gif 검색'
 		}
 	};
 

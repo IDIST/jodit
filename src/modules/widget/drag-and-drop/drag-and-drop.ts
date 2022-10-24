@@ -16,7 +16,8 @@ import './drag-and-drop.less';
 export const DragAndDropWidget = (
 	editor: IJodit,
 	callbacks: ImageSelectorCallbacks,
-	fileType: 'IMAGE' | 'GIF' | 'VIDEO' | 'FILE' | 'AUDIO'
+	fileType: 'IMAGE' | 'GIF' | 'VIDEO' | 'FILE' | 'AUDIO',
+	close: () => void
 ): HTMLElement => {
 	let inputAccept = null;
 	switch (fileType) {
@@ -59,7 +60,7 @@ export const DragAndDropWidget = (
 
 	const dragAndDropWidget = editor.c.fromHTML(
 		'<div class="drag-and-drop">' +
-			`<div><svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">${svgPath}</svg></div>` +
+			`<div class="icon"><svg width="32" height="32" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">${svgPath}</svg></div>` +
 			`<span>${placeholder}</span>` +
 			`<input type="file" accept="${inputAccept}" tabindex="-1" dir="auto" multiple=""/>` +
 			'</div>'

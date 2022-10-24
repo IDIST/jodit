@@ -24,7 +24,7 @@
   --jd-color-light-red: rgba(255, 59, 59, 0.4);
   --jd-color-default: var(--jd-color-dark);
   --jd-color-text: #222222;
-  --jd-color-label: var(--jd-color-gray-dark);
+  --jd-color-label: #A7A8AB;
   --jd-color-error: var(--jd-color-red);
   --jd-color-border: var(--jd-color-gray);
   --jd-color-border-dark: var(--jd-color-dark);
@@ -34,14 +34,14 @@
   --jd-color-selection: var(--jd-color-dark);
   --jd-color-selection-area: #bdbdbd;
   --jd-color-separator: var(--jd-color-border);
-  --jd-color-placeholder: var(--jd-color-gray-dark);
+  --jd-color-placeholder: #bdbdbd;
   --jd-color-panel: #FAFAFA;
   --jd-color-resizer: #c8c8c8;
   --jd-color-background-default: var(--jd-color-white);
   --jd-color-background-gray: var(--jd-color-gray);
   --jd-color-background-gray-hover: #f8f8f8;
   --jd-color-background-hover: #7d0edf;
-  --jd-color-background-button-hover: #ecebe9;
+  --jd-color-background-button-hover: #e0e0e0;
   --jd-color-background-button-hover-opacity30: rgba(236, 235, 233, 0.3);
   --jd-color-background-progress: #b91f1f;
   --jd-color-background-filebrowser-folders: #3f3f3f;
@@ -358,6 +358,20 @@ input:focus + .jodit-switcher__slider {
 .hover-border-effect:hover::after {
   box-shadow: inset 0 0 0 3px #9013fe;
 }
+.skeleton-loader {
+  width: 100%;
+  display: block;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0) 70% rgba(255, 255, 255, 0) 70%), lightgray;
+  background-repeat: repeat-y;
+  background-size: 50px 500px;
+  background-position: 0 0;
+  animation: shine 1s infinite;
+}
+@keyframes shine {
+  to {
+    background-position: 100% 0;
+  }
+}
 .jodit-button-group {
   display: flex;
 }
@@ -587,6 +601,8 @@ svg.jodit-icon {
 .jodit *,
 .jodit-container * {
   box-sizing: border-box;
+  transition-duration: 500ms;
+  transition-property: color, background-color;
 }
 .jodit .jodit-workplace,
 .jodit-container .jodit-workplace {
@@ -833,6 +849,27 @@ svg.jodit-icon {
   background: var(--jd-color-background-default);
   overflow-scrolling: touch;
 }
+.jodit-context-menu__content .grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 4px;
+}
+.jodit-context-menu__content .grid .grid-item {
+  width: 100%;
+  height: 80px;
+  overflow: hidden;
+}
+.jodit-context-menu__content input {
+  width: 100%;
+  font-size: 14px;
+  line-height: 20px;
+  padding: 12px 10px 12px 16px;
+  border-radius: var(--jd-border-radius-default);
+  background-color: #f8f8f8;
+}
+.jodit-context-menu__content input:focus {
+  border: solid 1px #121212;
+}
 .jodit-context-menu_max-height_false .jodit-context-menu__content {
   max-height: fit-content;
 }
@@ -879,6 +916,27 @@ svg.jodit-icon {
   padding: 0;
   background: var(--jd-color-background-default);
   overflow-scrolling: touch;
+}
+.jodit-popup__content .grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 4px;
+}
+.jodit-popup__content .grid .grid-item {
+  width: 100%;
+  height: 80px;
+  overflow: hidden;
+}
+.jodit-popup__content input {
+  width: 100%;
+  font-size: 14px;
+  line-height: 20px;
+  padding: 12px 10px 12px 16px;
+  border-radius: var(--jd-border-radius-default);
+  background-color: #f8f8f8;
+}
+.jodit-popup__content input:focus {
+  border: solid 1px #121212;
 }
 .jodit-popup_max-height_false .jodit-popup__content {
   max-height: fit-content;
@@ -3809,53 +3867,6 @@ a + .jodit-filebrowser-tree__source-title {
   opacity: 0.4;
 }
 
-.jodit-drag-and-drop__file-box,
-.jodit_uploadfile_button {
-  position: relative;
-  overflow: hidden;
-  width: 100%;
-  padding: 25px 0;
-  text-align: center;
-  aspect-ratio: 1 / 1;
-  background: #F8F8F8;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 30px;
-  color: #A7A8AB;
-  display: flex;
-  flex-direction: column;
-  align-content: center;
-  justify-content: center;
-}
-.jodit-drag-and-drop__file-box div,
-.jodit_uploadfile_button div {
-  height: 32px;
-}
-.jodit-drag-and-drop__file-box:hover,
-.jodit_uploadfile_button:hover {
-  background-color: var(--jd-color-background-button-hover);
-}
-.jodit-drag-and-drop__file-box input,
-.jodit_uploadfile_button input {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  padding: 0;
-  margin: 0;
-  cursor: pointer;
-  font-size: 400px;
-  opacity: 0;
-}
-@media (max-width: 768px) {
-  .jodit-drag-and-drop__file-box {
-    width: auto;
-    min-width: var(--jd-width-input-min);
-    max-width: 100%;
-  }
-}
-
 .jodit-about {
   padding: 20px;
 }
@@ -4033,7 +4044,7 @@ a + .jodit-filebrowser-tree__source-title {
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
-  color: #A7A8AB;
+  color: var(--jd-color-label);
 }
 .jodit-tabs .jodit-tabs__wrapper {
   width: 300px;
@@ -4049,31 +4060,69 @@ a + .jodit-filebrowser-tree__source-title {
   min-width: 220px;
   min-height: 100px;
 }
-
-.jodit-popup-container .grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 4px;
-}
-.jodit-popup-container .grid .grid-item {
-  width: 100%;
-  height: 80px;
-  overflow: hidden;
-}
-.jodit-popup-container input {
-  width: 100%;
+.jodit-tabs .jodit-tabs__title {
+  font-weight: 600;
   font-size: 14px;
   line-height: 20px;
-  padding: 12px 10px 12px 16px;
-  border-radius: var(--jd-border-radius-default);
-  background-color: #f8f8f8;
+  color: #242A3C;
+  padding: 20px 18px 0px 18px;
 }
-.jodit-unsplash-search-result,
-.jodit-giphy-search-result {
+
+.drag-and-drop {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding: 25px 0;
+  text-align: center;
+  aspect-ratio: 1 / 1;
+  background: #F8F8F8;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 30px;
+  color: #A7A8AB;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+}
+.drag-and-drop .icon {
+  height: 32px;
+}
+.drag-and-drop .icon svg {
+  fill: var(--jd-color-label);
+}
+.drag-and-drop:hover {
+  background-color: var(--jd-color-background-button-hover);
+}
+.drag-and-drop input {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+  font-size: 400px;
+  opacity: 0;
+}
+@media (max-width: 768px) {
+  .jodit-drag-and-drop__file-box {
+    width: auto;
+    min-width: var(--jd-width-input-min);
+    max-width: 100%;
+  }
+}
+.jodit_drag_hover {
+  background-color: var(--jd-color-background-gray-hover);
+}
+
+.jodit-search-image__search-result,
+.jodit-search-gif__search-result {
   margin-top: 10px;
 }
-.jodit-unsplash-search-result img,
-.jodit-giphy-search-result img {
+.jodit-search-image__search-result img,
+.jodit-search-gif__search-result img {
   width: 100%;
   height: 100%;
 }
@@ -4867,7 +4916,7 @@ html.jodit_fullsize-box_true {
   --jd-color-light-red: rgba(255, 59, 59, 0.4);
   --jd-color-default: var(--jd-color-dark);
   --jd-color-text: #222222;
-  --jd-color-label: var(--jd-color-gray-dark);
+  --jd-color-label: #A7A8AB;
   --jd-color-error: var(--jd-color-red);
   --jd-color-border: var(--jd-color-gray);
   --jd-color-border-dark: var(--jd-color-dark);
@@ -4877,14 +4926,14 @@ html.jodit_fullsize-box_true {
   --jd-color-selection: var(--jd-color-dark);
   --jd-color-selection-area: #bdbdbd;
   --jd-color-separator: var(--jd-color-border);
-  --jd-color-placeholder: var(--jd-color-gray-dark);
+  --jd-color-placeholder: #bdbdbd;
   --jd-color-panel: #FAFAFA;
   --jd-color-resizer: #c8c8c8;
   --jd-color-background-default: var(--jd-color-white);
   --jd-color-background-gray: var(--jd-color-gray);
   --jd-color-background-gray-hover: #f8f8f8;
   --jd-color-background-hover: #7d0edf;
-  --jd-color-background-button-hover: #ecebe9;
+  --jd-color-background-button-hover: #e0e0e0;
   --jd-color-background-button-hover-opacity30: rgba(236, 235, 233, 0.3);
   --jd-color-background-progress: #b91f1f;
   --jd-color-background-filebrowser-folders: #3f3f3f;

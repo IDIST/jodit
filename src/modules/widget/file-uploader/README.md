@@ -1,1 +1,0 @@
-Jodit File Upload widgets

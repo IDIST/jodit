@@ -24,7 +24,7 @@
   --jd-color-light-red: rgba(255, 59, 59, 0.4);
   --jd-color-default: var(--jd-color-dark);
   --jd-color-text: #222222;
-  --jd-color-label: var(--jd-color-gray-dark);
+  --jd-color-label: #A7A8AB;
   --jd-color-error: var(--jd-color-red);
   --jd-color-border: var(--jd-color-gray);
   --jd-color-border-dark: var(--jd-color-dark);
@@ -34,14 +34,14 @@
   --jd-color-selection: var(--jd-color-dark);
   --jd-color-selection-area: #bdbdbd;
   --jd-color-separator: var(--jd-color-border);
-  --jd-color-placeholder: var(--jd-color-gray-dark);
+  --jd-color-placeholder: #bdbdbd;
   --jd-color-panel: #FAFAFA;
   --jd-color-resizer: #c8c8c8;
   --jd-color-background-default: var(--jd-color-white);
   --jd-color-background-gray: var(--jd-color-gray);
   --jd-color-background-gray-hover: #f8f8f8;
   --jd-color-background-hover: #7d0edf;
-  --jd-color-background-button-hover: #ecebe9;
+  --jd-color-background-button-hover: #e0e0e0;
   --jd-color-background-button-hover-opacity30: rgba(236, 235, 233, 0.3);
   --jd-color-background-progress: #b91f1f;
   --jd-color-background-filebrowser-folders: #3f3f3f;
