@@ -8,44 +8,14 @@ import type { IJodit } from 'jodit/types';
 import type { ImageSelectorCallbacks } from 'jodit/modules/widget';
 import { MediaLists } from 'jodit/modules/widget/search-selector/MediaLists';
 
-// class SearchApi {
-// 	private fileType: FileType;
-//
-// 	constructor(fileType: FileType) {
-// 		this.fileType = fileType;
-// 	}
-//
-//
-// 	async searchItems(search: string): Promise<any> {
-// 		let result;
-//
-// 		const mediaList = mediaLists.getList(search, this.fileType);
-// 		mediaList.load();
-//
-// 			const result = await this.giphyApi.trending();
-// 			const { response } = await this.unsplashApi.photos.list({});
-// 			if (!response?.results?.length) return;
-// 		}
-// 		return result;
-// 	}
-//
-// 	async getCategories(): Promise<any> {
-// 		let result;
-// 		if (this.fileType === 'GIF') {
-// 			result = await this.giphyApi.categories();
-// 		} else {
-// 			result = await this.unsplashApi.topics.list({});
-// 			console.log('getAll', result);
-// 		}
-// 		return result;
-// 	}
-// }
+// Variable Section
+type imageFileType = 'image' | 'gif';
 
 // Main section
 export const SearchSelectorWidget = (
 	editor: IJodit,
 	callbacks: ImageSelectorCallbacks,
-	fileType: 'IMAGE' | 'GIF',
+	fileType: imageFileType,
 	close: () => void
 ): HTMLFormElement => {
 	const fileTypeLowercase = fileType.toLowerCase();

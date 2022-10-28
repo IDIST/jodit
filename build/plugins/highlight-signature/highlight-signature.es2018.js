@@ -31,7 +31,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var jodit_core_decorators__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(11169);
 /* harmony import */ var jodit_core_dom__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(94522);
 /* harmony import */ var jodit_core_helpers_utils__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(11358);
-/* harmony import */ var _index__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(85660);
+/* harmony import */ var _index__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(16136);
 /* harmony import */ var jodit_config__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(27537);
 /*!
  * Jodit Editor PRO (https://xdsoft.net/jodit/)

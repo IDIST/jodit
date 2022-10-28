@@ -22,21 +22,21 @@ return /******/ (function() { // webpackBootstrap
 /***/ 90643:
 /***/ (function(module) {
 
-module.exports["default"] = ["إبدأ في الكتابة...","حول جوديت","محرر جوديت","دليل مستخدم جوديت","يحتوي على مساعدة مفصلة للاستخدام","للحصول على معلومات حول الترخيص، يرجى الذهاب لموقعنا:","شراء النسخة الكاملة","حقوق الطبع والنشر © XDSoft.net - Chupurnov Valeriy. كل الحقوق محفوظة.","مِرْساة","فتح في نافذة جديدة","فتح المحرر في الحجم الكامل","مسح التنسيق","ملء اللون أو تعيين لون النص","إعادة","تراجع","عريض","مائل","إدراج قائمة غير مرتبة","إدراج قائمة مرتبة","محاذاة للوسط","محاذاة مثبتة","محاذاة لليسار","محاذاة لليمين","إدراج خط أفقي","إدراج صورة","ادخال الملف","إدراج فيديو يوتيوب/فيميو ","إدراج رابط","حجم الخط","نوع الخط","إدراج كتلة تنسيق","عادي","عنوان 1","عنوان 2","عنوان 3","عنوان 4","إقتباس","كود","إدراج","إدراج جدول","تقليل المسافة البادئة","زيادة المسافة البادئة","تحديد أحرف خاصة","إدراج حرف خاص","تنسيق الرسم","تغيير الوضع","هوامش","أعلى","يمين","أسفل","يسار","الأنماط","الطبقات","محاذاة","اليمين","الوسط","اليسار","--غير مضبوط--","Src","العنوان","العنوان البديل","الرابط","افتح الرابط في نافذة جديدة","الصورة","ملف","متقدم","خصائص الصورة","إلغاء","حسنا","متصفح الملفات","حدث خطأ في تحميل القائمة ","حدث خطأ في تحميل المجلدات","هل أنت واثق؟","أدخل اسم المجلد","إنشاء مجلد","أكتب إسم","إسقاط صورة","إسقاط الملف","أو أنقر","النص البديل","رفع","تصفح","الخلفية","نص","أعلى","الوسط","الأسفل","إدراج عمود قبل","إدراج عمود بعد","إدراج صف أعلى","إدراج صف أسفل","حذف الجدول","حذف الصف","حذف العمود","خلية فارغة","%d حرف","%d كلام","اضرب من خلال","أكد","حرف فوقي","مخطوطة","قطع الاختيار","اختر الكل","استراحة","البحث عن","استبدل ب","محل","معجون","اختر محتوى للصق","مصدر","بالخط العريض","مائل","شغل","صلة","إلغاء","كرر","طاولة","صورة","نظيف","فقرة","حجم الخط","فيديو","الخط","حول المحرر","طباعة","أكد","شطب","المسافة البادئة","نتوء","ملء الشاشة","الحجم التقليدي","الخط","قائمة","قائمة مرقمة","قطع","اختر الكل","قانون","فتح الرابط","تعديل الرابط","سمة Nofollow","إزالة الرابط","تحديث","لتحرير","مراجعة","URL","تحرير","محاذاة أفقية","فلتر","عن طريق التغيير","بالاسم","حسب الحجم","إضافة مجلد","إعادة","احتفظ","حفظ باسم","تغيير الحجم","حجم القطع","عرض","ارتفاع","حافظ على النسب","أن","لا","حذف","تميز","تميز %s","محاذاة عمودية","انشق، مزق","اذهب","أضف العمود","اضف سطر","رخصة %s","حذف","انقسام عمودي","تقسيم أفقي","الحدود","يشبه الكود الخاص بك HTML. تبقي كما HTML؟","الصق ك HTML","احتفظ","إدراج كنص","إدراج النص فقط","يمكنك فقط تحرير صورك الخاصة. تحميل هذه الصورة على المضيف؟","تم تحميل الصورة بنجاح على الخادم!","لوحة","لا توجد ملفات في هذا الدليل.","إعادة تسمية","أدخل اسم جديد","معاينة","تحميل","لصق من الحافظة","متصفحك لا يدعم إمكانية الوصول المباشر إلى الحافظة.","نسخ التحديد","نسخ","دائرة نصف قطرها الحدود","عرض كل","تطبيق","يرجى ملء هذا المجال","يرجى إدخال عنوان ويب","الافتراضي","دائرة","نقطة","المربعة","البحث","تجد السابقة","تجد التالي","للصق المحتوى قادم من Microsoft Word/Excel الوثيقة. هل تريد أن تبقي شكل أو تنظيفه ؟ ","كلمة لصق الكشف عن","نظيفة","أدخل اسم الفصل","اضغط البديل لتغيير حجم مخصص"]
+module.exports["default"] = ["إبدأ في الكتابة...","متقدم","حول جوديت","محرر جوديت","دليل مستخدم جوديت","يحتوي على مساعدة مفصلة للاستخدام","للحصول على معلومات حول الترخيص، يرجى الذهاب لموقعنا:","شراء النسخة الكاملة","حقوق الطبع والنشر © XDSoft.net - Chupurnov Valeriy. كل الحقوق محفوظة.","مِرْساة","فتح في نافذة جديدة","فتح المحرر في الحجم الكامل","مسح التنسيق","ملء اللون أو تعيين لون النص","إعادة","تراجع","عريض","مائل","إدراج قائمة غير مرتبة","إدراج قائمة مرتبة","محاذاة للوسط","محاذاة مثبتة","محاذاة لليسار","محاذاة لليمين","إدراج خط أفقي","إدراج صورة","ادخال الملف","إدراج فيديو يوتيوب/فيميو ","إدراج رابط","حجم الخط","نوع الخط","إدراج كتلة تنسيق","عادي","عنوان 1","عنوان 2","عنوان 3","عنوان 4","إقتباس","كود","إدراج","إدراج جدول","تقليل المسافة البادئة","زيادة المسافة البادئة","تحديد أحرف خاصة","إدراج حرف خاص","تنسيق الرسم","تغيير الوضع","هوامش","أعلى","يمين","أسفل","يسار","الأنماط","الطبقات","محاذاة","اليمين","الوسط","اليسار","--غير مضبوط--","Src","العنوان","العنوان البديل","الرابط","افتح الرابط في نافذة جديدة","الصورة","ملف",null,"خصائص الصورة","إلغاء","حسنا","يشبه الكود الخاص بك HTML. تبقي كما HTML؟","الصق ك HTML","احتفظ","نظيفة","إدراج كنص","كلمة لصق الكشف عن","للصق المحتوى قادم من Microsoft Word/Excel الوثيقة. هل تريد أن تبقي شكل أو تنظيفه ؟ ","إدراج النص فقط","متصفح الملفات","حدث خطأ في تحميل القائمة ","حدث خطأ في تحميل المجلدات","هل أنت واثق؟","أدخل اسم المجلد","إنشاء مجلد","أكتب إسم","إسقاط صورة","إسقاط الملف","أو أنقر","النص البديل","تصفح","رفع","الخلفية","نص","أعلى","الوسط","الأسفل","إدراج عمود قبل","إدراج عمود بعد","إدراج صف أعلى","إدراج صف أسفل","حذف الجدول","حذف الصف","حذف العمود","خلية فارغة","حذف","اضرب من خلال","أكد","استراحة","البحث عن","استبدل ب","محل","تحرير","محاذاة عمودية","محاذاة أفقية","فلتر","عن طريق التغيير","بالاسم","حسب الحجم","إضافة مجلد","انقسام عمودي","تقسيم أفقي","انشق، مزق","اذهب","أضف العمود","اضف سطر","الحدود","قانون","تحديث","حرف فوقي","مخطوطة","قطع الاختيار","معجون","اختر محتوى للصق","%d حرف","%d كلام",null,"تميز %s","اختر الكل","مصدر","بالخط العريض","مائل","شغل","صلة","إلغاء","كرر","طاولة","صورة","نظيف","فقرة","حجم الخط","فيديو","الخط","حول المحرر","طباعة","أكد","شطب","المسافة البادئة","نتوء","ملء الشاشة","الحجم التقليدي","الخط","قائمة","قائمة مرقمة",null,null,null,null,null,"قطع","اختر الكل","فتح الرابط","تعديل الرابط","سمة Nofollow","إزالة الرابط","مراجعة","لتحرير","URL","إعادة","احتفظ","حفظ باسم","تغيير الحجم","حجم القطع","عرض","ارتفاع","حافظ على النسب","أن","لا","حذف","تميز","يمكنك فقط تحرير صورك الخاصة. تحميل هذه الصورة على المضيف؟","تم تحميل الصورة بنجاح على الخادم!","لوحة","لا توجد ملفات في هذا الدليل.","إعادة تسمية","أدخل اسم جديد","معاينة","تحميل","لصق من الحافظة","متصفحك لا يدعم إمكانية الوصول المباشر إلى الحافظة.","نسخ التحديد","نسخ","دائرة نصف قطرها الحدود","عرض كل","تطبيق","يرجى ملء هذا المجال","يرجى إدخال عنوان ويب","الافتراضي","دائرة","نقطة","المربعة","البحث","تجد السابقة","تجد التالي","أدخل اسم الفصل","اضغط البديل لتغيير حجم مخصص"]
 
 /***/ }),
 
 /***/ 52532:
 /***/ (function(module) {
 
-module.exports["default"] = ["Napiš něco","O Jodit","Editor Jodit","Jodit Uživatelská příručka","obsahuje detailní nápovědu","Pro informace o licenci, prosím, přejděte na naši stránku:","Koupit plnou verzi","Copyright © XDSoft.net - Chupurnov Valeriy. Všechna práva vyhrazena.","Anchor","Otevřít v nové záložce","Otevřít v celoobrazovkovém režimu","Vyčistit formátování","Barva výplně a písma","Vpřed","Zpět","Tučné","Kurzíva","Odrážky","Číslovaný seznam","Zarovnat na střed","Zarovnat do bloku","Zarovnat vlevo","Zarovnat vpravo","Vložit horizontální linku","Vložit obrázek","Vložit soubor","Vložit video (YT/Vimeo)","Vložit odkaz","Velikost písma","Typ písma","Formátovat blok","Normální text","Nadpis 1","Nadpis 2","Nadpis 3","Nadpis 4","Citát","Kód","Vložit","Vložit tabulku","Zmenšit odsazení","Zvětšit odsazení","Vybrat speciální symbol","Vložit speciální symbol","Použít formát","Změnit mód","Okraje","horní","pravý","spodní","levý","Styly","Třídy","Zarovnání","Vpravo","Na střed","Vlevo","--nenastaveno--","src","Titulek","Alternativní text (alt)","Link","Otevřít link v nové záložce","Obrázek","soubor","Rozšířené","Vlastnosti obrázku","Zpět","Ok","Prohlížeč souborů","Chyba při načítání seznamu souborů","Chyba při načítání složek","Jste si jistý(á)?","Název složky","Vytvořit složku","název","Přetáhněte sem obrázek","Přetáhněte sem soubor","nebo klikněte","Alternativní text","Nahrát","Server","Pozadí","Text","Nahoru","Na střed","Dolu","Vložit sloupec před","Vložit sloupec za","Vložit řádek nad","Vložit řádek pod","Vymazat tabulku","Vymazat řádku","Vymazat sloupec","Vyčistit buňku","Znaky: %d","Slova: %d","Přeškrtnuto","Podtrženo","Horní index","Dolní index","Vyjmout označené","Označit vše","Zalomení","Najdi","Nahradit za","Vyměňte","Vložit","Vyber obsah pro vložení","HTML","tučně","kurzíva","štětec","odkaz","zpět","vpřed","tabulka","obrázek","guma","odstavec","velikost písma","video","písmo","о editoru","tisk","podtrženo","přeškrtnuto","zvětšit odsazení","zmenšit odsazení","celoobrazovkový režim","smrsknout","Linka","Odrážka","Číslovaný seznam","Vyjmout","Označit vše","Kód","Otevřít odkaz","Upravit odkaz","Atribut no-follow","Odstranit odkaz","Aktualizovat","Chcete-li upravit","Zobrazit","URL","Editovat","Horizontální zarovnání","Filtr","Dle poslední změny","Dle názvu","Dle velikosti","Přidat složku","Reset","Uložit","Uložit jako...","Změnit rozměr","Ořezat","Šířka","Výška","Ponechat poměr","Ano","Ne","Vyjmout","Označit","Označit %s","Vertikální zarovnání","Rozdělit","Spojit","Přidat sloupec","Přidat řádek","Licence: %s","Vymazat","Rozdělit vertikálně","Rozdělit horizontálně","Okraj","Váš text se podobá HTML. Vložit ho jako HTML?","Vložit jako HTML","Ponechat originál","Vložit jako TEXT","Vložit pouze TEXT","Můžete upravovat pouze své obrázky. Načíst obrázek?","Obrázek byl úspěšně nahrán!","paleta","V tomto adresáři nejsou žádné soubory.","přejmenovat","Zadejte nový název","náhled","Stažení","Vložit ze schránky","Váš prohlížeč nepodporuje přímý přístup do schránky.","Kopírovat výběr","kopírování","Border radius","Zobrazit všechny","Platí","Prosím, vyplňte toto pole","Prosím, zadejte webovou adresu","Výchozí","Kruh","Dot","Quadrate","Najít","Najít Předchozí","Najít Další","Obsah, který vkládáte, je pravděpodobně z Microsoft Word / Excel. Chcete ponechat formát nebo vložit pouze text?","Detekován fragment z Wordu nebo Excelu","Vyčistit","Vložte název třídy","Stiskněte Alt pro vlastní změnu velikosti"]
+module.exports["default"] = ["Napiš něco","Rozšířené","O Jodit","Editor Jodit","Jodit Uživatelská příručka","obsahuje detailní nápovědu","Pro informace o licenci, prosím, přejděte na naši stránku:","Koupit plnou verzi","Copyright © XDSoft.net - Chupurnov Valeriy. Všechna práva vyhrazena.","Anchor","Otevřít v nové záložce","Otevřít v celoobrazovkovém režimu","Vyčistit formátování","Barva výplně a písma","Vpřed","Zpět","Tučné","Kurzíva","Odrážky","Číslovaný seznam","Zarovnat na střed","Zarovnat do bloku","Zarovnat vlevo","Zarovnat vpravo","Vložit horizontální linku","Vložit obrázek","Vložit soubor","Vložit video (YT/Vimeo)","Vložit odkaz","Velikost písma","Typ písma","Formátovat blok","Normální text","Nadpis 1","Nadpis 2","Nadpis 3","Nadpis 4","Citát","Kód","Vložit","Vložit tabulku","Zmenšit odsazení","Zvětšit odsazení","Vybrat speciální symbol","Vložit speciální symbol","Použít formát","Změnit mód","Okraje","horní","pravý","spodní","levý","Styly","Třídy","Zarovnání","Vpravo","Na střed","Vlevo","--nenastaveno--","src","Titulek","Alternativní text (alt)","Link","Otevřít link v nové záložce","Obrázek","soubor",null,"Vlastnosti obrázku","Zpět","Ok","Váš text se podobá HTML. Vložit ho jako HTML?","Vložit jako HTML","Ponechat originál","Vyčistit","Vložit jako TEXT","Detekován fragment z Wordu nebo Excelu","Obsah, který vkládáte, je pravděpodobně z Microsoft Word / Excel. Chcete ponechat formát nebo vložit pouze text?","Vložit pouze TEXT","Prohlížeč souborů","Chyba při načítání seznamu souborů","Chyba při načítání složek","Jste si jistý(á)?","Název složky","Vytvořit složku","název","Přetáhněte sem obrázek","Přetáhněte sem soubor","nebo klikněte","Alternativní text","Server","Nahrát","Pozadí","Text","Nahoru","Na střed","Dolu","Vložit sloupec před","Vložit sloupec za","Vložit řádek nad","Vložit řádek pod","Vymazat tabulku","Vymazat řádku","Vymazat sloupec","Vyčistit buňku","Vymazat","Přeškrtnuto","Podtrženo","Zalomení","Najdi","Nahradit za","Vyměňte","Editovat","Vertikální zarovnání","Horizontální zarovnání","Filtr","Dle poslední změny","Dle názvu","Dle velikosti","Přidat složku","Rozdělit vertikálně","Rozdělit horizontálně","Rozdělit","Spojit","Přidat sloupec","Přidat řádek","Okraj","Kód","Aktualizovat","Horní index","Dolní index","Vyjmout označené","Vložit","Vyber obsah pro vložení","Znaky: %d","Slova: %d","Vše","Označit %s","Označit vše","HTML","tučně","kurzíva","štětec","odkaz","zpět","vpřed","tabulka","obrázek","guma","odstavec","velikost písma","video","písmo","о editoru","tisk","podtrženo","přeškrtnuto","zvětšit odsazení","zmenšit odsazení","celoobrazovkový režim","smrsknout","Linka","Odrážka","Číslovaný seznam",null,null,null,null,null,"Vyjmout","Označit vše","Otevřít odkaz","Upravit odkaz","Atribut no-follow","Odstranit odkaz","Zobrazit","Chcete-li upravit","URL","Reset","Uložit","Uložit jako...","Změnit rozměr","Ořezat","Šířka","Výška","Ponechat poměr","Ano","Ne","Vyjmout","Označit","Můžete upravovat pouze své obrázky. Načíst obrázek?","Obrázek byl úspěšně nahrán!","paleta","V tomto adresáři nejsou žádné soubory.","přejmenovat","Zadejte nový název","náhled","Stažení","Vložit ze schránky","Váš prohlížeč nepodporuje přímý přístup do schránky.","Kopírovat výběr","kopírování","Border radius","Zobrazit všechny","Platí","Prosím, vyplňte toto pole","Prosím, zadejte webovou adresu","Výchozí","Kruh","Dot","Quadrate","Najít","Najít Předchozí","Najít Další","Vložte název třídy","Stiskněte Alt pro vlastní změnu velikosti"]
 
 /***/ }),
 
 /***/ 75178:
 /***/ (function(module) {
 
-module.exports["default"] = ["Bitte geben Sie einen Text ein","Über Jodit","Jodit Editor","Das Jodit Benutzerhandbuch","beinhaltet ausführliche Informationen wie Sie den Editor verwenden können.","Für Informationen zur Lizenz, besuchen Sie bitte unsere Web-Präsenz:","Vollversion kaufen","Copyright © XDSoft.net - Chupurnov Valeriy. Alle Rechte vorbehalten.","Anker","In neuer Registerkarte öffnen","Editor in voller Größe öffnen","Formatierung löschen","Füllfarbe oder Textfarbe ändern","Wiederholen","Rückgängig machen","Fett","Kursiv","Unsortierte Liste einfügen","Nummerierte Liste einfügen","Mittig ausrichten","Blocksatz","Links ausrichten","Rechts ausrichten","Horizontale Linie einfügen","Bild einfügen","Datei einfügen","Youtube/vimeo Video einfügen","Link einfügen","Schriftgröße","Schriftfamilie","Formatblock einfügen","Normal","Überschrift 1","Überschrift 2","Überschrift 3","Überschrift 4","Zitat","Code","Einfügen","Tabelle einfügen","Einzug verkleinern","Einzug vergrößern","Sonderzeichen auswählen","Sonderzeichen einfügen","Format kopieren","Änderungsmodus","Ränder","Oben","Rechts","Unten","Links","CSS Stil","CSS Klassen","Ausrichtung","Rechts","Zentriert","Links","Keine","Pfad","Titel","Alternativer Text","Link","Link in neuem Tab öffnen","Bild","Datei","Fortgeschritten","Bildeigenschaften","Abbrechen","OK","Dateibrowser","Fehler beim Laden der Liste","Fehler beim Laden der Ordner","Sind Sie sicher?","Geben Sie den Verzeichnisnamen ein","Verzeichnis erstellen","Typname","Bild hier hinziehen","Datei löschen","oder hier klicken","Alternativtext","Hochladen","Auswählen","Hintergrund","Text","Oben","Mittig","Unten","Spalte davor einfügen","Spalte danach einfügen","Zeile oberhalb einfügen","Zeile unterhalb einfügen","Tabelle löschen","Zeile löschen","Spalte löschen","Zelle leeren","Zeichen: %d","Wörter: %d","Durchstreichen","Unterstreichen","Hochgestellen","Tiefstellen","Auswahl ausschneiden","Alles markieren","Pause","Suche nach","Ersetzen durch","Ersetzen","Einfügen","Wählen Sie den Inhalt zum Einfügen aus","HTML","Fett gedruckt","Kursiv","Bürste","Verknüpfung","Rückgängig machen","Wiederholen","Tabelle","Bild","Radiergummi","Absatz","Schriftgröße","Video","Schriftart","Über","Drucken","Unterstreichen","Durchstreichen","Einzug","Herausstellen","Vollgröße","Schrumpfen","die Linie","Liste von","Nummerierte Liste","Schneiden","Wählen Sie Alle aus","Code einbetten","Link öffnen","Link bearbeiten","Nofollow-Attribut","Link entfernen","Aktualisieren","Bearbeiten","Ansehen","URL","Bearbeiten","Horizontale Ausrichtung","Filter","Sortieren nach geändert","Nach Name sortieren","Nach Größe sortiert","Ordner hinzufügen","Wiederherstellen","Speichern","Speichern als","Größe ändern","Größe anpassen","Breite","Höhe","Seitenverhältnis beibehalten","Ja","Nein","Entfernen","Markieren","Markieren: %s","Vertikale Ausrichtung","Unterteilen","Vereinen","Spalte hinzufügen","Zeile hinzufügen",null,"Löschen","Vertikal unterteilen","Horizontal unterteilen","Rand","Ihr Text ähnelt HTML-Code. Als HTML beibehalten?","Als HTML einfügen?","Original speichern","Als Text einfügen","Nur Text einfügen","Sie können nur Ihre eigenen Bilder bearbeiten. Dieses Bild auf den Host herunterladen?","Das Bild wurde erfolgreich auf den Server hochgeladen!","Palette","In diesem Verzeichnis befinden sich keine Dateien.","Umbenennen","Geben Sie einen neuen Namen ein","Vorschau","Herunterladen","Aus Zwischenablage einfügen","Ihr Browser unterstützt keinen direkten Zugriff auf die Zwischenablage.","Auswahl kopieren","Kopieren","Radius für abgerundete Ecken","Alle anzeigen","Anwenden","Bitte füllen Sie dieses Feld aus","Bitte geben Sie eine Web-Adresse ein","Standard","Kreis","Punkte","Quadrate","Suchen","Suche vorherige","Weitersuchen","Der Inhalt, den Sie einfügen, stammt aus einem Microsoft Word / Excel-Dokument. Möchten Sie das Format erhalten oder bereinigen?","In Word formatierter Text erkannt","Säubern","className (CSS) einfügen","Drücken Sie Alt für benutzerdefinierte Größenanpassung"]
+module.exports["default"] = ["Bitte geben Sie einen Text ein","Fortgeschritten","Über Jodit","Jodit Editor","Das Jodit Benutzerhandbuch","beinhaltet ausführliche Informationen wie Sie den Editor verwenden können.","Für Informationen zur Lizenz, besuchen Sie bitte unsere Web-Präsenz:","Vollversion kaufen","Copyright © XDSoft.net - Chupurnov Valeriy. Alle Rechte vorbehalten.","Anker","In neuer Registerkarte öffnen","Editor in voller Größe öffnen","Formatierung löschen","Füllfarbe oder Textfarbe ändern","Wiederholen","Rückgängig machen","Fett","Kursiv","Unsortierte Liste einfügen","Nummerierte Liste einfügen","Mittig ausrichten","Blocksatz","Links ausrichten","Rechts ausrichten","Horizontale Linie einfügen","Bild einfügen","Datei einfügen","Youtube/vimeo Video einfügen","Link einfügen","Schriftgröße","Schriftfamilie","Formatblock einfügen","Normal","Überschrift 1","Überschrift 2","Überschrift 3","Überschrift 4","Zitat","Code","Einfügen","Tabelle einfügen","Einzug verkleinern","Einzug vergrößern","Sonderzeichen auswählen","Sonderzeichen einfügen","Format kopieren","Änderungsmodus","Ränder","Oben","Rechts","Unten","Links","CSS Stil","CSS Klassen","Ausrichtung","Rechts","Zentriert","Links","Keine","Pfad","Titel","Alternativer Text","Link","Link in neuem Tab öffnen","Bild","Datei","Erweitert","Bildeigenschaften","Abbrechen","OK","Ihr Text ähnelt HTML-Code. Als HTML beibehalten?","Als HTML einfügen?","Original speichern","Säubern","Als Text einfügen","In Word formatierter Text erkannt","Der Inhalt, den Sie einfügen, stammt aus einem Microsoft Word / Excel-Dokument. Möchten Sie das Format erhalten oder bereinigen?","Nur Text einfügen","Dateibrowser","Fehler beim Laden der Liste","Fehler beim Laden der Ordner","Sind Sie sicher?","Geben Sie den Verzeichnisnamen ein","Verzeichnis erstellen","Typname","Bild hier hinziehen","Datei löschen","oder hier klicken","Alternativtext","Auswählen","Hochladen","Hintergrund","Text","Oben","Mittig","Unten","Spalte davor einfügen","Spalte danach einfügen","Zeile oberhalb einfügen","Zeile unterhalb einfügen","Tabelle löschen","Zeile löschen","Spalte löschen","Zelle leeren","Löschen","Durchstreichen","Unterstreichen","Pause","Suche nach","Ersetzen durch","Ersetzen","Bearbeiten","Vertikale Ausrichtung","Horizontale Ausrichtung","Filter","Sortieren nach geändert","Nach Name sortieren","Nach Größe sortiert","Ordner hinzufügen","Vertikal unterteilen","Horizontal unterteilen","Unterteilen","Vereinen","Spalte hinzufügen","Zeile hinzufügen","Rand","Code einbetten","Aktualisieren","Hochgestellen","Tiefstellen","Auswahl ausschneiden","Einfügen","Wählen Sie den Inhalt zum Einfügen aus","Zeichen: %d","Wörter: %d","Alles markieren","Markieren: %s","Alles markieren","HTML","Fett gedruckt","Kursiv","Bürste","Verknüpfung","Rückgängig machen","Wiederholen","Tabelle","Bild","Radiergummi","Absatz","Schriftgröße","Video","Schriftart","Über","Drucken","Unterstreichen","Durchstreichen","Einzug","Herausstellen","Vollgröße","Schrumpfen","die Linie","Liste von","Nummerierte Liste","Standard, Alphabet (klein)","Standard, Alphabet (gross)","Römisch (klein)","Römisch (gross)","Griechisch","Schneiden","Wählen Sie Alle aus","Link öffnen","Link bearbeiten","Nofollow-Attribut","Link entfernen","Ansehen","Bearbeiten","URL","Wiederherstellen","Speichern","Speichern als","Größe ändern","Größe anpassen","Breite","Höhe","Seitenverhältnis beibehalten","Ja","Nein","Entfernen","Markieren","Sie können nur Ihre eigenen Bilder bearbeiten. Dieses Bild auf den Host herunterladen?","Das Bild wurde erfolgreich auf den Server hochgeladen!","Palette","In diesem Verzeichnis befinden sich keine Dateien.","Umbenennen","Geben Sie einen neuen Namen ein","Vorschau","Herunterladen","Aus Zwischenablage einfügen","Ihr Browser unterstützt keinen direkten Zugriff auf die Zwischenablage.","Auswahl kopieren","Kopieren","Radius für abgerundete Ecken","Alle anzeigen","Anwenden","Bitte füllen Sie dieses Feld aus","Bitte geben Sie eine Web-Adresse ein","Standard","Kreis","Punkte","Quadrate","Suchen","Suche vorherige","Weitersuchen","className (CSS) einfügen","Drücken Sie Alt für benutzerdefinierte Größenanpassung"]
 
 /***/ }),
 
@@ -50,112 +50,112 @@ module.exports["default"] = {"Type something":"Start writing...","pencil":"Edit"
 /***/ 22999:
 /***/ (function(module) {
 
-module.exports["default"] = ["Escriba algo...","Acerca de Jodit","Jodit Editor","Guía de usuario Jodit","contiene ayuda detallada para el uso.","Para información sobre la licencia, por favor visite nuestro sitio:","Compre la versión completa","Copyright © XDSoft.net - Chupurnov Valeriy. Todos los derechos reservados.","Anclar","Abrir en nueva pestaña","Abrir editor en pantalla completa","Limpiar formato","Color de relleno o de letra","Rehacer","Deshacer","Negrita","Cursiva","Insertar lista no ordenada","Insertar lista ordenada","Alinear Centrado","Alinear Justificado","Alinear Izquierda","Alinear Derecha","Insertar línea horizontal","Insertar imagen","Insertar archivo","Insertar video de Youtube/vimeo","Insertar vínculo","Tamaño de letra","Familia de letra","Insertar bloque","Normal","Encabezado 1","Encabezado 2","Encabezado 3","Encabezado 4","Cita","Código","Insertar","Insertar tabla","Disminuir sangría","Aumentar sangría","Seleccionar caracter especial","Insertar caracter especial","Copiar formato","Cambiar modo","Márgenes","arriba","derecha","abajo","izquierda","Estilos CSS","Clases CSS","Alinear","Derecha","Centrado","Izquierda","--No Establecido--","Fuente","Título","Texto Alternativo","Vínculo","Abrir vínculo en nueva pestaña","Imagen","Archivo","Avanzado","Propiedades de imagen","Cancelar","Aceptar","Buscar archivo","Error al cargar la lista","Error al cargar las carpetas","¿Está seguro?","Entre nombre de carpeta","Crear carpeta","Entre el nombre","Soltar imagen","Soltar archivo","o click","Texto alternativo","Subir","Buscar","Fondo","Texto","Arriba","Centro","Abajo","Insertar columna antes","Interar columna después","Insertar fila arriba","Insertar fila debajo","Borrar tabla","Borrar fila","Borrar columna","Vaciar celda","Caracteres: %d","Palabras: %d","Tachado","Subrayado","superíndice","subíndice","Cortar selección","Seleccionar todo","Pausa","Buscar","Reemplazar con","Reemplazar","Pegar","Seleccionar contenido para pegar","HTML","negrita","cursiva","Brocha","Vínculo","deshacer","rehacer","Tabla","Imagen","Borrar","Párrafo","Tamaño de letra","Video","Letra","Acerca de","Imprimir","subrayar","tachar","sangría","quitar sangría","Tamaño completo","encoger","línea horizontal","lista sin ordenar","lista ordenada","Cortar","Seleccionar todo","Incluir código","Abrir vínculo","Editar vínculo","No seguir","Desvincular","Actualizar","Para editar","Ver","URL","Editar","Alineación horizontal","filtrar","Ordenar por fecha modificación","Ordenar por nombre","Ordenar por tamaño","Agregar carpeta","Resetear","Guardar","Guardar como...","Redimensionar","Recortar","Ancho","Alto","Mantener relación de aspecto","Si","No","Quitar","Seleccionar","Seleccionar: %s","Alineación vertical","Dividir","Mezclar","Agregar columna","Agregar fila",null,"Borrar","Dividir vertical","Dividir horizontal","Borde","El código es similar a HTML. ¿Mantener como HTML?","Pegar como HTML?","Mantener","Insertar como texto","Insertar solo texto","Solo puedes editar tus propias imágenes. ¿Descargar esta imagen en el servidor?","¡La imagen se ha subido correctamente al servidor!","paleta","No hay archivos en este directorio.","renombrar","Ingresa un nuevo nombre","avance","Descargar","Pegar desde el portapapeles","Su navegador no soporta el acceso directo en el portapapeles.","Selección de copia","copia","Radio frontera","Mostrar todos los","Aplicar","Por favor, rellene este campo","Por favor, introduzca una dirección web","Predeterminado","Círculo","Punto","Cuadro","Encontrar","Buscar Anterior","Buscar Siguiente","El contenido pegado proviene de un documento de Microsoft Word/Excel. ¿Desea mantener el formato o limpiarlo?","Pegado desde Word detectado","Limpiar","Insertar nombre de clase","Presione Alt para cambiar el tamaño personalizado"]
+module.exports["default"] = ["Escriba algo...","Avanzado","Acerca de Jodit","Jodit Editor","Guía de usuario Jodit","contiene ayuda detallada para el uso.","Para información sobre la licencia, por favor visite nuestro sitio:","Compre la versión completa","Copyright © XDSoft.net - Chupurnov Valeriy. Todos los derechos reservados.","Anclar","Abrir en nueva pestaña","Abrir editor en pantalla completa","Limpiar formato","Color de relleno o de letra","Rehacer","Deshacer","Negrita","Cursiva","Insertar lista no ordenada","Insertar lista ordenada","Alinear Centrado","Alinear Justificado","Alinear Izquierda","Alinear Derecha","Insertar línea horizontal","Insertar imagen","Insertar archivo","Insertar video de Youtube/vimeo","Insertar vínculo","Tamaño de letra","Familia de letra","Insertar bloque","Normal","Encabezado 1","Encabezado 2","Encabezado 3","Encabezado 4","Cita","Código","Insertar","Insertar tabla","Disminuir sangría","Aumentar sangría","Seleccionar caracter especial","Insertar caracter especial","Copiar formato","Cambiar modo","Márgenes","arriba","derecha","abajo","izquierda","Estilos CSS","Clases CSS","Alinear","Derecha","Centrado","Izquierda","--No Establecido--","Fuente","Título","Texto Alternativo","Vínculo","Abrir vínculo en nueva pestaña","Imagen","Archivo","Avanzado","Propiedades de imagen","Cancelar","Aceptar","El código es similar a HTML. ¿Mantener como HTML?","Pegar como HTML?","Mantener","Limpiar","Insertar como texto","Pegado desde Word detectado","El contenido pegado proviene de un documento de Microsoft Word/Excel. ¿Desea mantener el formato o limpiarlo?","Insertar solo texto","Buscar archivo","Error al cargar la lista","Error al cargar las carpetas","¿Está seguro?","Entre nombre de carpeta","Crear carpeta","Entre el nombre","Soltar imagen","Soltar archivo","o click","Texto alternativo","Buscar","Subir","Fondo","Texto","Arriba","Centro","Abajo","Insertar columna antes","Interar columna después","Insertar fila arriba","Insertar fila debajo","Borrar tabla","Borrar fila","Borrar columna","Vaciar celda","Borrar","Tachado","Subrayado","Pausa","Buscar","Reemplazar con","Reemplazar","Editar","Alineación vertical","Alineación horizontal","filtrar","Ordenar por fecha modificación","Ordenar por nombre","Ordenar por tamaño","Agregar carpeta","Dividir vertical","Dividir horizontal","Dividir","Mezclar","Agregar columna","Agregar fila","Borde","Incluir código","Actualizar","superíndice","subíndice","Cortar selección","Pegar","Seleccionar contenido para pegar","Caracteres: %d","Palabras: %d","Todo","Seleccionar: %s","Seleccionar todo","HTML","negrita","cursiva","Brocha","Vínculo","deshacer","rehacer","Tabla","Imagen","Borrar","Párrafo","Tamaño de letra","Video","Letra","Acerca de","Imprimir","subrayar","tachar","sangría","quitar sangría","Tamaño completo","encoger","línea horizontal","lista sin ordenar","lista ordenada","Letra Minúscula","Letra Mayúscula","Romano Minúscula","Romano Mayúscula","Griego Minúscula","Cortar","Seleccionar todo","Abrir vínculo","Editar vínculo","No seguir","Desvincular","Ver","Para editar","URL","Resetear","Guardar","Guardar como...","Redimensionar","Recortar","Ancho","Alto","Mantener relación de aspecto","Si","No","Quitar","Seleccionar","Solo puedes editar tus propias imágenes. ¿Descargar esta imagen en el servidor?","¡La imagen se ha subido correctamente al servidor!","paleta","No hay archivos en este directorio.","renombrar","Ingresa un nuevo nombre","avance","Descargar","Pegar desde el portapapeles","Su navegador no soporta el acceso directo en el portapapeles.","Selección de copia","copia","Radio frontera","Mostrar todos los","Aplicar","Por favor, rellene este campo","Por favor, introduzca una dirección web","Predeterminado","Círculo","Punto","Cuadro","Encontrar","Buscar Anterior","Buscar Siguiente","Insertar nombre de clase","Presione Alt para cambiar el tamaño personalizado"]
 
 /***/ }),
 
 /***/ 34145:
 /***/ (function(module) {
 
-module.exports["default"] = ["Ecrivez ici","A propos de Jodit","Editeur Jodit","Guide de l'utilisateur","Aide détaillée à l'utilisation","Consulter la licence sur notre site web:","Acheter la version complète","Copyright © XDSoft.net - Chupurnov Valeriy. Tous droits réservés.","Ancre","Ouvrir dans un nouvel onglet","Ouvrir l'éditeur en pleine page","Supprimer le formattage","Modifier la couleur du fond ou du texte","Refaire","Défaire","Gras","Italique","Liste non ordonnée","Liste ordonnée","Centrer","Justifier","Aligner à gauche ","Aligner à droite","Insérer une ligne horizontale","Insérer une image","Insérer un fichier","Insérer une vidéo","Insérer un lien","Taille des caractères","Famille des caractères","Bloc formatté","Normal","Titre 1","Titre 2","Titre 3","Titre 4","Citation","Code","Insérer","Insérer un tableau","Diminuer le retrait","Retrait plus","Sélectionnez un caractère spécial","Insérer un caractère spécial","Cloner le format","Mode wysiwyg <-> code html","Marges","haut","droite","Bas","gauche","Styles","Classes","Alignement","Droite","Centre","Gauche","--Non disponible--","Source","Titre","Alternative","Lien","Ouvrir le lien dans un nouvel onglet","Image","fichier","Avancé","Propriétés de l'image","Annuler","OK","Explorateur de fichiers","Erreur de liste de chargement","Erreur de dossier de chargement","Etes-vous sûrs ?","Entrer le non de dossier","Créer un dossier","type de fichier","Coller une image","Déposer un fichier","ou cliquer","Texte de remplacemement","Charger","Chercher","Arrière-plan","Texte","Haut","Milieu","Bas","Insérer une colonne avant","Insérer une colonne après","Insérer une ligne en dessus","Insérer une ligne en dessous","Supprimer le tableau","Supprimer la ligne","Supprimer la colonne","Vider la cellule","Symboles: %d","Mots: %d","Frapper à travers","Souligner","exposant","indice","Couper la sélection","Tout sélectionner","Pause","Rechercher","Remplacer par","Remplacer","Coller","Choisissez le contenu à coller","la source","graisseux","italique","verser","lien","abolir","prêt","graphique","Image","la gommen","clause","taille de police","Video","police","à propos de l'éditeur","impression","souligné","barré","indentation","indifférent","taille réelle","taille conventionnelle","la ligne","Liste des","Liste numérotée","Couper","Sélectionner tout",null,"Ouvrir le lien","Modifier le lien","Attribut Nofollow","Supprimer le lien","Mettre à jour","Pour éditer","Voir","URL",null,"Alignement horizontal","Filtre","Trier par modifié","Trier par nom","Classer par taille","Ajouter le dossier","Restaurer","Sauvegarder","Enregistrer sous","Changer la taille","Taille de garniture","Largeur","Hauteur","Garder les proportions","Oui","Non","Supprimer","Mettre en évidence","Mettre en évidence: %s","Alignement vertical","Split","aller","Ajouter une colonne","Ajouter une rangée",null,"Effacer","Split vertical","Split horizontal",null,"Votre texte que vous essayez de coller est similaire au HTML. Collez-le en HTML?","Coller en HTML?","Sauvegarder l'original","Coller en tant que texte","Coller le texte seulement","Vous ne pouvez éditer que vos propres images. Téléchargez cette image sur l'hôte?","L'image a été téléchargée avec succès sur le serveur!null","Palette","Il n'y a aucun fichier dans ce répertoire.","renommer","Entrez un nouveau nom","Aperçu","Télécharger","Coller à partir du presse-papiers","Votre navigateur ne prend pas en charge l'accès direct à la presse-papiers.","Copier la sélection","copie","Rayon des frontières","Afficher tous les","Appliquer","Veuillez remplir ce champ","Veuillez entrer une adresse web","Par défaut","Cercle","Dot","Quadrate","Trouver","Trouvez Précédente","Suivant","Le contenu que vous insérez provient d'un document Microsoft Word / Excel. Voulez-vous enregistrer le format ou l'effacer?","C'est peut-être un fragment de Word ou Excel","Nettoyer","Insérer un nom de classe","Appuyez sur Alt pour un redimensionnement personnalisé"]
+module.exports["default"] = ["Ecrivez ici","Avancé","A propos de Jodit","Editeur Jodit","Guide de l'utilisateur","Aide détaillée à l'utilisation","Consulter la licence sur notre site web:","Acheter la version complète","Copyright © XDSoft.net - Chupurnov Valeriy. Tous droits réservés.","Ancre","Ouvrir dans un nouvel onglet","Ouvrir l'éditeur en pleine page","Supprimer le formattage","Modifier la couleur du fond ou du texte","Refaire","Défaire","Gras","Italique","Liste non ordonnée","Liste ordonnée","Centrer","Justifier","Aligner à gauche ","Aligner à droite","Insérer une ligne horizontale","Insérer une image","Insérer un fichier","Insérer une vidéo","Insérer un lien","Taille des caractères","Famille des caractères","Bloc formatté","Normal","Titre 1","Titre 2","Titre 3","Titre 4","Citation","Code","Insérer","Insérer un tableau","Diminuer le retrait","Retrait plus","Sélectionnez un caractère spécial","Insérer un caractère spécial","Cloner le format","Mode wysiwyg <-> code html","Marges","haut","droite","Bas","gauche","Styles","Classes","Alignement","Droite","Centre","Gauche","--Non disponible--","Source","Titre","Alternative","Lien","Ouvrir le lien dans un nouvel onglet","Image","fichier",null,"Propriétés de l'image","Annuler","OK","Votre texte que vous essayez de coller est similaire au HTML. Collez-le en HTML?","Coller en HTML?","Sauvegarder l'original","Nettoyer","Coller en tant que texte","C'est peut-être un fragment de Word ou Excel","Le contenu que vous insérez provient d'un document Microsoft Word / Excel. Voulez-vous enregistrer le format ou l'effacer?","Coller le texte seulement","Explorateur de fichiers","Erreur de liste de chargement","Erreur de dossier de chargement","Etes-vous sûrs ?","Entrer le non de dossier","Créer un dossier","type de fichier","Coller une image","Déposer un fichier","ou cliquer","Texte de remplacemement","Chercher","Charger","Arrière-plan","Texte","Haut","Milieu","Bas","Insérer une colonne avant","Insérer une colonne après","Insérer une ligne en dessus","Insérer une ligne en dessous","Supprimer le tableau","Supprimer la ligne","Supprimer la colonne","Vider la cellule","Effacer","Frapper à travers","Souligner","Pause","Rechercher","Remplacer par","Remplacer",null,"Alignement vertical","Alignement horizontal","Filtre","Trier par modifié","Trier par nom","Classer par taille","Ajouter le dossier","Split vertical","Split horizontal","Split","aller","Ajouter une colonne","Ajouter une rangée",null,null,"Mettre à jour","exposant","indice","Couper la sélection","Coller","Choisissez le contenu à coller","Symboles: %d","Mots: %d",null,"Mettre en évidence: %s","Tout sélectionner","la source","graisseux","italique","verser","lien","abolir","prêt","graphique","Image","la gommen","clause","taille de police","Video","police","à propos de l'éditeur","impression","souligné","barré","indentation","indifférent","taille réelle","taille conventionnelle","la ligne","Liste des","Liste numérotée",null,null,null,null,null,"Couper","Sélectionner tout","Ouvrir le lien","Modifier le lien","Attribut Nofollow","Supprimer le lien","Voir","Pour éditer","URL","Restaurer","Sauvegarder","Enregistrer sous","Changer la taille","Taille de garniture","Largeur","Hauteur","Garder les proportions","Oui","Non","Supprimer","Mettre en évidence","Vous ne pouvez éditer que vos propres images. Téléchargez cette image sur l'hôte?","L'image a été téléchargée avec succès sur le serveur!null","Palette","Il n'y a aucun fichier dans ce répertoire.","renommer","Entrez un nouveau nom","Aperçu","Télécharger","Coller à partir du presse-papiers","Votre navigateur ne prend pas en charge l'accès direct à la presse-papiers.","Copier la sélection","copie","Rayon des frontières","Afficher tous les","Appliquer","Veuillez remplir ce champ","Veuillez entrer une adresse web","Par défaut","Cercle","Dot","Quadrate","Trouver","Trouvez Précédente","Suivant","Insérer un nom de classe","Appuyez sur Alt pour un redimensionnement personnalisé"]
 
 /***/ }),
 
 /***/ 40272:
 /***/ (function(module) {
 
-module.exports["default"] = ["הקלד משהו...","About Jodit","Jodit Editor","Jodit User's Guide","contains detailed help for using.","For information about the license, please go to our website:","Buy full version","Copyright © XDSoft.net - Chupurnov Valeriy. All rights reserved.","מקום עיגון","פתח בכרטיסיה חדשה","פתח את העורך בחלון חדש","נקה עיצוב","שנה צבע טקסט או רקע","בצע שוב","בטל","מודגש","נטוי","הכנס רשימת תבליטים","הכנס רשימה ממוספרת","מרכז","ישר ","ישר לשמאל","ישר לימין","הכנס קו אופקי","הכנס תמונה","הכנס קובץ","הכנס סרטון וידאו מYouTube/Vimeo","הכנס קישור","גודל גופן","גופן","מעוצב מראש","רגיל","כותרת 1","כותרת 2","כותרת 3","כותרת 4","ציטוט","קוד","הכנס","הכנס טבלה","הקטן כניסה","הגדל כניסה","בחר תו מיוחד","הכנס תו מיוחד","העתק עיצוב","החלף מצב","ריווח","עליון","ימין","תחתון","שמאל","עיצוב CSS","מחלקת CSS","יישור","ימין","מרכז","שמאל","--לא נקבע--","מקור","כותרת","כיתוב חלופי","קישור","פתח בכרטיסיה חדשה","תמונה","קובץ","מתקדם","מאפייני תמונה","ביטול","אישור","סייר הקבצים","שגיאה  בזמן טעינת רשימה","שגיאה בזמן טעינת תקיות","האם אתה בטוח?","הכנס שם תקיה","צור תקיה","סוג הקובץ","הסר תמונה","הסר קובץ","או לחץ","כיתוב חלופי","העלה","סייר","רקע","טקסט","עליון","מרכז","תחתון","הכנס עמודה לפני","הכנס עמודה אחרי","הכנס שורה מעל","הכנס שורה מתחת","מחק טבלה","מחק שורה","מחק עמודה","רוקן תא","תווים: %d","מילים: %d","קו חוצה","קו תחתון","superscript","subscript","גזור בחירה","בחר הכל","שבירת שורה","חפש","החלף ב","להחליף","הדבק","בחר תוכן להדבקה","HTML","מודגש","נטוי","מברשת","קישור","בטל","בצע שוב","טבלה","תמונה","מחק","פסקה","גודל גופן","וידאו","גופן","עלינו","הדפס","קו תחתון","קו חוצה","הגדל כניסה","הקטן כניסה","גודל מלא","כווץ","קו אופקי","רשימת תבליטים","רשימה ממוספרת","חתוך","בחר הכל","הוסף קוד","פתח קישור","ערוך קישור","ללא מעקב","בטל קישור","עדכן","כדי לערוך","הצג","כתובת","ערוך","יישור אופקי","סנן","מין לפי שינוי","מיין לפי שם","מיין לפי גודל","הוסף תקייה","אפס","שמור","שמור בשם...","שנה גודל","חתוך","רוחב","גובה","שמור יחס","כן","לא","הסר","בחר","נבחר: %s","יישור אנכי","פיצול","מזג","הוסף עמודה","הוסף שורה",null,"מחק","פיצול אנכי","פיצול אופקי","מסגרת","הקוד דומה לHTML, האם להשאיר כHTML","הדבק כHTML","השאר","הכנס כטקסט","הכנס טקסט בלבד","רק קבצים המשוייכים שלך ניתנים לעריכה. האם להוריד את הקובץ?","התמונה עלתה בהצלחה!","לוח","אין קבצים בספריה זו.","הונגרית","הזן שם חדש","תצוגה מקדימה","הורד","להדביק מהלוח","הדפדפן שלך לא תומך גישה ישירה ללוח.","העתק בחירה","העתק","רדיוס הגבול","הצג את כל","החל","נא למלא שדה זה","אנא הזן כתובת אינטרנט","ברירת המחדל","מעגל","נקודה","הריבוע הזה","למצוא","מצא את הקודם","חפש את הבא","התוכן המודבק מגיע ממסמך וורד/אקסל. האם ברצונך להשאיר את העיצוב או לנקותו","זוהתה הדבקה מ\"וורד\"","נקה","הכנס את שם הכיתה","לחץ על אלט לשינוי גודל מותאם אישית"]
+module.exports["default"] = ["הקלד משהו...","מתקדם","About Jodit","Jodit Editor","Jodit User's Guide","contains detailed help for using.","For information about the license, please go to our website:","Buy full version","Copyright © XDSoft.net - Chupurnov Valeriy. All rights reserved.","מקום עיגון","פתח בכרטיסיה חדשה","פתח את העורך בחלון חדש","נקה עיצוב","שנה צבע טקסט או רקע","בצע שוב","בטל","מודגש","נטוי","הכנס רשימת תבליטים","הכנס רשימה ממוספרת","מרכז","ישר ","ישר לשמאל","ישר לימין","הכנס קו אופקי","הכנס תמונה","הכנס קובץ","הכנס סרטון וידאו מYouTube/Vimeo","הכנס קישור","גודל גופן","גופן","מעוצב מראש","רגיל","כותרת 1","כותרת 2","כותרת 3","כותרת 4","ציטוט","קוד","הכנס","הכנס טבלה","הקטן כניסה","הגדל כניסה","בחר תו מיוחד","הכנס תו מיוחד","העתק עיצוב","החלף מצב","ריווח","עליון","ימין","תחתון","שמאל","עיצוב CSS","מחלקת CSS","יישור","ימין","מרכז","שמאל","--לא נקבע--","מקור","כותרת","כיתוב חלופי","קישור","פתח בכרטיסיה חדשה","תמונה","קובץ","מתקדם","מאפייני תמונה","ביטול","אישור","הקוד דומה לHTML, האם להשאיר כHTML","הדבק כHTML","השאר","נקה","הכנס כטקסט","זוהתה הדבקה מ\"וורד\"","התוכן המודבק מגיע ממסמך וורד/אקסל. האם ברצונך להשאיר את העיצוב או לנקותו","הכנס טקסט בלבד","סייר הקבצים","שגיאה  בזמן טעינת רשימה","שגיאה בזמן טעינת תקיות","האם אתה בטוח?","הכנס שם תקיה","צור תקיה","סוג הקובץ","הסר תמונה","הסר קובץ","או לחץ","כיתוב חלופי","סייר","העלה","רקע","טקסט","עליון","מרכז","תחתון","הכנס עמודה לפני","הכנס עמודה אחרי","הכנס שורה מעל","הכנס שורה מתחת","מחק טבלה","מחק שורה","מחק עמודה","רוקן תא","מחק","קו חוצה","קו תחתון","שבירת שורה","חפש","החלף ב","להחליף","ערוך","יישור אנכי","יישור אופקי","סנן","מין לפי שינוי","מיין לפי שם","מיין לפי גודל","הוסף תקייה","פיצול אנכי","פיצול אופקי","פיצול","מזג","הוסף עמודה","הוסף שורה","מסגרת","הוסף קוד","עדכן","superscript","subscript","גזור בחירה","הדבק","בחר תוכן להדבקה","תווים: %d","מילים: %d","הכל","נבחר: %s","בחר הכל","HTML","מודגש","נטוי","מברשת","קישור","בטל","בצע שוב","טבלה","תמונה","מחק","פסקה","גודל גופן","וידאו","גופן","עלינו","הדפס","קו תחתון","קו חוצה","הגדל כניסה","הקטן כניסה","גודל מלא","כווץ","קו אופקי","רשימת תבליטים","רשימה ממוספרת",null,null,null,null,null,"חתוך","בחר הכל","פתח קישור","ערוך קישור","ללא מעקב","בטל קישור","הצג","כדי לערוך","כתובת","אפס","שמור","שמור בשם...","שנה גודל","חתוך","רוחב","גובה","שמור יחס","כן","לא","הסר","בחר","רק קבצים המשוייכים שלך ניתנים לעריכה. האם להוריד את הקובץ?","התמונה עלתה בהצלחה!","לוח","אין קבצים בספריה זו.","הונגרית","הזן שם חדש","תצוגה מקדימה","הורד","להדביק מהלוח","הדפדפן שלך לא תומך גישה ישירה ללוח.","העתק בחירה","העתק","רדיוס הגבול","הצג את כל","החל","נא למלא שדה זה","אנא הזן כתובת אינטרנט","ברירת המחדל","מעגל","נקודה","הריבוע הזה","למצוא","מצא את הקודם","חפש את הבא","הכנס את שם הכיתה","לחץ על אלט לשינוי גודל מותאם אישית"]
 
 /***/ }),
 
 /***/ 2978:
 /***/ (function(module) {
 
-module.exports["default"] = ["Írjon be valamit","Joditról","Jodit Editor","Jodit útmutató","további segítséget tartalmaz","További licence információkért látogassa meg a weboldalunkat:","Teljes verzió megvásárlása","Copyright © XDSoft.net - Chupurnov Valeriy. Minden jog fenntartva.","Horgony","Megnyitás új lapon","Megnyitás teljes méretben","Formázás törlése","Háttér/szöveg szín","Újra","Visszavon","Félkövér","Dőlt","Pontozott lista","Számozott lista","Középre zárt","Sorkizárt","Balra zárt","Jobbra zárt","Vízszintes vonal beszúrása","Kép beszúrás","Fájl beszúrás","Youtube videó beszúrása","Link beszúrás","Betűméret","Betűtípus","Formázott blokk beszúrása","Normál","Fejléc 1","Fejléc 2","Fejléc 3","Fejléc 4","Idézet","Kód","Beszúr","Táblázat beszúrása","Behúzás csökkentése","Behúzás növelése","Speciális karakter kiválasztása","Speciális karakter beszúrása","Kép formázása","Nézet váltása","Szegélyek","felső","jobb","alsó","bal","CSS stílusok","CSS osztályok","Igazítás","Jobbra","Középre","Balra","Nincs","Forrás","Cím","Helyettesítő szöveg","Link","Link megnyitása új lapon","Kép","Fájl","Haladó","Kép tulajdonságai","Mégsem","OK","Fájl tallózó","Hiba a lista betöltése közben","Hiba a mappák betöltése közben","Biztosan ezt szeretné?","Írjon be egy mappanevet","Mappa létrehozása","írjon be bevet","Húzza ide a képet","Húzza ide a fájlt","vagy kattintson","Helyettesítő szöveg","Feltölt","Tallóz","Háttér","Szöveg","Fent","Középen","Lent","Oszlop beszúrás elé","Oszlop beszúrás utána","Sor beszúrás fölé","Sor beszúrás alá","Táblázat törlése","Sor törlése","Oszlop törlése","Cella tartalmának törlése","Karakterek száma: %d","Szavak száma: %d","Áthúzott","Aláhúzott","Felső index","Alsó index","Kivágás","Összes kijelölése","Szünet","Keresés","Csere erre","Cserélje ki","Beillesztés","Válasszon tartalmat a beillesztéshez","HTML","Félkövér","Dőlt","Ecset","Link","Visszavon","Újra","Táblázat","Kép","Törlés","Paragráfus","Betűméret","Videó","Betű","Rólunk","Nyomtat","Aláhúzott","Áthúzott","Behúzás","Aussenseiter","Teljes méret","Összenyom","Egyenes vonal","Lista","Számozott lista","Kivág","Összes kijelölése","Beágyazott kód","Link megnyitása","Link szerkesztése","Nincs követés","Link leválasztása","Frissít","Szerkesztés","felülvizsgálat","URL","Szerkeszt","Vízszintes igazítás","Szűrő","Rendezés módosítás szerint","Rendezés név szerint","Rendezés méret szerint","Mappa hozzáadás","Visszaállít","Mentés","Mentés másként...","Átméretezés","Kivág","Szélesség","Magasság","Képarány megtartása","Igen","Nem","Eltávolít","Kijelöl","Kijelöl: %s","Függőleges igazítás","Felosztás","Összevonás","Oszlop hozzáadás","Sor hozzáadás",null,"Törlés","Függőleges felosztás","Vízszintes felosztás","Szegély","A beillesztett szöveg HTML-nek tűnik. Megtartsuk HTML-ként?","Beszúrás HTML-ként","Megtartás","Beszúrás szövegként","Csak szöveg beillesztése","Csak a saját képeit tudja szerkeszteni. Letölti ezt a képet?","Kép sikeresen feltöltve!","Palette","Er zijn geen bestanden in deze map.","átnevezés","Adja meg az új nevet","előnézet","Letöltés","Illessze be a vágólap","A böngésző nem támogatja a közvetlen hozzáférést biztosít a vágólapra.","Másolás kiválasztása","másolás","Határ sugár","Összes","Alkalmazni","Kérjük, töltse ki ezt a mezőt,","Kérjük, írja be a webcímet","Alapértelmezett","Kör","Pont","Quadrate","Találni","Megtalálja Előző","Következő Keresése","A beillesztett tartalom Microsoft Word/Excel dokumentumból származik. Meg szeretné tartani a formátumát?","Word-ből másolt szöveg","Elvetés","Helyezze be az osztály nevét","Nyomja meg az Alt egyéni átméretezés"]
+module.exports["default"] = ["Írjon be valamit","Haladó","Joditról","Jodit Editor","Jodit útmutató","további segítséget tartalmaz","További licence információkért látogassa meg a weboldalunkat:","Teljes verzió megvásárlása","Copyright © XDSoft.net - Chupurnov Valeriy. Minden jog fenntartva.","Horgony","Megnyitás új lapon","Megnyitás teljes méretben","Formázás törlése","Háttér/szöveg szín","Újra","Visszavon","Félkövér","Dőlt","Pontozott lista","Számozott lista","Középre zárt","Sorkizárt","Balra zárt","Jobbra zárt","Vízszintes vonal beszúrása","Kép beszúrás","Fájl beszúrás","Youtube videó beszúrása","Link beszúrás","Betűméret","Betűtípus","Formázott blokk beszúrása","Normál","Fejléc 1","Fejléc 2","Fejléc 3","Fejléc 4","Idézet","Kód","Beszúr","Táblázat beszúrása","Behúzás csökkentése","Behúzás növelése","Speciális karakter kiválasztása","Speciális karakter beszúrása","Kép formázása","Nézet váltása","Szegélyek","felső","jobb","alsó","bal","CSS stílusok","CSS osztályok","Igazítás","Jobbra","Középre","Balra","Nincs","Forrás","Cím","Helyettesítő szöveg","Link","Link megnyitása új lapon","Kép","Fájl","További beállítás","Kép tulajdonságai","Mégsem","OK","A beillesztett szöveg HTML-nek tűnik. Megtartsuk HTML-ként?","Beszúrás HTML-ként","Megtartás","Elvetés","Beszúrás szövegként","Word-ből másolt szöveg","A beillesztett tartalom Microsoft Word/Excel dokumentumból származik. Meg szeretné tartani a formátumát?","Csak szöveg beillesztése","Fájl tallózó","Hiba a lista betöltése közben","Hiba a mappák betöltése közben","Biztosan ezt szeretné?","Írjon be egy mappanevet","Mappa létrehozása","írjon be bevet","Húzza ide a képet","Húzza ide a fájlt","vagy kattintson","Helyettesítő szöveg","Tallóz","Feltölt","Háttér","Szöveg","Fent","Középen","Lent","Oszlop beszúrás elé","Oszlop beszúrás utána","Sor beszúrás fölé","Sor beszúrás alá","Táblázat törlése","Sor törlése","Oszlop törlése","Cella tartalmának törlése","Törlés","Áthúzott","Aláhúzott","Szünet","Keresés","Csere erre","Cserélje ki","Szerkeszt","Függőleges igazítás","Vízszintes igazítás","Szűrő","Rendezés módosítás szerint","Rendezés név szerint","Rendezés méret szerint","Mappa hozzáadás","Függőleges felosztás","Vízszintes felosztás","Felosztás","Összevonás","Oszlop hozzáadás","Sor hozzáadás","Szegély","Beágyazott kód","Frissít","Felső index","Alsó index","Kivágás","Beillesztés","Válasszon tartalmat a beillesztéshez","Karakterek száma: %d","Szavak száma: %d","Összes","Kijelöl: %s","Összes kijelölése","HTML","Félkövér","Dőlt","Ecset","Link","Visszavon","Újra","Táblázat","Kép","Törlés","Paragráfus","Betűméret","Videó","Betű","Rólunk","Nyomtat","Aláhúzott","Áthúzott","Behúzás","Aussenseiter","Teljes méret","Összenyom","Egyenes vonal","Lista","Számozott lista",null,null,null,null,null,"Kivág","Összes kijelölése","Link megnyitása","Link szerkesztése","Nincs követés","Link leválasztása","felülvizsgálat","Szerkesztés","URL","Visszaállít","Mentés","Mentés másként...","Átméretezés","Kivág","Szélesség","Magasság","Képarány megtartása","Igen","Nem","Eltávolít","Kijelöl","Csak a saját képeit tudja szerkeszteni. Letölti ezt a képet?","Kép sikeresen feltöltve!","Palette","Er zijn geen bestanden in deze map.","átnevezés","Adja meg az új nevet","előnézet","Letöltés","Illessze be a vágólap","A böngésző nem támogatja a közvetlen hozzáférést biztosít a vágólapra.","Másolás kiválasztása","másolás","Határ sugár","Összes","Alkalmazni","Kérjük, töltse ki ezt a mezőt,","Kérjük, írja be a webcímet","Alapértelmezett","Kör","Pont","Quadrate","Találni","Megtalálja Előző","Következő Keresése","Helyezze be az osztály nevét","Nyomja meg az Alt egyéni átméretezés"]
 
 /***/ }),
 
 /***/ 99113:
 /***/ (function(module) {
 
-module.exports["default"] = ["Ketik sesuatu","Tentang Jodit","Editor Jodit","Panduan Pengguna Jodit","mencakup detail bantuan penggunaan","Untuk informasi tentang lisensi, silakan kunjungi website:","Beli versi lengkap","Hak Cipta © XDSoft.net - Chupurnov Valeriy. Hak cipta dilindungi undang-undang.","Tautan","Buka di tab baru","Buka editor dalam ukuran penuh","Hapus Pemformatan","Isi warna atau atur warna teks","Ulangi","Batalkan","Tebal","Miring","Sisipkan Daftar Tidak Berurut","Sisipkan Daftar Berurut","Tengah","Penuh","Kiri","Kanan","Sisipkan Garis Horizontal","Sisipkan Gambar","Sisipkan Berkas","Sisipkan video youtube/vimeo","Sisipkan tautan","Ukuran font","Keluarga font","Sisipkan blok format","Normal","Heading 1","Heading 2","Heading 3","Heading 4","Kutip","Kode","Sisipkan","Sisipkan tabel","Kurangi Indentasi","Tambah Indentasi","Pilih Karakter Spesial","Sisipkan Karakter Spesial","Formar warna","Ubah mode","Batas","atas","kanan","bawah","kiri","Gaya","Class","Rata","Kanan","Tengah","Kiri","--Tidak diset--","Src","Judul","Teks alternatif","Tautan","Buka tautan di tab baru","Gambar","berkas","Lanjutan","Properti gambar","Batal","Ya","Penjelajah Berkas","Error ketika memuat list","Error ketika memuat folder","Apakah Anda yakin?","Masukkan nama Direktori","Buat direktori","ketik nama","Letakkan gambar","Letakkan berkas","atau klik","Teks alternatif","Unggah","Jelajahi","Latar Belakang","Teks","Atas","Tengah","Bawah","Sisipkan kolom sebelumnya","Sisipkan kolom setelahnya","Sisipkan baris di atasnya","Sisipkan baris di bawahnya","Hapus tabel","Hapus baris","Hapus kolom","Kosongkan cell","Karakter: %d","Kata: %d","Coret","Garis Bawah","Superskrip","Subskrip","Potong pilihan","Pilih semua","Berhenti","Mencari","Ganti dengan","Mengganti","Paste","Pilih konten untuk dipaste","sumber","tebal","miring","sikat","tautan","batalkan","ulangi","tabel","gambar","penghapus","paragraf","ukuran font","video","font","tentang","cetak","garis bawah","coret","menjorok ke dalam","menjorok ke luar","ukuran penuh","menyusut","hr","ul","ol","potong","Pilih semua","Kode embed","Buka tautan","Edit tautan","No follow","Hapus tautan","Perbarui","pensil","Mata","URL","Edit","Perataan horizontal","Filter","Urutkan berdasarkan perubahan","Urutkan berdasarkan nama","Urutkan berdasarkan ukuran","Tambah folder","Reset","Simpan","Simpan sebagai...","Ubah ukuran","Crop","Lebar","Tinggi","Jaga aspek rasio","Ya","Tidak","Copot","Pilih","Pilih %s","Rata vertikal","Bagi","Gabungkan","Tambah kolom","tambah baris","Lisensi: %s","Hapus","Bagi secara vertikal","Bagi secara horizontal","Bingkai","Kode Anda cenderung ke HTML. Biarkan sebagai HTML?","Paste sebagai HTML","Jaga","Sisipkan sebagai teks","Sisipkan hanya teks","Anda hanya dapat mengedit gambar Anda sendiri. Unduh gambar ini di host?","Gambar telah sukses diunggah ke host!","palet","Tidak ada berkas","ganti nama","Masukkan nama baru","pratinjau","Unduh","Paste dari clipboard","Browser anda tidak mendukung akses langsung ke clipboard.","Copy seleksi","copy","Border radius","Tampilkan semua","Menerapkan","Silahkan mengisi kolom ini","Silahkan masukkan alamat web","Default","Lingkaran","Dot","Kuadrat","Menemukan","Menemukan Sebelumnya","Menemukan Berikutnya","Konten dipaste dari dokumen Microsoft Word/Excel. Apakah Anda ingin tetap menjaga format atau membersihkannya?","Terdeteksi paste dari Word","Bersih","Masukkan nama kelas","Tekan Alt untuk mengubah ukuran kustom"]
+module.exports["default"] = ["Ketik sesuatu","Lanjutan","Tentang Jodit","Editor Jodit","Panduan Pengguna Jodit","mencakup detail bantuan penggunaan","Untuk informasi tentang lisensi, silakan kunjungi website:","Beli versi lengkap","Hak Cipta © XDSoft.net - Chupurnov Valeriy. Hak cipta dilindungi undang-undang.","Tautan","Buka di tab baru","Buka editor dalam ukuran penuh","Hapus Pemformatan","Isi warna atau atur warna teks","Ulangi","Batalkan","Tebal","Miring","Sisipkan Daftar Tidak Berurut","Sisipkan Daftar Berurut","Tengah","Penuh","Kiri","Kanan","Sisipkan Garis Horizontal","Sisipkan Gambar","Sisipkan Berkas","Sisipkan video youtube/vimeo","Sisipkan tautan","Ukuran font","Keluarga font","Sisipkan blok format","Normal","Heading 1","Heading 2","Heading 3","Heading 4","Kutip","Kode","Sisipkan","Sisipkan tabel","Kurangi Indentasi","Tambah Indentasi","Pilih Karakter Spesial","Sisipkan Karakter Spesial","Formar warna","Ubah mode","Batas","atas","kanan","bawah","kiri","Gaya","Class","Rata","Kanan","Tengah","Kiri","--Tidak diset--","Src","Judul","Teks alternatif","Tautan","Buka tautan di tab baru","Gambar","berkas",null,"Properti gambar","Batal","Ya","Kode Anda cenderung ke HTML. Biarkan sebagai HTML?","Paste sebagai HTML","Jaga","Bersih","Sisipkan sebagai teks","Terdeteksi paste dari Word","Konten dipaste dari dokumen Microsoft Word/Excel. Apakah Anda ingin tetap menjaga format atau membersihkannya?","Sisipkan hanya teks","Penjelajah Berkas","Error ketika memuat list","Error ketika memuat folder","Apakah Anda yakin?","Masukkan nama Direktori","Buat direktori","ketik nama","Letakkan gambar","Letakkan berkas","atau klik","Teks alternatif","Jelajahi","Unggah","Latar Belakang","Teks","Atas","Tengah","Bawah","Sisipkan kolom sebelumnya","Sisipkan kolom setelahnya","Sisipkan baris di atasnya","Sisipkan baris di bawahnya","Hapus tabel","Hapus baris","Hapus kolom","Kosongkan cell","Hapus","Coret","Garis Bawah","Berhenti","Mencari","Ganti dengan","Mengganti","Edit","Rata vertikal","Perataan horizontal","Filter","Urutkan berdasarkan perubahan","Urutkan berdasarkan nama","Urutkan berdasarkan ukuran","Tambah folder","Bagi secara vertikal","Bagi secara horizontal","Bagi","Gabungkan","Tambah kolom","tambah baris","Bingkai","Kode embed","Perbarui","Superskrip","Subskrip","Potong pilihan","Paste","Pilih konten untuk dipaste","Karakter: %d","Kata: %d","Semua","Pilih %s","Pilih semua","sumber","tebal","miring","sikat","tautan","batalkan","ulangi","tabel","gambar","penghapus","paragraf","ukuran font","video","font","tentang","cetak","garis bawah","coret","menjorok ke dalam","menjorok ke luar","ukuran penuh","menyusut","hr","ul","ol",null,null,null,null,null,"potong","Pilih semua","Buka tautan","Edit tautan","No follow","Hapus tautan","Mata","pensil","URL","Reset","Simpan","Simpan sebagai...","Ubah ukuran","Crop","Lebar","Tinggi","Jaga aspek rasio","Ya","Tidak","Copot","Pilih","Anda hanya dapat mengedit gambar Anda sendiri. Unduh gambar ini di host?","Gambar telah sukses diunggah ke host!","palet","Tidak ada berkas","ganti nama","Masukkan nama baru","pratinjau","Unduh","Paste dari clipboard","Browser anda tidak mendukung akses langsung ke clipboard.","Copy seleksi","copy","Border radius","Tampilkan semua","Menerapkan","Silahkan mengisi kolom ini","Silahkan masukkan alamat web","Default","Lingkaran","Dot","Kuadrat","Menemukan","Menemukan Sebelumnya","Menemukan Berikutnya","Masukkan nama kelas","Tekan Alt untuk mengubah ukuran kustom"]
 
 /***/ }),
 
 /***/ 51923:
 /***/ (function(module) {
 
-module.exports["default"] = ["Scrivi qualcosa...","A proposito di Jodit","Jodit Editor","Guida utente di Jodit","contiene una guida dettagliata per l'uso.","Per informazioni sulla licenza, si prega di visitare il nostro sito:","Acquista la versione completa","Copyright © XDSoft.net - Chupurnov Valeriy. Alle Rechte vorbehalten.","Ancora","Apri in una nuova scheda","Apri l'editor a schermo intero","Formato chiaro","Riempi colore o lettera","Ripristina","Annulla","Grassetto","Corsivo","Inserisci lista non ordinata","Inserisci l'elenco ordinato","Allinea Centra","Allineare Giustificato","Allinea a Sinistra","Allinea a Destra","Inserisci la linea orizzontale","Inserisci immagine","Inserisci un file","Inserisci video Youtube/Vimeo","Inserisci il link","Dimensione del carattere","Tipo di font","Inserisci blocco","Normale","Heading 1","Heading 2","Heading 3","Heading 4","Citazione","Codice","Inserisci","Inserisci tabella","Riduci il rientro","Aumenta il rientro","Seleziona una funzione speciale","Inserisci un carattere speciale","Copia formato","Cambia modo","Margini","su","destra","giù","sinistra","Stili CSS","Classi CSS","Allinea","Destra","Centro","Sinistra","--Non Impostato--","Fonte","Titolo","Testo Alternativo","Link","Apri il link in una nuova scheda","Immagine","Archivio","Avanzato","Proprietà dell'immagine","Annulla","Accetta","Cerca il file","Errore durante il caricamento dell'elenco","Errore durante il caricamento delle cartelle","Sei sicuro?","Inserisci il nome della cartella","Crea cartella","Entre el nombre","Rilascia l'immagine","Rilascia file","o click","Testo alternativo","Carica","Sfoglia","Sfondo","Testo","Su","Centro","Sotto","Inserisci prima la colonna","Inserisci colonna dopo","Inserisci la riga sopra","Inserisci la riga sotto","Elimina tabella","Elimina riga","Elimina colonna","Cella vuota","Caratteri: %d","Parole: %d","Barrato","Sottolineato","indice","deponente","Taglia la selezione","Seleziona tutto","Pausa","Cerca","Sostituisci con","Sostituire","Incolla","Seleziona il contenuto da incollare","HTML","Grassetto","Corsivo","Pennello","Link","Annulla","Ripristina","Tabella","Immagine","Gomma","Paragrafo","Dimensione del carattere","Video","Font","Approposito di","Stampa","Sottolineato","Barrato","trattino","annulla rientro","A grandezza normale","comprimere","linea orizzontale","lista non ordinata","lista ordinata","Taglia","Seleziona tutto","Includi codice","Apri link","Modifica link","Non seguire","Togli link","Aggiornare","Per modificare","Recensione"," URL","Modifica","Allineamento orizzontale","Filtro","Ordina per data di modifica","Ordina per nome","Ordina per dimensione","Aggiungi cartella","Reset","Salva","Salva con nome...","Ridimensiona","Tagliare","Larghezza","Altezza","Mantenere le proporzioni","Si","No","Rimuovere","Seleziona","Seleziona: %s","Allineamento verticala","Dividere","Fondi","Aggiungi colonna","Aggiungi riga",null,"Cancella","Dividere verticalmente","Diviso orizzontale","Bordo","Il codice è simile all'HTML. Mantieni come HTML?","Incolla come HTML?","Mantieni","Inserisci come testo","Inserisci solo il testo","Puoi modificare solo le tue immagini. Scarica questa immagine sul server?","L'immagine è stata caricata con successo sul server!","tavolozza","Non ci sono file in questa directory.","ungherese","Inserisci un nuovo nome","anteprima","Scaricare","Incolla dagli appunti","Il tuo browser non supporta l'accesso diretto agli appunti.","Selezione di copia","copia","Border radius","Mostra tutti","Applicare","Si prega di compilare questo campo","Si prega di inserire un indirizzo web","Di Default","Cerchio","Dot","Quadrate","Trovare","Trova Precedente","Trova Successivo","Il contenuto incollato proviene da un documento Microsoft Word / Excel. Vuoi mantenere il formato o pulirlo?","Incollato da Word rilevato","Pulisci","Inserisci il nome della classe","Premere Alt per il ridimensionamento personalizzato"]
+module.exports["default"] = ["Scrivi qualcosa...","Avanzato","A proposito di Jodit","Jodit Editor","Guida utente di Jodit","contiene una guida dettagliata per l'uso.","Per informazioni sulla licenza, si prega di visitare il nostro sito:","Acquista la versione completa","Copyright © XDSoft.net - Chupurnov Valeriy. Alle Rechte vorbehalten.","Ancora","Apri in una nuova scheda","Apri l'editor a schermo intero","Formato chiaro","Riempi colore o lettera","Ripristina","Annulla","Grassetto","Corsivo","Inserisci lista non ordinata","Inserisci l'elenco ordinato","Allinea Centra","Allineare Giustificato","Allinea a Sinistra","Allinea a Destra","Inserisci la linea orizzontale","Inserisci immagine","Inserisci un file","Inserisci video Youtube/Vimeo","Inserisci il link","Dimensione del carattere","Tipo di font","Inserisci blocco","Normale","Heading 1","Heading 2","Heading 3","Heading 4","Citazione","Codice","Inserisci","Inserisci tabella","Riduci il rientro","Aumenta il rientro","Seleziona una funzione speciale","Inserisci un carattere speciale","Copia formato","Cambia modo","Margini","su","destra","giù","sinistra","Stili CSS","Classi CSS","Allinea","Destra","Centro","Sinistra","--Non Impostato--","Fonte","Titolo","Testo Alternativo","Link","Apri il link in una nuova scheda","Immagine","Archivio","Avanzato","Proprietà dell'immagine","Annulla","Accetta","Il codice è simile all'HTML. Mantieni come HTML?","Incolla come HTML?","Mantieni","Pulisci","Inserisci come testo","Incollato da Word rilevato","Il contenuto incollato proviene da un documento Microsoft Word / Excel. Vuoi mantenere il formato o pulirlo?","Inserisci solo il testo","Cerca il file","Errore durante il caricamento dell'elenco","Errore durante il caricamento delle cartelle","Sei sicuro?","Inserisci il nome della cartella","Crea cartella","Entre el nombre","Rilascia l'immagine","Rilascia file","o click","Testo alternativo","Sfoglia","Carica","Sfondo","Testo","Su","Centro","Sotto","Inserisci prima la colonna","Inserisci colonna dopo","Inserisci la riga sopra","Inserisci la riga sotto","Elimina tabella","Elimina riga","Elimina colonna","Cella vuota","Cancella","Barrato","Sottolineato","Pausa","Cerca","Sostituisci con","Sostituire","Modifica","Allineamento verticala","Allineamento orizzontale","Filtro","Ordina per data di modifica","Ordina per nome","Ordina per dimensione","Aggiungi cartella","Dividere verticalmente","Diviso orizzontale","Dividere","Fondi","Aggiungi colonna","Aggiungi riga","Bordo","Includi codice","Aggiornare","indice","deponente","Taglia la selezione","Incolla","Seleziona il contenuto da incollare","Caratteri: %d","Parole: %d","Tutto","Seleziona: %s","Seleziona tutto","HTML","Grassetto","Corsivo","Pennello","Link","Annulla","Ripristina","Tabella","Immagine","Gomma","Paragrafo","Dimensione del carattere","Video","Font","Approposito di","Stampa","Sottolineato","Barrato","trattino","annulla rientro","A grandezza normale","comprimere","linea orizzontale","lista non ordinata","lista ordinata",null,null,null,null,null,"Taglia","Seleziona tutto","Apri link","Modifica link","Non seguire","Togli link","Recensione","Per modificare"," URL","Reset","Salva","Salva con nome...","Ridimensiona","Tagliare","Larghezza","Altezza","Mantenere le proporzioni","Si","No","Rimuovere","Seleziona","Puoi modificare solo le tue immagini. Scarica questa immagine sul server?","L'immagine è stata caricata con successo sul server!","tavolozza","Non ci sono file in questa directory.","ungherese","Inserisci un nuovo nome","anteprima","Scaricare","Incolla dagli appunti","Il tuo browser non supporta l'accesso diretto agli appunti.","Selezione di copia","copia","Border radius","Mostra tutti","Applicare","Si prega di compilare questo campo","Si prega di inserire un indirizzo web","Di Default","Cerchio","Dot","Quadrate","Trovare","Trova Precedente","Trova Successivo","Inserisci il nome della classe","Premere Alt per il ridimensionamento personalizzato"]
 
 /***/ }),
 
 /***/ 21268:
 /***/ (function(module) {
 
-module.exports["default"] = ["なにかタイプしてください","Joditについて","Jodit Editor","Jodit ユーザーズ・ガイド","詳しい使い方","ライセンス詳細についてはJodit Webサイトを確認ください：","フルバージョンを購入","Copyright © XDSoft.net - Chupurnov Valeriy. All rights reserved.","Anchor","新しいタブで開く","エディターのサイズ（フル/ノーマル）","書式をクリア","テキストの色","やり直し","元に戻す","太字","斜体","箇条書き","番号付きリスト","中央揃え","両端揃え","左揃え","右揃え","区切り線を挿入","画像を挿入","ファイルを挿入","Youtube/Vimeo 動画","リンクを挿入","フォントサイズ","フォント","テキストのスタイル","指定なし","タイトル1","タイトル2","タイトル3","タイトル4","引用","コード","挿入","表を挿入","インデント減","インデント増","特殊文字を選択","特殊文字を挿入","書式を貼付け","編集モード切替え","マージン","上","右","下","左","スタイル","クラス","配置","右寄せ","中央寄せ","左寄せ","指定なし","ソース","タイトル","代替テキスト","リンク","新しいタブで開く","画像","ファイル","高度な設定","画像のプロパティー","キャンセル","確定","File Browser","Error on load list","Error on load folders","Are you sure?","Enter Directory name","Create directory","type name","ここに画像をドロップ","ここにファイルをドロップ","or クリック","代替テキスト","アップロード","ブラウズ","背景","文字","上","中央","下","左に列を挿入","右に列を挿入","上に行を挿入","下に行を挿入","表を削除","行を削除","列を削除","セルを空にする","文字数: %d","単語数: %d","取り消し線","下線","上付き文字","下付き文字","切り取り","すべて選択","Pause","検索","置換","交換","貼付け","選択した内容を貼付け","source","bold","italic","brush","link","undo","redo","table","image","eraser","paragraph","fontsize","video","font","about","print","underline","strikethrough","indent","outdent","fullsize","shrink","分割線","箇条書き","番号付きリスト","切り取り","すべて選択","埋め込みコード","リンクを開く","リンクを編集","No follow","リンク解除","更新","鉛筆","サイトを確認","URL","編集","水平方向の配置","Filter","Sort by changed","Sort by name","Sort by size","Add folder","リセット","保存","Save as ...","リサイズ","Crop","幅","高さ","縦横比を保持","はい","いいえ","移除","選択","選択: %s","垂直方向の配置","分割","セルの結合","列を追加","行を追加",null,"削除","セルの分割（垂直方向）","セルの分割（水平方向）","境界線","HTMLコードを保持しますか？","HTMLで貼付け","HTMLを保持","HTMLをテキストにする","テキストだけ","You can only edit your own images. Download this image on the host?","The image has been successfully uploaded to the host!","パレット","There are no files","Rename","Enter new name","プレビュー","ダウンロード","貼り付け","お使いのブラウザはクリップボードを使用できません","コピー","copy","角の丸み","全て表示","適用","まだこの分野","を入力してくださいウェブアドレス","デフォルト","白丸","黒丸","四角","見","探前","由来","The pasted content is coming from a Microsoft Word/Excel document. Do you want to keep the format or clean it up?","Word Paste Detected","Clean","クラス名を挿入","カスタムサイズ変更のためのAltキーを押します"]
+module.exports["default"] = ["なにかタイプしてください","高度な設定","Joditについて","Jodit Editor","Jodit ユーザーズ・ガイド","詳しい使い方","ライセンス詳細についてはJodit Webサイトを確認ください：","フルバージョンを購入","Copyright © XDSoft.net - Chupurnov Valeriy. All rights reserved.","Anchor","新しいタブで開く","エディターのサイズ（フル/ノーマル）","書式をクリア","テキストの色","やり直し","元に戻す","太字","斜体","箇条書き","番号付きリスト","中央揃え","両端揃え","左揃え","右揃え","区切り線を挿入","画像を挿入","ファイルを挿入","Youtube/Vimeo 動画","リンクを挿入","フォントサイズ","フォント","テキストのスタイル","指定なし","タイトル1","タイトル2","タイトル3","タイトル4","引用","コード","挿入","表を挿入","インデント減","インデント増","特殊文字を選択","特殊文字を挿入","書式を貼付け","編集モード切替え","マージン","上","右","下","左","スタイル","クラス","配置","右寄せ","中央寄せ","左寄せ","指定なし","ソース","タイトル","代替テキスト","リンク","新しいタブで開く","画像","ファイル","Advansed","画像のプロパティー","キャンセル","確定","HTMLコードを保持しますか？","HTMLで貼付け","HTMLを保持","Clean","HTMLをテキストにする","Word Paste Detected","The pasted content is coming from a Microsoft Word/Excel document. Do you want to keep the format or clean it up?","テキストだけ","File Browser","Error on load list","Error on load folders","Are you sure?","Enter Directory name","Create directory","type name","ここに画像をドロップ","ここにファイルをドロップ","or クリック","代替テキスト","ブラウズ","アップロード","背景","文字","上","中央","下","左に列を挿入","右に列を挿入","上に行を挿入","下に行を挿入","表を削除","行を削除","列を削除","セルを空にする","削除","取り消し線","下線","Pause","検索","置換","交換","編集","垂直方向の配置","水平方向の配置","Filter","Sort by changed","Sort by name","Sort by size","Add folder","セルの分割（垂直方向）","セルの分割（水平方向）","分割","セルの結合","列を追加","行を追加","境界線","埋め込みコード","更新","上付き文字","下付き文字","切り取り","貼付け","選択した内容を貼付け","文字数: %d","単語数: %d","全部","選択: %s","すべて選択","source","bold","italic","brush","link","undo","redo","table","image","eraser","paragraph","fontsize","video","font","about","print","underline","strikethrough","indent","outdent","fullsize","shrink","分割線","箇条書き","番号付きリスト","英小文字","英大文字","ローマ数字小文字","ローマ数字大文字","ギリシャ文字","切り取り","すべて選択","リンクを開く","リンクを編集","No follow","リンク解除","サイトを確認","鉛筆","URL","リセット","保存","Save as ...","リサイズ","Crop","幅","高さ","縦横比を保持","はい","いいえ","移除","選択","You can only edit your own images. Download this image on the host?","The image has been successfully uploaded to the host!","パレット","There are no files","Rename","Enter new name","プレビュー","ダウンロード","貼り付け","お使いのブラウザはクリップボードを使用できません","コピー","copy","角の丸み","全て表示","適用","まだこの分野","を入力してくださいウェブアドレス","デフォルト","白丸","黒丸","四角","見","探前","由来","クラス名を挿入","カスタムサイズ変更のためのAltキーを押します"]
 
 /***/ }),
 
 /***/ 11399:
 /***/ (function(module) {
 
-module.exports["default"] = ["Type something","About Jodit","Jodit Editor","Jodit User's Guide","contains detailed help for using","For information about the license, please go to our website:","Buy full version","Copyright © XDSoft.net - Chupurnov Valeriy. All rights reserved.","Anchor","Open in new tab","Open in fullsize","Clear Formatting","Fill color or set the text color","Redo","Undo","Bold","Italic","Insert Unordered List","Insert Ordered List","Align Center","Align Justify","Align Left","Align Right","Insert Horizontal Line","Insert a image","Insert a file","Insert a video","Insert link","Font size","Font family","Insert format block","Normal","Heading 1","Heading 2","Heading 3","Heading 4","Quote","Code","Insert","Insert table","Decrease Indent","Increase Indent","Select Special Character","Insert Special Character","Paint format","Change mode","Margins","top","right","bottom","left","Styles","Classes","Align","Right","Center","Left","--Not Set--","Src","Title","Alternative","Link","Open link in new tab","Image","file","Advanced","Image properties","Cancel","Ok","File Browser","Error on load list","Error on load folders","Are you sure?","Enter Directory name","Create directory","type name","Drop image","Drop file","or click","Alternative text","Upload","Browse","Background","Text","Top","Middle","Bottom","Insert column before","Insert column after","Insert row above","Insert row below","Delete table","Delete row","Delete column","Empty cell","Chars: %d","Words: %d","Strike through","Underline","superscript","subscript","Cut selection","Select all","Break","Search for","Replace with","Replace","Paste","Choose Content to Paste","source","bold","italic","brush","link","undo","redo","table","image","eraser","paragraph","fontsize","video","font","about","print","underline","strikethrough","indent","outdent","fullsize","shrink","hr","ul","ol","cut","selectall","Embed code","Open link","Edit link","No follow","Unlink","Update","pencil","Eye"," URL","Edit","Horizontal align","Filter","Sort by changed","Sort by name","Sort by size","Add folder","Reset","Save","Save as ...","Resize","Crop","Width","Height","Keep Aspect Ratio","Yes","No","Remove","Select","Select %s","Vertical align","Split","Merge","Add column","Add row","License: %s","Delete","Split vertical","Split horizontal","Border","Your code is similar to HTML. Keep as HTML?","Paste as HTML","Keep","Insert as Text","Insert only Text","You can only edit your own images. Download this image on the host?","The image has been successfully uploaded to the host!","palette","There are no files","Rename","Enter new name","preview","download","Paste from clipboard","Your browser doesn't support direct access to the clipboard.","Copy selection","copy","Border radius","Show all","Apply","Please fill out this field","Please enter a web address","Default","Circle","Dot","Quadrate","Find","Find Previous","Find Next","The pasted content is coming from a Microsoft Word/Excel document. Do you want to keep the format or clean it up?","Word Paste Detected","Clean","Insert className","Press Alt for custom resizing"]
+module.exports["default"] = ["Type something","Advanced","About Jodit","Jodit Editor","Jodit User's Guide","contains detailed help for using","For information about the license, please go to our website:","Buy full version","Copyright © XDSoft.net - Chupurnov Valeriy. All rights reserved.","Anchor","Open in new tab","Open in fullsize","Clear Formatting","Fill color or set the text color","Redo","Undo","Bold","Italic","Insert Unordered List","Insert Ordered List","Align Center","Align Justify","Align Left","Align Right","Insert Horizontal Line","Insert a image","Insert a file","Insert a video","Insert link","Font size","Font family","Insert format block","Normal","Heading 1","Heading 2","Heading 3","Heading 4","Quote","Code","Insert","Insert table","Decrease Indent","Increase Indent","Select Special Character","Insert Special Character","Paint format","Change mode","Margins","top","right","bottom","left","Styles","Classes","Align","Right","Center","Left","--Not Set--","Src","Title","Alternative","Link","Open link in new tab","Image","file","Advansed","Image properties","Cancel","Ok","Your code is similar to HTML. Keep as HTML?","Paste as HTML","Keep","Clean","Insert as Text","Word Paste Detected","The pasted content is coming from a Microsoft Word/Excel document. Do you want to keep the format or clean it up?","Insert only Text","File Browser","Error on load list","Error on load folders","Are you sure?","Enter Directory name","Create directory","type name","Drop image","Drop file","or click","Alternative text","Browse","Upload","Background","Text","Top","Middle","Bottom","Insert column before","Insert column after","Insert row above","Insert row below","Delete table","Delete row","Delete column","Empty cell","Delete","Strike through","Underline","Break","Search for","Replace with","Replace","Edit","Vertical align","Horizontal align","Filter","Sort by changed","Sort by name","Sort by size","Add folder","Split vertical","Split horizontal","Split","Merge","Add column","Add row","Border","Embed code","Update","superscript","subscript","Cut selection","Paste","Choose Content to Paste","Chars: %d","Words: %d","All","Select %s","Select all","source","bold","italic","brush","link","undo","redo","table","image","eraser","paragraph","fontsize","video","font","about","print","underline","strikethrough","indent","outdent","fullsize","shrink","hr","ul","ol","Lower Alpha","Upper Alpha","Lower Roman","Upper Roman","Lower Greek","cut","selectall","Open link","Edit link","No follow","Unlink","Eye","pencil"," URL","Reset","Save","Save as ...","Resize","Crop","Width","Height","Keep Aspect Ratio","Yes","No","Remove","Select","You can only edit your own images. Download this image on the host?","The image has been successfully uploaded to the host!","palette","There are no files","Rename","Enter new name","preview","download","Paste from clipboard","Your browser doesn't support direct access to the clipboard.","Copy selection","copy","Border radius","Show all","Apply","Please fill out this field","Please enter a web address","Default","Circle","Dot","Quadrate","Find","Find Previous","Find Next","Insert className","Press Alt for custom resizing"]
 
 /***/ }),
 
 /***/ 37289:
 /***/ (function(module) {
 
-module.exports["default"] = ["무엇이든 입력하세요","Jodit에 대하여","Jodit Editor","Jodit 사용자 안내서","자세한 도움말이 들어있어요","라이센스에 관해서는 Jodit 웹 사이트를 방문해주세요：","풀 버전 구입하기","© XDSoft.net - Chupurnov Valeriy. 에게 저작권과 모든 권리가 있습니다.","Anchor","새 탭에서 열기","전체 크기로 보기","서식 지우기","글씨 색상","재실행","실행 취소","굵게","기울임","글머리 목록","번호 목록","가운데 정렬","양쪽 정렬","왼쪽 정렬","오른쪽 정렬","수평 구분선 넣기","이미지 넣기","파일 넣기","동영상 넣기","링크 넣기","글꼴 크기","글꼴","블록 요소 넣기","일반 텍스트","제목 1","제목 2","제목 3","제목 4","인용","코드","붙여 넣기","테이블","들여쓰기 감소","들여쓰기 증가","특수문자 선택","특수문자 입력","페인트 형식","편집모드 변경","마진","위","오른쪽","아래","왼쪽","스타일","클래스","정렬","오른쪽으로","가운데로","왼쪽으로","--지정 안 함--","경로(src)","제목","대체 텍스트(alt)","링크","새 탭에서 열기",null,"파일","고급","이미지 속성","취소","확인","파일 탐색기","목록 불러오기 에러","폴더 불러오기","정말 진행할까요?","디렉토리 이름 입력","디렉토리 생성","이름 입력","이미지 드래그","파일 드래그","혹은 클릭하세요","대체 텍스트","업로드","탐색","배경","텍스트","위","중앙","아래","이전 열에 삽입","다음 열에 삽입","위 행에 삽입","아래 행에 삽입","테이블 삭제","행 삭제","열 삭제","빈 셀","문자수: %d","단어수: %d","취소선","밑줄","윗첨자","아래첨자","선택 잘라내기","모두 선택","구분자","검색","대체하기","대체","붙여넣기","붙여넣을 내용 선택","HTML 소스","볼드","이탤릭","브러시","링크","실행 취소","재실행","테이블","이미지","지우개","문단","글꼴 크기","비디오","글꼴","편집기 정보","프린트","밑줄","취소선","들여쓰기","내어쓰기","전체 화면","일반 화면","구분선","글머리 목록","번호 목록","잘라내기","모두 선택","Embed 코드","링크 열기","링크 편집","No follow","링크 제거","갱신","연필","사이트 확인",null,"편집","수평 정렬","필터","변경일 정렬","이름 정렬","크기 정렬","새 폴더","초기화","저장","새로 저장하기 ...","리사이즈","크롭","가로 길이","세로 높이","비율 유지하기","네","아니오","제거","선택","선택: %s","수직 정렬","분할","셀 병합","열 추가","행 추가","라이센스: %s","삭제","세로 셀 분할","가로 셀 분할","외곽선","HTML 코드로 감지했어요. 코드인채로 붙여넣을까요?","HTML로 붙여넣기","원본 유지","텍스트로 넣기","텍스트만 넣기","외부 이미지는 편집할 수 없어요. 외부 이미지를 다운로드 할까요?","이미지를 무사히 업로드 했어요!","팔레트","파일이 없어요","이름 변경","새 이름 입력","미리보기","다운로드","클립보드 붙여넣기","사용중인 브라우저가 클립보드 접근을 지원하지 않아요.","선택 복사","복사","둥근 테두리","모두 보기","적용","이 항목을 입력해주세요!","웹 URL을 입력해주세요.","기본","원","점","정사각형","찾기","이전 찾기","다음 찾기","Microsoft Word/Excel 문서로 감지했어요. 서식을 유지한채로 붙여넣을까요?","Word 붙여넣기 감지","지우기","className 입력","사용자 지정 크기 조정에 대 한 고도 누르십시오"]
+module.exports["default"] = ["무엇이든 입력하세요","고급","Jodit에 대하여","Jodit Editor","Jodit 사용자 안내서","자세한 도움말이 들어있어요","라이센스에 관해서는 Jodit 웹 사이트를 방문해주세요：","풀 버전 구입하기","© XDSoft.net - Chupurnov Valeriy. 에게 저작권과 모든 권리가 있습니다.","Anchor","새 탭에서 열기","전체 크기로 보기","서식 지우기","글씨 색상","재실행","실행 취소","굵게","기울임","글머리 목록","번호 목록","가운데 정렬","양쪽 정렬","왼쪽 정렬","오른쪽 정렬","수평 구분선 넣기","이미지 넣기","파일 넣기","동영상 넣기","링크 넣기","글꼴 크기","글꼴","블록 요소 넣기","일반 텍스트","제목 1","제목 2","제목 3","제목 4","인용","코드","붙여 넣기","테이블","들여쓰기 감소","들여쓰기 증가","특수문자 선택","특수문자 입력","페인트 형식","편집모드 변경","마진","위","오른쪽","아래","왼쪽","스타일","클래스","정렬","오른쪽으로","가운데로","왼쪽으로","--지정 안 함--","경로(src)","제목","대체 텍스트(alt)","링크","새 탭에서 열기",null,"파일",null,"이미지 속성","취소","확인","HTML 코드로 감지했어요. 코드인채로 붙여넣을까요?","HTML로 붙여넣기","원본 유지","지우기","텍스트로 넣기","Word 붙여넣기 감지","Microsoft Word/Excel 문서로 감지했어요. 서식을 유지한채로 붙여넣을까요?","텍스트만 넣기","파일 탐색기","목록 불러오기 에러","폴더 불러오기","정말 진행할까요?","디렉토리 이름 입력","디렉토리 생성","이름 입력","이미지 드래그","파일 드래그","혹은 클릭하세요","대체 텍스트","탐색","업로드","배경","텍스트","위","중앙","아래","이전 열에 삽입","다음 열에 삽입","위 행에 삽입","아래 행에 삽입","테이블 삭제","행 삭제","열 삭제","빈 셀","삭제","취소선","밑줄","구분자","검색","대체하기","대체","편집","수직 정렬","수평 정렬","필터","변경일 정렬","이름 정렬","크기 정렬","새 폴더","세로 셀 분할","가로 셀 분할","분할","셀 병합","열 추가","행 추가","외곽선","Embed 코드","갱신","윗첨자","아래첨자","선택 잘라내기","붙여넣기","붙여넣을 내용 선택","문자수: %d","단어수: %d","모두","선택: %s","모두 선택","HTML 소스","볼드","이탤릭","브러시","링크","실행 취소","재실행","테이블","이미지","지우개","문단","글꼴 크기","비디오","글꼴","편집기 정보","프린트","밑줄","취소선","들여쓰기","내어쓰기","전체 화면","일반 화면","구분선","글머리 목록","번호 목록",null,null,null,null,null,"잘라내기","모두 선택","링크 열기","링크 편집","No follow","링크 제거","사이트 확인","연필",null,"초기화","저장","새로 저장하기 ...","리사이즈","크롭","가로 길이","세로 높이","비율 유지하기","네","아니오","제거","선택","외부 이미지는 편집할 수 없어요. 외부 이미지를 다운로드 할까요?","이미지를 무사히 업로드 했어요!","팔레트","파일이 없어요","이름 변경","새 이름 입력","미리보기","다운로드","클립보드 붙여넣기","사용중인 브라우저가 클립보드 접근을 지원하지 않아요.","선택 복사","복사","둥근 테두리","모두 보기","적용","이 항목을 입력해주세요!","웹 URL을 입력해주세요.","기본","원","점","정사각형","찾기","이전 찾기","다음 찾기","className 입력","사용자 지정 크기 조정에 대 한 고도 누르십시오"]
 
 /***/ }),
 
 /***/ 17084:
 /***/ (function(module) {
 
-module.exports["default"] = ["Begin met typen..","Over Jodit","Jodit Editor","Jodit gebruikershandleiding","bevat gedetailleerde informatie voor gebruik.","Voor informatie over de licentie, ga naar onze website:","Volledige versie kopen","Copyright © XDSoft.net - Chupurnov Valeriy. Alle rechten voorbehouden.","Anker","Open in nieuwe tab","Editor in volledig scherm openen","Opmaak verwijderen","Vulkleur of tekstkleur aanpassen","Opnieuw","Ongedaan maken","Vet","Cursief","Geordende list invoegen","Ongeordende lijst invoegen","Centreren","Uitlijnen op volledige breedte","Links uitlijnen","Rechts uitlijnen","Horizontale lijn invoegen","Afbeelding invoegen","Bestand invoegen","Youtube/Vimeo video invoegen","Link toevoegen","Tekstgrootte","Lettertype","Format blok invoegen","Normaal","Koptekst 1","Koptekst 2","Koptekst 3","Koptekst 4","Citaat","Code","Invoegen","Tabel invoegen","Inspringing verkleinen","Inspringing vergroten","Symbool selecteren","Symbool invoegen","Opmaak kopieren","Modus veranderen","Marges","Boven","Rechts","Onder","Links","CSS styles","CSS classes","Uitlijning","Rechts","Gecentreerd","Links","--Leeg--","Src","Titel","Alternatieve tekst","Link","Link in nieuwe tab openen","Afbeelding","Bestand","Geavanceerd","Afbeeldingseigenschappen","Annuleren","OK","Bestandsbrowser","Fout bij het laden van de lijst","Fout bij het laden van de mappenlijst","Weet je het zeker?","Geef de map een naam","Map aanmaken","Type naam","Sleep hier een afbeelding naartoe","Sleep hier een bestand naartoe","of klik","Alternatieve tekst","Uploaden","Bladeren","Achtergrond","Tekst","Boven","Midden","Onder","Kolom invoegen (voor)","Kolom invoegen (na)","Rij invoegen (boven)","Rij invoegen (onder)","Tabel verwijderen","Rij verwijderen","Kolom verwijderen","Cel leegmaken","Tekens: %d","Woorden: %d","Doorstrepen","Onderstrepen","Superscript","Subscript","Selectie knippen","Selecteer alles","Enter","Zoek naar","Vervangen door","Vervangen","Plakken","Kies content om te plakken","Broncode","vet","cursief","kwast","link","ongedaan maken","opnieuw","tabel","afbeelding","gum","paragraaf","lettergrootte","video","lettertype","over","afdrukken","onderstreept","doorgestreept","inspringen","minder inspringen","volledige grootte","kleiner maken","horizontale lijn","lijst","genummerde lijst","knip","alles selecteren","Embed code","link openen","link aanpassen","niet volgen","link verwijderen","Updaten","Om te bewerken","Recensie"," URL","Bewerken","Horizontaal uitlijnen","Filteren","Sorteren op wijzigingsdatum","Sorteren op naam","Sorteren op grootte","Map toevoegen","Herstellen","Opslaan","Opslaan als ...","Grootte aanpassen","Bijknippen","Breedte","Hoogte","Verhouding behouden","Ja","Nee","Verwijderen","Selecteren","Selecteer: %s","Verticaal uitlijnen","Splitsen","Samenvoegen","Kolom toevoegen","Rij toevoegen",null,"Verwijderen","Verticaal splitsen","Horizontaal splitsen","Rand","Deze code lijkt op HTML. Als HTML behouden?","Invoegen als HTML","Origineel behouden","Als tekst invoegen","Als onopgemaakte tekst invoegen","Je kunt alleen je eigen afbeeldingen aanpassen. Deze afbeelding downloaden?","De afbeelding is succesvol geüploadet!","Palette","Er zijn geen bestanden in deze map.","Hongaars","Voer een nieuwe naam in","voorvertoning","Download","Plakken van klembord","Uw browser ondersteunt geen directe toegang tot het klembord.","Selectie kopiëren","kopiëren","Border radius","Toon alle","Toepassing","Vul dit veld","Voer een webadres","Standaard","Cirkel","Dot","Quadrate","Zoeken","Vorige Zoeken","Volgende Zoeken","De geplakte tekst is afkomstig van een Microsoft Word/Excel document. Wil je de opmaak behouden of opschonen?","Word-tekst gedetecteerd","Opschonen","Voeg de klassenaam in","Druk op Alt voor aangepaste grootte"]
+module.exports["default"] = ["Begin met typen..","Geavanceerd","Over Jodit","Jodit Editor","Jodit gebruikershandleiding","bevat gedetailleerde informatie voor gebruik.","Voor informatie over de licentie, ga naar onze website:","Volledige versie kopen","Copyright © XDSoft.net - Chupurnov Valeriy. Alle rechten voorbehouden.","Anker","Open in nieuwe tab","Editor in volledig scherm openen","Opmaak verwijderen","Vulkleur of tekstkleur aanpassen","Opnieuw","Ongedaan maken","Vet","Cursief","Geordende list invoegen","Ongeordende lijst invoegen","Centreren","Uitlijnen op volledige breedte","Links uitlijnen","Rechts uitlijnen","Horizontale lijn invoegen","Afbeelding invoegen","Bestand invoegen","Youtube/Vimeo video invoegen","Link toevoegen","Tekstgrootte","Lettertype","Format blok invoegen","Normaal","Koptekst 1","Koptekst 2","Koptekst 3","Koptekst 4","Citaat","Code","Invoegen","Tabel invoegen","Inspringing verkleinen","Inspringing vergroten","Symbool selecteren","Symbool invoegen","Opmaak kopieren","Modus veranderen","Marges","Boven","Rechts","Onder","Links","CSS styles","CSS classes","Uitlijning","Rechts","Gecentreerd","Links","--Leeg--","Src","Titel","Alternatieve tekst","Link","Link in nieuwe tab openen","Afbeelding","Bestand","Geavanceerd","Afbeeldingseigenschappen","Annuleren","OK","Deze code lijkt op HTML. Als HTML behouden?","Invoegen als HTML","Origineel behouden","Opschonen","Als tekst invoegen","Word-tekst gedetecteerd","De geplakte tekst is afkomstig van een Microsoft Word/Excel document. Wil je de opmaak behouden of opschonen?","Als onopgemaakte tekst invoegen","Bestandsbrowser","Fout bij het laden van de lijst","Fout bij het laden van de mappenlijst","Weet je het zeker?","Geef de map een naam","Map aanmaken","Type naam","Sleep hier een afbeelding naartoe","Sleep hier een bestand naartoe","of klik","Alternatieve tekst","Bladeren","Uploaden","Achtergrond","Tekst","Boven","Midden","Onder","Kolom invoegen (voor)","Kolom invoegen (na)","Rij invoegen (boven)","Rij invoegen (onder)","Tabel verwijderen","Rij verwijderen","Kolom verwijderen","Cel leegmaken","Verwijderen","Doorstrepen","Onderstrepen","Enter","Zoek naar","Vervangen door","Vervangen","Bewerken","Verticaal uitlijnen","Horizontaal uitlijnen","Filteren","Sorteren op wijzigingsdatum","Sorteren op naam","Sorteren op grootte","Map toevoegen","Verticaal splitsen","Horizontaal splitsen","Splitsen","Samenvoegen","Kolom toevoegen","Rij toevoegen","Rand","Embed code","Updaten","Superscript","Subscript","Selectie knippen","Plakken","Kies content om te plakken","Tekens: %d","Woorden: %d","Alles","Selecteer: %s","Selecteer alles","Broncode","vet","cursief","kwast","link","ongedaan maken","opnieuw","tabel","afbeelding","gum","paragraaf","lettergrootte","video","lettertype","over","afdrukken","onderstreept","doorgestreept","inspringen","minder inspringen","volledige grootte","kleiner maken","horizontale lijn","lijst","genummerde lijst",null,null,null,null,null,"knip","alles selecteren","link openen","link aanpassen","niet volgen","link verwijderen","Recensie","Om te bewerken"," URL","Herstellen","Opslaan","Opslaan als ...","Grootte aanpassen","Bijknippen","Breedte","Hoogte","Verhouding behouden","Ja","Nee","Verwijderen","Selecteren","Je kunt alleen je eigen afbeeldingen aanpassen. Deze afbeelding downloaden?","De afbeelding is succesvol geüploadet!","Palette","Er zijn geen bestanden in deze map.","Hongaars","Voer een nieuwe naam in","voorvertoning","Download","Plakken van klembord","Uw browser ondersteunt geen directe toegang tot het klembord.","Selectie kopiëren","kopiëren","Border radius","Toon alle","Toepassing","Vul dit veld","Voer een webadres","Standaard","Cirkel","Dot","Quadrate","Zoeken","Vorige Zoeken","Volgende Zoeken","Voeg de klassenaam in","Druk op Alt voor aangepaste grootte"]
 
 /***/ }),
 
 /***/ 96891:
 /***/ (function(module) {
 
-module.exports["default"] = ["Napisz coś","O Jodit","Edytor Jodit","Instrukcja Jodit","zawiera szczegółowe informacje dotyczące użytkowania.","Odwiedź naszą stronę, aby uzyskać więcej informacji na temat licencji:","Zakup pełnej wersji","Copyright © XDSoft.net - Chupurnov Valeriy. Wszystkie prawa zastrzeżone.","Kotwica","Otwórz w nowej zakładce","Otwórz edytor w pełnym rozmiarze","Wyczyść formatowanie","Kolor wypełnienia lub ustaw kolor tekstu","Ponów","Cofnij","Pogrubienie","Kursywa","Wstaw listę wypunktowaną","Wstaw listę numeryczną","Wyśrodkuj","Wyjustuj","Wyrównaj do lewej","Wyrównaj do prawej","Wstaw linię poziomą","Wstaw grafikę","Wstaw plik","Wstaw film Youtube/vimeo","Wstaw link","Rozmiar tekstu","Krój czcionki","Wstaw formatowanie","Normalne","Nagłówek 1","Nagłówek 2","Nagłówek 3","Nagłówek 4","Cytat","Kod","Wstaw","Wstaw tabelę","Zmniejsz wcięcie","Zwiększ wcięcie","Wybierz znak specjalny","Wstaw znak specjalny","Malarz formatów","Zmień tryb","Marginesy","Górny","Prawy","Dolny","Levy","Style CSS","Klasy CSS","Wyrównanie","Prawa","środek","Lewa","brak","Źródło","Tytuł","Tekst alternatywny","Link","Otwórz w nowej zakładce","Grafika","Plik","Zaawansowane","Właściwości grafiki","Anuluj","OK","Przeglądarka plików","Błąd ładowania listy plików","Błąd ładowania folderów","Czy jesteś pewien?","Wprowadź nazwę folderu","Utwórz folder","wprowadź nazwę","Upuść plik graficzny","Upuść plik","lub kliknij tu","Tekst alternatywny","Wczytaj","Przeglądaj","Tło","Treść","Góra","Środek","Dół","Wstaw kolumnę przed","Wstaw kolumnę po","Wstaw wiersz przed","Wstaw wiersz po","Usuń tabelę","Usuń wiersz","Usuń kolumnę","Wyczyść komórkę","Znaki: %d","Słowa: %d","Przekreślenie","Podkreślenie","indeks górny","index dolny","Wytnij zaznaczenie","Wybierz wszystko","Przerwa","Szukaj","Zamień na","Wymienić","Wklej","Wybierz zawartość do wklejenia","HTML","pogrubienie","kursywa","pędzel","link","cofnij","ponów","tabela","grafika","wyczyść","akapit","rozmiar czcionki","wideo","czcionka","O programie","drukuj","podkreślenie","przekreślenie","wcięcie","wycięcie","pełen rozmiar","przytnij","linia pozioma","lista","lista numerowana","wytnij","zaznacz wszystko","Wstaw kod","otwórz link","edytuj link","Atrybut no-follow","Usuń link","Aktualizuj","edytuj","szukaj","URL","Edytuj","Wyrównywanie w poziomie","Filtruj","Sortuj wg zmiany","Sortuj wg nazwy","Sortuj wg rozmiaru","Dodaj folder","wyczyść","zapisz","zapisz jako","Zmień rozmiar","Przytnij","Szerokość","Wysokość","Zachowaj proporcje","Tak","Nie","Usuń","Wybierz","Wybierz: %s","Wyrównywanie w pionie","Podziel","Scal","Dodaj kolumnę","Dodaj wiersz",null,"Usuń","Podziel w pionie","Podziel w poziomie","Obramowanie","Twój kod wygląda jak HTML. Zachować HTML?","Wkleić jako HTML?","Oryginalny tekst","Wstaw jako tekst","Wstaw tylko treść","Możesz edytować tylko swoje grafiki. Czy chcesz pobrać tą grafikę?","Grafika została pomyślnienie dodana na serwer","Paleta","Brak plików.","zmień nazwę","Wprowadź nową nazwę","podgląd","pobierz","Wklej ze schowka","Twoja przeglądarka nie obsługuje schowka","Kopiuj zaznaczenie","kopiuj","Zaokrąglenie krawędzi","Pokaż wszystkie","Zastosuj","Proszę wypełnić to pole","Proszę, wpisz adres sieci web","Domyślnie","Koło","Punkt","Kwadrat","Znaleźć","Znaleźć Poprzednie","Znajdź Dalej","Wklejany tekst pochodzi z dokumentu Microsoft Word/Excel. Chcesz zachować ten format czy wyczyścić go? ","Wykryto tekst w formacie Word","Wyczyść","Wstaw nazwę zajęć","Naciśnij Alt, aby zmienić rozmiar"]
+module.exports["default"] = ["Napisz coś","Zaawansowane","O Jodit","Edytor Jodit","Instrukcja Jodit","zawiera szczegółowe informacje dotyczące użytkowania.","Odwiedź naszą stronę, aby uzyskać więcej informacji na temat licencji:","Zakup pełnej wersji","Copyright © XDSoft.net - Chupurnov Valeriy. Wszystkie prawa zastrzeżone.","Kotwica","Otwórz w nowej zakładce","Otwórz edytor w pełnym rozmiarze","Wyczyść formatowanie","Kolor wypełnienia lub ustaw kolor tekstu","Ponów","Cofnij","Pogrubienie","Kursywa","Wstaw listę wypunktowaną","Wstaw listę numeryczną","Wyśrodkuj","Wyjustuj","Wyrównaj do lewej","Wyrównaj do prawej","Wstaw linię poziomą","Wstaw grafikę","Wstaw plik","Wstaw film Youtube/vimeo","Wstaw link","Rozmiar tekstu","Krój czcionki","Wstaw formatowanie","Normalne","Nagłówek 1","Nagłówek 2","Nagłówek 3","Nagłówek 4","Cytat","Kod","Wstaw","Wstaw tabelę","Zmniejsz wcięcie","Zwiększ wcięcie","Wybierz znak specjalny","Wstaw znak specjalny","Malarz formatów","Zmień tryb","Marginesy","Górny","Prawy","Dolny","Levy","Style CSS","Klasy CSS","Wyrównanie","Prawa","środek","Lewa","brak","Źródło","Tytuł","Tekst alternatywny","Link","Otwórz w nowej zakładce","Grafika","Plik","Zaawansowne","Właściwości grafiki","Anuluj","OK","Twój kod wygląda jak HTML. Zachować HTML?","Wkleić jako HTML?","Oryginalny tekst","Wyczyść","Wstaw jako tekst","Wykryto tekst w formacie Word","Wklejany tekst pochodzi z dokumentu Microsoft Word/Excel. Chcesz zachować ten format czy wyczyścić go? ","Wstaw tylko treść","Przeglądarka plików","Błąd ładowania listy plików","Błąd ładowania folderów","Czy jesteś pewien?","Wprowadź nazwę folderu","Utwórz folder","wprowadź nazwę","Upuść plik graficzny","Upuść plik","lub kliknij tu","Tekst alternatywny","Przeglądaj","Wczytaj","Tło","Treść","Góra","Środek","Dół","Wstaw kolumnę przed","Wstaw kolumnę po","Wstaw wiersz przed","Wstaw wiersz po","Usuń tabelę","Usuń wiersz","Usuń kolumnę","Wyczyść komórkę","Usuń","Przekreślenie","Podkreślenie","Przerwa","Szukaj","Zamień na","Wymienić","Edytuj","Wyrównywanie w pionie","Wyrównywanie w poziomie","Filtruj","Sortuj wg zmiany","Sortuj wg nazwy","Sortuj wg rozmiaru","Dodaj folder","Podziel w pionie","Podziel w poziomie","Podziel","Scal","Dodaj kolumnę","Dodaj wiersz","Obramowanie","Wstaw kod","Aktualizuj","indeks górny","index dolny","Wytnij zaznaczenie","Wklej","Wybierz zawartość do wklejenia","Znaki: %d","Słowa: %d","Wszystko","Wybierz: %s","Wybierz wszystko","HTML","pogrubienie","kursywa","pędzel","link","cofnij","ponów","tabela","grafika","wyczyść","akapit","rozmiar czcionki","wideo","czcionka","O programie","drukuj","podkreślenie","przekreślenie","wcięcie","wycięcie","pełen rozmiar","przytnij","linia pozioma","lista","lista numerowana",null,null,null,null,null,"wytnij","zaznacz wszystko","otwórz link","edytuj link","Atrybut no-follow","Usuń link","szukaj","edytuj","URL","wyczyść","zapisz","zapisz jako","Zmień rozmiar","Przytnij","Szerokość","Wysokość","Zachowaj proporcje","Tak","Nie","Usuń","Wybierz","Możesz edytować tylko swoje grafiki. Czy chcesz pobrać tą grafikę?","Grafika została pomyślnienie dodana na serwer","Paleta","Brak plików.","zmień nazwę","Wprowadź nową nazwę","podgląd","pobierz","Wklej ze schowka","Twoja przeglądarka nie obsługuje schowka","Kopiuj zaznaczenie","kopiuj","Zaokrąglenie krawędzi","Pokaż wszystkie","Zastosuj","Proszę wypełnić to pole","Proszę, wpisz adres sieci web","Domyślnie","Koło","Punkt","Kwadrat","Znaleźć","Znaleźć Poprzednie","Znajdź Dalej","Wstaw nazwę zajęć","Naciśnij Alt, aby zmienić rozmiar"]
 
 /***/ }),
 
 /***/ 31211:
 /***/ (function(module) {
 
-module.exports["default"] = ["Escreva algo...","Sobre o Jodit","Editor Jodit","Guia de usuário Jodit","contém ajuda detalhada para o uso.","Para informação sobre a licença, por favor visite nosso site:","Compre a versão completa","Copyright © XDSoft.net - Chupurnov Valeriy. Todos os direitos reservados.","Link","Abrir em nova aba","Abrir editor em tela cheia","Limpar formatação","Cor de preenchimento ou cor do texto","Refazer","Desfazer","Negrito","Itálico","Inserir lista não ordenada","Inserir lista ordenada","Centralizar","Justificar","Alinhar à Esquerda","Alinhar à Direita","Inserir linha horizontal","Inserir imagem","Inserir arquivo","Inserir vídeo do Youtube/vimeo","Inserir link","Tamanho da letra","Fonte","Inserir bloco","Normal","Cabeçalho 1","Cabeçalho 2","Cabeçalho 3","Cabeçalho 4","Citação","Código","Inserir","Inserir tabela","Diminuir recuo","Aumentar recuo","Selecionar caractere especial","Inserir caractere especial","Copiar formato","Mudar modo","Margens","cima","direta","baixo","esquerda","Estilos CSS","Classes CSS","Alinhamento","Direita","Centro","Esquerda","--Não Estabelecido--","Fonte","Título","Texto Alternativo","Link","Abrir link em nova aba","Imagem","Arquivo","Avançado","Propriedades da imagem","Cancelar","Ok","Procurar arquivo","Erro ao carregar a lista","Erro ao carregar as pastas","Você tem certeza?","Escreva o nome da pasta","Criar pasta","Escreva seu nome","Soltar imagem","Soltar arquivo","ou clique","Texto alternativo","Upload","Explorar","Fundo","Texto","Cima","Meio","Baixo","Inserir coluna antes","Inserir coluna depois","Inserir linha acima","Inserir linha abaixo","Excluir tabela","Excluir linha","Excluir coluna","Limpar célula","Caracteres: %d","Palavras: %d","Tachado","Sublinhar","sobrescrito","subscrito","Cortar seleção","Selecionar tudo","Pausa","Procurar por","Substituir com","Substituir","Colar","Escolher conteúdo para colar","HTML","negrito","itálico","pincel","link","desfazer","refazer","tabela","imagem","apagar","parágrafo","tamanho da letra","vídeo","fonte","Sobre de","Imprimir","sublinhar","tachado","recuar","diminuir recuo","Tamanho completo","diminuir","linha horizontal","lista não ordenada","lista ordenada","Cortar","Selecionar tudo","Incluir código","Abrir link","Editar link","Não siga","Remover link","Atualizar","Editar","Visualizar","URL","Editar","Alinhamento horizontal","filtrar","Ordenar por modificação","Ordenar por nome","Ordenar por tamanho","Adicionar pasta","Resetar","Salvar","Salvar como...","Redimensionar","Recortar","Largura","Altura","Manter a proporção","Sim","Não","Remover","Selecionar","Selecionar: %s","Alinhamento vertical","Dividir","Mesclar","Adicionar coluna","Adicionar linha",null,"Excluir","Dividir vertical","Dividir horizontal","Borda","Seu código é similar ao HTML. Manter como HTML?","Colar como HTML?","Manter","Inserir como Texto","Inserir somente o Texto","Você só pode editar suas próprias imagens. Baixar essa imagem pro servidor?","A imagem foi enviada com sucesso para o servidor!","Palette","Não há arquivos nesse diretório.","Húngara","Digite um novo nome","preview","Baixar","Colar da área de transferência","O seu navegador não oferece suporte a acesso direto para a área de transferência.","Selecção de cópia","cópia","Border radius","Mostrar todos os","Aplicar","Por favor, preencha este campo","Por favor introduza um endereço web","Padrão","Círculo","Ponto","Quadro","Encontrar","Encontrar Anteriores","Localizar Próxima","O conteúdo colado veio de um documento Microsoft Word/Excel. Você deseja manter o formato ou limpa-lo?","Colado do Word Detectado","Limpar","Insira o nome da classe","Pressione Alt para redimensionamento personalizado"]
+module.exports["default"] = ["Escreva algo...","Avançado","Sobre o Jodit","Editor Jodit","Guia de usuário Jodit","contém ajuda detalhada para o uso.","Para informação sobre a licença, por favor visite nosso site:","Compre a versão completa","Copyright © XDSoft.net - Chupurnov Valeriy. Todos os direitos reservados.","Link","Abrir em nova aba","Abrir editor em tela cheia","Limpar formatação","Cor de preenchimento ou cor do texto","Refazer","Desfazer","Negrito","Itálico","Inserir lista não ordenada","Inserir lista ordenada","Centralizar","Justificar","Alinhar à Esquerda","Alinhar à Direita","Inserir linha horizontal","Inserir imagem","Inserir arquivo","Inserir vídeo do Youtube/vimeo","Inserir link","Tamanho da letra","Fonte","Inserir bloco","Normal","Cabeçalho 1","Cabeçalho 2","Cabeçalho 3","Cabeçalho 4","Citação","Código","Inserir","Inserir tabela","Diminuir recuo","Aumentar recuo","Selecionar caractere especial","Inserir caractere especial","Copiar formato","Mudar modo","Margens","cima","direta","baixo","esquerda","Estilos CSS","Classes CSS","Alinhamento","Direita","Centro","Esquerda","--Não Estabelecido--","Fonte","Título","Texto Alternativo","Link","Abrir link em nova aba","Imagem","Arquivo","Avançado","Propriedades da imagem","Cancelar","Ok","Seu código é similar ao HTML. Manter como HTML?","Colar como HTML?","Manter","Limpar","Inserir como Texto","Colado do Word Detectado","O conteúdo colado veio de um documento Microsoft Word/Excel. Você deseja manter o formato ou limpa-lo?","Inserir somente o Texto","Procurar arquivo","Erro ao carregar a lista","Erro ao carregar as pastas","Você tem certeza?","Escreva o nome da pasta","Criar pasta","Escreva seu nome","Soltar imagem","Soltar arquivo","ou clique","Texto alternativo","Explorar","Upload","Fundo","Texto","Cima","Meio","Baixo","Inserir coluna antes","Inserir coluna depois","Inserir linha acima","Inserir linha abaixo","Excluir tabela","Excluir linha","Excluir coluna","Limpar célula","Excluir","Tachado","Sublinhar","Pausa","Procurar por","Substituir com","Substituir","Editar","Alinhamento vertical","Alinhamento horizontal","filtrar","Ordenar por modificação","Ordenar por nome","Ordenar por tamanho","Adicionar pasta","Dividir vertical","Dividir horizontal","Dividir","Mesclar","Adicionar coluna","Adicionar linha","Borda","Incluir código","Atualizar","sobrescrito","subscrito","Cortar seleção","Colar","Escolher conteúdo para colar","Caracteres: %d","Palavras: %d","Tudo","Selecionar: %s","Selecionar tudo","HTML","negrito","itálico","pincel","link","desfazer","refazer","tabela","imagem","apagar","parágrafo","tamanho da letra","vídeo","fonte","Sobre de","Imprimir","sublinhar","tachado","recuar","diminuir recuo","Tamanho completo","diminuir","linha horizontal","lista não ordenada","lista ordenada","Letra Minúscula","Letra Maiúscula","Romano Minúscula","Romano Maiúscula","Grego Minúscula","Cortar","Selecionar tudo","Abrir link","Editar link","Não siga","Remover link","Visualizar","Editar","URL","Resetar","Salvar","Salvar como...","Redimensionar","Recortar","Largura","Altura","Manter a proporção","Sim","Não","Remover","Selecionar","Você só pode editar suas próprias imagens. Baixar essa imagem pro servidor?","A imagem foi enviada com sucesso para o servidor!","Palette","Não há arquivos nesse diretório.","Húngara","Digite um novo nome","preview","Baixar","Colar da área de transferência","O seu navegador não oferece suporte a acesso direto para a área de transferência.","Selecção de cópia","cópia","Border radius","Mostrar todos os","Aplicar","Por favor, preencha este campo","Por favor introduza um endereço web","Padrão","Círculo","Ponto","Quadro","Encontrar","Encontrar Anteriores","Localizar Próxima","Insira o nome da classe","Pressione Alt para redimensionamento personalizado"]
 
 /***/ }),
 
 /***/ 31109:
 /***/ (function(module) {
 
-module.exports["default"] = ["Напишите что-либо","О Jodit","Редактор Jodit","Jodit Руководство пользователя","содержит детальную информацию по использованию","Для получения сведений о лицензии , пожалуйста, перейдите на наш сайт:","Купить полную версию","Авторские права © XDSoft.net - Чупурнов Валерий. Все права защищены.","Анкор","Открывать ссылку в новой вкладке","Открыть редактор в полном размере","Очистить форматирование","Цвет заливки или цвет текста","Повтор","Отмена","Жирный","Наклонный","Вставка маркированного списка","Вставить нумерованный список","Выровнять по центру","Выровнять по ширине","Выровнять по левому краю","Выровнять по правому краю","Вставить горизонтальную линию","Вставить изображение","Вставить файл","Вставьте видео","Вставить ссылку","Размер шрифта","Шрифт","Вставить блочный элемент","Нормальный текст","Заголовок 1","Заголовок 2","Заголовок 3","Заголовок 4","Цитата","Код","Вставить","Вставить таблицу","Уменьшить отступ","Увеличить отступ","Выберите специальный символ","Вставить специальный символ","Формат краски","Источник","Отступы","сверху","справа","снизу","слева","Стили","Классы","Выравнивание","По правому краю","По центру","По левому краю","--не устанавливать--","src","Заголовок","Альтернативный текст (alt)","Ссылка","Открывать ссылку в новом окне",null,"Файл","Расширенные","Свойства изображения","Отмена","Ок","Браузер файлов","Ошибка при загрузке списка изображений","Ошибка при загрузке списка директорий","Вы уверены?","Введите название директории","Создать директорию","введите название","Перетащите сюда изображение","Перетащите сюда файл","или нажмите","Альтернативный текст","Загрузка","Сервер","Фон","Текст"," К верху","По середине","К низу","Вставить столбец до","Вставить столбец после","Вставить ряд выше","Вставить ряд ниже","Удалить таблицу","Удалять ряд","Удалить столбец","Очистить ячейку","Символов: %d","Слов: %d","Перечеркнуть","Подчеркивание","верхний индекс","индекс","Вырезать","Выделить все","Разделитель","Найти","Заменить на","Заменить","Вставить","Выбрать контент для вставки","HTML","жирный","курсив","заливка","ссылка","отменить","повторить","таблица","Изображение","очистить","параграф","размер шрифта","видео","шрифт","о редакторе","печать","подчеркнутый","перечеркнутый","отступ","выступ","во весь экран","обычный размер","линия","Список","Нумерованный список","Вырезать","Выделить все","Код","Открыть ссылку","Редактировать ссылку","Атрибут nofollow","Убрать ссылку","Обновить","Редактировать","Просмотр","URL","Редактировать","Горизонтальное выравнивание","Фильтр","По изменению","По имени","По размеру","Добавить папку","Восстановить","Сохранить","Сохранить как","Изменить размер","Обрезать размер","Ширина","Высота","Сохранять пропорции","Да","Нет","Удалить","Выделить","Выделить: %s","Вертикальное выравнивание","Разделить","Объединить в одну","Добавить столбец","Добавить строку","Лицензия: %s","Удалить","Разделить по вертикали","Разделить по горизонтали","Рамка","Ваш текст, который вы пытаетесь вставить похож на HTML. Вставить его как HTML?","Вставить как HTML?","Сохранить оригинал","Вставить как текст","Вставить только текст","Вы можете редактировать только свои собственные изображения. Загрузить это изображение на ваш сервер?","Изображение успешно загружено на сервер!","палитра","В данном каталоге нет файлов","Переименовать","Введите новое имя","Предпросмотр","Скачать","Вставить из буфера обмена","Ваш браузер не поддерживает прямой доступ к буферу обмена.","Скопировать выделенное","копия","Радиус границы","Показать все","Применить","Пожалуйста, заполните это поле","Пожалуйста, введите веб-адрес","По умолчанию","Круг","Точка","Квадрат","Найти","Найти Предыдущие","Найти Далее","Контент который вы вставляете поступает из документа Microsoft Word / Excel. Вы хотите сохранить формат или очистить его?","Возможно это фрагмент Word или Excel","Почистить","Вставить название класса","Нажмите Alt для изменения пользовательского размера"]
+module.exports["default"] = ["Напишите что-либо","Расширенные","О Jodit","Редактор Jodit","Jodit Руководство пользователя","содержит детальную информацию по использованию","Для получения сведений о лицензии , пожалуйста, перейдите на наш сайт:","Купить полную версию","Авторские права © XDSoft.net - Чупурнов Валерий. Все права защищены.","Анкор","Открывать ссылку в новой вкладке","Открыть редактор в полном размере","Очистить форматирование","Цвет заливки или цвет текста","Повтор","Отмена","Жирный","Наклонный","Вставка маркированного списка","Вставить нумерованный список","Выровнять по центру","Выровнять по ширине","Выровнять по левому краю","Выровнять по правому краю","Вставить горизонтальную линию","Вставить изображение","Вставить файл","Вставьте видео","Вставить ссылку","Размер шрифта","Шрифт","Вставить блочный элемент","Нормальный текст","Заголовок 1","Заголовок 2","Заголовок 3","Заголовок 4","Цитата","Код","Вставить","Вставить таблицу","Уменьшить отступ","Увеличить отступ","Выберите специальный символ","Вставить специальный символ","Формат краски","Источник","Отступы","сверху","справа","снизу","слева","Стили","Классы","Выравнивание","По правому краю","По центру","По левому краю","--не устанавливать--","src","Заголовок","Альтернативный текст (alt)","Ссылка","Открывать ссылку в новом окне",null,"Файл",null,"Свойства изображения","Отмена","Ок","Ваш текст, который вы пытаетесь вставить похож на HTML. Вставить его как HTML?","Вставить как HTML?","Сохранить оригинал","Почистить","Вставить как текст","Возможно это фрагмент Word или Excel","Контент который вы вставляете поступает из документа Microsoft Word / Excel. Вы хотите сохранить формат или очистить его?","Вставить только текст","Браузер файлов","Ошибка при загрузке списка изображений","Ошибка при загрузке списка директорий","Вы уверены?","Введите название директории","Создать директорию","введите название","Перетащите сюда изображение","Перетащите сюда файл","или нажмите","Альтернативный текст","Сервер","Загрузка","Фон","Текст"," К верху","По середине","К низу","Вставить столбец до","Вставить столбец после","Вставить ряд выше","Вставить ряд ниже","Удалить таблицу","Удалять ряд","Удалить столбец","Очистить ячейку","Удалить","Перечеркнуть","Подчеркивание","Разделитель","Найти","Заменить на","Заменить","Редактировать","Вертикальное выравнивание","Горизонтальное выравнивание","Фильтр","По изменению","По имени","По размеру","Добавить папку","Разделить по вертикали","Разделить по горизонтали","Разделить","Объединить в одну","Добавить столбец","Добавить строку","Рамка","Код","Обновить","верхний индекс","индекс","Вырезать","Вставить","Выбрать контент для вставки","Символов: %d","Слов: %d","Выделить все","Выделить: %s","Выделить все","HTML","жирный","курсив","заливка","ссылка","отменить","повторить","таблица","Изображение","очистить","параграф","размер шрифта","видео","шрифт","о редакторе","печать","подчеркнутый","перечеркнутый","отступ","выступ","во весь экран","обычный размер","линия","Список","Нумерованный список",null,null,null,null,null,"Вырезать","Выделить все","Открыть ссылку","Редактировать ссылку","Атрибут nofollow","Убрать ссылку","Просмотр","Редактировать","URL","Восстановить","Сохранить","Сохранить как","Изменить размер","Обрезать размер","Ширина","Высота","Сохранять пропорции","Да","Нет","Удалить","Выделить","Вы можете редактировать только свои собственные изображения. Загрузить это изображение на ваш сервер?","Изображение успешно загружено на сервер!","палитра","В данном каталоге нет файлов","Переименовать","Введите новое имя","Предпросмотр","Скачать","Вставить из буфера обмена","Ваш браузер не поддерживает прямой доступ к буферу обмена.","Скопировать выделенное","копия","Радиус границы","Показать все","Применить","Пожалуйста, заполните это поле","Пожалуйста, введите веб-адрес","По умолчанию","Круг","Точка","Квадрат","Найти","Найти Предыдущие","Найти Далее","Вставить название класса","Нажмите Alt для изменения пользовательского размера"]
 
 /***/ }),
 
 /***/ 79375:
 /***/ (function(module) {
 
-module.exports["default"] = ["Bir şeyler yaz","Jodit Hakkında","Jodit Editor","Jodit Kullanım Kılavuzu","kullanım için detaylı bilgiler içerir","Lisans hakkında bilgi için lütfen web sitemize gidin:","Tam versiyonunu satın al","Copyright © XDSoft.net - Chupurnov Valeriy. Tüm hakları saklıdır.","Bağlantı","Yeni sekmede aç","Editörü tam ekranda aç","Stili temizle","Renk doldur veya yazı rengi seç","Yinele","Geri Al","Kalın","İtalik","Sırasız Liste Ekle","Sıralı Liste Ekle","Ortala","Kenarlara Yasla","Sola Yasla","Sağa Yasla","Yatay Çizgi Ekle","Resim Ekle","Dosya Ekle","Youtube/Vimeo Videosu Ekle","Bağlantı Ekle","Font Boyutu","Font Ailesi","Blok Ekle","Normal","Başlık 1","Başlık 2","Başlık 3","Başlık 4","Alıntı","Kod","Ekle","Tablo Ekle","Girintiyi Azalt","Girintiyi Arttır","Özel Karakter Seç","Özel Karakter Ekle","Resim Biçimi","Mod Değiştir","Boşluklar","Üst","Sağ","Alt","Sol","CSS Stilleri","CSS Sınıfları","Hizalama","Sağ","Ortalı","Sol","Belirsiz","Kaynak","Başlık","Alternatif Yazı","Link","Bağlantıyı yeni sekmede aç","Resim","Dosya","Gelişmiş","Resim özellikleri","İptal","Tamam","Dosya Listeleyici","Liste yüklenirken hata oluştu","Klasörler yüklenirken hata oluştur","Emin misiniz?","Dizin yolu giriniz","Dizin oluştur","İsim yaz","Resim bırak","Dosya bırak","veya tıkla","Alternatif yazı","Yükle","Gözat","Arka plan","Yazı","Üst","Orta","Aşağı","Öncesine kolon ekle","Sonrasına kolon ekle","Üstüne satır ekle","Altına satır ekle","Tabloyu sil","Satırı sil","Kolonu sil","Hücreyi temizle","Harfler: %d","Kelimeler: %d","Üstü çizili","Alt çizgi","Üst yazı","Alt yazı","Seçilimi kes","Tümünü seç","Satır sonu","Ara","Şununla değiştir","Değiştir","Yapıştır","Yapıştırılacak içerik seç","Kaynak","Kalın","italik","Fırça","Bağlantı","Geri al","Yinele","Tablo","Resim","Silgi","Paragraf","Font boyutu","Video","Font","Hakkında","Yazdır","Alt çizgi","Üstü çizili","Girinti","Çıkıntı","Tam ekran","Küçült","Ayraç","Sırasız liste","Sıralı liste","Kes","Tümünü seç","Kod ekle","Bağlantıyı aç","Bağlantıyı düzenle","Nofollow özelliği","Bağlantıyı kaldır","Güncelle","Düzenlemek için","Yorumu","URL","Düzenle","Yatay hizala","Filtre","Değişime göre sırala","İsme göre sırala","Boyuta göre sırala","Klasör ekle","Sıfırla","Kaydet","Farklı kaydet","Boyutlandır","Kırp","Genişlik","Yükseklik","En boy oranını koru","Evet","Hayır","Sil","Seç","Seç: %s","Dikey hizala","Ayır","Birleştir","Kolon ekle","Satır ekle",null,"Sil","Dikey ayır","Yatay ayır","Kenarlık","Kodunuz HTML koduna benziyor. HTML olarak devam etmek ister misiniz?","HTML olarak yapıştır","Sakla","Yazı olarak ekle","Sadece yazıyı ekle","Sadece kendi resimlerinizi düzenleyebilirsiniz. Bu görseli kendi hostunuza indirmek ister misiniz?","Görsel başarıyla hostunuza yüklendi","Palet","Bu dizinde dosya yok","Yeniden isimlendir","Yeni isim girin","Ön izleme","İndir","Panodan yapıştır ","Tarayıcınız panoya doğrudan erişimi desteklemiyor.","Seçimi kopyala","Kopyala","Sınır yarıçapı","Tümünü Göster","Uygula","Lütfen bu alanı doldurun","Lütfen bir web adresi girin","Varsayılan","Daire","Nokta","Kare","Bul","Öncekini Bul","Sonrakini Bul","Der Inhalt, den Sie einfügen, stammt aus einem Microsoft Word / Excel-Dokument. Möchten Sie das Format erhalten oder löschen?","Word biçiminde yapıştırma algılandı","Temizle","Sınıf adı girin","Özel yeniden boyutlandırma için Alt tuşuna basın"]
+module.exports["default"] = ["Bir şeyler yaz","Gelişmiş","Jodit Hakkında","Jodit Editor","Jodit Kullanım Kılavuzu","kullanım için detaylı bilgiler içerir","Lisans hakkında bilgi için lütfen web sitemize gidin:","Tam versiyonunu satın al","Copyright © XDSoft.net - Chupurnov Valeriy. Tüm hakları saklıdır.","Bağlantı","Yeni sekmede aç","Editörü tam ekranda aç","Stili temizle","Renk doldur veya yazı rengi seç","Yinele","Geri Al","Kalın","İtalik","Sırasız Liste Ekle","Sıralı Liste Ekle","Ortala","Kenarlara Yasla","Sola Yasla","Sağa Yasla","Yatay Çizgi Ekle","Resim Ekle","Dosya Ekle","Youtube/Vimeo Videosu Ekle","Bağlantı Ekle","Font Boyutu","Font Ailesi","Blok Ekle","Normal","Başlık 1","Başlık 2","Başlık 3","Başlık 4","Alıntı","Kod","Ekle","Tablo Ekle","Girintiyi Azalt","Girintiyi Arttır","Özel Karakter Seç","Özel Karakter Ekle","Resim Biçimi","Mod Değiştir","Boşluklar","Üst","Sağ","Alt","Sol","CSS Stilleri","CSS Sınıfları","Hizalama","Sağ","Ortalı","Sol","Belirsiz","Kaynak","Başlık","Alternatif Yazı","Link","Bağlantıyı yeni sekmede aç","Resim","Dosya","Gelişmiş","Resim özellikleri","İptal","Tamam","Kodunuz HTML koduna benziyor. HTML olarak devam etmek ister misiniz?","HTML olarak yapıştır","Sakla","Temizle","Yazı olarak ekle","Word biçiminde yapıştırma algılandı","Der Inhalt, den Sie einfügen, stammt aus einem Microsoft Word / Excel-Dokument. Möchten Sie das Format erhalten oder löschen?","Sadece yazıyı ekle","Dosya Listeleyici","Liste yüklenirken hata oluştu","Klasörler yüklenirken hata oluştur","Emin misiniz?","Dizin yolu giriniz","Dizin oluştur","İsim yaz","Resim bırak","Dosya bırak","veya tıkla","Alternatif yazı","Gözat","Yükle","Arka plan","Yazı","Üst","Orta","Aşağı","Öncesine kolon ekle","Sonrasına kolon ekle","Üstüne satır ekle","Altına satır ekle","Tabloyu sil","Satırı sil","Kolonu sil","Hücreyi temizle","Sil","Üstü çizili","Alt çizgi","Satır sonu","Ara","Şununla değiştir","Değiştir","Düzenle","Dikey hizala","Yatay hizala","Filtre","Değişime göre sırala","İsme göre sırala","Boyuta göre sırala","Klasör ekle","Dikey ayır","Yatay ayır","Ayır","Birleştir","Kolon ekle","Satır ekle","Kenarlık","Kod ekle","Güncelle","Üst yazı","Alt yazı","Seçilimi kes","Yapıştır","Yapıştırılacak içerik seç","Harfler: %d","Kelimeler: %d","Tümü","Seç: %s","Tümünü seç","Kaynak","Kalın","italik","Fırça","Bağlantı","Geri al","Yinele","Tablo","Resim","Silgi","Paragraf","Font boyutu","Video","Font","Hakkında","Yazdır","Alt çizgi","Üstü çizili","Girinti","Çıkıntı","Tam ekran","Küçült","Ayraç","Sırasız liste","Sıralı liste",null,null,null,null,null,"Kes","Tümünü seç","Bağlantıyı aç","Bağlantıyı düzenle","Nofollow özelliği","Bağlantıyı kaldır","Yorumu","Düzenlemek için","URL","Sıfırla","Kaydet","Farklı kaydet","Boyutlandır","Kırp","Genişlik","Yükseklik","En boy oranını koru","Evet","Hayır","Sil","Seç","Sadece kendi resimlerinizi düzenleyebilirsiniz. Bu görseli kendi hostunuza indirmek ister misiniz?","Görsel başarıyla hostunuza yüklendi","Palet","Bu dizinde dosya yok","Yeniden isimlendir","Yeni isim girin","Ön izleme","İndir","Panodan yapıştır ","Tarayıcınız panoya doğrudan erişimi desteklemiyor.","Seçimi kopyala","Kopyala","Sınır yarıçapı","Tümünü Göster","Uygula","Lütfen bu alanı doldurun","Lütfen bir web adresi girin","Varsayılan","Daire","Nokta","Kare","Bul","Öncekini Bul","Sonrakini Bul","Sınıf adı girin","Özel yeniden boyutlandırma için Alt tuşuna basın"]
 
 /***/ }),
 
 /***/ 21042:
 /***/ (function(module) {
 
-module.exports["default"] = ["输入一些内容","关于Jodit","Jodit Editor","开发者指南","使用帮助","有关许可证的信息，请访问我们的网站：","购买完整版本","Copyright © XDSoft.net - Chupurnov Valeriy. 版权所有","Anchor","在新窗口打开","全屏编辑","清除样式","颜色","重做","撤销","粗体","斜体","符号列表","编号","居中","对齐文本","左对齐","右对齐","分割线","图片","文件","视频","链接","字号","字体","格式块","默认","标题1","标题2","标题3","标题4","引用","代码","插入","表格","减少缩进","增加缩进","选择特殊符号","特殊符号","格式复制","改变模式","外边距（Margins）","top","right","bottom","left","样式","Classes","对齐方式","居右","居中","居左","无","Src","Title","Alternative","Link","在新窗口打开链接","图片","file","高级","图片属性","取消","确定","文件管理","加载list错误","加载folders错误","你确定吗？","输入路径","创建路径","type name","拖动图片到此","拖动文件到此","或点击","Alternative text","上传","浏览","背景色","文字","顶部","中间","底部","在之前插入列","在之后插入列","在之前插入行","在之后插入行","删除表格","删除行","删除列","清除内容","字符数: %d","单词数: %d","删除线","下划线","上标","下标","剪切","全选","Break","查找","替换为","替换","粘贴","选择内容并粘贴","源码","粗体","斜体","颜色","链接","撤销","重做","表格","图片","橡皮擦","段落","字号","视频","字体","关于","打印","下划线","上出现","增加缩进","减少缩进","全屏","收缩","分割线","无序列表","顺序列表","剪切","全选","嵌入代码","打开链接","编辑链接","No follow","取消链接","更新","铅笔","预览","URL","编辑","水平对齐","筛选","修改时间排序","名称排序","大小排序","新建文件夹","重置","保存","保存为","调整大小","剪切","宽","高","保持长宽比","是","不","移除","选择","选择: %s","垂直对齐","拆分","合并","添加列","添加行",null,"删除","垂直拆分","水平拆分","边框","你粘贴的文本是一段html代码，是否保留源格式","html粘贴","保留源格式","把html代码视为普通文本","只保留文本","你只能编辑你自己的图片。Download this image on the host?","图片上传成功","调色板","此目录中沒有文件。","重命名","输入新名称","预览","下载","粘贴从剪贴板","你浏览器不支持直接访问的剪贴板。","复制选中内容","复制","边界半径","显示所有","应用","请填写这个字段","请输入一个网址","默认","圆圈","点","方形","搜索","查找上一个","查找下一个","正在粘贴 Word/Excel 的文本，是否保留源格式？","文本粘贴","匹配目标格式","插入班级名称","按Alt自定义调整大小"]
+module.exports["default"] = ["输入一些内容","高级","关于Jodit","Jodit Editor","开发者指南","使用帮助","有关许可证的信息，请访问我们的网站：","购买完整版本","Copyright © XDSoft.net - Chupurnov Valeriy. 版权所有","Anchor","在新窗口打开","全屏编辑","清除样式","颜色","重做","撤销","粗体","斜体","符号列表","编号","居中","对齐文本","左对齐","右对齐","分割线","图片","文件","视频","链接","字号","字体","格式块","默认","标题1","标题2","标题3","标题4","引用","代码","插入","表格","减少缩进","增加缩进","选择特殊符号","特殊符号","格式复制","改变模式","外边距（Margins）","top","right","bottom","left","样式","Classes","对齐方式","居右","居中","居左","无","Src","Title","Alternative","Link","在新窗口打开链接","图片","file","高级","图片属性","取消","确定","你粘贴的文本是一段html代码，是否保留源格式","html粘贴","保留源格式","匹配目标格式","把html代码视为普通文本","文本粘贴","正在粘贴 Word/Excel 的文本，是否保留源格式？","只保留文本","文件管理","加载list错误","加载folders错误","你确定吗？","输入路径","创建路径","type name","拖动图片到此","拖动文件到此","或点击","Alternative text","浏览","上传","背景色","文字","顶部","中间","底部","在之前插入列","在之后插入列","在之前插入行","在之后插入行","删除表格","删除行","删除列","清除内容","删除","删除线","下划线","Break","查找","替换为","替换","编辑","垂直对齐","水平对齐","筛选","修改时间排序","名称排序","大小排序","新建文件夹","垂直拆分","水平拆分","拆分","合并","添加列","添加行","边框","嵌入代码","更新","上标","下标","剪切","粘贴","选择内容并粘贴","字符数: %d","单词数: %d","全部","选择: %s","全选","源码","粗体","斜体","颜色","链接","撤销","重做","表格","图片","橡皮擦","段落","字号","视频","字体","关于","打印","下划线","上出现","增加缩进","减少缩进","全屏","收缩","分割线","无序列表","顺序列表",null,null,null,null,null,"剪切","全选","打开链接","编辑链接","No follow","取消链接","预览","铅笔","URL","重置","保存","保存为","调整大小","剪切","宽","高","保持长宽比","是","不","移除","选择","你只能编辑你自己的图片。Download this image on the host?","图片上传成功","调色板","此目录中沒有文件。","重命名","输入新名称","预览","下载","粘贴从剪贴板","你浏览器不支持直接访问的剪贴板。","复制选中内容","复制","边界半径","显示所有","应用","请填写这个字段","请输入一个网址","默认","圆圈","点","方形","搜索","查找上一个","查找下一个","插入班级名称","按Alt自定义调整大小"]
 
 /***/ }),
 
 /***/ 73895:
 /***/ (function(module) {
 
-module.exports["default"] = ["輸入一些內容","關於Jodit","Jodit Editor","開發者指南","使用幫助","有關許可證的信息，請訪問我們的網站：","購買完整版本","Copyright © XDSoft.net - Chupurnov Valeriy. All rights reserved.","Anchor","在新窗口打開","全屏編輯","清除樣式","顏色","重做","撤銷","粗體","斜體","符號列表","編號","居中","對齊文本","左對齊","右對齊","分割線","圖片","文件","youtube/vimeo 影片","鏈接","字號","字體","格式塊","文本","標題1","標題2","標題3","標題4","引用","代碼","插入","表格","減少縮進","增加縮進","選擇特殊符號","特殊符號","格式複製","改變模式","外邊距（Margins）","top","right","bottom","left","樣式","Classes","對齊方式","居右","居中","居左","無","Src","Title","替代","Link","在新窗口打開鏈接","圖片","file","高級","圖片屬性","取消","確定","文件管理","加載list錯誤","加載folders錯誤","你確定嗎？","輸入路徑","創建路徑","type name","拖動圖片到此","拖動文件到此","或點擊","替代文字","上傳","瀏覽","背景色","文字","頂部","中間","底部","在之前插入列","在之後插入列","在之前插入行","在之後插入行","刪除表格","刪除行","刪除列","清除內容","字符數: %d","單詞數: %d","刪除線","下劃線","上標","下標","剪切","全選","Pause","查找","替換為","แทนที่","黏貼","選擇內容並黏貼","源碼","粗體","斜體","顏色","鏈接","撤銷","重做","表格","圖片","橡皮擦","段落","字號","影片","字體","關於","打印","下劃線","上出現","增加縮進","減少縮進","全屏","收縮","分割線","無序列表","順序列表","剪切","全選","嵌入代碼","打開鏈接","編輯鏈接","No follow","取消連結","更新","鉛筆","回顧","URL",null,"水平對齊","篩選","修改時間排序","名稱排序","大小排序","新建文件夾","重置","保存","保存為","調整大小","Crop","寬","高","保存長寬比","是","不","移除","選擇","選擇: %s","垂直對齊","拆分","合併","添加列","添加行",null,"刪除","垂直拆分","水平拆分","邊框","你黏貼的文本是一段html代碼，是否保留源格式","html黏貼","保留源格式","把html代碼視為普通文本","只保留文本","你只能編輯你自己的圖片。是否下載此圖片到本地?","圖片上傳成功","調色板","此目錄中沒有文件。","重命名","輸入新名稱","預覽","下載","從剪貼板貼上","瀏覽器無法存取剪贴板。","複製已選取項目","複製","邊框圓角","顯示所有","應用","ได้โปรดกรอกช่องข้อมูลนี้","โปรดเติมที่อยู่บนเว็บ","ค่าปริยาย","วงกลม","จุด","Quadrate","ค้นหา","ค้นหาก่อนหน้านี้","ค้นหาถัดไป","正在黏貼 Word/Excel 的文本，是否保留源格式？","文本黏貼","匹配目標格式","ใส่ชื่อคลาส","กดอัลท์สำหรับการปรับขนาดที่กำหนดเอง"]
+module.exports["default"] = ["輸入一些內容","高級","關於Jodit","Jodit Editor","開發者指南","使用幫助","有關許可證的信息，請訪問我們的網站：","購買完整版本","Copyright © XDSoft.net - Chupurnov Valeriy. All rights reserved.","Anchor","在新窗口打開","全屏編輯","清除樣式","顏色","重做","撤銷","粗體","斜體","符號列表","編號","居中","對齊文本","左對齊","右對齊","分割線","圖片","文件","youtube/vimeo 影片","鏈接","字號","字體","格式塊","文本","標題1","標題2","標題3","標題4","引用","代碼","插入","表格","減少縮進","增加縮進","選擇特殊符號","特殊符號","格式複製","改變模式","外邊距（Margins）","top","right","bottom","left","樣式","Classes","對齊方式","居右","居中","居左","無","Src","Title","替代","Link","在新窗口打開鏈接","圖片","file","高級","圖片屬性","取消","確定","你黏貼的文本是一段html代碼，是否保留源格式","html黏貼","保留源格式","匹配目標格式","把html代碼視為普通文本","文本黏貼","正在黏貼 Word/Excel 的文本，是否保留源格式？","只保留文本","文件管理","加載list錯誤","加載folders錯誤","你確定嗎？","輸入路徑","創建路徑","type name","拖動圖片到此","拖動文件到此","或點擊","替代文字","瀏覽","上傳","背景色","文字","頂部","中間","底部","在之前插入列","在之後插入列","在之前插入行","在之後插入行","刪除表格","刪除行","刪除列","清除內容","刪除","刪除線","下劃線","Pause","查找","替換為","แทนที่",null,"垂直對齊","水平對齊","篩選","修改時間排序","名稱排序","大小排序","新建文件夾","垂直拆分","水平拆分","拆分","合併","添加列","添加行","邊框","嵌入代碼","更新","上標","下標","剪切","黏貼","選擇內容並黏貼","字符數: %d","單詞數: %d","全部","選擇: %s","全選","源碼","粗體","斜體","顏色","鏈接","撤銷","重做","表格","圖片","橡皮擦","段落","字號","影片","字體","關於","打印","下劃線","上出現","增加縮進","減少縮進","全屏","收縮","分割線","無序列表","順序列表",null,null,null,null,null,"剪切","全選","打開鏈接","編輯鏈接","No follow","取消連結","回顧","鉛筆","URL","重置","保存","保存為","調整大小","Crop","寬","高","保存長寬比","是","不","移除","選擇","你只能編輯你自己的圖片。是否下載此圖片到本地?","圖片上傳成功","調色板","此目錄中沒有文件。","重命名","輸入新名稱","預覽","下載","從剪貼板貼上","瀏覽器無法存取剪贴板。","複製已選取項目","複製","邊框圓角","顯示所有","應用","ได้โปรดกรอกช่องข้อมูลนี้","โปรดเติมที่อยู่บนเว็บ","ค่าปริยาย","วงกลม","จุด","Quadrate","ค้นหา","ค้นหาก่อนหน้านี้","ค้นหาถัดไป","ใส่ชื่อคลาส","กดอัลท์สำหรับการปรับขนาดที่กำหนดเอง"]
 
 /***/ }),
 
@@ -792,7 +792,7 @@ module.exports = "<svg xmlns='http://www.w3.org/2000/svg' viewBox=\"0 0 1792 179
 /***/ 79096:
 /***/ (function(module) {
 
-module.exports = "<svg width=\"1792\" height=\"1792\" viewBox=\"0 0 1792 1792\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"> <path d=\"M1054.37 658.392L737.632 975.184C732.283 980.35 728.017 986.529 725.082 993.361C722.147 1000.19 720.603 1007.54 720.538 1014.98C720.473 1022.41 721.89 1029.79 724.706 1036.67C727.522 1043.55 731.68 1049.8 736.938 1055.06C742.196 1060.32 748.448 1064.48 755.331 1067.29C762.213 1070.11 769.587 1071.53 777.022 1071.46C784.458 1071.4 791.806 1069.85 798.639 1066.92C805.471 1063.98 811.65 1059.72 816.816 1054.37L1133.61 737.632C1165.12 706.123 1182.82 663.388 1182.82 618.828C1182.82 574.268 1165.12 531.533 1133.61 500.024C1102.1 468.515 1059.36 450.814 1014.8 450.814C970.244 450.814 927.509 468.515 896 500.024L579.208 816.816C552.668 842.695 531.531 873.587 517.023 907.698C502.515 941.81 494.925 978.463 494.693 1015.53C494.46 1052.6 501.591 1089.34 515.67 1123.63C529.75 1157.93 550.498 1189.08 576.711 1215.29C602.925 1241.5 634.081 1262.24 668.374 1276.32C702.667 1290.39 739.413 1297.52 776.481 1297.28C813.549 1297.04 850.201 1289.45 884.311 1274.93C918.42 1260.42 949.309 1239.28 975.184 1212.74L1291.98 896L1371.16 975.184L1054.37 1291.98C980.85 1365.49 881.138 1406.8 777.168 1406.8C673.198 1406.8 573.486 1365.49 499.968 1291.98C426.45 1218.46 385.148 1118.75 385.148 1014.78C385.148 910.806 426.45 811.094 499.968 737.576L816.816 420.84C842.775 394.653 873.651 373.851 907.671 359.628C941.691 345.405 978.185 338.042 1015.06 337.962C1051.93 337.881 1088.46 345.084 1122.54 359.158C1156.62 373.231 1187.59 393.898 1213.66 419.971C1239.73 446.044 1260.4 477.011 1274.47 511.093C1288.55 545.175 1295.75 581.701 1295.67 618.574C1295.59 655.447 1288.23 691.941 1274 725.961C1259.78 759.981 1238.98 790.857 1212.79 816.816L896 1133.66C864.484 1165.17 821.742 1182.87 777.176 1182.87C732.611 1182.86 689.873 1165.15 658.364 1133.64C626.855 1102.12 609.157 1059.38 609.162 1014.81C609.167 970.247 626.876 927.509 658.392 896L975.184 579.208L1054.37 658.392Z\"/> </svg>"
+module.exports = "<svg width=\"1792\" height=\"1792\" viewBox=\"0 0 1792 1792\" xmlns=\"http://www.w3.org/2000/svg\"> <path d=\"M1054.37 658.392L737.632 975.184C732.283 980.35 728.017 986.529 725.082 993.361C722.147 1000.19 720.603 1007.54 720.538 1014.98C720.473 1022.41 721.89 1029.79 724.706 1036.67C727.522 1043.55 731.68 1049.8 736.938 1055.06C742.196 1060.32 748.448 1064.48 755.331 1067.29C762.213 1070.11 769.587 1071.53 777.022 1071.46C784.458 1071.4 791.806 1069.85 798.639 1066.92C805.471 1063.98 811.65 1059.72 816.816 1054.37L1133.61 737.632C1165.12 706.123 1182.82 663.388 1182.82 618.828C1182.82 574.268 1165.12 531.533 1133.61 500.024C1102.1 468.515 1059.36 450.814 1014.8 450.814C970.244 450.814 927.509 468.515 896 500.024L579.208 816.816C552.668 842.695 531.531 873.587 517.023 907.698C502.515 941.81 494.925 978.463 494.693 1015.53C494.46 1052.6 501.591 1089.34 515.67 1123.63C529.75 1157.93 550.498 1189.08 576.711 1215.29C602.925 1241.5 634.081 1262.24 668.374 1276.32C702.667 1290.39 739.413 1297.52 776.481 1297.28C813.549 1297.04 850.201 1289.45 884.311 1274.93C918.42 1260.42 949.309 1239.28 975.184 1212.74L1291.98 896L1371.16 975.184L1054.37 1291.98C980.85 1365.49 881.138 1406.8 777.168 1406.8C673.198 1406.8 573.486 1365.49 499.968 1291.98C426.45 1218.46 385.148 1118.75 385.148 1014.78C385.148 910.806 426.45 811.094 499.968 737.576L816.816 420.84C842.775 394.653 873.651 373.851 907.671 359.628C941.691 345.405 978.185 338.042 1015.06 337.962C1051.93 337.881 1088.46 345.084 1122.54 359.158C1156.62 373.231 1187.59 393.898 1213.66 419.971C1239.73 446.044 1260.4 477.011 1274.47 511.093C1288.55 545.175 1295.75 581.701 1295.67 618.574C1295.59 655.447 1288.23 691.941 1274 725.961C1259.78 759.981 1238.98 790.857 1212.79 816.816L896 1133.66C864.484 1165.17 821.742 1182.87 777.176 1182.87C732.611 1182.86 689.873 1165.15 658.364 1133.64C626.855 1102.12 609.157 1059.38 609.162 1014.81C609.167 970.247 626.876 927.509 658.392 896L975.184 579.208L1054.37 658.392Z\"/> </svg>"
 
 /***/ }),
 
@@ -1542,16 +1542,6 @@ __webpack_require__.r(__webpack_exports__);
 /***/ }),
 
 /***/ 92112:
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-// extracted by mini-css-extract-plugin
-
-
-/***/ }),
-
-/***/ 9947:
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -11285,7 +11275,8 @@ var buttons = [
     'ul',
     'ol',
     '|',
-    'table'
+    'table',
+    'preview'
 ];
 var Config = (function () {
     function Config() {
@@ -29142,7 +29133,6 @@ exports.makeButton = makeButton;
 "use strict";
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
-var tslib_1 = __webpack_require__(20255);
 var config_1 = __webpack_require__(27537);
 var is_array_1 = __webpack_require__(2555);
 var is_jodit_object_1 = __webpack_require__(47442);
@@ -29161,7 +29151,7 @@ config_1.Config.prototype.uploader = {
         var fileExtension = matchExtension && matchExtension[1]
             ? matchExtension[1].toLowerCase()
             : '';
-        var path = null;
+        var path;
         switch (fileType) {
             case 'image':
                 if (fileExtension === 'gif')
@@ -29176,8 +29166,8 @@ config_1.Config.prototype.uploader = {
                 path = 'file';
                 break;
         }
-        var result = new URL(path, 'https://server.superclub.idist.ai/api/v1/media/').href;
-        return result;
+        var url = new URL(path, 'https://server.superclub.idist.ai/api/v1/media/').href;
+        return url;
     },
     insertImageAsBase64URI: false,
     imagesExtensions: ['jpg', 'png', 'jpeg', 'gif'],
@@ -29191,8 +29181,8 @@ config_1.Config.prototype.uploader = {
     },
     data: null,
     authToken: null,
-    filesVariableName: function (fileType, fileExtension) {
-        return 'files[0]';
+    filesVariableName: function () {
+        return 'file';
     },
     withCredentials: false,
     pathVariableName: 'path',
@@ -29205,8 +29195,8 @@ config_1.Config.prototype.uploader = {
         return resp.success;
     },
     getMessage: function (resp) {
-        return resp.data.messages !== undefined && (0, is_array_1.isArray)(resp.data.messages)
-            ? resp.data.messages.join(' ')
+        return resp.data.message !== undefined && (0, is_array_1.isArray)(resp.data.message)
+            ? resp.data.message.join(' ')
             : '';
     },
     processFileName: function (key, file, name) {
@@ -29218,33 +29208,38 @@ config_1.Config.prototype.uploader = {
     error: function (e) {
         this.j.e.fire('errorMessage', e.message, 'error', 4000);
     },
-    getDisplayName: function (baseurl, filename) {
-        return baseurl + filename;
+    getDisplayName: function (filename) {
+        return filename;
     },
     defaultHandlerSuccess: function (resp) {
-        var _this = this;
         var j = this.j || this;
         if (!(0, is_jodit_object_1.isJoditObject)(j)) {
             return;
         }
-        if (resp.files && resp.files.length) {
-            resp.files.forEach(function (filename, index) {
-                var _a = tslib_1.__read(resp.isImages && resp.isImages[index]
-                    ? ['img', 'src']
-                    : ['a', 'href'], 2), tagName = _a[0], attr = _a[1];
-                var elm = j.createInside.element(tagName);
-                elm.setAttribute(attr, resp.baseurl + filename);
-                if (tagName === 'a') {
-                    elm.textContent = j.o.uploader.getDisplayName.call(_this, resp.baseurl, filename);
-                }
-                if (tagName === 'img') {
-                    j.s.insertImage(elm, null, j.o.imageDefaultWidth);
-                }
-                else {
-                    j.s.insertNode(elm);
-                }
-            });
+        if (!resp.file)
+            return;
+        var element;
+        switch (resp.type) {
+            case 'image':
+                element = j.c.fromHTML("<p><img style=\"width: ".concat(j.o.imageDefaultWidth || 500, "px;\" src=\"").concat(resp.file, "\" alt=\"").concat(resp.file, "\"/></p><p></p>"));
+                break;
+            case 'gif':
+                element = j.c.fromHTML("<p><jodit-gif style=\"width: ".concat(j.o.imageDefaultWidth || 500, "px;\" src=\"").concat(resp.file, "\" alt=\"").concat(resp.file, "\"/></p><p></p>"));
+                break;
+            case 'video':
+                element = j.c.fromHTML("<p><video controls style=\"width: ".concat(j.o.imageDefaultWidth || 500, "px;\" src=\"").concat(resp.file, "\" alt=\"").concat(resp.file, "\"/></p><p></p>"));
+                break;
+            case 'file':
+                element = j.c.fromHTML("<jodit-file href=\"".concat(resp.file, "\" alt=\"").concat(resp.file, "\">").concat(resp.file, "</jodit-file><p></p>"));
+                break;
+            case 'audio':
+                element = j.c.fromHTML("<p><audio controls src=\"".concat(resp.file, "\" alt=\"").concat(resp.file, "\"></audio></p><p></p>"));
+                break;
+            default:
+                element = j.c.fromHTML("<p><a href=\"".concat(resp.file, "\">").concat(resp.file, "</a></p><p></p>"));
+                break;
         }
+        j.s.insertHTML(element);
     },
     defaultHandlerError: function (e) {
         this.j.e.fire('errorMessage', e.message);
@@ -29403,8 +29398,6 @@ function sendFiles(uploader, files, handlerSuccess, handlerError, process) {
         return Promise.all(promises);
     var _loop_1 = function (i) {
         var form = new FormData();
-        form.append(o.pathVariableName, uploader.path);
-        form.append('source', uploader.source);
         var file = fileList[i];
         if (!file)
             return "continue";
@@ -29440,18 +29433,10 @@ function sendFiles(uploader, files, handlerSuccess, handlerError, process) {
         o.prepareData.call(uploader, form);
         promises.push((0, send_1.send)(uploader, form)
             .then(function (resp) {
-            console.log('resp', resp);
-            if (o.isSuccess.call(uploader, resp)) {
-                var handler_1 = (0, helpers_1.isFunction)(handlerSuccess)
-                    ? handlerSuccess
-                    : o.defaultHandlerSuccess;
-                handler_1.call(uploader, o.process.call(uploader, resp));
-                return resp;
-            }
-            var handler = (0, helpers_1.isFunction)(handlerError)
-                ? handlerError
-                : o.defaultHandlerError;
-            handler.call(uploader, (0, helpers_1.error)(o.getMessage.call(uploader, resp)));
+            var handler = (0, helpers_1.isFunction)(handlerSuccess)
+                ? handlerSuccess
+                : o.defaultHandlerSuccess;
+            handler.call(uploader, o.process.call(uploader, resp));
             return resp;
         })
             .then(function () {
@@ -29528,7 +29513,9 @@ function send(uploader, data) {
         instances.add(ajax);
         return ajax
             .send()
-            .then(function (resp) { return resp.json(); })
+            .then(function (resp) {
+            return resp.json();
+        })
             .catch(function (error) {
             uploader.o.error.call(uploader, error);
         })
@@ -29816,21 +29803,21 @@ exports.DragAndDropWidget = void 0;
 var helpers_1 = __webpack_require__(92654);
 __webpack_require__(98310);
 var DragAndDropWidget = function (editor, callbacks, fileType, close) {
-    var inputAccept = null;
+    var inputAccept;
     switch (fileType) {
-        case 'IMAGE':
+        case 'image':
             inputAccept = 'image/*';
             break;
-        case 'GIF':
+        case 'gif':
             inputAccept = 'image/gif';
             break;
-        case 'VIDEO':
+        case 'video':
             inputAccept = 'video/gif';
             break;
-        case 'FILE':
+        case 'file':
             inputAccept = '*';
             break;
-        case 'AUDIO':
+        case 'audio':
             inputAccept = 'audio/*';
             break;
         default:
@@ -29841,11 +29828,11 @@ var DragAndDropWidget = function (editor, callbacks, fileType, close) {
         editor.i18n('or click');
     var svgPath = null;
     switch (fileType) {
-        case 'VIDEO':
+        case 'video':
             svgPath =
                 '<path d="M15.9998 29.3343C13.3628 29.3343 10.7851 28.5524 8.59249 27.0873C6.39992 25.6223 4.69103 23.54 3.6819 21.1037C2.67277 18.6675 2.40874 15.9867 2.92318 13.4004C3.43763 10.8141 4.70746 8.43842 6.57208 6.57379C8.43671 4.70917 10.8124 3.43934 13.3987 2.92489C15.985 2.41044 18.6658 2.67448 21.102 3.68361C23.5383 4.69273 25.6206 6.40163 27.0856 8.5942C28.5506 10.7868 29.3326 13.3645 29.3326 16.0015C29.3326 17.7524 28.9877 19.4861 28.3177 21.1037C27.6477 22.7214 26.6656 24.1912 25.4275 25.4292C24.1894 26.6673 22.7197 27.6494 21.102 28.3194C19.4844 28.9894 17.7507 29.3343 15.9998 29.3343ZM15.9998 26.6671C18.1096 26.6671 20.172 26.0415 21.9262 24.8694C23.6804 23.6972 25.0476 22.0312 25.855 20.0821C26.6624 18.1329 26.8736 15.9881 26.462 13.9188C26.0504 11.8496 25.0345 9.94889 23.5426 8.45706C22.0508 6.96522 20.1501 5.94927 18.0809 5.53767C16.0116 5.12608 13.8668 5.33732 11.9176 6.1447C9.96846 6.95207 8.30247 8.31932 7.13035 10.0735C5.95822 11.8277 5.3326 13.8901 5.3326 15.9999C5.3326 18.829 6.45646 21.5423 8.45695 23.5428C10.4574 25.5432 13.1707 26.6671 15.9998 26.6671ZM14.163 11.2207L20.6686 15.5567C20.7419 15.6053 20.802 15.6713 20.8435 15.7488C20.8851 15.8262 20.9069 15.9128 20.9069 16.0007C20.9069 16.0886 20.8851 16.1752 20.8435 16.2527C20.802 16.3301 20.7419 16.3961 20.6686 16.4447L14.1614 20.7807C14.0812 20.8339 13.9881 20.8643 13.8919 20.8688C13.7958 20.8733 13.7002 20.8517 13.6154 20.8063C13.5305 20.7608 13.4596 20.6932 13.4101 20.6107C13.3606 20.5282 13.3344 20.4338 13.3342 20.3375V11.6623C13.3342 11.5658 13.3603 11.4711 13.4099 11.3883C13.4595 11.3055 13.5307 11.2378 13.6158 11.1923C13.7008 11.1468 13.7967 11.1252 13.8931 11.13C13.9895 11.1347 14.0828 11.1655 14.163 11.2191V11.2207Z"/>';
             break;
-        case 'FILE':
+        case 'file':
             svgPath =
                 '<path d="M7.51457 5.66676H13.5999C13.9544 5.66573 14.3056 5.73508 14.6332 5.87081C14.9607 6.00653 15.258 6.20593 15.5079 6.45743L17.8786 8.82809L17.9079 8.85609C17.9724 8.92091 18.049 8.97231 18.1335 9.00732C18.2179 9.04234 18.3085 9.06027 18.3999 9.06009H24.4839C25.4229 9.06115 26.3233 9.43428 26.9878 10.0978C27.6523 10.7613 28.0268 11.6611 28.0292 12.6001V22.7814C28.0299 23.7225 27.6569 24.6254 26.992 25.2915C26.3272 25.9576 25.425 26.3324 24.4839 26.3334H7.51457C6.57462 26.3324 5.67346 25.9585 5.00881 25.2939C4.34416 24.6292 3.9703 23.728 3.96924 22.7881V9.21209C3.9703 8.27214 4.34416 7.37098 5.00881 6.70633C5.67346 6.04168 6.57462 5.66782 7.51457 5.66676ZM16.5266 10.3041L16.4906 10.2708L14.0906 7.87076C14.026 7.8056 13.9492 7.7539 13.8645 7.71866C13.7798 7.68341 13.689 7.66532 13.5972 7.66543H7.51457C7.1046 7.66578 6.71154 7.82889 6.42177 8.11891C6.13201 8.40892 5.96924 8.80212 5.96924 9.21209V22.7881C5.96959 23.1978 6.13252 23.5907 6.42225 23.8804C6.71198 24.1701 7.10483 24.3331 7.51457 24.3334H24.4839C24.8936 24.3331 25.2865 24.1701 25.5762 23.8804C25.866 23.5907 26.0289 23.1978 26.0292 22.7881V12.6001C26.0289 12.1904 25.866 11.7975 25.5762 11.5078C25.2865 11.218 24.8936 11.0551 24.4839 11.0548H18.3986C17.7006 11.058 17.0289 10.7887 16.5266 10.3041Z"/>';
             break;
@@ -29859,6 +29846,7 @@ var DragAndDropWidget = function (editor, callbacks, fileType, close) {
         "<input type=\"file\" accept=\"".concat(inputAccept, "\" tabindex=\"-1\" dir=\"auto\" multiple=\"\"/>") +
         '</div>');
     editor.uploader.bind(dragAndDropWidget, function (resp) {
+        console.trace('resp1', resp);
         var handler = (0, helpers_1.isFunction)(callbacks.upload)
             ? callbacks.upload
             : editor.o.uploader.defaultHandlerSuccess;
@@ -29901,7 +29889,7 @@ var FileSelectorWidget = function (editor, callbacks, elm, close, isImage) {
         tabs.push({
             icon: 'upload',
             name: 'Upload',
-            content: (0, drag_and_drop_1.DragAndDropWidget)(editor, callbacks, 'IMAGE', close)
+            content: (0, drag_and_drop_1.DragAndDropWidget)(editor, callbacks, 'image', close)
         });
     }
     if (callbacks.uploadVideo &&
@@ -29910,7 +29898,7 @@ var FileSelectorWidget = function (editor, callbacks, elm, close, isImage) {
         tabs.push({
             icon: 'upload',
             name: 'Upload',
-            content: (0, drag_and_drop_1.DragAndDropWidget)(editor, callbacks, 'VIDEO', close)
+            content: (0, drag_and_drop_1.DragAndDropWidget)(editor, callbacks, 'video', close)
         });
     }
     if (callbacks.uploadFile &&
@@ -29919,19 +29907,19 @@ var FileSelectorWidget = function (editor, callbacks, elm, close, isImage) {
         tabs.push({
             icon: 'upload',
             name: 'Upload',
-            content: (0, drag_and_drop_1.DragAndDropWidget)(editor, callbacks, 'FILE', close)
+            content: (0, drag_and_drop_1.DragAndDropWidget)(editor, callbacks, 'file', close)
         });
     }
     if (callbacks.searchUnsplash) {
         tabs.push({
             name: 'Search',
-            content: (0, search_selector_1.SearchSelectorWidget)(editor, callbacks, 'IMAGE', close)
+            content: (0, search_selector_1.SearchSelectorWidget)(editor, callbacks, 'image', close)
         });
     }
     if (callbacks.searchGiphy) {
         tabs.push({
             name: 'Search',
-            content: (0, search_selector_1.SearchSelectorWidget)(editor, callbacks, 'GIF', close)
+            content: (0, search_selector_1.SearchSelectorWidget)(editor, callbacks, 'gif', close)
         });
     }
     if (callbacks.filebrowser) {
@@ -30166,7 +30154,7 @@ var MediaItem = (function () {
     function MediaItem(editor, imageThumb, image, username, link, alt, width, close) {
         this.element = editor.c.fromHTML("<div class=\"jodit-media-item grid-item hover-border-effect skeleton-loader\"><img class=\"\" src=\"".concat(imageThumb, "\"/></div>"));
         this.element.addEventListener('click', function () {
-            var img = editor.c.fromHTML("<p style=\"width: 100%; text-align: center;\"><img style=\"display: inline-block; width: ".concat(width, ";\" src=\"").concat(image, "\" alt=\"").concat(alt, "\"/></p>\n\t\t<p></p>"));
+            var img = editor.c.fromHTML("<img style=\"width: ".concat(editor.o.imageDefaultWidth || 500, "px;\" src=\"").concat(image, "\" alt=\"").concat(alt, "\"/></p></p>"));
             editor.s.insertHTML(img);
             if (close)
                 close();
@@ -30230,10 +30218,8 @@ var MediaLists = (function () {
         this.setMediaList(mediaList);
     }
     MediaLists.prototype.createMediaList = function (search) {
-        console.log('createMediaList', search);
         var mediaList;
-        console.log('this.fileType', this.fileType);
-        if (this.fileType === 'IMAGE') {
+        if (this.fileType === 'image') {
             mediaList = new ImageMediaList_1.ImageMediaList(this.editor, this.callbacks, search, this.close);
         }
         else {
@@ -42187,554 +42173,6 @@ global_1.pluginSystem.add('imageProcessor', imageProcessor);
 
 /***/ }),
 
-/***/ 94615:
-/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
-
-"use strict";
-
-Object.defineProperty(exports, "__esModule", ({ value: true }));
-var config_1 = __webpack_require__(27537);
-config_1.Config.prototype.image = {
-    dialogWidth: 600,
-    openOnDblClick: true,
-    editSrc: true,
-    useImageEditor: true,
-    editTitle: true,
-    editAlt: true,
-    editLink: true,
-    editSize: true,
-    editBorderRadius: true,
-    editMargins: true,
-    editClass: true,
-    editStyle: true,
-    editId: true,
-    editAlign: true,
-    showPreview: true,
-    selectImageAfterClose: true
-};
-
-
-/***/ }),
-
-/***/ 19124:
-/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
-
-"use strict";
-
-Object.defineProperty(exports, "__esModule", ({ value: true }));
-exports.imageProperties = void 0;
-var tslib_1 = __webpack_require__(20255);
-__webpack_require__(9947);
-var modules_1 = __webpack_require__(46701);
-var helpers_1 = __webpack_require__(92654);
-var widget_1 = __webpack_require__(4188);
-var button_1 = __webpack_require__(44632);
-var decorators_1 = __webpack_require__(9901);
-var image_editor_1 = __webpack_require__(87005);
-var global_1 = __webpack_require__(58299);
-var form_1 = __webpack_require__(22325);
-var main_tab_1 = __webpack_require__(25393);
-var position_tab_1 = __webpack_require__(96309);
-__webpack_require__(94615);
-var normalSizeToString = function (value) {
-    value = (0, helpers_1.trim)(value);
-    return /^[0-9]+$/.test(value) ? value + 'px' : value;
-};
-var normalSizeFromString = function (value) {
-    return /^[-+]?[0-9.]+px$/.test(value.toString())
-        ? parseFloat(value.toString())
-        : value;
-};
-var imageProperties = (function (_super) {
-    tslib_1.__extends(imageProperties, _super);
-    function imageProperties() {
-        var _this = _super !== null && _super.apply(this, arguments) || this;
-        _this.state = {
-            image: new Image(),
-            get ratio() {
-                return this.image.naturalWidth / this.image.naturalHeight || 1;
-            },
-            sizeIsLocked: true,
-            marginIsLocked: true
-        };
-        _this.activeTabState = {
-            __activeTab: 'Image'
-        };
-        return _this;
-    }
-    imageProperties.prototype.onChangeMarginIsLocked = function () {
-        var _this = this;
-        if (!this.form) {
-            return;
-        }
-        var _a = (0, helpers_1.refs)(this.form), marginRight = _a.marginRight, marginBottom = _a.marginBottom, marginLeft = _a.marginLeft, lockMargin = _a.lockMargin;
-        [marginRight, marginBottom, marginLeft].forEach(function (elm) {
-            (0, helpers_1.attr)(elm, 'disabled', _this.state.marginIsLocked || null);
-        });
-        lockMargin.innerHTML = modules_1.Icon.get(this.state.marginIsLocked ? 'lock' : 'unlock');
-    };
-    imageProperties.prototype.onChangeSizeIsLocked = function () {
-        if (!this.form) {
-            return;
-        }
-        var _a = (0, helpers_1.refs)(this.form), lockSize = _a.lockSize, imageWidth = _a.imageWidth;
-        lockSize.innerHTML = modules_1.Icon.get(this.state.sizeIsLocked ? 'lock' : 'unlock');
-        lockSize.classList.remove('jodit-properties__lock');
-        lockSize.classList.remove('jodit-properties__unlock');
-        lockSize.classList.add(this.state.sizeIsLocked
-            ? 'jodit-properties__lock'
-            : 'jodit-properties__unlock');
-        this.j.e.fire(imageWidth, 'change');
-    };
-    imageProperties.prototype.open = function () {
-        this.makeForm();
-        this.activeTabState.__activeTab = 'Image';
-        this.j.e.fire('hidePopup');
-        (0, helpers_1.markOwner)(this.j, this.dialog.container);
-        this.state.marginIsLocked = true;
-        this.state.sizeIsLocked = true;
-        this.onChangeMarginIsLocked();
-        this.onChangeSizeIsLocked();
-        this.updateValues();
-        this.dialog.open().setModal(true).setPosition();
-        return false;
-    };
-    imageProperties.prototype.makeForm = function () {
-        var _this = this;
-        if (this.dialog) {
-            return;
-        }
-        this.dialog = this.j.dlg({
-            minWidth: Math.min(400, screen.width),
-            minHeight: 590,
-            buttons: ['fullsize', 'dialog.close']
-        });
-        var editor = this.j, opt = editor.o, i18n = editor.i18n.bind(editor), buttons = {
-            check: (0, button_1.Button)(editor, 'ok', 'Apply', 'primary'),
-            remove: (0, button_1.Button)(editor, 'bin', 'Delete')
-        };
-        editor.e.on(this.dialog, 'afterClose', function () {
-            if (_this.state.image.parentNode &&
-                opt.image.selectImageAfterClose) {
-                editor.s.select(_this.state.image);
-            }
-        });
-        buttons.remove.onAction(function () {
-            editor.s.removeNode(_this.state.image);
-            _this.dialog.close();
-        });
-        var dialog = this.dialog;
-        dialog.setHeader(i18n('Image properties'));
-        var mainForm = (0, form_1.form)(editor);
-        this.form = mainForm;
-        dialog.setContent(mainForm);
-        var tabsBox = (0, helpers_1.refs)(this.form).tabsBox;
-        if (tabsBox) {
-            tabsBox.appendChild((0, widget_1.TabsWidget)(editor, [
-                { name: 'Image', content: (0, main_tab_1.mainTab)(editor) },
-                { name: 'Advanced', content: (0, position_tab_1.positionTab)(editor) }
-            ], this.activeTabState));
-        }
-        buttons.check.onAction(this.onApply);
-        var _a = (0, helpers_1.refs)(this.form), changeImage = _a.changeImage, editImage = _a.editImage;
-        editor.e.on(changeImage, 'click', this.openImagePopup);
-        if (opt.image.useImageEditor) {
-            editor.e.on(editImage, 'click', this.openImageEditor);
-        }
-        var _b = (0, helpers_1.refs)(mainForm), lockSize = _b.lockSize, lockMargin = _b.lockMargin, imageWidth = _b.imageWidth, imageHeight = _b.imageHeight;
-        if (lockSize) {
-            editor.e.on(lockSize, 'click', function () {
-                _this.state.sizeIsLocked = !_this.state.sizeIsLocked;
-            });
-        }
-        editor.e.on(lockMargin, 'click', function (e) {
-            _this.state.marginIsLocked = !_this.state.marginIsLocked;
-            e.preventDefault();
-        });
-        var changeSizes = function (event) {
-            if (!(0, helpers_1.isNumeric)(imageWidth.value) || !(0, helpers_1.isNumeric)(imageHeight.value)) {
-                return;
-            }
-            var w = parseFloat(imageWidth.value), h = parseFloat(imageHeight.value);
-            if (event.target === imageWidth) {
-                imageHeight.value = Math.round(w / _this.state.ratio).toString();
-            }
-            else {
-                imageWidth.value = Math.round(h * _this.state.ratio).toString();
-            }
-        };
-        editor.e.on([imageWidth, imageHeight], 'change keydown mousedown paste', function (event) {
-            if (!_this.state.sizeIsLocked) {
-                return;
-            }
-            editor.async.setTimeout(changeSizes.bind(_this, event), {
-                timeout: editor.defaultTimeout,
-                label: 'image-properties-changeSize'
-            });
-        });
-        dialog.setFooter([buttons.remove, buttons.check]);
-        dialog.setSize(this.j.o.image.dialogWidth);
-    };
-    imageProperties.prototype.updateValues = function () {
-        var _this = this;
-        var opt = this.j.o;
-        var image = this.state.image;
-        var _a = (0, helpers_1.refs)(this.form), marginTop = _a.marginTop, marginRight = _a.marginRight, marginBottom = _a.marginBottom, marginLeft = _a.marginLeft, lockMargin = _a.lockMargin, imageSrc = _a.imageSrc, id = _a.id, classes = _a.classes, align = _a.align, style = _a.style, imageTitle = _a.imageTitle, imageAlt = _a.imageAlt, borderRadius = _a.borderRadius, imageLink = _a.imageLink, imageWidth = _a.imageWidth, imageHeight = _a.imageHeight, imageLinkOpenInNewTab = _a.imageLinkOpenInNewTab, imageViewSrc = _a.imageViewSrc, lockSize = _a.lockSize;
-        var updateLock = function () {
-            lockMargin.checked = _this.state.marginIsLocked;
-            lockSize.checked = _this.state.sizeIsLocked;
-        }, updateAlign = function () {
-            if (image.style.cssFloat &&
-                ['left', 'right'].indexOf(image.style.cssFloat.toLowerCase()) !== -1) {
-                align.value = (0, helpers_1.css)(image, 'float');
-            }
-            else {
-                if ((0, helpers_1.css)(image, 'display') === 'block' &&
-                    image.style.marginLeft === 'auto' &&
-                    image.style.marginRight === 'auto') {
-                    align.value = 'center';
-                }
-            }
-        }, updateBorderRadius = function () {
-            borderRadius.value = (parseInt(image.style.borderRadius || '0', 10) || '0').toString();
-        }, updateId = function () {
-            id.value = (0, helpers_1.attr)(image, 'id') || '';
-        }, updateStyle = function () {
-            style.value = (0, helpers_1.attr)(image, 'style') || '';
-        }, updateClasses = function () {
-            classes.value = ((0, helpers_1.attr)(image, 'class') || '').replace(/jodit_focused_image[\s]*/, '');
-        }, updateMargins = function () {
-            if (!opt.image.editMargins) {
-                return;
-            }
-            var equal = true, wasEmptyField = false;
-            [marginTop, marginRight, marginBottom, marginLeft].forEach(function (elm) {
-                var id = (0, helpers_1.attr)(elm, 'data-ref') || '';
-                var value = image.style.getPropertyValue((0, helpers_1.kebabCase)(id));
-                if (!value) {
-                    wasEmptyField = true;
-                    elm.value = '';
-                    return;
-                }
-                if (/^[0-9]+(px)?$/.test(value)) {
-                    value = parseInt(value, 10);
-                }
-                elm.value = value.toString() || '';
-                if ((wasEmptyField && elm.value) ||
-                    (equal &&
-                        id !== 'marginTop' &&
-                        elm.value !== marginTop.value)) {
-                    equal = false;
-                }
-            });
-            _this.state.marginIsLocked = equal;
-        }, updateSizes = function () {
-            var width = (0, helpers_1.attr)(image, 'width') ||
-                (0, helpers_1.css)(image, 'width', true) ||
-                false, height = (0, helpers_1.attr)(image, 'height') ||
-                (0, helpers_1.css)(image, 'height', true) ||
-                false;
-            imageWidth.value =
-                width !== false
-                    ? normalSizeFromString(width).toString()
-                    : image.offsetWidth.toString();
-            imageHeight.value =
-                height !== false
-                    ? normalSizeFromString(height).toString()
-                    : image.offsetHeight.toString();
-            _this.state.sizeIsLocked = (function () {
-                if (!(0, helpers_1.isNumeric)(imageWidth.value) ||
-                    !(0, helpers_1.isNumeric)(imageHeight.value)) {
-                    return false;
-                }
-                var w = parseFloat(imageWidth.value), h = parseFloat(imageHeight.value);
-                return Math.abs(w - h * _this.state.ratio) < 1;
-            })();
-        }, updateText = function () {
-            imageTitle.value = (0, helpers_1.attr)(image, 'title') || '';
-            imageAlt.value = (0, helpers_1.attr)(image, 'alt') || '';
-            var a = modules_1.Dom.closest(image, 'a', _this.j.editor);
-            if (a) {
-                imageLink.value = (0, helpers_1.attr)(a, 'href') || '';
-                imageLinkOpenInNewTab.checked =
-                    (0, helpers_1.attr)(a, 'target') === '_blank';
-            }
-            else {
-                imageLink.value = '';
-                imageLinkOpenInNewTab.checked = false;
-            }
-        }, updateSrc = function () {
-            imageSrc.value = (0, helpers_1.attr)(image, 'src') || '';
-            if (imageViewSrc) {
-                (0, helpers_1.attr)(imageViewSrc, 'src', (0, helpers_1.attr)(image, 'src') || '');
-            }
-        };
-        updateLock();
-        updateSrc();
-        updateText();
-        updateSizes();
-        updateMargins();
-        updateClasses();
-        updateId();
-        updateBorderRadius();
-        updateAlign();
-        updateStyle();
-    };
-    imageProperties.prototype.onApply = function () {
-        var _a = (0, helpers_1.refs)(this.form), style = _a.style, imageSrc = _a.imageSrc, borderRadius = _a.borderRadius, imageTitle = _a.imageTitle, imageAlt = _a.imageAlt, imageLink = _a.imageLink, imageWidth = _a.imageWidth, imageHeight = _a.imageHeight, marginTop = _a.marginTop, marginRight = _a.marginRight, marginBottom = _a.marginBottom, marginLeft = _a.marginLeft, imageLinkOpenInNewTab = _a.imageLinkOpenInNewTab, align = _a.align, classes = _a.classes, id = _a.id;
-        var opt = this.j.o;
-        var image = this.state.image;
-        if (opt.image.editStyle) {
-            (0, helpers_1.attr)(image, 'style', style.value || null);
-        }
-        if (imageSrc.value) {
-            (0, helpers_1.attr)(image, 'src', imageSrc.value);
-        }
-        else {
-            modules_1.Dom.safeRemove(image);
-            this.dialog.close();
-            return;
-        }
-        if (borderRadius.value !== '0' && /^[0-9]+$/.test(borderRadius.value)) {
-            image.style.borderRadius = borderRadius.value + 'px';
-        }
-        else {
-            image.style.borderRadius = '';
-        }
-        (0, helpers_1.attr)(image, 'title', imageTitle.value || null);
-        (0, helpers_1.attr)(image, 'alt', imageAlt.value || null);
-        var link = modules_1.Dom.closest(image, 'a', this.j.editor);
-        if (imageLink.value) {
-            if (!link) {
-                link = modules_1.Dom.wrap(image, 'a', this.j.createInside);
-            }
-            (0, helpers_1.attr)(link, 'href', imageLink.value);
-            (0, helpers_1.attr)(link, 'target', imageLinkOpenInNewTab.checked ? '_blank' : null);
-        }
-        else {
-            if (link && link.parentNode) {
-                link.parentNode.replaceChild(image, link);
-            }
-        }
-        if (imageWidth.value !== image.offsetWidth.toString() ||
-            imageHeight.value !== image.offsetHeight.toString()) {
-            var updatedtWidth = (0, helpers_1.trim)(imageWidth.value)
-                ? normalSizeToString(imageWidth.value)
-                : null;
-            var updatedHeight = (0, helpers_1.trim)(imageHeight.value)
-                ? normalSizeToString(imageHeight.value)
-                : null;
-            (0, helpers_1.css)(image, {
-                width: updatedtWidth,
-                height: updatedHeight
-            });
-            (0, helpers_1.attr)(image, 'width', (0, helpers_1.attr)(image, 'width') ? updatedtWidth : null);
-            (0, helpers_1.attr)(image, 'height', (0, helpers_1.attr)(image, 'height') ? updatedHeight : null);
-        }
-        var margins = [marginTop, marginRight, marginBottom, marginLeft];
-        if (opt.image.editMargins) {
-            if (!this.state.marginIsLocked) {
-                margins.forEach(function (margin) {
-                    var side = (0, helpers_1.attr)(margin, 'data-ref') || '';
-                    (0, helpers_1.css)(image, side, normalSizeToString(margin.value));
-                });
-            }
-            else {
-                (0, helpers_1.css)(image, 'margin', normalSizeToString(marginTop.value));
-            }
-        }
-        if (opt.image.editClass) {
-            (0, helpers_1.attr)(image, 'class', classes.value || null);
-        }
-        if (opt.image.editId) {
-            (0, helpers_1.attr)(image, 'id', id.value || null);
-        }
-        if (opt.image.editAlign) {
-            (0, helpers_1.hAlignElement)(image, align.value);
-        }
-        this.j.synchronizeValues();
-        this.dialog.close();
-    };
-    imageProperties.prototype.openImageEditor = function () {
-        var _this = this;
-        var url = (0, helpers_1.attr)(this.state.image, 'src') || '', a = this.j.c.element('a'), loadExternal = function () {
-            if (a.host !== location.host) {
-                _this.j.confirm('You can only edit your own images. Download this image on the host?', function (yes) {
-                    if (yes && _this.j.uploader) {
-                        _this.j.uploader.uploadRemoteImage(a.href.toString(), function (resp) {
-                            _this.j.alert('The image has been successfully uploaded to the host!', function () {
-                                if ((0, helpers_1.isString)(resp.newfilename)) {
-                                    (0, helpers_1.attr)(_this.state.image, 'src', resp.baseurl +
-                                        resp.newfilename);
-                                    _this.updateValues();
-                                }
-                            });
-                        }, function (error) {
-                            _this.j.alert('There was an error loading %s', error.message);
-                        });
-                    }
-                });
-                return;
-            }
-        };
-        a.href = url;
-        this.j.filebrowser.dataProvider
-            .getPathByUrl(a.href.toString())
-            .then(function (resp) {
-            image_editor_1.openImageEditor.call(_this.j.filebrowser, a.href, resp.name, resp.path, resp.source, function () {
-                var timestamp = new Date().getTime();
-                (0, helpers_1.attr)(_this.state.image, 'src', url +
-                    (url.indexOf('?') !== -1 ? '' : '?') +
-                    '&_tmp=' +
-                    timestamp.toString());
-                _this.updateValues();
-            }, function (error) {
-                _this.j.alert(error.message);
-            });
-        })
-            .catch(function (error) {
-            _this.j.alert(error.message, loadExternal);
-        });
-    };
-    imageProperties.prototype.openImagePopup = function (event) {
-        var _this = this;
-        var popup = new modules_1.Popup(this.j), changeImage = (0, helpers_1.refs)(this.form).changeImage;
-        popup.setZIndex(this.dialog.getZIndex() + 1);
-        popup
-            .setContent((0, widget_1.FileSelectorWidget)(this.j, {
-            upload: function (data) {
-                if (data.files && data.files.length) {
-                    (0, helpers_1.attr)(_this.state.image, 'src', data.baseurl + data.files[0]);
-                }
-                _this.updateValues();
-                popup.close();
-            },
-            filebrowser: function (data) {
-                if (data &&
-                    (0, helpers_1.isArray)(data.files) &&
-                    data.files.length) {
-                    (0, helpers_1.attr)(_this.state.image, 'src', data.files[0]);
-                    popup.close();
-                    _this.updateValues();
-                }
-            }
-        }, this.state.image, popup.close))
-            .open(function () { return (0, helpers_1.position)(changeImage); });
-        event.stopPropagation();
-    };
-    imageProperties.prototype.afterInit = function (editor) {
-        var _this = this;
-        var self = this;
-        editor.e
-            .on('afterConstructor changePlace', function () {
-            editor.e
-                .off(editor.editor, '.imageproperties')
-                .on(editor.editor, 'dblclick.imageproperties', function (e) {
-                var image = e.target;
-                if (!modules_1.Dom.isTag(image, 'img')) {
-                    return;
-                }
-                if (editor.o.image.openOnDblClick) {
-                    if (_this.j.e.fire('openOnDblClick', image) ===
-                        false) {
-                        return;
-                    }
-                    self.state.image = image;
-                    if (!editor.o.readonly) {
-                        e.stopImmediatePropagation();
-                        e.preventDefault();
-                        self.open();
-                    }
-                }
-                else {
-                    e.stopImmediatePropagation();
-                    editor.s.select(image);
-                }
-            });
-        })
-            .on('openImageProperties.imageproperties', function (image) {
-            _this.state.image = image;
-            _this.open();
-        });
-    };
-    imageProperties.prototype.beforeDestruct = function (editor) {
-        this.dialog && this.dialog.destruct();
-        editor.e.off(editor.editor, '.imageproperties').off('.imageproperties');
-    };
-    tslib_1.__decorate([
-        (0, decorators_1.watch)('state.marginIsLocked')
-    ], imageProperties.prototype, "onChangeMarginIsLocked", null);
-    tslib_1.__decorate([
-        (0, decorators_1.watch)('state.sizeIsLocked')
-    ], imageProperties.prototype, "onChangeSizeIsLocked", null);
-    tslib_1.__decorate([
-        decorators_1.autobind
-    ], imageProperties.prototype, "onApply", null);
-    tslib_1.__decorate([
-        decorators_1.autobind
-    ], imageProperties.prototype, "openImageEditor", null);
-    tslib_1.__decorate([
-        decorators_1.autobind
-    ], imageProperties.prototype, "openImagePopup", null);
-    return imageProperties;
-}(modules_1.Plugin));
-exports.imageProperties = imageProperties;
-global_1.pluginSystem.add('imageProperties', imageProperties);
-
-
-/***/ }),
-
-/***/ 22325:
-/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
-
-"use strict";
-
-Object.defineProperty(exports, "__esModule", ({ value: true }));
-exports.form = void 0;
-var icon_1 = __webpack_require__(76381);
-function form(editor) {
-    var _a = editor.o.image, showPreview = _a.showPreview, editSize = _a.editSize, gi = icon_1.Icon.get.bind(icon_1.Icon);
-    return editor.c.fromHTML("<form class=\"jodit-properties\">\n\t\t<div class=\"jodit-grid jodit-grid_xs-column\">\n\t\t\t<div class=\"jodit_col-lg-2-5 jodit_col-xs-5-5\">\n\t\t\t\t<div class=\"jodit-properties_view_box\">\n\t\t\t\t\t<div style=\"".concat(!showPreview ? 'display:none' : '', "\" class=\"jodit-properties_image_view\">\n\t\t\t\t\t\t<img data-ref=\"imageViewSrc\" src=\"\" alt=\"\"/>\n\t\t\t\t\t</div>\n\t\t\t\t\t<div style=\"").concat(!editSize ? 'display:none' : '', "\" class=\"jodit-form__group jodit-properties_image_sizes\">\n\t\t\t\t\t\t<input data-ref=\"imageWidth\" type=\"text\" class=\"jodit-input\"/>\n\t\t\t\t\t\t<a data-ref=\"lockSize\" class=\"jodit-properties__lock\">").concat(gi('lock'), "</a>\n\t\t\t\t\t\t<input data-ref=\"imageHeight\" type=\"text\" class=\"imageHeight jodit-input\"/>\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t\t<div data-ref=\"tabsBox\" class=\"jodit_col-lg-3-5 jodit_col-xs-5-5\"></div>\n\t\t</div>\n\t</form>"));
-}
-exports.form = form;
-
-
-/***/ }),
-
-/***/ 25393:
-/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
-
-"use strict";
-
-Object.defineProperty(exports, "__esModule", ({ value: true }));
-exports.mainTab = void 0;
-var icon_1 = __webpack_require__(76381);
-function mainTab(editor) {
-    var opt = editor.o, i18n = editor.i18n.bind(editor), gi = icon_1.Icon.get.bind(icon_1.Icon), hasFbUrl = opt.filebrowser.ajax.url || opt.uploader.url, hasEditor = opt.image.useImageEditor;
-    return editor.c.fromHTML("<div style=\"".concat(!opt.image.editSrc ? 'display:none' : '', "\" class=\"jodit-form__group\">\n\t\t\t<label>").concat(i18n('Src'), "</label>\n\t\t\t<div class=\"jodit-input_group\">\n\t\t\t\t<input data-ref=\"imageSrc\" class=\"jodit-input\" type=\"text\"/>\n\t\t\t\t<div\n\t\t\t\t\tclass=\"jodit-input_group-buttons\"\n\t\t\t\t\tstyle=\"").concat(hasFbUrl ? '' : 'display: none', "\"\n\t\t\t\t>\n\t\t\t\t\t\t<a\n\t\t\t\t\t\t\tdata-ref=\"changeImage\"\n\t\t\t\t\t\t\tclass=\"jodit-button\"\n\t\t\t\t\t\t>").concat(gi('image'), "</a>\n\t\t\t\t\t\t<a\n\t\t\t\t\t\t\tdata-ref=\"editImage\"\n\t\t\t\t\t\t\tclass=\"jodit-button\"\n\t\t\t\t\t\t\tstyle=\"").concat(hasEditor ? '' : 'display: none', "\"\n\t\t\t\t\t\t>").concat(gi('crop'), "</a>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t</div>\n\t\t<div style=\"").concat(!opt.image.editTitle ? 'display:none' : '', "\" class=\"jodit-form__group\">\n\t\t\t<label>").concat(i18n('Title'), "</label>\n\t\t\t<input data-ref=\"imageTitle\" type=\"text\" class=\"jodit-input\"/>\n\t\t</div>\n\t\t<div style=\"").concat(!opt.image.editAlt ? 'display:none' : '', "\" class=\"jodit-form__group\">\n\t\t\t<label>").concat(i18n('Alternative'), "</label>\n\t\t\t<input data-ref=\"imageAlt\" type=\"text\" class=\"jodit-input\"/>\n\t\t</div>\n\t\t<div style=\"").concat(!opt.image.editLink ? 'display:none' : '', "\" class=\"jodit-form__group\">\n\t\t\t<label>").concat(i18n('Link'), "</label>\n\t\t\t<input data-ref=\"imageLink\" type=\"text\" class=\"jodit-input\"/>\n\t\t</div>\n\t\t<div style=\"").concat(!opt.image.editLink ? 'display:none' : '', "\" class=\"jodit-form__group\">\n\t\t\t<label class=\"jodit_vertical_middle\">\n\t\t\t\t<input data-ref=\"imageLinkOpenInNewTab\" type=\"checkbox\" class=\"jodit-checkbox\"/>\n\t\t\t\t<span>").concat(i18n('Open link in new tab'), "</span>\n\t\t\t</label>\n\t\t</div>"));
-}
-exports.mainTab = mainTab;
-
-
-/***/ }),
-
-/***/ 96309:
-/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
-
-"use strict";
-
-Object.defineProperty(exports, "__esModule", ({ value: true }));
-exports.positionTab = void 0;
-var icon_1 = __webpack_require__(76381);
-function positionTab(editor) {
-    var opt = editor.o, i18n = editor.i18n.bind(editor), gi = icon_1.Icon.get.bind(icon_1.Icon);
-    return editor.c.fromHTML("<div style=\"".concat(!opt.image.editMargins ? 'display:none' : '', "\" class=\"jodit-form__group\">\n\t\t\t<label>").concat(i18n('Margins'), "</label>\n\t\t\t<div class=\"jodit-grid jodit_vertical_middle\">\n\t\t\t\t<input class=\"jodit_col-lg-1-5 jodit-input\" data-ref=\"marginTop\" type=\"text\" placeholder=\"").concat(i18n('top'), "\"/>\n\t\t\t\t<a style=\"text-align: center;\" data-ref=\"lockMargin\" class=\"jodit-properties__lock jodit_col-lg-1-5\">").concat(gi('lock'), "</a>\n\t\t\t\t<input disabled=\"true\" class=\"jodit_col-lg-1-5 jodit-input\" data-ref=\"marginRight\" type=\"text\" placeholder=\"").concat(i18n('right'), "\"/>\n\t\t\t\t<input disabled=\"true\" class=\"jodit_col-lg-1-5 jodit-input\" data-ref=\"marginBottom\" type=\"text\" placeholder=\"").concat(i18n('bottom'), "\"/>\n\t\t\t\t<input disabled=\"true\" class=\"jodit_col-lg-1-5 jodit-input\" data-ref=\"marginLeft\" type=\"text\" placeholder=\"").concat(i18n('left'), "\"/>\n\t\t\t</div>\n\t\t</div>\n\t\t<div\n\t\t\tstyle=\"").concat(!opt.image.editAlign ? 'display:none' : '', "\"\n\t\t\tclass=\"jodit-form__group\"\n\t\t>\n\t\t\t<label>").concat(i18n('Align'), "</label>\n\t\t\t<select data-ref=\"align\" class=\"jodit-select\">\n\t\t\t\t<option value=\"\">").concat(i18n('--Not Set--'), "</option>\n\t\t\t\t<option value=\"left\">").concat(i18n('Left'), "</option>\n\t\t\t\t<option value=\"center\">").concat(i18n('Center'), "</option>\n\t\t\t\t<option value=\"right\">").concat(i18n('Right'), "</option>\n\t\t\t</select>\n\t\t</div>\n\t\t<div style=\"").concat(!opt.image.editStyle ? 'display:none' : '', "\" class=\"jodit-form__group\">\n\t\t\t<label>").concat(i18n('Styles'), "</label>\n\t\t\t<input data-ref=\"style\" type=\"text\" class=\"jodit-input\"/>\n\t\t</div>\n\t\t<div style=\"").concat(!opt.image.editClass ? 'display:none' : '', "\" class=\"jodit-form__group\">\n\t\t\t<label>").concat(i18n('Classes'), "</label>\n\t\t\t<input data-ref=\"classes\" type=\"text\" class=\"jodit-input\"/>\n\t\t</div>\n\t\t<div style=\"").concat(!opt.image.editId ? 'display:none' : '', "\" class=\"jodit-form__group\">\n\t\t\t<label>Id</label>\n\t\t\t<input data-ref=\"id\" type=\"text\" class=\"jodit-input\"/>\n\t\t</div>\n\t\t<div\n\t\t\tstyle=\"").concat(!opt.image.editBorderRadius ? 'display:none' : '', "\"\n\t\t\tclass=\"jodit-form__group\"\n\t\t>\n\t\t\t<label>").concat(i18n('Border radius'), "</label>\n\t\t\t\t<input data-ref=\"borderRadius\" type=\"number\" class=\"jodit-input\"/>\n\t\t</div>"));
-}
-exports.positionTab = positionTab;
-
-
-/***/ }),
-
 /***/ 35015:
 /***/ (function(__unused_webpack_module, exports, __webpack_require__) {
 
@@ -42941,7 +42379,6 @@ __webpack_require__(64378);
 __webpack_require__(94433);
 __webpack_require__(72742);
 __webpack_require__(70846);
-__webpack_require__(19124);
 __webpack_require__(87437);
 __webpack_require__(62425);
 __webpack_require__(82428);
@@ -44977,90 +44414,11 @@ exports.formTemplate = formTemplate;
 
 /***/ }),
 
-/***/ 55557:
-/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
-
-"use strict";
-
-Object.defineProperty(exports, "__esModule", ({ value: true }));
-var config_1 = __webpack_require__(27537);
-config_1.Config.prototype.mediaFakeTag = 'jodit-media';
-config_1.Config.prototype.mediaInFakeBlock = true;
-config_1.Config.prototype.mediaBlocks = ['video', 'audio'];
-
-
-/***/ }),
-
 /***/ 58252:
-/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+/***/ (function() {
 
 "use strict";
 
-Object.defineProperty(exports, "__esModule", ({ value: true }));
-exports.media = void 0;
-var consts = __webpack_require__(10063);
-var utils_1 = __webpack_require__(73344);
-var global_1 = __webpack_require__(58299);
-__webpack_require__(55557);
-function media(editor) {
-    var keyFake = 'jodit_fake_wrapper';
-    var _a = editor.options, mediaFakeTag = _a.mediaFakeTag, mediaBlocks = _a.mediaBlocks, mediaInFakeBlock = _a.mediaInFakeBlock;
-    var wrap = function (element) {
-        var _a;
-        if (element.parentNode &&
-            (0, utils_1.attr)(element.parentNode, 'data-jodit_iframe_wrapper')) {
-            element = element.parentNode;
-        }
-        else {
-            var wrapper = editor.createInside.element(mediaFakeTag, (_a = {
-                    'data-jodit-temp': 1,
-                    contenteditable: false,
-                    draggable: true
-                },
-                _a["data-".concat(keyFake)] = 1,
-                _a));
-            (0, utils_1.attr)(wrapper, 'style', (0, utils_1.attr)(element, 'style'));
-            wrapper.style.display =
-                element.style.display === 'inline-block'
-                    ? 'inline-block'
-                    : 'block';
-            wrapper.style.width = element.offsetWidth + 'px';
-            wrapper.style.height = element.offsetHeight + 'px';
-            if (element.parentNode) {
-                element.parentNode.insertBefore(wrapper, element);
-            }
-            wrapper.appendChild(element);
-            element = wrapper;
-        }
-        editor.e
-            .off(element, 'mousedown.select touchstart.select')
-            .on(element, 'mousedown.select touchstart.select', function () {
-            editor.s.setCursorAfter(element);
-        });
-    };
-    if (mediaInFakeBlock) {
-        editor.e
-            .on('afterGetValueFromEditor', function (data) {
-            var rxp = new RegExp("<".concat(mediaFakeTag, "[^>]+data-").concat(keyFake, "[^>]+>([^]+?)</").concat(mediaFakeTag, ">"), 'ig');
-            if (rxp.test(data.value)) {
-                data.value = data.value.replace(rxp, '$1');
-            }
-        })
-            .on('change afterInit afterSetMode changePlace', editor.async.debounce(function () {
-            if (!editor.isDestructed &&
-                editor.getMode() !== consts.MODE_SOURCE) {
-                (0, utils_1.$$)(mediaBlocks.join(','), editor.editor).forEach(function (elm) {
-                    if (!(0, utils_1.dataBind)(elm, keyFake)) {
-                        (0, utils_1.dataBind)(elm, keyFake, true);
-                        wrap(elm);
-                    }
-                });
-            }
-        }, editor.defaultTimeout));
-    }
-}
-exports.media = media;
-global_1.pluginSystem.add('media', media);
 
 
 /***/ }),

@@ -16,6 +16,7 @@ import { DragAndDropWidget } from 'jodit/modules/widget/drag-and-drop/drag-and-d
 // Less
 import './file-selector.less';
 import { SearchSelectorWidget } from 'jodit/modules/widget/search-selector/search-selector';
+import type { IUploaderData } from 'jodit/types';
 
 // Inferfaces
 export interface ImageSelectorCallbacks {
@@ -30,24 +31,16 @@ export interface ImageSelectorCallbacks {
 	 */
 
 	filebrowser?: (data: IFileBrowserCallBackData) => void;
-	searchUnsplash?:
-		| ((this: IJodit, data: IFileBrowserCallBackData) => void)
-		| true;
-	searchGiphy?:
-		| ((this: IJodit, data: IFileBrowserCallBackData) => void)
-		| true;
+	searchUnsplash?: true;
+	searchGiphy?: true;
 
 	/**
 	 * Function that will be called when the user selects a file or using drag and drop files to the `Upload` tab
 	 */
-	upload?: ((this: IJodit, data: IFileBrowserCallBackData) => void) | true;
-	uploadGif?: ((this: IJodit, data: IFileBrowserCallBackData) => void) | true;
-	uploadVideo?:
-		| ((this: IJodit, data: IFileBrowserCallBackData) => void)
-		| true;
-	uploadFile?:
-		| ((this: IJodit, data: IFileBrowserCallBackData) => void)
-		| true;
+	upload?: ((this: IJodit, data: IUploaderData) => void) | true;
+	uploadGif?: ((this: IJodit, data: IUploaderData) => void) | true;
+	uploadVideo?: ((this: IJodit, data: IUploaderData) => void) | true;
+	uploadFile?: ((this: IJodit, data: IUploaderData) => void) | true;
 }
 
 // Main Section
@@ -99,7 +92,7 @@ export const FileSelectorWidget = (
 		tabs.push({
 			icon: 'upload',
 			name: 'Upload',
-			content: DragAndDropWidget(editor, callbacks, 'IMAGE', close)
+			content: DragAndDropWidget(editor, callbacks, 'image', close)
 		});
 	}
 
@@ -111,7 +104,7 @@ export const FileSelectorWidget = (
 		tabs.push({
 			icon: 'upload',
 			name: 'Upload',
-			content: DragAndDropWidget(editor, callbacks, 'VIDEO', close)
+			content: DragAndDropWidget(editor, callbacks, 'video', close)
 		});
 	}
 
@@ -123,21 +116,21 @@ export const FileSelectorWidget = (
 		tabs.push({
 			icon: 'upload',
 			name: 'Upload',
-			content: DragAndDropWidget(editor, callbacks, 'FILE', close)
+			content: DragAndDropWidget(editor, callbacks, 'file', close)
 		});
 	}
 
 	if (callbacks.searchUnsplash) {
 		tabs.push({
 			name: 'Search',
-			content: SearchSelectorWidget(editor, callbacks, 'IMAGE', close)
+			content: SearchSelectorWidget(editor, callbacks, 'image', close)
 		});
 	}
 
 	if (callbacks.searchGiphy) {
 		tabs.push({
 			name: 'Search',
-			content: SearchSelectorWidget(editor, callbacks, 'GIF', close)
+			content: SearchSelectorWidget(editor, callbacks, 'gif', close)
 		});
 	}
 

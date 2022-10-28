@@ -372,6 +372,27 @@ input:focus + .jodit-switcher__slider {
     background-position: 100% 0;
   }
 }
+jodit-file {
+  padding: 13px 14px;
+  height: 50px;
+  color: #121212;
+  display: inline-block;
+  background: #F8F8F8;
+  border-radius: 4px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  position: relative;
+}
+jodit-file::before {
+  box-sizing: content-box;
+  content: url("data:image/svg+xml,<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M14.121 8.81773L9.87897 13.0605C9.80734 13.1297 9.7502 13.2124 9.7109 13.3039C9.67159 13.3954 9.6509 13.4938 9.65003 13.5934C9.64917 13.693 9.66814 13.7918 9.70585 13.8839C9.74357 13.9761 9.79926 14.0599 9.86967 14.1303C9.94009 14.2007 10.0238 14.2564 10.116 14.2941C10.2082 14.3318 10.3069 14.3508 10.4065 14.3499C10.5061 14.3491 10.6045 14.3284 10.696 14.2891C10.7875 14.2498 10.8703 14.1926 10.9395 14.121L15.1822 9.87898C15.6042 9.45699 15.8413 8.88465 15.8413 8.28786C15.8413 7.69107 15.6042 7.11873 15.1822 6.69673C14.7602 6.27474 14.1879 6.03767 13.5911 6.03767C12.9943 6.03767 12.422 6.27474 12 6.69673L7.75722 10.9395C7.40178 11.2861 7.11869 11.6998 6.92439 12.1567C6.73009 12.6135 6.62843 13.1044 6.62532 13.6008C6.62221 14.0973 6.71771 14.5894 6.90627 15.0487C7.09483 15.5079 7.37271 15.9252 7.72378 16.2762C8.07485 16.6272 8.49213 16.905 8.95141 17.0935C9.41069 17.282 9.90283 17.3774 10.3993 17.3743C10.8957 17.3711 11.3866 17.2694 11.8434 17.075C12.3002 16.8806 12.7139 16.5975 13.0605 16.242L17.3032 12L18.3637 13.0605L14.121 17.3032C13.1364 18.2878 11.8009 18.841 10.4085 18.841C9.01601 18.841 7.68059 18.2878 6.69597 17.3032C5.71135 16.3186 5.1582 14.9832 5.1582 13.5907C5.1582 12.1983 5.71135 10.8628 6.69597 9.87823L10.9395 5.63623C11.2871 5.28551 11.7006 5.00691 12.1563 4.81643C12.6119 4.62595 13.1007 4.52734 13.5945 4.52625C14.0883 4.52517 14.5775 4.62164 15.034 4.81013C15.4904 4.99861 15.9052 5.2754 16.2544 5.62459C16.6036 5.97379 16.8803 6.38852 17.0688 6.84498C17.2573 7.30143 17.3538 7.79062 17.3527 8.28446C17.3516 8.77829 17.253 9.26706 17.0625 9.72268C16.872 10.1783 16.5934 10.5918 16.2427 10.9395L12 15.183C11.5779 15.605 11.0054 15.842 10.4086 15.8419C9.81172 15.8419 9.23934 15.6047 8.81735 15.1826C8.39535 14.7605 8.15832 14.1881 8.15839 13.5912C8.15846 12.9944 8.39563 12.422 8.81772 12L13.0605 7.75723L14.121 8.81773Z\" /></svg>");
+  margin-right: 4px;
+  float: left;
+}
+jodit-file:hover {
+  box-shadow: 0 0 0 2px #9013FE inset;
+}
 .jodit-button-group {
   display: flex;
 }
@@ -602,7 +623,7 @@ svg.jodit-icon {
 .jodit-container * {
   box-sizing: border-box;
   transition-duration: 500ms;
-  transition-property: color, background-color;
+  transition-property: color, background-color, border;
 }
 .jodit .jodit-workplace,
 .jodit-container .jodit-workplace {
@@ -4156,50 +4177,6 @@ html.jodit_fullsize-box_true {
 .jodit_fullsize .jodit_editor,
 .jodit_fullsize .jodit__area {
   height: 100%;
-}
-
-.jodit-properties__unlock > svg,
-.jodit-properties__lock > svg {
-  display: inline-block;
-  overflow: hidden;
-  width: 14px;
-  height: 14px;
-  fill: #222;
-  font-size: 8px;
-  font-style: normal;
-  line-height: 14px;
-  transform-origin: 0 0 !important;
-  vertical-align: middle;
-}
-.jodit-properties .jodit-properties_view_box {
-  padding: var(--jd-padding-default);
-}
-.jodit-properties .jodit-properties_view_box .jodit-properties_image_view {
-  display: flex;
-  height: 150px;
-  align-items: center;
-  justify-content: center;
-  padding: 0;
-  margin: 0 0 var(--jd-padding-default);
-  background-color: #f6f6f6;
-}
-.jodit-properties .jodit-properties_view_box .jodit-properties_image_view img {
-  max-width: 100%;
-  max-height: 100%;
-}
-.jodit-properties .jodit-properties_view_box .jodit-properties_image_sizes.jodit-form__group {
-  min-width: auto;
-  flex-direction: row;
-  align-items: center;
-  padding: 0 !important;
-  margin: 0 !important;
-}
-.jodit-properties .jodit-properties_view_box .jodit-properties_image_sizes.jodit-form__group a {
-  display: inline-block;
-  cursor: pointer;
-}
-.jodit-properties .jodit-properties_view_box .jodit-properties_image_sizes.jodit-form__group .jodit-input {
-  width: calc(50% - 8px) !important;
 }
 
 .jodit-popup-inline__container {

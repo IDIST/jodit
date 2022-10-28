@@ -41,8 +41,8 @@ __webpack_require__.d(__webpack_exports__, {
 var core_plugin = __webpack_require__(35570);
 // EXTERNAL MODULE: ./src/core/request/ajax.ts + 1 modules
 var request_ajax = __webpack_require__(83282);
-// EXTERNAL MODULE: ./src/index.ts + 160 modules
-var src = __webpack_require__(85660);
+// EXTERNAL MODULE: ./src/index.ts + 153 modules
+var src = __webpack_require__(16136);
 // EXTERNAL MODULE: ./src/config.ts
 var config = __webpack_require__(27537);
 // EXTERNAL MODULE: ./src/core/dom/index.ts

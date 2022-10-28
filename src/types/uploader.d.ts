@@ -1,19 +1,22 @@
-
 /**
  * @module types
  */
 
-import type { CanPromise, IDictionary, IViewComponent } from './types';
+import type { IDictionary, IViewComponent } from './types';
 import type { IViewBased } from 'jodit/types/view';
-import type { IAjax } from './ajax';
+
+type mediaFileType = 'image' | 'gif' | 'video' | 'file' | 'audio';
 
 interface IUploaderData {
-	messages?: string[];
-	files: string[];
-	isImages?: boolean[];
-	path?: string;
-	baseurl: string;
-	newfilename?: string;
+	message: string;
+	file: string;
+	type: mediaFileType;
+	// messages?: string[];
+	// files: string[];
+	// isImages?: boolean[];
+	// path?: string;
+	// baseurl: string;
+	// newfilename?: string;
 }
 
 interface IUploaderAnswer {
@@ -42,7 +45,7 @@ export interface IUploaderOptions<T> {
 	method: string;
 	authToken: null | string;
 
-	filesVariableName: (fileType:string, fileExtension: string) => string;
+	filesVariableName: (fileType: string, fileExtension: string) => string;
 
 	/**
 	 * The method can be used to change the name of the uploaded file
@@ -76,12 +79,7 @@ export interface IUploaderOptions<T> {
 	 * });
 	 * ```
 	 */
-	getDisplayName(
-		this: T,
-		baseurl: string,
-		filename: string
-	): string;
-
+	getDisplayName(this: T, filename: string): string;
 
 	pathVariableName: string;
 	withCredentials: boolean;

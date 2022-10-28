@@ -21,8 +21,9 @@ export class MediaItem {
 
 		this.element.addEventListener('click', () => {
 			const img = editor.c.fromHTML(
-				`<p style="width: 100%; text-align: center;"><img style="display: inline-block; width: ${width};" src="${image}" alt="${alt}"/></p>
-		<p></p>`
+				`<img style="width: ${
+					editor.o.imageDefaultWidth || 500
+				}px;" src="${image}" alt="${alt}"/></p></p>`
 			);
 			editor.s.insertHTML(img);
 			if (close) close();

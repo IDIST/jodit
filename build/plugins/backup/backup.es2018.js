@@ -322,8 +322,8 @@ UIBackupBox = (0,tslib_es6/* __decorate */.gn)([
 ], UIBackupBox);
 
 
-// EXTERNAL MODULE: ./src/index.ts + 160 modules
-var src = __webpack_require__(85660);
+// EXTERNAL MODULE: ./src/index.ts + 153 modules
+var src = __webpack_require__(16136);
 ;// CONCATENATED MODULE: ./src/plugins/backup/backup.ts
 /*!
  * Jodit Editor PRO (https://xdsoft.net/jodit/)

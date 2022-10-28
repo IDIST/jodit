@@ -1,4 +1,3 @@
-
 /**
  * [[include:plugins/README.md]]
  * @packageDocumentation
@@ -27,7 +26,7 @@ import 'jodit/plugins/hr/hr';
 import 'jodit/plugins/iframe/iframe';
 import 'jodit/plugins/image/image';
 import 'jodit/plugins/image-processor/image-processor';
-import 'jodit/plugins/image-properties/image-properties';
+// import 'jodit/plugins/image-properties/image-properties';
 import 'jodit/plugins/indent/indent';
 import 'jodit/plugins/inline-popup/inline-popup';
 import 'jodit/plugins/justify/justify';

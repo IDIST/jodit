@@ -71,8 +71,8 @@ config/* Config.prototype.controls.changeCase */.D.prototype.controls.changeCase
 var core_plugin = __webpack_require__(35570);
 // EXTERNAL MODULE: ./src/modules/index.ts + 15 modules
 var modules = __webpack_require__(81165);
-// EXTERNAL MODULE: ./src/index.ts + 160 modules
-var src = __webpack_require__(85660);
+// EXTERNAL MODULE: ./src/index.ts + 153 modules
+var src = __webpack_require__(16136);
 ;// CONCATENATED MODULE: ./src/plugins/change-case/change-case.ts
 /*!
  * Jodit Editor PRO (https://xdsoft.net/jodit/)

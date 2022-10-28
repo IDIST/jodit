@@ -5,7 +5,7 @@
 import type {
 	HandlerError,
 	HandlerSuccess,
-	IUploader,
+	IUploader
 	// IUploaderData
 } from 'jodit/types';
 import { error, isFunction, isPlainObject, toArray } from 'jodit/core/helpers';
@@ -35,49 +35,6 @@ export function sendFiles(
 
 	const promises: Array<Promise<any>> = [];
 
-	// Convert image to base64
-	// if (o.insertImageAsBase64URI) {
-	// 	let file: File, i: number;
-	//
-	// 	for (i = 0; i < fileList.length; i += 1) {
-	// 		file = fileList[i];
-	//
-	// 		if (file && file.type) {
-	// 			const mime = file.type.match(/\/([a-z0-9]+)/i) as string[];
-	//
-	// 			const extension = mime[1] ? mime[1].toLowerCase() : '';
-	//
-	// 			if (o.imagesExtensions.includes(extension)) {
-	// 				const reader = new FileReader();
-	//
-	// 				promises.push(
-	// 					uploader.j.async.promise((resolve, reject) => {
-	// 						reader.onerror = reject;
-	// 						reader.onloadend = (): void => {
-	// 							const resp = {
-	// 								baseurl: '',
-	// 								files: [reader.result],
-	// 								isImages: [true]
-	// 							} as IUploaderData;
-	//
-	// 							const handler = isFunction(handlerSuccess)
-	// 								? handlerSuccess
-	// 								: o.defaultHandlerSuccess;
-	//
-	// 							handler.call(uploader, resp);
-	//
-	// 							resolve(resp);
-	// 						};
-	// 						reader.readAsDataURL(file);
-	// 					})
-	// 				);
-	//
-	// 				(fileList[i] as any) = null;
-	// 			}
-	// 		}
-	// 	}
-	// }
-
 	fileList = fileList.filter(a => a);
 
 	if (!fileList.length) return Promise.all(promises);
@@ -86,8 +43,8 @@ export function sendFiles(
 	for (let i = 0; i < fileList.length; i += 1) {
 		const form = new FormData();
 
-		form.append(o.pathVariableName, uploader.path);
-		form.append('source', uploader.source);
+		// form.append(o.pathVariableName, uploader.path);
+		// form.append('source', uploader.source);
 
 		const file: File = fileList[i];
 		if (!file) continue;
@@ -126,6 +83,7 @@ export function sendFiles(
 			fileList[i],
 			newName
 		);
+		// Add file
 		form.append(key, iFile, name);
 
 		if (process) {
@@ -143,24 +101,10 @@ export function sendFiles(
 		promises.push(
 			send(uploader, form)
 				.then(resp => {
-					console.log('resp', resp);
-					if (o.isSuccess.call(uploader, resp)) {
-						const handler = isFunction(handlerSuccess)
-							? handlerSuccess
-							: o.defaultHandlerSuccess;
-						handler.call(uploader, o.process.call(uploader, resp));
-						return resp;
-					}
-
-					const handler = isFunction(handlerError)
-						? handlerError
-						: o.defaultHandlerError;
-
-					handler.call(
-						uploader,
-						error(o.getMessage.call(uploader, resp))
-					);
-
+					const handler = isFunction(handlerSuccess)
+						? handlerSuccess
+						: o.defaultHandlerSuccess;
+					handler.call(uploader, o.process.call(uploader, resp));
 					return resp;
 				})
 				.then(() => {

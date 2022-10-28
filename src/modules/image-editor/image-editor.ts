@@ -1,4 +1,3 @@
-
 /**
  * [[include:modules/image-editor/README.md]]
  * @packageDocumentation

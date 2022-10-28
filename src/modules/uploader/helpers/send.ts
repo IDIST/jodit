@@ -80,7 +80,9 @@ export function send(
 
 		return ajax
 			.send()
-			.then(resp => resp.json())
+			.then(resp => {
+				return resp.json();
+			})
 			.catch(error => {
 				uploader.o.error.call(uploader, error);
 			})

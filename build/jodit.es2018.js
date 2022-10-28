@@ -610,7 +610,7 @@ module.exports = "<svg xmlns='http://www.w3.org/2000/svg' viewBox=\"0 0 1792 179
 /***/ 79096:
 /***/ (function(module) {
 
-module.exports = "<svg width=\"1792\" height=\"1792\" viewBox=\"0 0 1792 1792\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"> <path d=\"M1054.37 658.392L737.632 975.184C732.283 980.35 728.017 986.529 725.082 993.361C722.147 1000.19 720.603 1007.54 720.538 1014.98C720.473 1022.41 721.89 1029.79 724.706 1036.67C727.522 1043.55 731.68 1049.8 736.938 1055.06C742.196 1060.32 748.448 1064.48 755.331 1067.29C762.213 1070.11 769.587 1071.53 777.022 1071.46C784.458 1071.4 791.806 1069.85 798.639 1066.92C805.471 1063.98 811.65 1059.72 816.816 1054.37L1133.61 737.632C1165.12 706.123 1182.82 663.388 1182.82 618.828C1182.82 574.268 1165.12 531.533 1133.61 500.024C1102.1 468.515 1059.36 450.814 1014.8 450.814C970.244 450.814 927.509 468.515 896 500.024L579.208 816.816C552.668 842.695 531.531 873.587 517.023 907.698C502.515 941.81 494.925 978.463 494.693 1015.53C494.46 1052.6 501.591 1089.34 515.67 1123.63C529.75 1157.93 550.498 1189.08 576.711 1215.29C602.925 1241.5 634.081 1262.24 668.374 1276.32C702.667 1290.39 739.413 1297.52 776.481 1297.28C813.549 1297.04 850.201 1289.45 884.311 1274.93C918.42 1260.42 949.309 1239.28 975.184 1212.74L1291.98 896L1371.16 975.184L1054.37 1291.98C980.85 1365.49 881.138 1406.8 777.168 1406.8C673.198 1406.8 573.486 1365.49 499.968 1291.98C426.45 1218.46 385.148 1118.75 385.148 1014.78C385.148 910.806 426.45 811.094 499.968 737.576L816.816 420.84C842.775 394.653 873.651 373.851 907.671 359.628C941.691 345.405 978.185 338.042 1015.06 337.962C1051.93 337.881 1088.46 345.084 1122.54 359.158C1156.62 373.231 1187.59 393.898 1213.66 419.971C1239.73 446.044 1260.4 477.011 1274.47 511.093C1288.55 545.175 1295.75 581.701 1295.67 618.574C1295.59 655.447 1288.23 691.941 1274 725.961C1259.78 759.981 1238.98 790.857 1212.79 816.816L896 1133.66C864.484 1165.17 821.742 1182.87 777.176 1182.87C732.611 1182.86 689.873 1165.15 658.364 1133.64C626.855 1102.12 609.157 1059.38 609.162 1014.81C609.167 970.247 626.876 927.509 658.392 896L975.184 579.208L1054.37 658.392Z\"/> </svg>"
+module.exports = "<svg width=\"1792\" height=\"1792\" viewBox=\"0 0 1792 1792\" xmlns=\"http://www.w3.org/2000/svg\"> <path d=\"M1054.37 658.392L737.632 975.184C732.283 980.35 728.017 986.529 725.082 993.361C722.147 1000.19 720.603 1007.54 720.538 1014.98C720.473 1022.41 721.89 1029.79 724.706 1036.67C727.522 1043.55 731.68 1049.8 736.938 1055.06C742.196 1060.32 748.448 1064.48 755.331 1067.29C762.213 1070.11 769.587 1071.53 777.022 1071.46C784.458 1071.4 791.806 1069.85 798.639 1066.92C805.471 1063.98 811.65 1059.72 816.816 1054.37L1133.61 737.632C1165.12 706.123 1182.82 663.388 1182.82 618.828C1182.82 574.268 1165.12 531.533 1133.61 500.024C1102.1 468.515 1059.36 450.814 1014.8 450.814C970.244 450.814 927.509 468.515 896 500.024L579.208 816.816C552.668 842.695 531.531 873.587 517.023 907.698C502.515 941.81 494.925 978.463 494.693 1015.53C494.46 1052.6 501.591 1089.34 515.67 1123.63C529.75 1157.93 550.498 1189.08 576.711 1215.29C602.925 1241.5 634.081 1262.24 668.374 1276.32C702.667 1290.39 739.413 1297.52 776.481 1297.28C813.549 1297.04 850.201 1289.45 884.311 1274.93C918.42 1260.42 949.309 1239.28 975.184 1212.74L1291.98 896L1371.16 975.184L1054.37 1291.98C980.85 1365.49 881.138 1406.8 777.168 1406.8C673.198 1406.8 573.486 1365.49 499.968 1291.98C426.45 1218.46 385.148 1118.75 385.148 1014.78C385.148 910.806 426.45 811.094 499.968 737.576L816.816 420.84C842.775 394.653 873.651 373.851 907.671 359.628C941.691 345.405 978.185 338.042 1015.06 337.962C1051.93 337.881 1088.46 345.084 1122.54 359.158C1156.62 373.231 1187.59 393.898 1213.66 419.971C1239.73 446.044 1260.4 477.011 1274.47 511.093C1288.55 545.175 1295.75 581.701 1295.67 618.574C1295.59 655.447 1288.23 691.941 1274 725.961C1259.78 759.981 1238.98 790.857 1212.79 816.816L896 1133.66C864.484 1165.17 821.742 1182.87 777.176 1182.87C732.611 1182.86 689.873 1165.15 658.364 1133.64C626.855 1102.12 609.157 1059.38 609.162 1014.81C609.167 970.247 626.876 927.509 658.392 896L975.184 579.208L1054.37 658.392Z\"/> </svg>"
 
 /***/ }),
 
@@ -4765,7 +4765,8 @@ const buttons = [
     'ul',
     'ol',
     '|',
-    'table'
+    'table',
+    'preview'
 ];
 class Config {
     constructor() {
@@ -15338,7 +15339,7 @@ View.defaultOptions = {
 
 /***/ }),
 
-/***/ 85660:
+/***/ 16136:
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -19774,594 +19775,6 @@ function dataURItoBlob(dataURI) {
 }
 global/* pluginSystem.add */.pw.add('imageProcessor', imageProcessor);
 
-// EXTERNAL MODULE: ./src/core/ui/button/index.ts + 2 modules
-var ui_button = __webpack_require__(17460);
-// EXTERNAL MODULE: ./src/modules/image-editor/image-editor.ts + 2 modules
-var image_editor = __webpack_require__(21121);
-;// CONCATENATED MODULE: ./src/plugins/image-properties/templates/form.ts
-
-function form_form(editor) {
-    const { showPreview, editSize } = editor.o.image, gi = icon/* Icon.get.bind */.J.get.bind(icon/* Icon */.J);
-    return editor.c.fromHTML(`<form class="jodit-properties">
-		<div class="jodit-grid jodit-grid_xs-column">
-			<div class="jodit_col-lg-2-5 jodit_col-xs-5-5">
-				<div class="jodit-properties_view_box">
-					<div style="${!showPreview ? 'display:none' : ''}" class="jodit-properties_image_view">
-						<img data-ref="imageViewSrc" src="" alt=""/>
-					</div>
-					<div style="${!editSize ? 'display:none' : ''}" class="jodit-form__group jodit-properties_image_sizes">
-						<input data-ref="imageWidth" type="text" class="jodit-input"/>
-						<a data-ref="lockSize" class="jodit-properties__lock">${gi('lock')}</a>
-						<input data-ref="imageHeight" type="text" class="imageHeight jodit-input"/>
-					</div>
-				</div>
-			</div>
-			<div data-ref="tabsBox" class="jodit_col-lg-3-5 jodit_col-xs-5-5"></div>
-		</div>
-	</form>`);
-}
-
-;// CONCATENATED MODULE: ./src/plugins/image-properties/templates/main-tab.ts
-
-function mainTab(editor) {
-    const opt = editor.o, i18n = editor.i18n.bind(editor), gi = icon/* Icon.get.bind */.J.get.bind(icon/* Icon */.J), hasFbUrl = opt.filebrowser.ajax.url || opt.uploader.url, hasEditor = opt.image.useImageEditor;
-    return editor.c.fromHTML(`<div style="${!opt.image.editSrc ? 'display:none' : ''}" class="jodit-form__group">
-			<label>${i18n('Src')}</label>
-			<div class="jodit-input_group">
-				<input data-ref="imageSrc" class="jodit-input" type="text"/>
-				<div
-					class="jodit-input_group-buttons"
-					style="${hasFbUrl ? '' : 'display: none'}"
-				>
-						<a
-							data-ref="changeImage"
-							class="jodit-button"
-						>${gi('image')}</a>
-						<a
-							data-ref="editImage"
-							class="jodit-button"
-							style="${hasEditor ? '' : 'display: none'}"
-						>${gi('crop')}</a>
-				</div>
-			</div>
-		</div>
-		<div style="${!opt.image.editTitle ? 'display:none' : ''}" class="jodit-form__group">
-			<label>${i18n('Title')}</label>
-			<input data-ref="imageTitle" type="text" class="jodit-input"/>
-		</div>
-		<div style="${!opt.image.editAlt ? 'display:none' : ''}" class="jodit-form__group">
-			<label>${i18n('Alternative')}</label>
-			<input data-ref="imageAlt" type="text" class="jodit-input"/>
-		</div>
-		<div style="${!opt.image.editLink ? 'display:none' : ''}" class="jodit-form__group">
-			<label>${i18n('Link')}</label>
-			<input data-ref="imageLink" type="text" class="jodit-input"/>
-		</div>
-		<div style="${!opt.image.editLink ? 'display:none' : ''}" class="jodit-form__group">
-			<label class="jodit_vertical_middle">
-				<input data-ref="imageLinkOpenInNewTab" type="checkbox" class="jodit-checkbox"/>
-				<span>${i18n('Open link in new tab')}</span>
-			</label>
-		</div>`);
-}
-
-;// CONCATENATED MODULE: ./src/plugins/image-properties/templates/position-tab.ts
-
-function positionTab(editor) {
-    const opt = editor.o, i18n = editor.i18n.bind(editor), gi = icon/* Icon.get.bind */.J.get.bind(icon/* Icon */.J);
-    return editor.c.fromHTML(`<div style="${!opt.image.editMargins ? 'display:none' : ''}" class="jodit-form__group">
-			<label>${i18n('Margins')}</label>
-			<div class="jodit-grid jodit_vertical_middle">
-				<input class="jodit_col-lg-1-5 jodit-input" data-ref="marginTop" type="text" placeholder="${i18n('top')}"/>
-				<a style="text-align: center;" data-ref="lockMargin" class="jodit-properties__lock jodit_col-lg-1-5">${gi('lock')}</a>
-				<input disabled="true" class="jodit_col-lg-1-5 jodit-input" data-ref="marginRight" type="text" placeholder="${i18n('right')}"/>
-				<input disabled="true" class="jodit_col-lg-1-5 jodit-input" data-ref="marginBottom" type="text" placeholder="${i18n('bottom')}"/>
-				<input disabled="true" class="jodit_col-lg-1-5 jodit-input" data-ref="marginLeft" type="text" placeholder="${i18n('left')}"/>
-			</div>
-		</div>
-		<div
-			style="${!opt.image.editAlign ? 'display:none' : ''}"
-			class="jodit-form__group"
-		>
-			<label>${i18n('Align')}</label>
-			<select data-ref="align" class="jodit-select">
-				<option value="">${i18n('--Not Set--')}</option>
-				<option value="left">${i18n('Left')}</option>
-				<option value="center">${i18n('Center')}</option>
-				<option value="right">${i18n('Right')}</option>
-			</select>
-		</div>
-		<div style="${!opt.image.editStyle ? 'display:none' : ''}" class="jodit-form__group">
-			<label>${i18n('Styles')}</label>
-			<input data-ref="style" type="text" class="jodit-input"/>
-		</div>
-		<div style="${!opt.image.editClass ? 'display:none' : ''}" class="jodit-form__group">
-			<label>${i18n('Classes')}</label>
-			<input data-ref="classes" type="text" class="jodit-input"/>
-		</div>
-		<div style="${!opt.image.editId ? 'display:none' : ''}" class="jodit-form__group">
-			<label>Id</label>
-			<input data-ref="id" type="text" class="jodit-input"/>
-		</div>
-		<div
-			style="${!opt.image.editBorderRadius ? 'display:none' : ''}"
-			class="jodit-form__group"
-		>
-			<label>${i18n('Border radius')}</label>
-				<input data-ref="borderRadius" type="number" class="jodit-input"/>
-		</div>`);
-}
-
-;// CONCATENATED MODULE: ./src/plugins/image-properties/config.ts
-
-config/* Config.prototype.image */.D.prototype.image = {
-    dialogWidth: 600,
-    openOnDblClick: true,
-    editSrc: true,
-    useImageEditor: true,
-    editTitle: true,
-    editAlt: true,
-    editLink: true,
-    editSize: true,
-    editBorderRadius: true,
-    editMargins: true,
-    editClass: true,
-    editStyle: true,
-    editId: true,
-    editAlign: true,
-    showPreview: true,
-    selectImageAfterClose: true
-};
-
-;// CONCATENATED MODULE: ./src/plugins/image-properties/image-properties.ts
-
-
-
-
-
-
-
-
-
-
-
-
-
-const normalSizeToString = (value) => {
-    value = (0,helpers.trim)(value);
-    return /^[0-9]+$/.test(value) ? value + 'px' : value;
-};
-const normalSizeFromString = (value) => {
-    return /^[-+]?[0-9.]+px$/.test(value.toString())
-        ? parseFloat(value.toString())
-        : value;
-};
-class imageProperties extends modules.Plugin {
-    constructor() {
-        super(...arguments);
-        this.state = {
-            image: new Image(),
-            get ratio() {
-                return this.image.naturalWidth / this.image.naturalHeight || 1;
-            },
-            sizeIsLocked: true,
-            marginIsLocked: true
-        };
-        this.activeTabState = {
-            __activeTab: 'Image'
-        };
-    }
-    onChangeMarginIsLocked() {
-        if (!this.form) {
-            return;
-        }
-        const { marginRight, marginBottom, marginLeft, lockMargin } = (0,helpers.refs)(this.form);
-        [marginRight, marginBottom, marginLeft].forEach(elm => {
-            (0,helpers.attr)(elm, 'disabled', this.state.marginIsLocked || null);
-        });
-        lockMargin.innerHTML = modules.Icon.get(this.state.marginIsLocked ? 'lock' : 'unlock');
-    }
-    onChangeSizeIsLocked() {
-        if (!this.form) {
-            return;
-        }
-        const { lockSize, imageWidth } = (0,helpers.refs)(this.form);
-        lockSize.innerHTML = modules.Icon.get(this.state.sizeIsLocked ? 'lock' : 'unlock');
-        lockSize.classList.remove('jodit-properties__lock');
-        lockSize.classList.remove('jodit-properties__unlock');
-        lockSize.classList.add(this.state.sizeIsLocked
-            ? 'jodit-properties__lock'
-            : 'jodit-properties__unlock');
-        this.j.e.fire(imageWidth, 'change');
-    }
-    open() {
-        this.makeForm();
-        this.activeTabState.__activeTab = 'Image';
-        this.j.e.fire('hidePopup');
-        (0,helpers.markOwner)(this.j, this.dialog.container);
-        this.state.marginIsLocked = true;
-        this.state.sizeIsLocked = true;
-        this.onChangeMarginIsLocked();
-        this.onChangeSizeIsLocked();
-        this.updateValues();
-        this.dialog.open().setModal(true).setPosition();
-        return false;
-    }
-    makeForm() {
-        if (this.dialog) {
-            return;
-        }
-        this.dialog = this.j.dlg({
-            minWidth: Math.min(400, screen.width),
-            minHeight: 590,
-            buttons: ['fullsize', 'dialog.close']
-        });
-        const editor = this.j, opt = editor.o, i18n = editor.i18n.bind(editor), buttons = {
-            check: (0,ui_button/* Button */.zx)(editor, 'ok', 'Apply', 'primary'),
-            remove: (0,ui_button/* Button */.zx)(editor, 'bin', 'Delete')
-        };
-        editor.e.on(this.dialog, 'afterClose', () => {
-            if (this.state.image.parentNode &&
-                opt.image.selectImageAfterClose) {
-                editor.s.select(this.state.image);
-            }
-        });
-        buttons.remove.onAction(() => {
-            editor.s.removeNode(this.state.image);
-            this.dialog.close();
-        });
-        const { dialog } = this;
-        dialog.setHeader(i18n('Image properties'));
-        const mainForm = form_form(editor);
-        this.form = mainForm;
-        dialog.setContent(mainForm);
-        const { tabsBox } = (0,helpers.refs)(this.form);
-        if (tabsBox) {
-            tabsBox.appendChild((0,widget/* TabsWidget */.IL)(editor, [
-                { name: 'Image', content: mainTab(editor) },
-                { name: 'Advanced', content: positionTab(editor) }
-            ], this.activeTabState));
-        }
-        buttons.check.onAction(this.onApply);
-        const { changeImage, editImage } = (0,helpers.refs)(this.form);
-        editor.e.on(changeImage, 'click', this.openImagePopup);
-        if (opt.image.useImageEditor) {
-            editor.e.on(editImage, 'click', this.openImageEditor);
-        }
-        const { lockSize, lockMargin, imageWidth, imageHeight } = (0,helpers.refs)(mainForm);
-        if (lockSize) {
-            editor.e.on(lockSize, 'click', () => {
-                this.state.sizeIsLocked = !this.state.sizeIsLocked;
-            });
-        }
-        editor.e.on(lockMargin, 'click', (e) => {
-            this.state.marginIsLocked = !this.state.marginIsLocked;
-            e.preventDefault();
-        });
-        const changeSizes = (event) => {
-            if (!(0,helpers.isNumeric)(imageWidth.value) || !(0,helpers.isNumeric)(imageHeight.value)) {
-                return;
-            }
-            const w = parseFloat(imageWidth.value), h = parseFloat(imageHeight.value);
-            if (event.target === imageWidth) {
-                imageHeight.value = Math.round(w / this.state.ratio).toString();
-            }
-            else {
-                imageWidth.value = Math.round(h * this.state.ratio).toString();
-            }
-        };
-        editor.e.on([imageWidth, imageHeight], 'change keydown mousedown paste', (event) => {
-            if (!this.state.sizeIsLocked) {
-                return;
-            }
-            editor.async.setTimeout(changeSizes.bind(this, event), {
-                timeout: editor.defaultTimeout,
-                label: 'image-properties-changeSize'
-            });
-        });
-        dialog.setFooter([buttons.remove, buttons.check]);
-        dialog.setSize(this.j.o.image.dialogWidth);
-    }
-    updateValues() {
-        const opt = this.j.o;
-        const { image } = this.state;
-        const { marginTop, marginRight, marginBottom, marginLeft, lockMargin, imageSrc, id, classes, align, style, imageTitle, imageAlt, borderRadius, imageLink, imageWidth, imageHeight, imageLinkOpenInNewTab, imageViewSrc, lockSize } = (0,helpers.refs)(this.form);
-        const updateLock = () => {
-            lockMargin.checked = this.state.marginIsLocked;
-            lockSize.checked = this.state.sizeIsLocked;
-        }, updateAlign = () => {
-            if (image.style.cssFloat &&
-                ['left', 'right'].indexOf(image.style.cssFloat.toLowerCase()) !== -1) {
-                align.value = (0,helpers.css)(image, 'float');
-            }
-            else {
-                if ((0,helpers.css)(image, 'display') === 'block' &&
-                    image.style.marginLeft === 'auto' &&
-                    image.style.marginRight === 'auto') {
-                    align.value = 'center';
-                }
-            }
-        }, updateBorderRadius = () => {
-            borderRadius.value = (parseInt(image.style.borderRadius || '0', 10) || '0').toString();
-        }, updateId = () => {
-            id.value = (0,helpers.attr)(image, 'id') || '';
-        }, updateStyle = () => {
-            style.value = (0,helpers.attr)(image, 'style') || '';
-        }, updateClasses = () => {
-            classes.value = ((0,helpers.attr)(image, 'class') || '').replace(/jodit_focused_image[\s]*/, '');
-        }, updateMargins = () => {
-            if (!opt.image.editMargins) {
-                return;
-            }
-            let equal = true, wasEmptyField = false;
-            [marginTop, marginRight, marginBottom, marginLeft].forEach(elm => {
-                const id = (0,helpers.attr)(elm, 'data-ref') || '';
-                let value = image.style.getPropertyValue((0,helpers.kebabCase)(id));
-                if (!value) {
-                    wasEmptyField = true;
-                    elm.value = '';
-                    return;
-                }
-                if (/^[0-9]+(px)?$/.test(value)) {
-                    value = parseInt(value, 10);
-                }
-                elm.value = value.toString() || '';
-                if ((wasEmptyField && elm.value) ||
-                    (equal &&
-                        id !== 'marginTop' &&
-                        elm.value !== marginTop.value)) {
-                    equal = false;
-                }
-            });
-            this.state.marginIsLocked = equal;
-        }, updateSizes = () => {
-            const width = (0,helpers.attr)(image, 'width') ||
-                (0,helpers.css)(image, 'width', true) ||
-                false, height = (0,helpers.attr)(image, 'height') ||
-                (0,helpers.css)(image, 'height', true) ||
-                false;
-            imageWidth.value =
-                width !== false
-                    ? normalSizeFromString(width).toString()
-                    : image.offsetWidth.toString();
-            imageHeight.value =
-                height !== false
-                    ? normalSizeFromString(height).toString()
-                    : image.offsetHeight.toString();
-            this.state.sizeIsLocked = (() => {
-                if (!(0,helpers.isNumeric)(imageWidth.value) ||
-                    !(0,helpers.isNumeric)(imageHeight.value)) {
-                    return false;
-                }
-                const w = parseFloat(imageWidth.value), h = parseFloat(imageHeight.value);
-                return Math.abs(w - h * this.state.ratio) < 1;
-            })();
-        }, updateText = () => {
-            imageTitle.value = (0,helpers.attr)(image, 'title') || '';
-            imageAlt.value = (0,helpers.attr)(image, 'alt') || '';
-            const a = modules.Dom.closest(image, 'a', this.j.editor);
-            if (a) {
-                imageLink.value = (0,helpers.attr)(a, 'href') || '';
-                imageLinkOpenInNewTab.checked =
-                    (0,helpers.attr)(a, 'target') === '_blank';
-            }
-            else {
-                imageLink.value = '';
-                imageLinkOpenInNewTab.checked = false;
-            }
-        }, updateSrc = () => {
-            imageSrc.value = (0,helpers.attr)(image, 'src') || '';
-            if (imageViewSrc) {
-                (0,helpers.attr)(imageViewSrc, 'src', (0,helpers.attr)(image, 'src') || '');
-            }
-        };
-        updateLock();
-        updateSrc();
-        updateText();
-        updateSizes();
-        updateMargins();
-        updateClasses();
-        updateId();
-        updateBorderRadius();
-        updateAlign();
-        updateStyle();
-    }
-    onApply() {
-        const { style, imageSrc, borderRadius, imageTitle, imageAlt, imageLink, imageWidth, imageHeight, marginTop, marginRight, marginBottom, marginLeft, imageLinkOpenInNewTab, align, classes, id } = (0,helpers.refs)(this.form);
-        const opt = this.j.o;
-        const { image } = this.state;
-        if (opt.image.editStyle) {
-            (0,helpers.attr)(image, 'style', style.value || null);
-        }
-        if (imageSrc.value) {
-            (0,helpers.attr)(image, 'src', imageSrc.value);
-        }
-        else {
-            modules.Dom.safeRemove(image);
-            this.dialog.close();
-            return;
-        }
-        if (borderRadius.value !== '0' && /^[0-9]+$/.test(borderRadius.value)) {
-            image.style.borderRadius = borderRadius.value + 'px';
-        }
-        else {
-            image.style.borderRadius = '';
-        }
-        (0,helpers.attr)(image, 'title', imageTitle.value || null);
-        (0,helpers.attr)(image, 'alt', imageAlt.value || null);
-        let link = modules.Dom.closest(image, 'a', this.j.editor);
-        if (imageLink.value) {
-            if (!link) {
-                link = modules.Dom.wrap(image, 'a', this.j.createInside);
-            }
-            (0,helpers.attr)(link, 'href', imageLink.value);
-            (0,helpers.attr)(link, 'target', imageLinkOpenInNewTab.checked ? '_blank' : null);
-        }
-        else {
-            if (link && link.parentNode) {
-                link.parentNode.replaceChild(image, link);
-            }
-        }
-        if (imageWidth.value !== image.offsetWidth.toString() ||
-            imageHeight.value !== image.offsetHeight.toString()) {
-            const updatedtWidth = (0,helpers.trim)(imageWidth.value)
-                ? normalSizeToString(imageWidth.value)
-                : null;
-            const updatedHeight = (0,helpers.trim)(imageHeight.value)
-                ? normalSizeToString(imageHeight.value)
-                : null;
-            (0,helpers.css)(image, {
-                width: updatedtWidth,
-                height: updatedHeight
-            });
-            (0,helpers.attr)(image, 'width', (0,helpers.attr)(image, 'width') ? updatedtWidth : null);
-            (0,helpers.attr)(image, 'height', (0,helpers.attr)(image, 'height') ? updatedHeight : null);
-        }
-        const margins = [marginTop, marginRight, marginBottom, marginLeft];
-        if (opt.image.editMargins) {
-            if (!this.state.marginIsLocked) {
-                margins.forEach((margin) => {
-                    const side = (0,helpers.attr)(margin, 'data-ref') || '';
-                    (0,helpers.css)(image, side, normalSizeToString(margin.value));
-                });
-            }
-            else {
-                (0,helpers.css)(image, 'margin', normalSizeToString(marginTop.value));
-            }
-        }
-        if (opt.image.editClass) {
-            (0,helpers.attr)(image, 'class', classes.value || null);
-        }
-        if (opt.image.editId) {
-            (0,helpers.attr)(image, 'id', id.value || null);
-        }
-        if (opt.image.editAlign) {
-            (0,helpers.hAlignElement)(image, align.value);
-        }
-        this.j.synchronizeValues();
-        this.dialog.close();
-    }
-    openImageEditor() {
-        const url = (0,helpers.attr)(this.state.image, 'src') || '', a = this.j.c.element('a'), loadExternal = () => {
-            if (a.host !== location.host) {
-                this.j.confirm('You can only edit your own images. Download this image on the host?', yes => {
-                    if (yes && this.j.uploader) {
-                        this.j.uploader.uploadRemoteImage(a.href.toString(), resp => {
-                            this.j.alert('The image has been successfully uploaded to the host!', () => {
-                                if ((0,helpers.isString)(resp.newfilename)) {
-                                    (0,helpers.attr)(this.state.image, 'src', resp.baseurl +
-                                        resp.newfilename);
-                                    this.updateValues();
-                                }
-                            });
-                        }, error => {
-                            this.j.alert('There was an error loading %s', error.message);
-                        });
-                    }
-                });
-                return;
-            }
-        };
-        a.href = url;
-        this.j.filebrowser.dataProvider
-            .getPathByUrl(a.href.toString())
-            .then(resp => {
-            image_editor/* openImageEditor.call */.r.call(this.j.filebrowser, a.href, resp.name, resp.path, resp.source, () => {
-                const timestamp = new Date().getTime();
-                (0,helpers.attr)(this.state.image, 'src', url +
-                    (url.indexOf('?') !== -1 ? '' : '?') +
-                    '&_tmp=' +
-                    timestamp.toString());
-                this.updateValues();
-            }, error => {
-                this.j.alert(error.message);
-            });
-        })
-            .catch(error => {
-            this.j.alert(error.message, loadExternal);
-        });
-    }
-    openImagePopup(event) {
-        const popup = new modules.Popup(this.j), { changeImage } = (0,helpers.refs)(this.form);
-        popup.setZIndex(this.dialog.getZIndex() + 1);
-        popup
-            .setContent((0,widget/* FileSelectorWidget */.ov)(this.j, {
-            upload: (data) => {
-                if (data.files && data.files.length) {
-                    (0,helpers.attr)(this.state.image, 'src', data.baseurl + data.files[0]);
-                }
-                this.updateValues();
-                popup.close();
-            },
-            filebrowser: (data) => {
-                if (data &&
-                    (0,helpers.isArray)(data.files) &&
-                    data.files.length) {
-                    (0,helpers.attr)(this.state.image, 'src', data.files[0]);
-                    popup.close();
-                    this.updateValues();
-                }
-            }
-        }, this.state.image, popup.close))
-            .open(() => (0,helpers.position)(changeImage));
-        event.stopPropagation();
-    }
-    afterInit(editor) {
-        const self = this;
-        editor.e
-            .on('afterConstructor changePlace', () => {
-            editor.e
-                .off(editor.editor, '.imageproperties')
-                .on(editor.editor, 'dblclick.imageproperties', (e) => {
-                const image = e.target;
-                if (!modules.Dom.isTag(image, 'img')) {
-                    return;
-                }
-                if (editor.o.image.openOnDblClick) {
-                    if (this.j.e.fire('openOnDblClick', image) ===
-                        false) {
-                        return;
-                    }
-                    self.state.image = image;
-                    if (!editor.o.readonly) {
-                        e.stopImmediatePropagation();
-                        e.preventDefault();
-                        self.open();
-                    }
-                }
-                else {
-                    e.stopImmediatePropagation();
-                    editor.s.select(image);
-                }
-            });
-        })
-            .on('openImageProperties.imageproperties', (image) => {
-            this.state.image = image;
-            this.open();
-        });
-    }
-    beforeDestruct(editor) {
-        this.dialog && this.dialog.destruct();
-        editor.e.off(editor.editor, '.imageproperties').off('.imageproperties');
-    }
-}
-(0,tslib_es6/* __decorate */.gn)([
-    (0,decorators.watch)('state.marginIsLocked')
-], imageProperties.prototype, "onChangeMarginIsLocked", null);
-(0,tslib_es6/* __decorate */.gn)([
-    (0,decorators.watch)('state.sizeIsLocked')
-], imageProperties.prototype, "onChangeSizeIsLocked", null);
-(0,tslib_es6/* __decorate */.gn)([
-    decorators.autobind
-], imageProperties.prototype, "onApply", null);
-(0,tslib_es6/* __decorate */.gn)([
-    decorators.autobind
-], imageProperties.prototype, "openImageEditor", null);
-(0,tslib_es6/* __decorate */.gn)([
-    decorators.autobind
-], imageProperties.prototype, "openImagePopup", null);
-global/* pluginSystem.add */.pw.add('imageProperties', imageProperties);
-
 ;// CONCATENATED MODULE: ./src/plugins/indent/helpers.ts
 
 const getKey = (direction, box) => `${dom_dom/* Dom.isCell */.i.isCell(box) ? 'padding' : 'margin'}${direction === 'rtl' ? 'Right' : 'Left'}`;
@@ -21025,6 +20438,8 @@ global/* pluginSystem.add */.pw.add('lineHeight', lineHeight);
 
 // EXTERNAL MODULE: ./src/core/ui/form/index.ts + 6 modules
 var ui_form = __webpack_require__(1542);
+// EXTERNAL MODULE: ./src/core/ui/button/index.ts + 2 modules
+var ui_button = __webpack_require__(17460);
 ;// CONCATENATED MODULE: ./src/plugins/link/template.ts
 
 
@@ -21431,74 +20846,6 @@ class link_link extends core_plugin/* Plugin */.S {
     decorators.autobind
 ], link_link.prototype, "generateForm", null);
 global/* pluginSystem.add */.pw.add('link', link_link);
-
-;// CONCATENATED MODULE: ./src/plugins/media/config.ts
-
-config/* Config.prototype.mediaFakeTag */.D.prototype.mediaFakeTag = 'jodit-media';
-config/* Config.prototype.mediaInFakeBlock */.D.prototype.mediaInFakeBlock = true;
-config/* Config.prototype.mediaBlocks */.D.prototype.mediaBlocks = ['video', 'audio'];
-
-;// CONCATENATED MODULE: ./src/plugins/media/media.ts
-
-
-
-
-function media(editor) {
-    const keyFake = 'jodit_fake_wrapper';
-    const { mediaFakeTag, mediaBlocks, mediaInFakeBlock } = editor.options;
-    const wrap = (element) => {
-        if (element.parentNode &&
-            (0,helpers_utils/* attr */.Lj)(element.parentNode, 'data-jodit_iframe_wrapper')) {
-            element = element.parentNode;
-        }
-        else {
-            const wrapper = editor.createInside.element(mediaFakeTag, {
-                'data-jodit-temp': 1,
-                contenteditable: false,
-                draggable: true,
-                [`data-${keyFake}`]: 1
-            });
-            (0,helpers_utils/* attr */.Lj)(wrapper, 'style', (0,helpers_utils/* attr */.Lj)(element, 'style'));
-            wrapper.style.display =
-                element.style.display === 'inline-block'
-                    ? 'inline-block'
-                    : 'block';
-            wrapper.style.width = element.offsetWidth + 'px';
-            wrapper.style.height = element.offsetHeight + 'px';
-            if (element.parentNode) {
-                element.parentNode.insertBefore(wrapper, element);
-            }
-            wrapper.appendChild(element);
-            element = wrapper;
-        }
-        editor.e
-            .off(element, 'mousedown.select touchstart.select')
-            .on(element, 'mousedown.select touchstart.select', () => {
-            editor.s.setCursorAfter(element);
-        });
-    };
-    if (mediaInFakeBlock) {
-        editor.e
-            .on('afterGetValueFromEditor', (data) => {
-            const rxp = new RegExp(`<${mediaFakeTag}[^>]+data-${keyFake}[^>]+>([^]+?)</${mediaFakeTag}>`, 'ig');
-            if (rxp.test(data.value)) {
-                data.value = data.value.replace(rxp, '$1');
-            }
-        })
-            .on('change afterInit afterSetMode changePlace', editor.async.debounce(() => {
-            if (!editor.isDestructed &&
-                editor.getMode() !== constants.MODE_SOURCE) {
-                (0,helpers_utils.$$)(mediaBlocks.join(','), editor.editor).forEach((elm) => {
-                    if (!(0,helpers_utils/* dataBind */.qI)(elm, keyFake)) {
-                        (0,helpers_utils/* dataBind */.qI)(elm, keyFake, true);
-                        wrap(elm);
-                    }
-                });
-            }
-        }, editor.defaultTimeout));
-    }
-}
-global/* pluginSystem.add */.pw.add('media', media);
 
 // EXTERNAL MODULE: ./src/core/ui/helpers/buttons.ts
 var helpers_buttons = __webpack_require__(74091);
@@ -26306,7 +25653,6 @@ global/* pluginSystem.add */.pw.add('gif', gif);
 
 
 
-
 ;// CONCATENATED MODULE: ./src/index.ts
 
 if (false) {}
@@ -29989,7 +29335,9 @@ function send(uploader, data) {
         instances.add(ajax);
         return ajax
             .send()
-            .then(resp => resp.json())
+            .then(resp => {
+            return resp.json();
+        })
             .catch(error => {
             uploader.o.error.call(uploader, error);
         })
@@ -30023,8 +29371,6 @@ function send_files_sendFiles(uploader, files, handlerSuccess, handlerError, pro
         return Promise.all(promises);
     for (let i = 0; i < fileList.length; i += 1) {
         const form = new FormData();
-        form.append(o.pathVariableName, uploader.path);
-        form.append('source', uploader.source);
         const file = fileList[i];
         if (!file)
             continue;
@@ -30060,18 +29406,10 @@ function send_files_sendFiles(uploader, files, handlerSuccess, handlerError, pro
         o.prepareData.call(uploader, form);
         promises.push(send(uploader, form)
             .then(resp => {
-            console.log('resp', resp);
-            if (o.isSuccess.call(uploader, resp)) {
-                const handler = (0,helpers.isFunction)(handlerSuccess)
-                    ? handlerSuccess
-                    : o.defaultHandlerSuccess;
-                handler.call(uploader, o.process.call(uploader, resp));
-                return resp;
-            }
-            const handler = (0,helpers.isFunction)(handlerError)
-                ? handlerError
-                : o.defaultHandlerError;
-            handler.call(uploader, (0,helpers.error)(o.getMessage.call(uploader, resp)));
+            const handler = (0,helpers.isFunction)(handlerSuccess)
+                ? handlerSuccess
+                : o.defaultHandlerSuccess;
+            handler.call(uploader, o.process.call(uploader, resp));
             return resp;
         })
             .then(() => {
@@ -30117,7 +29455,7 @@ config/* Config.prototype.uploader */.D.prototype.uploader = {
         const fileExtension = matchExtension && matchExtension[1]
             ? matchExtension[1].toLowerCase()
             : '';
-        let path = null;
+        let path;
         switch (fileType) {
             case 'image':
                 if (fileExtension === 'gif')
@@ -30132,8 +29470,8 @@ config/* Config.prototype.uploader */.D.prototype.uploader = {
                 path = 'file';
                 break;
         }
-        const result = new URL(path, 'https://server.superclub.idist.ai/api/v1/media/').href;
-        return result;
+        const url = new URL(path, 'https://server.superclub.idist.ai/api/v1/media/').href;
+        return url;
     },
     insertImageAsBase64URI: false,
     imagesExtensions: ['jpg', 'png', 'jpeg', 'gif'],
@@ -30147,8 +29485,8 @@ config/* Config.prototype.uploader */.D.prototype.uploader = {
     },
     data: null,
     authToken: null,
-    filesVariableName(fileType, fileExtension) {
-        return 'files[0]';
+    filesVariableName() {
+        return 'file';
     },
     withCredentials: false,
     pathVariableName: 'path',
@@ -30161,8 +29499,8 @@ config/* Config.prototype.uploader */.D.prototype.uploader = {
         return resp.success;
     },
     getMessage(resp) {
-        return resp.data.messages !== undefined && (0,is_array/* isArray */.k)(resp.data.messages)
-            ? resp.data.messages.join(' ')
+        return resp.data.message !== undefined && (0,is_array/* isArray */.k)(resp.data.message)
+            ? resp.data.message.join(' ')
             : '';
     },
     processFileName(key, file, name) {
@@ -30174,32 +29512,38 @@ config/* Config.prototype.uploader */.D.prototype.uploader = {
     error(e) {
         this.j.e.fire('errorMessage', e.message, 'error', 4000);
     },
-    getDisplayName(baseurl, filename) {
-        return baseurl + filename;
+    getDisplayName(filename) {
+        return filename;
     },
     defaultHandlerSuccess(resp) {
         const j = this.j || this;
         if (!(0,is_jodit_object/* isJoditObject */.Z)(j)) {
             return;
         }
-        if (resp.files && resp.files.length) {
-            resp.files.forEach((filename, index) => {
-                const [tagName, attr] = resp.isImages && resp.isImages[index]
-                    ? ['img', 'src']
-                    : ['a', 'href'];
-                const elm = j.createInside.element(tagName);
-                elm.setAttribute(attr, resp.baseurl + filename);
-                if (tagName === 'a') {
-                    elm.textContent = j.o.uploader.getDisplayName.call(this, resp.baseurl, filename);
-                }
-                if (tagName === 'img') {
-                    j.s.insertImage(elm, null, j.o.imageDefaultWidth);
-                }
-                else {
-                    j.s.insertNode(elm);
-                }
-            });
+        if (!resp.file)
+            return;
+        let element;
+        switch (resp.type) {
+            case 'image':
+                element = j.c.fromHTML(`<p><img style="width: ${j.o.imageDefaultWidth || 500}px;" src="${resp.file}" alt="${resp.file}"/></p><p></p>`);
+                break;
+            case 'gif':
+                element = j.c.fromHTML(`<p><jodit-gif style="width: ${j.o.imageDefaultWidth || 500}px;" src="${resp.file}" alt="${resp.file}"/></p><p></p>`);
+                break;
+            case 'video':
+                element = j.c.fromHTML(`<p><video controls style="width: ${j.o.imageDefaultWidth || 500}px;" src="${resp.file}" alt="${resp.file}"/></p><p></p>`);
+                break;
+            case 'file':
+                element = j.c.fromHTML(`<jodit-file href="${resp.file}" alt="${resp.file}">${resp.file}</jodit-file><p></p>`);
+                break;
+            case 'audio':
+                element = j.c.fromHTML(`<p><audio controls src="${resp.file}" alt="${resp.file}"></audio></p><p></p>`);
+                break;
+            default:
+                element = j.c.fromHTML(`<p><a href="${resp.file}">${resp.file}</a></p><p></p>`);
+                break;
         }
+        j.s.insertHTML(element);
     },
     defaultHandlerError(e) {
         this.j.e.fire('errorMessage', e.message);
@@ -32008,21 +31352,21 @@ const TabsWidget = (jodit, tabs, state) => {
 
 
 const DragAndDropWidget = (editor, callbacks, fileType, close) => {
-    let inputAccept = null;
+    let inputAccept;
     switch (fileType) {
-        case 'IMAGE':
+        case 'image':
             inputAccept = 'image/*';
             break;
-        case 'GIF':
+        case 'gif':
             inputAccept = 'image/gif';
             break;
-        case 'VIDEO':
+        case 'video':
             inputAccept = 'video/gif';
             break;
-        case 'FILE':
+        case 'file':
             inputAccept = '*';
             break;
-        case 'AUDIO':
+        case 'audio':
             inputAccept = 'audio/*';
             break;
         default:
@@ -32033,11 +31377,11 @@ const DragAndDropWidget = (editor, callbacks, fileType, close) => {
         editor.i18n('or click');
     let svgPath = null;
     switch (fileType) {
-        case 'VIDEO':
+        case 'video':
             svgPath =
                 '<path d="M15.9998 29.3343C13.3628 29.3343 10.7851 28.5524 8.59249 27.0873C6.39992 25.6223 4.69103 23.54 3.6819 21.1037C2.67277 18.6675 2.40874 15.9867 2.92318 13.4004C3.43763 10.8141 4.70746 8.43842 6.57208 6.57379C8.43671 4.70917 10.8124 3.43934 13.3987 2.92489C15.985 2.41044 18.6658 2.67448 21.102 3.68361C23.5383 4.69273 25.6206 6.40163 27.0856 8.5942C28.5506 10.7868 29.3326 13.3645 29.3326 16.0015C29.3326 17.7524 28.9877 19.4861 28.3177 21.1037C27.6477 22.7214 26.6656 24.1912 25.4275 25.4292C24.1894 26.6673 22.7197 27.6494 21.102 28.3194C19.4844 28.9894 17.7507 29.3343 15.9998 29.3343ZM15.9998 26.6671C18.1096 26.6671 20.172 26.0415 21.9262 24.8694C23.6804 23.6972 25.0476 22.0312 25.855 20.0821C26.6624 18.1329 26.8736 15.9881 26.462 13.9188C26.0504 11.8496 25.0345 9.94889 23.5426 8.45706C22.0508 6.96522 20.1501 5.94927 18.0809 5.53767C16.0116 5.12608 13.8668 5.33732 11.9176 6.1447C9.96846 6.95207 8.30247 8.31932 7.13035 10.0735C5.95822 11.8277 5.3326 13.8901 5.3326 15.9999C5.3326 18.829 6.45646 21.5423 8.45695 23.5428C10.4574 25.5432 13.1707 26.6671 15.9998 26.6671ZM14.163 11.2207L20.6686 15.5567C20.7419 15.6053 20.802 15.6713 20.8435 15.7488C20.8851 15.8262 20.9069 15.9128 20.9069 16.0007C20.9069 16.0886 20.8851 16.1752 20.8435 16.2527C20.802 16.3301 20.7419 16.3961 20.6686 16.4447L14.1614 20.7807C14.0812 20.8339 13.9881 20.8643 13.8919 20.8688C13.7958 20.8733 13.7002 20.8517 13.6154 20.8063C13.5305 20.7608 13.4596 20.6932 13.4101 20.6107C13.3606 20.5282 13.3344 20.4338 13.3342 20.3375V11.6623C13.3342 11.5658 13.3603 11.4711 13.4099 11.3883C13.4595 11.3055 13.5307 11.2378 13.6158 11.1923C13.7008 11.1468 13.7967 11.1252 13.8931 11.13C13.9895 11.1347 14.0828 11.1655 14.163 11.2191V11.2207Z"/>';
             break;
-        case 'FILE':
+        case 'file':
             svgPath =
                 '<path d="M7.51457 5.66676H13.5999C13.9544 5.66573 14.3056 5.73508 14.6332 5.87081C14.9607 6.00653 15.258 6.20593 15.5079 6.45743L17.8786 8.82809L17.9079 8.85609C17.9724 8.92091 18.049 8.97231 18.1335 9.00732C18.2179 9.04234 18.3085 9.06027 18.3999 9.06009H24.4839C25.4229 9.06115 26.3233 9.43428 26.9878 10.0978C27.6523 10.7613 28.0268 11.6611 28.0292 12.6001V22.7814C28.0299 23.7225 27.6569 24.6254 26.992 25.2915C26.3272 25.9576 25.425 26.3324 24.4839 26.3334H7.51457C6.57462 26.3324 5.67346 25.9585 5.00881 25.2939C4.34416 24.6292 3.9703 23.728 3.96924 22.7881V9.21209C3.9703 8.27214 4.34416 7.37098 5.00881 6.70633C5.67346 6.04168 6.57462 5.66782 7.51457 5.66676ZM16.5266 10.3041L16.4906 10.2708L14.0906 7.87076C14.026 7.8056 13.9492 7.7539 13.8645 7.71866C13.7798 7.68341 13.689 7.66532 13.5972 7.66543H7.51457C7.1046 7.66578 6.71154 7.82889 6.42177 8.11891C6.13201 8.40892 5.96924 8.80212 5.96924 9.21209V22.7881C5.96959 23.1978 6.13252 23.5907 6.42225 23.8804C6.71198 24.1701 7.10483 24.3331 7.51457 24.3334H24.4839C24.8936 24.3331 25.2865 24.1701 25.5762 23.8804C25.866 23.5907 26.0289 23.1978 26.0292 22.7881V12.6001C26.0289 12.1904 25.866 11.7975 25.5762 11.5078C25.2865 11.218 24.8936 11.0551 24.4839 11.0548H18.3986C17.7006 11.058 17.0289 10.7887 16.5266 10.3041Z"/>';
             break;
@@ -32051,6 +31395,7 @@ const DragAndDropWidget = (editor, callbacks, fileType, close) => {
         `<input type="file" accept="${inputAccept}" tabindex="-1" dir="auto" multiple=""/>` +
         '</div>');
     editor.uploader.bind(dragAndDropWidget, resp => {
+        console.trace('resp1', resp);
         const handler = (0,helpers.isFunction)(callbacks.upload)
             ? callbacks.upload
             : editor.o.uploader.defaultHandlerSuccess;
@@ -32954,8 +32299,7 @@ class MediaItem {
     constructor(editor, imageThumb, image, username, link, alt, width, close) {
         this.element = editor.c.fromHTML(`<div class="jodit-media-item grid-item hover-border-effect skeleton-loader"><img class="" src="${imageThumb}"/></div>`);
         this.element.addEventListener('click', () => {
-            const img = editor.c.fromHTML(`<p style="width: 100%; text-align: center;"><img style="display: inline-block; width: ${width};" src="${image}" alt="${alt}"/></p>
-		<p></p>`);
+            const img = editor.c.fromHTML(`<img style="width: ${editor.o.imageDefaultWidth || 500}px;" src="${image}" alt="${alt}"/></p></p>`);
             editor.s.insertHTML(img);
             if (close)
                 close();
@@ -33071,10 +32415,8 @@ class MediaLists {
         this.setMediaList(mediaList);
     }
     createMediaList(search) {
-        console.log('createMediaList', search);
         let mediaList;
-        console.log('this.fileType', this.fileType);
-        if (this.fileType === 'IMAGE') {
+        if (this.fileType === 'image') {
             mediaList = new ImageMediaList(this.editor, this.callbacks, search, this.close);
         }
         else {
@@ -33139,7 +32481,7 @@ const FileSelectorWidget = (editor, callbacks, elm, close, isImage = true) => {
         tabs.push({
             icon: 'upload',
             name: 'Upload',
-            content: DragAndDropWidget(editor, callbacks, 'IMAGE', close)
+            content: DragAndDropWidget(editor, callbacks, 'image', close)
         });
     }
     if (callbacks.uploadVideo &&
@@ -33148,7 +32490,7 @@ const FileSelectorWidget = (editor, callbacks, elm, close, isImage = true) => {
         tabs.push({
             icon: 'upload',
             name: 'Upload',
-            content: DragAndDropWidget(editor, callbacks, 'VIDEO', close)
+            content: DragAndDropWidget(editor, callbacks, 'video', close)
         });
     }
     if (callbacks.uploadFile &&
@@ -33157,19 +32499,19 @@ const FileSelectorWidget = (editor, callbacks, elm, close, isImage = true) => {
         tabs.push({
             icon: 'upload',
             name: 'Upload',
-            content: DragAndDropWidget(editor, callbacks, 'FILE', close)
+            content: DragAndDropWidget(editor, callbacks, 'file', close)
         });
     }
     if (callbacks.searchUnsplash) {
         tabs.push({
             name: 'Search',
-            content: SearchSelectorWidget(editor, callbacks, 'IMAGE', close)
+            content: SearchSelectorWidget(editor, callbacks, 'image', close)
         });
     }
     if (callbacks.searchGiphy) {
         tabs.push({
             name: 'Search',
-            content: SearchSelectorWidget(editor, callbacks, 'GIF', close)
+            content: SearchSelectorWidget(editor, callbacks, 'gif', close)
         });
     }
     if (callbacks.filebrowser) {
@@ -33547,8 +32889,8 @@ Emoji = Emoji_1 = (0,tslib_es6/* __decorate */.gn)([
 ], Emoji);
 
 
-// EXTERNAL MODULE: ./src/index.ts + 160 modules
-var src = __webpack_require__(85660);
+// EXTERNAL MODULE: ./src/index.ts + 153 modules
+var src = __webpack_require__(16136);
 ;// CONCATENATED MODULE: ./src/plugins/emoji/emoji.ts
 /*!
  * Jodit Editor PRO (https://xdsoft.net/jodit/)
@@ -33999,8 +33341,8 @@ __webpack_require__.d(__webpack_exports__, {
 
 // EXTERNAL MODULE: ./node_modules/tslib/tslib.es6.js
 var tslib_es6 = __webpack_require__(20255);
-// EXTERNAL MODULE: ./src/index.ts + 160 modules
-var src = __webpack_require__(85660);
+// EXTERNAL MODULE: ./src/index.ts + 153 modules
+var src = __webpack_require__(16136);
 // EXTERNAL MODULE: ./src/core/constants.ts
 var constants = __webpack_require__(10063);
 ;// CONCATENATED MODULE: ./src/plugins/paste-from-word/helpers/helpers.ts
@@ -36765,7 +36107,7 @@ module.exports = JSON.parse('{"categories":["Smileys & Emotion","People & Body",
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
 /******/ 	// This entry module is referenced by other modules so it can't be inlined
-/******/ 	var __webpack_exports__ = __webpack_require__(85660);
+/******/ 	var __webpack_exports__ = __webpack_require__(16136);
 /******/ 	__webpack_exports__ = __webpack_require__.O(__webpack_exports__);
 /******/ 	
 /******/ 	return __webpack_exports__;

@@ -37,7 +37,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var jodit_config__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(27537);
 /* harmony import */ var jodit_core_helpers__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(52607);
 /* harmony import */ var jodit_plugins_placeholder_placeholder__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(43257);
-/* harmony import */ var _index__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(85660);
+/* harmony import */ var _index__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(16136);
 /*!
  * Jodit Editor PRO (https://xdsoft.net/jodit/)
  * See LICENSE.md in the project root for license information.

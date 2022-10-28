@@ -1,17 +1,18 @@
 // Jodit
-import type { FileType } from 'jodit/modules/widget/search-selector/FileType';
 import { ImageMediaList } from 'jodit/modules/widget/search-selector/ImageMediaList';
 import { GifMediaList } from 'jodit/modules/widget/search-selector/GifMediaList';
 import type { IJodit } from 'jodit/types';
 import type { ImageSelectorCallbacks } from 'jodit/modules/widget';
 
 // Variable Section
+type imageFileType = 'image' | 'gif';
 
+// Main Section
 export class MediaLists {
 	editor: IJodit;
 	callbacks: ImageSelectorCallbacks;
 
-	fileType: FileType;
+	fileType: imageFileType;
 	element: HTMLElement;
 	mediaLists: { [key: string]: ImageMediaList | GifMediaList } = {};
 	mediaList: ImageMediaList | GifMediaList | null = null;
@@ -20,7 +21,7 @@ export class MediaLists {
 	constructor(
 		editor: IJodit,
 		callbacks: ImageSelectorCallbacks,
-		fileType: FileType,
+		fileType: imageFileType,
 		close: () => void
 	) {
 		this.editor = editor;
@@ -36,10 +37,8 @@ export class MediaLists {
 	}
 
 	private createMediaList(search: string): ImageMediaList | GifMediaList {
-		console.log('createMediaList', search);
 		let mediaList: ImageMediaList | GifMediaList;
-		console.log('this.fileType', this.fileType);
-		if (this.fileType === 'IMAGE') {
+		if (this.fileType === 'image') {
 			mediaList = new ImageMediaList(
 				this.editor,
 				this.callbacks,

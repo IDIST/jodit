@@ -36,8 +36,8 @@ var tslib_es6 = __webpack_require__(20255);
 var core_plugin = __webpack_require__(35570);
 // EXTERNAL MODULE: ./src/core/decorators/index.ts + 7 modules
 var decorators = __webpack_require__(11169);
-// EXTERNAL MODULE: ./src/index.ts + 160 modules
-var src = __webpack_require__(85660);
+// EXTERNAL MODULE: ./src/index.ts + 153 modules
+var src = __webpack_require__(16136);
 // EXTERNAL MODULE: ./src/core/ui/index.ts + 2 modules
 var ui = __webpack_require__(41685);
 // EXTERNAL MODULE: ./src/core/dom/index.ts

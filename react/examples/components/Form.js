@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import JoditEditor from '../../src/';
+// import JoditEditor from '../../src/';
+import JoditEditor from '../../build/jodit-react';
 import './Form.css';
 
 /**

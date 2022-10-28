@@ -141,8 +141,8 @@ UIIframeEditor = (0,tslib_es6/* __decorate */.gn)([
 
 // EXTERNAL MODULE: ./src/core/dom/index.ts
 var dom = __webpack_require__(94522);
-// EXTERNAL MODULE: ./src/index.ts + 160 modules
-var src = __webpack_require__(85660);
+// EXTERNAL MODULE: ./src/index.ts + 153 modules
+var src = __webpack_require__(16136);
 // EXTERNAL MODULE: ./src/core/ui/button/index.ts + 2 modules
 var ui_button = __webpack_require__(17460);
 // EXTERNAL MODULE: ./src/core/helpers/index.ts + 14 modules

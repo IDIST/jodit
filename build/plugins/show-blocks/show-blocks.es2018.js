@@ -203,8 +203,8 @@ var ui = __webpack_require__(41685);
 var global = __webpack_require__(58299);
 // EXTERNAL MODULE: ./src/core/decorators/index.ts + 7 modules
 var decorators = __webpack_require__(11169);
-// EXTERNAL MODULE: ./src/index.ts + 160 modules
-var src = __webpack_require__(85660);
+// EXTERNAL MODULE: ./src/index.ts + 153 modules
+var src = __webpack_require__(16136);
 ;// CONCATENATED MODULE: ./src/plugins/show-blocks/show-blocks.ts
 /*!
  * Jodit Editor PRO (https://xdsoft.net/jodit/)

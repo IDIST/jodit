@@ -31,10 +31,12 @@ Config.prototype.enableDragAndDropFileToEditor = true;
 
 Config.prototype.uploader = {
 	url: (form?: FormData) => {
+		// Jodit
 		const urlDefault =
 			'https://xdsoft.net/jodit/finder/index.php?action=fileUpload';
-
 		if (!(form && form.get('file'))) return urlDefault;
+
+		// Custom Server
 		const file = form.get('file');
 
 		if (!file) return urlDefault;
@@ -50,7 +52,7 @@ Config.prototype.uploader = {
 				? matchExtension[1].toLowerCase()
 				: '';
 
-		let path = null;
+		let path;
 		switch (fileType) {
 			case 'image':
 				if (fileExtension === 'gif') path = 'gif';
@@ -64,12 +66,11 @@ Config.prototype.uploader = {
 				break;
 		}
 
-		const result = new URL(
+		const url = new URL(
 			path,
 			'https://server.superclub.idist.ai/api/v1/media/'
 		).href;
-
-		return result;
+		return url;
 	},
 
 	insertImageAsBase64URI: false,
@@ -84,9 +85,9 @@ Config.prototype.uploader = {
 	data: null,
 	authToken: null,
 
-	filesVariableName(fileType: string, fileExtension: string): string {
-		return 'files[0]';
-		// return 'file';
+	filesVariableName(): string {
+		// return 'files[0]';
+		return 'file';
 	},
 
 	withCredentials: false,
@@ -105,8 +106,8 @@ Config.prototype.uploader = {
 	},
 
 	getMessage(this: IUploader, resp: IUploaderAnswer) {
-		return resp.data.messages !== undefined && isArray(resp.data.messages)
-			? resp.data.messages.join(' ')
+		return resp.data.message !== undefined && isArray(resp.data.message)
+			? resp.data.message.join(' ')
 			: '';
 	},
 
@@ -130,8 +131,8 @@ Config.prototype.uploader = {
 		this.j.e.fire('errorMessage', e.message, 'error', 4000);
 	},
 
-	getDisplayName(this: IUploader, baseurl: string, filename: string): string {
-		return baseurl + filename;
+	getDisplayName(this: IUploader, filename: string): string {
+		return filename;
 	},
 
 	defaultHandlerSuccess(this: IUploader, resp: IUploaderData) {
@@ -141,36 +142,48 @@ Config.prototype.uploader = {
 			return;
 		}
 
-		if (resp.files && resp.files.length) {
-			resp.files.forEach((filename, index: number) => {
-				const [tagName, attr]: string[] =
-					resp.isImages && resp.isImages[index]
-						? ['img', 'src']
-						: ['a', 'href'];
+		if (!resp.file) return;
 
-				const elm = j.createInside.element(tagName);
-
-				elm.setAttribute(attr, resp.baseurl + filename);
-
-				if (tagName === 'a') {
-					elm.textContent = j.o.uploader.getDisplayName.call(
-						this,
-						resp.baseurl,
-						filename
-					);
-				}
-
-				if (tagName === 'img') {
-					j.s.insertImage(
-						elm as HTMLImageElement,
-						null,
-						j.o.imageDefaultWidth
-					);
-				} else {
-					j.s.insertNode(elm);
-				}
-			});
+		let element;
+		switch (resp.type) {
+			case 'image':
+				element = j.c.fromHTML(
+					`<p><img style="width: ${
+						j.o.imageDefaultWidth || 500
+					}px;" src="${resp.file}" alt="${resp.file}"/></p><p></p>`
+				);
+				break;
+			case 'gif':
+				element = j.c.fromHTML(
+					`<p><jodit-gif style="width: ${
+						j.o.imageDefaultWidth || 500
+					}px;" src="${resp.file}" alt="${resp.file}"/></p><p></p>`
+				);
+				break;
+			case 'video':
+				element = j.c.fromHTML(
+					`<p><video controls style="width: ${
+						j.o.imageDefaultWidth || 500
+					}px;" src="${resp.file}" alt="${resp.file}"/></p><p></p>`
+				);
+				break;
+			case 'file':
+				element = j.c.fromHTML(
+					`<jodit-file href="${resp.file}" alt="${resp.file}">${resp.file}</jodit-file><p></p>`
+				);
+				break;
+			case 'audio':
+				element = j.c.fromHTML(
+					`<p><audio controls src="${resp.file}" alt="${resp.file}"></audio></p><p></p>`
+				);
+				break;
+			default:
+				element = j.c.fromHTML(
+					`<p><a href="${resp.file}">${resp.file}</a></p><p></p>`
+				);
+				break;
 		}
+		j.s.insertHTML(element);
 	},
 
 	defaultHandlerError(this: IUploader, e: Error) {
