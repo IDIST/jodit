@@ -48,9 +48,9 @@ const buttons = [
 	'ol',
 	'|',
 	// Table
-	'table',
+	'table'
 	// Demo
-	'preview'
+	// 'preview'
 ];
 
 /**
