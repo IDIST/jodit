@@ -10,7 +10,7 @@ export class MediaList {
 	element: HTMLElement;
 	text: string = '';
 	page: number = 0;
-	perPage: number = 12;
+	perPage: number = 30;
 	items: MediaItem[] = [];
 	close: () => void;
 
