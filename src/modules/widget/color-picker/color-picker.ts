@@ -1,4 +1,3 @@
-
 /**
  * [[include:modules/widget/color-picker/README.md]]
  * @packageDocumentation
@@ -10,12 +9,12 @@ import './color-picker.less';
 import type { IDictionary, IJodit } from 'jodit/types';
 import {
 	normalizeColor,
-	hasBrowserColorPicker,
+	// hasBrowserColorPicker,
 	isPlainObject,
 	attr,
 	isFunction,
-	isArray,
-	refs
+	isArray
+	// refs
 } from 'jodit/core/helpers/';
 import { Icon } from 'jodit/core/ui';
 import { Dom } from 'jodit/core/dom';
@@ -47,9 +46,9 @@ export const ColorPickerWidget = (
 	const cn = 'jodit-color-picker',
 		valueHex = normalizeColor(coldColor),
 		form = editor.c.div(cn),
-		iconPalette: string = editor.o.textIcons
-			? `<span>${editor.i18n('palette')}</span>`
-			: Icon.get('palette'),
+		// iconPalette: string = editor.o.textIcons
+		// 	? `<span>${editor.i18n('palette')}</span>`
+		// 	: Icon.get('palette'),
 		eachColor = (colors: string[] | IDictionary<string[]>): string => {
 			const stack: string[] = [];
 
@@ -82,37 +81,37 @@ export const ColorPickerWidget = (
 		)
 	);
 
-	form.appendChild(
-		editor.c.fromHTML(`<div data-ref="extra" class="${cn}__extra"></div>`)
-	);
+	// form.appendChild(
+	// 	editor.c.fromHTML(`<div data-ref="extra" class="${cn}__extra"></div>`)
+	// );
 
-	const { extra } = refs(form);
+	// const { extra } = refs(form);
 
-	if (editor.o.showBrowserColorPicker && hasBrowserColorPicker()) {
-		extra.appendChild(
-			editor.c.fromHTML(
-				`<div class="${cn}__native">${iconPalette}<input type="color" value="#ffffff"/></div>`
-			)
-		);
-
-		editor.e.on(form, 'change', (e: MouseEvent) => {
-			e.stopPropagation();
-
-			const target = e.target as HTMLInputElement;
-
-			if (!target || !target.tagName || !Dom.isTag(target, 'input')) {
-				return;
-			}
-
-			const color: string = target.value || '';
-
-			if (isFunction(callback)) {
-				callback(color);
-			}
-
-			e.preventDefault();
-		});
-	}
+	// if (editor.o.showBrowserColorPicker && hasBrowserColorPicker()) {
+	// 	extra.appendChild(
+	// 		editor.c.fromHTML(
+	// 			`<div class="${cn}__native">${iconPalette}<input type="color" value="#ffffff"/></div>`
+	// 		)
+	// 	);
+	//
+	// 	editor.e.on(form, 'change', (e: MouseEvent) => {
+	// 		e.stopPropagation();
+	//
+	// 		const target = e.target as HTMLInputElement;
+	//
+	// 		if (!target || !target.tagName || !Dom.isTag(target, 'input')) {
+	// 			return;
+	// 		}
+	//
+	// 		const color: string = target.value || '';
+	//
+	// 		if (isFunction(callback)) {
+	// 			callback(color);
+	// 		}
+	//
+	// 		e.preventDefault();
+	// 	});
+	// }
 
 	editor.e.on(form, 'mousedown touchend', (e: MouseEvent) => {
 		e.stopPropagation();
@@ -148,7 +147,7 @@ export const ColorPickerWidget = (
 		}
 	});
 
-	editor.e.fire('afterGenerateColorPicker', form, extra, callback, valueHex);
+	// editor.e.fire('afterGenerateColorPicker', form, extra, callback, valueHex);
 
 	return form;
 };
