@@ -6,10 +6,13 @@
 	.font();
 
 	.jodit-tabs__buttons {
+		position: fixed;
+		z-index: 1;
+		top: 0;
+		width: 100%;
+		background-color: white;
 		display: flex;
 		justify-content: center;
-		margin-top: 4px;
-		margin-bottom: calc(var(--padding-default) / 2);
 		line-height: 18px;
 		border-bottom: 1px solid #E0E0E0;
 
@@ -38,7 +41,8 @@
 
 	&__button {
 		min-width: 80px;
-		min-height: 44px;
+		padding-top: 6px;
+		min-height: 50px;
 		background: white !important;
 		border-radius: 0;
 
@@ -70,9 +74,26 @@
 		}
 	}
 
+	.jodit-tabs__title {
+		position: fixed;
+		z-index: 1;
+		top: 0;
+		width: 100%;
+		background-color: white;
+
+		font-weight: 600;
+		font-size: 14px;
+		line-height: 20px;
+		color: #242A3C;
+		padding: 20px 18px 0px 18px;
+	}
+
 	.jodit-tabs__wrapper {
-		width: 300px;
-		padding: 18px;
+		position: relative;
+		box-sizing: content-box;
+		width: 264px;
+
+		padding: 62px 20px 20px 20px;
 
 		.jodit-tab {
 			display: none;
@@ -88,11 +109,4 @@
 		}
 	}
 
-	.jodit-tabs__title {
-		font-weight: 600;
-		font-size: 14px;
-		line-height: 20px;
-		color: #242A3C;
-		padding: 20px 18px 0px 18px;
-	}
 }

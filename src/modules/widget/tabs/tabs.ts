@@ -57,6 +57,7 @@ export const TabsWidget = (
 		box.appendChild(buttons);
 	} else {
 		box.appendChild(title);
+		tabBox.style.paddingTop = '52px';
 		title.innerHTML = jodit.i18n(tabs[0].name);
 	}
 	box.appendChild(tabBox);
