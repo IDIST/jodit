@@ -60,7 +60,7 @@
   --jd-color-icon: var(--jd-color-dark);
   --jd-padding-default: 8px;
   --jd-margin-default: 12px;
-  --jd-border-radius-default: 8px;
+  --jd-border-radius-default: 4px;
   --jd-z-index-full-size: 100000;
   --jd-z-index-popup: 10000001;
   --jd-z-index-dialog-overlay: 20000003;
@@ -623,7 +623,7 @@ svg.jodit-icon {
 .jodit-container * {
   box-sizing: border-box;
   transition-duration: 500ms;
-  transition-property: color, background-color, border;
+  transition-property: color, background-color, border-color;
 }
 .jodit .jodit-workplace,
 .jodit-container .jodit-workplace {
@@ -857,15 +857,17 @@ svg.jodit-icon {
   position: fixed;
   z-index: var(--jd-z-index-popup);
   display: inline-block;
+  border: 1px solid #E0E0E0;
   box-shadow: var(--jd-popup-box-shadow);
   transform: translate3d(0, 0, 0);
+  border-radius: var(--jd-border-radius-default);
+  overflow: hidden;
   z-index: var(--jd-z-index-context-menu);
 }
 .jodit-context-menu__content {
   font-family: var(--jd-font-default);
   font-size: var(--jd-font-size-default);
   overflow: auto;
-  max-height: 450px;
   padding: 0;
   background: var(--jd-color-background-default);
   overflow-scrolling: touch;
@@ -888,8 +890,9 @@ svg.jodit-icon {
   border-radius: var(--jd-border-radius-default);
   background-color: #f8f8f8;
 }
-.jodit-context-menu__content input:focus {
-  border: solid 1px #121212;
+.jodit-context-menu__content input:focus,
+.jodit-context-menu__content input:focus-visible {
+  outline: none;
 }
 .jodit-context-menu_max-height_false .jodit-context-menu__content {
   max-height: fit-content;
@@ -909,8 +912,7 @@ svg.jodit-icon {
 }
 
 :root {
-  --jd-popup-box-shadow: 0 4px 1px -2px rgba(76, 76, 76, 0.2),
-		0 3px 3px 0 rgba(76, 76, 76, 0.15), 0 1px 4px 0 rgba(76, 76, 76, 0.13);
+  --jd-popup-box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.2);
 }
 .jodit-popup {
   position: static;
@@ -926,14 +928,16 @@ svg.jodit-icon {
   position: fixed;
   z-index: var(--jd-z-index-popup);
   display: inline-block;
+  border: 1px solid #E0E0E0;
   box-shadow: var(--jd-popup-box-shadow);
   transform: translate3d(0, 0, 0);
+  border-radius: var(--jd-border-radius-default);
+  overflow: hidden;
 }
 .jodit-popup__content {
   font-family: var(--jd-font-default);
   font-size: var(--jd-font-size-default);
   overflow: auto;
-  max-height: 450px;
   padding: 0;
   background: var(--jd-color-background-default);
   overflow-scrolling: touch;
@@ -956,8 +960,9 @@ svg.jodit-icon {
   border-radius: var(--jd-border-radius-default);
   background-color: #f8f8f8;
 }
-.jodit-popup__content input:focus {
-  border: solid 1px #121212;
+.jodit-popup__content input:focus,
+.jodit-popup__content input:focus-visible {
+  outline: none;
 }
 .jodit-popup_max-height_false .jodit-popup__content {
   max-height: fit-content;
@@ -3957,32 +3962,31 @@ a + .jodit-filebrowser-tree__source-title {
 }
 
 :root {
-  --jd-color-picker-cell-size: 24px;
+  --jd-color-picker-cell-size: 30px;
 }
 .jodit-color-picker {
   margin: 0;
+  padding: 20px;
   text-align: left;
   user-select: none;
 }
 .jodit-color-picker__group {
   display: flex;
-  max-width: calc(var(--jd-color-picker-cell-size) * 10 + var(--jd-padding-default)*5);
   flex-wrap: wrap;
   white-space: normal;
 }
 .jodit-color-picker__color-item {
   display: block;
-  margin: calc(var(--jd-padding-default) / 4);
   width: var(--jd-color-picker-cell-size);
   height: var(--jd-color-picker-cell-size);
-  border: 1px solid transparent;
-  border-radius: var(--jd-border-radius-default);
+  margin: 0 1px 1px 0;
+  border: 0px solid transparent;
   text-align: center;
   text-decoration: none;
   vertical-align: middle;
 }
 .jodit-color-picker__color-item:hover {
-  border-color: #000;
+  border: 2px solid var(--jd-color-border-selected);
 }
 .jodit-color-picker__color-item_active_true,
 .jodit-color-picker__color-item:active {
@@ -4013,10 +4017,13 @@ a + .jodit-filebrowser-tree__source-title {
   font-size: var(--jd-font-size-default);
 }
 .jodit-tabs .jodit-tabs__buttons {
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  width: 100%;
+  background-color: white;
   display: flex;
   justify-content: center;
-  margin-top: 4px;
-  margin-bottom: calc(var(--jd-padding-default) / 2);
   line-height: 18px;
   border-bottom: 1px solid #E0E0E0;
 }
@@ -4041,7 +4048,8 @@ a + .jodit-filebrowser-tree__source-title {
 }
 .jodit-tabs__button {
   min-width: 80px;
-  min-height: 44px;
+  padding-top: 6px;
+  min-height: 50px;
   background: white !important;
   border-radius: 0;
 }
@@ -4067,9 +4075,23 @@ a + .jodit-filebrowser-tree__source-title {
   line-height: 20px;
   color: var(--jd-color-label);
 }
+.jodit-tabs .jodit-tabs__title {
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  width: 100%;
+  background-color: white;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+  color: #242A3C;
+  padding: 20px 18px 0px 18px;
+}
 .jodit-tabs .jodit-tabs__wrapper {
-  width: 300px;
-  padding: 18px;
+  position: relative;
+  box-sizing: content-box;
+  width: 264px;
+  padding: 62px 20px 20px 20px;
 }
 .jodit-tabs .jodit-tabs__wrapper .jodit-tab {
   display: none;
@@ -4081,21 +4103,14 @@ a + .jodit-filebrowser-tree__source-title {
   min-width: 220px;
   min-height: 100px;
 }
-.jodit-tabs .jodit-tabs__title {
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 20px;
-  color: #242A3C;
-  padding: 20px 18px 0px 18px;
-}
 
 .drag-and-drop {
   position: relative;
   overflow: hidden;
   width: 100%;
+  height: 162px;
   padding: 25px 0;
   text-align: center;
-  aspect-ratio: 1 / 1;
   background: #F8F8F8;
   font-weight: 400;
   font-size: 14px;
@@ -4105,6 +4120,7 @@ a + .jodit-filebrowser-tree__source-title {
   flex-direction: column;
   align-content: center;
   justify-content: center;
+  border-radius: var(--jd-border-radius-default);
 }
 .drag-and-drop .icon {
   height: 32px;
@@ -4138,14 +4154,78 @@ a + .jodit-filebrowser-tree__source-title {
   background-color: var(--jd-color-background-gray-hover);
 }
 
+
+.jodit-search-image,
+.jodit-search-gif {
+  position: relative;
+  width: 264px;
+  height: 394px;
+}
+.jodit-search-image__wrapper,
+.jodit-search-gif__wrapper {
+  max-height: 304px;
+  overflow: scroll;
+}
+.jodit-search-image__search,
+.jodit-search-gif__search {
+  margin-bottom: 12px;
+}
+.jodit-search-image__search svg,
+.jodit-search-gif__search svg {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+}
 .jodit-search-image__search-result,
 .jodit-search-gif__search-result {
-  margin-top: 10px;
+  padding-bottom: 78px;
 }
 .jodit-search-image__search-result img,
 .jodit-search-gif__search-result img {
   width: 100%;
   height: 100%;
+}
+.jodit-search-image__license,
+.jodit-search-gif__license {
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  padding: 20px 20px;
+  background-color: white;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 18px;
+  color: #A7A8AB;
+  text-align: center;
+}
+.jodit-search-image__license a,
+.jodit-search-gif__license a {
+  text-decoration: none;
+  color: #A7A8AB;
+}
+.jodit-search-image__license a:visited,
+.jodit-search-gif__license a:visited {
+  text-decoration: none;
+  color: #A7A8AB;
+}
+.jodit-search-image__license a:hover,
+.jodit-search-gif__license a:hover {
+  text-decoration: none;
+  color: #A7A8AB;
+}
+.jodit-search-image__license a:focus,
+.jodit-search-gif__license a:focus {
+  text-decoration: none;
+  color: #A7A8AB;
+}
+.jodit-search-image__license a:hover,
+.jodit-search-gif__license a:hover,
+.jodit-search-image__license a:active,
+.jodit-search-gif__license a:active {
+  text-decoration: none;
+  color: #A7A8AB;
 }
 
 .jodit_fullsize-box_true {

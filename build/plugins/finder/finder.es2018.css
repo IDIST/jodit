@@ -60,7 +60,7 @@
   --jd-color-icon: var(--jd-color-dark);
   --jd-padding-default: 8px;
   --jd-margin-default: 12px;
-  --jd-border-radius-default: 8px;
+  --jd-border-radius-default: 4px;
   --jd-z-index-full-size: 100000;
   --jd-z-index-popup: 10000001;
   --jd-z-index-dialog-overlay: 20000003;
