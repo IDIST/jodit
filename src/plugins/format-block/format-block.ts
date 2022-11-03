@@ -1,4 +1,3 @@
-
 /**
  * [[include:plugins/format-block/README.md]]
  * @packageDocumentation
@@ -16,6 +15,9 @@ import { Dom } from 'jodit/modules/';
 import { memorizeExec } from 'jodit/core/helpers';
 import { pluginSystem } from 'jodit/core/global';
 import { Icon } from 'jodit/core/ui/icon';
+
+// Style
+import './format-block.less';
 
 Icon.set('paragraph', require('./paragraph.svg'));
 

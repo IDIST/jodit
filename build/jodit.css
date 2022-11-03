@@ -63,6 +63,53 @@
   -o-object-fit: cover;
      object-fit: cover;
 }
+.jodit ul {
+  display: block;
+  list-style-type: disc;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 40px;
+}
+.jodit ol {
+  display: block;
+  list-style-type: decimal;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 40px;
+}
+.jodit h1,
+.jodit h2,
+.jodit h3,
+.jodit h4,
+.jodit h5,
+.jodit h6 {
+  display: block;
+  font-weight: bold;
+  margin-top: 1.7em;
+  margin-bottom: 0;
+}
+.jodit h1 {
+  font-size: 2em;
+}
+.jodit h2 {
+  font-size: 1.5em;
+}
+.jodit h3 {
+  font-size: 1.25em;
+}
+.jodit h4 {
+  font-size: 1em;
+}
+.jodit h5 {
+  font-size: 0.9em;
+}
+.jodit h6 {
+  font-size: 0.8em;
+}
 .jodit-form {
   font-family: 'Poppins', sans-serif;
   font-size: 12px;
@@ -134,6 +181,7 @@
   -moz-appearance: none;
   appearance: none;
   background-color: undefined;
+  border: solid 1px transparent;
   border-radius: 0;
   line-height: 44px;
   font-size: 14px;
@@ -151,6 +199,7 @@
   -moz-appearance: none;
   appearance: none;
   background-color: undefined;
+  border: solid 1px transparent;
   border-radius: 0;
   line-height: 44px;
   font-size: 14px;
@@ -168,6 +217,7 @@
   -moz-appearance: none;
   appearance: none;
   background-color: undefined;
+  border: solid 1px transparent;
   border-radius: 0;
   line-height: 44px;
   font-size: 14px;
@@ -195,7 +245,7 @@
   border-color: #ff3b3b;
 }
 .jodit .jodit-input:focus {
-  border-color: #66afe9;
+  border: solid 1px #9013fe;
   outline: 0;
 }
 .jodit-checkbox {
@@ -2549,6 +2599,7 @@ svg.jodit-icon {
   -moz-appearance: none;
   appearance: none;
   background-color: undefined;
+  border: solid 1px transparent;
   border-radius: 0;
   line-height: 44px;
   font-size: 14px;
@@ -2688,6 +2739,7 @@ svg.jodit-icon {
   -moz-appearance: none;
   appearance: none;
   background-color: undefined;
+  border: solid 1px transparent;
   border-radius: 0;
   line-height: 44px;
   font-size: 14px;
@@ -2850,6 +2902,7 @@ svg.jodit-icon {
   -moz-appearance: none;
   appearance: none;
   background-color: undefined;
+  border: solid 1px transparent;
   border-radius: 0;
   line-height: 44px;
   font-size: 14px;
@@ -5029,38 +5082,44 @@ a + .jodit-filebrowser-tree__source-title {
 }
 
 
-.jodit-search-image,
-.jodit-search-gif {
+.jodit .jodit-search-image,
+.jodit .jodit-search-gif {
   position: relative;
   width: 264px;
   height: 394px;
 }
-.jodit-search-image__wrapper,
-.jodit-search-gif__wrapper {
+.jodit .jodit-search-image__wrapper,
+.jodit .jodit-search-gif__wrapper {
   max-height: 304px;
   overflow: scroll;
 }
-.jodit-search-image__search,
-.jodit-search-gif__search {
+.jodit .jodit-search-image__search,
+.jodit .jodit-search-gif__search {
   margin-bottom: 12px;
 }
-.jodit-search-image__search svg,
-.jodit-search-gif__search svg {
+.jodit .jodit-search-image__search input,
+.jodit .jodit-search-gif__search input {
+  padding-left: 16px;
+  background: #F8F8F8;
+  border-radius: 4px;
+}
+.jodit .jodit-search-image__search svg,
+.jodit .jodit-search-gif__search svg {
   position: absolute;
   top: 12px;
   right: 12px;
 }
-.jodit-search-image__search-result,
-.jodit-search-gif__search-result {
+.jodit .jodit-search-image__search-result,
+.jodit .jodit-search-gif__search-result {
   padding-bottom: 78px;
 }
-.jodit-search-image__search-result img,
-.jodit-search-gif__search-result img {
+.jodit .jodit-search-image__search-result img,
+.jodit .jodit-search-gif__search-result img {
   width: 100%;
   height: 100%;
 }
-.jodit-search-image__license,
-.jodit-search-gif__license {
+.jodit .jodit-search-image__license,
+.jodit .jodit-search-gif__license {
   position: fixed;
   z-index: 1;
   left: 0;
@@ -5074,32 +5133,67 @@ a + .jodit-filebrowser-tree__source-title {
   color: #A7A8AB;
   text-align: center;
 }
-.jodit-search-image__license a,
-.jodit-search-gif__license a {
+.jodit .jodit-search-image__license a,
+.jodit .jodit-search-gif__license a {
   text-decoration: none;
   color: #A7A8AB;
 }
-.jodit-search-image__license a:visited,
-.jodit-search-gif__license a:visited {
+.jodit .jodit-search-image__license a:visited,
+.jodit .jodit-search-gif__license a:visited {
   text-decoration: none;
   color: #A7A8AB;
 }
-.jodit-search-image__license a:hover,
-.jodit-search-gif__license a:hover {
+.jodit .jodit-search-image__license a:hover,
+.jodit .jodit-search-gif__license a:hover {
   text-decoration: none;
   color: #A7A8AB;
 }
-.jodit-search-image__license a:focus,
-.jodit-search-gif__license a:focus {
+.jodit .jodit-search-image__license a:focus,
+.jodit .jodit-search-gif__license a:focus {
   text-decoration: none;
   color: #A7A8AB;
 }
-.jodit-search-image__license a:hover,
-.jodit-search-gif__license a:hover,
-.jodit-search-image__license a:active,
-.jodit-search-gif__license a:active {
+.jodit .jodit-search-image__license a:hover,
+.jodit .jodit-search-gif__license a:hover,
+.jodit .jodit-search-image__license a:active,
+.jodit .jodit-search-gif__license a:active {
   text-decoration: none;
   color: #A7A8AB;
+}
+
+.jodit .jodit-ui-group__p {
+  margin: 0;
+  padding: 0, 8px;
+}
+
+.jodit .jodit-ui-group__h1 {
+  margin: 0;
+  padding: 0, 8px;
+}
+
+.jodit .jodit-ui-group__h2 {
+  margin: 0;
+  padding: 0, 8px;
+}
+
+.jodit .jodit-ui-group__h3 {
+  margin: 0;
+  padding: 0, 8px;
+}
+
+.jodit .jodit-ui-group__h4 {
+  margin: 0;
+  padding: 0, 8px;
+}
+
+.jodit .jodit-ui-group__h5 {
+  margin: 0;
+  padding: 0, 8px;
+}
+
+.jodit .jodit-ui-group__h6 {
+  margin: 0;
+  padding: 0, 8px;
 }
 
 .jodit_fullsize-box_true {
@@ -5859,15 +5953,15 @@ html.jodit_fullsize-box_true {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: calc(calc(12px * 3) * 6 + 8px * 12);
-  height: 450px;
+  width: 316px;
+  height: 351px;
+  padding: 20px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
 }
 .jodit-emoji__navigate {
-  padding: calc(8px*2) 0;
   background-color: #fff;
 }
 .jodit-emoji__categories {
@@ -5877,7 +5971,8 @@ html.jodit_fullsize-box_true {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-bottom: calc(8px * 2);
+  margin-top: 12px;
+  margin-bottom: 12px;
 }
 .jodit-emoji__category {
   display: -webkit-box;
@@ -5893,6 +5988,7 @@ html.jodit_fullsize-box_true {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  padding-top: 5px;
   padding-bottom: 5px;
   border-bottom: 2px solid transparent;
   cursor: pointer;
@@ -5938,30 +6034,26 @@ html.jodit_fullsize-box_true {
   margin-bottom: 0px;
 }
 .jodit-emoji__emojis {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 24px);
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  grid-column-gap: 16px;
+  grid-row-gap: 6px;
   overflow: auto;
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  padding: 8px 0;
 }
 .jodit-emoji__emoji {
   cursor: pointer;
   font-family: 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', serif;
-  font-size: calc(12px * 3);
-  line-height: calc(12px * 3);
-  padding: 8px;
+  font-size: 24px;
+  line-height: 30px;
+  padding: 0;
 }
 .jodit-emoji__category-title {
-  -webkit-box-flex: 100%;
-      -ms-flex: 100%;
-          flex: 100%;
   color: #A7A8AB;
   font-weight: 700;
   line-height: 40px;
+  grid-column-end: span 7;
 }
 

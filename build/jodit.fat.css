@@ -132,6 +132,53 @@
 .jodit img {
   object-fit: cover;
 }
+.jodit ul {
+  display: block;
+  list-style-type: disc;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 40px;
+}
+.jodit ol {
+  display: block;
+  list-style-type: decimal;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 40px;
+}
+.jodit h1,
+.jodit h2,
+.jodit h3,
+.jodit h4,
+.jodit h5,
+.jodit h6 {
+  display: block;
+  font-weight: bold;
+  margin-top: 1.7em;
+  margin-bottom: 0;
+}
+.jodit h1 {
+  font-size: 2em;
+}
+.jodit h2 {
+  font-size: 1.5em;
+}
+.jodit h3 {
+  font-size: 1.25em;
+}
+.jodit h4 {
+  font-size: 1em;
+}
+.jodit h5 {
+  font-size: 0.9em;
+}
+.jodit h6 {
+  font-size: 0.8em;
+}
 :root {
   --jd-switche-width: 60px;
   --jd-switche-height: 32px;
@@ -201,6 +248,7 @@
   -moz-appearance: none;
   appearance: none;
   background-color: var(--jd-input-background-gray);
+  border: solid 1px transparent;
   border-radius: 0;
   line-height: var(--jd-input-height);
   font-size: 14px;
@@ -218,7 +266,7 @@
   border-color: var(--jd-color-red);
 }
 .jodit .jodit-input:focus {
-  border-color: #66afe9;
+  border: solid 1px #9013fe;
   outline: 0;
 }
 .jodit-checkbox {
@@ -2130,6 +2178,7 @@ svg.jodit-icon {
   -moz-appearance: none;
   appearance: none;
   background-color: var(--jd-input-background-gray);
+  border: solid 1px transparent;
   border-radius: 0;
   line-height: var(--jd-input-height);
   font-size: 14px;
@@ -2237,6 +2286,7 @@ svg.jodit-icon {
   -moz-appearance: none;
   appearance: none;
   background-color: var(--jd-input-background-gray);
+  border: solid 1px transparent;
   border-radius: 0;
   line-height: var(--jd-input-height);
   font-size: 14px;
@@ -2368,6 +2418,7 @@ svg.jodit-icon {
   -moz-appearance: none;
   appearance: none;
   background-color: var(--jd-input-background-gray);
+  border: solid 1px transparent;
   border-radius: 0;
   line-height: var(--jd-input-height);
   font-size: 14px;
@@ -4155,38 +4206,44 @@ a + .jodit-filebrowser-tree__source-title {
 }
 
 
-.jodit-search-image,
-.jodit-search-gif {
+.jodit .jodit-search-image,
+.jodit .jodit-search-gif {
   position: relative;
   width: 264px;
   height: 394px;
 }
-.jodit-search-image__wrapper,
-.jodit-search-gif__wrapper {
+.jodit .jodit-search-image__wrapper,
+.jodit .jodit-search-gif__wrapper {
   max-height: 304px;
   overflow: scroll;
 }
-.jodit-search-image__search,
-.jodit-search-gif__search {
+.jodit .jodit-search-image__search,
+.jodit .jodit-search-gif__search {
   margin-bottom: 12px;
 }
-.jodit-search-image__search svg,
-.jodit-search-gif__search svg {
+.jodit .jodit-search-image__search input,
+.jodit .jodit-search-gif__search input {
+  padding-left: 16px;
+  background: #F8F8F8;
+  border-radius: 4px;
+}
+.jodit .jodit-search-image__search svg,
+.jodit .jodit-search-gif__search svg {
   position: absolute;
   top: 12px;
   right: 12px;
 }
-.jodit-search-image__search-result,
-.jodit-search-gif__search-result {
+.jodit .jodit-search-image__search-result,
+.jodit .jodit-search-gif__search-result {
   padding-bottom: 78px;
 }
-.jodit-search-image__search-result img,
-.jodit-search-gif__search-result img {
+.jodit .jodit-search-image__search-result img,
+.jodit .jodit-search-gif__search-result img {
   width: 100%;
   height: 100%;
 }
-.jodit-search-image__license,
-.jodit-search-gif__license {
+.jodit .jodit-search-image__license,
+.jodit .jodit-search-gif__license {
   position: fixed;
   z-index: 1;
   left: 0;
@@ -4200,32 +4257,43 @@ a + .jodit-filebrowser-tree__source-title {
   color: #A7A8AB;
   text-align: center;
 }
-.jodit-search-image__license a,
-.jodit-search-gif__license a {
+.jodit .jodit-search-image__license a,
+.jodit .jodit-search-gif__license a {
   text-decoration: none;
   color: #A7A8AB;
 }
-.jodit-search-image__license a:visited,
-.jodit-search-gif__license a:visited {
+.jodit .jodit-search-image__license a:visited,
+.jodit .jodit-search-gif__license a:visited {
   text-decoration: none;
   color: #A7A8AB;
 }
-.jodit-search-image__license a:hover,
-.jodit-search-gif__license a:hover {
+.jodit .jodit-search-image__license a:hover,
+.jodit .jodit-search-gif__license a:hover {
   text-decoration: none;
   color: #A7A8AB;
 }
-.jodit-search-image__license a:focus,
-.jodit-search-gif__license a:focus {
+.jodit .jodit-search-image__license a:focus,
+.jodit .jodit-search-gif__license a:focus {
   text-decoration: none;
   color: #A7A8AB;
 }
-.jodit-search-image__license a:hover,
-.jodit-search-gif__license a:hover,
-.jodit-search-image__license a:active,
-.jodit-search-gif__license a:active {
+.jodit .jodit-search-image__license a:hover,
+.jodit .jodit-search-gif__license a:hover,
+.jodit .jodit-search-image__license a:active,
+.jodit .jodit-search-gif__license a:active {
   text-decoration: none;
   color: #A7A8AB;
+}
+
+.jodit .jodit-ui-group__p,
+.jodit .jodit-ui-group__h1,
+.jodit .jodit-ui-group__h2,
+.jodit .jodit-ui-group__h3,
+.jodit .jodit-ui-group__h4,
+.jodit .jodit-ui-group__h5,
+.jodit .jodit-ui-group__h6 {
+  margin: 0;
+  padding: 0, var(--jd-padding-default);
 }
 
 .jodit_fullsize-box_true {
@@ -4841,24 +4909,26 @@ html.jodit_fullsize-box_true {
 
 .jodit-emoji {
   display: flex;
-  width: calc(var(--jd-font-size-large) * 6 + var(--jd-padding-default) * 12);
-  height: 450px;
+  width: 316px;
+  height: 351px;
+  padding: 20px;
   flex-direction: column;
 }
 .jodit-emoji__navigate {
-  padding: calc(var(--jd-padding-default)*2) 0;
   background-color: var(--jd-color-white);
 }
 .jodit-emoji__categories {
   display: flex;
   justify-content: space-between;
-  margin-bottom: calc(var(--jd-padding-default) * 2);
+  margin-top: 12px;
+  margin-bottom: 12px;
 }
 .jodit-emoji__category {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  padding-top: 5px;
   padding-bottom: 5px;
   border-bottom: 2px solid transparent;
   cursor: pointer;
@@ -4904,24 +4974,25 @@ html.jodit_fullsize-box_true {
   margin-bottom: 0px;
 }
 .jodit-emoji__emojis {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 24px);
+  justify-content: space-between;
+  grid-column-gap: 16px;
+  grid-row-gap: 6px;
   overflow: auto;
-  flex: 1;
-  flex-wrap: wrap;
-  padding: var(--jd-padding-default) 0;
 }
 .jodit-emoji__emoji {
   cursor: pointer;
   font-family: 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', serif;
-  font-size: var(--jd-font-size-large);
-  line-height: var(--jd-font-size-large);
-  padding: var(--jd-padding-default);
+  font-size: 24px;
+  line-height: 30px;
+  padding: 0;
 }
 .jodit-emoji__category-title {
-  flex: 100%;
   color: var(--jd-color-label);
   font-weight: 700;
   line-height: 40px;
+  grid-column-end: span 7;
 }
 
 @keyframes jdSpeakAnimation {
@@ -6377,6 +6448,7 @@ html.jodit_fullsize-box_true {
   -moz-appearance: none;
   appearance: none;
   background-color: var(--jd-input-background-gray);
+  border: solid 1px transparent;
   border-radius: 0;
   line-height: var(--jd-input-height);
   font-size: 14px;
@@ -6849,6 +6921,7 @@ html.jodit_fullsize-box_true {
   -moz-appearance: none;
   appearance: none;
   background-color: var(--jd-input-background-gray);
+  border: solid 1px transparent;
   border-radius: 0;
   line-height: var(--jd-input-height);
   font-size: 14px;

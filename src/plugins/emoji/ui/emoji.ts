@@ -1,4 +1,3 @@
-
 import './emoji.less';
 
 import type { IEmoji, IEmojiData, IEmojiList, IShortEmoji } from '../interface';
@@ -79,7 +78,7 @@ export class Emoji extends UIElement<IJodit> {
 
 		const navigateContainer = this.j.c.div(this.getFullElName('navigate'));
 
-		Dom.append(navigateContainer, [this.categories, this.input.container]);
+		Dom.append(navigateContainer, [this.input.container, this.categories]);
 		Dom.append(container, [navigateContainer, this.list]);
 
 		return container;
@@ -95,7 +94,7 @@ export class Emoji extends UIElement<IJodit> {
 			this.data = await jodit.o.emoji.data();
 			this.setMod('loading', false);
 
-			this.data.emoji.forEach((e) => {
+			this.data.emoji.forEach(e => {
 				const emoji = Emoji.normalizeEmoji(e);
 				this.map[emoji.emoji] = emoji;
 			});
@@ -240,7 +239,7 @@ export class Emoji extends UIElement<IJodit> {
 		// Add emoji in recent list in the first position
 		if (emoji) {
 			const newRecent = [...this.recent]; // need for persistent storage
-			const index = newRecent.findIndex((e) => e.emoji === code);
+			const index = newRecent.findIndex(e => e.emoji === code);
 
 			if (index !== -1) {
 				newRecent.splice(index, 1);
@@ -313,7 +312,7 @@ export class Emoji extends UIElement<IJodit> {
 		}
 
 		this.setItems(
-			this.defaultList.filter((e) => {
+			this.defaultList.filter(e => {
 				const emoji = Emoji.normalizeEmoji(e);
 
 				return (

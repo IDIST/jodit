@@ -22,6 +22,7 @@
   -moz-appearance: none;
   appearance: none;
   background-color: var(--jd-input-background-gray);
+  border: solid 1px transparent;
   border-radius: 0;
   line-height: var(--jd-input-height);
   font-size: 14px;
