@@ -36,6 +36,6 @@ Config.prototype.controls.image = {
 		);
 	},
 	tags: ['img'],
-	tooltip: 'Insert Image',
+	tooltip: 'Insert a image',
 	icon: require('./ui/image.svg')
 } as IControlType;
