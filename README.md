@@ -310,7 +310,3 @@ https://github.com/xdan/jodit
 ## License
 
 MIT
-
-
-## This will be updated.
-Kim sun wook edit this project.
