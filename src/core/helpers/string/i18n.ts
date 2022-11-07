@@ -144,7 +144,7 @@ export function i18n(
 	}
 
 	if (!isProd && language !== 'en') {
-		// console.warn(`i18n need "${key}" in "${language}"`);
+		console.warn(`i18n need "${key}" in "${language}"`);
 	}
 
 	return parse(key);

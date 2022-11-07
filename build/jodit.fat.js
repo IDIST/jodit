@@ -11358,15 +11358,16 @@ var Config = (function () {
                 gif: 'GIF',
                 Search: '검색',
                 'Insert Emoji': '이모지 추가',
+                'Insert a gif': 'Gif 추가',
                 'Search emoji': '이모지 검색',
-                'Smileys & Emotion': 'Smileys & Emotion',
-                'People & Body': 'People & Body',
-                'Animals & Nature': 'Animals & Nature',
-                'Food & Drink': 'Food & Drink',
-                'Travel & Places': 'Travel & Places',
-                Activities: 'Activities',
-                Objects: 'Objects',
-                Flags: 'Flags',
+                'Smileys & Emotion': '스마일 & 감정',
+                'People & Body': '사람 & 몸',
+                'Animals & Nature': '동물 & 자연',
+                'Food & Drink': '음식 & 음료',
+                'Travel & Places': '여행 & 장소',
+                Activities: '활동',
+                Objects: '물체',
+                Flags: '깃발',
                 'Click to tune': '조정하려면 클릭',
                 'Heading 5': '제목 5',
                 'Heading 6': '제목 6',
@@ -11375,9 +11376,7 @@ var Config = (function () {
                 'Drop audio': '오디오 드래그',
                 'Search image': '이미지 검색',
                 'Search gif': 'Gif 검색',
-                'Powered by: %s': '라이센스: %s',
-                'By using images from Unsplash, you agree to the License and Terms of Service.': 'Unsplash의 이미지를 사용하면 라이선스 및 서비스약관에 동의하는 것입니다.',
-                'By using gif images from Giphy, you agree to the License and Terms of Service.': 'Giphy의 이미지를 사용하면 라이선스 및 서비스약관에 동의하는 것입니다.'
+                'Powered by: %s': '라이센스: %s'
             }
         };
         this.tabIndex = -1;
@@ -35099,9 +35098,6 @@ var Emoji = (function (_super) {
         return _this;
     }
     Emoji_1 = Emoji;
-    Emoji.prototype.className = function () {
-        return 'Emoji';
-    };
     Object.defineProperty(Emoji.prototype, "defaultList", {
         get: function () {
             return this.recent.concat(this.data.emoji);
@@ -35109,15 +35105,50 @@ var Emoji = (function (_super) {
         enumerable: false,
         configurable: true
     });
+    Emoji.getInstance = function (jodit, onInsert) {
+        if (!this.__instance) {
+            this.__instance = new Emoji_1(jodit, onInsert);
+        }
+        this.__instance.onInsert = onInsert;
+        if (this.__instance.data) {
+            this.__instance.reset();
+        }
+        return this.__instance;
+    };
+    Emoji.normalizeEmoji = function (emoji) {
+        if (Emoji_1.isShortCat(emoji)) {
+            return {
+                emoji: emoji.e,
+                description: emoji.d,
+                category: emoji.c,
+                aliases: emoji.a,
+                tags: emoji.t
+            };
+        }
+        return emoji;
+    };
+    Emoji.isShortCat = function (emoji) {
+        return emoji && (0, helpers_1.isString)(emoji.e);
+    };
+    Emoji.prototype.className = function () {
+        return 'Emoji';
+    };
     Emoji.prototype.reset = function () {
         this.input.nativeInput.value = '';
         this.setItems(this.defaultList);
         this.setActiveCategory(0);
     };
-    Emoji.prototype.setItems = function (items) {
-        this.list.scrollTo(0, 0);
-        modules_1.Dom.detach(this.list);
-        modules_1.Dom.append(this.list, this.generateEmojiList(items, this.data.categories));
+    Emoji.prototype.onReady = function () {
+        this.j.e
+            .on(this.input.nativeInput, 'input', this.onInputFilter)
+            .on(this.categories, 'click', this.onClickCategory)
+            .on(this.list, 'scroll', this.onScrollList)
+            .on(this.list, 'mousedown touchstart', this.onClickItem);
+    };
+    Emoji.prototype.destruct = function () {
+        Emoji_1.__instance = null;
+        this.input.destruct();
+        return _super.prototype.destruct.call(this);
     };
     Emoji.prototype.createContainer = function (options) {
         var container = this.j.c.div('jodit-emoji');
@@ -35136,23 +35167,18 @@ var Emoji = (function (_super) {
         modules_1.Dom.append(container, [navigateContainer, this.list]);
         return container;
     };
-    Emoji.getInstance = function (jodit, onInsert) {
-        if (!this.__instance) {
-            this.__instance = new Emoji_1(jodit, onInsert);
-        }
-        this.__instance.onInsert = onInsert;
-        if (this.__instance.data) {
-            this.__instance.reset();
-        }
-        return this.__instance;
+    Emoji.prototype.setItems = function (items) {
+        this.list.scrollTo(0, 0);
+        modules_1.Dom.detach(this.list);
+        modules_1.Dom.append(this.list, this.generateEmojiList(items, this.data.categories));
     };
     Emoji.prototype.setActiveCategory = function (index, scrollIntoView) {
         if (scrollIntoView === void 0) { scrollIntoView = false; }
-        var cats = this.getElms('category'), oldActive = cats[this.activeIndex];
+        var cats = this.getElms('category'), oldActive = cats[this.activeIndex - 1];
         if (!cats[index]) {
             index = cats.length - 1;
         }
-        var newActive = cats[index];
+        var newActive = cats[index - 1];
         var activeClass = this.getFullElName('category', 'active', true);
         if (oldActive) {
             oldActive.classList.remove(activeClass);
@@ -35162,20 +35188,14 @@ var Emoji = (function (_super) {
         }
         if (scrollIntoView) {
             var titles = this.getElms('category-title');
-            titles[index].scrollIntoView();
+            titles[index + 1].scrollIntoView();
         }
         this.activeIndex = index;
     };
     Emoji.prototype.generateCategoriesList = function (categories) {
         var _this = this;
         return categories.map(function (cat, i) {
-            return _this.j.c.div(_this.getFullElName('category'), {
-                'data-index': i,
-                title: cat,
-                style: {
-                    width: 100 / categories.length + '%'
-                }
-            });
+            return _this.j.c.fromHTML("<button class=\"jodit-emoji__category\" data-index=\"".concat(i, "\" title=\"").concat(cat, "\"></button>"));
         });
     };
     Emoji.prototype.generateEmojiList = function (emojis, categories) {
@@ -35196,21 +35216,6 @@ var Emoji = (function (_super) {
             return acc;
         }, []);
     };
-    Emoji.isShortCat = function (emoji) {
-        return emoji && (0, helpers_1.isString)(emoji.e);
-    };
-    Emoji.normalizeEmoji = function (emoji) {
-        if (Emoji_1.isShortCat(emoji)) {
-            return {
-                emoji: emoji.e,
-                description: emoji.d,
-                category: emoji.c,
-                aliases: emoji.a,
-                tags: emoji.t
-            };
-        }
-        return emoji;
-    };
     Emoji.prototype.onInsertCode = function (code) {
         this.onInsert(code);
         var emoji = this.map[code];
@@ -35221,6 +35226,7 @@ var Emoji = (function (_super) {
                 newRecent.splice(index, 1);
             }
             newRecent.unshift(tslib_1.__assign(tslib_1.__assign({}, emoji), { category: -1 }));
+            newRecent = newRecent.slice(0, 7);
             this.recent = newRecent;
         }
     };
@@ -35271,22 +35277,13 @@ var Emoji = (function (_super) {
             this.reset();
         }
     };
-    Emoji.prototype.onReady = function () {
-        this.j.e
-            .on(this.input.nativeInput, 'input', this.onInputFilter)
-            .on(this.categories, 'click', this.onClickCategory)
-            .on(this.list, 'scroll', this.onScrollList)
-            .on(this.list, 'mousedown touchstart', this.onClickItem);
-    };
-    Emoji.prototype.destruct = function () {
-        Emoji_1.__instance = null;
-        this.input.destruct();
-        return _super.prototype.destruct.call(this);
-    };
     var Emoji_1;
     tslib_1.__decorate([
         decorators_1.persistent
     ], Emoji.prototype, "recent", void 0);
+    tslib_1.__decorate([
+        (0, decorators_1.hook)('ready')
+    ], Emoji.prototype, "onReady", null);
     tslib_1.__decorate([
         (0, decorators_1.throttle)()
     ], Emoji.prototype, "onScrollList", null);
@@ -35299,9 +35296,6 @@ var Emoji = (function (_super) {
     tslib_1.__decorate([
         (0, decorators_1.debounce)()
     ], Emoji.prototype, "onInputFilter", null);
-    tslib_1.__decorate([
-        (0, decorators_1.hook)('ready')
-    ], Emoji.prototype, "onReady", null);
     Emoji = Emoji_1 = tslib_1.__decorate([
         decorators_1.component
     ], Emoji);
@@ -39240,8 +39234,7 @@ config_1.Config.prototype.controls.gif = {
             searchGiphy: true
         }, sourceGif, close);
     },
-    tags: ['img'],
-    tooltip: 'Insert Image',
+    tooltip: 'Insert a gif',
     icon: __webpack_require__(86754)
 };
 
@@ -42190,7 +42183,7 @@ config_1.Config.prototype.controls.image = {
         }, sourceImage, close);
     },
     tags: ['img'],
-    tooltip: 'Insert Image',
+    tooltip: 'Insert a image',
     icon: __webpack_require__(10217)
 };
 

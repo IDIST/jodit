@@ -367,15 +367,16 @@ export class Config implements IViewOptions {
 			gif: 'GIF',
 			Search: '검색',
 			'Insert Emoji': '이모지 추가',
+			'Insert a gif': 'Gif 추가',
 			'Search emoji': '이모지 검색',
-			'Smileys & Emotion': 'Smileys & Emotion',
-			'People & Body': 'People & Body',
-			'Animals & Nature': 'Animals & Nature',
-			'Food & Drink': 'Food & Drink',
-			'Travel & Places': 'Travel & Places',
-			Activities: 'Activities',
-			Objects: 'Objects',
-			Flags: 'Flags',
+			'Smileys & Emotion': '스마일 & 감정',
+			'People & Body': '사람 & 몸',
+			'Animals & Nature': '동물 & 자연',
+			'Food & Drink': '음식 & 음료',
+			'Travel & Places': '여행 & 장소',
+			Activities: '활동',
+			Objects: '물체',
+			Flags: '깃발',
 			'Click to tune': '조정하려면 클릭',
 			'Heading 5': '제목 5',
 			'Heading 6': '제목 6',
@@ -384,12 +385,7 @@ export class Config implements IViewOptions {
 			'Drop audio': '오디오 드래그',
 			'Search image': '이미지 검색',
 			'Search gif': 'Gif 검색',
-			'Powered by: %s': '라이센스: %s',
-
-			'By using images from Unsplash, you agree to the License and Terms of Service.':
-				'Unsplash의 이미지를 사용하면 라이선스 및 서비스약관에 동의하는 것입니다.',
-			'By using gif images from Giphy, you agree to the License and Terms of Service.':
-				'Giphy의 이미지를 사용하면 라이선스 및 서비스약관에 동의하는 것입니다.'
+			'Powered by: %s': '라이센스: %s'
 		}
 	};
 

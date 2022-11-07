@@ -8,8 +8,6 @@
 	flex-direction: column;
 
 	&__navigate {
-		//height: 87px;
-		//border-bottom: 1px solid var(--color-border);
 		background-color: var(--color-white);
 	}
 
@@ -25,57 +23,95 @@
 		flex-direction: row;
 		align-items: center;
 		justify-content: center;
+
+		width: 28px;
+		height: 28px;
+
 		padding-top: 5px;
 		padding-bottom: 5px;
-		border-bottom: 2px solid transparent;
+		border-radius: 100%;
 		cursor: pointer;
-		opacity: 0.8;
 
-		&_active_true {
-			border-color: var(--color-border-selected);
-			opacity: 1;
+		background-color: #f8f8f8;
+		background-size: cover;
+
+		&[title='Smileys & Emotion'] {
+			background-image: data-uri('./assets/Smileys & Emotion.svg');
 		}
 
-		&:before {
-			display: inline-block;
-			width: 21px;
-			height: 21px;
-			background: data-uri('./assets/categories.png') no-repeat;
-			background-position: 0 0;
-			content: '';
+		&[title='People & Body'] {
+			background-image: data-uri('./assets/People & Body.svg');
 		}
 
-		&[title='People & Body']:before {
-			background-position: -21px 0;
+		&[title='Animals & Nature'] {
+			background-image: data-uri('./assets/Animals & Nature.svg');
 		}
 
-		&[title='Animals & Nature']:before {
-			background-position: -42px 0;
+		&[title='Food & Drink'] {
+			background-image: data-uri('./assets/Food & Drink.svg');
 		}
 
-		&[title='Food & Drink']:before {
-			background-position: -63px 0;
+		&[title='Travel & Places'] {
+			background-image: data-uri('./assets/Travel & Places.svg');
 		}
 
-		&[title='Activities']:before {
-			background-position: -84px 0;
+		&[title='Activities'] {
+			background-image: data-uri('./assets/Activities.svg');
 		}
 
-		&[title='Travel & Places']:before {
-			background-position: -42px -21px;
+		&[title='Objects'] {
+			background-image: data-uri('./assets/Objects.svg');
 		}
 
-		&[title='Objects']:before {
-			background-position: -21px -21px;
+		&[title='Symbols'] {
+			background-image: data-uri('./assets/Symbols.svg');
 		}
 
-		&[title='Symbols']:before {
-			background-position: -42px -21px;
+		&[title='Flags'] {
+			background-image: data-uri('./assets/Flags.svg');
 		}
 
-		&[title='Flags']:before {
-			background-position: -63px -21px;
+		&_active_true,
+		&:hover {
+			background-color: #E0E0E0;
+
+			&[title='Smileys & Emotion'] {
+				background-image: data-uri('./assets/Smileys & Emotion(Active).svg');
+			}
+
+			&[title='People & Body'] {
+				background-image: data-uri('./assets/People & Body(Active).svg');
+			}
+
+			&[title='Animals & Nature'] {
+				background-image: data-uri('./assets/Animals & Nature(Active).svg');
+			}
+
+			&[title='Food & Drink'] {
+				background-image: data-uri('./assets/Food & Drink(Active).svg');
+			}
+
+			&[title='Travel & Places'] {
+				background-image: data-uri('./assets/Travel & Places(Active).svg');
+			}
+
+			&[title='Activities'] {
+				background-image: data-uri('./assets/Activities(Active).svg');
+			}
+
+			&[title='Objects'] {
+				background-image: data-uri('./assets/Objects(Active).svg');
+			}
+
+			&[title='Symbols'] {
+				background-image: data-uri('./assets/Symbols(Active).svg');
+			}
+
+			&[title='Flags'] {
+				background-image: data-uri('./assets/Flags(Active).svg');
+			}
 		}
+
 	}
 
 	&__input {
@@ -94,10 +130,9 @@
 	&__emoji {
 		cursor: pointer;
 		font-family: 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol',
-			serif;
+		serif;
 		font-size: 24px;
 		line-height: 30px;
-		//padding: 3px 8px;
 		padding: 0;
 	}
 

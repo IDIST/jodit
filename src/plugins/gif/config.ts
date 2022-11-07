@@ -34,7 +34,7 @@ Config.prototype.controls.gif = {
 			close
 		);
 	},
-	tags: ['img'],
-	tooltip: 'Insert Image',
+	// tags: ['img'],
+	tooltip: 'Insert a gif',
 	icon: require('./ui/gif.svg')
 } as IControlType;

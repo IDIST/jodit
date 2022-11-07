@@ -16,11 +16,7 @@ import { Dom } from 'jodit/modules';
 
 @component
 export class Emoji extends UIElement<IJodit> {
-	/** @override */
-	className(): string {
-		return 'Emoji';
-	}
-
+	private static __instance: Emoji | null;
 	private input!: UIInput;
 	private categories!: HTMLDivElement;
 	private list!: HTMLDivElement;
@@ -34,55 +30,8 @@ export class Emoji extends UIElement<IJodit> {
 	private recent: IEmoji[] = [];
 
 	private map: IDictionary<IEmoji> = {};
-
-	get defaultList(): IEmojiList {
-		return (this.recent as IEmojiList).concat(this.data.emoji);
-	}
-
-	/**
-	 * Reset default state
-	 */
-	reset(): void {
-		this.input.nativeInput.value = '';
-		this.setItems(this.defaultList);
-		this.setActiveCategory(0);
-	}
-
-	private setItems(items: IEmojiList): void {
-		this.list.scrollTo(0, 0);
-
-		Dom.detach(this.list);
-
-		Dom.append(
-			this.list,
-			this.generateEmojiList(items, this.data.categories)
-		);
-	}
-
-	/** @override */
-	protected override createContainer(options?: IDictionary): HTMLElement {
-		const container = this.j.c.div('jodit-emoji');
-
-		this.input = new UIInput(this.j, {
-			name: 'search',
-			icon: 'search',
-			autocomplete: false,
-			clearButton: true,
-			placeholder: 'Search emoji'
-		});
-
-		this.input.container.classList.add(this.getFullElName('input'));
-
-		this.categories = this.j.c.div(this.getFullElName('categories'));
-		this.list = this.j.c.div(this.getFullElName('emojis'));
-
-		const navigateContainer = this.j.c.div(this.getFullElName('navigate'));
-
-		Dom.append(navigateContainer, [this.input.container, this.categories]);
-		Dom.append(container, [navigateContainer, this.list]);
-
-		return container;
-	}
+	private activeIndex = 0;
+	private cache: IDictionary<HTMLElement> = {};
 
 	/** @override */
 	constructor(jodit: IJodit, private onInsert: (code: string) => void) {
@@ -110,7 +59,9 @@ export class Emoji extends UIElement<IJodit> {
 		})();
 	}
 
-	private static __instance: Emoji | null;
+	get defaultList(): IEmojiList {
+		return (this.recent as IEmojiList).concat(this.data.emoji);
+	}
 
 	static getInstance(jodit: IJodit, onInsert: (code: string) => void): Emoji {
 		if (!this.__instance) {
@@ -126,20 +77,103 @@ export class Emoji extends UIElement<IJodit> {
 		return this.__instance;
 	}
 
-	private activeIndex = 0;
+	static normalizeEmoji(emoji: IShortEmoji | IEmoji): IEmoji {
+		if (Emoji.isShortCat(emoji)) {
+			return {
+				emoji: emoji.e,
+				description: emoji.d,
+				category: emoji.c,
+				aliases: emoji.a,
+				tags: emoji.t
+			};
+		}
+
+		return emoji;
+	}
+
+	private static isShortCat(emoji: IDictionary): emoji is IShortEmoji {
+		return emoji && isString(emoji.e);
+	}
+
+	/** @override */
+	className(): string {
+		return 'Emoji';
+	}
+
+	/**
+	 * Reset default state
+	 */
+	reset(): void {
+		this.input.nativeInput.value = '';
+		this.setItems(this.defaultList);
+		this.setActiveCategory(0);
+	}
+
+	@hook('ready')
+	onReady(): void {
+		this.j.e
+			.on(this.input.nativeInput, 'input', this.onInputFilter)
+			.on(this.categories, 'click', this.onClickCategory)
+			.on(this.list, 'scroll', this.onScrollList)
+			.on(this.list, 'mousedown touchstart', this.onClickItem);
+	}
+
+	/** @override */
+	override destruct(): any {
+		Emoji.__instance = null;
+		this.input.destruct();
+		return super.destruct();
+	}
+
+	/** @override */
+	protected override createContainer(options?: IDictionary): HTMLElement {
+		const container = this.j.c.div('jodit-emoji');
+
+		this.input = new UIInput(this.j, {
+			name: 'search',
+			icon: 'search',
+			autocomplete: false,
+			clearButton: true,
+			placeholder: 'Search emoji'
+		});
+
+		this.input.container.classList.add(this.getFullElName('input'));
+
+		this.categories = this.j.c.div(this.getFullElName('categories'));
+		this.list = this.j.c.div(this.getFullElName('emojis'));
+
+		const navigateContainer = this.j.c.div(this.getFullElName('navigate'));
+
+		Dom.append(navigateContainer, [this.input.container, this.categories]);
+		Dom.append(container, [navigateContainer, this.list]);
+
+		return container;
+	}
+
+	private setItems(items: IEmojiList): void {
+		this.list.scrollTo(0, 0);
+
+		Dom.detach(this.list);
+
+		Dom.append(
+			this.list,
+			this.generateEmojiList(items, this.data.categories)
+		);
+	}
 
 	private setActiveCategory(
 		index: number,
 		scrollIntoView: boolean = false
 	): void {
 		const cats = this.getElms('category'),
-			oldActive = cats[this.activeIndex];
+			oldActive = cats[this.activeIndex - 1];
 
 		if (!cats[index]) {
+			// index = cats.length - 1;
 			index = cats.length - 1;
 		}
 
-		const newActive = cats[index];
+		const newActive = cats[index - 1];
 
 		const activeClass = this.getFullElName('category', 'active', true);
 
@@ -153,25 +187,20 @@ export class Emoji extends UIElement<IJodit> {
 
 		if (scrollIntoView) {
 			const titles = this.getElms('category-title');
-			titles[index].scrollIntoView();
+			titles[index + 1].scrollIntoView();
 		}
 
 		this.activeIndex = index;
 	}
 
 	private generateCategoriesList(categories: string[]): HTMLElement[] {
-		return categories.map((cat, i) =>
-			this.j.c.div(this.getFullElName('category'), {
-				'data-index': i,
-				title: cat,
-				style: {
-					width: 100 / categories.length + '%'
-				}
-			})
-		);
+		return categories.map((cat, i) => {
+			// const icon = require(`./assets/${cat}.svg`);
+			return this.j.c.fromHTML(
+				`<button class="jodit-emoji__category" data-index="${i}" title="${cat}"></button>`
+			);
+		});
 	}
-
-	private cache: IDictionary<HTMLElement> = {};
 
 	private generateEmojiList(
 		emojis: Array<IEmoji | IShortEmoji>,
@@ -193,7 +222,6 @@ export class Emoji extends UIElement<IJodit> {
 					);
 
 				this.cache[currentCategory] = category;
-
 				acc.push(category);
 			}
 
@@ -213,24 +241,6 @@ export class Emoji extends UIElement<IJodit> {
 		}, [] as HTMLElement[]);
 	}
 
-	private static isShortCat(emoji: IDictionary): emoji is IShortEmoji {
-		return emoji && isString(emoji.e);
-	}
-
-	static normalizeEmoji(emoji: IShortEmoji | IEmoji): IEmoji {
-		if (Emoji.isShortCat(emoji)) {
-			return {
-				emoji: emoji.e,
-				description: emoji.d,
-				category: emoji.c,
-				aliases: emoji.a,
-				tags: emoji.t
-			};
-		}
-
-		return emoji;
-	}
-
 	private onInsertCode(code: string): void {
 		this.onInsert(code);
 
@@ -238,7 +248,7 @@ export class Emoji extends UIElement<IJodit> {
 
 		// Add emoji in recent list in the first position
 		if (emoji) {
-			const newRecent = [...this.recent]; // need for persistent storage
+			let newRecent = [...this.recent]; // need for persistent storage
 			const index = newRecent.findIndex(e => e.emoji === code);
 
 			if (index !== -1) {
@@ -249,6 +259,9 @@ export class Emoji extends UIElement<IJodit> {
 				...emoji,
 				category: -1
 			});
+
+			// Limit recent emojis count
+			newRecent = newRecent.slice(0, 7);
 
 			this.recent = newRecent;
 		}
@@ -328,21 +341,5 @@ export class Emoji extends UIElement<IJodit> {
 		if (this.input.nativeInput.value.length) {
 			this.reset();
 		}
-	}
-
-	@hook('ready')
-	onReady(): void {
-		this.j.e
-			.on(this.input.nativeInput, 'input', this.onInputFilter)
-			.on(this.categories, 'click', this.onClickCategory)
-			.on(this.list, 'scroll', this.onScrollList)
-			.on(this.list, 'mousedown touchstart', this.onClickItem);
-	}
-
-	/** @override */
-	override destruct(): any {
-		Emoji.__instance = null;
-		this.input.destruct();
-		return super.destruct();
 	}
 }
