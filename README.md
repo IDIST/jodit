@@ -310,6 +310,3 @@ https://github.com/xdan/jodit
 ## License
 
 MIT
-
-
-## This will be updated.
