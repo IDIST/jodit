@@ -1496,7 +1496,7 @@
   dependencies:
     "@types/node" "*"
 
-"@typescript-eslint/eslint-plugin@^5.33.0", "@typescript-eslint/eslint-plugin@^5.36.2":
+"@typescript-eslint/eslint-plugin@^5.33.0":
   version "5.40.1"
   resolved "https://registry.yarnpkg.com/@typescript-eslint/eslint-plugin/-/eslint-plugin-5.40.1.tgz#3203a6ff396b1194083faaa6e5110c401201d7d5"
   integrity sha512-FsWboKkWdytGiXT5O1/R9j37YgcjO8MKHSUmWnIEjVaz0krHkplPnYi7mwdb+5+cs0toFNQb0HIrN7zONdIEWg==
@@ -1510,7 +1510,7 @@
     semver "^7.3.7"
     tsutils "^3.21.0"
 
-"@typescript-eslint/parser@^5.33.0", "@typescript-eslint/parser@^5.36.2":
+"@typescript-eslint/parser@^5.33.0":
   version "5.40.1"
   resolved "https://registry.yarnpkg.com/@typescript-eslint/parser/-/parser-5.40.1.tgz#e7f8295dd8154d0d37d661ddd8e2f0ecfdee28dd"
   integrity sha512-IK6x55va5w4YvXd4b3VrXQPldV9vQTxi5ov+g4pMANsXPTXOcfjx08CRR1Dfrcc51syPtXHF5bgLlMHYFrvQtg==
@@ -3111,7 +3111,7 @@ core-js@^2.4.0:
   resolved "https://registry.yarnpkg.com/core-js/-/core-js-2.6.12.tgz#d9333dfa7b065e347cc5682219d6f690859cc2ec"
   integrity sha512-Kb2wC0fvsWfQrgk8HU5lW6U/Lcs8+9aaYcy4ZFc6DDlo4nZ7n70dEgE5rtR0oG6ufKDUnrwfWL1mXR5ljDatrQ==
 
-core-js@^3.24.1, core-js@^3.25.5:
+core-js@^3.24.1:
   version "3.25.5"
   resolved "https://registry.yarnpkg.com/core-js/-/core-js-3.25.5.tgz#e86f651a2ca8a0237a5f064c2fe56cef89646e27"
   integrity sha512-nbm6eZSjm+ZuBQxCUPQKQCoUEfFOXjUZ8dTTyikyKaWrTYmAVbykQfwsKE5dBK88u3QCkCrzsx/PPlKfhsvgpw==
@@ -6192,23 +6192,6 @@ jju@~1.4.0:
   version "1.4.0"
   resolved "https://registry.yarnpkg.com/jju/-/jju-1.4.0.tgz#a3abe2718af241a2b2904f84a625970f389ae32a"
   integrity sha512-8wb9Yw966OSxApiCt0K3yNJL8pnNeIv+OEq2YMidz4FKP6nonSRoOXc80iXY4JaN2FC11B9qsNmDsm+ZOfMROA==
-
-jodit-react@^1.3.12:
-  version "1.3.23"
-  resolved "https://registry.yarnpkg.com/jodit-react/-/jodit-react-1.3.23.tgz#cc6d9db6ee2bc241dfeb4c3c1df1268c8284a88c"
-  integrity sha512-8RPMzTfaoIrvmtJxxUGEWzTnecMUISIci01U3o6UAvmm7Zm0qtfJnLgUJ4Ze3v8g/V+p+wAbkvIpSzYLuT5AsA==
-  dependencies:
-    "@typescript-eslint/eslint-plugin" "^5.36.2"
-    "@typescript-eslint/parser" "^5.36.2"
-    jodit "^3.20.2"
-
-jodit@^3.20.2:
-  version "3.21.5"
-  resolved "https://registry.yarnpkg.com/jodit/-/jodit-3.21.5.tgz#a789b9cb6a7dddf547d72d8aed164631d39ab84c"
-  integrity sha512-xseZdZnNYJxTYZoZf3KxQCz9wmgeJjWNUgjDhcFJ7CwCU3F2EkXv2jjK2LqUBn84jFSTqClqx8IgsdrsWB5hOQ==
-  dependencies:
-    autobind-decorator "^2.4.0"
-    core-js "^3.25.5"
 
 js-sdsl@^4.1.4:
   version "4.1.5"
