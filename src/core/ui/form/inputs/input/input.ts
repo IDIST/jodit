@@ -1,4 +1,3 @@
-
 /**
  * @module ui/form/inputs
  */
@@ -21,22 +20,6 @@ import { inputValidators } from 'jodit/core/ui/form/validators';
 
 @component
 export class UIInput extends UIElement implements IUIInput {
-	/** @override */
-	override className(): string {
-		return 'UIInput';
-	}
-
-	nativeInput!: IUIInput['nativeInput'];
-
-	private label = this.j.c.span(this.getFullElName('label'));
-	private icon = this.j.c.span(this.getFullElName('icon'));
-	private clearButton = this.j.c.span(
-		this.getFullElName('clear'),
-		Icon.get('cancel')
-	);
-
-	private wrapper!: HTMLElement;
-
 	static defaultState: IUIInput['state'] = {
 		className: '',
 		autocomplete: true,
@@ -50,8 +33,97 @@ export class UIInput extends UIElement implements IUIInput {
 		required: false,
 		validators: []
 	};
-
+	nativeInput!: IUIInput['nativeInput'];
 	state: IUIInput['state'] = { ...UIInput.defaultState };
+	protected validators: Set<IUIInputValidator> = new Set([]);
+	private label = this.j.c.span(this.getFullElName('label'));
+	private icon = this.j.c.span(this.getFullElName('icon'));
+	private clearButton = this.j.c.span(
+		this.getFullElName('clear'),
+		Icon.get('cancel')
+	);
+	private wrapper!: HTMLElement;
+	private __errorBox = this.j.c.span(this.getFullElName('error'));
+
+	/** @override **/
+	constructor(jodit: IViewBased, options?: Partial<IUIInput['state']>) {
+		super(jodit, options);
+
+		if (options?.value !== undefined) {
+			options.value = options.value.toString();
+		}
+
+		Object.assign(this.state, options);
+
+		if (this.state.clearButton !== undefined) {
+			this.j.e
+				.on(this.clearButton, 'click', (e: MouseEvent) => {
+					e.preventDefault();
+					this.nativeInput.value = '';
+					this.j.e.fire(this.nativeInput, 'input');
+					this.focus();
+				})
+				.on(this.nativeInput, 'input', () => {
+					this.state.clearButton = Boolean(this.value.length);
+				});
+
+			this.state.clearButton = Boolean(this.value.length);
+		}
+
+		this.j.e
+			.on(this.nativeInput, 'focus blur', () => {
+				this.onChangeFocus();
+			})
+			.on(this.nativeInput, 'input change', this.onChangeValue);
+
+		this.onChangeState();
+		this.onChangeClassName();
+		this.onChangeStateValue();
+	}
+
+	set error(value: string) {
+		this.setMod('has-error', Boolean(value));
+
+		if (!value) {
+			Dom.safeRemove(this.__errorBox);
+		} else {
+			this.__errorBox.innerText = this.j.i18n(
+				value,
+				this.j.i18n(this.state.label || '')
+			);
+			this.container.appendChild(this.__errorBox);
+		}
+	}
+
+	get value(): string {
+		return this.nativeInput.value;
+	}
+
+	set value(value: string) {
+		if (this.value !== value) {
+			this.nativeInput.value = value;
+			this.onChangeValue();
+		}
+	}
+
+	get isFocused(): boolean {
+		return this.nativeInput === this.j.od.activeElement;
+	}
+
+	/** @override */
+	override className(): string {
+		return 'UIInput';
+	}
+
+	validate(): boolean {
+		this.error = '';
+
+		return toArray(this.validators).every(validator => validator(this));
+	}
+
+	focus(): void {
+		this.nativeInput.focus();
+	}
 
 	@watch('state.clearButton')
 	protected onChangeClear(): void {
@@ -102,7 +174,8 @@ export class UIInput extends UIElement implements IUIInput {
 		attr(input, 'placeholder', placeholder ? this.j.i18n(placeholder) : '');
 
 		if (icon && Icon.exists(icon)) {
-			Dom.before(input, this.icon);
+			Dom.after(input, this.icon);
+			// Dom.before(input, this.icon);
 			this.icon.innerHTML = Icon.get(icon);
 		} else {
 			Dom.safeRemove(this.icon);
@@ -134,33 +207,6 @@ export class UIInput extends UIElement implements IUIInput {
 		});
 	}
 
-	private __errorBox = this.j.c.span(this.getFullElName('error'));
-
-	set error(value: string) {
-		this.setMod('has-error', Boolean(value));
-
-		if (!value) {
-			Dom.safeRemove(this.__errorBox);
-		} else {
-			this.__errorBox.innerText = this.j.i18n(
-				value,
-				this.j.i18n(this.state.label || '')
-			);
-			this.container.appendChild(this.__errorBox);
-		}
-	}
-
-	get value(): string {
-		return this.nativeInput.value;
-	}
-
-	set value(value: string) {
-		if (this.value !== value) {
-			this.nativeInput.value = value;
-			this.onChangeValue();
-		}
-	}
-
 	/**
 	 * Call on every state value changed
 	 */
@@ -185,14 +231,6 @@ export class UIInput extends UIElement implements IUIInput {
 			this.j.e.fire(this, 'change', value);
 			this.state.onChange?.(value);
 		}
-	}
-
-	protected validators: Set<IUIInputValidator> = new Set([]);
-
-	validate(): boolean {
-		this.error = '';
-
-		return toArray(this.validators).every(validator => validator(this));
 	}
 
 	/** @override **/
@@ -226,50 +264,6 @@ export class UIInput extends UIElement implements IUIInput {
 		options?: Partial<this['state']>
 	): IUIInput['nativeInput'] {
 		return this.j.create.element('input');
-	}
-
-	/** @override **/
-	constructor(jodit: IViewBased, options?: Partial<IUIInput['state']>) {
-		super(jodit, options);
-
-		if (options?.value !== undefined) {
-			options.value = options.value.toString();
-		}
-
-		Object.assign(this.state, options);
-
-		if (this.state.clearButton !== undefined) {
-			this.j.e
-				.on(this.clearButton, 'click', (e: MouseEvent) => {
-					e.preventDefault();
-					this.nativeInput.value = '';
-					this.j.e.fire(this.nativeInput, 'input');
-					this.focus();
-				})
-				.on(this.nativeInput, 'input', () => {
-					this.state.clearButton = Boolean(this.value.length);
-				});
-
-			this.state.clearButton = Boolean(this.value.length);
-		}
-
-		this.j.e
-			.on(this.nativeInput, 'focus blur', () => {
-				this.onChangeFocus();
-			})
-			.on(this.nativeInput, 'input change', this.onChangeValue);
-
-		this.onChangeState();
-		this.onChangeClassName();
-		this.onChangeStateValue();
-	}
-
-	focus(): void {
-		this.nativeInput.focus();
-	}
-
-	get isFocused(): boolean {
-		return this.nativeInput === this.j.od.activeElement;
 	}
 
 	/**

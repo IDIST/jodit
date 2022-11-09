@@ -60,6 +60,7 @@
   --jd-color-icon: var(--jd-color-dark);
   --jd-padding-default: 8px;
   --jd-margin-default: 12px;
+  --jd-input-padding-default: 14px;
   --jd-border-radius-default: 4px;
   --jd-z-index-full-size: 100000;
   --jd-z-index-popup: 10000001;
@@ -88,6 +89,7 @@
   --jd-width-default: 180px;
   --jd-width-input-min: var(--jd-width-default);
   --jd-input-height: 44px;
+  --jd-input-background-color: #f8f8f8;
   --jd-button-icon-size: 14px;
   --jd-margin-v: 8px;
   --jd-button-df-size: calc((var(--jd-button-icon-size) - 4px) * 2);

@@ -248,7 +248,7 @@
   border-color: #ff3b3b;
 }
 .jodit .jodit-input:focus {
-  border: solid 1px #9013fe;
+  border: none;
   outline: 0;
 }
 .jodit-checkbox {
@@ -1164,18 +1164,6 @@ svg.jodit-icon {
   height: 80px;
   overflow: hidden;
 }
-.jodit-context-menu__content input {
-  width: 100%;
-  font-size: 14px;
-  line-height: 20px;
-  padding: 12px 10px 12px 16px;
-  border-radius: 4px;
-  background-color: #f8f8f8;
-}
-.jodit-context-menu__content input:focus,
-.jodit-context-menu__content input:focus-visible {
-  outline: none;
-}
 .jodit-context-menu_max-height_false .jodit-context-menu__content {
   max-height: -webkit-fit-content;
   max-height: -moz-fit-content;
@@ -1235,18 +1223,6 @@ svg.jodit-icon {
   width: 100%;
   height: 80px;
   overflow: hidden;
-}
-.jodit-popup__content input {
-  width: 100%;
-  font-size: 14px;
-  line-height: 20px;
-  padding: 12px 10px 12px 16px;
-  border-radius: 4px;
-  background-color: #f8f8f8;
-}
-.jodit-popup__content input:focus,
-.jodit-popup__content input:focus-visible {
-  outline: none;
 }
 .jodit-popup_max-height_false .jodit-popup__content {
   max-height: -webkit-fit-content;
@@ -2648,13 +2624,14 @@ svg.jodit-icon {
   display: -ms-flexbox;
   display: flex;
   min-width: 200px;
+  height: 44px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: stretch;
       -ms-flex-pack: stretch;
           justify-content: stretch;
-  background-color: #fff;
+  background-color: #f8f8f8;
   overflow: hidden;
   -webkit-perspective: 1px;
           perspective: 1px;
@@ -2679,11 +2656,11 @@ svg.jodit-icon {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 0 8px;
+  padding: 0 14px;
 }
 .jodit-ui-input__icon:not(:empty) svg {
-  width: 16px;
-  height: 16px;
+  width: 20px;
+  height: 20px;
   fill: #bdbdbd;
 }
 .jodit-ui-input__icon:not(:empty) + .jodit-ui-input__input {
@@ -2696,7 +2673,7 @@ svg.jodit-icon {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 0 8px 0 0;
+  padding: 0 14px 0 0;
   opacity: 0.8;
 }
 .jodit-ui-input__clear:active {
@@ -2706,8 +2683,8 @@ svg.jodit-icon {
           transform: scale(1.1, 1.1);
 }
 .jodit-ui-input__clear svg {
-  width: 12px;
-  height: 12px;
+  width: 20px;
+  height: 20px;
   fill: #EEEEEE;
 }
 .jodit-ui-input_theme_dark .jodit-ui-input__icon svg {
@@ -2788,13 +2765,14 @@ svg.jodit-icon {
   display: -ms-flexbox;
   display: flex;
   min-width: 200px;
+  height: 44px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: stretch;
       -ms-flex-pack: stretch;
           justify-content: stretch;
-  background-color: #fff;
+  background-color: #f8f8f8;
   overflow: hidden;
   -webkit-perspective: 1px;
           perspective: 1px;
@@ -2819,11 +2797,11 @@ svg.jodit-icon {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 0 8px;
+  padding: 0 14px;
 }
 .jodit-ui-select__icon:not(:empty) svg {
-  width: 16px;
-  height: 16px;
+  width: 20px;
+  height: 20px;
   fill: #bdbdbd;
 }
 .jodit-ui-select__icon:not(:empty) + .jodit-ui-select__input {
@@ -2836,7 +2814,7 @@ svg.jodit-icon {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 0 8px 0 0;
+  padding: 0 14px 0 0;
   opacity: 0.8;
 }
 .jodit-ui-select__clear:active {
@@ -2846,8 +2824,8 @@ svg.jodit-icon {
           transform: scale(1.1, 1.1);
 }
 .jodit-ui-select__clear svg {
-  width: 12px;
-  height: 12px;
+  width: 20px;
+  height: 20px;
   fill: #EEEEEE;
 }
 .jodit-ui-select_theme_dark .jodit-ui-select__icon svg {
@@ -2951,13 +2929,14 @@ svg.jodit-icon {
   display: -ms-flexbox;
   display: flex;
   min-width: 200px;
+  height: 44px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: stretch;
       -ms-flex-pack: stretch;
           justify-content: stretch;
-  background-color: #fff;
+  background-color: #f8f8f8;
   overflow: hidden;
   -webkit-perspective: 1px;
           perspective: 1px;
@@ -2982,11 +2961,11 @@ svg.jodit-icon {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 0 8px;
+  padding: 0 14px;
 }
 .jodit-ui-text-area__icon:not(:empty) svg {
-  width: 16px;
-  height: 16px;
+  width: 20px;
+  height: 20px;
   fill: #bdbdbd;
 }
 .jodit-ui-text-area__icon:not(:empty) + .jodit-ui-text-area__input {
@@ -2999,7 +2978,7 @@ svg.jodit-icon {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 0 8px 0 0;
+  padding: 0 14px 0 0;
   opacity: 0.8;
 }
 .jodit-ui-text-area__clear:active {
@@ -3009,8 +2988,8 @@ svg.jodit-icon {
           transform: scale(1.1, 1.1);
 }
 .jodit-ui-text-area__clear svg {
-  width: 12px;
-  height: 12px;
+  width: 20px;
+  height: 20px;
   fill: #EEEEEE;
 }
 .jodit-ui-text-area_theme_dark .jodit-ui-text-area__icon svg {

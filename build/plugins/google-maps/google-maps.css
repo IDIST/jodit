@@ -131,9 +131,10 @@
 .jodit-color-input__wrapper {
   display: flex;
   min-width: 200px;
+  height: var(--jd-input-height);
   align-items: center;
   justify-content: stretch;
-  background-color: var(--jd-color-background-default);
+  background-color: var(--jd-input-background-color);
   overflow: hidden;
   perspective: 1px;
   border-radius: var(--jd-border-radius-default);
@@ -153,11 +154,11 @@
 .jodit-color-input__icon:not(:empty) {
   display: flex;
   align-items: center;
-  padding: 0 var(--jd-padding-default);
+  padding: 0 var(--jd-input-padding-default);
 }
 .jodit-color-input__icon:not(:empty) svg {
-  width: 16px;
-  height: 16px;
+  width: 20px;
+  height: 20px;
   fill: var(--jd-color-placeholder);
 }
 .jodit-color-input__icon:not(:empty) + .jodit-color-input__input {
@@ -166,7 +167,7 @@
 .jodit-color-input__clear {
   display: flex;
   align-items: center;
-  padding: 0 var(--jd-padding-default) 0 0;
+  padding: 0 var(--jd-input-padding-default) 0 0;
   opacity: 0.8;
 }
 .jodit-color-input__clear:active {
@@ -174,8 +175,8 @@
   transform: scale(1.1, 1.1);
 }
 .jodit-color-input__clear svg {
-  width: 12px;
-  height: 12px;
+  width: 20px;
+  height: 20px;
   fill: var(--jd-color-border);
 }
 .jodit-color-input_theme_dark .jodit-color-input__icon svg,
@@ -320,9 +321,10 @@
 .jodit-ui-combo-box__wrapper {
   display: flex;
   min-width: 200px;
+  height: var(--jd-input-height);
   align-items: center;
   justify-content: stretch;
-  background-color: var(--jd-color-background-default);
+  background-color: var(--jd-input-background-color);
   overflow: hidden;
   perspective: 1px;
   border-radius: var(--jd-border-radius-default);
@@ -342,11 +344,11 @@
 .jodit-ui-combo-box__icon:not(:empty) {
   display: flex;
   align-items: center;
-  padding: 0 var(--jd-padding-default);
+  padding: 0 var(--jd-input-padding-default);
 }
 .jodit-ui-combo-box__icon:not(:empty) svg {
-  width: 16px;
-  height: 16px;
+  width: 20px;
+  height: 20px;
   fill: var(--jd-color-placeholder);
 }
 .jodit-ui-combo-box__icon:not(:empty) + .jodit-ui-combo-box__input {
@@ -355,7 +357,7 @@
 .jodit-ui-combo-box__clear {
   display: flex;
   align-items: center;
-  padding: 0 var(--jd-padding-default) 0 0;
+  padding: 0 var(--jd-input-padding-default) 0 0;
   opacity: 0.8;
 }
 .jodit-ui-combo-box__clear:active {
@@ -363,8 +365,8 @@
   transform: scale(1.1, 1.1);
 }
 .jodit-ui-combo-box__clear svg {
-  width: 12px;
-  height: 12px;
+  width: 20px;
+  height: 20px;
   fill: var(--jd-color-border);
 }
 .jodit-ui-combo-box_theme_dark .jodit-ui-combo-box__icon svg,

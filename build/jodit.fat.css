@@ -60,6 +60,7 @@
   --jd-color-icon: var(--jd-color-dark);
   --jd-padding-default: 8px;
   --jd-margin-default: 12px;
+  --jd-input-padding-default: 14px;
   --jd-border-radius-default: 4px;
   --jd-z-index-full-size: 100000;
   --jd-z-index-popup: 10000001;
@@ -88,6 +89,7 @@
   --jd-width-default: 180px;
   --jd-width-input-min: var(--jd-width-default);
   --jd-input-height: 44px;
+  --jd-input-background-color: #f8f8f8;
   --jd-button-icon-size: 14px;
   --jd-margin-v: 8px;
   --jd-button-df-size: calc((var(--jd-button-icon-size) - 4px) * 2);
@@ -269,7 +271,7 @@
   border-color: var(--jd-color-red);
 }
 .jodit .jodit-input:focus {
-  border: solid 1px #9013fe;
+  border: none;
   outline: 0;
 }
 .jodit-checkbox {
@@ -933,18 +935,6 @@ svg.jodit-icon {
   height: 80px;
   overflow: hidden;
 }
-.jodit-context-menu__content input {
-  width: 100%;
-  font-size: 14px;
-  line-height: 20px;
-  padding: 12px 10px 12px 16px;
-  border-radius: var(--jd-border-radius-default);
-  background-color: #f8f8f8;
-}
-.jodit-context-menu__content input:focus,
-.jodit-context-menu__content input:focus-visible {
-  outline: none;
-}
 .jodit-context-menu_max-height_false .jodit-context-menu__content {
   max-height: fit-content;
 }
@@ -1002,18 +992,6 @@ svg.jodit-icon {
   width: 100%;
   height: 80px;
   overflow: hidden;
-}
-.jodit-popup__content input {
-  width: 100%;
-  font-size: 14px;
-  line-height: 20px;
-  padding: 12px 10px 12px 16px;
-  border-radius: var(--jd-border-radius-default);
-  background-color: #f8f8f8;
-}
-.jodit-popup__content input:focus,
-.jodit-popup__content input:focus-visible {
-  outline: none;
 }
 .jodit-popup_max-height_false .jodit-popup__content {
   max-height: fit-content;
@@ -2218,9 +2196,10 @@ svg.jodit-icon {
 .jodit-ui-input__wrapper {
   display: flex;
   min-width: 200px;
+  height: var(--jd-input-height);
   align-items: center;
   justify-content: stretch;
-  background-color: var(--jd-color-background-default);
+  background-color: var(--jd-input-background-color);
   overflow: hidden;
   perspective: 1px;
   border-radius: var(--jd-border-radius-default);
@@ -2240,11 +2219,11 @@ svg.jodit-icon {
 .jodit-ui-input__icon:not(:empty) {
   display: flex;
   align-items: center;
-  padding: 0 var(--jd-padding-default);
+  padding: 0 var(--jd-input-padding-default);
 }
 .jodit-ui-input__icon:not(:empty) svg {
-  width: 16px;
-  height: 16px;
+  width: 20px;
+  height: 20px;
   fill: var(--jd-color-placeholder);
 }
 .jodit-ui-input__icon:not(:empty) + .jodit-ui-input__input {
@@ -2253,7 +2232,7 @@ svg.jodit-icon {
 .jodit-ui-input__clear {
   display: flex;
   align-items: center;
-  padding: 0 var(--jd-padding-default) 0 0;
+  padding: 0 var(--jd-input-padding-default) 0 0;
   opacity: 0.8;
 }
 .jodit-ui-input__clear:active {
@@ -2261,8 +2240,8 @@ svg.jodit-icon {
   transform: scale(1.1, 1.1);
 }
 .jodit-ui-input__clear svg {
-  width: 12px;
-  height: 12px;
+  width: 20px;
+  height: 20px;
   fill: var(--jd-color-border);
 }
 .jodit-ui-input_theme_dark .jodit-ui-input__icon svg,
@@ -2326,9 +2305,10 @@ svg.jodit-icon {
 .jodit-ui-select__wrapper {
   display: flex;
   min-width: 200px;
+  height: var(--jd-input-height);
   align-items: center;
   justify-content: stretch;
-  background-color: var(--jd-color-background-default);
+  background-color: var(--jd-input-background-color);
   overflow: hidden;
   perspective: 1px;
   border-radius: var(--jd-border-radius-default);
@@ -2348,11 +2328,11 @@ svg.jodit-icon {
 .jodit-ui-select__icon:not(:empty) {
   display: flex;
   align-items: center;
-  padding: 0 var(--jd-padding-default);
+  padding: 0 var(--jd-input-padding-default);
 }
 .jodit-ui-select__icon:not(:empty) svg {
-  width: 16px;
-  height: 16px;
+  width: 20px;
+  height: 20px;
   fill: var(--jd-color-placeholder);
 }
 .jodit-ui-select__icon:not(:empty) + .jodit-ui-select__input {
@@ -2361,7 +2341,7 @@ svg.jodit-icon {
 .jodit-ui-select__clear {
   display: flex;
   align-items: center;
-  padding: 0 var(--jd-padding-default) 0 0;
+  padding: 0 var(--jd-input-padding-default) 0 0;
   opacity: 0.8;
 }
 .jodit-ui-select__clear:active {
@@ -2369,8 +2349,8 @@ svg.jodit-icon {
   transform: scale(1.1, 1.1);
 }
 .jodit-ui-select__clear svg {
-  width: 12px;
-  height: 12px;
+  width: 20px;
+  height: 20px;
   fill: var(--jd-color-border);
 }
 .jodit-ui-select_theme_dark .jodit-ui-select__icon svg,
@@ -2458,9 +2438,10 @@ svg.jodit-icon {
 .jodit-ui-text-area__wrapper {
   display: flex;
   min-width: 200px;
+  height: var(--jd-input-height);
   align-items: center;
   justify-content: stretch;
-  background-color: var(--jd-color-background-default);
+  background-color: var(--jd-input-background-color);
   overflow: hidden;
   perspective: 1px;
   border-radius: var(--jd-border-radius-default);
@@ -2480,11 +2461,11 @@ svg.jodit-icon {
 .jodit-ui-text-area__icon:not(:empty) {
   display: flex;
   align-items: center;
-  padding: 0 var(--jd-padding-default);
+  padding: 0 var(--jd-input-padding-default);
 }
 .jodit-ui-text-area__icon:not(:empty) svg {
-  width: 16px;
-  height: 16px;
+  width: 20px;
+  height: 20px;
   fill: var(--jd-color-placeholder);
 }
 .jodit-ui-text-area__icon:not(:empty) + .jodit-ui-text-area__input {
@@ -2493,7 +2474,7 @@ svg.jodit-icon {
 .jodit-ui-text-area__clear {
   display: flex;
   align-items: center;
-  padding: 0 var(--jd-padding-default) 0 0;
+  padding: 0 var(--jd-input-padding-default) 0 0;
   opacity: 0.8;
 }
 .jodit-ui-text-area__clear:active {
@@ -2501,8 +2482,8 @@ svg.jodit-icon {
   transform: scale(1.1, 1.1);
 }
 .jodit-ui-text-area__clear svg {
-  width: 12px;
-  height: 12px;
+  width: 20px;
+  height: 20px;
   fill: var(--jd-color-border);
 }
 .jodit-ui-text-area_theme_dark .jodit-ui-text-area__icon svg,
@@ -5117,6 +5098,7 @@ html.jodit_fullsize-box_true {
   --jd-color-icon: var(--jd-color-dark);
   --jd-padding-default: 8px;
   --jd-margin-default: 12px;
+  --jd-input-padding-default: 14px;
   --jd-border-radius-default: 4px;
   --jd-z-index-full-size: 100000;
   --jd-z-index-popup: 10000001;
@@ -5145,6 +5127,7 @@ html.jodit_fullsize-box_true {
   --jd-width-default: 180px;
   --jd-width-input-min: var(--jd-width-default);
   --jd-input-height: 44px;
+  --jd-input-background-color: #f8f8f8;
   --jd-button-icon-size: 14px;
   --jd-margin-v: 8px;
   --jd-button-df-size: calc((var(--jd-button-icon-size) - 4px) * 2);
@@ -6522,9 +6505,10 @@ html.jodit_fullsize-box_true {
 .jodit-color-input__wrapper {
   display: flex;
   min-width: 200px;
+  height: var(--jd-input-height);
   align-items: center;
   justify-content: stretch;
-  background-color: var(--jd-color-background-default);
+  background-color: var(--jd-input-background-color);
   overflow: hidden;
   perspective: 1px;
   border-radius: var(--jd-border-radius-default);
@@ -6544,11 +6528,11 @@ html.jodit_fullsize-box_true {
 .jodit-color-input__icon:not(:empty) {
   display: flex;
   align-items: center;
-  padding: 0 var(--jd-padding-default);
+  padding: 0 var(--jd-input-padding-default);
 }
 .jodit-color-input__icon:not(:empty) svg {
-  width: 16px;
-  height: 16px;
+  width: 20px;
+  height: 20px;
   fill: var(--jd-color-placeholder);
 }
 .jodit-color-input__icon:not(:empty) + .jodit-color-input__input {
@@ -6557,7 +6541,7 @@ html.jodit_fullsize-box_true {
 .jodit-color-input__clear {
   display: flex;
   align-items: center;
-  padding: 0 var(--jd-padding-default) 0 0;
+  padding: 0 var(--jd-input-padding-default) 0 0;
   opacity: 0.8;
 }
 .jodit-color-input__clear:active {
@@ -6565,8 +6549,8 @@ html.jodit_fullsize-box_true {
   transform: scale(1.1, 1.1);
 }
 .jodit-color-input__clear svg {
-  width: 12px;
-  height: 12px;
+  width: 20px;
+  height: 20px;
   fill: var(--jd-color-border);
 }
 .jodit-color-input_theme_dark .jodit-color-input__icon svg,
@@ -6995,9 +6979,10 @@ html.jodit_fullsize-box_true {
 .jodit-ui-combo-box__wrapper {
   display: flex;
   min-width: 200px;
+  height: var(--jd-input-height);
   align-items: center;
   justify-content: stretch;
-  background-color: var(--jd-color-background-default);
+  background-color: var(--jd-input-background-color);
   overflow: hidden;
   perspective: 1px;
   border-radius: var(--jd-border-radius-default);
@@ -7017,11 +7002,11 @@ html.jodit_fullsize-box_true {
 .jodit-ui-combo-box__icon:not(:empty) {
   display: flex;
   align-items: center;
-  padding: 0 var(--jd-padding-default);
+  padding: 0 var(--jd-input-padding-default);
 }
 .jodit-ui-combo-box__icon:not(:empty) svg {
-  width: 16px;
-  height: 16px;
+  width: 20px;
+  height: 20px;
   fill: var(--jd-color-placeholder);
 }
 .jodit-ui-combo-box__icon:not(:empty) + .jodit-ui-combo-box__input {
@@ -7030,7 +7015,7 @@ html.jodit_fullsize-box_true {
 .jodit-ui-combo-box__clear {
   display: flex;
   align-items: center;
-  padding: 0 var(--jd-padding-default) 0 0;
+  padding: 0 var(--jd-input-padding-default) 0 0;
   opacity: 0.8;
 }
 .jodit-ui-combo-box__clear:active {
@@ -7038,8 +7023,8 @@ html.jodit_fullsize-box_true {
   transform: scale(1.1, 1.1);
 }
 .jodit-ui-combo-box__clear svg {
-  width: 12px;
-  height: 12px;
+  width: 20px;
+  height: 20px;
   fill: var(--jd-color-border);
 }
 .jodit-ui-combo-box_theme_dark .jodit-ui-combo-box__icon svg,

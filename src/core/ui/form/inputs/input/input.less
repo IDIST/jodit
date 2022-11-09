@@ -45,11 +45,12 @@
 		display: flex;
 
 		min-width: 200px;
+		height: var(--input-height);
+
 		align-items: center;
 		justify-content: stretch;
 
-		//border: 1px solid var(--color-border);
-		background-color: var(--color-background-default);
+		background-color: var(--input-background-color);
 		overflow: hidden;
 		perspective: 1px;
 		border-radius: var(--border-radius-default);
@@ -65,17 +66,16 @@
 	}
 
 	&_focused_true &__wrapper {
-		//border-color: var(--color-border-selected);
 		border-color: var(--color-border-focus);
 	}
 
 	&__icon:not(:empty) {
 		display: flex;
 		align-items: center;
-		padding: 0 var(--padding-default);
+		padding: 0 var(--input-padding-default);
 
 		svg {
-			.size(16px);
+			.size(20px);
 			//fill: var(--color-border);
 			fill: var(--color-placeholder);
 		}
@@ -88,7 +88,7 @@
 	&__clear {
 		display: flex;
 		align-items: center;
-		padding: 0 var(--padding-default) 0 0;
+		padding: 0 var(--input-padding-default) 0 0;
 		opacity: 0.8;
 
 		&:active {
@@ -97,7 +97,7 @@
 		}
 
 		svg {
-			.size(12px);
+			.size(20px);
 			fill: var(--color-border);
 		}
 	}

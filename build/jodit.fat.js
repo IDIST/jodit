@@ -659,7 +659,7 @@ module.exports = "<svg width=\"1792\" height=\"1792\" viewBox=\"0 0 1792 1792\" 
 /***/ 41197:
 /***/ (function(module) {
 
-module.exports = "<svg width=\"1792\" height=\"1792\" viewBox=\"0 0 1792 1792\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"> <path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M801.605 336.115C889.489 336.118 975.547 361.2 1049.67 408.416C1123.79 455.631 1182.9 523.019 1220.06 602.663C1257.21 682.307 1270.86 770.9 1259.41 858.035C1247.96 945.17 1211.88 1027.23 1155.42 1094.57L1435.63 1359.11C1445.62 1370.14 1450.98 1384.6 1450.61 1399.48C1450.24 1414.36 1444.15 1428.53 1433.62 1439.05C1423.08 1449.57 1408.91 1455.63 1394.03 1455.98C1379.14 1456.34 1364.69 1450.95 1353.67 1440.94L1071.73 1172.37C993.553 1229.15 899.378 1259.66 802.758 1259.52C742.119 1259.52 682.074 1247.57 626.051 1224.37C570.028 1201.16 519.124 1167.15 476.246 1124.27C433.368 1081.39 399.355 1030.49 376.149 974.465C352.944 918.442 341 858.396 341 797.758C341 737.119 352.944 677.074 376.149 621.051C399.355 565.028 433.368 514.124 476.246 471.246C519.124 428.368 570.028 394.355 626.051 371.149C682.074 347.944 742.119 336 802.758 336L801.605 336.115ZM801.605 1144.19C870.1 1144.19 937.057 1123.88 994.009 1085.83C1050.96 1047.77 1095.35 993.684 1121.56 930.403C1147.77 867.122 1154.63 797.489 1141.27 730.31C1127.91 663.13 1094.92 601.422 1046.49 552.989C998.055 504.555 936.347 471.572 869.168 458.209C801.989 444.846 732.356 451.705 669.075 477.917C605.793 504.129 551.706 548.517 513.652 605.469C475.598 662.421 455.287 729.378 455.287 797.873C455.287 889.722 491.774 977.809 556.721 1042.76C621.668 1107.7 709.756 1144.19 801.605 1144.19V1144.19Z\"/> </svg>"
+module.exports = "<svg width=\"1792\" height=\"1792\" viewBox=\"0 0 1792 1792\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"> <path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M772.651 169.269C886.508 169.273 998.001 201.768 1094.03 262.938C1190.06 324.108 1266.64 411.412 1314.78 514.595C1362.91 617.778 1380.6 732.555 1365.76 845.442C1350.93 958.329 1304.19 1064.64 1231.03 1151.88L1594.06 1494.6C1607 1508.9 1613.95 1527.63 1613.47 1546.91C1612.98 1566.19 1605.1 1584.54 1591.45 1598.17C1577.81 1611.8 1559.44 1619.66 1540.16 1620.11C1520.88 1620.57 1502.16 1613.59 1487.88 1600.63L1122.61 1252.68C1021.33 1326.24 899.32 1365.77 774.144 1365.58C695.583 1365.58 617.792 1350.11 545.212 1320.04C472.631 1289.98 406.683 1245.91 351.132 1190.36C295.581 1134.81 251.516 1068.86 221.452 996.282C191.388 923.701 175.915 845.91 175.915 767.349C175.915 688.789 191.388 610.998 221.452 538.417C251.516 465.837 295.581 399.888 351.132 344.337C406.683 288.787 472.631 244.721 545.212 214.658C617.792 184.594 695.583 169.12 774.144 169.12L772.651 169.269ZM772.651 1216.17C861.39 1216.17 948.136 1189.86 1021.92 1140.56C1095.7 1091.26 1153.21 1021.18 1187.17 939.198C1221.13 857.214 1230.01 767.001 1212.7 679.967C1195.39 592.933 1152.66 512.988 1089.91 450.24C1027.16 387.492 947.216 344.76 860.182 327.448C773.148 310.136 682.935 319.021 600.951 352.98C518.967 386.939 448.894 444.446 399.594 518.23C350.293 592.014 323.979 678.76 323.979 767.499C323.979 886.494 371.249 1000.62 455.392 1084.76C539.534 1168.9 653.655 1216.17 772.651 1216.17V1216.17Z\" fill=\"#A7A8AB\"/> </svg>"
 
 /***/ }),
 
@@ -21180,12 +21180,12 @@ var UIInput = (function (_super) {
     tslib_1.__extends(UIInput, _super);
     function UIInput(jodit, options) {
         var _this = _super.call(this, jodit, options) || this;
+        _this.state = tslib_1.__assign({}, UIInput_1.defaultState);
+        _this.validators = new Set([]);
         _this.label = _this.j.c.span(_this.getFullElName('label'));
         _this.icon = _this.j.c.span(_this.getFullElName('icon'));
         _this.clearButton = _this.j.c.span(_this.getFullElName('clear'), icon_1.Icon.get('cancel'));
-        _this.state = tslib_1.__assign({}, UIInput_1.defaultState);
         _this.__errorBox = _this.j.c.span(_this.getFullElName('error'));
-        _this.validators = new Set([]);
         if ((options === null || options === void 0 ? void 0 : options.value) !== undefined) {
             options.value = options.value.toString();
         }
@@ -21214,60 +21214,6 @@ var UIInput = (function (_super) {
         return _this;
     }
     UIInput_1 = UIInput;
-    UIInput.prototype.className = function () {
-        return 'UIInput';
-    };
-    UIInput.prototype.onChangeClear = function () {
-        if (this.state.clearButton) {
-            dom_1.Dom.after(this.nativeInput, this.clearButton);
-        }
-        else {
-            dom_1.Dom.safeRemove(this.clearButton);
-        }
-    };
-    UIInput.prototype.onChangeClassName = function (ignore, oldClassName) {
-        oldClassName && this.container.classList.remove(oldClassName);
-        this.state.className &&
-            this.container.classList.add(this.state.className);
-    };
-    UIInput.prototype.onChangeState = function () {
-        this.name = this.state.name;
-        var input = this.nativeInput, _a = this.state, name = _a.name, icon = _a.icon, type = _a.type, ref = _a.ref, required = _a.required, placeholder = _a.placeholder, autocomplete = _a.autocomplete, label = _a.label;
-        (0, utils_1.attr)(input, 'name', name);
-        (0, utils_1.attr)(input, 'type', type);
-        (0, utils_1.attr)(input, 'data-ref', ref || name);
-        (0, utils_1.attr)(input, 'ref', ref || name);
-        (0, utils_1.attr)(input, 'required', required || null);
-        (0, utils_1.attr)(input, 'autocomplete', !autocomplete ? 'off' : null);
-        (0, utils_1.attr)(input, 'placeholder', placeholder ? this.j.i18n(placeholder) : '');
-        if (icon && icon_1.Icon.exists(icon)) {
-            dom_1.Dom.before(input, this.icon);
-            this.icon.innerHTML = icon_1.Icon.get(icon);
-        }
-        else {
-            dom_1.Dom.safeRemove(this.icon);
-        }
-        if (label) {
-            dom_1.Dom.before(this.wrapper, this.label);
-            this.label.innerText = this.j.i18n(label);
-        }
-        else {
-            dom_1.Dom.safeRemove(this.label);
-        }
-        this.updateValidators();
-    };
-    UIInput.prototype.updateValidators = function () {
-        var _this = this;
-        var _a;
-        this.validators.clear();
-        if (this.state.required) {
-            this.validators.add(validators_1.inputValidators.required);
-        }
-        (_a = this.state.validators) === null || _a === void 0 ? void 0 : _a.forEach(function (name) {
-            var validator = validators_1.inputValidators[name];
-            validator && _this.validators.add(validator);
-        });
-    };
     Object.defineProperty(UIInput.prototype, "error", {
         set: function (value) {
             this.setMod('has-error', Boolean(value));
@@ -21295,6 +21241,75 @@ var UIInput = (function (_super) {
         enumerable: false,
         configurable: true
     });
+    Object.defineProperty(UIInput.prototype, "isFocused", {
+        get: function () {
+            return this.nativeInput === this.j.od.activeElement;
+        },
+        enumerable: false,
+        configurable: true
+    });
+    UIInput.prototype.className = function () {
+        return 'UIInput';
+    };
+    UIInput.prototype.validate = function () {
+        var _this = this;
+        this.error = '';
+        return (0, to_array_1.toArray)(this.validators).every(function (validator) { return validator(_this); });
+    };
+    UIInput.prototype.focus = function () {
+        this.nativeInput.focus();
+    };
+    UIInput.prototype.onChangeClear = function () {
+        if (this.state.clearButton) {
+            dom_1.Dom.after(this.nativeInput, this.clearButton);
+        }
+        else {
+            dom_1.Dom.safeRemove(this.clearButton);
+        }
+    };
+    UIInput.prototype.onChangeClassName = function (ignore, oldClassName) {
+        oldClassName && this.container.classList.remove(oldClassName);
+        this.state.className &&
+            this.container.classList.add(this.state.className);
+    };
+    UIInput.prototype.onChangeState = function () {
+        this.name = this.state.name;
+        var input = this.nativeInput, _a = this.state, name = _a.name, icon = _a.icon, type = _a.type, ref = _a.ref, required = _a.required, placeholder = _a.placeholder, autocomplete = _a.autocomplete, label = _a.label;
+        (0, utils_1.attr)(input, 'name', name);
+        (0, utils_1.attr)(input, 'type', type);
+        (0, utils_1.attr)(input, 'data-ref', ref || name);
+        (0, utils_1.attr)(input, 'ref', ref || name);
+        (0, utils_1.attr)(input, 'required', required || null);
+        (0, utils_1.attr)(input, 'autocomplete', !autocomplete ? 'off' : null);
+        (0, utils_1.attr)(input, 'placeholder', placeholder ? this.j.i18n(placeholder) : '');
+        if (icon && icon_1.Icon.exists(icon)) {
+            dom_1.Dom.after(input, this.icon);
+            this.icon.innerHTML = icon_1.Icon.get(icon);
+        }
+        else {
+            dom_1.Dom.safeRemove(this.icon);
+        }
+        if (label) {
+            dom_1.Dom.before(this.wrapper, this.label);
+            this.label.innerText = this.j.i18n(label);
+        }
+        else {
+            dom_1.Dom.safeRemove(this.label);
+        }
+        this.updateValidators();
+    };
+    UIInput.prototype.updateValidators = function () {
+        var _this = this;
+        var _a;
+        this.validators.clear();
+        if (this.state.required) {
+            this.validators.add(validators_1.inputValidators.required);
+        }
+        (_a = this.state.validators) === null || _a === void 0 ? void 0 : _a.forEach(function (name) {
+            var validator = validators_1.inputValidators[name];
+            validator && _this.validators.add(validator);
+        });
+    };
     UIInput.prototype.onChangeStateValue = function () {
         var value = this.state.value.toString();
         if (value !== this.value) {
@@ -21309,11 +21324,6 @@ var UIInput = (function (_super) {
             this.j.e.fire(this, 'change', value);
             (_b = (_a = this.state).onChange) === null || _b === void 0 ? void 0 : _b.call(_a, value);
         }
-    };
-    UIInput.prototype.validate = function () {
-        var _this = this;
-        this.error = '';
-        return (0, to_array_1.toArray)(this.validators).every(function (validator) { return validator(_this); });
     };
     UIInput.prototype.createContainer = function (options) {
         var container = _super.prototype.createContainer.call(this);
@@ -21331,16 +21341,6 @@ var UIInput = (function (_super) {
     UIInput.prototype.createNativeInput = function (options) {
         return this.j.create.element('input');
     };
-    UIInput.prototype.focus = function () {
-        this.nativeInput.focus();
-    };
-    Object.defineProperty(UIInput.prototype, "isFocused", {
-        get: function () {
-            return this.nativeInput === this.j.od.activeElement;
-        },
-        enumerable: false,
-        configurable: true
-    });
     UIInput.prototype.onChangeFocus = function () {
         this.setMod('focused', this.isFocused);
     };
