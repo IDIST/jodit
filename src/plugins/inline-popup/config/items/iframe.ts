@@ -1,18 +1,18 @@
-
 /**
  * @module plugins/inline-popup
  */
 
-import type { IControlType, IJodit } from 'jodit/types';
-import { align } from './img';
+import type { IControlType } from 'jodit/types';
+import {
+	centerAlignAction,
+	leftAlignAction,
+	rightAlignAction
+} from 'jodit/plugins/inline-popup/config/items/actions/align';
+import { deleteAction } from 'jodit/plugins/inline-popup/config/items/actions/delete';
 
 export default [
-	{
-		name: 'bin',
-		tooltip: 'Delete',
-		exec: (editor: IJodit, image): void => {
-			image && editor.s.removeNode(image);
-		}
-	},
-	align
+	leftAlignAction,
+	centerAlignAction,
+	rightAlignAction,
+	deleteAction
 ] as Array<IControlType | string>;

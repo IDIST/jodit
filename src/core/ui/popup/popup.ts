@@ -1,4 +1,3 @@
-
 /**
  * [[include:core/ui/popup/README.md]]
  * @packageDocumentation
@@ -37,13 +36,39 @@ import { eventEmitter, getContainer } from 'jodit/core/global';
 type getBoundFunc = () => IBound;
 
 export class Popup extends UIElement implements IPopup {
+	isOpened: boolean = false;
+	strategy: PopupStrategy = 'leftBottom';
+	private targetBound!: () => IBound;
+	private childrenPopups: Set<IPopup> = new Set();
+
+	constructor(
+		jodit: IViewBased,
+		readonly smart: boolean = true,
+		strategy: PopupStrategy = 'leftBottom'
+	) {
+		super(jodit);
+		attr(this.container, 'role', 'popup');
+		this.strategy = strategy;
+	}
+
+	/**
+	 * Check if one box is inside second
+	 */
+	private static boxInView(box: IBound, view: IBound): boolean {
+		const accuracy = 2;
+
+		return (
+			box.top - view.top >= -accuracy &&
+			box.left - view.left >= -accuracy &&
+			view.top + view.height - (box.top + box.height) >= -accuracy &&
+			view.left + view.width - (box.left + box.width) >= -accuracy
+		);
+	}
+
 	/** @override */
 	className(): string {
 		return 'Popup';
 	}
-
-	isOpened: boolean = false;
-	strategy: PopupStrategy = 'leftBottom';
 
 	viewBound: () => IBound = (): IBound => ({
 		left: 0,
@@ -51,10 +76,6 @@ export class Popup extends UIElement implements IPopup {
 		width: this.ow.innerWidth,
 		height: this.ow.innerHeight
 	});
-
-	private targetBound!: () => IBound;
-
-	private childrenPopups: Set<IPopup> = new Set();
 
 	/** @override */
 	override updateParentElement(target: IUIElement): this {
@@ -141,6 +162,116 @@ export class Popup extends UIElement implements IPopup {
 		return this;
 	}
 
+	/**
+	 * Update container position
+	 */
+	@autobind
+	updatePosition(): this {
+		if (!this.isOpened) {
+			return this;
+		}
+
+		const [pos, strategy] = this.calculatePosition(
+			this.targetBound(),
+			this.viewBound(),
+			position(this.container, this.j)
+		);
+
+		this.setMod('strategy', strategy);
+
+		css(this.container, {
+			left: pos.left,
+			top: pos.top
+		});
+
+		this.childrenPopups.forEach(popup => popup.updatePosition());
+
+		return this;
+	}
+
+	@throttle(10)
+	@autobind
+	throttleUpdatePosition(): void {
+		this.updatePosition();
+	}
+
+	/**
+	 * Close popup
+	 */
+	@autobind
+	close(): this {
+		if (!this.isOpened) {
+			return this;
+		}
+
+		this.isOpened = false;
+
+		this.childrenPopups.forEach(popup => popup.close());
+
+		this.j.e.fire(this, 'beforeClose');
+		this.j.e.fire('beforePopupClose', this);
+
+		this.removeGlobalListeners();
+		Dom.safeRemove(this.container);
+
+		return this;
+	}
+
+	isOwnClick(e: MouseEvent): boolean {
+		if (!e.target) {
+			return false;
+		}
+
+		const box = UIElement.closestElement(e.target as Node, Popup);
+
+		return Boolean(box && (this === box || box.closest(this)));
+	}
+
+	/**
+	 * Set ZIndex
+	 */
+	setZIndex(index: number | string): void {
+		this.container.style.zIndex = index.toString();
+	}
+
+	/** @override **/
+	override destruct(): any {
+		this.close();
+		return super.destruct();
+	}
+
+	/**
+	 * Calculate static bound for point
+	 */
+	protected getKeepBound(getBound: getBoundFunc): getBoundFunc {
+		const oldBound = getBound();
+		const elmUnderCursor = this.od.elementFromPoint(
+			oldBound.left,
+			oldBound.top
+		);
+
+		if (!elmUnderCursor) {
+			return getBound;
+		}
+
+		const element = Dom.isHTMLElement(elmUnderCursor)
+			? elmUnderCursor
+			: (elmUnderCursor.parentElement as HTMLElement);
+
+		const oldPos = position(element, this.j);
+
+		return () => {
+			const bound = getBound();
+			const newPos = position(element, this.j);
+
+			return {
+				...bound,
+				top: bound.top + (newPos.top - oldPos.top),
+				left: bound.left + (newPos.left - oldPos.left)
+			};
+		};
+	}
+
 	private calculateZIndex(): void {
 		if (this.container.style.zIndex) {
 			return;
@@ -194,71 +325,6 @@ export class Popup extends UIElement implements IPopup {
 	}
 
 	/**
-	 * Calculate static bound for point
-	 */
-	protected getKeepBound(getBound: getBoundFunc): getBoundFunc {
-		const oldBound = getBound();
-		const elmUnderCursor = this.od.elementFromPoint(
-			oldBound.left,
-			oldBound.top
-		);
-
-		if (!elmUnderCursor) {
-			return getBound;
-		}
-
-		const element = Dom.isHTMLElement(elmUnderCursor)
-			? elmUnderCursor
-			: (elmUnderCursor.parentElement as HTMLElement);
-
-		const oldPos = position(element, this.j);
-
-		return () => {
-			const bound = getBound();
-			const newPos = position(element, this.j);
-
-			return {
-				...bound,
-				top: bound.top + (newPos.top - oldPos.top),
-				left: bound.left + (newPos.left - oldPos.left)
-			};
-		};
-	}
-
-	/**
-	 * Update container position
-	 */
-	@autobind
-	updatePosition(): this {
-		if (!this.isOpened) {
-			return this;
-		}
-
-		const [pos, strategy] = this.calculatePosition(
-			this.targetBound(),
-			this.viewBound(),
-			position(this.container, this.j)
-		);
-
-		this.setMod('strategy', strategy);
-
-		css(this.container, {
-			left: pos.left,
-			top: pos.top
-		});
-
-		this.childrenPopups.forEach(popup => popup.updatePosition());
-
-		return this;
-	}
-
-	@throttle(10)
-	@autobind
-	throttleUpdatePosition(): void {
-		this.updatePosition();
-	}
-
-	/**
 	 * Calculate start point
 	 */
 	private calculatePosition(
@@ -269,17 +335,35 @@ export class Popup extends UIElement implements IPopup {
 	): [IBoundP, PopupStrategy] {
 		const x: IDictionary = {
 				left: target.left,
-				right: target.left - (container.width - target.width)
+				right: target.left - (container.width - target.width),
+				center: target.left + target.width / 2 - container.width / 2
 			},
 			y: IDictionary = {
 				bottom: target.top + target.height,
 				top: target.top - container.height
 			};
 
-		const list = Object.keys(x).reduce(
+		const [defaultXKey, defaultYKey] =
+			kebabCase(defaultStrategy).split('-');
+
+		const xKeys = Object.keys(x).sort(function (a, b) {
+			if (a === defaultXKey) {
+				return -1;
+			}
+			return 0;
+		});
+
+		const yKeys = Object.keys(y).sort(function (a, b) {
+			if (a === defaultYKey) {
+				return -1;
+			}
+			return 0;
+		});
+
+		const list = xKeys.reduce(
 			(keys, xKey) =>
 				keys.concat(
-					Object.keys(y).map(
+					yKeys.map(
 						yKey => `${xKey}${ucfirst(yKey)}` as PopupStrategy
 					)
 				),
@@ -324,44 +408,7 @@ export class Popup extends UIElement implements IPopup {
 			// Find match strategy inside window view
 			strategy = getMatchStrategy(view) || strategy || defaultStrategy;
 		}
-
 		return [getPointByStrategy(strategy), strategy];
-	}
-
-	/**
-	 * Check if one box is inside second
-	 */
-	private static boxInView(box: IBound, view: IBound): boolean {
-		const accuracy = 2;
-
-		return (
-			box.top - view.top >= -accuracy &&
-			box.left - view.left >= -accuracy &&
-			view.top + view.height - (box.top + box.height) >= -accuracy &&
-			view.left + view.width - (box.left + box.width) >= -accuracy
-		);
-	}
-
-	/**
-	 * Close popup
-	 */
-	@autobind
-	close(): this {
-		if (!this.isOpened) {
-			return this;
-		}
-
-		this.isOpened = false;
-
-		this.childrenPopups.forEach(popup => popup.close());
-
-		this.j.e.fire(this, 'beforeClose');
-		this.j.e.fire('beforePopupClose', this);
-
-		this.removeGlobalListeners();
-		Dom.safeRemove(this.container);
-
-		return this;
 	}
 
 	/**
@@ -374,16 +421,6 @@ export class Popup extends UIElement implements IPopup {
 		}
 
 		this.close();
-	}
-
-	isOwnClick(e: MouseEvent): boolean {
-		if (!e.target) {
-			return false;
-		}
-
-		const box = UIElement.closestElement(e.target as Node, Popup);
-
-		return Boolean(box && (this === box || box.closest(this)));
 	}
 
 	private addGlobalListeners(): void {
@@ -439,23 +476,5 @@ export class Popup extends UIElement implements IPopup {
 		Dom.up(this.j.container, box => {
 			box && this.j.e.off(box, 'scroll mousewheel', up);
 		});
-	}
-
-	/**
-	 * Set ZIndex
-	 */
-	setZIndex(index: number | string): void {
-		this.container.style.zIndex = index.toString();
-	}
-
-	constructor(jodit: IViewBased, readonly smart: boolean = true) {
-		super(jodit);
-		attr(this.container, 'role', 'popup');
-	}
-
-	/** @override **/
-	override destruct(): any {
-		this.close();
-		return super.destruct();
 	}
 }

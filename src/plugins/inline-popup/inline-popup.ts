@@ -1,4 +1,3 @@
-
 /**
  * [[include:plugins/inline-popup/README.md]]
  * @packageDocumentation
@@ -21,19 +20,19 @@ import { Plugin } from 'jodit/core/plugin';
 import { makeCollection } from 'jodit/modules/toolbar/factory';
 import { Popup } from 'jodit/core/ui/popup';
 import {
-	splitArray,
-	isString,
-	position,
+	camelCase,
 	isArray,
 	isFunction,
-	toArray,
+	isString,
 	keys,
-	camelCase
+	position,
+	splitArray,
+	toArray
 } from 'jodit/core/helpers';
 import { Dom } from 'jodit/core/dom';
 import { UIElement } from 'jodit/core/ui';
 import type { Table } from 'jodit/modules/table/table';
-import { debounce, wait, autobind, watch } from 'jodit/core/decorators';
+import { autobind, debounce, wait, watch } from 'jodit/core/decorators';
 import { pluginSystem } from 'jodit/core/global';
 
 import './config/config';
@@ -46,114 +45,28 @@ export class inlinePopup extends Plugin {
 
 	private type: Nullable<string> = null;
 
-	private popup: IPopup = new Popup(this.jodit, false);
+	private popup: IPopup = new Popup(this.jodit, false, 'centerBottom');
 
 	private toolbar: IToolbarCollection = makeCollection(
 		this.jodit,
 		this.popup
 	);
-
-	@autobind
-	private onClick(node: Node): void | false {
-		const elements = this.elmsList as HTMLTagNames[],
-			target = Dom.isTag(node, 'img')
-				? node
-				: Dom.closest(node, elements, this.j.editor);
-
-		if (target && this.canShowPopupForType(target.nodeName.toLowerCase())) {
-			this.showPopup(
-				() => position(target, this.j),
-				target.nodeName.toLowerCase(),
-				target
-			);
-
-			return false;
-		}
-	}
-
-	/**
-	 * Show inline popup with some toolbar
-	 *
-	 * @param type - selection, img, a etc.
-	 */
-	@wait((ctx: IViewComponent) => !ctx.j.isLocked)
-	private showPopup(
-		rect: () => IBound,
-		type: string,
-		target?: HTMLElement
-	): boolean {
-		type = type.toLowerCase();
-
-		if (!this.canShowPopupForType(type)) {
-			return false;
-		}
-
-		if (this.type !== type || target !== this.previousTarget) {
-			this.previousTarget = target;
-
-			const data = this.j.o.popup[type];
-
-			let content;
-
-			if (isFunction(data)) {
-				content = data(this.j, target, this.popup.close);
-			} else {
-				content = data;
-			}
-
-			if (isArray(content)) {
-				this.toolbar.build(content, target);
-				this.toolbar.buttonSize = this.j.o.toolbarButtonSize;
-				content = this.toolbar.container;
-			}
-			this.popup.setContent(content);
-
-			this.type = type;
-		}
-
-		this.popup.open(rect);
-
-		return true;
-	}
-
 	private previousTarget?: HTMLElement;
+	private snapRange: Nullable<Range> = null;
+	private elmsList: string[] = keys(this.j.o.popup, false).filter(
+		s => !this.isExcludedTarget(s)
+	);
 
 	/**
-	 * Hide opened popup
+	 * Shortcut for Table module
 	 */
-	@watch(':clickEditor')
-	@autobind
-	private hidePopup(type?: string): void {
-		if (!isString(type) || type === this.type) {
-			this.popup.close();
-		}
+	private get tableModule(): Table {
+		return this.j.getInstance<Table>('Table', this.j.o);
 	}
 
 	@watch(':outsideClick')
 	protected onOutsideClick(): void {
 		this.popup.close();
-	}
-
-	/**
-	 * Can show popup for this type
-	 */
-	private canShowPopupForType(type: string): boolean {
-		const data = this.j.o.popup[type.toLowerCase()];
-
-		if (this.j.o.readonly || !this.j.o.toolbarInline || !data) {
-			return false;
-		}
-
-		return !this.isExcludedTarget(type);
-	}
-
-	/**
-	 * For some elements do not show popup
-	 */
-	private isExcludedTarget(type: string): boolean {
-		return splitArray(this.j.o.toolbarInlineDisableFor)
-			.map(a => a.toLowerCase())
-			.includes(type.toLowerCase());
 	}
 
 	/** @override **/
@@ -217,7 +130,110 @@ export class inlinePopup extends Plugin {
 		this.addListenersForElements();
 	}
 
-	private snapRange: Nullable<Range> = null;
+	/** @override **/
+	protected beforeDestruct(jodit: IJodit): void {
+		jodit.e
+			.off('showPopup')
+			.off([this.j.ew, this.j.ow], 'mouseup keyup', this.onSelectionEnd);
+
+		this.removeListenersForElements();
+	}
+
+	@autobind
+	private onClick(node: Node): void | false {
+		const elements = this.elmsList as HTMLTagNames[],
+			target = Dom.isTag(node, 'img')
+				? node
+				: Dom.closest(node, elements, this.j.editor);
+
+		if (target && this.canShowPopupForType(target.nodeName.toLowerCase())) {
+			this.showPopup(
+				() => position(target, this.j),
+				target.nodeName.toLowerCase(),
+				target
+			);
+
+			return false;
+		}
+	}
+
+	/**
+	 * Show inline popup with some toolbar
+	 *
+	 * @param type - selection, img, a etc.
+	 */
+	@wait((ctx: IViewComponent) => !ctx.j.isLocked)
+	private showPopup(
+		rect: () => IBound,
+		type: string,
+		target?: HTMLElement
+	): boolean {
+		type = type.toLowerCase();
+
+		if (!this.canShowPopupForType(type)) {
+			return false;
+		}
+
+		if (this.type !== type || target !== this.previousTarget) {
+			this.previousTarget = target;
+
+			const data = this.j.o.popup[type];
+
+			let content;
+
+			if (isFunction(data)) {
+				content = data(this.j, target, this.popup.close);
+			} else {
+				content = data;
+			}
+
+			if (isArray(content)) {
+				this.toolbar.build(content, target);
+				this.toolbar.buttonSize = this.j.o.inlinePopupToolbarButtonSize;
+				content = this.toolbar.container;
+			}
+			this.popup.setContent(content);
+
+			this.type = type;
+		}
+
+		this.popup.open(rect);
+
+		return true;
+	}
+
+	/**
+	 * Hide opened popup
+	 */
+	@watch(':clickEditor')
+	@autobind
+	private hidePopup(type?: string): void {
+		if (!isString(type) || type === this.type) {
+			this.popup.close();
+		}
+	}
+
+	/**
+	 * Can show popup for this type
+	 */
+	private canShowPopupForType(type: string): boolean {
+		const data = this.j.o.popup[type.toLowerCase()];
+
+		if (this.j.o.readonly || !this.j.o.toolbarInline || !data) {
+			return false;
+		}
+
+		return !this.isExcludedTarget(type);
+	}
+
+	/**
+	 * For some elements do not show popup
+	 */
+	private isExcludedTarget(type: string): boolean {
+		return splitArray(this.j.o.toolbarInlineDisableFor)
+			.map(a => a.toLowerCase())
+			.includes(type.toLowerCase());
+	}
 
 	@autobind
 	private onSelectionStart(): void {
@@ -299,26 +315,6 @@ export class inlinePopup extends Plugin {
 			r.startOffset === r.endOffset - 1
 		);
 	}
-
-	/**
-	 * Shortcut for Table module
-	 */
-	private get tableModule(): Table {
-		return this.j.getInstance<Table>('Table', this.j.o);
-	}
-
-	/** @override **/
-	protected beforeDestruct(jodit: IJodit): void {
-		jodit.e
-			.off('showPopup')
-			.off([this.j.ew, this.j.ow], 'mouseup keyup', this.onSelectionEnd);
-
-		this.removeListenersForElements();
-	}
-
-	private elmsList: string[] = keys(this.j.o.popup, false).filter(
-		s => !this.isExcludedTarget(s)
-	);
 
 	private _eventsList(): string {
 		const el = this.elmsList;

@@ -1,11 +1,10 @@
-
 /**
  * [[include:plugins/justify/README.md]]
  * @packageDocumentation
  * @module plugins/justify
  */
 
-import type { IJodit, IControlType } from 'jodit/types';
+import type { IControlType, IJodit } from 'jodit/types';
 import { Config } from 'jodit/config';
 import { Dom } from 'jodit/core/dom/dom';
 import { css } from 'jodit/core/helpers/utils/css';
@@ -128,6 +127,7 @@ export function justify(editor: IJodit): void {
 		editor.s.focus();
 
 		editor.s.eachSelection((current: Node): false | void => {
+			console.log(current);
 			if (!current) {
 				return;
 			}

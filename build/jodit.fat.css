@@ -910,20 +910,20 @@ svg.jodit-icon {
   position: fixed;
   z-index: var(--jd-z-index-popup);
   display: inline-block;
-  border: 1px solid #E0E0E0;
-  box-shadow: var(--jd-popup-box-shadow);
   transform: translate3d(0, 0, 0);
-  border-radius: var(--jd-border-radius-default);
-  overflow: hidden;
+  overflow: visible;
   z-index: var(--jd-z-index-context-menu);
 }
 .jodit-context-menu__content {
   font-family: var(--jd-font-default);
   font-size: var(--jd-font-size-default);
-  overflow: auto;
   padding: 0;
+  border: 1px solid #E0E0E0;
+  border-radius: var(--jd-border-radius-default);
+  box-shadow: var(--jd-popup-box-shadow);
   background: var(--jd-color-background-default);
   overflow-scrolling: touch;
+  overflow: hidden;
 }
 .jodit-context-menu__content .grid {
   display: grid;
@@ -969,19 +969,19 @@ svg.jodit-icon {
   position: fixed;
   z-index: var(--jd-z-index-popup);
   display: inline-block;
-  border: 1px solid #E0E0E0;
-  box-shadow: var(--jd-popup-box-shadow);
   transform: translate3d(0, 0, 0);
-  border-radius: var(--jd-border-radius-default);
-  overflow: hidden;
+  overflow: visible;
 }
 .jodit-popup__content {
   font-family: var(--jd-font-default);
   font-size: var(--jd-font-size-default);
-  overflow: auto;
   padding: 0;
+  border: 1px solid #E0E0E0;
+  border-radius: var(--jd-border-radius-default);
+  box-shadow: var(--jd-popup-box-shadow);
   background: var(--jd-color-background-default);
   overflow-scrolling: touch;
+  overflow: hidden;
 }
 .jodit-popup__content .grid {
   display: grid;
@@ -995,6 +995,34 @@ svg.jodit-icon {
 }
 .jodit-popup_max-height_false .jodit-popup__content {
   max-height: fit-content;
+}
+.jodit-popup_strategy_centertop {
+  transform: translate(0, -8px);
+}
+.jodit-popup_strategy_centertop:after {
+  background-color: #fff;
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+  content: "";
+  width: 6px;
+  height: 6px;
+  bottom: -3px;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, 0) rotate(45deg);
+}
+.jodit-popup_strategy_centerbottom {
+  transform: translate(0, 8px);
+}
+.jodit-popup_strategy_centerbottom:after {
+  background-color: #fff;
+  box-shadow: -1px -1px 4px rgba(0, 0, 0, 0.2);
+  content: "";
+  width: 6px;
+  height: 6px;
+  top: -3px;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, 0) rotate(45deg);
 }
 
 .jodit-ui-button-icon-text__icon {
@@ -1072,6 +1100,7 @@ svg.jodit-icon {
 }
 .jodit-ui-button-sizes button {
   min-width: 34px;
+  height: 34px;
   padding: 0;
   appearance: none;
 }
@@ -1088,6 +1117,7 @@ svg.jodit-icon {
 }
 .jodit-ui-button-sizes_size_tiny button {
   min-width: 16px;
+  height: 16px;
   padding: 0;
   appearance: none;
 }
@@ -1104,6 +1134,7 @@ svg.jodit-icon {
 }
 .jodit-ui-button-sizes_size_xsmall button {
   min-width: 22px;
+  height: 22px;
   padding: 0;
   appearance: none;
 }
@@ -1120,6 +1151,7 @@ svg.jodit-icon {
 }
 .jodit-ui-button-sizes_size_small button {
   min-width: 28px;
+  height: 28px;
   padding: 0;
   appearance: none;
 }
@@ -1136,6 +1168,7 @@ svg.jodit-icon {
 }
 .jodit-ui-button-sizes_size_large button {
   min-width: 64px;
+  height: 64px;
   padding: 0;
   appearance: none;
 }
@@ -1349,6 +1382,7 @@ svg.jodit-icon {
 }
 .jodit-ui-button button {
   min-width: 34px;
+  height: 34px;
   padding: 0;
   appearance: none;
 }
@@ -1365,6 +1399,7 @@ svg.jodit-icon {
 }
 .jodit-ui-button_size_tiny button {
   min-width: 16px;
+  height: 16px;
   padding: 0;
   appearance: none;
 }
@@ -1381,6 +1416,7 @@ svg.jodit-icon {
 }
 .jodit-ui-button_size_xsmall button {
   min-width: 22px;
+  height: 22px;
   padding: 0;
   appearance: none;
 }
@@ -1397,6 +1433,7 @@ svg.jodit-icon {
 }
 .jodit-ui-button_size_small button {
   min-width: 28px;
+  height: 28px;
   padding: 0;
   appearance: none;
 }
@@ -1413,6 +1450,7 @@ svg.jodit-icon {
 }
 .jodit-ui-button_size_large button {
   min-width: 64px;
+  height: 64px;
   padding: 0;
   appearance: none;
 }
@@ -2798,6 +2836,7 @@ svg.jodit-icon {
 }
 .jodit-toolbar-button button {
   min-width: 34px;
+  height: 34px;
   padding: 0;
   appearance: none;
 }
@@ -2814,6 +2853,7 @@ svg.jodit-icon {
 }
 .jodit-toolbar-button_size_tiny button {
   min-width: 16px;
+  height: 16px;
   padding: 0;
   appearance: none;
 }
@@ -2830,6 +2870,7 @@ svg.jodit-icon {
 }
 .jodit-toolbar-button_size_xsmall button {
   min-width: 22px;
+  height: 22px;
   padding: 0;
   appearance: none;
 }
@@ -2846,6 +2887,7 @@ svg.jodit-icon {
 }
 .jodit-toolbar-button_size_small button {
   min-width: 28px;
+  height: 28px;
   padding: 0;
   appearance: none;
 }
@@ -2862,6 +2904,7 @@ svg.jodit-icon {
 }
 .jodit-toolbar-button_size_large button {
   min-width: 64px;
+  height: 64px;
   padding: 0;
   appearance: none;
 }
@@ -3022,6 +3065,7 @@ svg.jodit-icon {
 }
 .jodit-toolbar-content button {
   min-width: 34px;
+  height: 34px;
   padding: 0;
   appearance: none;
 }
@@ -3038,6 +3082,7 @@ svg.jodit-icon {
 }
 .jodit-toolbar-content_size_tiny button {
   min-width: 16px;
+  height: 16px;
   padding: 0;
   appearance: none;
 }
@@ -3054,6 +3099,7 @@ svg.jodit-icon {
 }
 .jodit-toolbar-content_size_xsmall button {
   min-width: 22px;
+  height: 22px;
   padding: 0;
   appearance: none;
 }
@@ -3070,6 +3116,7 @@ svg.jodit-icon {
 }
 .jodit-toolbar-content_size_small button {
   min-width: 28px;
+  height: 28px;
   padding: 0;
   appearance: none;
 }
@@ -3086,6 +3133,7 @@ svg.jodit-icon {
 }
 .jodit-toolbar-content_size_large button {
   min-width: 64px;
+  height: 64px;
   padding: 0;
   appearance: none;
 }
@@ -4061,6 +4109,9 @@ a + .jodit-filebrowser-tree__source-title {
   justify-content: center;
   line-height: 18px;
   border-bottom: 1px solid #E0E0E0;
+  border-top-left-radius: var(--jd-border-radius-default);
+  border-top-right-radius: var(--jd-border-radius-default);
+  overflow: hidden;
 }
 .jodit-tabs .jodit-tabs__buttons > * {
   margin-left: calc(var(--jd-padding-default) / 2);
@@ -4314,6 +4365,16 @@ html.jodit_fullsize-box_true {
 .jodit-popup-inline__container {
   z-index: 1300;
   min-width: 700px;
+}
+.jodit-popup-container .jodit-popup .jodit-popup__content .jodit-toolbar-editor-collection .jodit-toolbar-button {
+  min-width: fit-content;
+  height: fit-content;
+  margin: 0;
+  padding: var(--jd-padding-default);
+}
+.jodit-popup-container .jodit-popup .jodit-popup__content .jodit-toolbar-editor-collection .jodit-toolbar-button__button {
+  min-width: fit-content;
+  height: fit-content;
 }
 
 .jodit-paste-storage {

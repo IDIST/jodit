@@ -1,7 +1,21 @@
-
 @import (reference) '../../styles/variables';
 
 .jodit-popup-inline__container {
 	z-index: 1300;
 	min-width: 700px;
+}
+
+.jodit-popup-container .jodit-popup .jodit-popup__content .jodit-toolbar-editor-collection {
+	.jodit-toolbar-button {
+		min-width: fit-content;
+		height: fit-content;
+		margin: 0;
+
+		padding: var(--padding-default);
+
+		&__button {
+			min-width: fit-content;
+			height: fit-content;
+		}
+	}
 }

@@ -106,7 +106,7 @@ module.exports["default"] = ["Type something","About Jodit","Jodit Editor","Jodi
 /***/ 37289:
 /***/ (function(module) {
 
-module.exports["default"] = ["무엇이든 입력하세요","Jodit에 대하여","Jodit Editor","Jodit 사용자 안내서","자세한 도움말이 들어있어요","라이센스에 관해서는 Jodit 웹 사이트를 방문해주세요：","풀 버전 구입하기","© XDSoft.net - Chupurnov Valeriy. 에게 저작권과 모든 권리가 있습니다.","Anchor","새 탭에서 열기","전체 크기로 보기","서식 지우기","글씨 색상","재실행","실행 취소","굵게","기울임","글머리 목록","번호 목록","가운데 정렬","양쪽 정렬","왼쪽 정렬","오른쪽 정렬","수평 구분선 넣기","이미지 넣기","파일 넣기","동영상 넣기","링크 넣기","글꼴 크기","글꼴","블록 요소 넣기","일반 텍스트","제목 1","제목 2","제목 3","제목 4","인용","코드","붙여 넣기","테이블","들여쓰기 감소","들여쓰기 증가","특수문자 선택","특수문자 입력","페인트 형식","편집모드 변경","마진","위","오른쪽","아래","왼쪽","스타일","클래스","정렬","오른쪽으로","가운데로","왼쪽으로","--지정 안 함--","경로(src)","제목","대체 텍스트(alt)","링크","새 탭에서 열기",null,"파일","고급","이미지 속성","취소","확인","파일 탐색기","목록 불러오기 에러","폴더 불러오기","정말 진행할까요?","디렉토리 이름 입력","디렉토리 생성","이름 입력","이미지 드래그","파일 드래그","혹은 클릭하세요","대체 텍스트","업로드","탐색","배경","텍스트","위","중앙","아래","이전 열에 삽입","다음 열에 삽입","위 행에 삽입","아래 행에 삽입","테이블 삭제","행 삭제","열 삭제","빈 셀","문자수: %d","단어수: %d","취소선","밑줄","윗첨자","아래첨자","선택 잘라내기","모두 선택","구분자","검색","대체하기","대체","붙여넣기","붙여넣을 내용 선택","HTML 소스","볼드","이탤릭","브러시","링크","실행 취소","재실행","테이블","이미지","지우개","문단","글꼴 크기","비디오","글꼴","편집기 정보","프린트","밑줄","취소선","들여쓰기","내어쓰기","전체 화면","일반 화면","구분선","글머리 목록","번호 목록","잘라내기","모두 선택","Embed 코드","링크 열기","링크 편집","No follow","링크 제거","갱신","연필","사이트 확인",null,"편집","수평 정렬","필터","변경일 정렬","이름 정렬","크기 정렬","새 폴더","초기화","저장","새로 저장하기 ...","리사이즈","크롭","가로 길이","세로 높이","비율 유지하기","네","아니오","제거","선택","선택: %s","수직 정렬","분할","셀 병합","열 추가","행 추가","라이센스: %s","삭제","세로 셀 분할","가로 셀 분할","외곽선","HTML 코드로 감지했어요. 코드인채로 붙여넣을까요?","HTML로 붙여넣기","원본 유지","텍스트로 넣기","텍스트만 넣기","외부 이미지는 편집할 수 없어요. 외부 이미지를 다운로드 할까요?","이미지를 무사히 업로드 했어요!","팔레트","파일이 없어요","이름 변경","새 이름 입력","미리보기","다운로드","클립보드 붙여넣기","사용중인 브라우저가 클립보드 접근을 지원하지 않아요.","선택 복사","복사","둥근 테두리","모두 보기","적용","이 항목을 입력해주세요!","웹 URL을 입력해주세요.","기본","원","점","정사각형","찾기","이전 찾기","다음 찾기","Microsoft Word/Excel 문서로 감지했어요. 서식을 유지한채로 붙여넣을까요?","Word 붙여넣기 감지","지우기","className 입력","사용자 지정 크기 조정에 대 한 고도 누르십시오"]
+module.exports["default"] = ["무엇이든 입력하세요","Jodit에 대하여","Jodit Editor","Jodit 사용자 안내서","자세한 도움말이 들어있어요","라이센스에 관해서는 Jodit 웹 사이트를 방문해주세요：","풀 버전 구입하기","© XDSoft.net - Chupurnov Valeriy. 에게 저작권과 모든 권리가 있습니다.","Anchor","새 탭에서 열기","전체 크기로 보기","서식 지우기","글씨 색상","재실행","실행 취소","굵게","기울임","글머리 목록","번호 목록","가운데 정렬","양쪽 정렬","왼쪽 정렬","오른쪽 정렬","수평 구분선 넣기","이미지 넣기","GIF 넣기","파일 넣기","동영상 넣기","링크 넣기","글꼴 크기","글꼴","블록 요소 넣기","일반 텍스트","제목 1","제목 2","제목 3","제목 4","인용","코드","붙여 넣기","테이블","들여쓰기 감소","들여쓰기 증가","특수문자 선택","특수문자 입력","페인트 형식","편집모드 변경","마진","위","오른쪽","아래","왼쪽","스타일","클래스","정렬","오른쪽 정렬","가운데 정렬","왼쪽 정렬","--지정 안 함--","경로(src)","제목","대체 텍스트(alt)","링크","새 탭에서 열기","파일","고급","이미지 속성","취소","확인","HTML 코드로 감지했어요. 코드인채로 붙여넣을까요?","HTML로 붙여넣기","원본 유지","지우기","텍스트로 넣기","텍스트만 넣기","Word 붙여넣기 감지","Microsoft Word/Excel 문서로 감지했어요. 서식을 유지한채로 붙여넣을까요?","파일 탐색기","목록 불러오기 에러","폴더 불러오기","정말 진행할까요?","디렉토리 이름 입력","디렉토리 생성","이름 입력","이미지 드래그","파일 드래그","혹은 클릭하세요","대체 텍스트","탐색","업로드","배경","텍스트","위","중앙","아래","이전 열에 삽입","다음 열에 삽입","위 행에 삽입","아래 행에 삽입","테이블 삭제","행 삭제","열 삭제","빈 셀","HTML 소스","볼드","이탤릭","브러시","링크","실행 취소","재실행","테이블","이미지","지우개","문단","글꼴 크기","비디오","글꼴","편집기 정보","프린트","밑줄","취소선","들여쓰기","내어쓰기","전체 화면","일반 화면","구분선","글머리 목록","번호 목록","잘라내기","모두 선택","Embed 코드","링크 열기","링크 편집","No follow","링크 제거","사이트 확인","연필","갱신","링크","편집","수평 정렬","필터","변경일 정렬","이름 정렬","크기 정렬","새 폴더","초기화","저장","새로 저장하기 ...","리사이즈","크롭","가로 길이","세로 높이","비율 유지하기","네","아니오","제거","선택","문자수: %d","단어수: %d","모두","모두 선택","선택: %s","수직 정렬","분할","세로 셀 분할","가로 셀 분할","셀 병합","열 추가","행 추가","삭제","외곽선","라이센스: %s","취소선","밑줄","윗첨자","아래첨자","선택 잘라내기","구분자","검색","대체하기","대체","붙여넣기","붙여넣을 내용 선택","외부 이미지는 편집할 수 없어요. 외부 이미지를 다운로드 할까요?","이미지를 무사히 업로드 했어요!","팔레트","파일이 없어요","이름 변경","새 이름 입력","미리보기","다운로드","클립보드 붙여넣기","사용중인 브라우저가 클립보드 접근을 지원하지 않아요.","선택 복사","복사","둥근 테두리","모두 보기","적용","이 항목을 입력해주세요!","웹 URL을 입력해주세요.","기본","원","점","정사각형","찾기","이전 찾기","다음 찾기","className 입력","사용자 지정 크기 조정에 대 한 고도 누르십시오"]
 
 /***/ }),
 
@@ -561,7 +561,7 @@ module.exports = "<svg xmlns='http://www.w3.org/2000/svg' viewBox=\"0 0 1792 179
 /***/ 10856:
 /***/ (function(module) {
 
-module.exports = "<svg xmlns='http://www.w3.org/2000/svg' viewBox=\"0 0 1792 1792\"> <path d=\"M704 1376v-704q0-14-9-23t-23-9h-64q-14 0-23 9t-9 23v704q0 14 9 23t23 9h64q14 0 23-9t9-23zm256 0v-704q0-14-9-23t-23-9h-64q-14 0-23 9t-9 23v704q0 14 9 23t23 9h64q14 0 23-9t9-23zm256 0v-704q0-14-9-23t-23-9h-64q-14 0-23 9t-9 23v704q0 14 9 23t23 9h64q14 0 23-9t9-23zm-544-992h448l-48-117q-7-9-17-11h-317q-10 2-17 11zm928 32v64q0 14-9 23t-23 9h-96v948q0 83-47 143.5t-113 60.5h-832q-66 0-113-58.5t-47-141.5v-952h-96q-14 0-23-9t-9-23v-64q0-14 9-23t23-9h309l70-167q15-37 54-63t79-26h320q40 0 79 26t54 63l70 167h309q14 0 23 9t9 23z\"/> </svg>"
+module.exports = "<svg width=\"1792\" height=\"1792\" viewBox=\"0 0 1792 1792\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"> <path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M1187.72 482.048V406.784C1187.62 361.895 1169.74 318.876 1137.98 287.149C1106.23 255.422 1063.19 237.574 1018.3 237.515H773.77C728.894 237.594 685.878 255.45 654.139 287.175C622.4 318.9 604.524 361.908 604.426 406.784V482.048H468.085H467.935L467.793 482.048H345.855C339.505 481.795 333.17 482.828 327.228 485.083C321.287 487.339 315.863 490.772 311.281 495.175C306.699 499.579 303.053 504.862 300.563 510.709C298.073 516.556 296.789 522.845 296.789 529.2C296.789 535.555 298.073 541.845 300.563 547.691C303.053 553.538 306.699 558.822 311.281 563.225C315.863 567.628 321.287 571.061 327.228 573.317C333.17 575.572 339.505 576.605 345.855 576.352H420.746V1385.07C420.805 1429.98 438.674 1473.04 470.433 1504.8C502.192 1536.56 545.25 1554.43 590.165 1554.49H1201.68C1246.6 1554.43 1289.66 1536.56 1321.42 1504.8C1353.18 1473.04 1371.04 1429.98 1371.1 1385.07V576.352H1446.14C1458.32 575.867 1469.84 570.687 1478.29 561.898C1486.74 553.108 1491.46 541.391 1491.46 529.2C1491.46 517.01 1486.74 505.292 1478.29 496.502C1469.84 487.713 1458.32 482.533 1446.14 482.048H1324.06L1323.91 482.048H1187.72ZM1093.42 482.048V406.784C1093.28 386.946 1085.31 367.967 1071.24 353.981C1057.17 339.995 1038.14 332.137 1018.3 332.117H773.77C753.932 332.137 734.905 339.995 720.835 353.981C706.765 367.967 698.793 386.946 698.655 406.784V482.048H1093.42ZM515.498 576.427V1385.07C515.517 1404.9 523.376 1423.93 537.362 1438C551.348 1452.07 570.327 1460.04 590.165 1460.18H1201.46C1211.37 1460.24 1221.19 1458.34 1230.35 1454.59C1239.52 1450.85 1247.86 1445.32 1254.89 1438.34C1261.92 1431.36 1267.5 1423.06 1271.31 1413.92C1275.12 1404.78 1277.09 1394.97 1277.1 1385.07V576.427H515.498ZM740.552 1234.98C749.402 1243.83 761.404 1248.8 773.92 1248.8C786.422 1248.78 798.406 1243.8 807.239 1234.95C816.073 1226.1 821.034 1214.11 821.034 1201.61V834.848C820.55 822.667 815.37 811.146 806.58 802.7C797.79 794.253 786.073 789.535 773.883 789.535C761.692 789.535 749.975 794.253 741.185 802.7C732.395 811.146 727.215 822.667 726.73 834.848V1201.61C726.73 1214.13 731.702 1226.13 740.552 1234.98ZM1018.23 1248.8C1005.71 1248.8 993.71 1243.83 984.861 1234.98C976.011 1226.13 971.039 1214.13 971.039 1201.61V834.848C971.524 822.667 976.704 811.146 985.493 802.7C994.283 794.253 1006 789.535 1018.19 789.535C1030.38 789.535 1042.1 794.253 1050.89 802.7C1059.68 811.146 1064.86 822.667 1065.34 834.848V1201.61C1065.34 1214.11 1060.38 1226.1 1051.55 1234.95C1042.71 1243.8 1030.73 1248.78 1018.23 1248.8Z\" fill=\"#242A3C\"/> </svg>"
 
 /***/ }),
 
@@ -10450,7 +10450,8 @@ var Config = (function () {
             'selectall'
         ];
         this.allowCommandsInReadOnly = ['selectall', 'preview', 'print'];
-        this.toolbarButtonSize = 'middle';
+        this.toolbarButtonSize = 'large';
+        this.inlinePopupToolbarButtonSize = 'large';
         this.toolbarStyle = false;
         this.allowTabNavigation = false;
         this.inline = false;
@@ -21196,22 +21197,31 @@ var component_1 = __webpack_require__(12614);
 var global_1 = __webpack_require__(58299);
 var Popup = (function (_super) {
     tslib_1.__extends(Popup, _super);
-    function Popup(jodit, smart) {
+    function Popup(jodit, smart, strategy) {
         if (smart === void 0) { smart = true; }
+        if (strategy === void 0) { strategy = 'leftBottom'; }
         var _this = _super.call(this, jodit) || this;
         _this.smart = smart;
         _this.isOpened = false;
         _this.strategy = 'leftBottom';
+        _this.childrenPopups = new Set();
         _this.viewBound = function () { return ({
             left: 0,
             top: 0,
             width: _this.ow.innerWidth,
             height: _this.ow.innerHeight
         }); };
-        _this.childrenPopups = new Set();
         (0, helpers_1.attr)(_this.container, 'role', 'popup');
+        _this.strategy = strategy;
         return _this;
     }
+    Popup.boxInView = function (box, view) {
+        var accuracy = 2;
+        return (box.top - view.top >= -accuracy &&
+            box.left - view.left >= -accuracy &&
+            view.top + view.height - (box.top + box.height) >= -accuracy &&
+            view.left + view.width - (box.left + box.width) >= -accuracy);
+    };
     Popup.prototype.className = function () {
         return 'Popup';
     };
@@ -21273,6 +21283,65 @@ var Popup = (function (_super) {
         this.j.e.fire(this, 'afterOpen');
         return this;
     };
+    Popup.prototype.updatePosition = function () {
+        if (!this.isOpened) {
+            return this;
+        }
+        var _a = tslib_1.__read(this.calculatePosition(this.targetBound(), this.viewBound(), (0, helpers_1.position)(this.container, this.j)), 2), pos = _a[0], strategy = _a[1];
+        this.setMod('strategy', strategy);
+        (0, helpers_1.css)(this.container, {
+            left: pos.left,
+            top: pos.top
+        });
+        this.childrenPopups.forEach(function (popup) { return popup.updatePosition(); });
+        return this;
+    };
+    Popup.prototype.throttleUpdatePosition = function () {
+        this.updatePosition();
+    };
+    Popup.prototype.close = function () {
+        if (!this.isOpened) {
+            return this;
+        }
+        this.isOpened = false;
+        this.childrenPopups.forEach(function (popup) { return popup.close(); });
+        this.j.e.fire(this, 'beforeClose');
+        this.j.e.fire('beforePopupClose', this);
+        this.removeGlobalListeners();
+        dom_1.Dom.safeRemove(this.container);
+        return this;
+    };
+    Popup.prototype.isOwnClick = function (e) {
+        if (!e.target) {
+            return false;
+        }
+        var box = element_1.UIElement.closestElement(e.target, Popup);
+        return Boolean(box && (this === box || box.closest(this)));
+    };
+    Popup.prototype.setZIndex = function (index) {
+        this.container.style.zIndex = index.toString();
+    };
+    Popup.prototype.destruct = function () {
+        this.close();
+        return _super.prototype.destruct.call(this);
+    };
+    Popup.prototype.getKeepBound = function (getBound) {
+        var _this = this;
+        var oldBound = getBound();
+        var elmUnderCursor = this.od.elementFromPoint(oldBound.left, oldBound.top);
+        if (!elmUnderCursor) {
+            return getBound;
+        }
+        var element = dom_1.Dom.isHTMLElement(elmUnderCursor)
+            ? elmUnderCursor
+            : elmUnderCursor.parentElement;
+        var oldPos = (0, helpers_1.position)(element, this.j);
+        return function () {
+            var bound = getBound();
+            var newPos = (0, helpers_1.position)(element, _this.j);
+            return tslib_1.__assign(tslib_1.__assign({}, bound), { top: bound.top + (newPos.top - oldPos.top), left: bound.left + (newPos.left - oldPos.left) });
+        };
+    };
     Popup.prototype.calculateZIndex = function () {
         var _this = this;
         if (this.container.style.zIndex) {
@@ -21309,50 +21378,31 @@ var Popup = (function (_super) {
             pe = pe.parentElement;
         }
     };
-    Popup.prototype.getKeepBound = function (getBound) {
-        var _this = this;
-        var oldBound = getBound();
-        var elmUnderCursor = this.od.elementFromPoint(oldBound.left, oldBound.top);
-        if (!elmUnderCursor) {
-            return getBound;
-        }
-        var element = dom_1.Dom.isHTMLElement(elmUnderCursor)
-            ? elmUnderCursor
-            : elmUnderCursor.parentElement;
-        var oldPos = (0, helpers_1.position)(element, this.j);
-        return function () {
-            var bound = getBound();
-            var newPos = (0, helpers_1.position)(element, _this.j);
-            return tslib_1.__assign(tslib_1.__assign({}, bound), { top: bound.top + (newPos.top - oldPos.top), left: bound.left + (newPos.left - oldPos.left) });
-        };
-    };
-    Popup.prototype.updatePosition = function () {
-        if (!this.isOpened) {
-            return this;
-        }
-        var _a = tslib_1.__read(this.calculatePosition(this.targetBound(), this.viewBound(), (0, helpers_1.position)(this.container, this.j)), 2), pos = _a[0], strategy = _a[1];
-        this.setMod('strategy', strategy);
-        (0, helpers_1.css)(this.container, {
-            left: pos.left,
-            top: pos.top
-        });
-        this.childrenPopups.forEach(function (popup) { return popup.updatePosition(); });
-        return this;
-    };
-    Popup.prototype.throttleUpdatePosition = function () {
-        this.updatePosition();
-    };
     Popup.prototype.calculatePosition = function (target, view, container, defaultStrategy) {
         if (defaultStrategy === void 0) { defaultStrategy = this.strategy; }
         var x = {
             left: target.left,
-            right: target.left - (container.width - target.width)
+            right: target.left - (container.width - target.width),
+            center: target.left + target.width / 2 - container.width / 2
         }, y = {
             bottom: target.top + target.height,
             top: target.top - container.height
         };
-        var list = Object.keys(x).reduce(function (keys, xKey) {
-            return keys.concat(Object.keys(y).map(function (yKey) { return "".concat(xKey).concat((0, helpers_1.ucfirst)(yKey)); }));
+        var _a = tslib_1.__read((0, helpers_1.kebabCase)(defaultStrategy).split('-'), 2), defaultXKey = _a[0], defaultYKey = _a[1];
+        var xKeys = Object.keys(x).sort(function (a, b) {
+            if (a === defaultXKey) {
+                return -1;
+            }
+            return 0;
+        });
+        var yKeys = Object.keys(y).sort(function (a, b) {
+            if (a === defaultYKey) {
+                return -1;
+            }
+            return 0;
+        });
+        var list = xKeys.reduce(function (keys, xKey) {
+            return keys.concat(yKeys.map(function (yKey) { return "".concat(xKey).concat((0, helpers_1.ucfirst)(yKey)); }));
         }, []);
         var getPointByStrategy = function (strategy) {
             var _a = tslib_1.__read((0, helpers_1.kebabCase)(strategy).split('-'), 2), xKey = _a[0], yKey = _a[1];
@@ -21385,37 +21435,11 @@ var Popup = (function (_super) {
         }
         return [getPointByStrategy(strategy), strategy];
     };
-    Popup.boxInView = function (box, view) {
-        var accuracy = 2;
-        return (box.top - view.top >= -accuracy &&
-            box.left - view.left >= -accuracy &&
-            view.top + view.height - (box.top + box.height) >= -accuracy &&
-            view.left + view.width - (box.left + box.width) >= -accuracy);
-    };
-    Popup.prototype.close = function () {
-        if (!this.isOpened) {
-            return this;
-        }
-        this.isOpened = false;
-        this.childrenPopups.forEach(function (popup) { return popup.close(); });
-        this.j.e.fire(this, 'beforeClose');
-        this.j.e.fire('beforePopupClose', this);
-        this.removeGlobalListeners();
-        dom_1.Dom.safeRemove(this.container);
-        return this;
-    };
     Popup.prototype.closeOnOutsideClick = function (e) {
         if (!this.isOpened || this.isOwnClick(e)) {
             return;
         }
         this.close();
-    };
-    Popup.prototype.isOwnClick = function (e) {
-        if (!e.target) {
-            return false;
-        }
-        var box = element_1.UIElement.closestElement(e.target, Popup);
-        return Boolean(box && (this === box || box.closest(this)));
     };
     Popup.prototype.addGlobalListeners = function () {
         var _this = this;
@@ -21457,13 +21481,6 @@ var Popup = (function (_super) {
         dom_1.Dom.up(this.j.container, function (box) {
             box && _this.j.e.off(box, 'scroll mousewheel', up);
         });
-    };
-    Popup.prototype.setZIndex = function (index) {
-        this.container.style.zIndex = index.toString();
-    };
-    Popup.prototype.destruct = function () {
-        this.close();
-        return _super.prototype.destruct.call(this);
     };
     tslib_1.__decorate([
         decorators_1.autobind
@@ -29094,7 +29111,7 @@ var MediaItem = (function () {
     function MediaItem(editor, imageThumb, image, username, link, alt, width, close) {
         this.element = editor.c.fromHTML("<div class=\"jodit-media-item grid-item hover-border-effect skeleton-loader\"><img class=\"\" src=\"".concat(imageThumb, "\"/></div>"));
         this.element.addEventListener('click', function () {
-            var img = editor.c.fromHTML("<img style=\"width: ".concat(editor.o.imageDefaultWidth || 500, "px;\" src=\"").concat(image, "\" alt=\"").concat(alt, "\"/></p></p>"));
+            var img = editor.c.fromHTML("<div><img style=\"width: ".concat(editor.o.imageDefaultWidth || 500, "px; float: none; display: block; margin-left: auto; margin-right: auto;\" src=\"").concat(image, "\" alt=\"").concat(alt, "\"/></div><p></p>"));
             editor.s.insertHTML(img);
             if (close)
                 close();
@@ -34233,7 +34250,7 @@ icon_1.Icon.set('addcolumn', __webpack_require__(78321))
     .set('th-list', __webpack_require__(6102));
 config_1.Config.prototype.popup = {
     a: (__webpack_require__(58169)/* ["default"] */ .Z),
-    img: (__webpack_require__(92534)["default"]),
+    img: (__webpack_require__(92534)/* ["default"] */ .Z),
     cells: (__webpack_require__(40373)/* ["default"] */ .Z),
     toolbar: (__webpack_require__(25328)/* ["default"] */ .Z),
     jodit: (__webpack_require__(21651)/* ["default"] */ .Z),
@@ -34290,6 +34307,79 @@ exports.Z = [
     'brush',
     'file'
 ];
+
+
+/***/ }),
+
+/***/ 77474:
+/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.rightAlignAction = exports.centerAlignAction = exports.leftAlignAction = void 0;
+var dom_1 = __webpack_require__(94522);
+var align_1 = __webpack_require__(49359);
+var align = function (editor, elm, command) {
+    if (!dom_1.Dom.isTag(elm, ['img', 'jodit', 'jodit-media'])) {
+        return;
+    }
+    if (!command) {
+        return false;
+    }
+    (0, align_1.hAlignElement)(elm, command);
+    if (dom_1.Dom.isTag(elm, ['jodit', 'jodit-media']) && elm.firstElementChild) {
+        (0, align_1.hAlignElement)(elm.firstElementChild, command);
+    }
+    editor.synchronizeValues();
+    editor.e.fire('recalcPositionPopup');
+};
+exports.leftAlignAction = {
+    name: 'left',
+    icon: 'left',
+    exec: function (editor, elm, _a) {
+        var control = _a.control;
+        align(editor, elm, 'left');
+    },
+    tooltip: 'Left'
+};
+exports.centerAlignAction = {
+    name: 'center',
+    icon: 'center',
+    exec: function (editor, elm, _a) {
+        var control = _a.control;
+        align(editor, elm, 'center');
+    },
+    tooltip: 'Center'
+};
+exports.rightAlignAction = {
+    name: 'right',
+    icon: 'right',
+    exec: function (editor, elm, _a) {
+        var control = _a.control;
+        align(editor, elm, 'right');
+    },
+    tooltip: 'Right'
+};
+
+
+/***/ }),
+
+/***/ 1530:
+/***/ (function(__unused_webpack_module, exports) {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.deleteAction = void 0;
+exports.deleteAction = {
+    name: 'delete',
+    icon: 'bin',
+    tooltip: 'Delete',
+    exec: function (editor, image) {
+        image && editor.s.removeNode(image);
+    }
+};
 
 
 /***/ }),
@@ -34440,16 +34530,13 @@ exports.Z = [
 var __webpack_unused_export__;
 
 __webpack_unused_export__ = ({ value: true });
-var img_1 = __webpack_require__(92534);
+var align_1 = __webpack_require__(77474);
+var delete_1 = __webpack_require__(1530);
 exports.Z = [
-    {
-        name: 'bin',
-        tooltip: 'Delete',
-        exec: function (editor, image) {
-            image && editor.s.removeNode(image);
-        }
-    },
-    img_1.align
+    align_1.leftAlignAction,
+    align_1.centerAlignAction,
+    align_1.rightAlignAction,
+    delete_1.deleteAction
 ];
 
 
@@ -34459,76 +34546,16 @@ exports.Z = [
 /***/ (function(__unused_webpack_module, exports, __webpack_require__) {
 
 "use strict";
+var __webpack_unused_export__;
 
-Object.defineProperty(exports, "__esModule", ({ value: true }));
-exports.align = void 0;
-var dom_1 = __webpack_require__(94522);
-var is_string_1 = __webpack_require__(40607);
-var css_1 = __webpack_require__(56672);
-var align_1 = __webpack_require__(49359);
-exports.align = {
-    name: 'left',
-    childTemplate: function (_, __, value) { return value; },
-    list: ['Left', 'Right', 'Center', 'Normal'],
-    exec: function (editor, elm, _a) {
-        var control = _a.control;
-        if (!dom_1.Dom.isTag(elm, ['img', 'jodit', 'jodit-media'])) {
-            return;
-        }
-        var command = control.args && (0, is_string_1.isString)(control.args[0])
-            ? control.args[0].toLowerCase()
-            : '';
-        if (!command) {
-            return false;
-        }
-        (0, align_1.hAlignElement)(elm, command);
-        if (dom_1.Dom.isTag(elm, ['jodit', 'jodit-media']) && elm.firstElementChild) {
-            (0, align_1.hAlignElement)(elm.firstElementChild, command);
-        }
-        editor.synchronizeValues();
-        editor.e.fire('recalcPositionPopup');
-    },
-    tooltip: 'Horizontal align'
-};
-exports["default"] = [
-    {
-        name: 'delete',
-        icon: 'bin',
-        tooltip: 'Delete',
-        exec: function (editor, image) {
-            image && editor.s.removeNode(image);
-        }
-    },
-    {
-        name: 'pencil',
-        exec: function (editor, current) {
-            var tagName = current.tagName.toLowerCase();
-            if (tagName === 'img') {
-                editor.e.fire('openImageProperties', current);
-            }
-        },
-        tooltip: 'Edit'
-    },
-    {
-        name: 'valign',
-        list: ['Top', 'Middle', 'Bottom', 'Normal'],
-        tooltip: 'Vertical align',
-        exec: function (editor, image, _a) {
-            var control = _a.control;
-            if (!dom_1.Dom.isTag(image, 'img')) {
-                return;
-            }
-            var command = control.args && (0, is_string_1.isString)(control.args[0])
-                ? control.args[0].toLowerCase()
-                : '';
-            if (!command) {
-                return false;
-            }
-            (0, css_1.css)(image, 'vertical-align', command === 'normal' ? '' : command);
-            editor.e.fire('recalcPositionPopup');
-        }
-    },
-    exports.align
+__webpack_unused_export__ = ({ value: true });
+var align_1 = __webpack_require__(77474);
+var delete_1 = __webpack_require__(1530);
+exports.Z = [
+    align_1.leftAlignAction,
+    align_1.centerAlignAction,
+    align_1.rightAlignAction,
+    delete_1.deleteAction
 ];
 
 
@@ -34596,67 +34623,21 @@ var inlinePopup = (function (_super) {
         var _this = _super !== null && _super.apply(this, arguments) || this;
         _this.requires = ['select'];
         _this.type = null;
-        _this.popup = new popup_1.Popup(_this.jodit, false);
+        _this.popup = new popup_1.Popup(_this.jodit, false, 'centerBottom');
         _this.toolbar = (0, factory_1.makeCollection)(_this.jodit, _this.popup);
         _this.snapRange = null;
         _this.elmsList = (0, helpers_1.keys)(_this.j.o.popup, false).filter(function (s) { return !_this.isExcludedTarget(s); });
         return _this;
     }
-    inlinePopup.prototype.onClick = function (node) {
-        var _this = this;
-        var elements = this.elmsList, target = dom_1.Dom.isTag(node, 'img')
-            ? node
-            : dom_1.Dom.closest(node, elements, this.j.editor);
-        if (target && this.canShowPopupForType(target.nodeName.toLowerCase())) {
-            this.showPopup(function () { return (0, helpers_1.position)(target, _this.j); }, target.nodeName.toLowerCase(), target);
-            return false;
-        }
-    };
-    inlinePopup.prototype.showPopup = function (rect, type, target) {
-        type = type.toLowerCase();
-        if (!this.canShowPopupForType(type)) {
-            return false;
-        }
-        if (this.type !== type || target !== this.previousTarget) {
-            this.previousTarget = target;
-            var data = this.j.o.popup[type];
-            var content = void 0;
-            if ((0, helpers_1.isFunction)(data)) {
-                content = data(this.j, target, this.popup.close);
-            }
-            else {
-                content = data;
-            }
-            if ((0, helpers_1.isArray)(content)) {
-                this.toolbar.build(content, target);
-                this.toolbar.buttonSize = this.j.o.toolbarButtonSize;
-                content = this.toolbar.container;
-            }
-            this.popup.setContent(content);
-            this.type = type;
-        }
-        this.popup.open(rect);
-        return true;
-    };
-    inlinePopup.prototype.hidePopup = function (type) {
-        if (!(0, helpers_1.isString)(type) || type === this.type) {
-            this.popup.close();
-        }
-    };
+    Object.defineProperty(inlinePopup.prototype, "tableModule", {
+        get: function () {
+            return this.j.getInstance('Table', this.j.o);
+        },
+        enumerable: false,
+        configurable: true
+    });
     inlinePopup.prototype.onOutsideClick = function () {
         this.popup.close();
-    };
-    inlinePopup.prototype.canShowPopupForType = function (type) {
-        var data = this.j.o.popup[type.toLowerCase()];
-        if (this.j.o.readonly || !this.j.o.toolbarInline || !data) {
-            return false;
-        }
-        return !this.isExcludedTarget(type);
-    };
-    inlinePopup.prototype.isExcludedTarget = function (type) {
-        return (0, helpers_1.splitArray)(this.j.o.toolbarInlineDisableFor)
-            .map(function (a) { return a.toLowerCase(); })
-            .includes(type.toLowerCase());
     };
     inlinePopup.prototype.afterInit = function (jodit) {
         var _this = this;
@@ -34693,6 +34674,65 @@ var inlinePopup = (function (_super) {
         })
             .on([this.j.ew, this.j.ow], 'mouseup keyup', this.onSelectionEnd);
         this.addListenersForElements();
+    };
+    inlinePopup.prototype.beforeDestruct = function (jodit) {
+        jodit.e
+            .off('showPopup')
+            .off([this.j.ew, this.j.ow], 'mouseup keyup', this.onSelectionEnd);
+        this.removeListenersForElements();
+    };
+    inlinePopup.prototype.onClick = function (node) {
+        var _this = this;
+        var elements = this.elmsList, target = dom_1.Dom.isTag(node, 'img')
+            ? node
+            : dom_1.Dom.closest(node, elements, this.j.editor);
+        if (target && this.canShowPopupForType(target.nodeName.toLowerCase())) {
+            this.showPopup(function () { return (0, helpers_1.position)(target, _this.j); }, target.nodeName.toLowerCase(), target);
+            return false;
+        }
+    };
+    inlinePopup.prototype.showPopup = function (rect, type, target) {
+        type = type.toLowerCase();
+        if (!this.canShowPopupForType(type)) {
+            return false;
+        }
+        if (this.type !== type || target !== this.previousTarget) {
+            this.previousTarget = target;
+            var data = this.j.o.popup[type];
+            var content = void 0;
+            if ((0, helpers_1.isFunction)(data)) {
+                content = data(this.j, target, this.popup.close);
+            }
+            else {
+                content = data;
+            }
+            if ((0, helpers_1.isArray)(content)) {
+                this.toolbar.build(content, target);
+                this.toolbar.buttonSize = this.j.o.inlinePopupToolbarButtonSize;
+                content = this.toolbar.container;
+            }
+            this.popup.setContent(content);
+            this.type = type;
+        }
+        this.popup.open(rect);
+        return true;
+    };
+    inlinePopup.prototype.hidePopup = function (type) {
+        if (!(0, helpers_1.isString)(type) || type === this.type) {
+            this.popup.close();
+        }
+    };
+    inlinePopup.prototype.canShowPopupForType = function (type) {
+        var data = this.j.o.popup[type.toLowerCase()];
+        if (this.j.o.readonly || !this.j.o.toolbarInline || !data) {
+            return false;
+        }
+        return !this.isExcludedTarget(type);
+    };
+    inlinePopup.prototype.isExcludedTarget = function (type) {
+        return (0, helpers_1.splitArray)(this.j.o.toolbarInlineDisableFor)
+            .map(function (a) { return a.toLowerCase(); })
+            .includes(type.toLowerCase());
     };
     inlinePopup.prototype.onSelectionStart = function () {
         this.snapRange = this.j.s.range.cloneRange();
@@ -34739,19 +34779,6 @@ var inlinePopup = (function (_super) {
             dom_1.Dom.isTag(sc.childNodes[r.startOffset], (0, helpers_1.keys)(this.j.o.popup, false)) &&
             r.startOffset === r.endOffset - 1);
     };
-    Object.defineProperty(inlinePopup.prototype, "tableModule", {
-        get: function () {
-            return this.j.getInstance('Table', this.j.o);
-        },
-        enumerable: false,
-        configurable: true
-    });
-    inlinePopup.prototype.beforeDestruct = function (jodit) {
-        jodit.e
-            .off('showPopup')
-            .off([this.j.ew, this.j.ow], 'mouseup keyup', this.onSelectionEnd);
-        this.removeListenersForElements();
-    };
     inlinePopup.prototype._eventsList = function () {
         var el = this.elmsList;
         return el
@@ -34776,6 +34803,9 @@ var inlinePopup = (function (_super) {
         }, 'toolbar');
     };
     tslib_1.__decorate([
+        (0, decorators_1.watch)(':outsideClick')
+    ], inlinePopup.prototype, "onOutsideClick", null);
+    tslib_1.__decorate([
         decorators_1.autobind
     ], inlinePopup.prototype, "onClick", null);
     tslib_1.__decorate([
@@ -34785,9 +34815,6 @@ var inlinePopup = (function (_super) {
         (0, decorators_1.watch)(':clickEditor'),
         decorators_1.autobind
     ], inlinePopup.prototype, "hidePopup", null);
-    tslib_1.__decorate([
-        (0, decorators_1.watch)(':outsideClick')
-    ], inlinePopup.prototype, "onOutsideClick", null);
     tslib_1.__decorate([
         decorators_1.autobind
     ], inlinePopup.prototype, "onSelectionStart", null);
@@ -34899,6 +34926,7 @@ function justify(editor) {
     var callback = function (command) {
         editor.s.focus();
         editor.s.eachSelection(function (current) {
+            console.log(current);
             if (!current) {
                 return;
             }

@@ -5,10 +5,10 @@
  */
 
 import type {
+	HTMLTagNames,
 	IControlType,
 	IDictionary,
-	IJodit,
-	HTMLTagNames
+	IJodit
 } from 'jodit/types';
 import { Config } from 'jodit/config';
 import { Dom } from 'jodit/core/dom';

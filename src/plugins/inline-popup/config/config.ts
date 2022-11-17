@@ -1,4 +1,3 @@
-
 /**
  * @module plugins/inline-popup
  */
