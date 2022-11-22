@@ -1,10 +1,9 @@
-
 /**
  * @module types
  */
 
-import type { IViewBased } from 'jodit/types/view';
-import type { IAsync } from 'jodit/types/async';
+import type {IViewBased} from 'jodit/types/view';
+import type {IAsync} from 'jodit/types/async';
 
 export interface IDictionary<T = any, K = string> {
 	[key: string]: T;
@@ -39,26 +38,27 @@ interface IComponent<T extends IViewBased = IViewBased> extends IDestructible {
 	readonly od: this['ownerDocument'];
 	readonly ownerWindow: Window;
 	readonly ow: this['ownerWindow'];
+	readonly componentName: string;
+	readonly uid: string;
+	readonly isDestructed: boolean;
+	readonly isInDestruct: boolean;
+	readonly isReady: boolean;
+	readonly componentStatus: ComponentStatus;
 
 	get<T>(chain: string, obj?: IDictionary): Nullable<T>;
 
-	readonly componentName: string;
 	className(): string;
 
 	getFullElName(elementName: string): string;
+
 	getFullElName(elementName: string, mod: string): string;
+
 	getFullElName(
 		elementName: string,
 		mod?: string,
 		modValue?: boolean | string
 	): string;
 
-	readonly uid: string;
-	readonly isDestructed: boolean;
-	readonly isInDestruct: boolean;
-	readonly isReady: boolean;
-
-	readonly componentStatus: ComponentStatus;
 	setStatus(componentStatus: ComponentStatus): void;
 
 	hookStatus(
@@ -72,9 +72,10 @@ interface IComponent<T extends IViewBased = IViewBased> extends IDestructible {
 interface IViewComponent<T extends IViewBased = IViewBased> extends IComponent {
 	jodit: T;
 	readonly j: T;
-	setParentView(jodit: T): this;
 	readonly i18n: T['i18n'];
 	readonly defaultTimeout: number;
+
+	setParentView(jodit: T): this;
 }
 
 export type NodeCondition<T extends Node = Node> = (
@@ -135,6 +136,7 @@ export interface IPermissions {
 	allowFolderRename: boolean;
 	allowImageResize: boolean;
 	allowImageCrop: boolean;
+
 	[key: string]: boolean;
 }
 
@@ -143,17 +145,17 @@ export type BooleanFunction<T = any> = (this: T, ...args: any[]) => boolean;
 
 export type ExecCommandCallback<T> =
 	| ((
-			this: T,
-			command: string,
-			value?: string,
-			next?: any
-	  ) => void | boolean | Promise<void | boolean>)
+	this: T,
+	command: string,
+	value?: string,
+	next?: any
+) => void | boolean | Promise<void | boolean>)
 	| ((
-			this: T,
-			command: string,
-			value: string,
-			next: string
-	  ) => void | boolean | Promise<void | boolean>);
+	this: T,
+	command: string,
+	value: string,
+	next: string
+) => void | boolean | Promise<void | boolean>);
 
 export interface ICommandType<T> {
 	exec: ExecCommandCallback<T>;
@@ -244,6 +246,7 @@ export type InsertMode =
 
 export type ImageAction = 'resize' | 'crop';
 export type ImageHAlign = 'normal' | 'left' | 'right' | 'center' | '';
+export type ImageAlign = 'justify' | 'right' | 'left' | 'center';
 
 export interface ImageBox {
 	w: number;

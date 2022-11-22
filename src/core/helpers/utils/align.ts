@@ -12,14 +12,20 @@ import { clearCenterAlign, css } from '../utils/css';
 export function hAlignElement(image: HTMLElement, align: ImageHAlign): void {
 	if (align && align !== 'normal') {
 		if (align !== 'center') {
-			css(image, 'float', align);
-			clearCenterAlign(image);
+			css(image, {
+				display: '',
+				float: align,
+				marginLeft: '',
+				marginRight: '',
+				overflow: 'auto'
+			});
 		} else {
 			css(image, {
 				float: '',
 				display: 'block',
 				marginLeft: 'auto',
-				marginRight: 'auto'
+				marginRight: 'auto',
+				overflow: 'auto'
 			});
 		}
 	} else {
@@ -59,6 +65,7 @@ export function clearAlign(node: Node): void {
 export function alignElement(command: string, box: HTMLElement): void {
 	if (Dom.isNode(box) && Dom.isElement(box)) {
 		clearAlign(box);
+		box.style.overflow = 'auto';
 
 		switch (command.toLowerCase()) {
 			case 'justifyfull':
@@ -67,14 +74,17 @@ export function alignElement(command: string, box: HTMLElement): void {
 
 			case 'justifyright':
 				box.style.textAlign = 'right';
+				console.log('right');
 				break;
 
 			case 'justifyleft':
 				box.style.textAlign = 'left';
+				console.log('left');
 				break;
 
 			case 'justifycenter':
 				box.style.textAlign = 'center';
+				console.log('center');
 				break;
 		}
 	}

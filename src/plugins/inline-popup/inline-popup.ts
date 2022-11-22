@@ -45,7 +45,7 @@ export class inlinePopup extends Plugin {
 
 	private type: Nullable<string> = null;
 
-	private popup: IPopup = new Popup(this.jodit, false, 'centerBottom');
+	private popup: IPopup = new Popup(this.jodit, false, 'centerTop');
 
 	private toolbar: IToolbarCollection = makeCollection(
 		this.jodit,

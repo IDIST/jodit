@@ -35,7 +35,12 @@ Icon.set('addcolumn', require('../icons/addcolumn.svg'))
 	.set('th', require('../icons/th.svg'))
 	.set('splitg', require('../icons/splitg.svg'))
 	.set('splitv', require('../icons/splitv.svg'))
-	.set('th-list', require('../icons/th-list.svg'));
+	.set('th-list', require('../icons/th-list.svg'))
+	.set('float-align-left', require('../icons/float-align-left.svg'))
+	.set('float-align-center', require('../icons/float-align-center.svg'))
+	.set('float-align-right', require('../icons/float-align-right.svg'))
+	.set('text-align-left', require('../icons/text-align-left.svg'))
+	.set('text-align-right', require('../icons/text-align-right.svg'));
 
 Config.prototype.popup = {
 	a: require('./items/a').default,

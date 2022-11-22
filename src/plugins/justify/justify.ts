@@ -127,7 +127,6 @@ export function justify(editor: IJodit): void {
 		editor.s.focus();
 
 		editor.s.eachSelection((current: Node): false | void => {
-			console.log(current);
 			if (!current) {
 				return;
 			}
