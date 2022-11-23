@@ -502,6 +502,27 @@ module.exports = "<svg xmlns='http://www.w3.org/2000/svg' viewBox=\"0 0 432 432\
 
 /***/ }),
 
+/***/ 8851:
+/***/ (function(module) {
+
+module.exports = "<svg width=\"1792\" height=\"1792\" viewBox=\"0 0 1792 1792\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"> <path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M448 1269.33H1344C1363.8 1269.33 1382.79 1277.2 1396.8 1291.2C1410.8 1305.21 1418.67 1324.2 1418.67 1344C1418.67 1363.8 1410.8 1382.79 1396.8 1396.8C1382.79 1410.8 1363.8 1418.67 1344 1418.67H448C428.197 1418.67 409.205 1410.8 395.203 1396.8C381.2 1382.79 373.333 1363.8 373.333 1344C373.333 1324.2 381.2 1305.21 395.203 1291.2C409.205 1277.2 428.197 1269.33 448 1269.33ZM746.667 672H1045.33C1065.14 672 1084.13 679.866 1098.13 693.869C1112.13 707.872 1120 726.864 1120 746.666V1045.33C1120 1065.14 1112.13 1084.13 1098.13 1098.13C1084.13 1112.13 1065.14 1120 1045.33 1120H746.667C726.864 1120 707.872 1112.13 693.869 1098.13C679.867 1084.13 672 1065.14 672 1045.33V746.666C672 726.864 679.867 707.872 693.869 693.869C707.872 679.866 726.864 672 746.667 672V672ZM448 373.333H1344C1363.8 373.333 1382.79 381.2 1396.8 395.202C1410.8 409.205 1418.67 428.197 1418.67 448C1418.67 467.803 1410.8 486.794 1396.8 500.797C1382.79 514.8 1363.8 522.666 1344 522.666H448C428.197 522.666 409.205 514.8 395.203 500.797C381.2 486.794 373.333 467.803 373.333 448C373.333 428.197 381.2 409.205 395.203 395.202C409.205 381.2 428.197 373.333 448 373.333V373.333Z\" fill=\"#242A3C\"/> </svg>"
+
+/***/ }),
+
+/***/ 50338:
+/***/ (function(module) {
+
+module.exports = "<svg width=\"1792\" height=\"1792\" viewBox=\"0 0 1792 1792\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"> <path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M448 1269.33H1344C1363.8 1269.33 1382.79 1277.2 1396.8 1291.2C1410.8 1305.21 1418.67 1324.2 1418.67 1344C1418.67 1363.8 1410.8 1382.79 1396.8 1396.8C1382.79 1410.8 1363.8 1418.67 1344 1418.67H448C428.197 1418.67 409.205 1410.8 395.203 1396.8C381.2 1382.79 373.333 1363.8 373.333 1344C373.333 1324.2 381.2 1305.21 395.203 1291.2C409.205 1277.2 428.197 1269.33 448 1269.33ZM448 672H746.667C766.47 672 785.461 679.866 799.464 693.869C813.467 707.872 821.333 726.864 821.333 746.666V1045.33C821.333 1065.14 813.467 1084.13 799.464 1098.13C785.461 1112.13 766.47 1120 746.667 1120H448C428.197 1120 409.205 1112.13 395.203 1098.13C381.2 1084.13 373.333 1065.14 373.333 1045.33V746.666C373.333 726.864 381.2 707.872 395.203 693.869C409.205 679.866 428.197 672 448 672ZM448 373.333H1344C1363.8 373.333 1382.79 381.2 1396.8 395.202C1410.8 409.205 1418.67 428.197 1418.67 448C1418.67 467.803 1410.8 486.794 1396.8 500.797C1382.79 514.8 1363.8 522.666 1344 522.666H448C428.197 522.666 409.205 514.8 395.203 500.797C381.2 486.794 373.333 467.803 373.333 448C373.333 428.197 381.2 409.205 395.203 395.202C409.205 381.2 428.197 373.333 448 373.333V373.333Z\" fill=\"#242A3C\"/> </svg>"
+
+/***/ }),
+
+/***/ 17383:
+/***/ (function(module) {
+
+module.exports = "<svg width=\"1792\" height=\"1792\" viewBox=\"0 0 1792 1792\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"> <path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M448 1269.33H1344C1363.8 1269.33 1382.79 1277.2 1396.8 1291.2C1410.8 1305.21 1418.67 1324.2 1418.67 1344C1418.67 1363.8 1410.8 1382.79 1396.8 1396.8C1382.79 1410.8 1363.8 1418.67 1344 1418.67H448C428.197 1418.67 409.205 1410.8 395.203 1396.8C381.2 1382.79 373.333 1363.8 373.333 1344C373.333 1324.2 381.2 1305.21 395.203 1291.2C409.205 1277.2 428.197 1269.33 448 1269.33ZM1045.33 672H1344C1363.8 672 1382.79 679.866 1396.8 693.869C1410.8 707.872 1418.67 726.864 1418.67 746.666V1045.33C1418.67 1065.14 1410.8 1084.13 1396.8 1098.13C1382.79 1112.13 1363.8 1120 1344 1120H1045.33C1025.53 1120 1006.54 1112.13 992.536 1098.13C978.533 1084.13 970.667 1065.14 970.667 1045.33V746.666C970.667 726.864 978.533 707.872 992.536 693.869C1006.54 679.866 1025.53 672 1045.33 672V672ZM448 373.333H1344C1363.8 373.333 1382.79 381.2 1396.8 395.202C1410.8 409.205 1418.67 428.197 1418.67 448C1418.67 467.803 1410.8 486.794 1396.8 500.797C1382.79 514.8 1363.8 522.666 1344 522.666H448C428.197 522.666 409.205 514.8 395.203 500.797C381.2 486.794 373.333 467.803 373.333 448C373.333 428.197 381.2 409.205 395.203 395.202C409.205 381.2 428.197 373.333 448 373.333V373.333Z\" fill=\"#242A3C\"/> </svg>"
+
+/***/ }),
+
 /***/ 43371:
 /***/ (function(module) {
 
@@ -520,6 +541,20 @@ module.exports = "<svg xmlns='http://www.w3.org/2000/svg' viewBox=\"0 0 48 48\">
 /***/ (function(module) {
 
 module.exports = "<svg xmlns='http://www.w3.org/2000/svg' viewBox=\"0 0 48 48\"> <path d=\"M6 18h4v-4h-4v4zm0-8h4v-4h-4v4zm8 32h4v-4h-4v4zm0-16h4v-4h-4v4zm-8 0h4v-4h-4v4zm0 16h4v-4h-4v4zm0-8h4v-4h-4v4zm8-24h4v-4h-4v4zm24 24h4v-4h-4v4zm-16 8h4v-36h-4v36zm16 0h4v-4h-4v4zm0-16h4v-4h-4v4zm0-20v4h4v-4h-4zm0 12h4v-4h-4v4zm-8-8h4v-4h-4v4zm0 32h4v-4h-4v4zm0-16h4v-4h-4v4z\"/> <path d=\"M0 0h48v48h-48z\" fill=\"none\"/> </svg>"
+
+/***/ }),
+
+/***/ 55969:
+/***/ (function(module) {
+
+module.exports = "<svg width=\"1792\" height=\"1792\" viewBox=\"0 0 1792 1792\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"> <path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M448 1269.33H1344C1363.8 1269.33 1382.79 1277.2 1396.8 1291.2C1410.8 1305.21 1418.67 1324.2 1418.67 1344C1418.67 1363.8 1410.8 1382.79 1396.8 1396.8C1382.79 1410.8 1363.8 1418.67 1344 1418.67H448C428.197 1418.67 409.206 1410.8 395.203 1396.8C381.2 1382.79 373.333 1363.8 373.333 1344C373.333 1324.2 381.2 1305.21 395.203 1291.2C409.206 1277.2 428.197 1269.33 448 1269.33ZM1045.33 672H1344C1363.8 672 1382.79 679.866 1396.8 693.869C1410.8 707.872 1418.67 726.864 1418.67 746.666C1418.67 766.469 1410.8 785.461 1396.8 799.464C1382.79 813.466 1363.8 821.333 1344 821.333H1045.33C1025.53 821.333 1006.54 813.466 992.536 799.464C978.534 785.461 970.667 766.469 970.667 746.666C970.667 726.864 978.534 707.872 992.536 693.869C1006.54 679.866 1025.53 672 1045.33 672V672ZM1045.33 970.666H1344C1363.8 970.666 1382.79 978.533 1396.8 992.536C1410.8 1006.54 1418.67 1025.53 1418.67 1045.33C1418.67 1065.14 1410.8 1084.13 1396.8 1098.13C1382.79 1112.13 1363.8 1120 1344 1120H1045.33C1025.53 1120 1006.54 1112.13 992.536 1098.13C978.534 1084.13 970.667 1065.14 970.667 1045.33C970.667 1025.53 978.534 1006.54 992.536 992.536C1006.54 978.533 1025.53 970.666 1045.33 970.666V970.666ZM448 672H746.667C766.47 672 785.461 679.866 799.464 693.869C813.467 707.872 821.334 726.864 821.334 746.666V1045.33C821.334 1065.14 813.467 1084.13 799.464 1098.13C785.461 1112.13 766.47 1120 746.667 1120H448C428.197 1120 409.206 1112.13 395.203 1098.13C381.2 1084.13 373.333 1065.14 373.333 1045.33V746.666C373.333 726.864 381.2 707.872 395.203 693.869C409.206 679.866 428.197 672 448 672ZM448 373.333H1344C1363.8 373.333 1382.79 381.2 1396.8 395.202C1410.8 409.205 1418.67 428.197 1418.67 448C1418.67 467.803 1410.8 486.794 1396.8 500.797C1382.79 514.8 1363.8 522.666 1344 522.666H448C428.197 522.666 409.206 514.8 395.203 500.797C381.2 486.794 373.333 467.803 373.333 448C373.333 428.197 381.2 409.205 395.203 395.202C409.206 381.2 428.197 373.333 448 373.333V373.333Z\" fill=\"#242A3C\"/> </svg>"
+
+/***/ }),
+
+/***/ 9672:
+/***/ (function(module) {
+
+module.exports = "<svg width=\"1792\" height=\"1792\" viewBox=\"0 0 1792 1792\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"> <path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M448 1269.33H1344C1363.8 1269.33 1382.79 1277.2 1396.8 1291.2C1410.8 1305.21 1418.67 1324.2 1418.67 1344C1418.67 1363.8 1410.8 1382.79 1396.8 1396.8C1382.79 1410.8 1363.8 1418.67 1344 1418.67H448C428.197 1418.67 409.206 1410.8 395.203 1396.8C381.2 1382.79 373.333 1363.8 373.333 1344C373.333 1324.2 381.2 1305.21 395.203 1291.2C409.206 1277.2 428.197 1269.33 448 1269.33ZM448 672H746.667C766.47 672 785.461 679.866 799.464 693.869C813.467 707.872 821.334 726.864 821.334 746.666C821.334 766.469 813.467 785.461 799.464 799.464C785.461 813.466 766.47 821.333 746.667 821.333H448C428.197 821.333 409.206 813.466 395.203 799.464C381.2 785.461 373.333 766.469 373.333 746.666C373.333 726.864 381.2 707.872 395.203 693.869C409.206 679.866 428.197 672 448 672ZM448 970.666H746.667C766.47 970.666 785.461 978.533 799.464 992.536C813.467 1006.54 821.334 1025.53 821.334 1045.33C821.334 1065.14 813.467 1084.13 799.464 1098.13C785.461 1112.13 766.47 1120 746.667 1120H448C428.197 1120 409.206 1112.13 395.203 1098.13C381.2 1084.13 373.333 1065.14 373.333 1045.33C373.333 1025.53 381.2 1006.54 395.203 992.536C409.206 978.533 428.197 970.666 448 970.666ZM1045.33 672H1344C1363.8 672 1382.79 679.866 1396.8 693.869C1410.8 707.872 1418.67 726.864 1418.67 746.666V1045.33C1418.67 1065.14 1410.8 1084.13 1396.8 1098.13C1382.79 1112.13 1363.8 1120 1344 1120H1045.33C1025.53 1120 1006.54 1112.13 992.536 1098.13C978.534 1084.13 970.667 1065.14 970.667 1045.33V746.666C970.667 726.864 978.534 707.872 992.536 693.869C1006.54 679.866 1025.53 672 1045.33 672V672ZM448 373.333H1344C1363.8 373.333 1382.79 381.2 1396.8 395.202C1410.8 409.205 1418.67 428.197 1418.67 448C1418.67 467.803 1410.8 486.794 1396.8 500.797C1382.79 514.8 1363.8 522.666 1344 522.666H448C428.197 522.666 409.206 514.8 395.203 500.797C381.2 486.794 373.333 467.803 373.333 448C373.333 428.197 381.2 409.205 395.203 395.202C409.206 381.2 428.197 373.333 448 373.333V373.333Z\" fill=\"#242A3C\"/> </svg>"
 
 /***/ }),
 
@@ -15975,15 +16010,21 @@ var css_1 = __webpack_require__(56672);
 function hAlignElement(image, align) {
     if (align && align !== 'normal') {
         if (align !== 'center') {
-            (0, css_1.css)(image, 'float', align);
-            (0, css_1.clearCenterAlign)(image);
+            (0, css_1.css)(image, {
+                display: '',
+                float: align,
+                marginLeft: '',
+                marginRight: '',
+                overflow: 'auto'
+            });
         }
         else {
             (0, css_1.css)(image, {
                 float: '',
                 display: 'block',
                 marginLeft: 'auto',
-                marginRight: 'auto'
+                marginRight: 'auto',
+                overflow: 'auto'
             });
         }
     }
@@ -16012,18 +16053,22 @@ exports.clearAlign = clearAlign;
 function alignElement(command, box) {
     if (dom_1.Dom.isNode(box) && dom_1.Dom.isElement(box)) {
         clearAlign(box);
+        box.style.overflow = 'auto';
         switch (command.toLowerCase()) {
             case 'justifyfull':
                 box.style.textAlign = 'justify';
                 break;
             case 'justifyright':
                 box.style.textAlign = 'right';
+                console.log('right');
                 break;
             case 'justifyleft':
                 box.style.textAlign = 'left';
+                console.log('left');
                 break;
             case 'justifycenter':
                 box.style.textAlign = 'center';
+                console.log('center');
                 break;
         }
     }
@@ -42439,7 +42484,12 @@ icon_1.Icon.set('addcolumn', __webpack_require__(78321))
     .set('th', __webpack_require__(52242))
     .set('splitg', __webpack_require__(44563))
     .set('splitv', __webpack_require__(53183))
-    .set('th-list', __webpack_require__(6102));
+    .set('th-list', __webpack_require__(6102))
+    .set('float-align-left', __webpack_require__(50338))
+    .set('float-align-center', __webpack_require__(8851))
+    .set('float-align-right', __webpack_require__(17383))
+    .set('text-align-left', __webpack_require__(55969))
+    .set('text-align-right', __webpack_require__(9672));
 config_1.Config.prototype.popup = {
     a: (__webpack_require__(58169)/* ["default"] */ .Z),
     img: (__webpack_require__(92534)/* ["default"] */ .Z),
@@ -42509,10 +42559,11 @@ exports.Z = [
 "use strict";
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
-exports.rightAlignAction = exports.centerAlignAction = exports.leftAlignAction = void 0;
+exports.rightAlignAction = exports.leftAlignAction = exports.rightHorizontalAlignAction = exports.centerHorizontalAlignAction = exports.leftHorizontalAlignAction = void 0;
 var dom_1 = __webpack_require__(94522);
 var align_1 = __webpack_require__(49359);
-var align = function (editor, elm, command) {
+var helpers_1 = __webpack_require__(92654);
+var floatAlign = function (editor, elm, command) {
     if (!dom_1.Dom.isTag(elm, ['img', 'jodit', 'jodit-media'])) {
         return;
     }
@@ -42526,32 +42577,72 @@ var align = function (editor, elm, command) {
     editor.synchronizeValues();
     editor.e.fire('recalcPositionPopup');
 };
-exports.leftAlignAction = {
-    name: 'left',
-    icon: 'left',
-    exec: function (editor, elm, _a) {
-        var control = _a.control;
-        align(editor, elm, 'left');
-    },
-    tooltip: 'Left'
+var textAlign = function (editor, elm, command) {
+    if (!dom_1.Dom.isTag(elm, ['img', 'jodit', 'jodit-media'])) {
+        return;
+    }
+    (0, helpers_1.css)(elm, {
+        float: '',
+        display: 'inline-block',
+        marginLeft: '',
+        marginRight: ''
+    });
+    if (!command) {
+        return false;
+    }
+    var currentBox = dom_1.Dom.up(elm, dom_1.Dom.isBlock, editor.editor);
+    console.log('currentBox', currentBox);
+    if (!currentBox) {
+        currentBox = dom_1.Dom.wrapInline(elm, editor.o.enterBlock, editor);
+    }
+    (0, align_1.alignElement)(command, currentBox);
+    editor.synchronizeValues();
+    editor.e.fire('recalcPositionPopup');
 };
-exports.centerAlignAction = {
-    name: 'center',
-    icon: 'center',
+exports.leftHorizontalAlignAction = {
+    name: 'float align left',
+    icon: 'float-align-left',
     exec: function (editor, elm, _a) {
         var control = _a.control;
-        align(editor, elm, 'center');
+        floatAlign(editor, elm, 'left');
     },
-    tooltip: 'Center'
+    tooltip: 'Float Align Left'
+};
+exports.centerHorizontalAlignAction = {
+    name: 'float align center',
+    icon: 'float-align-center',
+    exec: function (editor, elm, _a) {
+        var control = _a.control;
+        floatAlign(editor, elm, 'center');
+    },
+    tooltip: 'Float Align Center'
+};
+exports.rightHorizontalAlignAction = {
+    name: 'float align right',
+    icon: 'float-align-right',
+    exec: function (editor, elm, _a) {
+        var control = _a.control;
+        floatAlign(editor, elm, 'right');
+    },
+    tooltip: 'Float Align Right'
+};
+exports.leftAlignAction = {
+    name: 'text align left',
+    icon: 'text-align-left',
+    exec: function (editor, elm, _a) {
+        var control = _a.control;
+        textAlign(editor, elm, 'justifyleft');
+    },
+    tooltip: 'Text Align Left'
 };
 exports.rightAlignAction = {
-    name: 'right',
-    icon: 'right',
+    name: 'text align right',
+    icon: 'text-align-right',
     exec: function (editor, elm, _a) {
         var control = _a.control;
-        align(editor, elm, 'right');
+        textAlign(editor, elm, 'justifyright');
     },
-    tooltip: 'Right'
+    tooltip: 'Text Align Right'
 };
 
 
@@ -42722,11 +42813,13 @@ exports.Z = [
 var __webpack_unused_export__;
 
 __webpack_unused_export__ = ({ value: true });
-var align_1 = __webpack_require__(77474);
 var delete_1 = __webpack_require__(1530);
+var align_1 = __webpack_require__(77474);
 exports.Z = [
+    align_1.leftHorizontalAlignAction,
+    align_1.centerHorizontalAlignAction,
+    align_1.rightHorizontalAlignAction,
     align_1.leftAlignAction,
-    align_1.centerAlignAction,
     align_1.rightAlignAction,
     delete_1.deleteAction
 ];
@@ -42741,11 +42834,13 @@ exports.Z = [
 var __webpack_unused_export__;
 
 __webpack_unused_export__ = ({ value: true });
-var align_1 = __webpack_require__(77474);
 var delete_1 = __webpack_require__(1530);
+var align_1 = __webpack_require__(77474);
 exports.Z = [
+    align_1.leftHorizontalAlignAction,
+    align_1.centerHorizontalAlignAction,
+    align_1.rightHorizontalAlignAction,
     align_1.leftAlignAction,
-    align_1.centerAlignAction,
     align_1.rightAlignAction,
     delete_1.deleteAction
 ];
@@ -42815,7 +42910,7 @@ var inlinePopup = (function (_super) {
         var _this = _super !== null && _super.apply(this, arguments) || this;
         _this.requires = ['select'];
         _this.type = null;
-        _this.popup = new popup_1.Popup(_this.jodit, false, 'centerBottom');
+        _this.popup = new popup_1.Popup(_this.jodit, false, 'centerTop');
         _this.toolbar = (0, factory_1.makeCollection)(_this.jodit, _this.popup);
         _this.snapRange = null;
         _this.elmsList = (0, helpers_1.keys)(_this.j.o.popup, false).filter(function (s) { return !_this.isExcludedTarget(s); });
@@ -43118,7 +43213,6 @@ function justify(editor) {
     var callback = function (command) {
         editor.s.focus();
         editor.s.eachSelection(function (current) {
-            console.log(current);
             if (!current) {
                 return;
             }
