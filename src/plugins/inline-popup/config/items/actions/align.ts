@@ -104,7 +104,7 @@ export const textAlignCenterAction: IControlType<IJodit> = {
 	name: 'center',
 	icon: 'center',
 	exec: (editor: IJodit, elm, { control }): void | false => {
-		textAlign(editor, elm, 'justifyleft');
+		textAlign(editor, elm, 'justifycenter');
 	},
 	tooltip: 'Center'
 };
