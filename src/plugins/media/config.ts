@@ -25,4 +25,4 @@ declare module 'jodit/config' {
 
 Config.prototype.mediaFakeTag = 'jodit-media';
 Config.prototype.mediaInFakeBlock = true;
-Config.prototype.mediaBlocks = ['img', 'video', 'audio'];
+Config.prototype.mediaBlocks = ['video', 'audio'];

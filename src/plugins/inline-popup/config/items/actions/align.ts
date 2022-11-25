@@ -10,7 +10,6 @@ import type {
 } from 'jodit/types';
 import { Dom } from 'jodit/core/dom';
 import { alignElement, hAlignElement } from 'jodit/core/helpers/utils/align';
-import { css } from 'jodit/core/helpers';
 
 const floatAlign = (
 	editor: IJodit,
@@ -44,19 +43,11 @@ const textAlign = (editor: IJodit, elm: any, command: string): void | false => {
 		return;
 	}
 
-	css(elm, {
-		float: '',
-		display: 'inline-block',
-		marginLeft: '',
-		marginRight: ''
-	});
-
 	if (!command) {
 		return false;
 	}
 
 	let currentBox = Dom.up(elm, Dom.isBlock, editor.editor) as HTMLElement;
-	console.log('currentBox', currentBox);
 
 	if (!currentBox) {
 		currentBox = Dom.wrapInline(
@@ -73,7 +64,7 @@ const textAlign = (editor: IJodit, elm: any, command: string): void | false => {
 	editor.e.fire('recalcPositionPopup');
 };
 
-export const leftHorizontalAlignAction: IControlType<IJodit> = {
+export const floatAlignLeftAction: IControlType<IJodit> = {
 	name: 'float align left',
 	icon: 'float-align-left',
 	exec: (editor: IJodit, elm, { control }): void | false => {
@@ -82,7 +73,7 @@ export const leftHorizontalAlignAction: IControlType<IJodit> = {
 	tooltip: 'Float Align Left'
 };
 
-export const centerHorizontalAlignAction: IControlType<IJodit> = {
+export const floatAlignCenterAction: IControlType<IJodit> = {
 	name: 'float align center',
 	icon: 'float-align-center',
 	exec: (editor: IJodit, elm, { control }): void | false => {
@@ -91,7 +82,7 @@ export const centerHorizontalAlignAction: IControlType<IJodit> = {
 	tooltip: 'Float Align Center'
 };
 
-export const rightHorizontalAlignAction: IControlType<IJodit> = {
+export const floatAlignRightAction: IControlType<IJodit> = {
 	name: 'float align right',
 	icon: 'float-align-right',
 	exec: (editor: IJodit, elm, { control }): void | false => {
@@ -100,20 +91,29 @@ export const rightHorizontalAlignAction: IControlType<IJodit> = {
 	tooltip: 'Float Align Right'
 };
 
-export const leftAlignAction: IControlType<IJodit> = {
-	name: 'text align left',
-	icon: 'text-align-left',
+export const textAlignLeftAction: IControlType<IJodit> = {
+	name: 'left',
+	icon: 'left',
 	exec: (editor: IJodit, elm, { control }): void | false => {
 		textAlign(editor, elm, 'justifyleft');
 	},
-	tooltip: 'Text Align Left'
+	tooltip: 'Left'
 };
 
-export const rightAlignAction: IControlType<IJodit> = {
-	name: 'text align right',
-	icon: 'text-align-right',
+export const textAlignCenterAction: IControlType<IJodit> = {
+	name: 'center',
+	icon: 'center',
+	exec: (editor: IJodit, elm, { control }): void | false => {
+		textAlign(editor, elm, 'justifyleft');
+	},
+	tooltip: 'Center'
+};
+
+export const textAlignRightAction: IControlType<IJodit> = {
+	name: 'text',
+	icon: 'right',
 	exec: (editor: IJodit, elm, { control }): void | false => {
 		textAlign(editor, elm, 'justifyright');
 	},
-	tooltip: 'Text Align Right'
+	tooltip: 'Right'
 };

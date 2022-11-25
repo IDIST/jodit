@@ -36,8 +36,10 @@ Config.prototype.controls.emoji = {
 	popup: (editor: IJodit, _: any, _1: any, close: any): HTMLElement => {
 		editor.s.save();
 
-		const box = Emoji.getInstance(editor, (code) => {
+		const box = Emoji.getInstance(editor, code => {
 			editor.s.restore();
+
+			// Todo: Span 으로 감싸고 텍스트 크기 크게
 			editor.s.insertNode(editor.createInside.text(code), true);
 			close();
 		});
@@ -90,6 +92,9 @@ export class emoji extends Plugin {
 		});
 	}
 
+	/** @override */
+	protected beforeDestruct(jodit: IJodit): void {}
+
 	@autobind
 	private onAutoComplete(query: string): IAutoCompleteItem[] {
 		if (query.length > 2 && query[0] === ':') {
@@ -97,13 +102,13 @@ export class emoji extends Plugin {
 
 			if (trim(query).length) {
 				return this.data.emoji
-					.filter((e) => e.description?.indexOf(query) === 0)
+					.filter(e => e.description?.indexOf(query) === 0)
 					.sort(
 						(a, b) =>
 							a.description.indexOf(query) -
 							b.description.indexOf(query)
 					)
-					.map((e) => ({
+					.map(e => ({
 						title: `${e.emoji} ${e.description}`,
 						value: e.emoji
 					}));
@@ -112,9 +117,6 @@ export class emoji extends Plugin {
 
 		return [];
 	}
-
-	/** @override */
-	protected beforeDestruct(jodit: IJodit): void {}
 }
 
 Jodit.plugins.add('emoji', emoji);

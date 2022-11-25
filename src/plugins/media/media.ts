@@ -36,10 +36,11 @@ export function media(editor: IJodit): void {
 
 			attr(wrapper, 'style', attr(element, 'style'));
 
-			wrapper.style.display =
-				element.style.display === 'inline-block'
-					? 'inline-block'
-					: 'block';
+			// wrapper.style.display =
+			// 	element.style.display === 'inline-block'
+			// 		? 'inline-block'
+			// 		: 'block';
+			wrapper.style.display = 'block';
 			wrapper.style.width = element.offsetWidth + 'px';
 			wrapper.style.height = element.offsetHeight + 'px';
 

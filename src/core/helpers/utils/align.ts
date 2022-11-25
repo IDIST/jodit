@@ -16,16 +16,14 @@ export function hAlignElement(image: HTMLElement, align: ImageHAlign): void {
 				display: '',
 				float: align,
 				marginLeft: '',
-				marginRight: '',
-				overflow: 'auto'
+				marginRight: ''
 			});
 		} else {
 			css(image, {
 				float: '',
 				display: 'block',
 				marginLeft: 'auto',
-				marginRight: 'auto',
-				overflow: 'auto'
+				marginRight: 'auto'
 			});
 		}
 	} else {
@@ -47,13 +45,16 @@ export function hAlignElement(image: HTMLElement, align: ImageHAlign): void {
  */
 export function clearAlign(node: Node): void {
 	Dom.each(node, elm => {
+		console.log('clearAlign', elm);
 		if (Dom.isHTMLElement(elm)) {
-			if (elm.style.textAlign) {
-				elm.style.textAlign = '';
+			elm.style.display = '';
+			elm.style.textAlign = '';
+			elm.style.float = '';
+			elm.style.marginLeft = '';
+			elm.style.marginRight = '';
 
-				if (!elm.style.cssText.trim().length) {
-					elm.removeAttribute('style');
-				}
+			if (!elm.style.cssText.trim().length) {
+				elm.removeAttribute('style');
 			}
 		}
 	});
@@ -65,7 +66,6 @@ export function clearAlign(node: Node): void {
 export function alignElement(command: string, box: HTMLElement): void {
 	if (Dom.isNode(box) && Dom.isElement(box)) {
 		clearAlign(box);
-		box.style.overflow = 'auto';
 
 		switch (command.toLowerCase()) {
 			case 'justifyfull':
@@ -74,17 +74,14 @@ export function alignElement(command: string, box: HTMLElement): void {
 
 			case 'justifyright':
 				box.style.textAlign = 'right';
-				console.log('right');
 				break;
 
 			case 'justifyleft':
 				box.style.textAlign = 'left';
-				console.log('left');
 				break;
 
 			case 'justifycenter':
 				box.style.textAlign = 'center';
-				console.log('center');
 				break;
 		}
 	}
