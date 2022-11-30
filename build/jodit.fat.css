@@ -16,6 +16,7 @@
 :root {
   --jd-color-white: #fff;
   --jd-color-gray: #EEEEEE;
+  --jd-color-purple: #8120F7;
   --jd-color-gray-dark: #a5a5a5;
   --jd-color-dark: #4c4c4c;
   --jd-color-blue: #b5d6fd;
@@ -1366,11 +1367,17 @@ svg.jodit-icon {
 }
 .jodit-ui-button:active:not([disabled]),
 .jodit-ui-button[aria-pressed='true']:not([disabled]) {
-  background-color: var(--jd-color-button-background-hover_opacity40);
   outline: 0;
+}
+.jodit-ui-button:active:not([disabled]) svg,
+.jodit-ui-button[aria-pressed='true']:not([disabled]) svg {
+  fill: var(--jd-color-purple) !important;
 }
 .jodit-ui-button[aria-pressed='true']:hover:not([disabled]) {
   background-color: var(--jd-color-button-background-hover_opacity60);
+}
+.jodit-ui-button[aria-pressed='true']:hover:not([disabled]) svg {
+  fill: var(--jd-color-purple) !important;
 }
 .jodit-ui-button[disabled] {
   opacity: 0.3;
@@ -1678,9 +1685,9 @@ svg.jodit-icon {
 .jodit-ui-separator::after {
   content: '';
   width: 1px;
-  height: 32px;
+  height: 16px;
   display: block;
-  background: var(--jd-color-gray);
+  background: #DCDBDC;
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -2941,11 +2948,17 @@ svg.jodit-icon {
 }
 .jodit-toolbar-button__button:active:not([disabled]),
 .jodit-toolbar-button__button[aria-pressed='true']:not([disabled]) {
-  background-color: var(--jd-color-button-background-hover_opacity40);
   outline: 0;
+}
+.jodit-toolbar-button__button:active:not([disabled]) svg,
+.jodit-toolbar-button__button[aria-pressed='true']:not([disabled]) svg {
+  fill: var(--jd-color-purple) !important;
 }
 .jodit-toolbar-button__button[aria-pressed='true']:hover:not([disabled]) {
   background-color: var(--jd-color-button-background-hover_opacity60);
+}
+.jodit-toolbar-button__button[aria-pressed='true']:hover:not([disabled]) svg {
+  fill: var(--jd-color-purple) !important;
 }
 .jodit-toolbar-button__button[disabled] {
   opacity: 0.3;
@@ -2969,11 +2982,17 @@ svg.jodit-icon {
 }
 .jodit-toolbar-button__trigger:active:not([disabled]),
 .jodit-toolbar-button__trigger[aria-pressed='true']:not([disabled]) {
-  background-color: var(--jd-color-button-background-hover_opacity40);
   outline: 0;
+}
+.jodit-toolbar-button__trigger:active:not([disabled]) svg,
+.jodit-toolbar-button__trigger[aria-pressed='true']:not([disabled]) svg {
+  fill: var(--jd-color-purple) !important;
 }
 .jodit-toolbar-button__trigger[aria-pressed='true']:hover:not([disabled]) {
   background-color: var(--jd-color-button-background-hover_opacity60);
+}
+.jodit-toolbar-button__trigger[aria-pressed='true']:hover:not([disabled]) svg {
+  fill: var(--jd-color-purple) !important;
 }
 .jodit-toolbar-button__trigger[disabled] {
   opacity: 0.3;
@@ -3049,11 +3068,17 @@ svg.jodit-icon {
 }
 .jodit-toolbar-content:active:not([disabled]),
 .jodit-toolbar-content[aria-pressed='true']:not([disabled]) {
-  background-color: var(--jd-color-button-background-hover_opacity40);
   outline: 0;
+}
+.jodit-toolbar-content:active:not([disabled]) svg,
+.jodit-toolbar-content[aria-pressed='true']:not([disabled]) svg {
+  fill: var(--jd-color-purple) !important;
 }
 .jodit-toolbar-content[aria-pressed='true']:hover:not([disabled]) {
   background-color: var(--jd-color-button-background-hover_opacity60);
+}
+.jodit-toolbar-content[aria-pressed='true']:hover:not([disabled]) svg {
+  fill: var(--jd-color-purple) !important;
 }
 .jodit-toolbar-content[disabled] {
   opacity: 0.3;
@@ -4377,6 +4402,7 @@ html.jodit_fullsize-box_true {
   height: fit-content;
 }
 
+
 .jodit-paste-storage {
   max-width: 600px;
   padding: var(--jd-padding-default);
@@ -5115,6 +5141,7 @@ html.jodit_fullsize-box_true {
 :root {
   --jd-color-white: #fff;
   --jd-color-gray: #EEEEEE;
+  --jd-color-purple: #8120F7;
   --jd-color-gray-dark: #a5a5a5;
   --jd-color-dark: #4c4c4c;
   --jd-color-blue: #b5d6fd;

@@ -1,4 +1,3 @@
-
 /**
  * [[include:modules/toolbar/button/README.md]]
  * @packageDocumentation
@@ -24,15 +23,15 @@ import { Dom } from 'jodit/core/dom';
 import { Popup } from 'jodit/core/ui/popup/popup';
 import { makeCollection } from 'jodit/modules/toolbar/factory';
 import {
-	isFunction,
-	isString,
-	position,
-	camelCase,
 	attr,
-	isJoditObject,
 	call,
+	camelCase,
 	isArray,
-	keys
+	isFunction,
+	isJoditObject,
+	isString,
+	keys,
+	position
 } from 'jodit/core/helpers';
 import { Icon } from 'jodit/core/ui/icon';
 import { ToolbarCollection } from 'jodit/modules/toolbar/collection/collection';
@@ -44,25 +43,41 @@ export class ToolbarButton<T extends IViewBased = IViewBased>
 	extends UIButton
 	implements IToolbarButton
 {
-	/** @override */
-	override className(): string {
-		return 'ToolbarButton';
-	}
-
 	override readonly state = {
 		...UIButtonState(),
 		theme: 'toolbar',
 		currentValue: '',
 		hasTrigger: false
 	};
-
 	protected trigger!: HTMLElement;
+	private openedPopup: Nullable<IPopup> = null;
 
-	/**
-	 * Get parent toolbar
-	 */
-	protected get toolbar(): Nullable<IToolbarCollection> {
-		return this.closest<ToolbarCollection>(ToolbarCollection);
+	constructor(
+		jodit: T,
+		readonly control: IControlTypeStrong,
+		readonly target: Nullable<HTMLElement> = null
+	) {
+		super(jodit);
+
+		// Prevent lost focus
+		jodit.e.on([this.button, this.trigger], 'mousedown', (e: MouseEvent) =>
+			e.preventDefault()
+		);
+
+		this.onAction(this.onClick);
+
+		this.hookStatus(STATUSES.ready, () => {
+			this.initFromControl();
+			this.initTooltip();
+
+			this.update();
+		});
+
+		if (control.mods) {
+			Object.keys(control.mods).forEach(mod => {
+				control.mods && this.setMod(mod, control.mods[mod]);
+			});
+		}
 	}
 
 	/**
@@ -72,6 +87,18 @@ export class ToolbarButton<T extends IViewBased = IViewBased>
 		return this.container.querySelector(
 			`button.${this.componentName}__button`
 		) as HTMLElement;
+	}
+
+	/**
+	 * Get parent toolbar
+	 */
+	protected get toolbar(): Nullable<IToolbarCollection> {
+		return this.closest<ToolbarCollection>(ToolbarCollection);
+	}
+
+	/** @override */
+	override className(): string {
+		return 'ToolbarButton';
 	}
 
 	/** @override **/
@@ -89,48 +116,14 @@ export class ToolbarButton<T extends IViewBased = IViewBased>
 		super.update();
 	}
 
-	/**
-	 * Calculates whether the button is active
-	 */
-	private calculateActivatedStatus(tc?: ToolbarCollection): boolean {
-		if (isJoditObject(this.j) && !this.j.editorIsActive) {
-			return false;
-		}
-
-		if (
-			isFunction(this.control.isActive) &&
-			this.control.isActive(this.j, this.control, this)
-		) {
-			return true;
-		}
-
-		return Boolean(tc && tc.shouldBeActive(this));
+	/** @override */
+	override focus(): void {
+		this.container.querySelector('button')?.focus();
 	}
 
-	/**
-	 * Calculates whether an element is blocked for the user
-	 */
-	private calculateDisabledStatus(tc?: ToolbarCollection): boolean {
-		if (this.j.o.disabled) {
-			return true;
-		}
-
-		if (
-			this.j.o.readonly &&
-			(!this.j.o.activeButtonsInReadOnly ||
-				!this.j.o.activeButtonsInReadOnly.includes(this.control.name))
-		) {
-			return true;
-		}
-
-		if (
-			isFunction(this.control.isDisabled) &&
-			this.control.isDisabled(this.j, this.control, this)
-		) {
-			return true;
-		}
-
-		return Boolean(tc && tc.shouldBeDisabled(this));
+	override destruct(): any {
+		this.closePopup();
+		return super.destruct();
 	}
 
 	/** @override */
@@ -191,11 +184,6 @@ export class ToolbarButton<T extends IViewBased = IViewBased>
 		return container;
 	}
 
-	/** @override */
-	override focus(): void {
-		this.container.querySelector('button')?.focus();
-	}
-
 	@watch('state.hasTrigger')
 	protected onChangeHasTrigger(): void {
 		if (this.state.hasTrigger) {
@@ -246,80 +234,6 @@ export class ToolbarButton<T extends IViewBased = IViewBased>
 					this.j.e.fire('hideTooltip');
 				});
 		}
-	}
-
-	constructor(
-		jodit: T,
-		readonly control: IControlTypeStrong,
-		readonly target: Nullable<HTMLElement> = null
-	) {
-		super(jodit);
-
-		// Prevent lost focus
-		jodit.e.on([this.button, this.trigger], 'mousedown', (e: MouseEvent) =>
-			e.preventDefault()
-		);
-
-		this.onAction(this.onClick);
-
-		this.hookStatus(STATUSES.ready, () => {
-			this.initFromControl();
-			this.initTooltip();
-
-			this.update();
-		});
-
-		if (control.mods) {
-			Object.keys(control.mods).forEach(mod => {
-				control.mods && this.setMod(mod, control.mods[mod]);
-			});
-		}
-	}
-
-	/**
-	 * Init constant data from control
-	 */
-	private initFromControl(): void {
-		const { control: ctr, state } = this;
-
-		this.updateSize();
-
-		state.name = ctr.name;
-
-		const { textIcons } = this.j.o;
-
-		if (
-			textIcons === true ||
-			(isFunction(textIcons) && textIcons(ctr.name)) ||
-			ctr.template
-		) {
-			state.icon = UIButtonState().icon;
-			state.text = ctr.text || ctr.name;
-		} else {
-			if (ctr.iconURL) {
-				state.icon.iconURL = ctr.iconURL;
-			} else {
-				const name = ctr.icon || ctr.name;
-				state.icon.name =
-					Icon.exists(name) || this.j.o.extraIcons?.[name]
-						? name
-						: '';
-			}
-
-			if (!ctr.iconURL && !state.icon.name) {
-				state.text = ctr.text || ctr.name;
-			}
-		}
-
-		if (ctr.tooltip) {
-			state.tooltip = this.j.i18n(
-				isFunction(ctr.tooltip)
-					? ctr.tooltip(this.j, ctr, this)
-					: ctr.tooltip
-			);
-		}
-
-		state.hasTrigger = Boolean(ctr.list || (ctr.popup && ctr.exec));
 	}
 
 	/**
@@ -393,7 +307,167 @@ export class ToolbarButton<T extends IViewBased = IViewBased>
 		}
 	}
 
-	private openedPopup: Nullable<IPopup> = null;
+	@autobind
+	protected onOutsideClick(e: MouseEvent): void {
+		if (!this.openedPopup) {
+			return;
+		}
+
+		if (
+			!e ||
+			!Dom.isNode(e.target) ||
+			(!Dom.isOrContains(this.container, e.target) &&
+				!this.openedPopup.isOwnClick(e))
+		) {
+			this.closePopup();
+		}
+	}
+
+	/**
+	 * Click handler
+	 */
+	protected onClick(originalEvent: MouseEvent): void {
+		const { control: ctr } = this;
+
+		if (isFunction(ctr.exec)) {
+			const target = this.toolbar?.getTarget(this) ?? this.target ?? null;
+
+			const result = ctr.exec(this.j, target, {
+				control: ctr,
+				originalEvent,
+				button: this
+			});
+
+			// For memorise exec
+			if (result !== false && result !== true) {
+				this.j?.e?.fire('synchro');
+
+				if (this.parentElement) {
+					this.parentElement.update();
+				}
+
+				/**
+				 * Fired after calling `button.exec` function
+				 */
+				this.j?.e?.fire('closeAllPopups afterExec');
+			}
+
+			if (result !== false) {
+				return;
+			}
+		}
+
+		if (ctr.list) {
+			return this.openControlList(ctr as IControlTypeStrongList);
+		}
+
+		if (isFunction(ctr.popup)) {
+			return this.onTriggerClick(originalEvent);
+		}
+
+		if (ctr.command || ctr.name) {
+			call(
+				isJoditObject(this.j)
+					? this.j.execCommand.bind(this.j)
+					: this.j.od.execCommand.bind(this.j.od),
+				ctr.command || ctr.name,
+				false,
+				ctr.args && ctr.args[0]
+			);
+
+			this.j.e.fire('closeAllPopups');
+		}
+	}
+
+	/**
+	 * Calculates whether the button is active
+	 */
+	private calculateActivatedStatus(tc?: ToolbarCollection): boolean {
+		if (isJoditObject(this.j) && !this.j.editorIsActive) {
+			return false;
+		}
+
+		if (
+			isFunction(this.control.isActive) &&
+			this.control.isActive(this.j, this.control, this)
+		) {
+			return true;
+		}
+
+		return Boolean(tc && tc.shouldBeActive(this));
+	}
+
+	/**
+	 * Calculates whether an element is blocked for the user
+	 */
+	private calculateDisabledStatus(tc?: ToolbarCollection): boolean {
+		if (this.j.o.disabled) {
+			return true;
+		}
+
+		if (
+			this.j.o.readonly &&
+			(!this.j.o.activeButtonsInReadOnly ||
+				!this.j.o.activeButtonsInReadOnly.includes(this.control.name))
+		) {
+			return true;
+		}
+
+		if (
+			isFunction(this.control.isDisabled) &&
+			this.control.isDisabled(this.j, this.control, this)
+		) {
+			return true;
+		}
+
+		return Boolean(tc && tc.shouldBeDisabled(this));
+	}
+
+	/**
+	 * Init constant data from control
+	 */
+	private initFromControl(): void {
+		const { control: ctr, state } = this;
+
+		this.updateSize();
+
+		state.name = ctr.name;
+
+		const { textIcons } = this.j.o;
+
+		if (
+			textIcons === true ||
+			(isFunction(textIcons) && textIcons(ctr.name)) ||
+			ctr.template
+		) {
+			state.icon = UIButtonState().icon;
+			state.text = ctr.text || ctr.name;
+		} else {
+			if (ctr.iconURL) {
+				state.icon.iconURL = ctr.iconURL;
+			} else {
+				const name = ctr.icon || ctr.name;
+				state.icon.name =
+					Icon.exists(name) || this.j.o.extraIcons?.[name]
+						? name
+						: '';
+			}
+
+			if (!ctr.iconURL && !state.icon.name) {
+				state.text = ctr.text || ctr.name;
+			}
+		}
+
+		if (ctr.tooltip) {
+			state.tooltip = this.j.i18n(
+				isFunction(ctr.tooltip)
+					? ctr.tooltip(this.j, ctr, this)
+					: ctr.tooltip
+			);
+		}
+
+		state.hasTrigger = Boolean(ctr.list || (ctr.popup && ctr.exec));
+	}
 
 	/**
 	 * Create and open popup list
@@ -469,22 +543,6 @@ export class ToolbarButton<T extends IViewBased = IViewBased>
 		this.state.activated = true;
 	}
 
-	@autobind
-	protected onOutsideClick(e: MouseEvent): void {
-		if (!this.openedPopup) {
-			return;
-		}
-
-		if (
-			!e ||
-			!Dom.isNode(e.target) ||
-			(!Dom.isOrContains(this.container, e.target) &&
-				!this.openedPopup.isOwnClick(e))
-		) {
-			this.closePopup();
-		}
-	}
-
 	private openPopup(): IPopup {
 		this.closePopup();
 		this.openedPopup = new Popup(this.j, false);
@@ -505,66 +563,5 @@ export class ToolbarButton<T extends IViewBased = IViewBased>
 			this.openedPopup.destruct();
 			this.openedPopup = null;
 		}
-	}
-
-	/**
-	 * Click handler
-	 */
-	protected onClick(originalEvent: MouseEvent): void {
-		const { control: ctr } = this;
-
-		if (isFunction(ctr.exec)) {
-			const target = this.toolbar?.getTarget(this) ?? this.target ?? null;
-
-			const result = ctr.exec(this.j, target, {
-				control: ctr,
-				originalEvent,
-				button: this
-			});
-
-			// For memorise exec
-			if (result !== false && result !== true) {
-				this.j?.e?.fire('synchro');
-
-				if (this.parentElement) {
-					this.parentElement.update();
-				}
-
-				/**
-				 * Fired after calling `button.exec` function
-				 */
-				this.j?.e?.fire('closeAllPopups afterExec');
-			}
-
-			if (result !== false) {
-				return;
-			}
-		}
-
-		if (ctr.list) {
-			return this.openControlList(ctr as IControlTypeStrongList);
-		}
-
-		if (isFunction(ctr.popup)) {
-			return this.onTriggerClick(originalEvent);
-		}
-
-		if (ctr.command || ctr.name) {
-			call(
-				isJoditObject(this.j)
-					? this.j.execCommand.bind(this.j)
-					: this.j.od.execCommand.bind(this.j.od),
-				ctr.command || ctr.name,
-				false,
-				ctr.args && ctr.args[0]
-			);
-
-			this.j.e.fire('closeAllPopups');
-		}
-	}
-
-	override destruct(): any {
-		this.closePopup();
-		return super.destruct();
 	}
 }

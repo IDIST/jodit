@@ -1626,6 +1626,16 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ 92704:
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+// extracted by mini-css-extract-plugin
+
+
+/***/ }),
+
 /***/ 77985:
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
@@ -16014,8 +16024,7 @@ function hAlignElement(image, align) {
                 display: '',
                 float: align,
                 marginLeft: '',
-                marginRight: '',
-                overflow: 'auto'
+                marginRight: ''
             });
         }
         else {
@@ -16023,8 +16032,7 @@ function hAlignElement(image, align) {
                 float: '',
                 display: 'block',
                 marginLeft: 'auto',
-                marginRight: 'auto',
-                overflow: 'auto'
+                marginRight: 'auto'
             });
         }
     }
@@ -16040,11 +16048,13 @@ exports.hAlignElement = hAlignElement;
 function clearAlign(node) {
     dom_1.Dom.each(node, function (elm) {
         if (dom_1.Dom.isHTMLElement(elm)) {
-            if (elm.style.textAlign) {
-                elm.style.textAlign = '';
-                if (!elm.style.cssText.trim().length) {
-                    elm.removeAttribute('style');
-                }
+            elm.style.display = '';
+            elm.style.textAlign = '';
+            elm.style.float = '';
+            elm.style.marginLeft = '';
+            elm.style.marginRight = '';
+            if (!elm.style.cssText.trim().length) {
+                elm.removeAttribute('style');
             }
         }
     });
@@ -16053,22 +16063,18 @@ exports.clearAlign = clearAlign;
 function alignElement(command, box) {
     if (dom_1.Dom.isNode(box) && dom_1.Dom.isElement(box)) {
         clearAlign(box);
-        box.style.overflow = 'auto';
         switch (command.toLowerCase()) {
             case 'justifyfull':
                 box.style.textAlign = 'justify';
                 break;
             case 'justifyright':
                 box.style.textAlign = 'right';
-                console.log('right');
                 break;
             case 'justifyleft':
                 box.style.textAlign = 'left';
-                console.log('left');
                 break;
             case 'justifycenter':
                 box.style.textAlign = 'center';
-                console.log('center');
                 break;
         }
     }
@@ -30180,7 +30186,7 @@ var MediaItem = (function () {
     function MediaItem(editor, imageThumb, image, username, link, alt, width, close) {
         this.element = editor.c.fromHTML("<div class=\"jodit-media-item grid-item hover-border-effect skeleton-loader\"><img class=\"\" src=\"".concat(imageThumb, "\"/></div>"));
         this.element.addEventListener('click', function () {
-            var img = editor.c.fromHTML("<div><img style=\"width: ".concat(editor.o.imageDefaultWidth || 500, "px; float: none; display: block; margin-left: auto; margin-right: auto;\" src=\"").concat(image, "\" alt=\"").concat(alt, "\"/></div><p></p>"));
+            var img = editor.c.fromHTML("<div><img style=\"width: ".concat(editor.o.imageDefaultWidth || '100%', "px;\" src=\"").concat(image, "\" alt=\"").concat(alt, "\"/></div><p></p>"));
             editor.s.insertHTML(img);
             if (close)
                 close();
@@ -34694,6 +34700,13 @@ var dragAndDrop = (function (_super) {
     dragAndDrop.prototype.afterInit = function () {
         this.j.e.on([window, this.j.ed, this.j.editor], 'dragstart.DragAndDrop', this.onDragStart);
     };
+    dragAndDrop.prototype.beforeDestruct = function () {
+        this.onDragEnd();
+        this.j.e
+            .off(window, '.DragAndDrop')
+            .off('.DragAndDrop')
+            .off([window, this.j.ed, this.j.editor], 'dragstart.DragAndDrop', this.onDragStart);
+    };
     dragAndDrop.prototype.onDragStart = function (event) {
         var target = event.target;
         this.onDragEnd();
@@ -34733,6 +34746,7 @@ var dragAndDrop = (function (_super) {
             .off(window, 'dragend.DragAndDrop drop.DragAndDrop mouseup.DragAndDrop', this.onDragEnd);
     };
     dragAndDrop.prototype.onDrag = function (event) {
+        console.log('onDrag event', event);
         if (this.draggable) {
             this.j.e.fire('hidePopup');
             this.j.s.insertCursorAtPoint(event.clientX, event.clientY);
@@ -34749,6 +34763,7 @@ var dragAndDrop = (function (_super) {
         this.removeDragListeners();
     };
     dragAndDrop.prototype.onDrop = function (event) {
+        console.log('onDrop event', event);
         if (!event.dataTransfer ||
             !event.dataTransfer.files ||
             !event.dataTransfer.files.length) {
@@ -34806,13 +34821,6 @@ var dragAndDrop = (function (_super) {
         }
         this.isFragmentFromEditor = false;
         this.removeDragListeners();
-    };
-    dragAndDrop.prototype.beforeDestruct = function () {
-        this.onDragEnd();
-        this.j.e
-            .off(window, '.DragAndDrop')
-            .off('.DragAndDrop')
-            .off([window, this.j.ed, this.j.editor], 'dragstart.DragAndDrop', this.onDragStart);
     };
     tslib_1.__decorate([
         decorators_1.autobind
@@ -35082,6 +35090,7 @@ var emoji = (function (_super) {
             });
         });
     };
+    emoji.prototype.beforeDestruct = function (jodit) { };
     emoji.prototype.onAutoComplete = function (query) {
         if (query.length > 2 && query[0] === ':') {
             query = query.substr(1).toLowerCase();
@@ -35100,7 +35109,6 @@ var emoji = (function (_super) {
         }
         return [];
     };
-    emoji.prototype.beforeDestruct = function (jodit) { };
     tslib_1.__decorate([
         decorators_1.autobind
     ], emoji.prototype, "onAutoComplete", null);
@@ -42559,10 +42567,9 @@ exports.Z = [
 "use strict";
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
-exports.rightAlignAction = exports.leftAlignAction = exports.rightHorizontalAlignAction = exports.centerHorizontalAlignAction = exports.leftHorizontalAlignAction = void 0;
+exports.textAlignRightAction = exports.textAlignCenterAction = exports.textAlignLeftAction = exports.floatAlignRightAction = exports.floatAlignCenterAction = exports.floatAlignLeftAction = void 0;
 var dom_1 = __webpack_require__(94522);
 var align_1 = __webpack_require__(49359);
-var helpers_1 = __webpack_require__(92654);
 var floatAlign = function (editor, elm, command) {
     if (!dom_1.Dom.isTag(elm, ['img', 'jodit', 'jodit-media'])) {
         return;
@@ -42581,17 +42588,10 @@ var textAlign = function (editor, elm, command) {
     if (!dom_1.Dom.isTag(elm, ['img', 'jodit', 'jodit-media'])) {
         return;
     }
-    (0, helpers_1.css)(elm, {
-        float: '',
-        display: 'inline-block',
-        marginLeft: '',
-        marginRight: ''
-    });
     if (!command) {
         return false;
     }
     var currentBox = dom_1.Dom.up(elm, dom_1.Dom.isBlock, editor.editor);
-    console.log('currentBox', currentBox);
     if (!currentBox) {
         currentBox = dom_1.Dom.wrapInline(elm, editor.o.enterBlock, editor);
     }
@@ -42599,7 +42599,7 @@ var textAlign = function (editor, elm, command) {
     editor.synchronizeValues();
     editor.e.fire('recalcPositionPopup');
 };
-exports.leftHorizontalAlignAction = {
+exports.floatAlignLeftAction = {
     name: 'float align left',
     icon: 'float-align-left',
     exec: function (editor, elm, _a) {
@@ -42608,7 +42608,7 @@ exports.leftHorizontalAlignAction = {
     },
     tooltip: 'Float Align Left'
 };
-exports.centerHorizontalAlignAction = {
+exports.floatAlignCenterAction = {
     name: 'float align center',
     icon: 'float-align-center',
     exec: function (editor, elm, _a) {
@@ -42617,7 +42617,7 @@ exports.centerHorizontalAlignAction = {
     },
     tooltip: 'Float Align Center'
 };
-exports.rightHorizontalAlignAction = {
+exports.floatAlignRightAction = {
     name: 'float align right',
     icon: 'float-align-right',
     exec: function (editor, elm, _a) {
@@ -42626,23 +42626,32 @@ exports.rightHorizontalAlignAction = {
     },
     tooltip: 'Float Align Right'
 };
-exports.leftAlignAction = {
-    name: 'text align left',
-    icon: 'text-align-left',
+exports.textAlignLeftAction = {
+    name: 'left',
+    icon: 'left',
     exec: function (editor, elm, _a) {
         var control = _a.control;
         textAlign(editor, elm, 'justifyleft');
     },
-    tooltip: 'Text Align Left'
+    tooltip: 'Left'
 };
-exports.rightAlignAction = {
-    name: 'text align right',
-    icon: 'text-align-right',
+exports.textAlignCenterAction = {
+    name: 'center',
+    icon: 'center',
+    exec: function (editor, elm, _a) {
+        var control = _a.control;
+        textAlign(editor, elm, 'justifycenter');
+    },
+    tooltip: 'Center'
+};
+exports.textAlignRightAction = {
+    name: 'text',
+    icon: 'right',
     exec: function (editor, elm, _a) {
         var control = _a.control;
         textAlign(editor, elm, 'justifyright');
     },
-    tooltip: 'Text Align Right'
+    tooltip: 'Right'
 };
 
 
@@ -42816,11 +42825,10 @@ __webpack_unused_export__ = ({ value: true });
 var delete_1 = __webpack_require__(1530);
 var align_1 = __webpack_require__(77474);
 exports.Z = [
-    align_1.leftHorizontalAlignAction,
-    align_1.centerHorizontalAlignAction,
-    align_1.rightHorizontalAlignAction,
-    align_1.leftAlignAction,
-    align_1.rightAlignAction,
+    align_1.textAlignLeftAction,
+    align_1.textAlignCenterAction,
+    align_1.textAlignRightAction,
+    '|',
     delete_1.deleteAction
 ];
 
@@ -42837,11 +42845,10 @@ __webpack_unused_export__ = ({ value: true });
 var delete_1 = __webpack_require__(1530);
 var align_1 = __webpack_require__(77474);
 exports.Z = [
-    align_1.leftHorizontalAlignAction,
-    align_1.centerHorizontalAlignAction,
-    align_1.rightHorizontalAlignAction,
-    align_1.leftAlignAction,
-    align_1.rightAlignAction,
+    align_1.textAlignLeftAction,
+    align_1.textAlignCenterAction,
+    align_1.textAlignRightAction,
+    '|',
     delete_1.deleteAction
 ];
 
@@ -44518,11 +44525,88 @@ exports.formTemplate = formTemplate;
 
 /***/ }),
 
-/***/ 58252:
-/***/ (function() {
+/***/ 55557:
+/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
 
 "use strict";
 
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+var config_1 = __webpack_require__(27537);
+config_1.Config.prototype.mediaFakeTag = 'jodit-media';
+config_1.Config.prototype.mediaInFakeBlock = true;
+config_1.Config.prototype.mediaBlocks = ['video', 'audio'];
+
+
+/***/ }),
+
+/***/ 58252:
+/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.media = void 0;
+var consts = __webpack_require__(10063);
+var utils_1 = __webpack_require__(73344);
+var global_1 = __webpack_require__(58299);
+__webpack_require__(92704);
+__webpack_require__(55557);
+function media(editor) {
+    var keyFake = 'jodit_fake_wrapper';
+    var _a = editor.options, mediaFakeTag = _a.mediaFakeTag, mediaBlocks = _a.mediaBlocks, mediaInFakeBlock = _a.mediaInFakeBlock;
+    var wrap = function (element) {
+        var _a;
+        if (element.parentNode &&
+            (0, utils_1.attr)(element.parentNode, 'data-jodit_iframe_wrapper')) {
+            element = element.parentNode;
+        }
+        else {
+            var wrapper = editor.createInside.element(mediaFakeTag, (_a = {
+                    'data-jodit-temp': 1,
+                    contenteditable: false,
+                    draggable: true
+                },
+                _a["data-".concat(keyFake)] = 1,
+                _a));
+            (0, utils_1.attr)(wrapper, 'style', (0, utils_1.attr)(element, 'style'));
+            wrapper.style.display = 'block';
+            wrapper.style.width = element.offsetWidth + 'px';
+            wrapper.style.height = element.offsetHeight + 'px';
+            if (element.parentNode) {
+                element.parentNode.insertBefore(wrapper, element);
+            }
+            wrapper.appendChild(element);
+            element = wrapper;
+        }
+        editor.e
+            .off(element, 'mousedown.select touchstart.select')
+            .on(element, 'mousedown.select touchstart.select', function () {
+            editor.s.setCursorAfter(element);
+        });
+    };
+    if (mediaInFakeBlock) {
+        editor.e
+            .on('afterGetValueFromEditor', function (data) {
+            var rxp = new RegExp("<".concat(mediaFakeTag, "[^>]+data-").concat(keyFake, "[^>]+>([^]+?)</").concat(mediaFakeTag, ">"), 'ig');
+            if (rxp.test(data.value)) {
+                data.value = data.value.replace(rxp, '$1');
+            }
+        })
+            .on('change afterInit afterSetMode changePlace', editor.async.debounce(function () {
+            if (!editor.isDestructed &&
+                editor.getMode() !== consts.MODE_SOURCE) {
+                (0, utils_1.$$)(mediaBlocks.join(','), editor.editor).forEach(function (elm) {
+                    if (!(0, utils_1.dataBind)(elm, keyFake)) {
+                        (0, utils_1.dataBind)(elm, keyFake, true);
+                        wrap(elm);
+                    }
+                });
+            }
+        }, editor.defaultTimeout));
+    }
+}
+exports.media = media;
+global_1.pluginSystem.add('media', media);
 
 
 /***/ }),

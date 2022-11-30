@@ -110,7 +110,7 @@ export const textAlignCenterAction: IControlType<IJodit> = {
 };
 
 export const textAlignRightAction: IControlType<IJodit> = {
-	name: 'text',
+	name: 'right',
 	icon: 'right',
 	exec: (editor: IJodit, elm, { control }): void | false => {
 		textAlign(editor, elm, 'justifyright');

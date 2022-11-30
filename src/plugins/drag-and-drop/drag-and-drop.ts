@@ -1,4 +1,3 @@
-
 /**
  * [[include:plugins/drag-and-drop/README.md]]
  * @packageDocumentation
@@ -37,6 +36,20 @@ export class dragAndDrop extends Plugin {
 			'dragstart.DragAndDrop',
 			this.onDragStart
 		);
+	}
+
+	/** @override */
+	beforeDestruct(): void {
+		this.onDragEnd();
+
+		this.j.e
+			.off(window, '.DragAndDrop')
+			.off('.DragAndDrop')
+			.off(
+				[window, this.j.ed, this.j.editor],
+				'dragstart.DragAndDrop',
+				this.onDragStart
+			);
 	}
 
 	@autobind
@@ -104,6 +117,8 @@ export class dragAndDrop extends Plugin {
 
 	@throttle<IViewComponent>(ctx => ctx.defaultTimeout / 10)
 	private onDrag(event: DragEvent): void {
+		console.log('onDrag event', event);
+
 		if (this.draggable) {
 			this.j.e.fire('hidePopup');
 
@@ -127,6 +142,7 @@ export class dragAndDrop extends Plugin {
 
 	@autobind
 	private onDrop(event: DragEvent): false | void {
+		console.log('onDrop event', event);
 		if (
 			!event.dataTransfer ||
 			!event.dataTransfer.files ||
@@ -207,20 +223,6 @@ export class dragAndDrop extends Plugin {
 		const dt = getDataTransfer(event);
 		return dt ? dt.getData(TEXT_HTML) || dt.getData(TEXT_PLAIN) : null;
 	};
-
-	/** @override */
-	beforeDestruct(): void {
-		this.onDragEnd();
-
-		this.j.e
-			.off(window, '.DragAndDrop')
-			.off('.DragAndDrop')
-			.off(
-				[window, this.j.ed, this.j.editor],
-				'dragstart.DragAndDrop',
-				this.onDragStart
-			);
-	}
 }
 
 pluginSystem.add('dragAndDrop', dragAndDrop);

@@ -1,4 +1,3 @@
-
 /**
  * @module plugins/paste-from-word
  */
@@ -60,7 +59,7 @@ declare module 'jodit/config' {
 
 Config.prototype.askBeforePasteFromWord = false;
 Config.prototype.processPasteFromWord = false;
-Config.prototype.defaultActionOnPasteFromWord = null;
+Config.prototype.defaultActionOnPasteFromWord = 'insert_clear_html';
 
 Config.prototype.pasteFromWordActionList = [
 	{ value: INSERT_AS_HTML, text: 'Keep' },

@@ -15,5 +15,6 @@ export default [
 	textAlignLeftAction,
 	textAlignCenterAction,
 	textAlignRightAction,
+	'|',
 	deleteAction
 ] as Array<IControlType | string>;

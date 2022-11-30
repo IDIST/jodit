@@ -1,13 +1,9 @@
-
 /**
  * @module plugins/inline-popup
  */
 
 import type { IControlType } from 'jodit/types';
-import type { Table } from 'jodit/modules/table/table';
 import { isJoditObject, isString } from 'jodit/core/helpers/checker';
-import { css } from 'jodit/core/helpers/utils/css';
-import { ColorPickerWidget, TabsWidget } from 'jodit/modules/widget';
 
 const cmd = (control: IControlType): string =>
 	control.args && isString(control.args[0])
@@ -15,84 +11,34 @@ const cmd = (control: IControlType): string =>
 		: '';
 
 export default [
+	// {
+	// 	name: 'tablesplitv',
+	// 	list: {
+	// 		tablesplitv: 'Split vertical',
+	// 		tablesplitg: 'Split horizontal'
+	// 	},
+	// 	tooltip: 'Split'
+	// },
+
+	// {
+	// 	name: 'splitv',
+	// 	list: {
+	// 		tablesplitv: 'Split vertical',
+	// 		tablesplitg: 'Split horizontal'
+	// 	},
+	// 	tooltip: 'Split'
+	// },
 	{
-		name: 'brush',
-		popup: (editor, _, _1, close): void | false | HTMLElement => {
-			if (!isJoditObject(editor)) {
-				return;
-			}
-
-			const tableModule = editor.getInstance<Table>('Table', editor.o),
-				selected = tableModule.getAllSelectedCells();
-
-			if (!selected.length) {
-				return false;
-			}
-
-			const makeColorPicker = (key: string): HTMLElement =>
-				ColorPickerWidget(
-					editor,
-					(value: string) => {
-						selected.forEach(cell => {
-							css(cell, key, value);
-						});
-
-						editor.lock();
-						editor.synchronizeValues();
-						close();
-						editor.unlock();
-					},
-					css(selected[0], key) as string
-				);
-
-			return TabsWidget(editor, [
-				{
-					name: 'Background',
-					content: makeColorPicker('background-color')
-				},
-				{ name: 'Text', content: makeColorPicker('color') },
-				{ name: 'Border', content: makeColorPicker('border-color') }
-			]);
-		},
-		tooltip: 'Background'
+		name: 'split vertical',
+		// icon: 'split-vertical',
+		command: 'tablesplitv',
+		tooltip: 'Split vertical'
 	},
 	{
-		name: 'valign',
-		list: ['Top', 'Middle', 'Bottom', 'Normal'],
-		childTemplate: (_, __, value: string): string => value,
-		exec: (editor, table, { control }): void => {
-			const command = cmd(control);
-
-			editor
-				.getInstance<Table>('Table', editor.o)
-				.getAllSelectedCells()
-				.forEach((cell: HTMLTableCellElement) => {
-					css(
-						cell,
-						'vertical-align',
-						command === 'normal' ? '' : command
-					);
-				});
-		},
-		tooltip: 'Vertical align'
-	},
-	{
-		name: 'splitv',
-		list: {
-			tablesplitv: 'Split vertical',
-			tablesplitg: 'Split horizontal'
-		},
-		tooltip: 'Split'
-	},
-	{
-		name: 'align',
-		icon: 'left'
-	},
-	'\n',
-	{
-		name: 'merge',
-		command: 'tablemerge',
-		tooltip: 'Merge'
+		name: 'split horizontal',
+		// icon: 'split-horizontal',
+		command: 'tablesplitg',
+		tooltip: 'Split horizontal'
 	},
 	{
 		name: 'addcolumn',
