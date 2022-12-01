@@ -13,16 +13,20 @@ import { Emoji } from './ui/emoji';
 import { trim } from 'jodit/core/helpers';
 import { autobind } from 'jodit/core/decorators';
 import { Jodit } from '../../index';
+import { TabOption, TabsWidget } from 'jodit/src/modules/widget';
+import { SearchSelectorWidget } from 'jodit/src/modules/widget/search-selector/search-selector';
+import { Dom } from 'jodit/src/modules';
+import { PopupTitleWidget } from 'jodit/src/modules/widget/popup-title/popup-title';
 
-// declare module 'jodit/config' {
-// 	interface Config {
-// 		emoji: {
-// 			data: () => Promise<IEmojiData>;
-// 			enableAutoComplete: boolean;
-// 			recentCountLimit: number;
-// 		};
-// 	}
-// }
+declare module 'jodit/config' {
+	interface Config {
+		emoji: {
+			data: () => Promise<IEmojiData>;
+			enableAutoComplete: boolean;
+			recentCountLimit: number;
+		};
+	}
+}
 
 Config.prototype.emoji = {
 	data: (): any => require('./emoji.json'),
@@ -30,10 +34,15 @@ Config.prototype.emoji = {
 	recentCountLimit: 10
 };
 
-Config.prototype.controls.emoji = {
-	tooltip: 'Insert Emoji',
-	icon: require('./emoji.svg'),
+Config.prototype.controls.stickers = {
+	tooltip: 'Insert a Stickers',
+	icon: require('./stickers.svg'),
+
+	popupTitle: (editor: IJodit, _: any, _1: any, close: any): HTMLElement =>
+		PopupTitleWidget(editor, 'Stickers', close),
+
 	popup: (editor: IJodit, _: any, _1: any, close: any): HTMLElement => {
+		const tabs: TabOption[] = [];
 		editor.s.save();
 
 		const box = Emoji.getInstance(editor, code => {
@@ -49,24 +58,44 @@ Config.prototype.controls.emoji = {
 			editor.s.restore();
 		});
 
-		return box.container;
-	}
+		tabs.push({
+			// icon: 'emoji',
+			name: 'Emoji',
+			content: box.container
+		});
+
+		tabs.push({
+			name: 'Gif',
+			content: SearchSelectorWidget(
+				editor,
+				{
+					searchGiphy: true
+				},
+				'gif',
+				close
+			)
+		});
+
+		const tabContent = TabsWidget(editor, tabs);
+		return tabContent;
+	},
+	popupContentExtraClassName: 'custom'
 } as unknown as IControlType;
 
-export class emoji extends Plugin {
-	/** @override */
-	override requires = ['autocomplete', 'license'];
+export class stickers extends Plugin {
+	// /** @override */
+	// override requires = ['autocomplete', 'license'];
 
-	/** @override */
-	override hasStyle = !Jodit.fatMode;
+	// /** @override */
+	// override hasStyle = !Jodit.fatMode;
 
-	/** @override */
-	override buttons: Plugin['buttons'] = [
-		{
-			name: 'emoji',
-			group: 'insert'
-		}
-	];
+	// /** @override */
+	// override buttons: Plugin['buttons'] = [
+	// 	{
+	// 		name: 'emoji',
+	// 		group: 'insert'
+	// 	}
+	// ];
 
 	private data!: IEmojiData<IEmoji[]>;
 
@@ -119,4 +148,4 @@ export class emoji extends Plugin {
 	}
 }
 
-Jodit.plugins.add('emoji', emoji);
+Jodit.plugins.add('stickers', stickers);

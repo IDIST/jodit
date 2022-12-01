@@ -1,4 +1,3 @@
-
 /**
  * @module view
  */
@@ -33,6 +32,7 @@ export abstract class ViewWithToolbar extends View implements IViewWithToolbar {
 	 * Container for toolbar
 	 */
 	get toolbarContainer(): HTMLElement {
+		// console.log('get toolbarContainer');
 		if (
 			!this.o.fullsize &&
 			(isString(this.o.toolbar) || Dom.isHTMLElement(this.o.toolbar))
@@ -50,6 +50,7 @@ export abstract class ViewWithToolbar extends View implements IViewWithToolbar {
 	 * Change panel container
 	 */
 	setPanel(element: HTMLElement | string): void {
+		// console.log('setPanel');
 		this.o.toolbar = element;
 		this.buildToolbar();
 	}
@@ -58,6 +59,7 @@ export abstract class ViewWithToolbar extends View implements IViewWithToolbar {
 	 * Helper for append toolbar in its place
 	 */
 	protected buildToolbar(): void {
+		// console.log('buildToolbar');
 		if (!this.o.toolbar) {
 			return;
 		}
@@ -93,6 +95,7 @@ export abstract class ViewWithToolbar extends View implements IViewWithToolbar {
 	private groupToButtons: IDictionary<string[]> = {};
 
 	getRegisteredButtonGroups(): IDictionary<string[]> {
+		// console.log('getRegisteredButtonGroups');
 		return this.groupToButtons;
 	}
 
@@ -100,6 +103,7 @@ export abstract class ViewWithToolbar extends View implements IViewWithToolbar {
 	 * Register button for group
 	 */
 	registerButton(btn: IPluginButton): this {
+		// console.log('registerButton', btn);
 		this.registeredButtons.add(btn);
 		const group = btn.group ?? 'other';
 
@@ -120,6 +124,7 @@ export abstract class ViewWithToolbar extends View implements IViewWithToolbar {
 	 * Remove button from group
 	 */
 	unregisterButton(btn: IPluginButton): this {
+		// console.log('unregisterButton');
 		this.registeredButtons.delete(btn);
 
 		const groupName = btn.group ?? 'other',
@@ -145,6 +150,7 @@ export abstract class ViewWithToolbar extends View implements IViewWithToolbar {
 	 */
 	@autobind
 	private beforeToolbarBuild(items: ButtonsGroups): ButtonsGroups | void {
+		// console.log('beforeToolbarBuild');
 		if (Object.keys(this.groupToButtons).length) {
 			return items.map(item => {
 				if (
@@ -173,13 +179,16 @@ export abstract class ViewWithToolbar extends View implements IViewWithToolbar {
 		options?: Partial<IViewOptions>,
 		isJodit: boolean = false
 	) {
+		// console.log('toolbar constructor');
 		super(options, isJodit);
 		this.isJodit = isJodit;
 
+		// console.log('toolbar constructor2');
 		this.e.on('beforeToolbarBuild', this.beforeToolbarBuild);
 	}
 
 	override destruct(): void {
+		// console.log('toolbar destruct');
 		if (this.isDestructed) {
 			return;
 		}

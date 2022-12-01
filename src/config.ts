@@ -25,6 +25,7 @@ const buttons = [
 	'gif',
 	'video',
 	'file',
+	'stickers',
 	'\n',
 	// Do
 	'undo',
@@ -340,6 +341,7 @@ export class Config implements IViewOptions {
 			Search: '검색',
 			'Insert Emoji': '이모지 추가',
 			'Insert a gif': 'Gif 추가',
+			'Insert a Stickers': '스티커 추가',
 			'Search emoji': '이모지 검색',
 			'Smileys & Emotion': '스마일 & 감정',
 			'People & Body': '사람 & 몸',
@@ -357,7 +359,18 @@ export class Config implements IViewOptions {
 			'Drop audio': '오디오 드래그',
 			'Search image': '이미지 검색',
 			'Search gif': 'Gif 검색',
-			'Powered by: %s': '라이센스: %s'
+			'Powered by: %s': '라이센스: %s',
+			Stickers: '스티커',
+			stickers: '스티커',
+			stickers11: '스티커111',
+			stickers22: '스티커222',
+			stickers33: '스티커333',
+			stickers44: '스티커444',
+			stickers55: '스티커555',
+			stickers66: '스티커666',
+			stickers77: '스티커777',
+			stickers88: '스티커888',
+			stickers99: '스티커999'
 		}
 	};
 	/**
@@ -556,7 +569,8 @@ export class Config implements IViewOptions {
 		'page-break',
 		'export-docs',
 		'iframe-editor',
-		'paste-from-word-pro'
+		'paste-from-word-pro',
+		'stickers'
 	];
 	/**
 	 * Base path for download extra plugins

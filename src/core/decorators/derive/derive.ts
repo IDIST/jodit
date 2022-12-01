@@ -1,4 +1,3 @@
-
 /**
  * [[include:core/decorators/derive/README.md]]
  * @packageDocumentation

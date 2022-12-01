@@ -68,3 +68,4 @@ import 'jodit/plugins/xpath/xpath';
 // Custom
 import 'jodit/plugins/emoji/emoji';
 import 'jodit/plugins/gif/gif';
+import 'jodit/plugins/stickers/stickers';

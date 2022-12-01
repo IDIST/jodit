@@ -1,4 +1,3 @@
-
 /**
  * @module types
  */
@@ -245,6 +244,16 @@ interface IControlType<
 		close: () => void,
 		button: B
 	) => string | HTMLElement | IUIElement | false;
+
+	popupTitle?: (
+		jodit: T,
+		current: Nullable<Node>,
+		control: IControlType<T, B>,
+		close: () => void,
+		button: B
+	) => string | HTMLElement | IUIElement | false;
+
+	popupContentExtraClassName?: string;
 
 	defaultValue?: string | string[];
 

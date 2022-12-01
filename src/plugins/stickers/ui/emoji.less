@@ -1,0 +1,166 @@
+.jodit-emoji {
+	display: flex;
+
+	width: auto;
+	height: 305px;
+	padding: 0 8px;
+	padding-bottom: 20px;
+
+	flex-direction: column;
+
+	&__navigate {
+		background-color: var(--color-white);
+		padding: 0 16px;
+	}
+
+	&__categories {
+		display: flex;
+		justify-content: space-between;
+		margin-top: 19px;
+		margin-bottom: 14px;
+		gap: 6px;
+	}
+
+	&__category {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: center;
+
+		width: 28px;
+		height: 28px;
+
+		padding-top: 5px;
+		padding-bottom: 5px;
+		border-radius: 100%;
+		cursor: pointer;
+
+		background-color: #f8f8f8;
+		background-size: cover;
+
+		&[title='Smileys & Emotion'] {
+			background-image: data-uri('./assets/Smileys & Emotion.svg');
+		}
+
+		&[title='People & Body'] {
+			background-image: data-uri('./assets/People & Body.svg');
+		}
+
+		&[title='Animals & Nature'] {
+			background-image: data-uri('./assets/Animals & Nature.svg');
+		}
+
+		&[title='Food & Drink'] {
+			background-image: data-uri('./assets/Food & Drink.svg');
+		}
+
+		&[title='Travel & Places'] {
+			background-image: data-uri('./assets/Travel & Places.svg');
+		}
+
+		&[title='Activities'] {
+			background-image: data-uri('./assets/Activities.svg');
+		}
+
+		&[title='Objects'] {
+			background-image: data-uri('./assets/Objects.svg');
+		}
+
+		&[title='Symbols'] {
+			background-image: data-uri('./assets/Symbols.svg');
+		}
+
+		&[title='Flags'] {
+			background-image: data-uri('./assets/Flags.svg');
+		}
+
+		&_active_true,
+		&:hover {
+			background-color: #e0e0e0;
+
+			&[title='Smileys & Emotion'] {
+				background-image: data-uri(
+					'./assets/Smileys & Emotion(Active).svg'
+				);
+			}
+
+			&[title='People & Body'] {
+				background-image: data-uri(
+					'./assets/People & Body(Active).svg'
+				);
+			}
+
+			&[title='Animals & Nature'] {
+				background-image: data-uri(
+					'./assets/Animals & Nature(Active).svg'
+				);
+			}
+
+			&[title='Food & Drink'] {
+				background-image: data-uri('./assets/Food & Drink(Active).svg');
+			}
+
+			&[title='Travel & Places'] {
+				background-image: data-uri(
+					'./assets/Travel & Places(Active).svg'
+				);
+			}
+
+			&[title='Activities'] {
+				background-image: data-uri('./assets/Activities(Active).svg');
+			}
+
+			&[title='Objects'] {
+				background-image: data-uri('./assets/Objects(Active).svg');
+			}
+
+			&[title='Symbols'] {
+				background-image: data-uri('./assets/Symbols(Active).svg');
+			}
+
+			&[title='Flags'] {
+				background-image: data-uri('./assets/Flags(Active).svg');
+			}
+		}
+	}
+
+	&__input {
+		margin-bottom: 0px;
+	}
+
+	&__emojis {
+		padding: 0 16px;
+		width: inherit;
+		display: grid;
+		grid-template-columns: repeat(auto-fill, 28px);
+		justify-content: space-between;
+		grid-column-gap: 0;
+		grid-row-gap: 1px;
+		overflow: auto;
+		overflow-x: hidden;
+	}
+
+	&__emoji {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		cursor: pointer;
+		font-family: 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol',
+			serif;
+		width: 28px;
+		height: 28px;
+		padding: 0;
+		border-radius: 4px;
+		font-size: 24px;
+		&:hover {
+			background: rgba(0, 0, 0, 0.2);
+		}
+	}
+
+	&__category-title {
+		color: var(--color-label);
+		font-weight: 700;
+		line-height: 40px;
+		grid-column-end: span 8;
+	}
+}

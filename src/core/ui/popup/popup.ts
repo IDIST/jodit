@@ -101,11 +101,19 @@ export class Popup extends UIElement implements IPopup {
 	/**
 	 * Set popup content
 	 */
-	setContent(content: IUIElement | HTMLElement | string): this {
+	setContent(
+		content: IUIElement | HTMLElement | string,
+		title?: IUIElement | HTMLElement | string,
+		popupContentExtraClassName?: string
+	): this {
 		Dom.detach(this.container);
 
 		const box = this.j.c.div(`${this.componentName}__content`);
-
+		if (popupContentExtraClassName) {
+			box.classList.add(
+				`${this.componentName}__content__${popupContentExtraClassName}`
+			);
+		}
 		let elm: HTMLElement;
 
 		if (Component.isInstanceOf(content, UIElement)) {
@@ -117,8 +125,20 @@ export class Popup extends UIElement implements IPopup {
 			elm = content as HTMLElement;
 		}
 
-		box.appendChild(elm);
+		let titleElm: HTMLElement;
+		if (Component.isInstanceOf(title, UIElement)) {
+			titleElm = title.container;
+			title.parentElement = this;
+		} else if (isString(title)) {
+			titleElm = this.j.c.fromHTML(title);
+		} else {
+			titleElm = title as HTMLElement;
+		}
 
+		if (titleElm) {
+			box.appendChild(titleElm);
+		}
+		box.appendChild(elm);
 		this.container.appendChild(box);
 
 		this.updatePosition();
