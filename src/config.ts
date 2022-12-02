@@ -27,9 +27,9 @@ const buttons = [
 	'file',
 	'\n',
 	// Do
-	'undo',
-	'redo',
-	'|',
+	// 'undo',
+	// 'redo',
+	// '|',
 	// Font
 	'paragraph',
 	'brush',
