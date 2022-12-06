@@ -1,4 +1,3 @@
-
 module.exports = {
 	'Type something': 'הקלד משהו...',
 	Advanced: 'מתקדם',
@@ -35,10 +34,10 @@ module.exports = {
 	'Font family': 'גופן',
 	'Insert format block': 'מעוצב מראש',
 	Normal: 'רגיל',
-	'Heading 1': 'כותרת 1',
-	'Heading 2': 'כותרת 2',
-	'Heading 3': 'כותרת 3',
-	'Heading 4': 'כותרת 4',
+	'Header 1': 'כותרת 1',
+	'Header 2': 'כותרת 2',
+	'Header 3': 'כותרת 3',
+	'Header 4': 'כותרת 4',
 	Quote: 'ציטוט',
 	Code: 'קוד',
 	Insert: 'הכנס',

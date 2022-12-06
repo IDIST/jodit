@@ -1,4 +1,3 @@
-
 describe('Test paste plugin', () => {
 	describe('Paste HTML', function () {
 		it('Should show paste html dialog', function () {
@@ -220,23 +219,23 @@ describe('Test paste plugin', () => {
 					'  DefSemiHidden="false" DefQFormat="false" DefPriority="99"\n' +
 					'  LatentStyleCount="376">\n' +
 					'  <w:LsdException Locked="false" Priority="0" QFormat="true" Name="Normal"/>\n' +
-					'  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 1"/>\n' +
+					'  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="Header 1"/>\n' +
 					'  <w:LsdException Locked="false" Priority="9" SemiHidden="true"\n' +
-					'   UnhideWhenUsed="true" QFormat="true" Name="heading 2"/>\n' +
+					'   UnhideWhenUsed="true" QFormat="true" Name="Header 2"/>\n' +
 					'  <w:LsdException Locked="false" Priority="9" SemiHidden="true"\n' +
-					'   UnhideWhenUsed="true" QFormat="true" Name="heading 3"/>\n' +
+					'   UnhideWhenUsed="true" QFormat="true" Name="Header 3"/>\n' +
 					'  <w:LsdException Locked="false" Priority="9" SemiHidden="true"\n' +
-					'   UnhideWhenUsed="true" QFormat="true" Name="heading 4"/>\n' +
+					'   UnhideWhenUsed="true" QFormat="true" Name="Header 4"/>\n' +
 					'  <w:LsdException Locked="false" Priority="9" SemiHidden="true"\n' +
-					'   UnhideWhenUsed="true" QFormat="true" Name="heading 5"/>\n' +
+					'   UnhideWhenUsed="true" QFormat="true" Name="Header 5"/>\n' +
 					'  <w:LsdException Locked="false" Priority="9" SemiHidden="true"\n' +
-					'   UnhideWhenUsed="true" QFormat="true" Name="heading 6"/>\n' +
+					'   UnhideWhenUsed="true" QFormat="true" Name="Header 6"/>\n' +
 					'  <w:LsdException Locked="false" Priority="9" SemiHidden="true"\n' +
-					'   UnhideWhenUsed="true" QFormat="true" Name="heading 7"/>\n' +
+					'   UnhideWhenUsed="true" QFormat="true" Name="Header 7"/>\n' +
 					'  <w:LsdException Locked="false" Priority="9" SemiHidden="true"\n' +
-					'   UnhideWhenUsed="true" QFormat="true" Name="heading 8"/>\n' +
+					'   UnhideWhenUsed="true" QFormat="true" Name="Header 8"/>\n' +
 					'  <w:LsdException Locked="false" Priority="9" SemiHidden="true"\n' +
-					'   UnhideWhenUsed="true" QFormat="true" Name="heading 9"/>\n' +
+					'   UnhideWhenUsed="true" QFormat="true" Name="Header 9"/>\n' +
 					'  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"\n' +
 					'   Name="index 1"/>\n' +
 					'  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"\n' +
@@ -840,7 +839,7 @@ describe('Test paste plugin', () => {
 					'\t{mso-style-priority:9;\n' +
 					'\tmso-style-unhide:no;\n' +
 					'\tmso-style-qformat:yes;\n' +
-					'\tmso-style-link:"Heading 1 Char";\n' +
+					'\tmso-style-link:"Header 1 Char";\n' +
 					'\tmso-style-next:Normal;\n' +
 					'\tmargin-top:12.0pt;\n' +
 					'\tmargin-right:0cm;\n' +
@@ -860,11 +859,11 @@ describe('Test paste plugin', () => {
 					'\tmso-fareast-language:EN-US;\n' +
 					'\tfont-weight:normal;}\n' +
 					'span.Heading1Char\n' +
-					'\t{mso-style-name:"Heading 1 Char";\n' +
+					'\t{mso-style-name:"Header 1 Char";\n' +
 					'\tmso-style-priority:9;\n' +
 					'\tmso-style-unhide:no;\n' +
 					'\tmso-style-locked:yes;\n' +
-					'\tmso-style-link:"Heading 1";\n' +
+					'\tmso-style-link:"Header 1";\n' +
 					'\tmso-ansi-font-size:16.0pt;\n' +
 					'\tmso-bidi-font-size:16.0pt;\n' +
 					'\tfont-family:"Calibri Light",sans-serif;\n' +

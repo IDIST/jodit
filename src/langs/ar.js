@@ -1,4 +1,3 @@
-
 module.exports = {
 	'Type something': 'إبدأ في الكتابة...',
 	'About Jodit': 'حول جوديت',
@@ -34,10 +33,10 @@ module.exports = {
 	'Font family': 'نوع الخط',
 	'Insert format block': 'إدراج كتلة تنسيق',
 	Normal: 'عادي',
-	'Heading 1': 'عنوان 1',
-	'Heading 2': 'عنوان 2',
-	'Heading 3': 'عنوان 3',
-	'Heading 4': 'عنوان 4',
+	'Header 1': 'عنوان 1',
+	'Header 2': 'عنوان 2',
+	'Header 3': 'عنوان 3',
+	'Header 4': 'عنوان 4',
 	Quote: 'إقتباس',
 	Code: 'كود',
 	Insert: 'إدراج',

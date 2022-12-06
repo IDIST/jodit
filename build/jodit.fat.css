@@ -6,13 +6,6 @@
  * License(s): MIT
  */
 	
-@font-face {
-  font-family: 'Poppins';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/poppins/v20/pxiEyp8kv8JHgFVrFJA.ttf) format('truetype');
-}
 :root {
   --jd-color-white: #fff;
   --jd-color-gray: #EEEEEE;
@@ -30,7 +23,7 @@
   --jd-color-border: var(--jd-color-gray);
   --jd-color-border-dark: var(--jd-color-dark);
   --jd-color-border-focus: #ff45a1;
-  --jd-color-border-selected: #ff45a1;
+  --jd-color-border-selected: #545557;
   --jd-color-border-active: #b5b5b5;
   --jd-color-selection: var(--jd-color-dark);
   --jd-color-selection-area: #bdbdbd;
@@ -53,7 +46,7 @@
   --jd-color-button-background-hover: #dcdcdc;
   --jd-color-button-background-hover_opacity40: rgba(220, 220, 220, 0.4);
   --jd-color-button-background-hover_opacity60: rgba(220, 220, 220, 0.6);
-  --jd-font-default: 'Poppins', sans-serif;
+  --jd-font-default: 'Poppins';
   --jd-font-size-default: 12px;
   --jd-font-size-small: 11px;
   --jd-font-size-large: calc(var(--jd-font-size-default) * 3);
@@ -165,22 +158,28 @@
   margin-bottom: 0;
 }
 .jodit h1 {
-  font-size: 2em;
+  font-size: 3.38em;
+  font-weight: 900 !important;
 }
 .jodit h2 {
-  font-size: 1.5em;
+  font-size: 3.08em;
+  font-weight: 800;
 }
 .jodit h3 {
-  font-size: 1.25em;
+  font-size: 2em;
+  font-weight: 700;
 }
 .jodit h4 {
-  font-size: 1em;
+  font-size: 1.38em;
+  font-weight: 600;
 }
 .jodit h5 {
-  font-size: 0.9em;
+  font-size: 1.23em;
+  font-weight: 600;
 }
 .jodit h6 {
-  font-size: 0.8em;
+  font-size: 1.08em;
+  font-weight: 600;
 }
 .jodit button {
   cursor: pointer;
@@ -1369,12 +1368,19 @@ svg.jodit-icon {
 .jodit-ui-button[aria-pressed='true']:not([disabled]) {
   outline: 0;
 }
+.jodit-ui-button:active:not([disabled]) color,
+.jodit-ui-button[aria-pressed='true']:not([disabled]) color {
+  fill: var(--jd-color-purple) !important;
+}
 .jodit-ui-button:active:not([disabled]) svg,
 .jodit-ui-button[aria-pressed='true']:not([disabled]) svg {
   fill: var(--jd-color-purple) !important;
 }
 .jodit-ui-button[aria-pressed='true']:hover:not([disabled]) {
   background-color: var(--jd-color-button-background-hover_opacity60);
+}
+.jodit-ui-button[aria-pressed='true']:hover:not([disabled]) color {
+  fill: var(--jd-color-purple) !important;
 }
 .jodit-ui-button[aria-pressed='true']:hover:not([disabled]) svg {
   fill: var(--jd-color-purple) !important;
@@ -1678,7 +1684,7 @@ svg.jodit-icon {
 .jodit-ui-separator {
   padding: 0;
   border-left: 0;
-  margin: 12px;
+  margin: 12px 16px;
   cursor: default;
   position: relative;
 }
@@ -1717,7 +1723,7 @@ svg.jodit-icon {
   content: '';
   padding: 0;
   border-left: 0;
-  margin: 12px;
+  margin: 12px 16px;
   cursor: default;
 }
 .jodit-ui-group:last-child {
@@ -2950,12 +2956,19 @@ svg.jodit-icon {
 .jodit-toolbar-button__button[aria-pressed='true']:not([disabled]) {
   outline: 0;
 }
+.jodit-toolbar-button__button:active:not([disabled]) color,
+.jodit-toolbar-button__button[aria-pressed='true']:not([disabled]) color {
+  fill: var(--jd-color-purple) !important;
+}
 .jodit-toolbar-button__button:active:not([disabled]) svg,
 .jodit-toolbar-button__button[aria-pressed='true']:not([disabled]) svg {
   fill: var(--jd-color-purple) !important;
 }
 .jodit-toolbar-button__button[aria-pressed='true']:hover:not([disabled]) {
   background-color: var(--jd-color-button-background-hover_opacity60);
+}
+.jodit-toolbar-button__button[aria-pressed='true']:hover:not([disabled]) color {
+  fill: var(--jd-color-purple) !important;
 }
 .jodit-toolbar-button__button[aria-pressed='true']:hover:not([disabled]) svg {
   fill: var(--jd-color-purple) !important;
@@ -2984,12 +2997,19 @@ svg.jodit-icon {
 .jodit-toolbar-button__trigger[aria-pressed='true']:not([disabled]) {
   outline: 0;
 }
+.jodit-toolbar-button__trigger:active:not([disabled]) color,
+.jodit-toolbar-button__trigger[aria-pressed='true']:not([disabled]) color {
+  fill: var(--jd-color-purple) !important;
+}
 .jodit-toolbar-button__trigger:active:not([disabled]) svg,
 .jodit-toolbar-button__trigger[aria-pressed='true']:not([disabled]) svg {
   fill: var(--jd-color-purple) !important;
 }
 .jodit-toolbar-button__trigger[aria-pressed='true']:hover:not([disabled]) {
   background-color: var(--jd-color-button-background-hover_opacity60);
+}
+.jodit-toolbar-button__trigger[aria-pressed='true']:hover:not([disabled]) color {
+  fill: var(--jd-color-purple) !important;
 }
 .jodit-toolbar-button__trigger[aria-pressed='true']:hover:not([disabled]) svg {
   fill: var(--jd-color-purple) !important;
@@ -3070,12 +3090,19 @@ svg.jodit-icon {
 .jodit-toolbar-content[aria-pressed='true']:not([disabled]) {
   outline: 0;
 }
+.jodit-toolbar-content:active:not([disabled]) color,
+.jodit-toolbar-content[aria-pressed='true']:not([disabled]) color {
+  fill: var(--jd-color-purple) !important;
+}
 .jodit-toolbar-content:active:not([disabled]) svg,
 .jodit-toolbar-content[aria-pressed='true']:not([disabled]) svg {
   fill: var(--jd-color-purple) !important;
 }
 .jodit-toolbar-content[aria-pressed='true']:hover:not([disabled]) {
   background-color: var(--jd-color-button-background-hover_opacity60);
+}
+.jodit-toolbar-content[aria-pressed='true']:hover:not([disabled]) color {
+  fill: var(--jd-color-purple) !important;
 }
 .jodit-toolbar-content[aria-pressed='true']:hover:not([disabled]) svg {
   fill: var(--jd-color-purple) !important;
@@ -4074,7 +4101,7 @@ a + .jodit-filebrowser-tree__source-title {
 }
 .jodit-color-picker {
   margin: 0;
-  padding: 20px;
+  padding: 12px;
   text-align: left;
   user-select: none;
 }
@@ -4088,10 +4115,12 @@ a + .jodit-filebrowser-tree__source-title {
   width: var(--jd-color-picker-cell-size);
   height: var(--jd-color-picker-cell-size);
   margin: 0 1px 1px 0;
-  border: 0px solid transparent;
+  border: 0 solid transparent;
+  border-radius: 2px;
   text-align: center;
   text-decoration: none;
   vertical-align: middle;
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.2);
 }
 .jodit-color-picker__color-item:hover {
   border: 2px solid var(--jd-color-border-selected);
@@ -4345,15 +4374,31 @@ a + .jodit-filebrowser-tree__source-title {
   color: #A7A8AB;
 }
 
-.jodit .jodit-ui-group__p,
-.jodit .jodit-ui-group__h1,
-.jodit .jodit-ui-group__h2,
-.jodit .jodit-ui-group__h3,
-.jodit .jodit-ui-group__h4,
-.jodit .jodit-ui-group__h5,
-.jodit .jodit-ui-group__h6 {
+.jodit .jodit-popup__content div.jodit-ui-group .jodit-ui-group__p,
+.jodit .jodit-popup__content div.jodit-ui-group .jodit-ui-group__h1,
+.jodit .jodit-popup__content div.jodit-ui-group .jodit-ui-group__h2,
+.jodit .jodit-popup__content div.jodit-ui-group .jodit-ui-group__h3,
+.jodit .jodit-popup__content div.jodit-ui-group .jodit-ui-group__h4,
+.jodit .jodit-popup__content div.jodit-ui-group .jodit-ui-group__h5,
+.jodit .jodit-popup__content div.jodit-ui-group .jodit-ui-group__h6 {
   margin: 0;
-  padding: 0, var(--jd-padding-default);
+  padding: 0 !important;
+  height: 54px !important;
+}
+.jodit .jodit-popup__content div.jodit-ui-group .jodit-ui-group__p button.jodit-toolbar-button__button,
+.jodit .jodit-popup__content div.jodit-ui-group .jodit-ui-group__h1 button.jodit-toolbar-button__button,
+.jodit .jodit-popup__content div.jodit-ui-group .jodit-ui-group__h2 button.jodit-toolbar-button__button,
+.jodit .jodit-popup__content div.jodit-ui-group .jodit-ui-group__h3 button.jodit-toolbar-button__button,
+.jodit .jodit-popup__content div.jodit-ui-group .jodit-ui-group__h4 button.jodit-toolbar-button__button,
+.jodit .jodit-popup__content div.jodit-ui-group .jodit-ui-group__h5 button.jodit-toolbar-button__button,
+.jodit .jodit-popup__content div.jodit-ui-group .jodit-ui-group__h6 button.jodit-toolbar-button__button {
+  padding: 0 16px !important;
+}
+.jodit .jodit-popup__content div.jodit-ui-group .jodit-ui-group__p {
+  margin-top: 8px !important;
+}
+.jodit .jodit-popup__content div.jodit-ui-group .jodit-ui-group__h6 {
+  margin-bottom: 8px !important;
 }
 
 .jodit_fullsize-box_true {
@@ -4391,15 +4436,18 @@ html.jodit_fullsize-box_true {
   z-index: 1300;
   min-width: 700px;
 }
-.jodit-popup-container .jodit-popup .jodit-popup__content .jodit-toolbar-editor-collection .jodit-toolbar-button {
+.jodit.jodit-popup-container.jodit-box .jodit-popup .jodit-popup__content .jodit-toolbar-editor-collection span.jodit-toolbar-button {
   min-width: fit-content;
   height: fit-content;
   margin: 0;
   padding: var(--jd-padding-default);
 }
-.jodit-popup-container .jodit-popup .jodit-popup__content .jodit-toolbar-editor-collection .jodit-toolbar-button__button {
+.jodit.jodit-popup-container.jodit-box .jodit-popup .jodit-popup__content .jodit-toolbar-editor-collection span.jodit-toolbar-button__button {
   min-width: fit-content;
   height: fit-content;
+}
+.jodit.jodit-popup-container.jodit-box .jodit-popup .jodit-popup__content .jodit-toolbar-editor-collection .jodit-ui-separator {
+  margin: 12px 0px;
 }
 
 
@@ -5131,13 +5179,6 @@ html.jodit_fullsize-box_true {
   transform: translate(-50%, -50%);
 }
 
-@font-face {
-  font-family: 'Poppins';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/poppins/v20/pxiEyp8kv8JHgFVrFJA.ttf) format('truetype');
-}
 :root {
   --jd-color-white: #fff;
   --jd-color-gray: #EEEEEE;
@@ -5155,7 +5196,7 @@ html.jodit_fullsize-box_true {
   --jd-color-border: var(--jd-color-gray);
   --jd-color-border-dark: var(--jd-color-dark);
   --jd-color-border-focus: #ff45a1;
-  --jd-color-border-selected: #ff45a1;
+  --jd-color-border-selected: #545557;
   --jd-color-border-active: #b5b5b5;
   --jd-color-selection: var(--jd-color-dark);
   --jd-color-selection-area: #bdbdbd;
@@ -5178,7 +5219,7 @@ html.jodit_fullsize-box_true {
   --jd-color-button-background-hover: #dcdcdc;
   --jd-color-button-background-hover_opacity40: rgba(220, 220, 220, 0.4);
   --jd-color-button-background-hover_opacity60: rgba(220, 220, 220, 0.6);
-  --jd-font-default: 'Poppins', sans-serif;
+  --jd-font-default: 'Poppins';
   --jd-font-size-default: 12px;
   --jd-font-size-small: 11px;
   --jd-font-size-large: calc(var(--jd-font-size-default) * 3);

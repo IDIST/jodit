@@ -1,4 +1,3 @@
-
 module.exports = {
 	'Type something': 'Begin met typen..',
 	Advanced: 'Geavanceerd',
@@ -37,10 +36,10 @@ module.exports = {
 	'Font family': 'Lettertype',
 	'Insert format block': 'Format blok invoegen',
 	Normal: 'Normaal',
-	'Heading 1': 'Koptekst 1',
-	'Heading 2': 'Koptekst 2',
-	'Heading 3': 'Koptekst 3',
-	'Heading 4': 'Koptekst 4',
+	'Header 1': 'Koptekst 1',
+	'Header 2': 'Koptekst 2',
+	'Header 3': 'Koptekst 3',
+	'Header 4': 'Koptekst 4',
 	Quote: 'Citaat',
 	Code: 'Code',
 	Insert: 'Invoegen',

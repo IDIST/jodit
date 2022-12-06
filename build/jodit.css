@@ -12,14 +12,6 @@
  * Url: https://xdsoft.net/jodit/
  * License(s): MIT
  */
-	
-@font-face {
-  font-family: 'Poppins';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/poppins/v20/pxiEyp8kv8JHgFVrFJA.ttf) format('truetype');
-}
 .jodit-wysiwyg {
   outline: 0;
 }
@@ -93,28 +85,34 @@
   margin-bottom: 0;
 }
 .jodit h1 {
-  font-size: 2em;
+  font-size: 3.38em;
+  font-weight: 900 !important;
 }
 .jodit h2 {
-  font-size: 1.5em;
+  font-size: 3.08em;
+  font-weight: 800;
 }
 .jodit h3 {
-  font-size: 1.25em;
+  font-size: 2em;
+  font-weight: 700;
 }
 .jodit h4 {
-  font-size: 1em;
+  font-size: 1.38em;
+  font-weight: 600;
 }
 .jodit h5 {
-  font-size: 0.9em;
+  font-size: 1.23em;
+  font-weight: 600;
 }
 .jodit h6 {
-  font-size: 0.8em;
+  font-size: 1.08em;
+  font-weight: 600;
 }
 .jodit button {
   cursor: pointer;
 }
 .jodit-form {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Poppins';
   font-size: 12px;
   color: #4c4c4c;
 }
@@ -173,7 +171,7 @@
           justify-content: center;
 }
 .jodit .jodit-textarea {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Poppins';
   font-size: 12px;
   width: 100%;
   height: 44px;
@@ -191,7 +189,7 @@
   outline: none;
 }
 .jodit .jodit-select {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Poppins';
   font-size: 12px;
   width: 100%;
   height: 44px;
@@ -209,7 +207,7 @@
   outline: none;
 }
 .jodit .jodit-input {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Poppins';
   font-size: 12px;
   width: 100%;
   height: 44px;
@@ -518,7 +516,7 @@ jodit-file:hover {
 }
 .jodit_text_icons .jodit-tabs .jodit-tabs__buttons > a {
   width: auto;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Poppins';
 }
 .jodit_text_icons .jodit-tabs .jodit-tabs__buttons > a i {
   width: auto;
@@ -527,13 +525,13 @@ jodit-file:hover {
   width: auto;
   padding: 8px;
   color: rgba(0, 0, 0, 0.75);
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Poppins';
 }
 .jodit_text_icons.jodit-dialog .jodit-button {
   width: auto;
   padding: 8px;
   color: rgba(0, 0, 0, 0.75);
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Poppins';
 }
 .jodit_text_icons.jodit-dialog .jodit-dialog__header a .jodit_icon,
 .jodit_text_icons.jodit-dialog .jodit-button .jodit_icon {
@@ -1143,7 +1141,7 @@ svg.jodit-icon {
   z-index: 30000005;
 }
 .jodit-context-menu__content {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Poppins';
   font-size: 12px;
   padding: 0;
   border: 1px solid #E0E0E0;
@@ -1175,7 +1173,7 @@ svg.jodit-icon {
   display: flex;
 }
 .jodit-context-menu__actions {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Poppins';
   font-size: 12px;
 }
 .jodit-context-menu__actions button {
@@ -1203,7 +1201,7 @@ svg.jodit-icon {
   overflow: visible;
 }
 .jodit-popup__content {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Poppins';
   font-size: 12px;
   padding: 0;
   border: 1px solid #E0E0E0;
@@ -1280,7 +1278,7 @@ svg.jodit-icon {
   display: none;
 }
 .jodit-ui-button-icon-text__text:not(:empty) {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Poppins';
   font-size: 12px;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
@@ -1668,6 +1666,12 @@ svg.jodit-icon {
 .jodit-ui-button[aria-pressed='true']:not([disabled]) {
   outline: 0;
 }
+.jodit-ui-button:active:not([disabled]) color {
+  fill: #8120F7 !important;
+}
+.jodit-ui-button[aria-pressed='true']:not([disabled]) color {
+  fill: #8120F7 !important;
+}
 .jodit-ui-button:active:not([disabled]) svg {
   fill: #8120F7 !important;
 }
@@ -1676,6 +1680,9 @@ svg.jodit-icon {
 }
 .jodit-ui-button[aria-pressed='true']:hover:not([disabled]) {
   background-color: rgba(220, 220, 220, 0.6);
+}
+.jodit-ui-button[aria-pressed='true']:hover:not([disabled]) color {
+  fill: #8120F7 !important;
 }
 .jodit-ui-button[aria-pressed='true']:hover:not([disabled]) svg {
   fill: #8120F7 !important;
@@ -1787,7 +1794,7 @@ svg.jodit-icon {
   display: none;
 }
 .jodit-ui-button__text:not(:empty) {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Poppins';
   font-size: 12px;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
@@ -2009,7 +2016,7 @@ svg.jodit-icon {
 .jodit-ui-separator {
   padding: 0;
   border-left: 0;
-  margin: 12px;
+  margin: 12px 16px;
   cursor: default;
   position: relative;
 }
@@ -2063,7 +2070,7 @@ svg.jodit-icon {
   content: '';
   padding: 0;
   border-left: 0;
-  margin: 12px;
+  margin: 12px 16px;
   cursor: default;
 }
 .jodit-ui-group:last-child {
@@ -2118,7 +2125,7 @@ svg.jodit-icon {
   background-clip: padding-box;
   border-radius: 2px;
   color: #fff;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Poppins';
   font-size: 12px;
   font-size: 11px;
   line-height: 1.4;
@@ -2143,7 +2150,7 @@ svg.jodit-icon {
 }
 
 .jodit-dialog {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Poppins';
   font-size: 12px;
   position: absolute;
   display: none;
@@ -2620,7 +2627,7 @@ svg.jodit-icon {
   margin-bottom: 8px;
 }
 .jodit-ui-input__input {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Poppins';
   font-size: 12px;
   width: 100%;
   height: 44px;
@@ -2761,7 +2768,7 @@ svg.jodit-icon {
   margin-bottom: 8px;
 }
 .jodit-ui-select__input {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Poppins';
   font-size: 12px;
   width: 100%;
   height: 44px;
@@ -2925,7 +2932,7 @@ svg.jodit-icon {
   width: 100%;
 }
 .jodit-ui-text-area__input {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Poppins';
   font-size: 12px;
   width: 100%;
   height: 44px;
@@ -3460,7 +3467,7 @@ svg.jodit-icon {
   display: none;
 }
 .jodit-toolbar-button__text:not(:empty) {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Poppins';
   font-size: 12px;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
@@ -3636,6 +3643,12 @@ svg.jodit-icon {
 .jodit-toolbar-button__button[aria-pressed='true']:not([disabled]) {
   outline: 0;
 }
+.jodit-toolbar-button__button:active:not([disabled]) color {
+  fill: #8120F7 !important;
+}
+.jodit-toolbar-button__button[aria-pressed='true']:not([disabled]) color {
+  fill: #8120F7 !important;
+}
 .jodit-toolbar-button__button:active:not([disabled]) svg {
   fill: #8120F7 !important;
 }
@@ -3644,6 +3657,9 @@ svg.jodit-icon {
 }
 .jodit-toolbar-button__button[aria-pressed='true']:hover:not([disabled]) {
   background-color: rgba(220, 220, 220, 0.6);
+}
+.jodit-toolbar-button__button[aria-pressed='true']:hover:not([disabled]) color {
+  fill: #8120F7 !important;
 }
 .jodit-toolbar-button__button[aria-pressed='true']:hover:not([disabled]) svg {
   fill: #8120F7 !important;
@@ -3682,6 +3698,12 @@ svg.jodit-icon {
 .jodit-toolbar-button__trigger[aria-pressed='true']:not([disabled]) {
   outline: 0;
 }
+.jodit-toolbar-button__trigger:active:not([disabled]) color {
+  fill: #8120F7 !important;
+}
+.jodit-toolbar-button__trigger[aria-pressed='true']:not([disabled]) color {
+  fill: #8120F7 !important;
+}
 .jodit-toolbar-button__trigger:active:not([disabled]) svg {
   fill: #8120F7 !important;
 }
@@ -3690,6 +3712,9 @@ svg.jodit-icon {
 }
 .jodit-toolbar-button__trigger[aria-pressed='true']:hover:not([disabled]) {
   background-color: rgba(220, 220, 220, 0.6);
+}
+.jodit-toolbar-button__trigger[aria-pressed='true']:hover:not([disabled]) color {
+  fill: #8120F7 !important;
 }
 .jodit-toolbar-button__trigger[aria-pressed='true']:hover:not([disabled]) svg {
   fill: #8120F7 !important;
@@ -3787,6 +3812,12 @@ svg.jodit-icon {
 .jodit-toolbar-content[aria-pressed='true']:not([disabled]) {
   outline: 0;
 }
+.jodit-toolbar-content:active:not([disabled]) color {
+  fill: #8120F7 !important;
+}
+.jodit-toolbar-content[aria-pressed='true']:not([disabled]) color {
+  fill: #8120F7 !important;
+}
 .jodit-toolbar-content:active:not([disabled]) svg {
   fill: #8120F7 !important;
 }
@@ -3795,6 +3826,9 @@ svg.jodit-icon {
 }
 .jodit-toolbar-content[aria-pressed='true']:hover:not([disabled]) {
   background-color: rgba(220, 220, 220, 0.6);
+}
+.jodit-toolbar-content[aria-pressed='true']:hover:not([disabled]) color {
+  fill: #8120F7 !important;
 }
 .jodit-toolbar-content[aria-pressed='true']:hover:not([disabled]) svg {
   fill: #8120F7 !important;
@@ -3906,7 +3940,7 @@ svg.jodit-icon {
   display: none;
 }
 .jodit-toolbar-content__text:not(:empty) {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Poppins';
   font-size: 12px;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
@@ -4103,7 +4137,7 @@ svg.jodit-icon {
   display: -ms-flexbox;
   display: flex;
   height: 100%;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Poppins';
 }
 .jodit-filebrowser_no-files_true {
   padding: 8px;
@@ -4512,7 +4546,7 @@ svg.jodit-icon {
   border-color: #433b5c;
 }
 .jodit-filebrowser-files__item_active_true {
-  border-color: #ff45a1;
+  border-color: #545557;
   background-color: #b5b5b5;
 }
 .jodit-filebrowser-files__item_active_true .jodit-filebrowser-files__item-info {
@@ -4811,12 +4845,12 @@ a + .jodit-filebrowser-tree__source-title {
   line-height: 1.57142857em;
 }
 .jodit-status-bar .jodit-status-bar__item {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Poppins';
   font-size: 12px;
   font-size: 11px;
 }
 .jodit-status-bar .jodit-status-bar__item > span {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Poppins';
   font-size: 12px;
   font-size: 11px;
 }
@@ -4930,7 +4964,7 @@ a + .jodit-filebrowser-tree__source-title {
 }
 .jodit-color-picker {
   margin: 0;
-  padding: 20px;
+  padding: 12px;
   text-align: left;
   -webkit-user-select: none;
      -moz-user-select: none;
@@ -4950,19 +4984,22 @@ a + .jodit-filebrowser-tree__source-title {
   width: 30px;
   height: 30px;
   margin: 0 1px 1px 0;
-  border: 0px solid transparent;
+  border: 0 solid transparent;
+  border-radius: 2px;
   text-align: center;
   text-decoration: none;
   vertical-align: middle;
+  -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.2);
+          box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.2);
 }
 .jodit-color-picker__color-item:hover {
-  border: 2px solid #ff45a1;
+  border: 2px solid #545557;
 }
 .jodit-color-picker__color-item_active_true {
-  border: 2px solid #ff45a1;
+  border: 2px solid #545557;
 }
 .jodit-color-picker__color-item:active {
-  border: 2px solid #ff45a1;
+  border: 2px solid #545557;
 }
 .jodit-color-picker__native svg {
   display: inline-block;
@@ -4987,7 +5024,7 @@ a + .jodit-filebrowser-tree__source-title {
 }
 
 .jodit-tabs {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Poppins';
   font-size: 12px;
 }
 .jodit-tabs .jodit-tabs__buttons {
@@ -5224,39 +5261,31 @@ a + .jodit-filebrowser-tree__source-title {
   color: #A7A8AB;
 }
 
-.jodit .jodit-ui-group__p {
+.jodit .jodit-popup__content div.jodit-ui-group .jodit-ui-group__p,
+.jodit .jodit-popup__content div.jodit-ui-group .jodit-ui-group__h1,
+.jodit .jodit-popup__content div.jodit-ui-group .jodit-ui-group__h2,
+.jodit .jodit-popup__content div.jodit-ui-group .jodit-ui-group__h3,
+.jodit .jodit-popup__content div.jodit-ui-group .jodit-ui-group__h4,
+.jodit .jodit-popup__content div.jodit-ui-group .jodit-ui-group__h5,
+.jodit .jodit-popup__content div.jodit-ui-group .jodit-ui-group__h6 {
   margin: 0;
-  padding: 0, 8px;
+  padding: 0 !important;
+  height: 54px !important;
 }
-
-.jodit .jodit-ui-group__h1 {
-  margin: 0;
-  padding: 0, 8px;
+.jodit .jodit-popup__content div.jodit-ui-group .jodit-ui-group__p button.jodit-toolbar-button__button,
+.jodit .jodit-popup__content div.jodit-ui-group .jodit-ui-group__h1 button.jodit-toolbar-button__button,
+.jodit .jodit-popup__content div.jodit-ui-group .jodit-ui-group__h2 button.jodit-toolbar-button__button,
+.jodit .jodit-popup__content div.jodit-ui-group .jodit-ui-group__h3 button.jodit-toolbar-button__button,
+.jodit .jodit-popup__content div.jodit-ui-group .jodit-ui-group__h4 button.jodit-toolbar-button__button,
+.jodit .jodit-popup__content div.jodit-ui-group .jodit-ui-group__h5 button.jodit-toolbar-button__button,
+.jodit .jodit-popup__content div.jodit-ui-group .jodit-ui-group__h6 button.jodit-toolbar-button__button {
+  padding: 0 16px !important;
 }
-
-.jodit .jodit-ui-group__h2 {
-  margin: 0;
-  padding: 0, 8px;
+.jodit .jodit-popup__content div.jodit-ui-group .jodit-ui-group__p {
+  margin-top: 8px !important;
 }
-
-.jodit .jodit-ui-group__h3 {
-  margin: 0;
-  padding: 0, 8px;
-}
-
-.jodit .jodit-ui-group__h4 {
-  margin: 0;
-  padding: 0, 8px;
-}
-
-.jodit .jodit-ui-group__h5 {
-  margin: 0;
-  padding: 0, 8px;
-}
-
-.jodit .jodit-ui-group__h6 {
-  margin: 0;
-  padding: 0, 8px;
+.jodit .jodit-popup__content div.jodit-ui-group .jodit-ui-group__h6 {
+  margin-bottom: 8px !important;
 }
 
 .jodit_fullsize-box_true {
@@ -5294,7 +5323,7 @@ html.jodit_fullsize-box_true {
   z-index: 1300;
   min-width: 700px;
 }
-.jodit-popup-container .jodit-popup .jodit-popup__content .jodit-toolbar-editor-collection .jodit-toolbar-button {
+.jodit.jodit-popup-container.jodit-box .jodit-popup .jodit-popup__content .jodit-toolbar-editor-collection span.jodit-toolbar-button {
   min-width: -webkit-fit-content;
   min-width: -moz-fit-content;
   min-width: fit-content;
@@ -5304,13 +5333,16 @@ html.jodit_fullsize-box_true {
   margin: 0;
   padding: 8px;
 }
-.jodit-popup-container .jodit-popup .jodit-popup__content .jodit-toolbar-editor-collection .jodit-toolbar-button__button {
+.jodit.jodit-popup-container.jodit-box .jodit-popup .jodit-popup__content .jodit-toolbar-editor-collection span.jodit-toolbar-button__button {
   min-width: -webkit-fit-content;
   min-width: -moz-fit-content;
   min-width: fit-content;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
+}
+.jodit.jodit-popup-container.jodit-box .jodit-popup .jodit-popup__content .jodit-toolbar-editor-collection .jodit-ui-separator {
+  margin: 12px 0px;
 }
 
 

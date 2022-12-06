@@ -24,12 +24,12 @@ Jodit.make('#editor', {
 		paragraph: {
 			list: Jodit.atom({
 				p: 'Pharagraph',
-				h1: 'Heading 1',
-				h2: 'Heading 2',
-				h3: 'Heading 3',
-				h4: 'Heading 4',
-				h5: 'Heading 5',
-				h6: 'Heading 6',
+				h1: 'Header 1',
+				h2: 'Header 2',
+				h3: 'Header 3',
+				h4: 'Header 4',
+				h5: 'Header 5',
+				h6: 'Header 6',
 				blockquote: 'Quote',
 				div: 'Div',
 				pre: 'Source code'

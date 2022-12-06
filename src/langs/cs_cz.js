@@ -1,4 +1,3 @@
-
 module.exports = {
 	'Type something': 'Napiš něco',
 	'About Jodit': 'O Jodit',
@@ -35,10 +34,10 @@ module.exports = {
 	'Font family': 'Typ písma',
 	'Insert format block': 'Formátovat blok',
 	Normal: 'Normální text',
-	'Heading 1': 'Nadpis 1',
-	'Heading 2': 'Nadpis 2',
-	'Heading 3': 'Nadpis 3',
-	'Heading 4': 'Nadpis 4',
+	'Header 1': 'Nadpis 1',
+	'Header 2': 'Nadpis 2',
+	'Header 3': 'Nadpis 3',
+	'Header 4': 'Nadpis 4',
 	Quote: 'Citát',
 	Code: 'Kód',
 	Insert: 'Vložit',

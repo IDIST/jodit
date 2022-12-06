@@ -1,4 +1,3 @@
-
 module.exports = {
 	'Type something': 'Напишите что-либо',
 	'About Jodit': 'О Jodit',
@@ -35,10 +34,10 @@ module.exports = {
 	'Font family': 'Шрифт',
 	'Insert format block': 'Вставить блочный элемент',
 	Normal: 'Нормальный текст',
-	'Heading 1': 'Заголовок 1',
-	'Heading 2': 'Заголовок 2',
-	'Heading 3': 'Заголовок 3',
-	'Heading 4': 'Заголовок 4',
+	'Header 1': 'Заголовок 1',
+	'Header 2': 'Заголовок 2',
+	'Header 3': 'Заголовок 3',
+	'Header 4': 'Заголовок 4',
 	Quote: 'Цитата',
 	Code: 'Код',
 	Insert: 'Вставить',

@@ -78,14 +78,14 @@ module.exports["default"] = ["Írjon be valamit","Joditról","Jodit Editor","Jod
 /***/ 99113:
 /***/ (function(module) {
 
-module.exports["default"] = ["Ketik sesuatu","Tentang Jodit","Editor Jodit","Panduan Pengguna Jodit","mencakup detail bantuan penggunaan","Untuk informasi tentang lisensi, silakan kunjungi website:","Beli versi lengkap","Hak Cipta © XDSoft.net - Chupurnov Valeriy. Hak cipta dilindungi undang-undang.","Tautan","Buka di tab baru","Buka editor dalam ukuran penuh","Hapus Pemformatan","Isi warna atau atur warna teks","Ulangi","Batalkan","Tebal","Miring","Sisipkan Daftar Tidak Berurut","Sisipkan Daftar Berurut","Tengah","Penuh","Kiri","Kanan","Sisipkan Garis Horizontal","Sisipkan Gambar","Sisipkan Berkas","Sisipkan video youtube/vimeo","Sisipkan tautan","Ukuran font","Keluarga font","Sisipkan blok format","Normal","Heading 1","Heading 2","Heading 3","Heading 4","Kutip","Kode","Sisipkan","Sisipkan tabel","Kurangi Indentasi","Tambah Indentasi","Pilih Karakter Spesial","Sisipkan Karakter Spesial","Formar warna","Ubah mode","Batas","atas","kanan","bawah","kiri","Gaya","Class","Rata","Kanan","Tengah","Kiri","--Tidak diset--","Src","Judul","Teks alternatif","Tautan","Buka tautan di tab baru","Gambar","berkas","Lanjutan","Properti gambar","Batal","Ya","Penjelajah Berkas","Error ketika memuat list","Error ketika memuat folder","Apakah Anda yakin?","Masukkan nama Direktori","Buat direktori","ketik nama","Letakkan gambar","Letakkan berkas","atau klik","Teks alternatif","Unggah","Jelajahi","Latar Belakang","Teks","Atas","Tengah","Bawah","Sisipkan kolom sebelumnya","Sisipkan kolom setelahnya","Sisipkan baris di atasnya","Sisipkan baris di bawahnya","Hapus tabel","Hapus baris","Hapus kolom","Kosongkan cell","Karakter: %d","Kata: %d","Coret","Garis Bawah","Superskrip","Subskrip","Potong pilihan","Pilih semua","Berhenti","Mencari","Ganti dengan","Mengganti","Paste","Pilih konten untuk dipaste","sumber","tebal","miring","sikat","tautan","batalkan","ulangi","tabel","gambar","penghapus","paragraf","ukuran font","video","font","tentang","cetak","garis bawah","coret","menjorok ke dalam","menjorok ke luar","ukuran penuh","menyusut","hr","ul","ol","potong","Pilih semua","Kode embed","Buka tautan","Edit tautan","No follow","Hapus tautan","Perbarui","pensil","Mata","URL","Edit","Perataan horizontal","Filter","Urutkan berdasarkan perubahan","Urutkan berdasarkan nama","Urutkan berdasarkan ukuran","Tambah folder","Reset","Simpan","Simpan sebagai...","Ubah ukuran","Crop","Lebar","Tinggi","Jaga aspek rasio","Ya","Tidak","Copot","Pilih","Pilih %s","Rata vertikal","Bagi","Gabungkan","Tambah kolom","tambah baris","Lisensi: %s","Hapus","Bagi secara vertikal","Bagi secara horizontal","Bingkai","Kode Anda cenderung ke HTML. Biarkan sebagai HTML?","Paste sebagai HTML","Jaga","Sisipkan sebagai teks","Sisipkan hanya teks","Anda hanya dapat mengedit gambar Anda sendiri. Unduh gambar ini di host?","Gambar telah sukses diunggah ke host!","palet","Tidak ada berkas","ganti nama","Masukkan nama baru","pratinjau","Unduh","Paste dari clipboard","Browser anda tidak mendukung akses langsung ke clipboard.","Copy seleksi","copy","Border radius","Tampilkan semua","Menerapkan","Silahkan mengisi kolom ini","Silahkan masukkan alamat web","Default","Lingkaran","Dot","Kuadrat","Menemukan","Menemukan Sebelumnya","Menemukan Berikutnya","Konten dipaste dari dokumen Microsoft Word/Excel. Apakah Anda ingin tetap menjaga format atau membersihkannya?","Terdeteksi paste dari Word","Bersih","Masukkan nama kelas","Tekan Alt untuk mengubah ukuran kustom"]
+module.exports["default"] = ["Ketik sesuatu","Tentang Jodit","Editor Jodit","Panduan Pengguna Jodit","mencakup detail bantuan penggunaan","Untuk informasi tentang lisensi, silakan kunjungi website:","Beli versi lengkap","Hak Cipta © XDSoft.net - Chupurnov Valeriy. Hak cipta dilindungi undang-undang.","Tautan","Buka di tab baru","Buka editor dalam ukuran penuh","Hapus Pemformatan","Isi warna atau atur warna teks","Ulangi","Batalkan","Tebal","Miring","Sisipkan Daftar Tidak Berurut","Sisipkan Daftar Berurut","Tengah","Penuh","Kiri","Kanan","Sisipkan Garis Horizontal","Sisipkan Gambar","Sisipkan Berkas","Sisipkan video youtube/vimeo","Sisipkan tautan","Ukuran font","Keluarga font","Sisipkan blok format","Normal","Header 1","Header 2","Header 3","Header 4","Kutip","Kode","Sisipkan","Sisipkan tabel","Kurangi Indentasi","Tambah Indentasi","Pilih Karakter Spesial","Sisipkan Karakter Spesial","Formar warna","Ubah mode","Batas","atas","kanan","bawah","kiri","Gaya","Class","Rata","Kanan","Tengah","Kiri","--Tidak diset--","Src","Judul","Teks alternatif","Tautan","Buka tautan di tab baru","Gambar","berkas","Lanjutan","Properti gambar","Batal","Ya","Penjelajah Berkas","Error ketika memuat list","Error ketika memuat folder","Apakah Anda yakin?","Masukkan nama Direktori","Buat direktori","ketik nama","Letakkan gambar","Letakkan berkas","atau klik","Teks alternatif","Unggah","Jelajahi","Latar Belakang","Teks","Atas","Tengah","Bawah","Sisipkan kolom sebelumnya","Sisipkan kolom setelahnya","Sisipkan baris di atasnya","Sisipkan baris di bawahnya","Hapus tabel","Hapus baris","Hapus kolom","Kosongkan cell","Karakter: %d","Kata: %d","Coret","Garis Bawah","Superskrip","Subskrip","Potong pilihan","Pilih semua","Berhenti","Mencari","Ganti dengan","Mengganti","Paste","Pilih konten untuk dipaste","sumber","tebal","miring","sikat","tautan","batalkan","ulangi","tabel","gambar","penghapus","paragraf","ukuran font","video","font","tentang","cetak","garis bawah","coret","menjorok ke dalam","menjorok ke luar","ukuran penuh","menyusut","hr","ul","ol","potong","Pilih semua","Kode embed","Buka tautan","Edit tautan","No follow","Hapus tautan","Perbarui","pensil","Mata","URL","Edit","Perataan horizontal","Filter","Urutkan berdasarkan perubahan","Urutkan berdasarkan nama","Urutkan berdasarkan ukuran","Tambah folder","Reset","Simpan","Simpan sebagai...","Ubah ukuran","Crop","Lebar","Tinggi","Jaga aspek rasio","Ya","Tidak","Copot","Pilih","Pilih %s","Rata vertikal","Bagi","Gabungkan","Tambah kolom","tambah baris","Lisensi: %s","Hapus","Bagi secara vertikal","Bagi secara horizontal","Bingkai","Kode Anda cenderung ke HTML. Biarkan sebagai HTML?","Paste sebagai HTML","Jaga","Sisipkan sebagai teks","Sisipkan hanya teks","Anda hanya dapat mengedit gambar Anda sendiri. Unduh gambar ini di host?","Gambar telah sukses diunggah ke host!","palet","Tidak ada berkas","ganti nama","Masukkan nama baru","pratinjau","Unduh","Paste dari clipboard","Browser anda tidak mendukung akses langsung ke clipboard.","Copy seleksi","copy","Border radius","Tampilkan semua","Menerapkan","Silahkan mengisi kolom ini","Silahkan masukkan alamat web","Default","Lingkaran","Dot","Kuadrat","Menemukan","Menemukan Sebelumnya","Menemukan Berikutnya","Konten dipaste dari dokumen Microsoft Word/Excel. Apakah Anda ingin tetap menjaga format atau membersihkannya?","Terdeteksi paste dari Word","Bersih","Masukkan nama kelas","Tekan Alt untuk mengubah ukuran kustom"]
 
 /***/ }),
 
 /***/ 51923:
 /***/ (function(module) {
 
-module.exports["default"] = ["Scrivi qualcosa...","A proposito di Jodit","Jodit Editor","Guida utente di Jodit","contiene una guida dettagliata per l'uso.","Per informazioni sulla licenza, si prega di visitare il nostro sito:","Acquista la versione completa","Copyright © XDSoft.net - Chupurnov Valeriy. Alle Rechte vorbehalten.","Ancora","Apri in una nuova scheda","Apri l'editor a schermo intero","Formato chiaro","Riempi colore o lettera","Ripristina","Annulla","Grassetto","Corsivo","Inserisci lista non ordinata","Inserisci l'elenco ordinato","Allinea Centra","Allineare Giustificato","Allinea a Sinistra","Allinea a Destra","Inserisci la linea orizzontale","Inserisci immagine","Inserisci un file","Inserisci video Youtube/Vimeo","Inserisci il link","Dimensione del carattere","Tipo di font","Inserisci blocco","Normale","Heading 1","Heading 2","Heading 3","Heading 4","Citazione","Codice","Inserisci","Inserisci tabella","Riduci il rientro","Aumenta il rientro","Seleziona una funzione speciale","Inserisci un carattere speciale","Copia formato","Cambia modo","Margini","su","destra","giù","sinistra","Stili CSS","Classi CSS","Allinea","Destra","Centro","Sinistra","--Non Impostato--","Fonte","Titolo","Testo Alternativo","Link","Apri il link in una nuova scheda","Immagine","Archivio","Avanzato","Proprietà dell'immagine","Annulla","Accetta","Cerca il file","Errore durante il caricamento dell'elenco","Errore durante il caricamento delle cartelle","Sei sicuro?","Inserisci il nome della cartella","Crea cartella","Entre el nombre","Rilascia l'immagine","Rilascia file","o click","Testo alternativo","Carica","Sfoglia","Sfondo","Testo","Su","Centro","Sotto","Inserisci prima la colonna","Inserisci colonna dopo","Inserisci la riga sopra","Inserisci la riga sotto","Elimina tabella","Elimina riga","Elimina colonna","Cella vuota","Caratteri: %d","Parole: %d","Barrato","Sottolineato","indice","deponente","Taglia la selezione","Seleziona tutto","Pausa","Cerca","Sostituisci con","Sostituire","Incolla","Seleziona il contenuto da incollare","HTML","Grassetto","Corsivo","Pennello","Link","Annulla","Ripristina","Tabella","Immagine","Gomma","Paragrafo","Dimensione del carattere","Video","Font","Approposito di","Stampa","Sottolineato","Barrato","trattino","annulla rientro","A grandezza normale","comprimere","linea orizzontale","lista non ordinata","lista ordinata","Taglia","Seleziona tutto","Includi codice","Apri link","Modifica link","Non seguire","Togli link","Aggiornare","Per modificare","Recensione"," URL","Modifica","Allineamento orizzontale","Filtro","Ordina per data di modifica","Ordina per nome","Ordina per dimensione","Aggiungi cartella","Reset","Salva","Salva con nome...","Ridimensiona","Tagliare","Larghezza","Altezza","Mantenere le proporzioni","Si","No","Rimuovere","Seleziona","Seleziona: %s","Allineamento verticala","Dividere","Fondi","Aggiungi colonna","Aggiungi riga",null,"Cancella","Dividere verticalmente","Diviso orizzontale","Bordo","Il codice è simile all'HTML. Mantieni come HTML?","Incolla come HTML?","Mantieni","Inserisci come testo","Inserisci solo il testo","Puoi modificare solo le tue immagini. Scarica questa immagine sul server?","L'immagine è stata caricata con successo sul server!","tavolozza","Non ci sono file in questa directory.","ungherese","Inserisci un nuovo nome","anteprima","Scaricare","Incolla dagli appunti","Il tuo browser non supporta l'accesso diretto agli appunti.","Selezione di copia","copia","Border radius","Mostra tutti","Applicare","Si prega di compilare questo campo","Si prega di inserire un indirizzo web","Di Default","Cerchio","Dot","Quadrate","Trovare","Trova Precedente","Trova Successivo","Il contenuto incollato proviene da un documento Microsoft Word / Excel. Vuoi mantenere il formato o pulirlo?","Incollato da Word rilevato","Pulisci","Inserisci il nome della classe","Premere Alt per il ridimensionamento personalizzato"]
+module.exports["default"] = ["Scrivi qualcosa...","A proposito di Jodit","Jodit Editor","Guida utente di Jodit","contiene una guida dettagliata per l'uso.","Per informazioni sulla licenza, si prega di visitare il nostro sito:","Acquista la versione completa","Copyright © XDSoft.net - Chupurnov Valeriy. Alle Rechte vorbehalten.","Ancora","Apri in una nuova scheda","Apri l'editor a schermo intero","Formato chiaro","Riempi colore o lettera","Ripristina","Annulla","Grassetto","Corsivo","Inserisci lista non ordinata","Inserisci l'elenco ordinato","Allinea Centra","Allineare Giustificato","Allinea a Sinistra","Allinea a Destra","Inserisci la linea orizzontale","Inserisci immagine","Inserisci un file","Inserisci video Youtube/Vimeo","Inserisci il link","Dimensione del carattere","Tipo di font","Inserisci blocco","Normale","Header 1","Header 2","Header 3","Header 4","Citazione","Codice","Inserisci","Inserisci tabella","Riduci il rientro","Aumenta il rientro","Seleziona una funzione speciale","Inserisci un carattere speciale","Copia formato","Cambia modo","Margini","su","destra","giù","sinistra","Stili CSS","Classi CSS","Allinea","Destra","Centro","Sinistra","--Non Impostato--","Fonte","Titolo","Testo Alternativo","Link","Apri il link in una nuova scheda","Immagine","Archivio","Avanzato","Proprietà dell'immagine","Annulla","Accetta","Cerca il file","Errore durante il caricamento dell'elenco","Errore durante il caricamento delle cartelle","Sei sicuro?","Inserisci il nome della cartella","Crea cartella","Entre el nombre","Rilascia l'immagine","Rilascia file","o click","Testo alternativo","Carica","Sfoglia","Sfondo","Testo","Su","Centro","Sotto","Inserisci prima la colonna","Inserisci colonna dopo","Inserisci la riga sopra","Inserisci la riga sotto","Elimina tabella","Elimina riga","Elimina colonna","Cella vuota","Caratteri: %d","Parole: %d","Barrato","Sottolineato","indice","deponente","Taglia la selezione","Seleziona tutto","Pausa","Cerca","Sostituisci con","Sostituire","Incolla","Seleziona il contenuto da incollare","HTML","Grassetto","Corsivo","Pennello","Link","Annulla","Ripristina","Tabella","Immagine","Gomma","Paragrafo","Dimensione del carattere","Video","Font","Approposito di","Stampa","Sottolineato","Barrato","trattino","annulla rientro","A grandezza normale","comprimere","linea orizzontale","lista non ordinata","lista ordinata","Taglia","Seleziona tutto","Includi codice","Apri link","Modifica link","Non seguire","Togli link","Aggiornare","Per modificare","Recensione"," URL","Modifica","Allineamento orizzontale","Filtro","Ordina per data di modifica","Ordina per nome","Ordina per dimensione","Aggiungi cartella","Reset","Salva","Salva con nome...","Ridimensiona","Tagliare","Larghezza","Altezza","Mantenere le proporzioni","Si","No","Rimuovere","Seleziona","Seleziona: %s","Allineamento verticala","Dividere","Fondi","Aggiungi colonna","Aggiungi riga",null,"Cancella","Dividere verticalmente","Diviso orizzontale","Bordo","Il codice è simile all'HTML. Mantieni come HTML?","Incolla come HTML?","Mantieni","Inserisci come testo","Inserisci solo il testo","Puoi modificare solo le tue immagini. Scarica questa immagine sul server?","L'immagine è stata caricata con successo sul server!","tavolozza","Non ci sono file in questa directory.","ungherese","Inserisci un nuovo nome","anteprima","Scaricare","Incolla dagli appunti","Il tuo browser non supporta l'accesso diretto agli appunti.","Selezione di copia","copia","Border radius","Mostra tutti","Applicare","Si prega di compilare questo campo","Si prega di inserire un indirizzo web","Di Default","Cerchio","Dot","Quadrate","Trovare","Trova Precedente","Trova Successivo","Il contenuto incollato proviene da un documento Microsoft Word / Excel. Vuoi mantenere il formato o pulirlo?","Incollato da Word rilevato","Pulisci","Inserisci il nome della classe","Premere Alt per il ridimensionamento personalizzato"]
 
 /***/ }),
 
@@ -106,7 +106,7 @@ module.exports["default"] = ["Type something","About Jodit","Jodit Editor","Jodi
 /***/ 37289:
 /***/ (function(module) {
 
-module.exports["default"] = ["무엇이든 입력하세요","Jodit에 대하여","Jodit Editor","Jodit 사용자 안내서","자세한 도움말이 들어있어요","라이센스에 관해서는 Jodit 웹 사이트를 방문해주세요：","풀 버전 구입하기","© XDSoft.net - Chupurnov Valeriy. 에게 저작권과 모든 권리가 있습니다.","Anchor","새 탭에서 열기","전체 크기로 보기","서식 지우기","글씨 색상","재실행","실행 취소","굵게","기울임","글머리 목록","번호 목록","가운데 정렬","양쪽 정렬","왼쪽 정렬","오른쪽 정렬","수평 구분선 넣기","이미지 넣기","GIF 넣기","파일 넣기","동영상 넣기","링크 넣기","글꼴 크기","글꼴","블록 요소 넣기","일반 텍스트","제목 1","제목 2","제목 3","제목 4","인용","코드","붙여 넣기","테이블","들여쓰기 감소","들여쓰기 증가","특수문자 선택","특수문자 입력","페인트 형식","편집모드 변경","마진","위","오른쪽","아래","왼쪽","스타일","클래스","정렬","오른쪽 정렬","가운데 정렬","왼쪽 정렬","--지정 안 함--","경로(src)","제목","대체 텍스트(alt)","링크","새 탭에서 열기","파일","고급","이미지 속성","취소","확인","HTML 코드로 감지했어요. 코드인채로 붙여넣을까요?","HTML로 붙여넣기","원본 유지","지우기","텍스트로 넣기","텍스트만 넣기","Word 붙여넣기 감지","Microsoft Word/Excel 문서로 감지했어요. 서식을 유지한채로 붙여넣을까요?","파일 탐색기","목록 불러오기 에러","폴더 불러오기","정말 진행할까요?","디렉토리 이름 입력","디렉토리 생성","이름 입력","이미지 드래그","파일 드래그","혹은 클릭하세요","대체 텍스트","탐색","업로드","배경","텍스트","위","중앙","아래","이전 열에 삽입","다음 열에 삽입","위 행에 삽입","아래 행에 삽입","테이블 삭제","행 삭제","열 삭제","빈 셀","HTML 소스","볼드","이탤릭","브러시","링크","실행 취소","재실행","테이블","이미지","지우개","문단","글꼴 크기","비디오","글꼴","편집기 정보","프린트","밑줄","취소선","들여쓰기","내어쓰기","전체 화면","일반 화면","구분선","글머리 목록","번호 목록","잘라내기","모두 선택","Embed 코드","링크 열기","링크 편집","No follow","링크 제거","사이트 확인","연필","갱신","링크","편집","수평 정렬","필터","변경일 정렬","이름 정렬","크기 정렬","새 폴더","초기화","저장","새로 저장하기 ...","리사이즈","크롭","가로 길이","세로 높이","비율 유지하기","네","아니오","제거","선택","문자수: %d","단어수: %d","모두","모두 선택","선택: %s","수직 정렬","분할","세로 셀 분할","가로 셀 분할","셀 병합","열 추가","행 추가","삭제","외곽선","라이센스: %s","취소선","밑줄","윗첨자","아래첨자","선택 잘라내기","구분자","검색","대체하기","대체","붙여넣기","붙여넣을 내용 선택","외부 이미지는 편집할 수 없어요. 외부 이미지를 다운로드 할까요?","이미지를 무사히 업로드 했어요!","팔레트","파일이 없어요","이름 변경","새 이름 입력","미리보기","다운로드","클립보드 붙여넣기","사용중인 브라우저가 클립보드 접근을 지원하지 않아요.","선택 복사","복사","둥근 테두리","모두 보기","적용","이 항목을 입력해주세요!","웹 URL을 입력해주세요.","기본","원","점","정사각형","찾기","이전 찾기","다음 찾기","className 입력","사용자 지정 크기 조정에 대 한 고도 누르십시오"]
+module.exports["default"] = ["무엇이든 입력하세요","Jodit에 대하여","Jodit Editor","Jodit 사용자 안내서","자세한 도움말이 들어있어요","라이센스에 관해서는 Jodit 웹 사이트를 방문해주세요：","풀 버전 구입하기","© XDSoft.net - Chupurnov Valeriy. 에게 저작권과 모든 권리가 있습니다.","Anchor","새 탭에서 열기","전체 크기로 보기","서식 지우기","글씨 색상","재실행","실행 취소","굵게","기울임","글머리 목록","번호 목록","가운데 정렬","양쪽 정렬","왼쪽 정렬","오른쪽 정렬","수평 구분선 넣기","이미지 넣기","파일 넣기","동영상 넣기","링크 넣기","글꼴 크기","글꼴","블록 요소 넣기","일반 텍스트","제목 1","제목 2","제목 3","제목 4","인용","코드","붙여 넣기","테이블","들여쓰기 감소","들여쓰기 증가","특수문자 선택","특수문자 입력","페인트 형식","편집모드 변경","마진","위","오른쪽","아래","왼쪽","스타일","클래스","정렬","오른쪽 정렬","가운데 정렬","왼쪽 정렬","--지정 안 함--","경로(src)","제목","대체 텍스트(alt)","링크","새 탭에서 열기",null,"파일","고급","이미지 속성","취소","확인","파일 탐색기","목록 불러오기 에러","폴더 불러오기","정말 진행할까요?","디렉토리 이름 입력","디렉토리 생성","이름 입력","이미지 드래그","파일 드래그","혹은 클릭하세요","대체 텍스트","업로드","탐색","배경","텍스트","위","중앙","아래","이전 열에 삽입","다음 열에 삽입","위 행에 삽입","아래 행에 삽입","테이블 삭제","행 삭제","열 삭제","빈 셀","문자수: %d","단어수: %d","취소선","밑줄","윗첨자","아래첨자","선택 잘라내기","모두 선택","구분자","검색","대체하기","대체","붙여넣기","붙여넣을 내용 선택","HTML 소스","볼드","이탤릭","브러시","링크","실행 취소","재실행","테이블","이미지","지우개","문단","글꼴 크기","비디오","글꼴","편집기 정보","프린트","밑줄","취소선","들여쓰기","내어쓰기","전체 화면","일반 화면","구분선","글머리 목록","번호 목록","잘라내기","모두 선택","Embed 코드","링크 열기","링크 편집","No follow","링크 제거","갱신","연필","사이트 확인",null,"편집","수평 정렬","필터","변경일 정렬","이름 정렬","크기 정렬","새 폴더","초기화","저장","새로 저장하기 ...","리사이즈","크롭","가로 길이","세로 높이","비율 유지하기","네","아니오","제거","선택","선택: %s","수직 정렬","분할","셀 병합","열 추가","행 추가","라이센스: %s","삭제","세로 셀 분할","가로 셀 분할","외곽선","HTML 코드로 감지했어요. 코드인채로 붙여넣을까요?","HTML로 붙여넣기","원본 유지","텍스트로 넣기","텍스트만 넣기","외부 이미지는 편집할 수 없어요. 외부 이미지를 다운로드 할까요?","이미지를 무사히 업로드 했어요!","팔레트","파일이 없어요","이름 변경","새 이름 입력","미리보기","다운로드","클립보드 붙여넣기","사용중인 브라우저가 클립보드 접근을 지원하지 않아요.","선택 복사","복사","둥근 테두리","모두 보기","적용","이 항목을 입력해주세요!","웹 URL을 입력해주세요.","기본","원","점","정사각형","찾기","이전 찾기","다음 찾기","Microsoft Word/Excel 문서로 감지했어요. 서식을 유지한채로 붙여넣을까요?","Word 붙여넣기 감지","지우기","className 입력","사용자 지정 크기 조정에 대 한 고도 누르십시오"]
 
 /***/ }),
 
@@ -10434,9 +10434,6 @@ var buttons = [
     'video',
     'file',
     '\n',
-    'undo',
-    'redo',
-    '|',
     'paragraph',
     'brush',
     'bold',
@@ -10526,8 +10523,12 @@ var Config = (function () {
                 Objects: '물체',
                 Flags: '깃발',
                 'Click to tune': '조정하려면 클릭',
-                'Heading 5': '제목 5',
-                'Heading 6': '제목 6',
+                'Header 1': '제목 1',
+                'Header 2': '제목 2',
+                'Header 3': '제목 3',
+                'Header 4': '제목 4',
+                'Header 5': '제목 5',
+                'Header 6': '제목 6',
                 'Drop video': '비디오 드래그',
                 'Drop gif': 'GIF 드래그',
                 'Drop audio': '오디오 드래그',
@@ -27500,16 +27501,6 @@ var ToolbarButton = (function (_super) {
         }
         return _this;
     }
-    ToolbarButton.prototype.className = function () {
-        return 'ToolbarButton';
-    };
-    Object.defineProperty(ToolbarButton.prototype, "toolbar", {
-        get: function () {
-            return this.closest(collection_1.ToolbarCollection);
-        },
-        enumerable: false,
-        configurable: true
-    });
     Object.defineProperty(ToolbarButton.prototype, "button", {
         get: function () {
             return this.container.querySelector("button.".concat(this.componentName, "__button"));
@@ -27517,6 +27508,16 @@ var ToolbarButton = (function (_super) {
         enumerable: false,
         configurable: true
     });
+    Object.defineProperty(ToolbarButton.prototype, "toolbar", {
+        get: function () {
+            return this.closest(collection_1.ToolbarCollection);
+        },
+        enumerable: false,
+        configurable: true
+    });
+    ToolbarButton.prototype.className = function () {
+        return 'ToolbarButton';
+    };
     ToolbarButton.prototype.update = function () {
         var _a = this, control = _a.control, state = _a.state, tc = this.closest(collection_1.ToolbarCollection);
         state.disabled = this.calculateDisabledStatus(tc);
@@ -27526,30 +27527,13 @@ var ToolbarButton = (function (_super) {
         }
         _super.prototype.update.call(this);
     };
-    ToolbarButton.prototype.calculateActivatedStatus = function (tc) {
-        if ((0, helpers_1.isJoditObject)(this.j) && !this.j.editorIsActive) {
-            return false;
-        }
-        if ((0, helpers_1.isFunction)(this.control.isActive) &&
-            this.control.isActive(this.j, this.control, this)) {
-            return true;
-        }
-        return Boolean(tc && tc.shouldBeActive(this));
+    ToolbarButton.prototype.focus = function () {
+        var _a;
+        (_a = this.container.querySelector('button')) === null || _a === void 0 ? void 0 : _a.focus();
     };
-    ToolbarButton.prototype.calculateDisabledStatus = function (tc) {
-        if (this.j.o.disabled) {
-            return true;
-        }
-        if (this.j.o.readonly &&
-            (!this.j.o.activeButtonsInReadOnly ||
-                !this.j.o.activeButtonsInReadOnly.includes(this.control.name))) {
-            return true;
-        }
-        if ((0, helpers_1.isFunction)(this.control.isDisabled) &&
-            this.control.isDisabled(this.j, this.control, this)) {
-            return true;
-        }
-        return Boolean(tc && tc.shouldBeDisabled(this));
+    ToolbarButton.prototype.destruct = function () {
+        this.closePopup();
+        return _super.prototype.destruct.call(this);
     };
     ToolbarButton.prototype.onChangeActivated = function () {
         (0, helpers_1.attr)(this.button, 'aria-pressed', this.state.activated);
@@ -27584,10 +27568,6 @@ var ToolbarButton = (function (_super) {
         container.appendChild(button);
         this.trigger = this.j.c.fromHTML("<span role=\"trigger\" class=\"".concat(cn, "__trigger\">").concat(icon_1.Icon.get('chevron'), "</span>"));
         return container;
-    };
-    ToolbarButton.prototype.focus = function () {
-        var _a;
-        (_a = this.container.querySelector('button')) === null || _a === void 0 ? void 0 : _a.focus();
     };
     ToolbarButton.prototype.onChangeHasTrigger = function () {
         if (this.state.hasTrigger) {
@@ -27626,6 +27606,107 @@ var ToolbarButton = (function (_super) {
             });
         }
     };
+    ToolbarButton.prototype.onTriggerClick = function (e) {
+        var _this = this;
+        var _a, _b, _c;
+        if (this.openedPopup) {
+            this.closePopup();
+            return;
+        }
+        var ctr = this.control;
+        e.buffer = {
+            actionTrigger: this
+        };
+        if (ctr.list) {
+            return this.openControlList(ctr);
+        }
+        if ((0, helpers_1.isFunction)(ctr.popup)) {
+            var popup = this.openPopup();
+            popup.parentElement = this;
+            if (this.j.e.fire((0, helpers_1.camelCase)("before-".concat(ctr.name, "-open-popup")), this.target, ctr, popup) !== false) {
+                var target = (_c = (_b = (_a = this.toolbar) === null || _a === void 0 ? void 0 : _a.getTarget(this)) !== null && _b !== void 0 ? _b : this.target) !== null && _c !== void 0 ? _c : null;
+                var elm = ctr.popup(this.j, target, ctr, this.closePopup, this);
+                if (elm) {
+                    popup
+                        .setContent((0, helpers_1.isString)(elm) ? this.j.c.fromHTML(elm) : elm)
+                        .open(function () { return (0, helpers_1.position)(_this.container); }, false, this.j.o.allowTabNavigation
+                        ? this.container
+                        : undefined);
+                }
+            }
+            this.j.e.fire((0, helpers_1.camelCase)("after-".concat(ctr.name, "-open-popup")), popup.container);
+        }
+    };
+    ToolbarButton.prototype.onOutsideClick = function (e) {
+        if (!this.openedPopup) {
+            return;
+        }
+        if (!e ||
+            !dom_1.Dom.isNode(e.target) ||
+            (!dom_1.Dom.isOrContains(this.container, e.target) &&
+                !this.openedPopup.isOwnClick(e))) {
+            this.closePopup();
+        }
+    };
+    ToolbarButton.prototype.onClick = function (originalEvent) {
+        var _a, _b, _c, _d, _e, _f, _g;
+        var ctr = this.control;
+        if ((0, helpers_1.isFunction)(ctr.exec)) {
+            var target = (_c = (_b = (_a = this.toolbar) === null || _a === void 0 ? void 0 : _a.getTarget(this)) !== null && _b !== void 0 ? _b : this.target) !== null && _c !== void 0 ? _c : null;
+            var result = ctr.exec(this.j, target, {
+                control: ctr,
+                originalEvent: originalEvent,
+                button: this
+            });
+            if (result !== false && result !== true) {
+                (_e = (_d = this.j) === null || _d === void 0 ? void 0 : _d.e) === null || _e === void 0 ? void 0 : _e.fire('synchro');
+                if (this.parentElement) {
+                    this.parentElement.update();
+                }
+                (_g = (_f = this.j) === null || _f === void 0 ? void 0 : _f.e) === null || _g === void 0 ? void 0 : _g.fire('closeAllPopups afterExec');
+            }
+            if (result !== false) {
+                return;
+            }
+        }
+        if (ctr.list) {
+            return this.openControlList(ctr);
+        }
+        if ((0, helpers_1.isFunction)(ctr.popup)) {
+            return this.onTriggerClick(originalEvent);
+        }
+        if (ctr.command || ctr.name) {
+            (0, helpers_1.call)((0, helpers_1.isJoditObject)(this.j)
+                ? this.j.execCommand.bind(this.j)
+                : this.j.od.execCommand.bind(this.j.od), ctr.command || ctr.name, false, ctr.args && ctr.args[0]);
+            this.j.e.fire('closeAllPopups');
+        }
+    };
+    ToolbarButton.prototype.calculateActivatedStatus = function (tc) {
+        if ((0, helpers_1.isJoditObject)(this.j) && !this.j.editorIsActive) {
+            return false;
+        }
+        if ((0, helpers_1.isFunction)(this.control.isActive) &&
+            this.control.isActive(this.j, this.control, this)) {
+            return true;
+        }
+        return Boolean(tc && tc.shouldBeActive(this));
+    };
+    ToolbarButton.prototype.calculateDisabledStatus = function (tc) {
+        if (this.j.o.disabled) {
+            return true;
+        }
+        if (this.j.o.readonly &&
+            (!this.j.o.activeButtonsInReadOnly ||
+                !this.j.o.activeButtonsInReadOnly.includes(this.control.name))) {
+            return true;
+        }
+        if ((0, helpers_1.isFunction)(this.control.isDisabled) &&
+            this.control.isDisabled(this.j, this.control, this)) {
+            return true;
+        }
+        return Boolean(tc && tc.shouldBeDisabled(this));
+    };
     ToolbarButton.prototype.initFromControl = function () {
         var _a;
         var _b = this, ctr = _b.control, state = _b.state;
@@ -27659,37 +27740,6 @@ var ToolbarButton = (function (_super) {
                 : ctr.tooltip);
         }
         state.hasTrigger = Boolean(ctr.list || (ctr.popup && ctr.exec));
-    };
-    ToolbarButton.prototype.onTriggerClick = function (e) {
-        var _this = this;
-        var _a, _b, _c;
-        if (this.openedPopup) {
-            this.closePopup();
-            return;
-        }
-        var ctr = this.control;
-        e.buffer = {
-            actionTrigger: this
-        };
-        if (ctr.list) {
-            return this.openControlList(ctr);
-        }
-        if ((0, helpers_1.isFunction)(ctr.popup)) {
-            var popup = this.openPopup();
-            popup.parentElement = this;
-            if (this.j.e.fire((0, helpers_1.camelCase)("before-".concat(ctr.name, "-open-popup")), this.target, ctr, popup) !== false) {
-                var target = (_c = (_b = (_a = this.toolbar) === null || _a === void 0 ? void 0 : _a.getTarget(this)) !== null && _b !== void 0 ? _b : this.target) !== null && _c !== void 0 ? _c : null;
-                var elm = ctr.popup(this.j, target, ctr, this.closePopup, this);
-                if (elm) {
-                    popup
-                        .setContent((0, helpers_1.isString)(elm) ? this.j.c.fromHTML(elm) : elm)
-                        .open(function () { return (0, helpers_1.position)(_this.container); }, false, this.j.o.allowTabNavigation
-                        ? this.container
-                        : undefined);
-                }
-            }
-            this.j.e.fire((0, helpers_1.camelCase)("after-".concat(ctr.name, "-open-popup")), popup.container);
-        }
     };
     ToolbarButton.prototype.openControlList = function (control) {
         var _this = this;
@@ -27732,17 +27782,6 @@ var ToolbarButton = (function (_super) {
         menu.setContent(toolbar.container).open(function () { return (0, helpers_1.position)(_this.container); }, false, this.j.o.allowTabNavigation ? this.container : undefined);
         this.state.activated = true;
     };
-    ToolbarButton.prototype.onOutsideClick = function (e) {
-        if (!this.openedPopup) {
-            return;
-        }
-        if (!e ||
-            !dom_1.Dom.isNode(e.target) ||
-            (!dom_1.Dom.isOrContains(this.container, e.target) &&
-                !this.openedPopup.isOwnClick(e))) {
-            this.closePopup();
-        }
-    };
     ToolbarButton.prototype.openPopup = function () {
         this.closePopup();
         this.openedPopup = new popup_1.Popup(this.j, false);
@@ -27761,44 +27800,6 @@ var ToolbarButton = (function (_super) {
             this.openedPopup.destruct();
             this.openedPopup = null;
         }
-    };
-    ToolbarButton.prototype.onClick = function (originalEvent) {
-        var _a, _b, _c, _d, _e, _f, _g;
-        var ctr = this.control;
-        if ((0, helpers_1.isFunction)(ctr.exec)) {
-            var target = (_c = (_b = (_a = this.toolbar) === null || _a === void 0 ? void 0 : _a.getTarget(this)) !== null && _b !== void 0 ? _b : this.target) !== null && _c !== void 0 ? _c : null;
-            var result = ctr.exec(this.j, target, {
-                control: ctr,
-                originalEvent: originalEvent,
-                button: this
-            });
-            if (result !== false && result !== true) {
-                (_e = (_d = this.j) === null || _d === void 0 ? void 0 : _d.e) === null || _e === void 0 ? void 0 : _e.fire('synchro');
-                if (this.parentElement) {
-                    this.parentElement.update();
-                }
-                (_g = (_f = this.j) === null || _f === void 0 ? void 0 : _f.e) === null || _g === void 0 ? void 0 : _g.fire('closeAllPopups afterExec');
-            }
-            if (result !== false) {
-                return;
-            }
-        }
-        if (ctr.list) {
-            return this.openControlList(ctr);
-        }
-        if ((0, helpers_1.isFunction)(ctr.popup)) {
-            return this.onTriggerClick(originalEvent);
-        }
-        if (ctr.command || ctr.name) {
-            (0, helpers_1.call)((0, helpers_1.isJoditObject)(this.j)
-                ? this.j.execCommand.bind(this.j)
-                : this.j.od.execCommand.bind(this.j.od), ctr.command || ctr.name, false, ctr.args && ctr.args[0]);
-            this.j.e.fire('closeAllPopups');
-        }
-    };
-    ToolbarButton.prototype.destruct = function () {
-        this.closePopup();
-        return _super.prototype.destruct.call(this);
     };
     tslib_1.__decorate([
         (0, decorators_1.watch)('state.tooltip')
@@ -33161,12 +33162,12 @@ config_1.Config.prototype.controls.paragraph = {
     },
     list: {
         p: 'Normal',
-        h1: 'Heading 1',
-        h2: 'Heading 2',
-        h3: 'Heading 3',
-        h4: 'Heading 4',
-        h5: 'Heading 5',
-        h6: 'Heading 6'
+        h1: 'Header 1',
+        h2: 'Header 2',
+        h3: 'Header 3',
+        h4: 'Header 4',
+        h5: 'Header 5',
+        h6: 'Header 6'
     },
     isChildActive: function (editor, control) {
         var current = editor.s.current();
@@ -33192,7 +33193,7 @@ config_1.Config.prototype.controls.paragraph = {
         return false;
     },
     childTemplate: function (e, key, value) {
-        return "<".concat(key, " style=\"margin:0;padding:0\"><span>").concat(e.i18n(value), "</span></").concat(key, ">");
+        return "<".concat(key, " style=\"margin:0;padding:0;text-align: left\"><span>").concat(e.i18n(value), "</span></").concat(key, ">");
     },
     tooltip: 'Insert format block'
 };
@@ -34453,7 +34454,7 @@ exports.textAlignCenterAction = {
     tooltip: 'Center'
 };
 exports.textAlignRightAction = {
-    name: 'text',
+    name: 'right',
     icon: 'right',
     exec: function (editor, elm, _a) {
         var control = _a.control;
@@ -34492,8 +34493,6 @@ var __webpack_unused_export__;
 
 __webpack_unused_export__ = ({ value: true });
 var checker_1 = __webpack_require__(37379);
-var css_1 = __webpack_require__(56672);
-var widget_1 = __webpack_require__(4188);
 var cmd = function (control) {
     return control.args && (0, checker_1.isString)(control.args[0])
         ? control.args[0].toLowerCase()
@@ -34501,70 +34500,14 @@ var cmd = function (control) {
 };
 exports.Z = [
     {
-        name: 'brush',
-        popup: function (editor, _, _1, close) {
-            if (!(0, checker_1.isJoditObject)(editor)) {
-                return;
-            }
-            var tableModule = editor.getInstance('Table', editor.o), selected = tableModule.getAllSelectedCells();
-            if (!selected.length) {
-                return false;
-            }
-            var makeColorPicker = function (key) {
-                return (0, widget_1.ColorPickerWidget)(editor, function (value) {
-                    selected.forEach(function (cell) {
-                        (0, css_1.css)(cell, key, value);
-                    });
-                    editor.lock();
-                    editor.synchronizeValues();
-                    close();
-                    editor.unlock();
-                }, (0, css_1.css)(selected[0], key));
-            };
-            return (0, widget_1.TabsWidget)(editor, [
-                {
-                    name: 'Background',
-                    content: makeColorPicker('background-color')
-                },
-                { name: 'Text', content: makeColorPicker('color') },
-                { name: 'Border', content: makeColorPicker('border-color') }
-            ]);
-        },
-        tooltip: 'Background'
+        name: 'split vertical',
+        command: 'tablesplitv',
+        tooltip: 'Split vertical'
     },
     {
-        name: 'valign',
-        list: ['Top', 'Middle', 'Bottom', 'Normal'],
-        childTemplate: function (_, __, value) { return value; },
-        exec: function (editor, table, _a) {
-            var control = _a.control;
-            var command = cmd(control);
-            editor
-                .getInstance('Table', editor.o)
-                .getAllSelectedCells()
-                .forEach(function (cell) {
-                (0, css_1.css)(cell, 'vertical-align', command === 'normal' ? '' : command);
-            });
-        },
-        tooltip: 'Vertical align'
-    },
-    {
-        name: 'splitv',
-        list: {
-            tablesplitv: 'Split vertical',
-            tablesplitg: 'Split horizontal'
-        },
-        tooltip: 'Split'
-    },
-    {
-        name: 'align',
-        icon: 'left'
-    },
-    '\n',
-    {
-        name: 'merge',
-        command: 'tablemerge',
-        tooltip: 'Merge'
+        name: 'split horizontal',
+        command: 'tablesplitg',
+        tooltip: 'Split horizontal'
     },
     {
         name: 'addcolumn',
@@ -35815,7 +35758,7 @@ exports.formTemplate = formTemplate;
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 var config_1 = __webpack_require__(27537);
 config_1.Config.prototype.mediaFakeTag = 'jodit-media';
-config_1.Config.prototype.mediaInFakeBlock = true;
+config_1.Config.prototype.mediaInFakeBlock = false;
 config_1.Config.prototype.mediaBlocks = ['video', 'audio'];
 
 
@@ -36749,7 +36692,7 @@ var config_1 = __webpack_require__(27537);
 var constants_1 = __webpack_require__(10063);
 config_1.Config.prototype.askBeforePasteFromWord = false;
 config_1.Config.prototype.processPasteFromWord = false;
-config_1.Config.prototype.defaultActionOnPasteFromWord = null;
+config_1.Config.prototype.defaultActionOnPasteFromWord = 'insert_clear_html';
 config_1.Config.prototype.pasteFromWordActionList = [
     { value: constants_1.INSERT_AS_HTML, text: 'Keep' },
     { value: constants_1.INSERT_AS_TEXT, text: 'Clean' },
@@ -37915,8 +37858,8 @@ var tslib_1 = __webpack_require__(20255);
 var constants_1 = __webpack_require__(10063);
 var config_1 = __webpack_require__(27537);
 var helpers_1 = __webpack_require__(23063);
-config_1.Config.prototype.askBeforePasteHTML = true;
-config_1.Config.prototype.processPasteHTML = true;
+config_1.Config.prototype.askBeforePasteHTML = false;
+config_1.Config.prototype.processPasteHTML = false;
 config_1.Config.prototype.pasteHTMLActionList = [
     { value: constants_1.INSERT_AS_HTML, text: 'Keep' },
     { value: constants_1.INSERT_AS_TEXT, text: 'Insert as Text' },
@@ -39180,7 +39123,6 @@ var helpers_1 = __webpack_require__(92654);
 var plugin_1 = __webpack_require__(73177);
 var global_1 = __webpack_require__(58299);
 var decorators_1 = __webpack_require__(9901);
-var global_2 = __webpack_require__(58299);
 __webpack_require__(43087);
 var keyBInd = '__jodit-resizer_binded';
 var resizer = (function (_super) {
@@ -39280,6 +39222,11 @@ var resizer = (function (_super) {
             }
             node = node.parentNode;
         }
+    };
+    resizer.prototype.beforeDestruct = function (jodit) {
+        this.hide();
+        global_1.eventEmitter.off('hideHelpers', this.hide);
+        jodit.e.off(this.j.ow, '.resizer').off('.resizer');
     };
     resizer.prototype.addEventListeners = function () {
         var _this = this;
@@ -39559,11 +39506,6 @@ var resizer = (function (_super) {
             (0, helpers_1.$$)("[data-jodit-wrapper_active='true']", this.j.editor).forEach(function (elm) { return (0, helpers_1.attr)(elm, 'data-jodit-wrapper_active', false); });
         }
     };
-    resizer.prototype.beforeDestruct = function (jodit) {
-        this.hide();
-        global_1.eventEmitter.off('hideHelpers', this.hide);
-        jodit.e.off(this.j.ow, '.resizer').off('.resizer');
-    };
     tslib_1.__decorate([
         (0, decorators_1.watch)(':click')
     ], resizer.prototype, "onEditorClick", null);
@@ -39597,7 +39539,7 @@ var resizer = (function (_super) {
     return resizer;
 }(plugin_1.Plugin));
 exports.resizer = resizer;
-global_2.pluginSystem.add('resizer', resizer);
+global_1.pluginSystem.add('resizer', resizer);
 
 
 /***/ }),

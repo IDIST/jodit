@@ -1,4 +1,3 @@
-
 module.exports = {
 	'Type something': 'Írjon be valamit',
 	Advanced: 'Haladó',
@@ -36,10 +35,10 @@ module.exports = {
 	'Font family': 'Betűtípus',
 	'Insert format block': 'Formázott blokk beszúrása',
 	Normal: 'Normál',
-	'Heading 1': 'Fejléc 1',
-	'Heading 2': 'Fejléc 2',
-	'Heading 3': 'Fejléc 3',
-	'Heading 4': 'Fejléc 4',
+	'Header 1': 'Fejléc 1',
+	'Header 2': 'Fejléc 2',
+	'Header 3': 'Fejléc 3',
+	'Header 4': 'Fejléc 4',
 	Quote: 'Idézet',
 	Code: 'Kód',
 	Insert: 'Beszúr',

@@ -6,13 +6,6 @@
  * License(s): MIT
  */
 	
-@font-face {
-  font-family: 'Poppins';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/poppins/v20/pxiEyp8kv8JHgFVrFJA.ttf) format('truetype');
-}
 :root {
   --jd-color-white: #fff;
   --jd-color-gray: #EEEEEE;
@@ -30,7 +23,7 @@
   --jd-color-border: var(--jd-color-gray);
   --jd-color-border-dark: var(--jd-color-dark);
   --jd-color-border-focus: #ff45a1;
-  --jd-color-border-selected: #ff45a1;
+  --jd-color-border-selected: #545557;
   --jd-color-border-active: #b5b5b5;
   --jd-color-selection: var(--jd-color-dark);
   --jd-color-selection-area: #bdbdbd;
@@ -53,7 +46,7 @@
   --jd-color-button-background-hover: #dcdcdc;
   --jd-color-button-background-hover_opacity40: rgba(220, 220, 220, 0.4);
   --jd-color-button-background-hover_opacity60: rgba(220, 220, 220, 0.6);
-  --jd-font-default: 'Poppins', sans-serif;
+  --jd-font-default: 'Poppins';
   --jd-font-size-default: 12px;
   --jd-font-size-small: 11px;
   --jd-font-size-large: calc(var(--jd-font-size-default) * 3);

@@ -1,4 +1,3 @@
-
 module.exports = {
 	'Type something': 'Bir şeyler yaz',
 	Advanced: 'Gelişmiş',
@@ -35,10 +34,10 @@ module.exports = {
 	'Font family': 'Font Ailesi',
 	'Insert format block': 'Blok Ekle',
 	Normal: 'Normal',
-	'Heading 1': 'Başlık 1',
-	'Heading 2': 'Başlık 2',
-	'Heading 3': 'Başlık 3',
-	'Heading 4': 'Başlık 4',
+	'Header 1': 'Başlık 1',
+	'Header 2': 'Başlık 2',
+	'Header 3': 'Başlık 3',
+	'Header 4': 'Başlık 4',
 	Quote: 'Alıntı',
 	Code: 'Kod',
 	Insert: 'Ekle',

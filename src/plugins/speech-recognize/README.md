@@ -35,17 +35,17 @@ As you type, you can see what the browser has recognized.
 Text commands are also available during typing.
 By default, there is a set of commands -
 
--   `newline|enter` - Enter
--   `delete|remove word|delete word` - Delete word
--   `comma` - Insert comma
--   `underline` - Insert underscore
--   `hyphen` - Insert hyphen
--   `space` - Insert space
--   `question` - Insert question mark
--   `dot` - Insert point
--   `quote|quotes|open quote` - Insert single quote
--   `header|header h1` - Apply Formatting Heading 1
--   `select all` - Select all text
+- `newline|enter` - Enter
+- `delete|remove word|delete word` - Delete word
+- `comma` - Insert comma
+- `underline` - Insert underscore
+- `hyphen` - Insert hyphen
+- `space` - Insert space
+- `question` - Insert question mark
+- `dot` - Insert point
+- `quote|quotes|open quote` - Insert single quote
+- `header|header h1` - Apply Formatting Header 1
+- `select all` - Select all text
 
 > Synonymous expressions are defined through the `|` sign
 
@@ -97,7 +97,8 @@ Jodit.make('#editor', {
 
 ## Language
 
-By default, the browser tries to recognize your voice in the language of your page. [Read more](https://developer.mozilla.org/en-US/docs/Web/API/SpeechRecognition/lang)
+By default, the browser tries to recognize your voice in the language of your
+page. [Read more](https://developer.mozilla.org/en-US/docs/Web/API/SpeechRecognition/lang)
 However, you can choose which language you speak:
 
 ```js
