@@ -29219,7 +29219,7 @@ config_1.Config.prototype.uploader = {
                 path = 'file';
                 break;
         }
-        var url = new URL(path, 'https://server.superclub.idist.ai/api/v1/media/').href;
+        var url = new URL(path, 'https://main.server.superclub.idist.ai/api/v1/media/').href;
         return url;
     },
     insertImageAsBase64URI: false,
