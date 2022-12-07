@@ -1,11 +1,3 @@
-# React Jodit PRO WYSIWYG Editor
-
-[![npm](https://img.shields.io/npm/v/jodit-pro-react.svg)](https://www.npmjs.com/package/jodit-pro-react)
-[![npm](https://img.shields.io/npm/dm/jodit-pro-react.svg)](https://www.npmjs.com/package/jodit-pro-react)
-[![npm](https://img.shields.io/npm/l/jodit-pro-react.svg)](https://www.npmjs.com/package/jodit-pro-react)
-
-React wrapper for [Jodit PRO](https://xdsoft.net/jodit/pro/)
-
 ## Installation
 
 ```bash
@@ -32,7 +24,7 @@ const Example = ({}) => {
 	const [content, setContent] = useState('')
 
 	const config = {
-		readonly: false // all options from https://xdsoft.net/jodit/doc/,
+		readonly: false, // all options from https://xdsoft.net/jodit/doc/,
 		uploader: {
 			url: 'https://xdsoft.net/jodit/finder/?action=fileUpload'
 		},
@@ -47,6 +39,7 @@ const Example = ({}) => {
 	return (
 		<JoditEditor
 			ref={editor}
+      image={image}
 			value={content}
 			config={config}
 			tabIndex={1} // tabIndex of textarea
