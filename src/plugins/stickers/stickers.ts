@@ -15,7 +15,6 @@ import { autobind } from 'jodit/core/decorators';
 import { Jodit } from '../../index';
 import { TabOption, TabsWidget } from 'jodit/src/modules/widget';
 import { SearchSelectorWidget } from 'jodit/src/modules/widget/search-selector/search-selector';
-import { Dom } from 'jodit/src/modules';
 import { PopupTitleWidget } from 'jodit/src/modules/widget/popup-title/popup-title';
 
 declare module 'jodit/config' {

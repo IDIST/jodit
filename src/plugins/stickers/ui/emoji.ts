@@ -2,12 +2,11 @@ import './emoji.less';
 
 import type { IEmoji, IEmojiData, IEmojiList, IShortEmoji } from '../interface';
 import type { IDictionary, IJodit } from 'jodit/types';
-import { UIElement, UIInput } from 'jodit/core/ui';
+import { UIElement } from 'jodit/core/ui';
 import { attr, isString } from 'jodit/core/helpers';
 import {
 	autobind,
 	component,
-	debounce,
 	hook,
 	persistent,
 	throttle

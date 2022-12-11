@@ -43,26 +43,29 @@ export class GifMediaList extends MediaList {
 	}
 
 	override async search(): Promise<any> {
-		let dataMediaItems: IGif[];
+		try {
+			let result;
+			if (!this.text.length) {
+				result = await giphyApi.trending({
+					limit: this.perPage,
+					offset: this.items.length + 1,
+					rating: 'g'
+				});
+			} else {
+				result = await giphyApi.search(this.text, {
+					sort: 'relevant',
+					lang: 'ko',
+					limit: this.perPage,
+					type: 'gifs'
+				});
+			}
 
-		if (!this.text.length) {
-			const { data } = await giphyApi.trending({
-				limit: this.perPage,
-				offset: this.items.length + 1,
-				rating: 'g'
-			});
-			dataMediaItems = data;
-		} else {
-			const { data } = await giphyApi.search(this.text, {
-				sort: 'relevant',
-				lang: 'ko',
-				limit: this.perPage,
-				type: 'gifs'
-			});
-			dataMediaItems = data;
+			const dataMediaItems: IGif[] = result?.data;
+			this.createMediaItems(dataMediaItems);
+			return dataMediaItems;
+		} catch (error) {
+			console.log(error);
+			return [];
 		}
-
-		this.createMediaItems(dataMediaItems);
-		return dataMediaItems;
 	}
 }

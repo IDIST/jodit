@@ -25,7 +25,7 @@ export const SearchSelectorWidget = (
 
 	const form: HTMLFormElement = editor.c.fromHTML(
 		`<form class="jodit-form jodit-search-${fileTypeLowercase}">` +
-			'<div class="jodit-search-warpper">' +
+			'<div class="jodit-search-wrapper">' +
 			`<div class="jodit-search-${fileTypeLowercase}__search">` +
 			`<input class="jodit-input" placeholder="${editor.i18n(
 				'Search ' + fileTypeLowercase
@@ -60,26 +60,26 @@ export const SearchSelectorWidget = (
 	 * Unsplash API Guidelines: https://unsplash.com/api-terms
 	 * Unsplash API Guidelines: https://support.giphy.com/hc/en-us/articles/360028134111-GIPHY-API-Terms-of-Service-
 	 */
-	let license;
-	let licenseLink;
-	switch (fileType) {
-		case 'image':
-			license = 'Unsplash';
-			licenseLink = 'https://unsplash.com/api-terms';
-			break;
-		case 'gif':
-			license = 'Giphy';
-			licenseLink =
-				'https://support.giphy.com/hc/en-us/articles/360028134111-GIPHY-API-Terms-of-Service-';
-			break;
-	}
-	if (license) {
-		form.appendChild(
-			editor.c.fromHTML(
-				`<div class="jodit-search-${fileTypeLowercase}__license"><a href="${licenseLink}" target="_blank">Powered by <b>${license}</b></a></div>`
-			)
-		);
-	}
+	// let license;
+	// let licenseLink;
+	// switch (fileType) {
+	// 	case 'image':
+	// 		license = 'Unsplash';
+	// 		licenseLink = 'https://unsplash.com/api-terms';
+	// 		break;
+	// 	case 'gif':
+	// 		license = 'Giphy';
+	// 		licenseLink =
+	// 			'https://support.giphy.com/hc/en-us/articles/360028134111-GIPHY-API-Terms-of-Service-';
+	// 		break;
+	// }
+	// if (license) {
+	// 	form.appendChild(
+	// 		editor.c.fromHTML(
+	// 			`<div class="jodit-search-${fileTypeLowercase}__license"><a href="${licenseLink}" target="_blank">Powered by <b>${license}</b></a></div>`
+	// 		)
+	// 	);
+	// }
 
 	return form;
 };
