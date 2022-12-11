@@ -2,14 +2,31 @@
 @import (reference) '../../styles/variables';
 
 .jodit {
-	.jodit-ui-group__p,
-	.jodit-ui-group__h1,
-	.jodit-ui-group__h2,
-	.jodit-ui-group__h3,
-	.jodit-ui-group__h4,
-	.jodit-ui-group__h5,
-	.jodit-ui-group__h6 {
-		margin: 0;
-		padding: 0, var(--padding-default);
+	.jodit-popup__content {
+		div.jodit-ui-group {
+			.jodit-ui-group__p,
+			.jodit-ui-group__h1,
+			.jodit-ui-group__h2,
+			.jodit-ui-group__h3,
+			.jodit-ui-group__h4,
+			.jodit-ui-group__h5,
+			.jodit-ui-group__h6 {
+				margin: 0;
+				padding: 0 !important;
+				height: 54px !important;
+
+				button.jodit-toolbar-button__button {
+					padding: 0 16px !important;
+				}
+			}
+
+			.jodit-ui-group__p {
+				margin-top: 8px !important;
+			}
+
+			.jodit-ui-group__h6 {
+				margin-bottom: 8px !important;
+			}
+		}
 	}
 }

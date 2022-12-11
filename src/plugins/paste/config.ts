@@ -1,4 +1,3 @@
-
 /**
  * @module plugins/paste
  */
@@ -45,8 +44,8 @@ declare module 'jodit/config' {
 	}
 }
 
-Config.prototype.askBeforePasteHTML = true;
-Config.prototype.processPasteHTML = true;
+Config.prototype.askBeforePasteHTML = false;
+Config.prototype.processPasteHTML = false;
 
 Config.prototype.pasteHTMLActionList = [
 	{ value: INSERT_AS_HTML, text: 'Keep' },

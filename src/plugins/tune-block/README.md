@@ -21,15 +21,15 @@ Jodit.make('#editor', {
 
 Tune block has several button options by default, here they are:
 
--   `tune.up` - move block up
--   `tune.remove` - delete block
--   `tune.down` - move block down
--   `tune.h1` - make from block Heading 1
--   `tune.h2` - make from block Heading 2
--   `tune.h3` - make from block Heading 3
--   `tune.h4` - make from block Heading 4
--   `tune.h5` - make from block Heading 5
--   `tune.h6` - make from block Heading 6
+- `tune.up` - move block up
+- `tune.remove` - delete block
+- `tune.down` - move block down
+- `tune.h1` - make from block Header 1
+- `tune.h2` - make from block Header 2
+- `tune.h3` - make from block Header 3
+- `tune.h4` - make from block Header 4
+- `tune.h5` - make from block Header 5
+- `tune.h6` - make from block Header 6
 
 Also you can use any buttons provided by other plugins:
 
@@ -43,7 +43,8 @@ Jodit.make('#editor2', {
 });
 ```
 
-And of course you can add your own button, just like this [done for the main toolbar](https://xdsoft.net/jodit/pro/docs/how-to/add-custom-button.md)
+And of course you can add your own button, just like
+this [done for the main toolbar](https://xdsoft.net/jodit/pro/docs/how-to/add-custom-button.md)
 
 ```js
 Jodit.make('#editor2', {

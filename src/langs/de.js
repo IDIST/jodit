@@ -1,4 +1,3 @@
-
 module.exports = {
 	'Type something': 'Bitte geben Sie einen Text ein',
 	Advanced: 'Fortgeschritten',
@@ -36,10 +35,10 @@ module.exports = {
 	'Font family': 'Schriftfamilie',
 	'Insert format block': 'Formatblock einfügen',
 	Normal: 'Normal',
-	'Heading 1': 'Überschrift 1',
-	'Heading 2': 'Überschrift 2',
-	'Heading 3': 'Überschrift 3',
-	'Heading 4': 'Überschrift 4',
+	'Header 1': 'Überschrift 1',
+	'Header 2': 'Überschrift 2',
+	'Header 3': 'Überschrift 3',
+	'Header 4': 'Überschrift 4',
 	Quote: 'Zitat',
 	Code: 'Code',
 	Insert: 'Einfügen',

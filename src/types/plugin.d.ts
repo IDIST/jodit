@@ -1,12 +1,11 @@
-
 /**
  * @module types
  */
 
-import type { IJodit } from './jodit';
-import type { CanPromise, IDestructible, IInitable } from './types';
-import type { IViewBased } from './view';
-import type { ButtonGroup, IControlType } from './toolbar';
+import type {IJodit} from './jodit';
+import type {CanPromise, IDestructible, IInitable} from './types';
+import type {IViewBased} from './view';
+import type {ButtonGroup, IControlType} from './toolbar';
 
 export interface IPluginButton {
 	name: string;
@@ -16,8 +15,7 @@ export interface IPluginButton {
 }
 
 export class IPlugin<T extends IViewBased = IViewBased>
-	implements IDestructible, IInitable
-{
+	implements IDestructible, IInitable {
 	static requires?: string[];
 	requires?: string[];
 
@@ -28,10 +26,11 @@ export class IPlugin<T extends IViewBased = IViewBased>
 	 */
 	buttons?: IPluginButton[];
 
-	init(jodit: T): void;
-	destruct(jodit?: T): void;
-
 	constructor(jodit?: T);
+
+	init(jodit: T): void;
+
+	destruct(jodit?: T): void;
 }
 
 interface PluginFunction {
@@ -49,8 +48,12 @@ export interface IExtraPlugin {
 
 export interface IPluginSystem {
 	add(name: string, plugin: any): void;
+
 	wait(name: string): Promise<void>;
+
 	get(name: string): PluginType | void;
+
 	remove(name: string): void;
+
 	init(jodit: IJodit): CanPromise<void>;
 }

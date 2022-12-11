@@ -6,9 +6,9 @@
 
 import type {
 	HTMLTagNames,
-	IJodit,
 	IControlType,
-	IDictionary
+	IDictionary,
+	IJodit
 } from 'jodit/types';
 import { Config } from 'jodit/config';
 import { Dom } from 'jodit/modules/';
@@ -62,12 +62,12 @@ Config.prototype.controls.paragraph = {
 
 	list: {
 		p: 'Normal',
-		h1: 'Heading 1',
-		h2: 'Heading 2',
-		h3: 'Heading 3',
-		h4: 'Heading 4',
-		h5: 'Heading 5',
-		h6: 'Heading 6'
+		h1: 'Header 1',
+		h2: 'Header 2',
+		h3: 'Header 3',
+		h4: 'Header 4',
+		h5: 'Header 5',
+		h6: 'Header 6'
 		// blockquote: 'Quote',
 		// pre: 'Code'
 	},
@@ -110,7 +110,7 @@ Config.prototype.controls.paragraph = {
 	},
 
 	childTemplate: (e: IJodit, key: string, value: string) =>
-		`<${key} style="margin:0;padding:0"><span>${e.i18n(
+		`<${key} style="margin:0;padding:0;text-align: left"><span>${e.i18n(
 			value
 		)}</span></${key}>`,
 

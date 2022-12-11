@@ -1,4 +1,3 @@
-
 module.exports = {
 	'Type something': 'Ecrivez ici',
 	'About Jodit': 'A propos de Jodit',
@@ -35,10 +34,10 @@ module.exports = {
 	'Font family': 'Famille des caractères',
 	'Insert format block': 'Bloc formatté',
 	Normal: 'Normal',
-	'Heading 1': 'Titre 1',
-	'Heading 2': 'Titre 2',
-	'Heading 3': 'Titre 3',
-	'Heading 4': 'Titre 4',
+	'Header 1': 'Titre 1',
+	'Header 2': 'Titre 2',
+	'Header 3': 'Titre 3',
+	'Header 4': 'Titre 4',
 	Quote: 'Citation',
 	Code: 'Code',
 	Insert: 'Insérer',

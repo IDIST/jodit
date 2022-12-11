@@ -1,4 +1,3 @@
-
 /**
  * [[include:plugins/resizer/README.md]]
  * @packageDocumentation
@@ -7,8 +6,7 @@
 
 import './resizer.less';
 
-import type { HTMLTagNames, IBound, Nullable } from 'jodit/types';
-import type { IJodit } from 'jodit/types';
+import type { HTMLTagNames, IBound, IJodit, Nullable } from 'jodit/types';
 import * as consts from 'jodit/core/constants';
 import { IS_IE, KEY_ALT } from 'jodit/core/constants';
 import { Dom } from 'jodit/core/dom/dom';
@@ -16,15 +14,14 @@ import {
 	$$,
 	attr,
 	css,
-	offset,
+	dataBind,
 	innerWidth,
 	markOwner,
-	dataBind
+	offset
 } from 'jodit/core/helpers';
 import { Plugin } from 'jodit/core/plugin/plugin';
-import { eventEmitter } from 'jodit/core/global';
+import { eventEmitter, pluginSystem } from 'jodit/core/global';
 import { autobind, debounce, watch } from 'jodit/core/decorators';
-import { pluginSystem } from 'jodit/core/global';
 
 import './config';
 
@@ -61,6 +58,9 @@ export class resizer extends Plugin {
 
 	private sizeViewer: HTMLSpanElement =
 		this.rect.getElementsByTagName('span')[0];
+	private pointerX: number = 0;
+	private pointerY: number = 0;
+	private isAltMode: boolean = false;
 
 	/** @override */
 	protected afterInit(editor: IJodit): void {
@@ -120,6 +120,12 @@ export class resizer extends Plugin {
 
 			node = node.parentNode;
 		}
+	}
+
+	protected beforeDestruct(jodit: IJodit): void {
+		this.hide();
+		eventEmitter.off('hideHelpers', this.hide);
+		jodit.e.off(this.j.ow, '.resizer').off('.resizer');
 	}
 
 	private addEventListeners(): void {
@@ -204,9 +210,6 @@ export class resizer extends Plugin {
 		j.e.off(j.ow, 'mousemove.resizer touchmove.resizer', this.onResize);
 	}
 
-	private pointerX: number = 0;
-	private pointerY: number = 0;
-
 	@autobind
 	private onResize(e: MouseEvent): void {
 		if (this.isResizeMode) {
@@ -285,8 +288,6 @@ export class resizer extends Plugin {
 			e.stopImmediatePropagation();
 		}
 	}
-
-	private isAltMode: boolean = false;
 
 	@autobind
 	private onKeyDown(e: KeyboardEvent): void {
@@ -580,14 +581,6 @@ export class resizer extends Plugin {
 	private hideSizeViewer = (): void => {
 		this.sizeViewer.style.opacity = '0';
 	};
-
-	protected beforeDestruct(jodit: IJodit): void {
-		this.hide();
-
-		eventEmitter.off('hideHelpers', this.hide);
-
-		jodit.e.off(this.j.ow, '.resizer').off('.resizer');
-	}
 }
 
 pluginSystem.add('resizer', resizer);

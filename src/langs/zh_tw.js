@@ -1,4 +1,3 @@
-
 module.exports = {
 	'Type something': '輸入一些內容',
 	Advanced: '高級',
@@ -35,10 +34,10 @@ module.exports = {
 	'Font family': '字體',
 	'Insert format block': '格式塊',
 	Normal: '文本',
-	'Heading 1': '標題1',
-	'Heading 2': '標題2',
-	'Heading 3': '標題3',
-	'Heading 4': '標題4',
+	'Header 1': '標題1',
+	'Header 2': '標題2',
+	'Header 3': '標題3',
+	'Header 4': '標題4',
 	Quote: '引用',
 	Code: '代碼',
 	Insert: '插入',

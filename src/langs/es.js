@@ -1,4 +1,3 @@
-
 module.exports = {
 	'Type something': 'Escriba algo...',
 	Advanced: 'Avanzado',
@@ -35,10 +34,10 @@ module.exports = {
 	'Font family': 'Familia de letra',
 	'Insert format block': 'Insertar bloque',
 	Normal: 'Normal',
-	'Heading 1': 'Encabezado 1',
-	'Heading 2': 'Encabezado 2',
-	'Heading 3': 'Encabezado 3',
-	'Heading 4': 'Encabezado 4',
+	'Header 1': 'Encabezado 1',
+	'Header 2': 'Encabezado 2',
+	'Header 3': 'Encabezado 3',
+	'Header 4': 'Encabezado 4',
 	Quote: 'Cita',
 	Code: 'Código',
 	Insert: 'Insertar',

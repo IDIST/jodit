@@ -1,4 +1,3 @@
-
 module.exports = {
 	'Type something': 'چیزی بنویسید',
 	Advanced: 'پیشرفته',
@@ -36,10 +35,10 @@ module.exports = {
 	'Font family': 'فونت',
 	'Insert format block': 'افزودن بلاک',
 	Normal: 'معمولی',
-	'Heading 1': 'سرتیتر ۱',
-	'Heading 2': 'سرتیتر ۲',
-	'Heading 3': 'سرتیتر ۳',
-	'Heading 4': 'سرتیتر ۴',
+	'Header 1': 'سرتیتر ۱',
+	'Header 2': 'سرتیتر ۲',
+	'Header 3': 'سرتیتر ۳',
+	'Header 4': 'سرتیتر ۴',
 	Quote: 'نقل قول',
 	Code: 'سورس کد',
 	Insert: 'افزودن',

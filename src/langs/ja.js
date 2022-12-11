@@ -1,4 +1,3 @@
-
 module.exports = {
 	'Type something': 'なにかタイプしてください',
 	Advanced: '高度な設定',
@@ -35,10 +34,10 @@ module.exports = {
 	'Font family': 'フォント',
 	'Insert format block': 'テキストのスタイル',
 	Normal: '指定なし',
-	'Heading 1': 'タイトル1',
-	'Heading 2': 'タイトル2',
-	'Heading 3': 'タイトル3',
-	'Heading 4': 'タイトル4',
+	'Header 1': 'タイトル1',
+	'Header 2': 'タイトル2',
+	'Header 3': 'タイトル3',
+	'Header 4': 'タイトル4',
 	Quote: '引用',
 	Code: 'コード',
 	Insert: '挿入',

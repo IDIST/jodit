@@ -45,7 +45,6 @@ export function hAlignElement(image: HTMLElement, align: ImageHAlign): void {
  */
 export function clearAlign(node: Node): void {
 	Dom.each(node, elm => {
-		console.log('clearAlign', elm);
 		if (Dom.isHTMLElement(elm)) {
 			elm.style.display = '';
 			elm.style.textAlign = '';
