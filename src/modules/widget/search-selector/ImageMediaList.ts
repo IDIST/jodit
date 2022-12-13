@@ -56,18 +56,14 @@ export class ImageMediaList extends MediaList {
 					page: ++this.page,
 					perPage: this.perPage
 				});
-				console.log(response);
 				dataMediaItems = response?.results;
 			} else {
 				const { response } = await unsplashApi.photos.list({
 					page: ++this.page,
 					perPage: this.perPage
 				});
-				console.log(response);
 				dataMediaItems = response?.results;
 			}
-
-			console.log(this.page);
 
 			if (dataMediaItems) {
 				return dataMediaItems;
