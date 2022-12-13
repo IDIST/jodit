@@ -10,10 +10,7 @@ const Form = () => {
 	// States
 	const [config] = useState({
 		toolbarStyle: 'top',
-		minHeight: '500px',
-		uploader: {
-			url: 'https://xdsoft.net/jodit/finder/index.php?action=fileUpload'
-		}
+		minHeight: '500px'
 	});
 	const [textAreaValue] = useState('');
 
