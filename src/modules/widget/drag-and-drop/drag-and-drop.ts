@@ -90,7 +90,6 @@ export const DragAndDropWidget = (
 		},
 		error => {
 			editor.e.fire('errorMessage', error.message);
-
 			editor.e.fire('closeAllPopups');
 		}
 	);

@@ -17,17 +17,17 @@ import { PopupTitleWidget } from 'jodit/src/modules/widget/popup-title/popup-tit
 
 Config.prototype.controls.video = {
 	popup: (editor: IJodit, current, control, close) => {
-		let sourceVideo: HTMLImageElement | null = null;
+		let sourceVideo: HTMLVideoElement | null = null;
 
 		if (
 			current &&
 			!Dom.isText(current) &&
 			Dom.isHTMLElement(current) &&
-			(Dom.isTag(current, 'img') || $$('img', current).length)
+			(Dom.isTag(current, 'video') || $$('video', current).length)
 		) {
-			sourceVideo = Dom.isTag(current, 'img')
+			sourceVideo = Dom.isTag(current, 'video')
 				? current
-				: $$('img', current)[0];
+				: $$('video', current)[0];
 		}
 
 		editor.s.save();
@@ -38,24 +38,15 @@ Config.prototype.controls.video = {
 				uploadVideo: true,
 				url: async (url: string, text: string) => {
 					editor.s.restore();
-
 					if (/^[a-z\d_-]+(\.[a-z\d_-]+)+/i.test(url)) {
 						url = '//' + url;
 					}
 
-					const video: HTMLImageElement =
-						sourceVideo || editor.createInside.element('img');
-
-					video.setAttribute('src', url);
-					video.setAttribute('alt', text);
-
-					if (!sourceVideo) {
-						await editor.s.insertImage(
-							video,
-							null,
-							editor.o.imageDefaultWidth
-						);
-					}
+					editor.s.insertVideoUrl(
+						url,
+						null,
+						editor.o.imageDefaultWidth
+					);
 
 					close();
 				}

@@ -1,4 +1,3 @@
-
 /**
  * [[include:core/selection/README.md]]
  * @packageDocumentation
@@ -35,7 +34,8 @@ import {
 	css,
 	call,
 	toArray,
-	getScrollParent
+	getScrollParent,
+	convertMediaUrlToVideoEmbed
 } from 'jodit/core/helpers';
 import { CommitStyle } from './style/commit-style';
 import { autobind } from 'jodit/core/decorators';
@@ -776,6 +776,88 @@ export class Select implements ISelect {
 		 * ```
 		 */
 		this.j.e.fire('afterInsertImage', image);
+	}
+
+	/**
+	 * Insert a video in editor
+	 *
+	 * @param url - URL for video
+	 * @param styles - If specified, it will be applied <code>$(image).css(styles)</code>
+	 */
+	insertVideoUrl(
+		url: string,
+		styles: Nullable<IDictionary<string>> = null,
+		defaultWidth: Nullable<number | string> = null
+	): void {
+		const embed = convertMediaUrlToVideoEmbed(url);
+		if (embed !== url) {
+			const video = this.jodit.createInside.fromHTML(
+				embed
+			) as HTMLAnchorElement;
+			this.insertNode(video);
+			return;
+		}
+		const video = this.j.createInside.element('video');
+		video.setAttribute('src', url);
+
+		if (defaultWidth != null) {
+			let dw: string = defaultWidth.toString();
+
+			if (
+				dw &&
+				'auto' !== dw &&
+				String(dw).indexOf('px') < 0 &&
+				String(dw).indexOf('%') < 0
+			) {
+				dw += 'px';
+			}
+
+			attr(video, 'controls', '');
+			call(
+				attr,
+				video,
+				'width',
+				// @ts-ignore
+				dw
+			);
+		}
+
+		if (styles && typeof styles === 'object') {
+			css(video, styles);
+		}
+
+		const onload = (): void => {
+			if (
+				video.videoHeight < video.offsetHeight ||
+				video.videoWidth < video.offsetWidth
+			) {
+				video.style.width = '';
+				video.style.height = '';
+			}
+
+			video.removeEventListener('load', onload);
+		};
+
+		this.j.e.on(video, 'load', onload);
+
+		// if (video.complete) {
+		// 	onload();
+		// }
+
+		this.insertNode(video);
+
+		/**
+		 * Triggered after image was inserted [[Select.insertImage]]. This method can executed from
+		 * [[FileBrowser]] or [[Uploader]]
+		 * @example
+		 * ```javascript
+		 * var editor = Jodit.make("#redactor");
+		 * editor.e.on('afterInsertImage', function (image) {
+		 *     image.className = 'bloghead4';
+		 * });
+		 * ```
+		 */
+		this.j.e.fire('afterInsertVideo', video);
 	}
 
 	/**

@@ -1,4 +1,3 @@
-
 /**
  * @module helpers/checker
  */

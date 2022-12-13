@@ -1,4 +1,3 @@
-
 /**
  * [[include:plugins/backspace/README.md]]
  * @packageDocumentation

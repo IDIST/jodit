@@ -1,4 +1,3 @@
-
 /**
  * [[include:plugins/link/README.md]]
  * @packageDocumentation

@@ -1,4 +1,3 @@
-
 /**
  * @module types
  */
@@ -25,7 +24,6 @@ export interface ISelect {
 	createRange(select?: boolean): Range;
 	clear(): void;
 
-
 	current(checkChild?: boolean): Nullable<Node>;
 	focus(options?: FocusOptions): boolean;
 	isFocused(): boolean;
@@ -45,12 +43,14 @@ export interface ISelect {
 		insertCursorAfter?: boolean,
 		fireChange?: boolean
 	): void;
-	insertHTML(
-		html: number | string | Node,
-		insertCursorAfter?: boolean
-	): void;
+	insertHTML(html: number | string | Node, insertCursorAfter?: boolean): void;
 	insertImage(
 		url: string | HTMLImageElement,
+		styles?: Nullable<IDictionary<string>>,
+		defaultWidth?: Nullable<number | string>
+	): void;
+	insertVideoUrl(
+		url: string,
 		styles?: Nullable<IDictionary<string>>,
 		defaultWidth?: Nullable<number | string>
 	): void;
