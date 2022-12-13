@@ -278,10 +278,28 @@ export class ToolbarButton<T extends IViewBased = IViewBased>
 					this
 				);
 
+				let titleElm;
+
+				if (ctr.popupTitle) {
+					titleElm = ctr.popupTitle(
+						this.j,
+						target,
+						ctr,
+						this.closePopup,
+						this
+					);
+				}
+
 				if (elm) {
 					popup
 						.setContent(
-							isString(elm) ? this.j.c.fromHTML(elm) : elm
+							isString(elm) ? this.j.c.fromHTML(elm) : elm,
+							titleElm
+								? isString(titleElm)
+									? this.j.c.fromHTML(titleElm)
+									: titleElm
+								: '',
+							ctr?.popupContentExtraClassName
 						)
 						.open(
 							() => position(this.container),

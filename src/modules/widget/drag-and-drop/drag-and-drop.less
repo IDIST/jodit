@@ -1,47 +1,74 @@
 @import (reference) '../../../styles/variables';
+.jodit-media-dnd {
+	padding: 12px 24px 24px 24px;
+	.drag-and-drop {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		position: relative;
+		overflow: hidden;
+		width: 100%;
+		height: 270px;
+		padding: 0 30px;
+		text-align: center;
+		//aspect-ratio : 1 / 1;
 
-.drag-and-drop {
-	position: relative;
-	overflow: hidden;
-	width: 100%;
-	height: 162px;
-	padding: 25px 0;
-	text-align: center;
-	//aspect-ratio : 1 / 1;
-	background: #F8F8F8;
-	font-weight: 400;
-	font-size: 14px;
-	line-height: 30px;
-	color: #A7A8AB;
-	display: flex;
-	flex-direction: column;
-	align-content: center;
-	justify-content: center;
-	border-radius: var(--border-radius-default);
+		background-color: #eeeeee;
+		border: 1px solid #e0e0e0;
+		border-radius: 12px;
 
-	.icon {
-		height: 32px;
+		// font-weight: 400;
+		// font-size: 14px;
+		// line-height: 30px;
+		// color: #a7a8ab;
+		// display: flex;
+		// flex-direction: column;
+		// align-content: center;
+		// justify-content: center;
+		// border-radius: var(--border-radius-default);
 
-		svg {
-			fill: var(--color-label);
+		.icon {
+			display: flex;
+			height: auto;
+			&::before {
+				display: flex;
+				// background: data-uri('./assets/no-result.svg') no-repeat
+				// center;
+				content: '';
+				background: data-uri('./dnd.svg') no-repeat center;
+				width: 60px;
+				height: 60px;
+			}
 		}
-	}
 
-	&:hover {
-		background-color: var(--color-background-button-hover);
-	}
+		span {
+			margin-top: 8px;
+			font-family: 'Poppins';
+			font-style: normal;
+			font-weight: 500;
+			font-size: 16px;
+			line-height: 24px;
+			letter-spacing: -0.32px;
+			color: #777777;
+		}
 
-	input {
-		position: absolute;
-		top: 0;
-		right: 0;
-		bottom: 0;
-		left: 0;
-		padding: 0;
-		margin: 0;
-		cursor: pointer;
-		font-size: 400px;
-		opacity: 0;
+		&:hover {
+			background-color: var(--color-background-button-hover);
+		}
+
+		input {
+			position: absolute;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+			padding: 0;
+			margin: 0;
+			cursor: pointer;
+			font-size: 400px;
+			opacity: 0;
+		}
 	}
 }
 

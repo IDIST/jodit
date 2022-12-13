@@ -19,6 +19,7 @@ module.exports = {
 		'./src/plugins/page-break',
 		'./src/plugins/export-docs',
 		'./src/plugins/iframe-editor',
-		'./src/plugins/paste-from-word'
+		'./src/plugins/paste-from-word',
+		'./src/plugins/stickers'
 	]
 };

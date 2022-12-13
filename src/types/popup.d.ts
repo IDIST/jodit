@@ -2,8 +2,8 @@
  * @module types
  */
 
-import type {IBound, IDestructible} from './types';
-import type {IUIElement} from './ui';
+import type { IBound, IDestructible } from './types';
+import type { IUIElement } from './ui';
 
 export type PopupStrategy =
 	| 'leftBottom'
@@ -26,7 +26,11 @@ export interface IPopup extends IUIElement, IDestructible {
 		parentContainer?: HTMLElement
 	): this;
 
-	setContent(content: IUIElement | HTMLElement | string): this;
+	setContent(
+		content: IUIElement | HTMLElement | string,
+		title?: IUIElement | HTMLElement | string,
+		popupContentExtraClassName?: string
+	): this;
 
 	updatePosition(): this;
 

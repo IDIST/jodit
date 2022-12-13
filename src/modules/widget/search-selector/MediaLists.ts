@@ -13,8 +13,8 @@ export class MediaLists {
 	callbacks: ImageSelectorCallbacks;
 
 	fileType: imageFileType;
-	element: HTMLElement;
-	mediaLists: { [key: string]: ImageMediaList | GifMediaList } = {};
+	// element: HTMLElement;
+	// mediaLists: { [key: string]: ImageMediaList | GifMediaList } = {};
 	mediaList: ImageMediaList | GifMediaList | null = null;
 	close: () => void;
 
@@ -28,51 +28,66 @@ export class MediaLists {
 		this.callbacks = callbacks;
 		this.fileType = fileType;
 		this.close = close;
-		this.element = editor.c.fromHTML(
-			'<div class="jodit-media-lists"></div>'
-		);
-		const mediaList: ImageMediaList | GifMediaList =
-			this.createMediaList('');
-		this.setMediaList(mediaList);
+		// this.element = editor.c.fromHTML(
+		// 	'<div class="jodit-media-lists"></div>'
+		// );
+
+		this.createMediaList('');
+
+		// this.setMediaList(mediaList);
 	}
 
-	private createMediaList(search: string): ImageMediaList | GifMediaList {
+	// image 또는 gif mediaList 객체 바인딩, 검색어 있을때마다 객체 새로 생성..?
+	private createMediaList(searchWord: string): ImageMediaList | GifMediaList {
 		let mediaList: ImageMediaList | GifMediaList;
 		if (this.fileType === 'image') {
 			mediaList = new ImageMediaList(
 				this.editor,
 				this.callbacks,
-				search,
+				searchWord,
 				this.close
 			);
 		} else {
 			mediaList = new GifMediaList(
 				this.editor,
 				this.callbacks,
-				search,
+				searchWord,
 				this.close
 			);
 		}
 
-		this.mediaLists[search] = mediaList;
-		this.element.appendChild(mediaList.element);
-		this.setMediaList(mediaList);
+		// this.mediaLists[searchWord] = mediaList;
+		this.mediaList = mediaList;
+		// this.element.appendChild(mediaList.element);
 		return mediaList;
 	}
 
-	setMediaList(
-		mediaList: ImageMediaList | GifMediaList
-	): ImageMediaList | GifMediaList {
-		if (this.mediaList) {
-			this.mediaList.element.style.display = 'none';
-		}
-		this.mediaList = mediaList;
-		this.mediaList.element.removeAttribute('style');
-		return this.mediaList;
-	}
+	// private setMediaList(
+	// 	mediaList: ImageMediaList | GifMediaList
+	// ): ImageMediaList | GifMediaList {
+	// 	if (this.mediaList) {
+	// 		this.mediaList.element.style.display = 'none';
+	// 	}
+	// 	this.mediaList = mediaList;
+	// 	this.mediaList.element.removeAttribute('style');
+	// 	return this.mediaList;
+	// }
 
-	setSearch(search: string): ImageMediaList | GifMediaList {
-		if (this.mediaLists[search]) return this.mediaLists[search];
-		else return this.createMediaList(search);
+	/**
+	 *
+	 * @param searchWord searchWord keyword
+	 * @returns return not used
+	 *
+	 * input debounce onChange
+	 */
+	search(searchWord: string): any {
+		// if (this.mediaLists[searchWord]) return this.mediaLists[searchWord];
+		// else return this.createMediaList(searchWord);
+		if (this.mediaList) {
+			this.mediaList.search(searchWord);
+		} else {
+			this.createMediaList(searchWord);
+			this.search(searchWord);
+		}
 	}
 }

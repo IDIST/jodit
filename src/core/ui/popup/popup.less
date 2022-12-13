@@ -6,7 +6,6 @@
 }
 
 .jodit-popup {
-
 	.jodit-box();
 
 	position: fixed;
@@ -19,7 +18,7 @@
 		.font();
 
 		padding: 0;
-		border: 1px solid #E0E0E0;
+		border: 1px solid #e0e0e0;
 		border-radius: var(--border-radius-default);
 		box-shadow: var(--popup-box-shadow);
 		background: var(--color-background-default);
@@ -52,6 +51,18 @@
 		//	outline: none;
 		//}
 
+		&__custom {
+			border-radius: 20px;
+		}
+
+		.masonry {
+			display: grid;
+			grid-template-columns: repeat(2, 1fr);
+			column-gap: 4px;
+			&-item {
+				display: flex;
+			}
+		}
 	}
 
 	&_max-height_false &__content {
@@ -65,7 +76,7 @@
 	&:after {
 		background-color: #fff;
 		box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
-		content: "";
+		content: '';
 		width: 6px;
 		height: 6px;
 		bottom: -3px;
@@ -81,7 +92,7 @@
 	&:after {
 		background-color: #fff;
 		box-shadow: -1px -1px 4px rgba(0, 0, 0, 0.2);
-		content: "";
+		content: '';
 		width: 6px;
 		height: 6px;
 		top: -3px;

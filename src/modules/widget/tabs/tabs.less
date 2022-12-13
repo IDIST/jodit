@@ -3,27 +3,33 @@
 
 .jodit-tabs {
 	.font();
+	// 임시
+	width: 280px;
+	// padding: 20px 24px;
 
 	.jodit-tabs__buttons {
-		position: fixed;
+		position: relative;
 		z-index: 1;
 		top: 0;
-		width: 100%;
+		width: calc(100% - 48px);
+		margin: 0 24px;
 		background-color: white;
 		display: flex;
-		justify-content: center;
+		justify-content: flex-start;
+		gap: 30px;
 		line-height: 18px;
-		border-bottom: 1px solid #E0E0E0;
-		border-top-left-radius: var(--border-radius-default);
-		border-top-right-radius: var(--border-radius-default);
+
+		border-bottom: 1px solid #e0e0e0;
+		border-top-left-radius: 0;
+		border-top-right-radius: 0;
 		overflow: hidden;
 
 		> * {
-			margin-left: calc(var(--padding-default) / 2);
+			margin-left: 0;
 			cursor: pointer;
 
 			&:only-of-type {
-				width: 100%;
+				width: auto;
 			}
 
 			&:first-child {
@@ -42,27 +48,34 @@
 	}
 
 	&__button {
-		min-width: 80px;
-		padding-top: 6px;
-		min-height: 50px;
+		display: flex;
+		min-width: auto;
+		padding: 0;
+		padding-bottom: 10px;
+		min-height: auto;
+		height: auto;
 		background: white !important;
 		border-radius: 0;
 
-		&[aria-pressed="true"] {
-			border-bottom: 2px solid #9013FE;
+		&[aria-pressed='true'] {
+			border-bottom: 2px solid #9013fe;
 
 			.jodit-ui-button__text {
 				font-weight: 600;
-				color: #9013FE;
+				color: #9013fe;
 			}
 		}
 
+		&_columns_1 {
+			// width: 20px;
+		}
+
 		&_columns_3 {
-			width: calc(100% / 3);
+			width: auto;
 		}
 
 		&_columns_2 {
-			width: 50%;
+			width: auto;
 		}
 
 		.jodit-ui-button__icon {
@@ -74,6 +87,8 @@
 			font-size: 14px;
 			line-height: 20px;
 			color: var(--color-label);
+			margin-left: 0 !important;
+			padding: 0 !important;
 		}
 	}
 
@@ -87,16 +102,16 @@
 		font-weight: 600;
 		font-size: 14px;
 		line-height: 20px;
-		color: #242A3C;
+		color: #242a3c;
 		padding: 20px 18px 0px 18px;
 	}
 
 	.jodit-tabs__wrapper {
 		position: relative;
 		box-sizing: content-box;
-		width: 264px;
+		width: auto;
 
-		padding: 62px 20px 20px 20px;
+		padding: 0;
 
 		.jodit-tab {
 			display: none;
@@ -111,5 +126,4 @@
 			}
 		}
 	}
-
 }

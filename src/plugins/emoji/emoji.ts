@@ -14,15 +14,15 @@ import { trim } from 'jodit/core/helpers';
 import { autobind } from 'jodit/core/decorators';
 import { Jodit } from '../../index';
 
-declare module 'jodit/config' {
-	interface Config {
-		emoji: {
-			data: () => Promise<IEmojiData>;
-			enableAutoComplete: boolean;
-			recentCountLimit: number;
-		};
-	}
-}
+// declare module 'jodit/config' {
+// 	interface Config {
+// 		emoji: {
+// 			data: () => Promise<IEmojiData>;
+// 			enableAutoComplete: boolean;
+// 			recentCountLimit: number;
+// 		};
+// 	}
+// }
 
 Config.prototype.emoji = {
 	data: (): any => require('./emoji.json'),

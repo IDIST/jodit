@@ -7,6 +7,7 @@ import { Config } from 'jodit/config';
 import { Dom } from 'jodit/core/dom';
 import { $$ } from 'jodit/core/helpers';
 import { FileSelectorWidget } from 'jodit/modules/widget';
+import { PopupTitleWidget } from 'jodit/src/modules/widget/popup-title/popup-title';
 // import { Dom } from 'jodit/core/dom/dom';
 // import { FileSelectorWidget } from 'jodit/modules/widget';
 // import { UIForm, UIBlock, UIInput } from 'jodit/core/ui/form';
@@ -42,6 +43,9 @@ Config.prototype.controls.file = {
 			close
 		);
 	},
+	popupTitle: (editor: IJodit, _: any, _1: any, close: any): HTMLElement =>
+		PopupTitleWidget(editor, 'File', close),
+	popupContentExtraClassName: 'custom',
 	tags: ['a'],
 	tooltip: 'Insert a file',
 	icon: require('./ui/file.svg')

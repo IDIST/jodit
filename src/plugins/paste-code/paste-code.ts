@@ -169,7 +169,7 @@ export class pasteCode extends Plugin {
 	@watch('?:change')
 	@debounce()
 	protected onChange(): void {
-		$$('pre', this.j.editor).forEach((pre) => {
+		$$('pre', this.j.editor).forEach(pre => {
 			if (!attr(pre, 'contenteditable')) {
 				attr(pre, 'contenteditable', false);
 				this.highlightCode(pre);
@@ -232,7 +232,7 @@ export class pasteCode extends Plugin {
 		let language = null;
 
 		const getLang = (code: HTMLElement): void =>
-			code.classList.forEach((className) => {
+			code.classList.forEach(className => {
 				if (/language-/.test(className)) {
 					const lng = /language-(.*)/.exec(className);
 					if (lng && lng[1]) {

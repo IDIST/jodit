@@ -5,7 +5,9 @@
 	--switche-width: 60px;
 	--switche-height: 32px;
 	--switche-slider-margin: 4px;
-	--switche-slider-size: calc(var(--switche-height) - var(--switche-slider-margin) * 2);
+	--switche-slider-size: calc(
+		var(--switche-height) - var(--switche-slider-margin) * 2
+	);
 }
 
 .jodit-form {
@@ -244,8 +246,12 @@
 		background-color: var(--color-background-active);
 
 		&:before {
-			transform: translateX(calc(var(--switche-width) - var(--switche-slider-margin) * 2 -
-			var(--switche-slider-size)));
+			transform: translateX(
+				calc(
+					var(--switche-width) - var(--switche-slider-margin) * 2 -
+						var(--switche-slider-size)
+				)
+			);
 		}
 	}
 
