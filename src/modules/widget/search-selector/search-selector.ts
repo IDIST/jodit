@@ -44,14 +44,16 @@ export const SearchSelectorWidget = (
 	) as HTMLDivElement;
 
 	const mediaLists = new MediaLists(editor, callbacks, fileType, close);
-	resultContainer.appendChild(mediaLists.element);
+	if (mediaLists.mediaList?.element) {
+		resultContainer.appendChild(mediaLists.mediaList?.element);
+	}
 
 	if (searchInput) {
 		searchInput.addEventListener(
 			'input',
 			editor.async.debounce(event => {
 				// @ts-ignore
-				mediaLists.setSearch(event?.target?.value);
+				mediaLists.search(event?.target?.value);
 			}, editor.defaultTimeout)
 		);
 	}

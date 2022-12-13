@@ -51,13 +51,48 @@
 
 		&__search-result {
 			height: 238px;
+			padding-bottom: 24px;
 
-			overflow-y: scroll;
-			padding-bottom: 78px;
-			padding: 0 16px;
 			img {
 				width: 100%;
 				height: 100%;
+			}
+
+			.jodit-media {
+				height: 100%;
+				&-list {
+					padding: 0 16px;
+					height: 100%;
+					overflow-y: auto;
+				}
+
+				&-empty {
+					height: 100%;
+					display: flex;
+					flex-direction: column;
+					justify-content: center;
+					align-items: center;
+					padding: 0 10px;
+
+					font-family: 'Poppins';
+					font-style: normal;
+					font-weight: 700;
+					font-size: 18px;
+					line-height: 22px;
+					color: #242a3c;
+					text-align: center;
+
+					&::before {
+						content: '';
+						display: flex;
+						width: 180px;
+						height: 108px;
+						margin-bottom: 20px;
+						// background: url('assets/no-result.svg') no-repeat center;
+						background: data-uri('./assets/no-result.svg') no-repeat
+							center;
+					}
+				}
 			}
 		}
 		&__license {

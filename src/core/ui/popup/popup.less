@@ -54,6 +54,15 @@
 		&__custom {
 			border-radius: 20px;
 		}
+
+		.masonry {
+			display: grid;
+			grid-template-columns: repeat(2, 1fr);
+			column-gap: 4px;
+			&-item {
+				display: flex;
+			}
+		}
 	}
 
 	&_max-height_false &__content {

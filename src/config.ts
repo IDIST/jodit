@@ -20,12 +20,10 @@ import { INSERT_AS_HTML } from './core/constants';
 
 const buttons = [
 	// Media
-	'emoji',
+	'stickers',
 	'image',
-	'gif',
 	'video',
 	'file',
-	'stickers',
 	'\n',
 	// Do
 	// 'undo',
