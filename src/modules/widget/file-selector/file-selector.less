@@ -1,1 +1,60 @@
+.jodit {
+	&-media-url {
+		padding: 12px 24px 24px 24px;
 
+		.jodit-ui-input__label {
+			font-family: 'Poppins';
+			font-style: normal;
+			font-weight: 500;
+			font-size: 14px;
+			line-height: 20px;
+			letter-spacing: -0.28px;
+			color: #242a3c;
+		}
+
+		.jodit-ui-input {
+			&__wrapper {
+				margin-top: 4px;
+				background-color: inherit;
+			}
+
+			&__input {
+				background: #ffffff;
+				border: 1px solid #e0e0e0;
+				border-radius: 8px;
+				padding: 0 16px;
+				&::placeholder {
+					color: #bdbdbd;
+				}
+				&:focus {
+					border: 1px solid #7d0edf;
+				}
+			}
+		}
+
+		.jodit-ui-block {
+			display: flex;
+
+			margin: 0;
+			padding: 0;
+			margin-top: 44px;
+
+			.jodit-ui-button {
+				flex: 1;
+				height: 52px;
+				background: #9013fe;
+				border: 1px solid #7d0edf;
+				border-radius: 10px;
+
+				&__text {
+					font-weight: 500;
+					font-size: 17px;
+					line-height: 24px;
+					text-align: center;
+					letter-spacing: -0.34px;
+					color: #ffffff;
+				}
+			}
+		}
+	}
+}

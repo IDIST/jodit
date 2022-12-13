@@ -25,11 +25,11 @@
 		overflow: hidden;
 
 		> * {
-			margin-left: calc(var(--padding-default) / 2);
+			margin-left: 0;
 			cursor: pointer;
 
 			&:only-of-type {
-				width: 100%;
+				width: auto;
 			}
 
 			&:first-child {
@@ -66,6 +66,10 @@
 			}
 		}
 
+		&_columns_1 {
+			// width: 20px;
+		}
+
 		&_columns_3 {
 			width: auto;
 		}
@@ -83,9 +87,7 @@
 			font-size: 14px;
 			line-height: 20px;
 			color: var(--color-label);
-		}
-
-		.jodit-ui-button__text {
+			margin-left: 0 !important;
 			padding: 0 !important;
 		}
 	}

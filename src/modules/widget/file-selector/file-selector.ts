@@ -84,6 +84,61 @@ export const FileSelectorWidget = (
 
 	const tabs: TabOption[] = [];
 
+	if (callbacks.url) {
+		const button = new UIButton(editor, {
+				type: 'submit',
+				variant: 'primary',
+				text: 'Confirm'
+			}),
+			form = new UIForm(editor, [
+				new UIInput(editor, {
+					required: true,
+					label: 'URL',
+					name: 'url',
+					type: 'text',
+					placeholder: 'https://'
+				}),
+				// new UIInput(editor, {
+				// 	name: 'text',
+				// 	label: 'Alternative text'
+				// }),
+
+				new UIBlock(editor, [button])
+			]);
+
+		form.container.classList.add('jodit-media-url');
+		currentImage = null;
+
+		if (
+			elm &&
+			!Dom.isText(elm) &&
+			(Dom.isTag(elm, 'img') || $$('img', elm).length)
+		) {
+			currentImage = elm.tagName === 'IMG' ? elm : $$('img', elm)[0];
+			val(form.container, 'input[name=url]', attr(currentImage, 'src'));
+			val(form.container, 'input[name=text]', attr(currentImage, 'alt'));
+			button.state.text = 'Update';
+		}
+
+		if (elm && Dom.isTag(elm, 'a')) {
+			val(form.container, 'input[name=url]', attr(elm, 'href'));
+			val(form.container, 'input[name=text]', attr(elm, 'title'));
+			button.state.text = 'Update';
+		}
+
+		form.onSubmit(data => {
+			if (isFunction(callbacks.url)) {
+				callbacks.url.call(editor, data.url, data.text);
+			}
+		});
+
+		tabs.push({
+			icon: 'link',
+			name: 'URL',
+			content: form.container
+		});
+	}
+
 	if (
 		callbacks.upload &&
 		editor.o.uploader &&
@@ -148,59 +203,6 @@ export const FileSelectorWidget = (
 				}
 			});
 		}
-	}
-
-	if (callbacks.url) {
-		const button = new UIButton(editor, {
-				type: 'submit',
-				variant: 'primary',
-				text: 'Insert'
-			}),
-			form = new UIForm(editor, [
-				new UIInput(editor, {
-					required: true,
-					label: 'URL',
-					name: 'url',
-					type: 'text',
-					placeholder: 'https://'
-				}),
-				new UIInput(editor, {
-					name: 'text',
-					label: 'Alternative text'
-				}),
-				new UIBlock(editor, [button])
-			]);
-
-		currentImage = null;
-
-		if (
-			elm &&
-			!Dom.isText(elm) &&
-			(Dom.isTag(elm, 'img') || $$('img', elm).length)
-		) {
-			currentImage = elm.tagName === 'IMG' ? elm : $$('img', elm)[0];
-			val(form.container, 'input[name=url]', attr(currentImage, 'src'));
-			val(form.container, 'input[name=text]', attr(currentImage, 'alt'));
-			button.state.text = 'Update';
-		}
-
-		if (elm && Dom.isTag(elm, 'a')) {
-			val(form.container, 'input[name=url]', attr(elm, 'href'));
-			val(form.container, 'input[name=text]', attr(elm, 'title'));
-			button.state.text = 'Update';
-		}
-
-		form.onSubmit(data => {
-			if (isFunction(callbacks.url)) {
-				callbacks.url.call(editor, data.url, data.text);
-			}
-		});
-
-		tabs.push({
-			icon: 'link',
-			name: 'URL',
-			content: form.container
-		});
 	}
 
 	return TabsWidget(editor, tabs);

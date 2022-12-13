@@ -42,7 +42,7 @@ export const TabsWidget = (
 	const box = jodit.c.div('jodit-tabs'),
 		tabBox = jodit.c.div('jodit-tabs__wrapper'),
 		buttons = jodit.c.div('jodit-tabs__buttons'),
-		title = jodit.c.div('jodit-tabs__title'),
+		// title = jodit.c.div('jodit-tabs__title'),
 		nameToTab: IDictionary<{
 			button: IUIButton;
 			tab: HTMLElement;
@@ -53,13 +53,14 @@ export const TabsWidget = (
 		tabCount: number = 0;
 
 	// 탭이 1개일 경우, 탭 내용만 추가합니다.
-	if (tabs.length !== 1) {
-		box.appendChild(buttons);
-	} else {
-		box.appendChild(title);
-		tabBox.style.paddingTop = '52px';
-		title.innerHTML = jodit.i18n(tabs[0].name);
-	}
+	box.appendChild(buttons);
+	// if (tabs.length !== 1) {
+	// 	box.appendChild(buttons);
+	// } else {
+	// 	box.appendChild(title);
+	// 	tabBox.style.paddingTop = '52px';
+	// 	title.innerHTML = jodit.i18n(tabs[0].name);
+	// }
 	box.appendChild(tabBox);
 
 	const setActive = (tab: string): void => {

@@ -58,6 +58,12 @@ Config.prototype.controls.stickers = {
 		});
 
 		tabs.push({
+			// icon: 'emoji',
+			name: 'Emoji',
+			content: box.container
+		});
+
+		tabs.push({
 			name: 'Gif',
 			content: SearchSelectorWidget(
 				editor,
@@ -67,12 +73,6 @@ Config.prototype.controls.stickers = {
 				'gif',
 				close
 			)
-		});
-
-		tabs.push({
-			// icon: 'emoji',
-			name: 'Emoji',
-			content: box.container
 		});
 
 		const tabContent = TabsWidget(editor, tabs);

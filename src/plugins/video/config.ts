@@ -13,6 +13,7 @@ import { Config } from 'jodit/config';
 import { FileSelectorWidget } from 'jodit/modules/widget';
 import { $$ } from 'jodit/core/helpers';
 import { Dom } from 'jodit/core/dom';
+import { PopupTitleWidget } from 'jodit/src/modules/widget/popup-title/popup-title';
 
 Config.prototype.controls.video = {
 	popup: (editor: IJodit, current, control, close) => {
@@ -63,6 +64,10 @@ Config.prototype.controls.video = {
 			close
 		);
 	},
+
+	popupTitle: (editor: IJodit, _: any, _1: any, close: any): HTMLElement =>
+		PopupTitleWidget(editor, 'Video', close),
+	popupContentExtraClassName: 'custom',
 
 	tags: ['video'],
 	tooltip: 'Insert a video',
