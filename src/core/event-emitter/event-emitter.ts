@@ -1,4 +1,3 @@
-
 /**
  * [[include:core/event-emitter/README.md]]
  * @packageDocumentation

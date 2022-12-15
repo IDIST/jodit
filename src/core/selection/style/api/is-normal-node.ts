@@ -1,4 +1,3 @@
-
 import type { Nullable } from 'jodit/types';
 import { Dom } from 'jodit/core/dom';
 

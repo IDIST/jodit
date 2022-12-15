@@ -1,4 +1,3 @@
-
 /**
  * @module plugins/drag-and-drop-element
  */
@@ -14,4 +13,10 @@ declare module 'jodit/config' {
 	}
 }
 
-Config.prototype.draggableTags = ['img', 'jodit-media', 'jodit'];
+Config.prototype.draggableTags = [
+	'img',
+	'jodit-media',
+	'jodit',
+	'video',
+	'iframe'
+];

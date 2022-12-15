@@ -1,4 +1,3 @@
-
 import type { CommitStyle } from '../commit-style';
 import type { IDictionary } from 'jodit/types';
 import { Dom } from 'jodit/core/dom';

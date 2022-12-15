@@ -1,4 +1,3 @@
-
 /**
  * @module selection
  */
@@ -16,6 +15,9 @@ export function moveNodeInsideStart(
 	node: Node,
 	start: boolean
 ): void {
+	// console.log(
+	// 	'🚀 ~ file: move-node-inside-start.ts:15 ~ moveNodeInsideStart'
+	// );
 	let sibling = Dom.findSibling(node, start),
 		anotherSibling = Dom.findSibling(node, !start);
 

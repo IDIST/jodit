@@ -1,4 +1,3 @@
-
 /**
  * @module plugins/clean-html
  */
@@ -15,6 +14,9 @@ export function removeFormatForCollapsedSelection(
 	jodit: IJodit,
 	fake?: Node
 ): Nullable<Text> | void {
+	// console.log(
+	// 	'🚀 ~ file: remove-format-for-collapsed-selection.ts:14 ~ removeFormatForCollapsedSelection'
+	// );
 	const { s } = jodit;
 
 	let fakeNode = fake;
@@ -49,5 +51,8 @@ export function removeFormatForCollapsedSelection(
  * Element has inline display mode
  */
 export function isInlineBlock(node: Nullable<Node>): node is Node {
+	// console.log(
+	// 	'🚀 ~ file: remove-format-for-collapsed-selection.ts:54 ~ isInlineBlock ~ isInlineBlock'
+	// );
 	return Dom.isInlineBlock(node) && !Dom.isTag(node, INSEPARABLE_TAGS);
 }

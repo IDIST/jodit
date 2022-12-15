@@ -1,4 +1,3 @@
-
 /**
  * [[include:plugins/clean-html/README.md]]
  * @packageDocumentation

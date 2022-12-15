@@ -5,8 +5,7 @@
  */
 // Jodit
 import type { IFileBrowserCallBackData, IJodit } from 'jodit/types';
-import { isFunction, $$, attr, val } from 'jodit/core/helpers';
-import { Dom } from 'jodit/core/dom';
+import { isFunction } from 'jodit/core/helpers';
 import { UIBlock, UIForm, UIInput, UIButton } from 'jodit/core/ui';
 
 // Widgets
@@ -76,68 +75,13 @@ export interface ImageSelectorCallbacks {
 export const FileSelectorWidget = (
 	editor: IJodit,
 	callbacks: ImageSelectorCallbacks,
-	elm: HTMLElement | null,
+	// elm: HTMLElement | null,
 	close: () => void,
 	isImage: boolean = true
 ): HTMLDivElement => {
-	let currentImage: any;
+	// let currentImage: any;
 
 	const tabs: TabOption[] = [];
-
-	if (callbacks.url) {
-		const button = new UIButton(editor, {
-				type: 'submit',
-				variant: 'primary',
-				text: 'Confirm'
-			}),
-			form = new UIForm(editor, [
-				new UIInput(editor, {
-					required: true,
-					label: 'URL',
-					name: 'url',
-					type: 'text',
-					placeholder: 'https://'
-				}),
-				// new UIInput(editor, {
-				// 	name: 'text',
-				// 	label: 'Alternative text'
-				// }),
-
-				new UIBlock(editor, [button])
-			]);
-
-		form.container.classList.add('jodit-media-url');
-		currentImage = null;
-
-		if (
-			elm &&
-			!Dom.isText(elm) &&
-			(Dom.isTag(elm, 'img') || $$('img', elm).length)
-		) {
-			currentImage = elm.tagName === 'IMG' ? elm : $$('img', elm)[0];
-			val(form.container, 'input[name=url]', attr(currentImage, 'src'));
-			val(form.container, 'input[name=text]', attr(currentImage, 'alt'));
-			button.state.text = 'Update';
-		}
-
-		if (elm && Dom.isTag(elm, 'a')) {
-			val(form.container, 'input[name=url]', attr(elm, 'href'));
-			val(form.container, 'input[name=text]', attr(elm, 'title'));
-			button.state.text = 'Update';
-		}
-
-		form.onSubmit(data => {
-			if (isFunction(callbacks.url)) {
-				callbacks.url.call(editor, data.url, data.text);
-			}
-		});
-
-		tabs.push({
-			icon: 'link',
-			name: 'URL',
-			content: form.container
-		});
-	}
 
 	if (
 		callbacks.upload &&
@@ -203,6 +147,67 @@ export const FileSelectorWidget = (
 				}
 			});
 		}
+	}
+
+	if (callbacks.url) {
+		const button = new UIButton(editor, {
+				type: 'submit',
+				variant: 'primary',
+				text: 'Confirm'
+			}),
+			input = new UIInput(editor, {
+				required: true,
+				validators: ['hello'],
+				label: 'URL',
+				name: 'url',
+				type: 'url',
+				placeholder: 'https://'
+			}),
+			errorMsg = editor.c.span('error_msg'),
+			form = new UIForm(editor, [input, new UIBlock(editor, [button])]);
+
+		form.container.classList.add('jodit-media-url');
+		input.container.appendChild(errorMsg);
+
+		input.nativeInput.addEventListener('invalid', e => {
+			e.preventDefault();
+			input.nativeInput.classList.add('invalidated');
+			errorMsg.innerText = input.nativeInput.validationMessage;
+		});
+
+		input.nativeInput.addEventListener('input', e => {
+			input.nativeInput.classList.remove('invalidated');
+			errorMsg.innerText = '';
+		});
+
+		// if (
+		// 	elm &&
+		// 	!Dom.isText(elm) &&
+		// 	(Dom.isTag(elm, 'img') || $$('img', elm).length)
+		// ) {
+		// 	currentImage = elm.tagName === 'IMG' ? elm : $$('img', elm)[0];
+		// 	val(form.container, 'input[name=url]', attr(currentImage, 'src'));
+		// 	val(form.container, 'input[name=text]', attr(currentImage, 'alt'));
+		// 	button.state.text = 'Update';
+		// }
+
+		// if (elm && Dom.isTag(elm, 'a')) {
+		// 	val(form.container, 'input[name=url]', attr(elm, 'href'));
+		// 	val(form.container, 'input[name=text]', attr(elm, 'title'));
+		// 	button.state.text = 'Update';
+		// }
+
+		form.onSubmit(data => {
+			if (isFunction(callbacks.url)) {
+				callbacks.url.call(editor, data.url, data.text);
+			}
+		});
+
+		tabs.push({
+			icon: 'link',
+			name: 'URL',
+			content: form.container
+		});
 	}
 
 	return TabsWidget(editor, tabs);

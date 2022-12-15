@@ -11,26 +11,25 @@
 import type { IControlType, IJodit } from 'jodit/types';
 import { Config } from 'jodit/config';
 import { FileSelectorWidget } from 'jodit/modules/widget';
-import { $$ } from 'jodit/core/helpers';
-import { Dom } from 'jodit/core/dom';
 import { PopupTitleWidget } from 'jodit/src/modules/widget/popup-title/popup-title';
+import { convertMediaUrlToVideoEmbed } from 'jodit/src/core/helpers';
 
 Config.prototype.controls.video = {
 	popup: (editor: IJodit, current, control, close) => {
-		let sourceVideo: HTMLVideoElement | null = null;
+		// let sourceVideo: HTMLVideoElement | null = null;
 
-		if (
-			current &&
-			!Dom.isText(current) &&
-			Dom.isHTMLElement(current) &&
-			(Dom.isTag(current, 'video') || $$('video', current).length)
-		) {
-			sourceVideo = Dom.isTag(current, 'video')
-				? current
-				: $$('video', current)[0];
-		}
+		// if (
+		// 	current &&
+		// 	!Dom.isText(current) &&
+		// 	Dom.isHTMLElement(current) &&
+		// 	(Dom.isTag(current, 'video') || $$('video', current).length)
+		// ) {
+		// 	sourceVideo = Dom.isTag(current, 'video')
+		// 		? current
+		// 		: $$('video', current)[0];
+		// }
 
-		editor.s.save();
+		// editor.s.save();
 
 		return FileSelectorWidget(
 			editor,
@@ -42,16 +41,46 @@ Config.prototype.controls.video = {
 						url = '//' + url;
 					}
 
-					editor.s.insertVideoUrl(
-						url,
-						null,
-						editor.o.imageDefaultWidth
+					let element;
+					const fragment = editor.c.fragment(),
+						paragraph = editor.c.element('p', { class: 'p1' });
+
+					const embed = convertMediaUrlToVideoEmbed(url, 500);
+					if (embed !== url) {
+						element = editor.c.fromHTML(embed) as HTMLAnchorElement;
+					} else {
+						element = editor.c.fromHTML(
+							`<video controls style="width: ${
+								editor.o.imageDefaultWidth || 500
+							}px;" src="${url}" alt="${url}"/>`
+						);
+					}
+					paragraph.appendChild(element);
+					fragment.append(
+						paragraph,
+						editor.c.element('p', { class: 'p2' })
 					);
+
+					editor.s.insertHTML(fragment);
+					// if (embed !== url) {
+					// 	const video = editor.createInside.fromHTML(
+					// 		embed
+					// 	) as HTMLAnchorElement;
+					// 	console.log(video);
+					// 	editor.s.insertNode(video);
+					// 	return;
+					// }
+
+					// editor.s.insertVideoUrl(
+					// 	url,
+					// 	null,
+					// 	editor.o.imageDefaultWidth
+					// );
 
 					close();
 				}
 			},
-			sourceVideo,
+			// sourceVideo,
 			close
 		);
 	},

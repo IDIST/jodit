@@ -3,28 +3,28 @@
  */
 
 import type { IControlType, IJodit } from 'jodit/types';
-import { Dom } from 'jodit/core/dom';
-import { $$ } from 'jodit/core/helpers';
+// import { Dom } from 'jodit/core/dom';
+// import { $$ } from 'jodit/core/helpers';
 import { FileSelectorWidget } from 'jodit/modules/widget';
 import { Config } from 'jodit/config';
 import { PopupTitleWidget } from 'jodit/src/modules/widget/popup-title/popup-title';
 
 Config.prototype.controls.image = {
 	popup: (editor: IJodit, current, self, close) => {
-		let sourceImage: HTMLImageElement | null = null;
+		// let sourceImage: HTMLImageElement | null = null;
 
-		if (
-			current &&
-			!Dom.isText(current) &&
-			Dom.isHTMLElement(current) &&
-			(Dom.isTag(current, 'img') || $$('img', current).length)
-		) {
-			sourceImage = Dom.isTag(current, 'img')
-				? current
-				: $$('img', current)[0];
-		}
+		// if (
+		// 	current &&
+		// 	!Dom.isText(current) &&
+		// 	Dom.isHTMLElement(current) &&
+		// 	(Dom.isTag(current, 'img') || $$('img', current).length)
+		// ) {
+		// 	sourceImage = Dom.isTag(current, 'img')
+		// 		? current
+		// 		: $$('img', current)[0];
+		// }
 
-		editor.s.save();
+		// editor.s.save();
 
 		return FileSelectorWidget(
 			editor,
@@ -32,7 +32,7 @@ Config.prototype.controls.image = {
 				searchUnsplash: true,
 				upload: true
 			},
-			sourceImage,
+			// sourceImage,
 			close
 		);
 	},

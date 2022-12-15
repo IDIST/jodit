@@ -10,3 +10,5 @@ yarn-error.log
 .vs
 /types/
 /JODIT-DEVELOPMENT-GUIDE.md
+
+extensions.json

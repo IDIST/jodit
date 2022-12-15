@@ -1,4 +1,3 @@
-
 /**
  * @module types
  */
@@ -22,14 +21,13 @@ export interface IUIElement
 		IDestructible,
 		IMods,
 		IElms {
-
 	parentElement: Nullable<IUIElement>;
 	container: HTMLElement;
 	name: string;
 
 	text?: HTMLElement;
 	elements?: IUIElement[];
-	buttonSize?: "tiny" | "xsmall" | "small" | "middle" | "large" | "full";
+	buttonSize?: 'tiny' | 'xsmall' | 'small' | 'middle' | 'large' | 'full';
 
 	/**
 	 * Apply callback for all parents
@@ -95,7 +93,7 @@ export interface IUIButton extends IViewComponent, IUIElement, IFocusable {
 }
 
 export interface IUIGroup extends IUIElement {
-	buttonSize: "tiny" | "xsmall" | "small" | "middle" | "large" | "full";
+	buttonSize: 'tiny' | 'xsmall' | 'small' | 'middle' | 'large' | 'full';
 	elements: IUIElement[];
 	allChildren: IUIElement[];
 	append(elm: IUIElement | IUIElement[], distElement?: string): this;

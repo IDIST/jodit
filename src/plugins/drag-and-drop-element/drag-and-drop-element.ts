@@ -1,4 +1,3 @@
-
 /**
  * [[include:plugins/drag-and-drop-element/README.md]]
  * @packageDocumentation
@@ -201,15 +200,20 @@ export class dragAndDropElement extends Plugin {
 		}
 
 		const { parentElement } = fragment;
-
 		this.j.s.insertNode(fragment, true, false);
+
+		// if (parentElement) {
+		// 	console.log({ parentElement });
+		// 	console.log({ isEmpty: Dom.isEmpty(parentElement) });
+		// }
+		// console.log({ fragment, parentElement });
 
 		if (
 			parentElement &&
 			Dom.isEmpty(parentElement) &&
 			!Dom.isTag(parentElement, ['td', 'th'])
 		) {
-			Dom.safeRemove(parentElement);
+			// Dom.safeRemove(parentElement);
 		}
 
 		if (Dom.isTag(fragment, 'img') && this.j.e) {

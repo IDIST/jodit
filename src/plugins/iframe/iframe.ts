@@ -1,4 +1,3 @@
-
 /**
  * [[include:plugins/iframe/README.md]]
  * @packageDocumentation

@@ -49,11 +49,6 @@ export interface ISelect {
 		styles?: Nullable<IDictionary<string>>,
 		defaultWidth?: Nullable<number | string>
 	): void;
-	insertVideoUrl(
-		url: string,
-		styles?: Nullable<IDictionary<string>>,
-		defaultWidth?: Nullable<number | string>
-	): void;
 
 	isCollapsed(): boolean;
 	cursorInTheEdge(

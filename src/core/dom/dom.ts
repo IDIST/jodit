@@ -1,4 +1,3 @@
-
 /**
  * [[include:core/dom/README.md]]
  * @packageDocumentation
@@ -42,6 +41,7 @@ export class Dom {
 	 * Remove all content from element
 	 */
 	static detach(node: Node): void {
+		// console.log('🚀 ~ file: dom.ts:44 ~ Dom ~ detach ~ detach');
 		while (node.firstChild) {
 			node.removeChild(node.firstChild);
 		}
@@ -55,6 +55,8 @@ export class Dom {
 		tag: Node | HTMLTagNames,
 		editor: IJodit
 	): HTMLElement {
+		// console.log('🚀 ~ file: dom.ts:54 ~ Dom ~ wrapInline ~ wrapInline');
+
 		let tmp: Nullable<Node>,
 			first: Node = current,
 			last: Node = current;
@@ -127,6 +129,7 @@ export class Dom {
 		tag: HTMLElement | HTMLTagNames,
 		create: ICreate
 	): HTMLElement {
+		// console.log('🚀 ~ file: dom.ts:133 ~ Dom ~ wrap');
 		const wrapper = isString(tag) ? create.element(tag) : tag;
 
 		if (Dom.isNode(current)) {
@@ -149,6 +152,7 @@ export class Dom {
 	 * Remove parent of node and insert this node instead that parent
 	 */
 	static unwrap(node: Node): void {
+		// console.log('🚀 ~ file: dom.ts:152 ~ Dom ~ unwrap ~ unwrap');
 		const parent = node.parentNode;
 
 		if (parent) {
@@ -168,6 +172,7 @@ export class Dom {
 		end: Node,
 		callback: (node: Node) => void | boolean
 	): void {
+		// console.log('🚀 ~ file: dom.ts:176 ~ Dom ~ between');
 		let next: CanUndef<Nullable<Node>> = start;
 
 		while (next && next !== end) {
@@ -209,6 +214,7 @@ export class Dom {
 		withAttributes = false,
 		notMoveContent = false
 	): T {
+		// console.log('🚀 ~ file: dom.ts:218 ~ Dom ~ replace');
 		if (isHTML(newTagName)) {
 			newTagName = create.fromHTML(newTagName);
 		}
@@ -243,6 +249,9 @@ export class Dom {
 	 * @param node - The element of wood to be checked
 	 */
 	static isEmptyTextNode(node: Nullable<Node>): boolean {
+		// console.log(
+		// 	'🚀 ~ file: dom.ts:246 ~ Dom ~ isEmptyTextNode ~ isEmptyTextNode'
+		// );
 		return (
 			Dom.isText(node) &&
 			(!node.nodeValue ||
@@ -253,6 +262,9 @@ export class Dom {
 	}
 
 	static isEmptyContent(node: Node): boolean {
+		// console.log(
+		// 	'🚀 ~ file: dom.ts:257 ~ Dom ~ isEmptyContent ~ isEmptyContent'
+		// );
 		return Dom.each(node as HTMLElement, (elm: Node | null): boolean =>
 			Dom.isEmptyTextNode(elm)
 		);
@@ -262,6 +274,9 @@ export class Dom {
 	 * The node is editable
 	 */
 	static isContentEditable(node: Nullable<Node>, root: HTMLElement): boolean {
+		// console.log(
+		// 	'🚀 ~ file: dom.ts:277 ~ Dom ~ isContentEditable ~ isContentEditable'
+		// );
 		return (
 			Dom.isNode(node) &&
 			!Dom.closest(
@@ -281,6 +296,7 @@ export class Dom {
 		node: Node,
 		condNoEmptyElement: RegExp = /^(img|svg|canvas|input|textarea|form)$/
 	): boolean {
+		// console.log('🚀 ~ file: dom.ts:299 ~ Dom ~ isEmpty');
 		if (!node) {
 			return true;
 		}
@@ -330,6 +346,7 @@ export class Dom {
 	 * Check is element is Image element
 	 */
 	static isImage(elm: unknown): elm is HTMLImageElement {
+		// console.log('🚀 ~ file: dom.ts:349 ~ Dom ~ isImage ~ isImage');
 		return (
 			Dom.isNode(elm) && /^(img|svg|picture|canvas)$/i.test(elm.nodeName)
 		);
@@ -428,6 +445,7 @@ export class Dom {
 		root: Nullable<Node>,
 		condition: NodeCondition
 	): Nullable<Node> {
+		// console.log('🚀 ~ file: dom.ts:448 ~ Dom ~ last');
 		let last = root?.lastChild as Nullable<Node>;
 
 		if (!last) {
@@ -954,6 +972,7 @@ export class Dom {
 	 * Safe remove element from DOM
 	 */
 	static safeRemove(...nodes: unknown[]): void {
+		// console.log('🚀 ~ file: dom.ts:975 ~ Dom ~ safeRemove ~ safeRemove');
 		nodes.forEach(
 			node =>
 				Dom.isNode(node) &&

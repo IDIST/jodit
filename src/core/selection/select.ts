@@ -34,8 +34,7 @@ import {
 	css,
 	call,
 	toArray,
-	getScrollParent,
-	convertMediaUrlToVideoEmbed
+	getScrollParent
 } from 'jodit/core/helpers';
 import { CommitStyle } from './style/commit-style';
 import { autobind } from 'jodit/core/decorators';
@@ -137,6 +136,7 @@ export class Select implements ISelect {
 	 * Remove all selected content
 	 */
 	remove(): void {
+		// console.log('🚀 ~ file: select.ts:139 ~ Select ~ remove ~ remove');
 		const sel = this.sel,
 			current = this.current();
 
@@ -152,6 +152,8 @@ export class Select implements ISelect {
 	 * Clear all selection
 	 */
 	clear(): void {
+		// console.log('🚀 ~ file: select.ts:154 ~ Select ~ clear ~ clear');
+
 		if (this.sel?.rangeCount) {
 			this.sel?.removeAllRanges();
 		}
@@ -161,6 +163,10 @@ export class Select implements ISelect {
 	 * Remove node element from editor
 	 */
 	removeNode(node: Node): void {
+		// console.log(
+		// 	'🚀 ~ file: select.ts:163 ~ Select ~ removeNode ~ removeNode'
+		// );
+
 		if (!Dom.isOrContains(this.j.editor, node, true)) {
 			throw error(
 				"Selection.removeNode can remove only editor's children"
@@ -179,6 +185,9 @@ export class Select implements ISelect {
 	 * @returns false - Something went wrong
 	 */
 	insertCursorAtPoint(x: number, y: number): boolean {
+		// console.log(
+		// 	'🚀 ~ file: select.ts:187 ~ Select ~ insertCursorAtPoint ~ insertCursorAtPoint'
+		// );
 		this.removeMarkers();
 
 		try {
@@ -292,6 +301,7 @@ export class Select implements ISelect {
 	 * Restores user selections using marker invisible elements in the DOM.
 	 */
 	restore(): void {
+		// console.log('🚀 ~ file: select.ts:304 ~ Select ~ restore ~ restore');
 		let range: Range | false = false;
 
 		const markAttr = (start: boolean): string =>
@@ -339,6 +349,8 @@ export class Select implements ISelect {
 	 * @param silent - Do not change current range
 	 */
 	save(silent: boolean = false): MarkerInfo[] {
+		// console.log('🚀 ~ file: select.ts:352 ~ Select ~ save ~ save');
+
 		if (this.hasMarkers) {
 			return [];
 		}
@@ -489,6 +501,8 @@ export class Select implements ISelect {
 	 * Returns the current element under the cursor inside editor
 	 */
 	current(checkChild: boolean = true): null | Node {
+		// console.log('🚀 ~ file: select.ts:504 ~ Select ~ current ~ current');
+
 		if (this.j.getRealMode() === consts.MODE_WYSIWYG) {
 			const sel = this.sel;
 
@@ -776,88 +790,6 @@ export class Select implements ISelect {
 		 * ```
 		 */
 		this.j.e.fire('afterInsertImage', image);
-	}
-
-	/**
-	 * Insert a video in editor
-	 *
-	 * @param url - URL for video
-	 * @param styles - If specified, it will be applied <code>$(image).css(styles)</code>
-	 */
-	insertVideoUrl(
-		url: string,
-		styles: Nullable<IDictionary<string>> = null,
-		defaultWidth: Nullable<number | string> = null
-	): void {
-		const embed = convertMediaUrlToVideoEmbed(url);
-		if (embed !== url) {
-			const video = this.jodit.createInside.fromHTML(
-				embed
-			) as HTMLAnchorElement;
-			this.insertNode(video);
-			return;
-		}
-		const video = this.j.createInside.element('video');
-		video.setAttribute('src', url);
-
-		if (defaultWidth != null) {
-			let dw: string = defaultWidth.toString();
-
-			if (
-				dw &&
-				'auto' !== dw &&
-				String(dw).indexOf('px') < 0 &&
-				String(dw).indexOf('%') < 0
-			) {
-				dw += 'px';
-			}
-
-			attr(video, 'controls', '');
-			call(
-				attr,
-				video,
-				'width',
-				// @ts-ignore
-				dw
-			);
-		}
-
-		if (styles && typeof styles === 'object') {
-			css(video, styles);
-		}
-
-		const onload = (): void => {
-			if (
-				video.videoHeight < video.offsetHeight ||
-				video.videoWidth < video.offsetWidth
-			) {
-				video.style.width = '';
-				video.style.height = '';
-			}
-
-			video.removeEventListener('load', onload);
-		};
-
-		this.j.e.on(video, 'load', onload);
-
-		// if (video.complete) {
-		// 	onload();
-		// }
-
-		this.insertNode(video);
-
-		/**
-		 * Triggered after image was inserted [[Select.insertImage]]. This method can executed from
-		 * [[FileBrowser]] or [[Uploader]]
-		 * @example
-		 * ```javascript
-		 * var editor = Jodit.make("#redactor");
-		 * editor.e.on('afterInsertImage', function (image) {
-		 *     image.className = 'bloghead4';
-		 * });
-		 * ```
-		 */
-		this.j.e.fire('afterInsertVideo', video);
 	}
 
 	/**
@@ -1243,6 +1175,9 @@ export class Select implements ISelect {
 	 * Wrap all selected fragments inside Tag or apply some callback
 	 */
 	*wrapInTagGen(): Generator<HTMLElement> {
+		// console.log(
+		// 	'🚀 ~ file: select.ts:1178 ~ Select ~ *wrapInTagGen ~ wrapInTagGen'
+		// );
 		if (this.isCollapsed()) {
 			const font = this.jodit.createInside.element(
 				'font',
@@ -1321,6 +1256,7 @@ export class Select implements ISelect {
 	wrapInTag(
 		tagOrCallback: HTMLTagNames | ((font: HTMLElement) => any)
 	): HTMLElement[] {
+		// console.log('🚀 ~ file: select.ts:1259 ~ Select ~ wrapInTag');
 		const result: HTMLElement[] = [];
 
 		for (const font of this.wrapInTagGen()) {

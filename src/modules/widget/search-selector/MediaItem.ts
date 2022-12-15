@@ -60,10 +60,15 @@ export class MediaItem {
 
 		this.element.addEventListener('click', () => {
 			const img = editor.c.fromHTML(
-				`<div><img style="width: ${
+				`<p class="p1"><img style="width: ${
 					editor.o.imageDefaultWidth || '100%'
-				}px;" src="${image}" alt="${alt}"/></div><p></p>`
+				}px;" src="${image}" alt="${alt}"/></p><p class="p2"></p>`
 			);
+			// const img = editor.c.fromHTML(
+			// 	`<p><img style="width: ${
+			// 		editor.o.imageDefaultWidth || '100%'
+			// 	}px;" src="${image}" alt="${alt}"/></p><p></p>`
+			// );
 			editor.s.insertHTML(img);
 			if (close) close();
 		});

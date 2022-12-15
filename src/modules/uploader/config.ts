@@ -68,7 +68,7 @@ Config.prototype.uploader = {
 
 		const url = new URL(
 			path,
-			'https://main.server.superclub.idist.ai/api/v1/media/'
+			'https://deploy.server.superclub.idist.ai/api/v1/media/'
 		).href;
 		return url;
 	},

@@ -1,4 +1,3 @@
-
 /**
  * @module selection
  */
@@ -11,6 +10,9 @@ export function moveTheNodeAlongTheEdgeOutward(
 	start: boolean,
 	root: HTMLElement
 ): void {
+	// console.log(
+	// 	'🚀 ~ file: move-the-node-along-the-edge-outward.ts:10 ~ moveTheNodeAlongTheEdgeOutward'
+	// );
 	let item: Nullable<Node> = node;
 
 	while (item && item !== root) {

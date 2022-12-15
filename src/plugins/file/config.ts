@@ -4,8 +4,8 @@ import type {
 	IJodit
 } from 'jodit/types';
 import { Config } from 'jodit/config';
-import { Dom } from 'jodit/core/dom';
-import { $$ } from 'jodit/core/helpers';
+// import { Dom } from 'jodit/core/dom';
+// import { $$ } from 'jodit/core/helpers';
 import { FileSelectorWidget } from 'jodit/modules/widget';
 import { PopupTitleWidget } from 'jodit/src/modules/widget/popup-title/popup-title';
 // import { Dom } from 'jodit/core/dom/dom';
@@ -19,27 +19,27 @@ Config.prototype.controls.file = {
 		self: IControlType,
 		close
 	) => {
-		let sourceFile: HTMLImageElement | null = null;
+		// let sourceFile: HTMLImageElement | null = null;
 
-		if (
-			current &&
-			!Dom.isText(current) &&
-			Dom.isHTMLElement(current) &&
-			(Dom.isTag(current, 'img') || $$('img', current).length)
-		) {
-			sourceFile = Dom.isTag(current, 'img')
-				? current
-				: $$('img', current)[0];
-		}
+		// if (
+		// 	current &&
+		// 	!Dom.isText(current) &&
+		// 	Dom.isHTMLElement(current) &&
+		// 	(Dom.isTag(current, 'img') || $$('img', current).length)
+		// ) {
+		// 	sourceFile = Dom.isTag(current, 'img')
+		// 		? current
+		// 		: $$('img', current)[0];
+		// }
 
-		editor.s.save();
+		// editor.s.save();
 
 		return FileSelectorWidget(
 			editor,
 			{
 				uploadFile: true
 			},
-			sourceFile,
+			// sourceFile,
 			close
 		);
 	},

@@ -13,6 +13,7 @@
 		}
 
 		.jodit-ui-input {
+			position: relative;
 			&__wrapper {
 				margin-top: 4px;
 				background-color: inherit;
@@ -29,6 +30,22 @@
 				&:focus {
 					border: 1px solid #7d0edf;
 				}
+
+				&.invalidated {
+					border: 1px solid #ff2a55;
+				}
+			}
+
+			.error_msg {
+				bottom: -24px;
+				position: absolute;
+				color: #ff2a55;
+				font-family: 'Poppins';
+				font-style: normal;
+				font-weight: 400;
+				font-size: 13px;
+				line-height: 20px;
+				letter-spacing: -0.26px;
 			}
 		}
 

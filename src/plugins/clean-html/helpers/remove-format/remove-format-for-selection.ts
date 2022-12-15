@@ -1,4 +1,3 @@
-
 /**
  * @module plugins/clean-html
  */
@@ -17,6 +16,9 @@ import {
  * @private
  */
 export function removeFormatForSelection(jodit: IJodit): void {
+	// console.log(
+	// 	'🚀 ~ file: remove-format-for-selection.ts:19 ~ removeFormatForSelection ~ removeFormatForSelection'
+	// );
 	const { s, editor, createInside } = jodit,
 		{ range } = s,
 		left = range.cloneRange(),
