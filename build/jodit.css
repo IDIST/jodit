@@ -1,12 +1,12 @@
 /*!
- * jodit - Jodit is awesome and usefully wysiwyg editor with filebrowser
+ * idist-jodit - Jodit is awesome and usefully wysiwyg editor with filebrowser
  * Author: KimSunWook <ceo@idist.ai> (https://xdsoft.net/)
  * Version: v3.20.4
  * Url: https://github.com/IDIST/jodit
  * License(s): MIT
  */
 	/*!
- * jodit - Jodit is awesome and usefully wysiwyg editor with filebrowser
+ * idist-jodit - Jodit is awesome and usefully wysiwyg editor with filebrowser
  * Author: KimSunWook <ceo@idist.ai> (https://xdsoft.net/)
  * Version: v3.20.4
  * Url: https://github.com/IDIST/jodit
@@ -1144,7 +1144,7 @@ svg.jodit-icon {
   font-family: 'Poppins';
   font-size: 12px;
   padding: 0;
-  border: 1px solid #E0E0E0;
+  border: 1px solid #e0e0e0;
   border-radius: 4px;
   -webkit-box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.2);
@@ -1161,6 +1161,21 @@ svg.jodit-icon {
   width: 100%;
   height: 80px;
   overflow: hidden;
+}
+.jodit-context-menu__content__custom {
+  border-radius: 20px;
+}
+.jodit-context-menu__content .masonry {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  -webkit-column-gap: 4px;
+     -moz-column-gap: 4px;
+          column-gap: 4px;
+}
+.jodit-context-menu__content .masonry-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 .jodit-context-menu_max-height_false .jodit-context-menu__content {
   max-height: -webkit-fit-content;
@@ -1204,7 +1219,7 @@ svg.jodit-icon {
   font-family: 'Poppins';
   font-size: 12px;
   padding: 0;
-  border: 1px solid #E0E0E0;
+  border: 1px solid #e0e0e0;
   border-radius: 4px;
   -webkit-box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.2);
@@ -1222,6 +1237,21 @@ svg.jodit-icon {
   height: 80px;
   overflow: hidden;
 }
+.jodit-popup__content__custom {
+  border-radius: 20px;
+}
+.jodit-popup__content .masonry {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  -webkit-column-gap: 4px;
+     -moz-column-gap: 4px;
+          column-gap: 4px;
+}
+.jodit-popup__content .masonry-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
 .jodit-popup_max-height_false .jodit-popup__content {
   max-height: -webkit-fit-content;
   max-height: -moz-fit-content;
@@ -1236,7 +1266,7 @@ svg.jodit-icon {
   background-color: #fff;
   -webkit-box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
           box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
-  content: "";
+  content: '';
   width: 6px;
   height: 6px;
   bottom: -3px;
@@ -1255,7 +1285,7 @@ svg.jodit-icon {
   background-color: #fff;
   -webkit-box-shadow: -1px -1px 4px rgba(0, 0, 0, 0.2);
           box-shadow: -1px -1px 4px rgba(0, 0, 0, 0.2);
-  content: "";
+  content: '';
   width: 6px;
   height: 6px;
   top: -3px;
@@ -5026,31 +5056,34 @@ a + .jodit-filebrowser-tree__source-title {
 .jodit-tabs {
   font-family: 'Poppins';
   font-size: 12px;
+  width: 280px;
 }
 .jodit-tabs .jodit-tabs__buttons {
-  position: fixed;
+  position: relative;
   z-index: 1;
   top: 0;
-  width: 100%;
+  width: calc(100% - 48px);
+  margin: 0 24px;
   background-color: white;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  gap: 30px;
   line-height: 18px;
-  border-bottom: 1px solid #E0E0E0;
-  border-top-left-radius: 4px;
-  border-top-right-radius: 4px;
+  border-bottom: 1px solid #e0e0e0;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
   overflow: hidden;
 }
 .jodit-tabs .jodit-tabs__buttons > * {
-  margin-left: calc(8px / 2);
+  margin-left: 0;
   cursor: pointer;
 }
 .jodit-tabs .jodit-tabs__buttons > *:only-of-type {
-  width: 100%;
+  width: auto;
 }
 .jodit-tabs .jodit-tabs__buttons > *:first-child {
   margin-left: 0;
@@ -5065,24 +5098,29 @@ a + .jodit-filebrowser-tree__source-title {
   }
 }
 .jodit-tabs__button {
-  min-width: 80px;
-  padding-top: 6px;
-  min-height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-width: auto;
+  padding: 0;
+  padding-bottom: 10px;
+  min-height: auto;
+  height: auto;
   background: white !important;
   border-radius: 0;
 }
-.jodit-tabs__button[aria-pressed="true"] {
-  border-bottom: 2px solid #9013FE;
+.jodit-tabs__button[aria-pressed='true'] {
+  border-bottom: 2px solid #9013fe;
 }
-.jodit-tabs__button[aria-pressed="true"] .jodit-ui-button__text {
+.jodit-tabs__button[aria-pressed='true'] .jodit-ui-button__text {
   font-weight: 600;
-  color: #9013FE;
+  color: #9013fe;
 }
 .jodit-tabs__button_columns_3 {
-  width: calc(100% / 3);
+  width: auto;
 }
 .jodit-tabs__button_columns_2 {
-  width: 50%;
+  width: auto;
 }
 .jodit-tabs__button .jodit-ui-button__icon {
   display: none;
@@ -5092,6 +5130,8 @@ a + .jodit-filebrowser-tree__source-title {
   font-size: 14px;
   line-height: 20px;
   color: #A7A8AB;
+  margin-left: 0 !important;
+  padding: 0 !important;
 }
 .jodit-tabs .jodit-tabs__title {
   position: fixed;
@@ -5102,15 +5142,15 @@ a + .jodit-filebrowser-tree__source-title {
   font-weight: 600;
   font-size: 14px;
   line-height: 20px;
-  color: #242A3C;
+  color: #242a3c;
   padding: 20px 18px 0px 18px;
 }
 .jodit-tabs .jodit-tabs__wrapper {
   position: relative;
   -webkit-box-sizing: content-box;
           box-sizing: content-box;
-  width: 264px;
-  padding: 62px 20px 20px 20px;
+  width: auto;
+  padding: 0;
 }
 .jodit-tabs .jodit-tabs__wrapper .jodit-tab {
   display: none;
@@ -5123,18 +5163,10 @@ a + .jodit-filebrowser-tree__source-title {
   min-height: 100px;
 }
 
-.drag-and-drop {
-  position: relative;
-  overflow: hidden;
-  width: 100%;
-  height: 162px;
-  padding: 25px 0;
-  text-align: center;
-  background: #F8F8F8;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 30px;
-  color: #A7A8AB;
+.jodit-media-dnd {
+  padding: 12px 24px 24px 24px;
+}
+.jodit-media-dnd .drag-and-drop {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -5142,23 +5174,51 @@ a + .jodit-filebrowser-tree__source-title {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -ms-flex-line-pack: center;
-      align-content: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  border-radius: 4px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 270px;
+  padding: 0 30px;
+  text-align: center;
+  background-color: #eeeeee;
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
 }
-.drag-and-drop .icon {
-  height: 32px;
+.jodit-media-dnd .drag-and-drop .icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: auto;
 }
-.drag-and-drop .icon svg {
-  fill: #A7A8AB;
+.jodit-media-dnd .drag-and-drop .icon::before {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  content: '';
+  background: url("data:image/svg+xml,%3Csvg%20width%3D%2260%22%20height%3D%2260%22%20viewBox%3D%220%200%2060%2060%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Cg%20clip-path%3D%22url%28%23clip0_4988_149593%29%22%3E%0A%3Cpath%20d%3D%22M46.4889%2051.969H15.5889C12.2502%2051.9708%209.01686%2050.8005%206.45288%2048.662C3.91442%2046.5448%202.22093%2043.5862%201.68088%2040.325C1.15033%2037.072%201.8153%2033.7369%203.55288%2030.936C5.04559%2028.5392%207.22707%2026.6487%209.81188%2025.512C9.429%2021.8975%2010.3245%2018.263%2012.3429%2015.24C14.6488%2011.7646%2018.2158%209.32217%2022.2899%208.42905C23.4716%208.16401%2024.6788%208.02986%2025.8899%208.02905C29.1515%208.01657%2032.3403%208.9928%2035.0359%2010.829C37.7315%2012.6653%2039.8074%2015.2753%2040.9899%2018.315C42.5327%2018.1027%2044.1037%2018.25%2045.5801%2018.7455C47.0566%2019.2409%2048.3984%2020.0711%2049.5009%2021.171C50.7955%2022.4699%2051.6968%2024.1082%2052.1009%2025.897C52.3862%2027.1617%2052.4127%2028.4709%2052.1789%2029.746C54.4037%2030.9085%2056.198%2032.7525%2057.2994%2035.0082C58.4008%2037.2639%2058.7514%2039.8128%2058.2999%2042.282C57.7666%2045.0191%2056.295%2047.4843%2054.1389%2049.2526C51.9828%2051.021%2049.2774%2051.9816%2046.4889%2051.969ZM25.8859%2011.433C24.9349%2011.4338%2023.9869%2011.5391%2023.0589%2011.747C19.8588%2012.4486%2017.057%2014.3671%2015.2459%2017.097C14.3538%2018.4327%2013.7339%2019.9313%2013.4218%2021.5069C13.1097%2023.0824%2013.1114%2024.7041%2013.4269%2026.279C13.5055%2026.6886%2013.4308%2027.1127%2013.2172%2027.4707C13.0035%2027.8288%2012.6656%2028.0958%2012.2679%2028.221C9.87873%2028.988%207.83911%2030.5776%206.51188%2032.707C5.2%2034.8192%204.69735%2037.335%205.09688%2039.789C5.50457%2042.2485%206.78214%2044.4796%208.69688%2046.076C10.631%2047.6856%2013.0686%2048.5654%2015.5849%2048.562H46.4849C48.4702%2048.5702%2050.3962%2047.8855%2051.9309%2046.6259C53.4655%2045.3663%2054.5127%2043.6109%2054.8919%2041.662C55.2439%2039.7163%2054.8983%2037.7088%2053.9158%2035.9928C52.9334%2034.2768%2051.3771%2032.9625%2049.5209%2032.281C49.102%2032.1282%2048.7603%2031.8162%2048.5701%2031.4129C48.3799%2031.0096%2048.3564%2030.5475%2048.5049%2030.127C48.9112%2029.0026%2048.9874%2027.7854%2048.7247%2026.619C48.4619%2025.4526%2047.8711%2024.3857%2047.0219%2023.544C46.1645%2022.6904%2045.0888%2022.0891%2043.9125%2021.806C42.7363%2021.5229%2041.5047%2021.5689%2040.3529%2021.939C40.1283%2022.0109%2039.8915%2022.0368%2039.6567%2022.0153C39.4219%2021.9938%2039.1937%2021.9254%2038.9859%2021.814C38.7798%2021.7042%2038.5984%2021.5531%2038.4531%2021.3702C38.3077%2021.1874%2038.2015%2020.9766%2038.1409%2020.751C37.409%2018.0654%2035.8112%2015.6963%2033.5953%2014.0115C31.3795%2012.3267%2028.6695%2011.4203%2025.8859%2011.433Z%22%20fill%3D%22url%28%23paint0_linear_4988_149593%29%22%2F%3E%0A%3Cpath%20d%3D%22M28.2629%2043.222V28.463L22.9979%2033.723C22.8391%2033.8851%2022.6494%2034.0137%2022.44%2034.1013C22.2306%2034.1889%2022.0059%2034.2337%2021.7789%2034.233C21.4361%2034.233%2021.101%2034.1313%2020.816%2033.9409C20.5309%2033.7505%2020.3087%2033.4799%2020.1774%2033.1632C20.0461%2032.8466%2020.0116%2032.4981%2020.0783%2032.1619C20.1449%2031.8256%2020.3097%2031.5167%2020.5519%2031.274L28.6519%2023.174C28.6899%2023.129%2028.7279%2023.085%2028.7689%2023.043C28.9411%2022.8657%2029.1495%2022.7276%2029.3799%2022.6381C29.6102%2022.5485%2029.8572%2022.5097%2030.104%2022.5242C30.3507%2022.5387%2030.5914%2022.6063%2030.8097%2022.7222C31.028%2022.8381%2031.2187%2022.9998%2031.3689%2023.196L39.4579%2031.278C39.7825%2031.6032%2039.9647%2032.044%2039.9643%2032.5035C39.964%2032.9629%2039.7811%2033.4034%2039.4559%2033.728C39.1308%2034.0527%2038.69%2034.2348%2038.2305%2034.2345C37.771%2034.2341%2037.3305%2034.0512%2037.0059%2033.726L31.7289%2028.439V43.222C31.7289%2043.6817%2031.5463%2044.1225%2031.2213%2044.4475C30.8963%2044.7725%2030.4555%2044.955%2029.9959%2044.955C29.5363%2044.955%2029.0955%2044.7725%2028.7705%2044.4475C28.4455%2044.1225%2028.2629%2043.6817%2028.2629%2043.222Z%22%20fill%3D%22url%28%23paint1_linear_4988_149593%29%22%2F%3E%0A%3C%2Fg%3E%0A%3Cdefs%3E%0A%3ClinearGradient%20id%3D%22paint0_linear_4988_149593%22%20x1%3D%2229.9973%22%20y1%3D%228.02893%22%20x2%3D%2229.9973%22%20y2%3D%2251.9692%22%20gradientUnits%3D%22userSpaceOnUse%22%3E%0A%3Cstop%20stop-color%3D%22%23675AFF%22%2F%3E%0A%3Cstop%20offset%3D%221%22%20stop-color%3D%22%23AA00E8%22%2F%3E%0A%3C%2FlinearGradient%3E%0A%3ClinearGradient%20id%3D%22paint1_linear_4988_149593%22%20x1%3D%2230.0047%22%20y1%3D%2222.5212%22%20x2%3D%2230.0047%22%20y2%3D%2244.955%22%20gradientUnits%3D%22userSpaceOnUse%22%3E%0A%3Cstop%20stop-color%3D%22%23675AFF%22%2F%3E%0A%3Cstop%20offset%3D%221%22%20stop-color%3D%22%23AA00E8%22%2F%3E%0A%3C%2FlinearGradient%3E%0A%3CclipPath%20id%3D%22clip0_4988_149593%22%3E%0A%3Crect%20width%3D%2260%22%20height%3D%2260%22%20fill%3D%22white%22%2F%3E%0A%3C%2FclipPath%3E%0A%3C%2Fdefs%3E%0A%3C%2Fsvg%3E%0A") no-repeat center;
+  width: 60px;
+  height: 60px;
 }
-.drag-and-drop:hover {
+.jodit-media-dnd .drag-and-drop span {
+  margin-top: 8px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.32px;
+  color: #777777;
+}
+.jodit-media-dnd .drag-and-drop:hover {
   background-color: #e0e0e0;
 }
-.drag-and-drop input {
+.jodit-media-dnd .drag-and-drop input {
   position: absolute;
   top: 0;
   right: 0;
@@ -5181,42 +5241,202 @@ a + .jodit-filebrowser-tree__source-title {
   background-color: #f8f8f8;
 }
 
+.jodit-media-url {
+  padding: 12px 24px 24px 24px;
+}
+.jodit-media-url .jodit-ui-input__label {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: -0.28px;
+  color: #242a3c;
+}
+.jodit-media-url .jodit-ui-input {
+  position: relative;
+}
+.jodit-media-url .jodit-ui-input__wrapper {
+  margin-top: 4px;
+  background-color: inherit;
+}
+.jodit-media-url .jodit-ui-input__input {
+  background: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 0 16px;
+}
+.jodit-media-url .jodit-ui-input__input::-webkit-input-placeholder {
+  color: #bdbdbd;
+}
+.jodit-media-url .jodit-ui-input__input::-moz-placeholder {
+  color: #bdbdbd;
+}
+.jodit-media-url .jodit-ui-input__input:-ms-input-placeholder {
+  color: #bdbdbd;
+}
+.jodit-media-url .jodit-ui-input__input::-ms-input-placeholder {
+  color: #bdbdbd;
+}
+.jodit-media-url .jodit-ui-input__input::placeholder {
+  color: #bdbdbd;
+}
+.jodit-media-url .jodit-ui-input__input:focus {
+  border: 1px solid #7d0edf;
+}
+.jodit-media-url .jodit-ui-input__input.invalidated {
+  border: 1px solid #ff2a55;
+}
+.jodit-media-url .jodit-ui-input .error_msg {
+  bottom: -24px;
+  position: absolute;
+  color: #ff2a55;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 20px;
+  letter-spacing: -0.26px;
+}
+.jodit-media-url .jodit-ui-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  margin-top: 44px;
+}
+.jodit-media-url .jodit-ui-block .jodit-ui-button {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  height: 52px;
+  background: #9013fe;
+  border: 1px solid #7d0edf;
+  border-radius: 10px;
+}
+.jodit-media-url .jodit-ui-block .jodit-ui-button__text {
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: -0.34px;
+  color: #ffffff;
+}
 
+.jodit .jodit-search-wrapper {
+  padding: 0 8px;
+}
 .jodit .jodit-search-image,
 .jodit .jodit-search-gif {
   position: relative;
-  width: 264px;
-  height: 394px;
-}
-.jodit .jodit-search-image__wrapper,
-.jodit .jodit-search-gif__wrapper {
-  max-height: 304px;
-  overflow: scroll;
+  width: auto;
+  height: auto;
 }
 .jodit .jodit-search-image__search,
 .jodit .jodit-search-gif__search {
-  margin-bottom: 12px;
+  position: relative;
+  margin: 12px;
 }
 .jodit .jodit-search-image__search input,
 .jodit .jodit-search-gif__search input {
   padding-left: 16px;
-  background: #F8F8F8;
-  border-radius: 4px;
+  padding-right: 44px;
+  background: #f8f8f8;
+  border-radius: 8px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: -0.28px;
+  color: #121212;
+}
+.jodit .jodit-search-image__search input:focus,
+.jodit .jodit-search-gif__search input:focus {
+  border: 1px solid #9013fe;
+}
+.jodit .jodit-search-image__search input::-webkit-input-placeholder, .jodit .jodit-search-gif__search input::-webkit-input-placeholder {
+  color: #a7a8ab;
+}
+.jodit .jodit-search-image__search input::-moz-placeholder, .jodit .jodit-search-gif__search input::-moz-placeholder {
+  color: #a7a8ab;
+}
+.jodit .jodit-search-image__search input:-ms-input-placeholder, .jodit .jodit-search-gif__search input:-ms-input-placeholder {
+  color: #a7a8ab;
+}
+.jodit .jodit-search-image__search input::-ms-input-placeholder, .jodit .jodit-search-gif__search input::-ms-input-placeholder {
+  color: #a7a8ab;
+}
+.jodit .jodit-search-image__search input::placeholder,
+.jodit .jodit-search-gif__search input::placeholder {
+  color: #a7a8ab;
+}
+.jodit .jodit-search-image__search input:focus + svg path,
+.jodit .jodit-search-gif__search input:focus + svg path {
+  fill: #121212;
 }
 .jodit .jodit-search-image__search svg,
 .jodit .jodit-search-gif__search svg {
   position: absolute;
-  top: 12px;
-  right: 12px;
+  top: 10px;
+  right: 10px;
+  width: 24px;
+  height: 24px;
 }
 .jodit .jodit-search-image__search-result,
 .jodit .jodit-search-gif__search-result {
-  padding-bottom: 78px;
+  height: 238px;
+  padding-bottom: 24px;
 }
 .jodit .jodit-search-image__search-result img,
 .jodit .jodit-search-gif__search-result img {
   width: 100%;
   height: 100%;
+}
+.jodit .jodit-search-image__search-result .jodit-media,
+.jodit .jodit-search-gif__search-result .jodit-media {
+  height: 100%;
+}
+.jodit .jodit-search-image__search-result .jodit-media-list,
+.jodit .jodit-search-gif__search-result .jodit-media-list {
+  padding: 0 16px;
+  height: 100%;
+  overflow-y: auto;
+}
+.jodit .jodit-search-image__search-result .jodit-media-empty,
+.jodit .jodit-search-gif__search-result .jodit-media-empty {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 10px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  color: #242a3c;
+  text-align: center;
+}
+.jodit .jodit-search-image__search-result .jodit-media-empty::before,
+.jodit .jodit-search-gif__search-result .jodit-media-empty::before {
+  content: '';
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 180px;
+  height: 108px;
+  margin-bottom: 20px;
+  background: url("data:image/svg+xml,%3Csvg%20width%3D%22180%22%20height%3D%22108%22%20viewBox%3D%220%200%20180%20108%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Cg%20clip-path%3D%22url%28%23clip0_4988_149545%29%22%3E%0A%3Cpath%20d%3D%22M28.522%2044.0469C25.0922%2044.0785%2021.7126%2043.2218%2018.712%2041.5602C15.7694%2039.9427%2013.3192%2037.5594%2011.6209%2034.6626C9.85534%2031.6396%208.95086%2028.191%209.00551%2024.6906C8.95086%2021.1902%209.85534%2017.7416%2011.6209%2014.7186C13.3151%2011.8254%2015.7669%209.44951%2018.712%207.84715C21.7193%206.20144%2025.0985%205.35456%2028.5265%205.38745C31.9625%205.34895%2035.3503%206.19639%2038.3635%207.84805C41.2933%209.45238%2043.7275%2011.8289%2045.4015%2014.7195C47.1504%2017.7482%2048.0449%2021.1946%2047.9899%2024.6915C48.0449%2028.1885%2047.1504%2031.6348%2045.4015%2034.6635C43.7182%2037.5629%2041.2754%2039.9478%2038.3365%2041.5611C35.3345%2043.2232%2031.9533%2044.0796%2028.522%2044.0469ZM28.522%2034.3152C29.714%2034.3734%2030.9042%2034.1689%2032.0085%2033.7162C33.1127%2033.2634%2034.1039%2032.5736%2034.912%2031.6953C36.5497%2029.74%2037.3878%2027.2379%2037.2583%2024.6906C37.4023%2022.117%2036.5637%2019.5848%2034.912%2017.6058C34.0996%2016.7349%2033.107%2016.0516%2032.0033%2015.6036C30.8997%2015.1556%2029.7117%2014.9537%2028.522%2015.012C27.3277%2014.9481%2026.134%2015.1473%2025.0251%2015.5955C23.9163%2016.0437%2022.9194%2016.73%2022.105%2017.6058C20.4696%2019.5924%2019.6417%2022.1216%2019.7857%2024.6906C19.6471%2027.2428%2020.4752%2029.7535%2022.105%2031.7223C22.9195%2032.598%2023.9164%2033.2841%2025.0253%2033.7322C26.1341%2034.1802%2027.3278%2034.3793%2028.522%2034.3152ZM69.346%2044.0469C65.9162%2044.0785%2062.5366%2043.2218%2059.536%2041.5602C56.5931%2039.9429%2054.1425%2037.5595%2052.444%2034.6626C50.6784%2031.6396%2049.774%2028.191%2049.8286%2024.6906C49.774%2021.1902%2050.6784%2017.7416%2052.444%2014.7186C54.1384%2011.8253%2056.5906%209.44938%2059.536%207.84715C62.5433%206.20144%2065.9225%205.35456%2069.3505%205.38745C72.7865%205.34895%2076.1744%206.19639%2079.1875%207.84805C82.1174%209.45238%2084.5515%2011.8289%2086.2255%2014.7195C87.9744%2017.7482%2088.8689%2021.1946%2088.8139%2024.6915C88.8698%2028.19%2087.9752%2031.638%2086.2255%2034.668C84.5422%2037.5674%2082.0994%2039.9523%2079.1605%2041.5656C76.1598%2043.2269%2072.7802%2044.0833%2069.3505%2044.0514L69.346%2044.0469ZM69.346%2034.3152C70.538%2034.3734%2071.7283%2034.1689%2072.8325%2033.7162C73.9367%2033.2634%2074.9279%2032.5736%2075.736%2031.6953C77.3737%2029.74%2078.2118%2027.2379%2078.0823%2024.6906C78.2263%2022.117%2077.3877%2019.5848%2075.736%2017.6058C74.9236%2016.7349%2073.931%2016.0516%2072.8273%2015.6036C71.7237%2015.1556%2070.5357%2014.9537%2069.346%2015.012C68.1517%2014.9481%2066.958%2015.1473%2065.8491%2015.5955C64.7403%2016.0437%2063.7434%2016.73%2062.929%2017.6058C61.2936%2019.5924%2060.4657%2022.1216%2060.6097%2024.6906C60.4711%2027.2428%2061.2992%2029.7535%2062.929%2031.7223C63.7435%2032.598%2064.7404%2033.2841%2065.8493%2033.7322C66.9581%2034.1802%2068.1518%2034.3793%2069.346%2034.3152ZM121.98%2018.5409C122.005%2020.7203%20121.457%2022.868%20120.389%2024.768C119.262%2026.7022%20117.593%2028.2639%20115.589%2029.2599C113.149%2030.45%20110.456%2031.028%20107.743%2030.9438H102.512V43.668H91.9414V5.97515H107.743C110.429%205.89615%20113.098%206.44499%20115.535%207.57805C117.556%208.53633%20119.24%2010.0837%20120.366%2012.0168C121.47%2014.0112%20122.027%2016.262%20121.98%2018.5409ZM106.718%2022.608C109.701%2022.608%20111.193%2021.2535%20111.193%2018.5445C111.193%2015.7995%20109.701%2014.427%20106.718%2014.427H102.511V22.608H106.718ZM138.966%2044.0496C134.544%2044.0496%20130.914%2043.0068%20128.076%2040.9212C126.671%2039.8856%20125.526%2038.5378%20124.731%2036.9842C123.935%2035.4305%20123.511%2033.7134%20123.493%2031.968H134.766C134.772%2033.0452%20135.197%2034.0778%20135.95%2034.848C136.685%2035.4727%20137.628%2035.7973%20138.592%2035.757C139.45%2035.7923%20140.295%2035.5387%20140.991%2035.037C141.299%2034.8043%20141.546%2034.5002%20141.711%2034.1509C141.875%2033.8016%20141.952%2033.4176%20141.936%2033.0318C141.942%2032.5003%20141.799%2031.9777%20141.522%2031.5238C141.245%2031.0699%20140.847%2030.703%20140.371%2030.465C138.753%2029.6223%20137.055%2028.9416%20135.303%2028.4328C133.245%2027.7821%20131.235%2026.9869%20129.29%2026.0532C127.719%2025.2509%20126.354%2024.0984%20125.299%2022.6845C124.102%2020.9943%20123.504%2018.9522%20123.601%2016.8831C123.539%2014.6651%20124.181%2012.4844%20125.434%2010.6533C126.709%208.88281%20128.468%207.51806%20130.5%206.72305C132.833%205.7991%20135.325%205.34491%20137.834%205.38655C142.256%205.38655%20145.788%206.41135%20148.431%208.46095C149.743%209.4879%20150.805%2010.7988%20151.538%2012.2953C152.27%2013.7918%20152.654%2015.4348%20152.661%2017.1009H141.178C141.196%2016.6228%20141.112%2016.1462%20140.931%2015.7034C140.749%2015.2606%20140.475%2014.8618%20140.127%2014.5341C139.406%2013.9445%20138.495%2013.6399%20137.565%2013.6782C136.852%2013.6497%20136.157%2013.8988%20135.624%2014.373C135.364%2014.6299%20135.162%2014.9395%20135.031%2015.2811C134.901%2015.6227%20134.846%2015.9882%20134.869%2016.353C134.867%2016.7026%20134.941%2017.0484%20135.085%2017.3668C135.23%2017.6852%20135.441%2017.9688%20135.705%2018.198C136.32%2018.7526%20137.021%2019.204%20137.781%2019.5345C138.608%2019.9089%20139.83%2020.3811%20141.449%2020.9511C143.49%2021.6188%20145.481%2022.4308%20147.408%2023.3811C148.985%2024.1946%20150.365%2025.3438%20151.451%2026.748C152.627%2028.3272%20153.227%2030.2616%20153.15%2032.229C153.18%2034.364%20152.59%2036.4619%20151.451%2038.268C150.249%2040.1142%20148.547%2041.5811%20146.544%2042.498C144.168%2043.5813%20141.577%2044.111%20138.966%2044.0469V44.0496ZM170.569%204.05005L169.326%2029.556H160.326L159.086%204.05005H170.569ZM164.852%2044.1C163.214%2044.1792%20161.606%2043.6348%20160.352%2042.5763C159.802%2042.0947%20159.364%2041.4976%20159.071%2040.8276C158.777%2040.1577%20158.635%2039.4312%20158.654%2038.7C158.636%2037.9651%20158.779%2037.2352%20159.073%2036.5611C159.366%2035.887%20159.803%2035.2849%20160.352%2034.7967C161.598%2033.7223%20163.209%2033.1672%20164.852%2033.246C166.479%2033.1726%20168.072%2033.7278%20169.301%2034.7967C169.851%2035.2847%20170.287%2035.8867%20170.581%2036.5606C170.874%2037.2345%20171.017%2037.9643%20171%2038.6991C171.014%2039.4258%20170.869%2040.1466%20170.576%2040.8116C170.282%2041.4765%20169.848%2042.0695%20169.302%2042.5493C168.073%2043.6185%20166.48%2044.1738%20164.852%2044.1Z%22%20fill%3D%22%23E4E5E8%22%2F%3E%0A%3Cg%20filter%3D%22url%28%23filter0_d_4988_149545%29%22%3E%0A%3Cpath%20d%3D%22M90%20103.95C108.64%20103.95%20123.75%2088.8397%20123.75%2070.2001C123.75%2051.5605%20108.64%2036.4501%2090%2036.4501C71.3604%2036.4501%2056.25%2051.5605%2056.25%2070.2001C56.25%2088.8397%2071.3604%20103.95%2090%20103.95Z%22%20fill%3D%22%23FFCA5F%22%2F%3E%0A%3C%2Fg%3E%0A%3Cpath%20d%3D%22M107.636%2041.266C111.744%2047.6943%20113.551%2055.3262%20112.761%2062.9145C111.971%2070.5028%20108.63%2077.5986%20103.285%2083.0425C97.94%2088.4863%2090.9064%2091.9561%2083.3338%2092.8849C75.7613%2093.8138%2068.0976%2092.1466%2061.5952%2088.156C64.3258%2092.4247%2067.9836%2096.0229%2072.2966%2098.683C76.6096%20101.343%2081.4668%20102.997%2086.507%20103.521C91.5472%20104.045%2096.6407%20103.426%20101.409%20101.71C106.177%2099.9935%20110.496%2097.2246%20114.047%2093.6088C117.597%2089.9931%20120.286%2085.6235%20121.915%2080.8249C123.543%2076.0264%20124.069%2070.9225%20123.453%2065.8927C122.837%2060.8629%20121.095%2056.0368%20118.357%2051.7731C115.618%2047.5095%20111.954%2043.9181%20107.636%2041.266Z%22%20fill%3D%22%23FFB948%22%2F%3E%0A%3Cpath%20d%3D%22M60.8734%2073.5912C60.8726%2067.0548%2062.9185%2060.6821%2066.724%2055.3677C70.5296%2050.0532%2075.9036%2046.0638%2082.092%2043.9592C88.2804%2041.8546%2094.9724%2041.7405%20101.229%2043.633C107.485%2045.5255%20112.992%2049.3295%20116.977%2054.5112C114.842%2050.7932%20111.966%2047.5535%20108.527%2044.993C105.088%2042.4325%20101.16%2040.6059%2096.9855%2039.6265C92.8115%2038.647%2088.4807%2038.5356%2084.2618%2039.2991C80.043%2040.0627%2076.026%2041.6849%2072.46%2044.0652C68.894%2046.4454%2065.8551%2049.533%2063.5318%2053.1363C61.2084%2056.7396%2059.6502%2060.7819%2058.9538%2065.0124C58.2573%2069.2428%2058.4375%2073.5713%2059.4831%2077.7292C60.5287%2081.8872%2062.4175%2085.7859%2065.0323%2089.1837C62.3%2084.441%2060.8655%2079.062%2060.8734%2073.5885V73.5912Z%22%20fill%3D%22%23FFD26E%22%2F%3E%0A%3Cpath%20d%3D%22M77.8706%2069.2965C79.8961%2069.2965%2081.5381%2066.9977%2081.5381%2064.162C81.5381%2061.3263%2079.8961%2059.0275%2077.8706%2059.0275C75.8451%2059.0275%2074.2031%2061.3263%2074.2031%2064.162C74.2031%2066.9977%2075.8451%2069.2965%2077.8706%2069.2965Z%22%20fill%3D%22%23352626%22%2F%3E%0A%3Cpath%20d%3D%22M101.203%2069.2965C103.229%2069.2965%20104.871%2066.9977%20104.871%2064.162C104.871%2061.3263%20103.229%2059.0275%20101.203%2059.0275C99.1776%2059.0275%2097.5356%2061.3263%2097.5356%2064.162C97.5356%2066.9977%2099.1776%2069.2965%20101.203%2069.2965Z%22%20fill%3D%22%23352626%22%2F%3E%0A%3Cpath%20d%3D%22M97.9902%2079.9758H81.4851C80.5735%2079.9758%2079.8345%2080.7148%2079.8345%2081.6264C79.8345%2082.538%2080.5735%2083.277%2081.4851%2083.277H97.9902C98.9018%2083.277%2099.6408%2082.538%2099.6408%2081.6264C99.6408%2080.7148%2098.9018%2079.9758%2097.9902%2079.9758Z%22%20fill%3D%22%23352626%22%2F%3E%0A%3Cpath%20d%3D%22M110.552%2081.0891C110.552%2086.4702%20108.455%2088.2099%20105.872%2088.2099C103.289%2088.2099%20101.192%2086.4702%20101.192%2081.0891C101.192%2075.708%20105.872%2068.7231%20105.872%2068.7231C105.872%2068.7231%20110.552%2075.7071%20110.552%2081.0891Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fg%3E%0A%3Cdefs%3E%0A%3Cfilter%20id%3D%22filter0_d_4988_149545%22%20x%3D%2250.25%22%20y%3D%2233.4501%22%20width%3D%2279.5%22%20height%3D%2279.5%22%20filterUnits%3D%22userSpaceOnUse%22%20color-interpolation-filters%3D%22sRGB%22%3E%0A%3CfeFlood%20flood-opacity%3D%220%22%20result%3D%22BackgroundImageFix%22%2F%3E%0A%3CfeColorMatrix%20in%3D%22SourceAlpha%22%20type%3D%22matrix%22%20values%3D%220%200%200%200%200%200%200%200%200%200%200%200%200%200%200%200%200%200%20127%200%22%20result%3D%22hardAlpha%22%2F%3E%0A%3CfeOffset%20dy%3D%223%22%2F%3E%0A%3CfeGaussianBlur%20stdDeviation%3D%223%22%2F%3E%0A%3CfeColorMatrix%20type%3D%22matrix%22%20values%3D%220%200%200%200%200%200%200%200%200%200%200%200%200%200%200%200%200%200%200.161%200%22%2F%3E%0A%3CfeBlend%20mode%3D%22normal%22%20in2%3D%22BackgroundImageFix%22%20result%3D%22effect1_dropShadow_4988_149545%22%2F%3E%0A%3CfeBlend%20mode%3D%22normal%22%20in%3D%22SourceGraphic%22%20in2%3D%22effect1_dropShadow_4988_149545%22%20result%3D%22shape%22%2F%3E%0A%3C%2Ffilter%3E%0A%3CclipPath%20id%3D%22clip0_4988_149545%22%3E%0A%3Crect%20width%3D%22180%22%20height%3D%22108%22%20fill%3D%22white%22%2F%3E%0A%3C%2FclipPath%3E%0A%3C%2Fdefs%3E%0A%3C%2Fsvg%3E%0A") no-repeat center;
 }
 .jodit .jodit-search-image__license,
 .jodit .jodit-search-gif__license {
@@ -5230,35 +5450,65 @@ a + .jodit-filebrowser-tree__source-title {
   font-weight: 400;
   font-size: 13px;
   line-height: 18px;
-  color: #A7A8AB;
+  color: #a7a8ab;
   text-align: center;
 }
 .jodit .jodit-search-image__license a,
 .jodit .jodit-search-gif__license a {
   text-decoration: none;
-  color: #A7A8AB;
+  color: #a7a8ab;
 }
 .jodit .jodit-search-image__license a:visited,
 .jodit .jodit-search-gif__license a:visited {
   text-decoration: none;
-  color: #A7A8AB;
+  color: #a7a8ab;
 }
 .jodit .jodit-search-image__license a:hover,
 .jodit .jodit-search-gif__license a:hover {
   text-decoration: none;
-  color: #A7A8AB;
+  color: #a7a8ab;
 }
 .jodit .jodit-search-image__license a:focus,
 .jodit .jodit-search-gif__license a:focus {
   text-decoration: none;
-  color: #A7A8AB;
+  color: #a7a8ab;
 }
 .jodit .jodit-search-image__license a:hover,
 .jodit .jodit-search-gif__license a:hover,
 .jodit .jodit-search-image__license a:active,
 .jodit .jodit-search-gif__license a:active {
   text-decoration: none;
-  color: #A7A8AB;
+  color: #a7a8ab;
+}
+
+.jodit-popup__title {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding: 20px 24px 14px 24px;
+}
+.jodit-popup__title-label {
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 30px;
+  letter-spacing: -0.44px;
+  color: #242a3c;
+}
+.jodit-popup__title-close-btn {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  padding: 0;
+  margin: 0;
+}
+.jodit-popup__title-close-btn .jodit-icon {
+  width: 32px;
+  height: 32px;
 }
 
 .jodit .jodit-popup__content div.jodit-ui-group .jodit-ui-group__p,
@@ -6203,5 +6453,167 @@ html.jodit_fullsize-box_true {
   font-weight: 700;
   line-height: 40px;
   grid-column-end: span 7;
+}
+
+.jodit-emoji {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: auto;
+  height: 305px;
+  padding: 0 8px;
+  padding-bottom: 20px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.jodit-emoji__navigate {
+  background-color: #fff;
+  padding: 0 16px;
+}
+.jodit-emoji__categories {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 19px;
+  margin-bottom: 14px;
+  gap: 6px;
+}
+.jodit-emoji__category {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 28px;
+  height: 28px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-radius: 100%;
+  cursor: pointer;
+  background-color: #f8f8f8;
+  background-size: cover;
+}
+.jodit-emoji__category[title='Smileys & Emotion'] {
+  background-image: url("data:image/svg+xml,%3Csvg%20width%3D%221792%22%20height%3D%221792%22%20viewBox%3D%220%200%201792%201792%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Cpath%20fill-rule%3D%22evenodd%22%20clip-rule%3D%22evenodd%22%20d%3D%22M638.216%20510.198C714.52%20459.213%20804.23%20432%20896%20432C1019.06%20432%201137.08%20480.886%201224.1%20567.902C1311.11%20654.919%201360%20772.939%201360%20896C1360%20987.77%201332.79%201077.48%201281.8%201153.78C1230.82%201230.09%201158.35%201289.56%201073.57%201324.68C988.78%201359.8%20895.485%201368.99%20805.478%201351.08C715.471%201333.18%20632.794%201288.99%20567.903%201224.1C503.011%201159.21%20458.819%201076.53%20440.916%20986.522C423.012%20896.515%20432.201%20803.22%20467.32%20718.435C502.439%20633.65%20561.911%20561.183%20638.216%20510.198ZM896%20336C785.243%20336%20676.972%20368.843%20584.881%20430.377C492.789%20491.911%20421.013%20579.371%20378.628%20681.697C336.243%20784.024%20325.153%20896.621%20346.76%201005.25C368.368%201113.88%20421.703%201213.66%20500.02%201291.98C578.338%201370.3%20678.12%201423.63%20786.75%201445.24C895.379%201466.85%201007.98%201455.76%201110.3%201413.37C1212.63%201370.99%201300.09%201299.21%201361.62%201207.12C1423.16%201115.03%201456%201006.76%201456%20896C1456%20747.479%201397%20605.04%201291.98%20500.02C1186.96%20395%201044.52%20336%20896%20336ZM677.318%20951.061C660.645%20930.452%20630.421%20927.261%20609.811%20943.934C589.202%20960.607%20586.011%20990.831%20602.684%201011.44C638.049%201055.16%20682.37%201090.78%20732.662%201115.93C782.953%201141.08%20838.049%201155.16%20894.24%201157.22C895.414%201157.26%20896.589%201157.26%20897.763%201157.22C953.953%201155.16%201009.05%201141.08%201059.34%201115.93C1109.63%201090.78%201153.95%201055.16%201189.32%201011.44C1205.99%20990.831%201202.8%20960.607%201182.19%20943.934C1161.58%20927.261%201131.36%20930.452%201114.68%20951.061C1087.94%20984.113%201054.43%201011.05%201016.41%201030.07C978.908%201048.82%20937.876%201059.43%20896.001%201061.21C854.126%201059.43%20813.094%201048.82%20775.594%201030.07C737.568%201011.05%20704.058%20984.113%20677.318%20951.061ZM694.375%20742.375C694.375%20715.865%20715.865%20694.375%20742.375%20694.375H743.015C769.525%20694.375%20791.015%20715.865%20791.015%20742.375C791.015%20768.885%20769.525%20790.375%20743.015%20790.375H742.375C715.865%20790.375%20694.375%20768.885%20694.375%20742.375ZM1049.5%20694.375C1022.99%20694.375%201001.5%20715.865%201001.5%20742.375C1001.5%20768.885%201022.99%20790.375%201049.5%20790.375H1050.14C1076.65%20790.375%201098.14%20768.885%201098.14%20742.375C1098.14%20715.865%201076.65%20694.375%201050.14%20694.375H1049.5Z%22%20fill%3D%22%23A7A8AB%22%2F%3E%0A%3C%2Fsvg%3E%0A");
+}
+.jodit-emoji__category[title='People & Body'] {
+  background-image: url("data:image/svg+xml,%3Csvg%20width%3D%221792%22%20height%3D%221792%22%20viewBox%3D%220%200%201792%201792%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Cpath%20d%3D%22M1390.97%20963.134C1410.15%20930.65%201421%20896%201421%20854.109C1421%20757.827%201339.59%20666.903%201233.27%20666.903H1153.47C1164.23%20638.881%201172.83%20605.369%201172.83%20565.097C1172.83%20405.86%201090.38%20336%20964.425%20336C829.66%20336%20837.347%20543.666%20807.45%20573.562C757.691%20623.322%20698.917%20718.915%20657.037%20756H441C402.34%20756%20371%20787.34%20371%20826V1351C371%201389.66%20402.34%201421%20441%201421H581C613.578%201421%20640.955%201398.74%20648.764%201368.61C746.128%201370.8%20812.958%201455.98%201037.71%201455.98C1053.5%201455.98%201071%201456%201086.31%201456C1255.01%201456%201331.28%201369.76%201333.37%201247.47C1362.5%201207.16%201377.77%201153.14%201371.3%201100.92C1392.86%201060.56%201401.19%201012.67%201390.97%20963.134ZM1255.89%201080.89C1283.36%201127.11%201258.64%201188.97%201225.39%201206.82C1242.24%201313.53%201186.88%201350.98%201109.19%201350.98H1026.46C869.752%201350.98%20768.274%201268.25%20651%201268.25V861H674.887C736.925%20861%20823.594%20705.928%20881.694%20647.806C943.731%20585.769%20923.059%20482.366%20964.425%20441C1067.83%20441%201067.83%20513.144%201067.83%20565.097C1067.83%20650.781%201005.79%20689.172%201005.79%20771.903H1233.27C1279.45%20771.903%201315.8%20813.269%201316%20854.634C1316.2%20895.978%201287.96%20937.344%201267.28%20937.344C1296.79%20969.183%201303.1%201036.3%201255.89%201080.89V1080.89ZM563.5%201281C563.5%201310%20539.995%201333.5%20511%201333.5C482.005%201333.5%20458.5%201310%20458.5%201281C458.5%201252%20482.005%201228.5%20511%201228.5C539.995%201228.5%20563.5%201252%20563.5%201281Z%22%20fill%3D%22%23A7A8AB%22%2F%3E%0A%3C%2Fsvg%3E%0A");
+}
+.jodit-emoji__category[title='Animals & Nature'] {
+  background-image: url("data:image/svg+xml,%3Csvg%20width%3D%221792%22%20height%3D%221792%22%20viewBox%3D%220%200%201792%201792%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Cpath%20d%3D%22M1303.54%201163.93L1128.79%20965.995H1195.79C1215.5%20965.995%201232.93%20955.058%201241.24%20937.427C1249.55%20919.84%201246.82%20899.672%201234.07%20884.82L1063.16%20686.004H1126.36C1146.26%20686.004%201164.2%20674.302%201171.99%20656.234C1179.69%20638.45%201176.06%20617.757%201162.71%20603.56L921.505%20346.582C908.315%20332.473%20883.707%20332.473%20870.495%20346.582L629.265%20603.56C615.922%20617.757%20612.313%20638.45%20619.991%20656.234C627.778%20674.302%20645.737%20686.004%20665.642%20686.004H728.837L557.912%20884.863C545.203%20899.694%20542.468%20919.84%20550.759%20937.449C559.071%20955.058%20576.483%20965.995%20596.213%20965.995H663.214L488.461%201163.93C475.336%201178.79%20472.361%201199.13%20480.674%201217C488.876%201234.61%20506.923%201245.99%20526.631%201245.99H826.002V1299.47L759.745%201405.34C748.108%201428.61%20765.039%201456%20791.047%201456H1000.95C1026.96%201456%201043.89%201428.61%201032.25%201405.34L965.998%201299.47V1245.99H1265.37C1285.08%201245.99%201303.12%201234.61%201311.33%201217C1319.64%201199.13%201316.66%201178.79%201303.54%201163.93V1163.93Z%22%20fill%3D%22%23A7A8AB%22%2F%3E%0A%3C%2Fsvg%3E%0A");
+}
+.jodit-emoji__category[title='Food & Drink'] {
+  background-image: url("data:image/svg+xml,%3Csvg%20width%3D%221792%22%20height%3D%221792%22%20viewBox%3D%220%200%201792%201792%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Cpath%20d%3D%22M1453.55%20667.183L1361.73%201386.77H1051.69L960.224%20663.613H1338.77L1413.59%20405.228L1456%20418.035L1384.2%20666.693L1453.48%20667.253L1453.55%20667.183ZM916.413%201083.53C916.413%201083.53%20928.031%20990.235%20767.204%20990.235H511.198C350.651%20990.235%20361.989%201083.53%20361.989%201083.53H916.413ZM361.989%201293.48C361.989%201293.48%20350.651%201386.77%20511.198%201386.77H767.274C928.241%201386.77%20916.483%201293.48%20916.483%201293.48H361.989ZM892.338%201246.8C906.33%201245.26%20919.158%201238.29%20928.06%201227.39C936.961%201216.48%20941.223%201202.52%20939.928%201188.5C941.261%201174.47%20937.015%201160.48%20928.108%201149.56C919.201%201138.63%20906.351%201131.66%20892.338%201130.14H383.824C369.819%201131.67%20356.979%201138.65%20348.076%201149.57C339.173%201160.49%20334.92%201174.48%20336.234%201188.5C334.957%201202.52%20339.226%201216.47%20348.124%201227.37C357.022%201238.27%20369.84%201245.25%20383.824%201246.8H892.338Z%22%20fill%3D%22%23A7A8AB%22%2F%3E%0A%3C%2Fsvg%3E%0A");
+}
+.jodit-emoji__category[title='Travel & Places'] {
+  background-image: url("data:image/svg+xml,%3Csvg%20width%3D%221792%22%20height%3D%221792%22%20viewBox%3D%220%200%201792%201792%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Cpath%20d%3D%22M1359.54%20794.081L1333.29%20728.49L1286.81%20612.22C1267.55%20563.639%201234.1%20521.986%201190.83%20492.693C1147.55%20463.4%201096.45%20447.826%201044.19%20448H747.81C695.545%20447.841%20644.444%20463.429%20601.167%20492.734C557.89%20522.039%20524.445%20563.701%20505.19%20612.29L458.71%20728.561L432.46%20794.15C404.16%20804.819%20379.776%20823.845%20362.547%20848.701C345.318%20873.557%20336.059%20903.067%20336%20933.31V1045.31C336.07%201081.43%20349.339%201116.29%20373.31%201143.31V1269.31C373.31%201279.12%20375.242%201288.83%20378.995%201297.89C382.749%201306.95%20388.251%201315.19%20395.186%201322.12C402.122%201329.06%20410.356%201334.56%20419.417%201338.31C428.479%201342.07%20438.192%201344%20448%201344H522.69C532.498%201344%20542.211%201342.07%20551.273%201338.31C560.334%201334.56%20568.568%201329.06%20575.504%201322.12C582.439%201315.19%20587.941%201306.95%20591.695%201297.89C595.448%201288.83%20597.38%201279.12%20597.38%201269.31V1194.69H1194.69V1269.38C1194.71%201289.17%201202.58%201308.13%201216.57%201322.12C1230.56%201336.11%201249.53%201343.98%201269.31%201344H1344C1353.81%201344%201363.52%201342.07%201372.58%201338.31C1381.64%201334.56%201389.88%201329.06%201396.81%201322.12C1403.75%201315.19%201409.25%201306.95%201413%201297.89C1416.76%201288.83%201418.69%201279.12%201418.69%201269.31V1143.31C1442.67%201116.29%201455.94%201081.44%201456%201045.31V933.31C1455.96%20903.055%201446.7%20873.53%201429.47%20848.66C1412.24%20823.79%201387.85%20804.753%201359.54%20794.081V794.081ZM644%20667.73C652.299%20646.973%20666.621%20629.174%20685.121%20616.624C703.622%20604.074%20725.455%20597.348%20747.81%20597.31H1044.12C1066.49%20597.334%201088.34%20604.053%201106.85%20616.604C1125.36%20629.155%201139.7%20646.962%201148%20667.73L1194.69%20784.001H597.31L644%20667.73ZM522.69%201044.89C502.946%201044.89%20484.011%201037.05%20470.049%201023.09C456.088%201009.12%20448.245%20990.19%20448.245%20970.445C448.245%20950.701%20456.088%20931.766%20470.049%20917.805C484.011%20903.844%20502.946%20896%20522.69%20896C550.282%20901.634%20575.609%20915.255%20595.523%20935.168C615.436%20955.081%20629.056%20980.408%20634.69%201008C634.69%201052.31%20567.49%201044.89%20522.69%201044.89ZM1269.38%201044.89C1224.58%201044.89%201157.38%201052.31%201157.38%201007.65C1163.01%20980.058%201176.63%20954.731%201196.55%20934.818C1216.46%20914.905%201241.79%20901.284%201269.38%20895.651C1289.12%20895.651%201308.06%20903.494%201322.02%20917.455C1335.98%20931.416%201343.83%20950.351%201343.83%20970.095C1343.83%20989.84%201335.98%201008.77%201322.02%201022.74C1308.06%201036.7%201289.12%201044.54%201269.38%201044.54V1044.89Z%22%20fill%3D%22%23A7A8AB%22%2F%3E%0A%3C%2Fsvg%3E%0A");
+}
+.jodit-emoji__category[title='Activities'] {
+  background-image: url("data:image/svg+xml,%3Csvg%20width%3D%221792%22%20height%3D%221792%22%20viewBox%3D%220%200%201792%201792%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Cpath%20d%3D%22M896%20336C785.243%20336%20676.972%20368.843%20584.881%20430.377C492.789%20491.911%20421.013%20579.371%20378.628%20681.697C336.243%20784.024%20325.153%20896.621%20346.76%201005.25C368.368%201113.88%20421.703%201213.66%20500.02%201291.98C578.338%201370.3%20678.12%201423.63%20786.75%201445.24C895.379%201466.85%201007.98%201455.76%201110.3%201413.37C1212.63%201370.99%201300.09%201299.21%201361.62%201207.12C1423.16%201115.03%201456%201006.76%201456%20896C1455.83%20747.53%201396.78%20605.189%201291.8%20500.204C1186.81%20395.22%201044.47%20336.167%20896%20336V336ZM548.66%20848.05L654.22%20896.21L700.28%201076.32L658.28%201155.21L504.28%201153.32C464.168%201092.32%20438.812%201022.82%20430.22%20950.32L548.66%20848.05ZM1133.72%201155.21L1091.72%201076.32L1137.78%20895.93L1242.78%20847.98L1361.22%20950.53C1352.75%201023.06%201327.39%201092.59%201287.16%201153.53L1133.72%201155.21ZM1220.94%20761.6L1103.55%20814.38L939.05%20675.5V548.45L1067.99%20460.67C1148.69%20493.14%201219.05%20546.926%201271.55%20616.28L1220.94%20761.6ZM721.84%20460.95L850.29%20548.45V675.5L686%20814.17L570.22%20761.39L519.75%20617.05C571.275%20547.225%20641.263%20493.164%20721.84%20460.95V460.95ZM794.78%201353.66L789.39%201352.33L734.23%201204L773.78%201124.83H1018.22L1058.75%201206.45L1005.41%201351.56L997.36%201353.45C961.456%201360.05%20925.079%201363.75%20888.58%201364.51C857.023%201364.14%20825.588%201360.51%20794.78%201353.66V1353.66Z%22%20fill%3D%22%23A7A8AB%22%2F%3E%0A%3C%2Fsvg%3E%0A");
+}
+.jodit-emoji__category[title='Objects'] {
+  background-image: url("data:image/svg+xml,%3Csvg%20width%3D%221792%22%20height%3D%221792%22%20viewBox%3D%220%200%201792%201792%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Cpath%20d%3D%22M721.29%201329.89C721.314%201343.65%20725.391%201357.09%20733.012%201368.55L770.351%201424.72C776.731%201434.34%20785.391%201442.23%20795.56%201447.69C805.729%201453.14%20817.091%201456%20828.632%201456H963.567C975.102%201456.01%20986.46%201453.16%20996.629%201447.71C1006.8%201442.27%201015.46%201434.39%201021.85%201424.79L1059.19%201368.61C1066.81%201357.16%201070.89%201343.71%201070.91%201329.96V1246.06H721.224V1329.89H721.29ZM511.282%20721.332C511.153%20814.491%20545.011%20904.498%20606.507%20974.475C656.559%201033.52%20695.273%201101.3%20720.697%201174.41V1176.12H1071.04V1174.41C1096.45%201101.3%201135.14%201033.52%201185.17%20974.475C1226.21%20927.699%201255.3%20871.662%201269.93%20811.173C1284.57%20750.684%201284.31%20687.548%201269.18%20627.182C1254.04%20566.815%201224.49%20511.021%201183.06%20464.585C1141.63%20418.148%201089.55%20382.457%201031.29%20360.572C973.03%20338.687%20910.331%20331.263%20848.572%20338.935C786.813%20346.607%20727.837%20369.147%20676.704%20404.621C625.571%20440.096%20583.807%20487.445%20554.994%20542.607C526.182%20597.77%20511.183%20659.099%20511.282%20721.332ZM896.133%20546.358C849.737%20546.393%20805.252%20564.839%20772.446%20597.646C739.639%20630.452%20721.193%20674.937%20721.158%20721.332C721.158%20730.607%20717.474%20739.501%20710.916%20746.059C704.359%20752.617%20695.464%20756.301%20686.19%20756.301C676.916%20756.301%20668.021%20752.617%20661.464%20746.059C654.906%20739.501%20651.222%20730.607%20651.222%20721.332C651.291%20656.399%20677.117%20594.146%20723.031%20548.231C768.946%20502.317%20831.2%20476.491%20896.133%20476.421C905.407%20476.421%20914.301%20480.106%20920.859%20486.663C927.417%20493.221%20931.101%20502.116%20931.101%20511.39C931.101%20520.664%20927.417%20529.558%20920.859%20536.116C914.301%20542.674%20905.407%20546.358%20896.133%20546.358Z%22%20fill%3D%22%23A7A8AB%22%2F%3E%0A%3C%2Fsvg%3E%0A");
+}
+.jodit-emoji__category[title='Symbols'] {
+  background-image: url("data:image/svg+xml,%3Csvg%20width%3D%221792%22%20height%3D%221792%22%20viewBox%3D%220%200%201792%201792%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Cpath%20d%3D%22M1300.91%20336.491L745.486%20444.231C739.909%20444.695%20734.671%20447.101%20730.687%20451.031C726.703%20454.961%20724.224%20460.164%20723.684%20465.734V1112.17C723.834%201123.02%20721.617%201133.78%20717.188%201143.68C712.575%201151.96%20706.367%201159.25%20698.921%201165.12C691.475%201170.99%20682.94%201175.33%20673.809%201177.88C664.924%201180.86%20652.828%201183.55%20638.567%201186.76C573.684%201201.32%20465.198%201226.04%20465.198%201326.23C463.879%201357.85%20474.772%201388.77%20495.621%201412.58C516.47%201436.39%20545.677%201451.27%20577.194%201454.13C583.511%201455.22%20589.899%201455.85%20596.308%201456C644.278%201454.25%20691.3%201442.12%20734.137%201420.46C755.231%201406.52%20772.316%201387.31%20783.697%201364.73C795.078%201342.15%20800.36%201316.99%20799.02%201291.74V719.591C799.014%20714.636%20800.731%20709.833%20803.878%20706.006C807.025%20702.178%20811.404%20699.564%20816.267%20698.611L1225.5%20615.958C1228.62%20615.317%201231.84%20615.376%201234.93%20616.132C1238.03%20616.888%201240.91%20618.321%201243.39%20620.329C1245.86%20622.336%201247.85%20624.867%201249.23%20627.74C1250.6%20630.612%201251.32%20633.754%201251.33%20636.938V989.351C1252.02%201001.74%201249.72%201014.11%201244.61%201025.41C1239.98%201033.73%201233.74%201041.03%201226.26%201046.91C1218.77%201052.78%201210.19%201057.1%201201.01%201059.61C1192.12%201062.6%201177.34%201065.28%201163.08%201068.5C1098.2%201083.05%20989.711%201107.54%20989.711%201207.67C987.88%201239.72%20998.604%201271.23%201019.61%201295.51C1040.61%201319.79%201070.25%201334.93%201102.23%201337.73C1119.68%201338.99%201137.23%201338.19%201154.49%201335.34C1189%201329.33%201222.22%201317.49%201252.75%201300.33C1275.95%201287.73%201295.17%201268.91%201308.25%201245.98C1321.34%201223.06%201327.77%201196.94%201326.82%201170.56V357.248C1326.8%20354.066%201326.08%20350.928%201324.69%20348.063C1323.31%20345.198%201321.3%20342.678%201318.82%20340.689C1316.33%20338.699%201313.44%20337.29%201310.34%20336.564C1307.24%20335.837%201304.02%20335.813%201300.91%20336.491V336.491Z%22%20fill%3D%22%23A7A8AB%22%2F%3E%0A%3C%2Fsvg%3E%0A");
+}
+.jodit-emoji__category[title='Flags'] {
+  background-image: url("data:image/svg+xml,%3Csvg%20width%3D%221792%22%20height%3D%221792%22%20viewBox%3D%220%200%201792%201792%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Cpath%20d%3D%22M1091.93%20552.458C974.702%20552.458%20877.91%20476.024%20730.553%20476.024C679.771%20475.836%20629.366%20484.747%20581.727%20502.335C589.942%20480.886%20591.962%20457.559%20587.557%20435.017C583.151%20412.475%20572.498%20391.625%20556.812%20374.846C541.126%20358.068%20521.039%20346.037%20498.844%20340.126C476.649%20334.215%20453.239%20334.663%20431.286%20341.418C409.333%20348.173%20389.721%20360.962%20374.688%20378.328C359.655%20395.694%20349.806%20416.936%20346.265%20439.63C342.725%20462.324%20345.635%20485.557%20354.664%20506.676C363.693%20527.796%20378.477%20545.952%20397.329%20559.073V1403.52C397.329%201417.44%20402.858%201430.79%20412.699%201440.63C422.54%201450.47%20435.887%201456%20449.804%201456H484.788C498.705%201456%20512.052%201450.47%20521.893%201440.63C531.734%201430.79%20537.263%201417.44%20537.263%201403.52V1197.01C616.376%201163.47%20701.672%201146.99%20787.585%201148.65C904.809%201148.65%201001.6%201224.71%201148.96%201224.71C1245.46%201223.9%201339.25%201192.62%201416.92%201135.34C1426.26%201128.92%201433.9%201120.31%201439.18%201110.27C1444.45%201100.24%201447.2%201089.06%201447.2%201077.72V546.285C1447.21%20534.516%201444.26%20522.935%201438.6%20512.611C1432.95%20502.288%201424.79%20493.558%201414.87%20487.227C1404.95%20480.896%201393.59%20477.17%201381.85%20476.394C1370.1%20475.618%201358.35%20477.816%201347.69%20482.786C1268.24%20523.703%201181.07%20547.441%201091.85%20552.458H1091.93Z%22%20fill%3D%22%23A7A8AB%22%2F%3E%0A%3C%2Fsvg%3E%0A");
+}
+.jodit-emoji__category_active_true,
+.jodit-emoji__category:hover {
+  background-color: #e0e0e0;
+}
+.jodit-emoji__category_active_true[title='Smileys & Emotion'],
+.jodit-emoji__category:hover[title='Smileys & Emotion'] {
+  background-image: url("data:image/svg+xml,%3Csvg%20width%3D%221792%22%20height%3D%221792%22%20viewBox%3D%220%200%201792%201792%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Cpath%20fill-rule%3D%22evenodd%22%20clip-rule%3D%22evenodd%22%20d%3D%22M638.216%20510.198C714.52%20459.213%20804.23%20432%20896%20432C1019.06%20432%201137.08%20480.886%201224.1%20567.902C1311.11%20654.919%201360%20772.939%201360%20896C1360%20987.77%201332.79%201077.48%201281.8%201153.78C1230.82%201230.09%201158.35%201289.56%201073.57%201324.68C988.78%201359.8%20895.485%201368.99%20805.478%201351.08C715.471%201333.18%20632.794%201288.99%20567.903%201224.1C503.011%201159.21%20458.819%201076.53%20440.916%20986.522C423.012%20896.515%20432.201%20803.22%20467.32%20718.435C502.439%20633.65%20561.911%20561.183%20638.216%20510.198ZM896%20336C785.243%20336%20676.972%20368.843%20584.881%20430.377C492.789%20491.911%20421.013%20579.371%20378.628%20681.697C336.243%20784.024%20325.153%20896.621%20346.76%201005.25C368.368%201113.88%20421.703%201213.66%20500.02%201291.98C578.338%201370.3%20678.12%201423.63%20786.75%201445.24C895.379%201466.85%201007.98%201455.76%201110.3%201413.37C1212.63%201370.99%201300.09%201299.21%201361.62%201207.12C1423.16%201115.03%201456%201006.76%201456%20896C1456%20747.479%201397%20605.04%201291.98%20500.02C1186.96%20395%201044.52%20336%20896%20336ZM677.318%20951.061C660.645%20930.452%20630.421%20927.261%20609.811%20943.934C589.202%20960.607%20586.011%20990.831%20602.684%201011.44C638.049%201055.16%20682.37%201090.78%20732.662%201115.93C782.953%201141.08%20838.049%201155.16%20894.24%201157.22C895.414%201157.26%20896.589%201157.26%20897.763%201157.22C953.953%201155.16%201009.05%201141.08%201059.34%201115.93C1109.63%201090.78%201153.95%201055.16%201189.32%201011.44C1205.99%20990.831%201202.8%20960.607%201182.19%20943.934C1161.58%20927.261%201131.36%20930.452%201114.68%20951.061C1087.94%20984.113%201054.43%201011.05%201016.41%201030.07C978.908%201048.82%20937.876%201059.43%20896.001%201061.21C854.126%201059.43%20813.094%201048.82%20775.594%201030.07C737.568%201011.05%20704.058%20984.113%20677.318%20951.061ZM694.375%20742.375C694.375%20715.865%20715.865%20694.375%20742.375%20694.375H743.015C769.525%20694.375%20791.015%20715.865%20791.015%20742.375C791.015%20768.885%20769.525%20790.375%20743.015%20790.375H742.375C715.865%20790.375%20694.375%20768.885%20694.375%20742.375ZM1049.5%20694.375C1022.99%20694.375%201001.5%20715.865%201001.5%20742.375C1001.5%20768.885%201022.99%20790.375%201049.5%20790.375H1050.14C1076.65%20790.375%201098.14%20768.885%201098.14%20742.375C1098.14%20715.865%201076.65%20694.375%201050.14%20694.375H1049.5Z%22%20fill%3D%22%23242A3C%22%2F%3E%0A%3C%2Fsvg%3E%0A");
+}
+.jodit-emoji__category_active_true[title='People & Body'],
+.jodit-emoji__category:hover[title='People & Body'] {
+  background-image: url("data:image/svg+xml,%3Csvg%20width%3D%221792%22%20height%3D%221792%22%20viewBox%3D%220%200%201792%201792%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Cpath%20d%3D%22M1390.97%20963.134C1410.15%20930.65%201421%20896%201421%20854.109C1421%20757.827%201339.59%20666.903%201233.27%20666.903H1153.47C1164.23%20638.881%201172.83%20605.369%201172.83%20565.097C1172.83%20405.86%201090.38%20336%20964.425%20336C829.66%20336%20837.347%20543.666%20807.45%20573.562C757.691%20623.322%20698.917%20718.915%20657.037%20756H441C402.34%20756%20371%20787.34%20371%20826V1351C371%201389.66%20402.34%201421%20441%201421H581C613.578%201421%20640.955%201398.74%20648.764%201368.61C746.128%201370.8%20812.958%201455.98%201037.71%201455.98C1053.5%201455.98%201071%201456%201086.31%201456C1255.01%201456%201331.28%201369.76%201333.37%201247.47C1362.5%201207.16%201377.77%201153.14%201371.3%201100.92C1392.86%201060.56%201401.19%201012.67%201390.97%20963.134ZM1255.89%201080.89C1283.36%201127.11%201258.64%201188.97%201225.39%201206.82C1242.24%201313.53%201186.88%201350.98%201109.19%201350.98H1026.46C869.752%201350.98%20768.274%201268.25%20651%201268.25V861H674.887C736.925%20861%20823.594%20705.928%20881.694%20647.806C943.731%20585.769%20923.059%20482.366%20964.425%20441C1067.83%20441%201067.83%20513.144%201067.83%20565.097C1067.83%20650.781%201005.79%20689.172%201005.79%20771.903H1233.27C1279.45%20771.903%201315.8%20813.269%201316%20854.634C1316.2%20895.978%201287.96%20937.344%201267.28%20937.344C1296.79%20969.183%201303.1%201036.3%201255.89%201080.89V1080.89ZM563.5%201281C563.5%201310%20539.995%201333.5%20511%201333.5C482.005%201333.5%20458.5%201310%20458.5%201281C458.5%201252%20482.005%201228.5%20511%201228.5C539.995%201228.5%20563.5%201252%20563.5%201281Z%22%20fill%3D%22%23242A3C%22%2F%3E%0A%3C%2Fsvg%3E%0A");
+}
+.jodit-emoji__category_active_true[title='Animals & Nature'],
+.jodit-emoji__category:hover[title='Animals & Nature'] {
+  background-image: url("data:image/svg+xml,%3Csvg%20width%3D%221792%22%20height%3D%221792%22%20viewBox%3D%220%200%201792%201792%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Cpath%20d%3D%22M1303.54%201163.93L1128.79%20965.995H1195.79C1215.5%20965.995%201232.93%20955.058%201241.24%20937.427C1249.55%20919.84%201246.82%20899.672%201234.07%20884.82L1063.16%20686.004H1126.36C1146.26%20686.004%201164.2%20674.302%201171.99%20656.234C1179.69%20638.45%201176.06%20617.757%201162.71%20603.56L921.505%20346.582C908.315%20332.473%20883.707%20332.473%20870.495%20346.582L629.265%20603.56C615.922%20617.757%20612.313%20638.45%20619.991%20656.234C627.778%20674.302%20645.737%20686.004%20665.642%20686.004H728.837L557.912%20884.863C545.203%20899.694%20542.468%20919.84%20550.759%20937.449C559.071%20955.058%20576.483%20965.995%20596.213%20965.995H663.214L488.461%201163.93C475.336%201178.79%20472.361%201199.13%20480.674%201217C488.876%201234.61%20506.923%201245.99%20526.631%201245.99H826.002V1299.47L759.745%201405.34C748.108%201428.61%20765.039%201456%20791.047%201456H1000.95C1026.96%201456%201043.89%201428.61%201032.25%201405.34L965.998%201299.47V1245.99H1265.37C1285.08%201245.99%201303.12%201234.61%201311.33%201217C1319.64%201199.13%201316.66%201178.79%201303.54%201163.93V1163.93Z%22%20fill%3D%22%23242A3C%22%2F%3E%0A%3C%2Fsvg%3E%0A");
+}
+.jodit-emoji__category_active_true[title='Food & Drink'],
+.jodit-emoji__category:hover[title='Food & Drink'] {
+  background-image: url("data:image/svg+xml,%3Csvg%20width%3D%221792%22%20height%3D%221792%22%20viewBox%3D%220%200%201792%201792%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Cpath%20d%3D%22M1453.55%20667.183L1361.73%201386.77H1051.69L960.224%20663.613H1338.77L1413.59%20405.228L1456%20418.035L1384.2%20666.693L1453.48%20667.253L1453.55%20667.183ZM916.413%201083.53C916.413%201083.53%20928.031%20990.235%20767.204%20990.235H511.198C350.651%20990.235%20361.989%201083.53%20361.989%201083.53H916.413ZM361.989%201293.48C361.989%201293.48%20350.651%201386.77%20511.198%201386.77H767.274C928.241%201386.77%20916.483%201293.48%20916.483%201293.48H361.989ZM892.338%201246.8C906.33%201245.26%20919.158%201238.29%20928.06%201227.39C936.961%201216.48%20941.223%201202.52%20939.928%201188.5C941.261%201174.47%20937.015%201160.48%20928.108%201149.56C919.201%201138.63%20906.351%201131.66%20892.338%201130.14H383.824C369.819%201131.67%20356.979%201138.65%20348.076%201149.57C339.173%201160.49%20334.92%201174.48%20336.234%201188.5C334.957%201202.52%20339.226%201216.47%20348.124%201227.37C357.022%201238.27%20369.84%201245.25%20383.824%201246.8H892.338Z%22%20fill%3D%22%23242A3C%22%2F%3E%0A%3C%2Fsvg%3E%0A");
+}
+.jodit-emoji__category_active_true[title='Travel & Places'],
+.jodit-emoji__category:hover[title='Travel & Places'] {
+  background-image: url("data:image/svg+xml,%3Csvg%20width%3D%221792%22%20height%3D%221792%22%20viewBox%3D%220%200%201792%201792%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Cpath%20d%3D%22M1359.54%20794.081L1333.29%20728.491L1286.81%20612.221C1267.55%20563.639%201234.1%20521.986%201190.83%20492.693C1147.55%20463.4%201096.45%20447.826%201044.19%20448.001H747.81C695.545%20447.841%20644.444%20463.43%20601.167%20492.735C557.89%20522.039%20524.445%20563.702%20505.19%20612.291L458.71%20728.561L432.46%20794.151C404.16%20804.819%20379.776%20823.845%20362.547%20848.701C345.318%20873.558%20336.059%20903.067%20336%20933.311V1045.31C336.07%201081.43%20349.339%201116.29%20373.31%201143.31V1269.31C373.31%201279.12%20375.242%201288.83%20378.995%201297.89C382.749%201306.96%20388.251%201315.19%20395.186%201322.12C402.122%201329.06%20410.356%201334.56%20419.417%201338.32C428.479%201342.07%20438.192%201344%20448%201344H522.69C532.498%201344%20542.211%201342.07%20551.273%201338.32C560.334%201334.56%20568.568%201329.06%20575.504%201322.12C582.439%201315.19%20587.941%201306.96%20591.695%201297.89C595.448%201288.83%20597.38%201279.12%20597.38%201269.31V1194.69H1194.69V1269.38C1194.71%201289.17%201202.58%201308.13%201216.57%201322.12C1230.56%201336.11%201249.53%201343.98%201269.31%201344H1344C1353.81%201344%201363.52%201342.07%201372.58%201338.32C1381.64%201334.56%201389.88%201329.06%201396.81%201322.12C1403.75%201315.19%201409.25%201306.96%201413%201297.89C1416.76%201288.83%201418.69%201279.12%201418.69%201269.31V1143.31C1442.67%201116.29%201455.94%201081.44%201456%201045.31V933.311C1455.96%20903.055%201446.7%20873.53%201429.47%20848.66C1412.24%20823.79%201387.85%20804.754%201359.54%20794.081V794.081ZM644%20667.731C652.299%20646.973%20666.621%20629.174%20685.121%20616.624C703.622%20604.074%20725.455%20597.348%20747.81%20597.311H1044.12C1066.49%20597.334%201088.34%20604.054%201106.85%20616.605C1125.36%20629.155%201139.7%20646.962%201148%20667.731L1194.69%20784.001H597.31L644%20667.731ZM522.69%201044.89C502.946%201044.89%20484.011%201037.05%20470.049%201023.09C456.088%201009.13%20448.245%20990.19%20448.245%20970.446C448.245%20950.702%20456.088%20931.767%20470.049%20917.805C484.011%20903.844%20502.946%20896.001%20522.69%20896.001C550.282%20901.635%20575.609%20915.255%20595.523%20935.168C615.436%20955.081%20629.056%20980.409%20634.69%201008C634.69%201052.31%20567.49%201044.89%20522.69%201044.89ZM1269.38%201044.89C1224.58%201044.89%201157.38%201052.31%201157.38%201007.65C1163.01%20980.059%201176.63%20954.732%201196.55%20934.818C1216.46%20914.905%201241.79%20901.285%201269.38%20895.651C1289.12%20895.651%201308.06%20903.494%201322.02%20917.455C1335.98%20931.417%201343.83%20950.352%201343.83%20970.096C1343.83%20989.84%201335.98%201008.78%201322.02%201022.74C1308.06%201036.7%201289.12%201044.54%201269.38%201044.54V1044.89Z%22%20fill%3D%22%23242A3C%22%2F%3E%0A%3C%2Fsvg%3E%0A");
+}
+.jodit-emoji__category_active_true[title='Activities'],
+.jodit-emoji__category:hover[title='Activities'] {
+  background-image: url("data:image/svg+xml,%3Csvg%20width%3D%221792%22%20height%3D%221792%22%20viewBox%3D%220%200%201792%201792%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Cpath%20d%3D%22M896%20336C785.243%20336%20676.972%20368.843%20584.881%20430.377C492.789%20491.911%20421.013%20579.371%20378.628%20681.697C336.243%20784.024%20325.153%20896.621%20346.76%201005.25C368.368%201113.88%20421.703%201213.66%20500.02%201291.98C578.338%201370.3%20678.12%201423.63%20786.75%201445.24C895.379%201466.85%201007.98%201455.76%201110.3%201413.37C1212.63%201370.99%201300.09%201299.21%201361.62%201207.12C1423.16%201115.03%201456%201006.76%201456%20896C1455.83%20747.53%201396.78%20605.189%201291.8%20500.204C1186.81%20395.22%201044.47%20336.167%20896%20336V336ZM548.66%20848.05L654.22%20896.21L700.28%201076.32L658.28%201155.21L504.28%201153.32C464.168%201092.32%20438.812%201022.82%20430.22%20950.32L548.66%20848.05ZM1133.72%201155.21L1091.72%201076.32L1137.78%20895.93L1242.78%20847.98L1361.22%20950.53C1352.75%201023.06%201327.39%201092.59%201287.16%201153.53L1133.72%201155.21ZM1220.94%20761.6L1103.55%20814.38L939.05%20675.5V548.45L1067.99%20460.67C1148.69%20493.14%201219.05%20546.926%201271.55%20616.28L1220.94%20761.6ZM721.84%20460.95L850.29%20548.45V675.5L686%20814.17L570.22%20761.39L519.75%20617.05C571.275%20547.225%20641.263%20493.164%20721.84%20460.95V460.95ZM794.78%201353.66L789.39%201352.33L734.23%201204L773.78%201124.83H1018.22L1058.75%201206.45L1005.41%201351.56L997.36%201353.45C961.456%201360.05%20925.079%201363.75%20888.58%201364.51C857.023%201364.14%20825.588%201360.51%20794.78%201353.66V1353.66Z%22%20fill%3D%22%23242A3C%22%2F%3E%0A%3C%2Fsvg%3E%0A");
+}
+.jodit-emoji__category_active_true[title='Objects'],
+.jodit-emoji__category:hover[title='Objects'] {
+  background-image: url("data:image/svg+xml,%3Csvg%20width%3D%221792%22%20height%3D%221792%22%20viewBox%3D%220%200%201792%201792%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Cpath%20d%3D%22M721.29%201329.89C721.314%201343.65%20725.391%201357.09%20733.012%201368.55L770.351%201424.72C776.731%201434.34%20785.391%201442.23%20795.56%201447.69C805.729%201453.14%20817.091%201456%20828.632%201456H963.567C975.102%201456.01%20986.46%201453.16%20996.629%201447.71C1006.8%201442.27%201015.46%201434.39%201021.85%201424.79L1059.19%201368.61C1066.81%201357.16%201070.89%201343.71%201070.91%201329.96V1246.06H721.224V1329.89H721.29ZM511.282%20721.332C511.153%20814.491%20545.011%20904.498%20606.507%20974.475C656.559%201033.52%20695.273%201101.3%20720.697%201174.41V1176.12H1071.04V1174.41C1096.45%201101.3%201135.14%201033.52%201185.17%20974.475C1226.21%20927.699%201255.3%20871.662%201269.93%20811.173C1284.57%20750.684%201284.31%20687.548%201269.18%20627.182C1254.04%20566.815%201224.49%20511.021%201183.06%20464.585C1141.63%20418.148%201089.55%20382.457%201031.29%20360.572C973.03%20338.687%20910.331%20331.263%20848.572%20338.935C786.813%20346.607%20727.837%20369.147%20676.704%20404.621C625.571%20440.096%20583.807%20487.445%20554.994%20542.607C526.182%20597.77%20511.183%20659.099%20511.282%20721.332ZM896.133%20546.358C849.737%20546.393%20805.252%20564.839%20772.446%20597.646C739.639%20630.452%20721.193%20674.937%20721.158%20721.332C721.158%20730.607%20717.474%20739.501%20710.916%20746.059C704.359%20752.617%20695.464%20756.301%20686.19%20756.301C676.916%20756.301%20668.021%20752.617%20661.464%20746.059C654.906%20739.501%20651.222%20730.607%20651.222%20721.332C651.291%20656.399%20677.117%20594.146%20723.031%20548.231C768.946%20502.317%20831.2%20476.491%20896.133%20476.421C905.407%20476.421%20914.301%20480.106%20920.859%20486.663C927.417%20493.221%20931.101%20502.116%20931.101%20511.39C931.101%20520.664%20927.417%20529.558%20920.859%20536.116C914.301%20542.674%20905.407%20546.358%20896.133%20546.358Z%22%20fill%3D%22%23242A3C%22%2F%3E%0A%3C%2Fsvg%3E%0A");
+}
+.jodit-emoji__category_active_true[title='Symbols'],
+.jodit-emoji__category:hover[title='Symbols'] {
+  background-image: url("data:image/svg+xml,%3Csvg%20width%3D%221792%22%20height%3D%221792%22%20viewBox%3D%220%200%201792%201792%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Cpath%20d%3D%22M1300.91%20336.491L745.486%20444.231C739.909%20444.695%20734.671%20447.101%20730.687%20451.031C726.703%20454.961%20724.224%20460.164%20723.684%20465.734V1112.17C723.834%201123.02%20721.617%201133.78%20717.188%201143.68C712.575%201151.96%20706.367%201159.25%20698.921%201165.12C691.475%201170.99%20682.94%201175.33%20673.809%201177.88C664.924%201180.86%20652.828%201183.55%20638.567%201186.76C573.684%201201.32%20465.198%201226.04%20465.198%201326.23C463.879%201357.85%20474.772%201388.77%20495.621%201412.58C516.47%201436.39%20545.677%201451.27%20577.194%201454.13C583.511%201455.22%20589.899%201455.85%20596.308%201456C644.278%201454.25%20691.3%201442.12%20734.137%201420.46C755.231%201406.52%20772.316%201387.31%20783.697%201364.73C795.078%201342.15%20800.36%201316.99%20799.02%201291.74V719.591C799.014%20714.636%20800.731%20709.833%20803.878%20706.006C807.025%20702.178%20811.404%20699.564%20816.267%20698.611L1225.5%20615.958C1228.62%20615.317%201231.84%20615.376%201234.93%20616.132C1238.03%20616.888%201240.91%20618.321%201243.39%20620.329C1245.86%20622.336%201247.85%20624.867%201249.23%20627.74C1250.6%20630.612%201251.32%20633.754%201251.33%20636.938V989.351C1252.02%201001.74%201249.72%201014.11%201244.61%201025.41C1239.98%201033.73%201233.74%201041.03%201226.26%201046.91C1218.77%201052.78%201210.19%201057.1%201201.01%201059.61C1192.12%201062.6%201177.34%201065.28%201163.08%201068.5C1098.2%201083.05%20989.711%201107.54%20989.711%201207.67C987.88%201239.72%20998.604%201271.23%201019.61%201295.51C1040.61%201319.79%201070.25%201334.93%201102.23%201337.73C1119.68%201338.99%201137.23%201338.19%201154.49%201335.34C1189%201329.33%201222.22%201317.49%201252.75%201300.33C1275.95%201287.73%201295.17%201268.91%201308.25%201245.98C1321.34%201223.06%201327.77%201196.94%201326.82%201170.56V357.248C1326.8%20354.066%201326.08%20350.928%201324.69%20348.063C1323.31%20345.198%201321.3%20342.678%201318.82%20340.689C1316.33%20338.699%201313.44%20337.29%201310.34%20336.564C1307.24%20335.837%201304.02%20335.813%201300.91%20336.491V336.491Z%22%20fill%3D%22%23242A3C%22%2F%3E%0A%3C%2Fsvg%3E%0A");
+}
+.jodit-emoji__category_active_true[title='Flags'],
+.jodit-emoji__category:hover[title='Flags'] {
+  background-image: url("data:image/svg+xml,%3Csvg%20width%3D%221792%22%20height%3D%221792%22%20viewBox%3D%220%200%201792%201792%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Cpath%20d%3D%22M1091.93%20552.458C974.702%20552.458%20877.91%20476.024%20730.553%20476.024C679.771%20475.836%20629.366%20484.747%20581.727%20502.335C589.942%20480.886%20591.962%20457.559%20587.557%20435.017C583.151%20412.475%20572.498%20391.625%20556.812%20374.846C541.126%20358.068%20521.039%20346.037%20498.844%20340.126C476.649%20334.215%20453.239%20334.663%20431.286%20341.418C409.333%20348.173%20389.721%20360.962%20374.688%20378.328C359.655%20395.694%20349.806%20416.936%20346.265%20439.63C342.725%20462.324%20345.635%20485.557%20354.664%20506.676C363.693%20527.796%20378.477%20545.952%20397.329%20559.073V1403.52C397.329%201417.44%20402.858%201430.79%20412.699%201440.63C422.54%201450.47%20435.887%201456%20449.804%201456H484.788C498.705%201456%20512.052%201450.47%20521.893%201440.63C531.734%201430.79%20537.263%201417.44%20537.263%201403.52V1197.01C616.376%201163.47%20701.672%201146.99%20787.585%201148.65C904.809%201148.65%201001.6%201224.71%201148.96%201224.71C1245.46%201223.9%201339.25%201192.62%201416.92%201135.34C1426.26%201128.92%201433.9%201120.31%201439.18%201110.27C1444.45%201100.24%201447.2%201089.06%201447.2%201077.72V546.285C1447.21%20534.516%201444.26%20522.935%201438.6%20512.611C1432.95%20502.288%201424.79%20493.558%201414.87%20487.227C1404.95%20480.896%201393.59%20477.17%201381.85%20476.394C1370.1%20475.618%201358.35%20477.816%201347.69%20482.786C1268.24%20523.703%201181.07%20547.441%201091.85%20552.458H1091.93Z%22%20fill%3D%22%23242A3C%22%2F%3E%0A%3C%2Fsvg%3E%0A");
+}
+.jodit-emoji__input {
+  margin-bottom: 0px;
+}
+.jodit-emoji__emojis {
+  padding: 0 16px;
+  width: inherit;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 28px);
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  grid-column-gap: 0;
+  grid-row-gap: 1px;
+  overflow: auto;
+  overflow-x: hidden;
+}
+.jodit-emoji__emoji {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+  font-family: 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', serif;
+  width: 28px;
+  height: 28px;
+  padding: 0;
+  border-radius: 4px;
+  font-size: 24px;
+}
+.jodit-emoji__emoji:hover {
+  background: rgba(0, 0, 0, 0.2);
+}
+.jodit-emoji__category-title {
+  color: #A7A8AB;
+  font-weight: 700;
+  line-height: 40px;
+  grid-column-end: span 8;
 }
 

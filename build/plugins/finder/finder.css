@@ -1,5 +1,5 @@
 /*!
- * jodit - Jodit is awesome and usefully wysiwyg editor with filebrowser
+ * idist-jodit - Jodit is awesome and usefully wysiwyg editor with filebrowser
  * Author: KimSunWook <ceo@idist.ai> (https://xdsoft.net/)
  * Version: v3.20.4
  * Url: https://github.com/IDIST/jodit

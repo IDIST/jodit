@@ -17,10 +17,10 @@
 		for(var i in a) (typeof exports === 'object' ? exports : root)[i] = a[i];
 	}
 })(self, function() {
-return (self["webpackChunkidist_jodit"] = self["webpackChunkidist_jodit"] || []).push([[921],{},
+return (self["webpackChunkidist_jodit"] = self["webpackChunkidist_jodit"] || []).push([[514],{},
 /******/ function(__webpack_require__) { // webpackRuntimeModules
 /******/ var __webpack_exec__ = function(moduleId) { return __webpack_require__(__webpack_require__.s = moduleId); }
-/******/ var __webpack_exports__ = (__webpack_exec__(72430));
+/******/ var __webpack_exports__ = (__webpack_exec__(53722));
 /******/ return __webpack_exports__;
 /******/ }
 ]);
