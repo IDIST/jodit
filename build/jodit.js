@@ -1,8 +1,8 @@
 /*!
  * jodit - Jodit is awesome and usefully wysiwyg editor with filebrowser
- * Author: Chupurnov <chupurnov@gmail.com> (https://xdsoft.net/)
+ * Author: KimSunWook <ceo@idist.ai> (https://xdsoft.net/)
  * Version: v3.20.4
- * Url: https://xdsoft.net/jodit/
+ * Url: https://github.com/IDIST/jodit
  * License(s): MIT
  */
 	
@@ -1296,23 +1296,39 @@ var GiphyFetch = (function () {
         return (0, request_1.default)("gifs/categories?".concat(this.getQS(options)));
     };
     GiphyFetch.prototype.gif = function (id) {
-        return (0, request_1.default)("gifs/".concat(id, "?").concat(this.getQS()), gif_1.normalizeGif);
+        return (0, request_1.default)("gifs/".concat(id, "?").concat(this.getQS()), { normalizer: gif_1.normalizeGif });
     };
     GiphyFetch.prototype.gifs = function (arg1, arg2) {
         if (Array.isArray(arg1)) {
-            return (0, request_1.default)("gifs?".concat(this.getQS({ ids: arg1.join(',') })), gif_1.normalizeGifs);
+            return (0, request_1.default)("gifs?".concat(this.getQS({ ids: arg1.join(',') })), {
+                normalizer: gif_1.normalizeGifs,
+            });
         }
-        return (0, request_1.default)("gifs/categories/".concat(arg1, "/").concat(arg2, "?").concat(this.getQS()), gif_1.normalizeGifs);
+        return (0, request_1.default)("gifs/categories/".concat(arg1, "/").concat(arg2, "?").concat(this.getQS()), {
+            normalizer: gif_1.normalizeGifs,
+        });
     };
     GiphyFetch.prototype.emoji = function (options) {
-        return (0, request_1.default)("emoji?".concat(this.getQS(options)), gif_1.normalizeGifs);
+        return (0, request_1.default)("emoji?".concat(this.getQS(options)), { normalizer: gif_1.normalizeGifs });
+    };
+    GiphyFetch.prototype.emojiDefaultVariations = function (options) {
+        return (0, request_1.default)("emoji?".concat(this.getQS(options)), {
+            apiVersion: 2,
+            normalizer: gif_1.normalizeGifs,
+        });
+    };
+    GiphyFetch.prototype.emojiVariations = function (id) {
+        return (0, request_1.default)("emoji/".concat(id, "/variations?").concat(this.getQS()), {
+            apiVersion: 2,
+            normalizer: gif_1.normalizeGifs,
+        });
     };
     GiphyFetch.prototype.animate = function (text, options) {
         if (options === void 0) {
             options = {};
         }
         var qsParams = this.getQS(__assign(__assign({}, options), { m: text }));
-        return (0, request_1.default)("text/animate?".concat(qsParams), gif_1.normalizeGifs);
+        return (0, request_1.default)("text/animate?".concat(qsParams), { normalizer: gif_1.normalizeGifs });
     };
     GiphyFetch.prototype.search = function (term, options) {
         if (options === void 0) {
@@ -1324,7 +1340,7 @@ var GiphyFetch = (function () {
             excludeDynamicResults = true;
         }
         var qsParams = this.getQS(__assign(__assign({}, options), { q: q, excludeDynamicResults: excludeDynamicResults }));
-        return (0, request_1.default)("".concat(getType(options), "/search?").concat(qsParams), gif_1.normalizeGifs);
+        return (0, request_1.default)("".concat(getType(options), "/search?").concat(qsParams), { normalizer: gif_1.normalizeGifs });
     };
     GiphyFetch.prototype.subcategories = function (category, options) {
         return (0, request_1.default)("gifs/categories/".concat(category, "?").concat(this.getQS(options)));
@@ -1333,13 +1349,18 @@ var GiphyFetch = (function () {
         if (options === void 0) {
             options = {};
         }
-        return (0, request_1.default)("".concat(getType(options), "/trending?").concat(this.getQS(options)), gif_1.normalizeGifs);
+        return (0, request_1.default)("".concat(getType(options), "/trending?").concat(this.getQS(options)), {
+            normalizer: gif_1.normalizeGifs,
+        });
     };
     GiphyFetch.prototype.random = function (options) {
-        return (0, request_1.default)("".concat(getType(options), "/random?").concat(this.getQS(options)), gif_1.normalizeGif, true);
+        return (0, request_1.default)("".concat(getType(options), "/random?").concat(this.getQS(options)), {
+            noCache: true,
+            normalizer: gif_1.normalizeGif,
+        });
     };
     GiphyFetch.prototype.related = function (id, options) {
-        return (0, request_1.default)("".concat((options === null || options === void 0 ? void 0 : options.type) === 'stickers' ? 'stickers' : 'gifs', "/related?").concat(this.getQS(__assign({ gif_id: id }, options))), gif_1.normalizeGifs);
+        return (0, request_1.default)("".concat((options === null || options === void 0 ? void 0 : options.type) === 'stickers' ? 'stickers' : 'gifs', "/related?").concat(this.getQS(__assign({ gif_id: id }, options))), { normalizer: gif_1.normalizeGifs });
     };
     GiphyFetch.prototype.channels = function (term, options) {
         if (options === void 0) {
@@ -1397,7 +1418,7 @@ var __extends = (this && this.__extends) || (function () {
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 var FetchError = (function (_super) {
     __extends(FetchError, _super);
-    function FetchError(message, status, statusText) {
+    function FetchError(message, url, status, statusText) {
         if (status === void 0) {
             status = 0;
         }
@@ -1405,6 +1426,7 @@ var FetchError = (function (_super) {
             statusText = '';
         }
         var _this = _super.call(this, message) || this;
+        _this.url = url;
         _this.status = status;
         _this.statusText = statusText;
         return _this;
@@ -1444,13 +1466,15 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 var _a;
 Object.defineProperty(exports, "__esModule", ({ value: true }));
-exports.request = exports.gifPaginator = exports.setServerUrl = exports.serverUrl = exports.GiphyFetch = void 0;
+exports.request = exports.gifPaginator = exports.FetchError = exports.setServerUrl = exports.serverUrl = exports.GiphyFetch = void 0;
 var js_util_1 = __webpack_require__(12874);
 var api_1 = __webpack_require__(72247);
 Object.defineProperty(exports, "GiphyFetch", ({ enumerable: true, get: function () { return __importDefault(api_1).default; } }));
 var constants_1 = __webpack_require__(47676);
 Object.defineProperty(exports, "serverUrl", ({ enumerable: true, get: function () { return constants_1.serverUrl; } }));
 Object.defineProperty(exports, "setServerUrl", ({ enumerable: true, get: function () { return constants_1.setServerUrl; } }));
+var fetch_error_1 = __webpack_require__(67894);
+Object.defineProperty(exports, "FetchError", ({ enumerable: true, get: function () { return __importDefault(fetch_error_1).default; } }));
 __exportStar(__webpack_require__(94001), exports);
 var paginator_1 = __webpack_require__(27393);
 Object.defineProperty(exports, "gifPaginator", ({ enumerable: true, get: function () { return paginator_1.gifPaginator; } }));
@@ -1804,16 +1828,16 @@ var purgeCache = function () {
         }
     });
 };
-function request(url, normalizer, noCache) {
+function request(url, options) {
     var _this = this;
-    if (normalizer === void 0) {
-        normalizer = identity;
+    if (options === void 0) {
+        options = {};
     }
-    if (noCache === void 0) {
-        noCache = false;
-    }
+    var _a = options.apiVersion, apiVersion = _a === void 0 ? 1 : _a, _b = options.noCache, noCache = _b === void 0 ? false : _b, _c = options.normalizer, normalizer = _c === void 0 ? identity : _c;
+    var serverUrl_ = constants_1.serverUrl.replace(/\/v\d+\/$/, "/v".concat(apiVersion, "/"));
     purgeCache();
     if (!requestMap[url] || noCache) {
+        var fullUrl_1 = "".concat(serverUrl_).concat(url);
         var makeRequest = function () {
             return __awaiter(_this, void 0, void 0, function () {
                 var fetchError, response, result, message, result, _1, unexpectedError_1;
@@ -1822,7 +1846,7 @@ function request(url, normalizer, noCache) {
                     switch (_b.label) {
                         case 0:
                             _b.trys.push([0, 9, , 10]);
-                            return [4, fetch("".concat(constants_1.serverUrl).concat(url), {
+                            return [4, fetch(fullUrl_1, {
                                     method: 'get',
                                 })];
                         case 1:
@@ -1857,12 +1881,12 @@ function request(url, normalizer, noCache) {
                             if (requestMap[url]) {
                                 requestMap[url].isError = true;
                             }
-                            fetchError = new fetch_error_1.default("".concat(exports.ERROR_PREFIX).concat(message), response.status, response.statusText);
+                            fetchError = new fetch_error_1.default("".concat(exports.ERROR_PREFIX).concat(message), fullUrl_1, response.status, response.statusText);
                             _b.label = 8;
                         case 8: return [3, 10];
                         case 9:
                             unexpectedError_1 = _b.sent();
-                            fetchError = new fetch_error_1.default(unexpectedError_1.message);
+                            fetchError = new fetch_error_1.default(unexpectedError_1.message, fullUrl_1);
                             if (requestMap[url]) {
                                 requestMap[url].isError = true;
                             }
@@ -2196,7 +2220,10 @@ var getGifWidth = function (_a, gifHeight) {
 };
 exports.getGifWidth = getGifWidth;
 var getAltText = function (_a) {
-    var user = _a.user, _b = _a.tags, tags = _b === void 0 ? [] : _b, _c = _a.is_sticker, is_sticker = _c === void 0 ? false : _c, _d = _a.title, title = _d === void 0 ? '' : _d;
+    var alt_text = _a.alt_text, user = _a.user, _b = _a.tags, tags = _b === void 0 ? [] : _b, _c = _a.is_sticker, is_sticker = _c === void 0 ? false : _c, _d = _a.title, title = _d === void 0 ? '' : _d;
+    if (alt_text) {
+        return alt_text;
+    }
     if (title) {
         return title;
     }
@@ -3252,9 +3279,9 @@ module.exports = function (exec, SKIP_CLOSING) {
 
 "use strict";
 
-var uncurryThisRaw = __webpack_require__(75223);
-var toString = uncurryThisRaw({}.toString);
-var stringSlice = uncurryThisRaw(''.slice);
+var uncurryThis = __webpack_require__(90838);
+var toString = uncurryThis({}.toString);
+var stringSlice = uncurryThis(''.slice);
 module.exports = function (it) {
     return stringSlice(toString(it), 8, -1);
 };
@@ -3683,7 +3710,7 @@ module.exports = typeof Reflect == 'object' && Reflect.apply || (NATIVE_BIND ? c
 
 "use strict";
 
-var uncurryThis = __webpack_require__(90838);
+var uncurryThis = __webpack_require__(75114);
 var aCallable = __webpack_require__(98061);
 var NATIVE_BIND = __webpack_require__(32610);
 var bind = uncurryThis(uncurryThis.bind);
@@ -3746,19 +3773,16 @@ module.exports = {
 
 /***/ }),
 
-/***/ 75223:
+/***/ 75114:
 /***/ (function(module, __unused_webpack_exports, __webpack_require__) {
 
 "use strict";
 
-var NATIVE_BIND = __webpack_require__(32610);
-var FunctionPrototype = Function.prototype;
-var call = FunctionPrototype.call;
-var uncurryThisWithBind = NATIVE_BIND && FunctionPrototype.bind.bind(call, call);
+var classofRaw = __webpack_require__(6285);
+var uncurryThis = __webpack_require__(90838);
 module.exports = function (fn) {
-    return NATIVE_BIND ? uncurryThisWithBind(fn) : function () {
-        return call.apply(fn, arguments);
-    };
+    if (classofRaw(fn) === 'Function')
+        return uncurryThis(fn);
 };
 
 
@@ -3769,11 +3793,14 @@ module.exports = function (fn) {
 
 "use strict";
 
-var classofRaw = __webpack_require__(6285);
-var uncurryThisRaw = __webpack_require__(75223);
-module.exports = function (fn) {
-    if (classofRaw(fn) === 'Function')
-        return uncurryThisRaw(fn);
+var NATIVE_BIND = __webpack_require__(32610);
+var FunctionPrototype = Function.prototype;
+var call = FunctionPrototype.call;
+var uncurryThisWithBind = NATIVE_BIND && FunctionPrototype.bind.bind(call, call);
+module.exports = NATIVE_BIND ? uncurryThisWithBind : function (fn) {
+    return function () {
+        return call.apply(fn, arguments);
+    };
 };
 
 
@@ -5028,10 +5055,10 @@ var store = __webpack_require__(45752);
 (module.exports = function (key, value) {
     return store[key] || (store[key] = value !== undefined ? value : {});
 })('versions', []).push({
-    version: '3.25.5',
+    version: '3.27.1',
     mode: IS_PURE ? 'pure' : 'global',
     copyright: '© 2014-2022 Denis Pushkarev (zloirock.ru)',
-    license: 'https://github.com/zloirock/core-js/blob/v3.25.5/LICENSE',
+    license: 'https://github.com/zloirock/core-js/blob/v3.27.1/LICENSE',
     source: 'https://github.com/zloirock/core-js'
 });
 
@@ -8716,7 +8743,7 @@ function __generator(thisArg, body) {
     function step(op) {
         if (f)
             throw new TypeError("Generator is already executing.");
-        while (_)
+        while (g && (g = 0, op[0] && (_ = 0)), _)
             try {
                 if (f = 1, y && (t = op[0] & 2 ? y["return"] : op[0] ? y["throw"] || ((t = y["return"]) && t.call(y), 0) : y.next) && !(t = t.call(y, op[1])).done)
                     return t;
@@ -29437,7 +29464,7 @@ config_1.Config.prototype.controls.about = {
             .setHeader(i('About Jodit'))
             .setContent("<div class=\"jodit-about\">\n\t\t\t\t\t<div>".concat(i('Jodit Editor'), " v.").concat(editor.getVersion(), "</div>\n\t\t\t\t\t<div>").concat(i('License: %s', !(0, helpers_1.isLicense)(editor.o.license)
             ? 'MIT'
-            : (0, helpers_1.normalizeLicense)(editor.o.license)), "</div>\n\t\t\t\t\t<div>\n\t\t\t\t\t\t<a href=\"").concat("https://xdsoft.net/jodit/", "\" target=\"_blank\">").concat("https://xdsoft.net/jodit/", "</a>\n\t\t\t\t\t</div>\n\t\t\t\t\t<div>\n\t\t\t\t\t\t<a href=\"https://xdsoft.net/jodit/doc/\" target=\"_blank\">").concat(i("Jodit User's Guide"), "</a>\n\t\t\t\t\t\t").concat(i('contains detailed help for using'), "\n\t\t\t\t\t</div>\n\t\t\t\t\t<div>").concat(i('Copyright © XDSoft.net - Chupurnov Valeriy. All rights reserved.'), "</div>\n\t\t\t\t</div>"));
+            : (0, helpers_1.normalizeLicense)(editor.o.license)), "</div>\n\t\t\t\t\t<div>\n\t\t\t\t\t\t<a href=\"").concat("https://github.com/IDIST/jodit", "\" target=\"_blank\">").concat("https://github.com/IDIST/jodit", "</a>\n\t\t\t\t\t</div>\n\t\t\t\t\t<div>\n\t\t\t\t\t\t<a href=\"https://xdsoft.net/jodit/doc/\" target=\"_blank\">").concat(i("Jodit User's Guide"), "</a>\n\t\t\t\t\t\t").concat(i('contains detailed help for using'), "\n\t\t\t\t\t</div>\n\t\t\t\t\t<div>").concat(i('Copyright © XDSoft.net - Chupurnov Valeriy. All rights reserved.'), "</div>\n\t\t\t\t</div>"));
         (0, helpers_1.css)(dialog.dialog, {
             minHeight: 200,
             minWidth: 420
@@ -44256,7 +44283,7 @@ module.exports = {
 /***/ (function(module) {
 
 "use strict";
-module.exports = {"i8":"4.4.0"};
+module.exports = {"i8":"4.7.1"};
 
 /***/ }),
 

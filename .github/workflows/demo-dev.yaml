@@ -2,9 +2,9 @@ name: CD
 
 on:
   push:
-    branches: [ master ]
+    branches: [ develop ]
   pull_request:
-    branches: [ master ]
+    branches: [ develop ]
 
 jobs:
   build:
@@ -43,10 +43,9 @@ jobs:
           aws-region: ap-northeast-2
         run: aws s3 sync ./build s3://editor.idist.ai
 
-
-#      - name: Invalidate CloudFront Cache
-#        uses: chetan/invalidate-cloudfront-action@master
-#        env:
-#          AWS_DISTRIBUTION: ${{ secrets.AWS_DISTRIBUTION_ID }}
-#          PATHS: '/index.html'
-#        continue-on-error: true
+      - name: Invalidate CloudFront Cache
+        uses: chetan/invalidate-cloudfront-action@master
+        env:
+          AWS_DISTRIBUTION: ${{ secrets.AWS_DISTRIBUTION_ID_DEV }}
+          PATHS: '/index.html'
+        continue-on-error: true
