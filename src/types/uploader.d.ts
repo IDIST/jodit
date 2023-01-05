@@ -8,6 +8,7 @@ import type { IViewBased } from 'jodit/types/view';
 type mediaFileType = 'image' | 'gif' | 'video' | 'file' | 'audio';
 
 interface IUploaderData {
+	url: string;
 	message: string;
 	file: string;
 	type: mediaFileType;

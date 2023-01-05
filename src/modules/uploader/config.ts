@@ -68,7 +68,7 @@ Config.prototype.uploader = {
 
 		const url = new URL(
 			path,
-			'https://deploy.server.superclub.idist.ai/api/v1/media/'
+			'https://main.server.superclub.idist.ai/api/v1/media/'
 		).href;
 		return url;
 	},
@@ -150,36 +150,36 @@ Config.prototype.uploader = {
 				element = j.c.fromHTML(
 					`<p><img style="width: ${
 						j.o.imageDefaultWidth || 500
-					}px;" src="${resp.file}" alt="${resp.file}"/></p><p></p>`
+					}px;" src="${resp.url}" alt="${resp.file}"/></p><p></p>`
 				);
 				break;
 			case 'gif':
 				element = j.c.fromHTML(
 					`<p><jodit-gif style="width: ${
 						j.o.imageDefaultWidth || 500
-					}px;" src="${resp.file}" alt="${resp.file}"/></p><p></p>`
+					}px;" src="${resp.url}" alt="${resp.file}"/></p><p></p>`
 				);
 				break;
 			case 'video':
 				element = j.c.fromHTML(
 					`<p><video controls style="width: ${
 						j.o.imageDefaultWidth || 500
-					}px;" src="${resp.file}" alt="${resp.file}"/></p><p></p>`
+					}px;" src="${resp.url}" alt="${resp.file}"/></p><p></p>`
 				);
 				break;
 			case 'file':
 				element = j.c.fromHTML(
-					`<jodit-file href="${resp.file}" alt="${resp.file}">${resp.file}</jodit-file><p></p>`
+					`<jodit-file href="${resp.url}" alt="${resp.file}">${resp.file}</jodit-file><p></p>`
 				);
 				break;
 			case 'audio':
 				element = j.c.fromHTML(
-					`<p><audio controls src="${resp.file}" alt="${resp.file}"></audio></p><p></p>`
+					`<p><audio controls src="${resp.url}" alt="${resp.file}"></audio></p><p></p>`
 				);
 				break;
 			default:
 				element = j.c.fromHTML(
-					`<p><a href="${resp.file}">${resp.file}</a></p><p></p>`
+					`<p><a href="${resp.url}">${resp.file}</a></p><p></p>`
 				);
 				break;
 		}
