@@ -60,8 +60,6 @@
     "@giphy/js-fetch-api": "^4.4.0",
     "a-color-picker": "^1.2.1",
     "autobind-decorator": "^2.4.0",
-    "babel-loader": "^8.2.5",
-    "babel-plugin-transform-class-properties": "^6.24.1",
     "core-js": "^3.24.1",
     "unsplash-js": "^7.0.15"
   },
