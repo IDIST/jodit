@@ -27,8 +27,6 @@ build:
   artifacts:
     expire_in: 1 hour # 만료 시간을 설정해 줍니다.
     paths: # 다음 stage에서 사용할 파일의 경로를 지정해 줍니다.
-      - index.html
-      - app.css
       - build
 
 # 5. S3 deploy
@@ -37,7 +35,7 @@ deploy-to-s3:
   stage: deploy
   script: # aws s3 sync 명령어를 활용하여 빌드된 파일을 나의 버킷에 올려주고 public-read 가 가능하도록 설정해 줍니다.
     - pip install awscli
-    - aws s3 sync . s3://editor.superclubs.io --acl public-read
+    - aws s3 sync . s3://editor.superclubs.io --acl public-read --exclude '*' --include 'index.html' --include 'app.css' --include 'build/*'
     - aws cloudfront create-invalidation --distribution-id $AWS_DISTRIBUTION_ID --paths "/*"
   only: # 해당 stage는 master branch에서만 실행 가능하도록 설정해 줍니다.
     - master
