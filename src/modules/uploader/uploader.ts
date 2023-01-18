@@ -229,6 +229,8 @@ export class Uploader extends ViewComponent implements IUploader {
 		const inputFile: HTMLInputElement | null =
 			form.querySelector('input[type=file]');
 
+		inputFile?.classList.add('hello');
+
 		if (inputFile) {
 			self.j.e.on(inputFile, 'change', () => {
 				sendFiles(self, inputFile.files, handlerSuccess, handlerError)

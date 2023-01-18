@@ -5,7 +5,7 @@ Every Jodit element inherits from [[Component]], and implements the [[IComponent
 Such elements have a name
 
 ```js
-const jodit = Jodit.male('#editor');
+const jodit = Jodit.make('#editor');
 console.log(jodit.componentName);
 console.log(jodit.statusbar.componentName);
 console.log(jodit.filebrowser.componentName);
@@ -15,7 +15,7 @@ console.log(jodit.uploader.componentName);
 And also each component has its current [[STATUSES | status]]:
 
 ```js
-const jodit = Jodit.male('#editor');
+const jodit = Jodit.make('#editor');
 console.log(jodit.componentStatus);
 ```
 

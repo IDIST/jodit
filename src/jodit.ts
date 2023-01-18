@@ -105,7 +105,7 @@ export class Jodit extends ViewWithToolbar implements IJodit, Dlgs {
 
 	static get ready(): Promise<IJodit> {
 		return new Promise(resolve => {
-			eventEmitter.on('oditready', resolve);
+			eventEmitter.on('joditready', resolve);
 		});
 	}
 

@@ -34,12 +34,18 @@ Config.prototype.uploader = {
 		// Jodit
 		const urlDefault =
 			'https://xdsoft.net/jodit/finder/index.php?action=fileUpload';
-		if (!(form && form.get('file'))) return urlDefault;
+		if (!(form && form.get('file'))) {
+			console.log(1);
+			return urlDefault;
+		}
 
 		// Custom Server
 		const file = form.get('file');
 
-		if (!file) return urlDefault;
+		if (!file) {
+			console.log(2);
+			return urlDefault;
+		}
 
 		// @ts-ignore
 		const matchType = file.type.match(/([a-z0-9]+)\//i) as string[];
@@ -70,6 +76,8 @@ Config.prototype.uploader = {
 			path,
 			'https://deploy.server.superclub.idist.ai/api/v1/media/'
 		).href;
+
+		console.log(url);
 		return url;
 	},
 

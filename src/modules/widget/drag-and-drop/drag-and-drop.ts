@@ -77,7 +77,6 @@ export const DragAndDropWidget = (
 	editor.uploader.bind(
 		dragAndDropWidget,
 		resp => {
-			// console.trace('resp1', resp);
 			const handler = isFunction(callbacks.upload)
 				? callbacks.upload
 				: editor.o.uploader.defaultHandlerSuccess;

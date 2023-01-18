@@ -2,8 +2,8 @@
  * @module types
  */
 
-import type {IViewBased} from 'jodit/types/view';
-import type {IAsync} from 'jodit/types/async';
+import type { IViewBased } from 'jodit/types/view';
+import type { IAsync } from 'jodit/types/async';
 
 export interface IDictionary<T = any, K = string> {
 	[key: string]: T;
@@ -145,17 +145,17 @@ export type BooleanFunction<T = any> = (this: T, ...args: any[]) => boolean;
 
 export type ExecCommandCallback<T> =
 	| ((
-	this: T,
-	command: string,
-	value?: string,
-	next?: any
-) => void | boolean | Promise<void | boolean>)
+			this: T,
+			command: string,
+			value?: string,
+			next?: any
+	  ) => void | boolean | Promise<void | boolean>)
 	| ((
-	this: T,
-	command: string,
-	value: string,
-	next: string
-) => void | boolean | Promise<void | boolean>);
+			this: T,
+			command: string,
+			value: string,
+			next: string
+	  ) => void | boolean | Promise<void | boolean>);
 
 export interface ICommandType<T> {
 	exec: ExecCommandCallback<T>;

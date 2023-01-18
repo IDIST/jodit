@@ -9,13 +9,13 @@ import { buildData } from 'jodit/modules/uploader/helpers/build-data';
 
 export const ajaxInstances: WeakMap<IUploader, Set<Ajax>> = new WeakMap();
 
-export function send(
+export async function send(
 	uploader: IUploader,
 	data: FormData | IDictionary<string>
 ): Promise<IUploaderAnswer> {
 	const requestData = buildData(uploader, data);
 
-	const sendData = (
+	const sendData = async (
 		request: FormData | IDictionary<string> | string
 	): Promise<any> => {
 		const ajax = new Ajax<IUploaderAnswer>(uploader.j, {
