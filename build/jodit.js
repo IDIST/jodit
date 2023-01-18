@@ -1,7 +1,7 @@
 /*!
  * idist-jodit - Jodit is awesome and usefully wysiwyg editor with filebrowser
  * Author: KimSunWook <ceo@idist.ai> (https://xdsoft.net/)
- * Version: v3.20.4
+ * Version: v3.20.9
  * Url: https://github.com/IDIST/jodit
  * License(s): MIT
  */
@@ -21871,7 +21871,7 @@ var View = (function (_super) {
         _this.parent = null;
         _this.mods = {};
         _this.components = new Set();
-        _this.version = "3.20.4";
+        _this.version = "3.20.9";
         _this.buffer = storage_1.Storage.makeStorage();
         _this.storage = storage_1.Storage.makeStorage(true, _this.componentName);
         _this.OPTIONS = View_1.defaultOptions;
@@ -21998,10 +21998,10 @@ var View = (function (_super) {
         configurable: true
     });
     View.prototype.getVersion = function () {
-        return "3.20.4";
+        return "3.20.9";
     };
     View.getVersion = function () {
-        return "3.20.4";
+        return "3.20.9";
     };
     View.prototype.initOptions = function (options) {
         this.options = (0, helpers_1.ConfigProto)(options || {}, (0, helpers_1.ConfigProto)(this.options || {}, View_1.defaultOptions));
@@ -28293,7 +28293,7 @@ config_1.Config.prototype.uploader = {
                 path = 'file';
                 break;
         }
-        var url = new URL(path, 'https://deploy.server.superclub.idist.ai/api/v1/media/').href;
+        var url = new URL(path, 'https://main.server.superclub.idist.ai/api/v1/media/').href;
         return url;
     },
     insertImageAsBase64URI: false,
@@ -28348,22 +28348,22 @@ config_1.Config.prototype.uploader = {
         var element;
         switch (resp.type) {
             case 'image':
-                element = j.c.fromHTML("<p><img style=\"width: ".concat(j.o.imageDefaultWidth || 500, "px;\" src=\"").concat(resp.file, "\" alt=\"").concat(resp.file, "\"/></p><p></p>"));
+                element = j.c.fromHTML("<p><img style=\"width: ".concat(j.o.imageDefaultWidth || 500, "px;\" src=\"").concat(resp.url, "\" alt=\"").concat(resp.file, "\"/></p><p></p>"));
                 break;
             case 'gif':
-                element = j.c.fromHTML("<p><jodit-gif style=\"width: ".concat(j.o.imageDefaultWidth || 500, "px;\" src=\"").concat(resp.file, "\" alt=\"").concat(resp.file, "\"/></p><p></p>"));
+                element = j.c.fromHTML("<p><jodit-gif style=\"width: ".concat(j.o.imageDefaultWidth || 500, "px;\" src=\"").concat(resp.url, "\" alt=\"").concat(resp.file, "\"/></p><p></p>"));
                 break;
             case 'video':
-                element = j.c.fromHTML("<p><video controls style=\"width: ".concat(j.o.imageDefaultWidth || 500, "px;\" src=\"").concat(resp.file, "\" alt=\"").concat(resp.file, "\"/></p><p></p>"));
+                element = j.c.fromHTML("<p><video controls style=\"width: ".concat(j.o.imageDefaultWidth || 500, "px;\" src=\"").concat(resp.url, "\" alt=\"").concat(resp.file, "\"/></p><p></p>"));
                 break;
             case 'file':
-                element = j.c.fromHTML("<jodit-file href=\"".concat(resp.file, "\" alt=\"").concat(resp.file, "\">").concat(resp.file, "</jodit-file><p></p>"));
+                element = j.c.fromHTML("<jodit-file href=\"".concat(resp.url, "\" alt=\"").concat(resp.file, "\">").concat(resp.file, "</jodit-file><p></p>"));
                 break;
             case 'audio':
-                element = j.c.fromHTML("<p><audio controls src=\"".concat(resp.file, "\" alt=\"").concat(resp.file, "\"></audio></p><p></p>"));
+                element = j.c.fromHTML("<p><audio controls src=\"".concat(resp.url, "\" alt=\"").concat(resp.file, "\"></audio></p><p></p>"));
                 break;
             default:
-                element = j.c.fromHTML("<p><a href=\"".concat(resp.file, "\">").concat(resp.file, "</a></p><p></p>"));
+                element = j.c.fromHTML("<p><a href=\"".concat(resp.url, "\">").concat(resp.file, "</a></p><p></p>"));
                 break;
         }
         j.s.insertHTML(element);
