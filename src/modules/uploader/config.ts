@@ -3,10 +3,11 @@
  */
 
 import type {
+	IJodit,
 	IUploader,
 	IUploaderAnswer,
 	IUploaderData,
-	IUploaderOptions
+	IUploaderOptions,
 } from 'jodit/types';
 import { Config } from 'jodit/config';
 import { isArray } from 'jodit/core/helpers/checker/is-array';
@@ -19,6 +20,7 @@ declare module 'jodit/config' {
 		 */
 		enableDragAndDropFileToEditor: boolean;
 		uploader: IUploaderOptions<IUploader>;
+		uploaderApi: string;
 	}
 }
 
@@ -30,16 +32,12 @@ declare module 'jodit/config' {
 Config.prototype.enableDragAndDropFileToEditor = true;
 
 Config.prototype.uploader = {
-	url: (form?: FormData) => {
-		// Jodit
-		const urlDefault =
-			'https://xdsoft.net/jodit/finder/index.php?action=fileUpload';
-		if (!(form && form.get('file'))) return urlDefault;
+	url: (editor: IJodit, form: FormData) => {
+		// Check file
+		if (!(form && form.get('file'))) return;
 
 		// Custom Server
 		const file = form.get('file');
-
-		if (!file) return urlDefault;
 
 		// @ts-ignore
 		const matchType = file.type.match(/([a-z0-9]+)\//i) as string[];
@@ -66,11 +64,13 @@ Config.prototype.uploader = {
 				break;
 		}
 
-		const url = new URL(
+		// @ts-ignore
+		console.log(editor.o.uploaderApi);
+		// @ts-ignore
+		return new URL(
 			path,
-			'https://main.server.superclub.idist.ai/api/v1/media/'
+			editor.o.uploaderApi
 		).href;
-		return url;
 	},
 
 	insertImageAsBase64URI: false,

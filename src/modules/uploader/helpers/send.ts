@@ -2,7 +2,7 @@
  * @module modules/uploader
  */
 
-import type { IDictionary, IUploader, IUploaderAnswer } from 'jodit/types';
+import type {IDictionary, IJodit, IUploader, IUploaderAnswer} from 'jodit/types';
 import { Ajax } from 'jodit/core/request';
 import { isFunction, isPromise } from 'jodit/core/helpers';
 import { buildData } from 'jodit/modules/uploader/helpers/build-data';
@@ -57,9 +57,7 @@ export function send(
 			},
 			method: uploader.o.method || 'POST',
 			data: request,
-			url: isFunction(uploader.o.url)
-				? uploader.o.url(request)
-				: uploader.o.url,
+			url: uploader.o.url(<IJodit>uploader.j, request),
 			headers: isFunction(uploader.o.headers)
 				? uploader.o.headers(uploader.o.authToken)
 				: uploader.o.headers,
