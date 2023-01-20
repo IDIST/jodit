@@ -6,15 +6,15 @@ jobs:
   bump-version:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-      - run: git config --global user.email "github-actions@example.com"
-      - run: git config --global user.name "GitHub Actions"
-      - uses: actions/setup-node@v1
+      - uses: actions/checkout@v3
+      - run: git config --global user.email "sunus7@naver.com"
+      - run: git config --global user.name "Sunwook Kim"
+      - uses: actions/setup-node@v3
         with:
           node-version: 16
       - run: npm version patch
       - run: git push origin master --tags
-      - uses: actions/upload-artifact@v2
+      - uses: actions/upload-artifact@v3
         with:
           name: src
           path: ./

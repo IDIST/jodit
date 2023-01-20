@@ -18,7 +18,7 @@ jobs:
         uses: actions/cache@v1
         with:
           path: node_modules
-          key: ${{ runner.OS }}-master-build-${{ hashFiles('**/yarn.lock') }}
+          key: ${{ runner.OS }}-dev-build-${{ hashFiles('**/yarn.lock') }}
           restore-keys: |
             ${{ runner.OS }}-build-
             ${{ runner.OS }}-
@@ -42,7 +42,6 @@ jobs:
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           aws-region: ap-northeast-2
         run: aws s3 sync ./build s3://${{ secrets.AWS_S3_BUCKET }}
-
 
       - name: Invalidate CloudFront Cache
         uses: chetan/invalidate-cloudfront-action@master

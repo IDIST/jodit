@@ -27,3 +27,5 @@ webpack.config.js
 .*.test.js
 .*.test.screenshot.js
 __image_snapshots__
+build.js
+.vscode

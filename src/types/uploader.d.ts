@@ -4,6 +4,7 @@
 
 import type { IDictionary, IViewComponent } from './types';
 import type { IViewBased } from 'jodit/types/view';
+import type {IJodit} from "jodit/types/jodit";
 
 type mediaFileType = 'image' | 'gif' | 'video' | 'file' | 'audio';
 
@@ -35,9 +36,7 @@ export type BuildDataResult =
 	| string;
 
 export interface IUploaderOptions<T> {
-	url:
-		| string
-		| ((request: FormData | IDictionary<string> | string) => string);
+	url: (editor: IJodit, request: FormData | IDictionary<string> | string) => string;
 	insertImageAsBase64URI: boolean;
 	imagesExtensions: string[];
 	headers?: null | object;
